@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmodels_1_1_feature_collection" kind="class" language="Java" prot="public">
+    <compoundname>models::FeatureCollection</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmodels_1_1_feature_collection_1a3e0f54a6418fefb458cc6ff2270c6ed6" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String models.FeatureCollection.type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>models.FeatureCollection.type</qualifiedname>
+        <briefdescription>
+<para>The type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/FeatureCollection.java" line="18" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/FeatureCollection.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodels_1_1_feature_collection_1af829019065f7c7757c0f48edbd97500e" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String models.FeatureCollection.licence</definition>
+        <argsstring></argsstring>
+        <name>licence</name>
+        <qualifiedname>models.FeatureCollection.licence</qualifiedname>
+        <briefdescription>
+<para>The licence. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/FeatureCollection.java" line="20" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/FeatureCollection.java" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodels_1_1_feature_collection_1ad2866c52c8a9a53d9dc05f4109f600ae" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="classmodels_1_1_feature" kindref="compound">Feature</ref> &gt;</type>
+        <definition>List&lt;Feature&gt; models.FeatureCollection.features</definition>
+        <argsstring></argsstring>
+        <name>features</name>
+        <qualifiedname>models.FeatureCollection.features</qualifiedname>
+        <briefdescription>
+<para>The features. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/FeatureCollection.java" line="22" column="18" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/FeatureCollection.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmodels_1_1_feature_collection_1a54ae9adfa0c06a61286473cf7e78dcfe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>public String models.FeatureCollection::getType</definition>
+        <argsstring>()</argsstring>
+        <name>getType</name>
+        <qualifiedname>models.FeatureCollection.getType</qualifiedname>
+        <briefdescription>
+<para>Getters and setters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The type. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/FeatureCollection.java" line="35" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/FeatureCollection.java" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_feature_collection_1a2fc340d9635b3abb3ac78f7892a883fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void models.FeatureCollection::setType</definition>
+        <argsstring>(String type)</argsstring>
+        <name>setType</name>
+        <qualifiedname>models.FeatureCollection.setType</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Sets a type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/FeatureCollection.java" line="50" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/FeatureCollection.java" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_feature_collection_1a5524518fe83aa52d599e50922353f6b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>public String models.FeatureCollection::getLicence</definition>
+        <argsstring>()</argsstring>
+        <name>getLicence</name>
+        <qualifiedname>models.FeatureCollection.getLicence</qualifiedname>
+        <briefdescription>
+<para>Gets the licence. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The licence. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/FeatureCollection.java" line="65" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/FeatureCollection.java" bodystart="65" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_feature_collection_1a5f6cdff97caa1a5c04aa57ce021658a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void models.FeatureCollection::setLicence</definition>
+        <argsstring>(String licence)</argsstring>
+        <name>setLicence</name>
+        <qualifiedname>models.FeatureCollection.setLicence</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>licence</declname>
+        </param>
+        <briefdescription>
+<para>Sets a licence. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>licence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The licence. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/FeatureCollection.java" line="80" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/FeatureCollection.java" bodystart="80" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_feature_collection_1a147049cf09a40d2847066f2905ef3bea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classmodels_1_1_feature" kindref="compound">Feature</ref> &gt;</type>
+        <definition>public List&lt; Feature &gt; models.FeatureCollection::getFeatures</definition>
+        <argsstring>()</argsstring>
+        <name>getFeatures</name>
+        <qualifiedname>models.FeatureCollection.getFeatures</qualifiedname>
+        <briefdescription>
+<para>Gets the features. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The features. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/FeatureCollection.java" line="95" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/FeatureCollection.java" bodystart="95" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_feature_collection_1a4492c7412b13b6fc00c0a4f5eeaa2a75" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void models.FeatureCollection::setFeatures</definition>
+        <argsstring>(List&lt; Feature &gt; features)</argsstring>
+        <name>setFeatures</name>
+        <qualifiedname>models.FeatureCollection.setFeatures</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="classmodels_1_1_feature" kindref="compound">Feature</ref> &gt;</type>
+          <declname>features</declname>
+        </param>
+        <briefdescription>
+<para>Sets the features. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>features</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The features. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/FeatureCollection.java" line="110" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/FeatureCollection.java" bodystart="110" bodyend="112"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>List of java.util.s. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Collection of features.</para>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/FeatureCollection.java" line="16" column="7" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/FeatureCollection.java" bodystart="16" bodyend="114"/>
+    <listofallmembers>
+      <member refid="classmodels_1_1_feature_collection_1ad2866c52c8a9a53d9dc05f4109f600ae" prot="private" virt="non-virtual"><scope>models::FeatureCollection</scope><name>features</name></member>
+      <member refid="classmodels_1_1_feature_collection_1a147049cf09a40d2847066f2905ef3bea" prot="public" virt="non-virtual"><scope>models::FeatureCollection</scope><name>getFeatures</name></member>
+      <member refid="classmodels_1_1_feature_collection_1a5524518fe83aa52d599e50922353f6b4" prot="public" virt="non-virtual"><scope>models::FeatureCollection</scope><name>getLicence</name></member>
+      <member refid="classmodels_1_1_feature_collection_1a54ae9adfa0c06a61286473cf7e78dcfe" prot="public" virt="non-virtual"><scope>models::FeatureCollection</scope><name>getType</name></member>
+      <member refid="classmodels_1_1_feature_collection_1af829019065f7c7757c0f48edbd97500e" prot="private" virt="non-virtual"><scope>models::FeatureCollection</scope><name>licence</name></member>
+      <member refid="classmodels_1_1_feature_collection_1a4492c7412b13b6fc00c0a4f5eeaa2a75" prot="public" virt="non-virtual"><scope>models::FeatureCollection</scope><name>setFeatures</name></member>
+      <member refid="classmodels_1_1_feature_collection_1a5f6cdff97caa1a5c04aa57ce021658a3" prot="public" virt="non-virtual"><scope>models::FeatureCollection</scope><name>setLicence</name></member>
+      <member refid="classmodels_1_1_feature_collection_1a2fc340d9635b3abb3ac78f7892a883fc" prot="public" virt="non-virtual"><scope>models::FeatureCollection</scope><name>setType</name></member>
+      <member refid="classmodels_1_1_feature_collection_1a3e0f54a6418fefb458cc6ff2270c6ed6" prot="private" virt="non-virtual"><scope>models::FeatureCollection</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,425 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcom_1_1example_1_1sportssphere_1_1_map_activity" kind="class" language="Java" prot="public">
+    <compoundname>com::example::sportssphere::MapActivity</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">AppCompatActivity</basecompoundref>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_map_activity_1ae7b8b31889d69ae089e129cd732cd62e" prot="package" static="no" mutable="no">
+        <type>MapView</type>
+        <definition>MapView com.example.sportssphere.MapActivity.mapView</definition>
+        <argsstring></argsstring>
+        <name>mapView</name>
+        <qualifiedname>com.example.sportssphere.MapActivity.mapView</qualifiedname>
+        <briefdescription>
+<para>The map view. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" line="116" column="13" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_map_activity_1aab01e55a945d3d8f7b6c98342318f86a" prot="package" static="no" mutable="no">
+        <type>FloatingActionButton</type>
+        <definition>FloatingActionButton com.example.sportssphere.MapActivity.floatingActionButton</definition>
+        <argsstring></argsstring>
+        <name>floatingActionButton</name>
+        <qualifiedname>com.example.sportssphere.MapActivity.floatingActionButton</qualifiedname>
+        <briefdescription>
+<para>The floating action button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" line="118" column="26" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_map_activity_1af4c5604ed3e9015c6e43e9685aa9cdd7" prot="package" static="no" mutable="no">
+        <type>ImageButton</type>
+        <definition>ImageButton com.example.sportssphere.MapActivity.searchButton</definition>
+        <argsstring></argsstring>
+        <name>searchButton</name>
+        <qualifiedname>com.example.sportssphere.MapActivity.searchButton</qualifiedname>
+        <briefdescription>
+<para>The search button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" line="120" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_map_activity_1aed79eadfc3b4ccc921164a486e321e1a" prot="package" static="no" mutable="no">
+        <type>EditText</type>
+        <definition>EditText com.example.sportssphere.MapActivity.searchAddress</definition>
+        <argsstring></argsstring>
+        <name>searchAddress</name>
+        <qualifiedname>com.example.sportssphere.MapActivity.searchAddress</qualifiedname>
+        <briefdescription>
+<para>The search address. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" line="122" column="14" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_map_activity_1aaf017262d6bd052fb541e9b79184e12e" prot="package" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button com.example.sportssphere.MapActivity.homeButton</definition>
+        <argsstring></argsstring>
+        <name>homeButton</name>
+        <qualifiedname>com.example.sportssphere.MapActivity.homeButton</qualifiedname>
+        <briefdescription>
+<para>The home control. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" line="124" column="12" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_map_activity_1ae76b51f8d7b10e2de1b666d56690a78e" prot="package" static="no" mutable="no">
+        <type>ApolloClient</type>
+        <definition>ApolloClient com.example.sportssphere.MapActivity.apolloClient</definition>
+        <argsstring></argsstring>
+        <name>apolloClient</name>
+        <qualifiedname>com.example.sportssphere.MapActivity.apolloClient</qualifiedname>
+        <briefdescription>
+<para>The apollo client. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" line="126" column="18" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_map_activity_1a8458bc9e74740c2748d6c9c9c96434c1" prot="package" static="no" mutable="no">
+        <type>Point</type>
+        <definition>Point com.example.sportssphere.MapActivity.point</definition>
+        <argsstring></argsstring>
+        <name>point</name>
+        <qualifiedname>com.example.sportssphere.MapActivity.point</qualifiedname>
+        <briefdescription>
+<para>used for the search feature </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" line="128" column="11" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_map_activity_1adab69d4cb4c1cf875da53361b03354ee" prot="package" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean com.example.sportssphere.MapActivity.searchEnabled</definition>
+        <argsstring></argsstring>
+        <name>searchEnabled</name>
+        <qualifiedname>com.example.sportssphere.MapActivity.searchEnabled</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>flag to track whether the search functionality is enabled </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" line="130" column="13" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" bodystart="130" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_map_activity_1aced64173857d7c7ae9ad528172a516d2" prot="private" static="no" mutable="no">
+        <type>final ActivityResultLauncher&lt; String &gt;</type>
+        <definition>final ActivityResultLauncher&lt;String&gt; com.example.sportssphere.MapActivity.activityResultLauncher</definition>
+        <argsstring></argsstring>
+        <name>activityResultLauncher</name>
+        <qualifiedname>com.example.sportssphere.MapActivity.activityResultLauncher</qualifiedname>
+        <initializer>= registerForActivityResult(new ActivityResultContracts.RequestPermission(), new ActivityResultCallback&lt;Boolean&gt;() {
+        @Override
+        public void onActivityResult(Boolean result) {
+            if(result){
+                Toast.makeText(MapActivity.this, &quot;Permission granted!&quot;, Toast.LENGTH_LONG).show();
+            }
+            else{
+                Toast.makeText(MapActivity.this, &quot;Permission not granted!&quot;, Toast.LENGTH_LONG).show();
+            }
+        }
+    })</initializer>
+        <briefdescription>
+<para>The activity result launcher. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" line="133" column="42" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_map_activity_1a83dcbb2bc6e057e172391cd0c7589c35" prot="private" static="no" mutable="no">
+        <type>final OnIndicatorBearingChangedListener</type>
+        <definition>final OnIndicatorBearingChangedListener com.example.sportssphere.MapActivity.onIndicatorBearingChangedListener</definition>
+        <argsstring></argsstring>
+        <name>onIndicatorBearingChangedListener</name>
+        <qualifiedname>com.example.sportssphere.MapActivity.onIndicatorBearingChangedListener</qualifiedname>
+        <initializer>= new OnIndicatorBearingChangedListener() {
+        @Override
+        public void onIndicatorBearingChanged(double v) {
+            mapView.getMapboxMap().setCamera(new CameraOptions.Builder().bearing(v).build());
+        }
+    }</initializer>
+        <briefdescription>
+<para>The on indicator bearing changed listener. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" line="145" column="53" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" bodystart="145" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_map_activity_1a5631d0412514626e4abe6b18ca386f2b" prot="private" static="no" mutable="no">
+        <type>final OnIndicatorPositionChangedListener</type>
+        <definition>final OnIndicatorPositionChangedListener com.example.sportssphere.MapActivity.onIndicatorPositionChangedListener</definition>
+        <argsstring></argsstring>
+        <name>onIndicatorPositionChangedListener</name>
+        <qualifiedname>com.example.sportssphere.MapActivity.onIndicatorPositionChangedListener</qualifiedname>
+        <initializer>= new OnIndicatorPositionChangedListener() {
+        @Override
+        public void onIndicatorPositionChanged(@NonNull Point point) {
+            mapView.getMapboxMap().setCamera((new CameraOptions.Builder().center(point).zoom(20.0).build()));
+            getGestures(mapView).setFocalPoint(mapView.getMapboxMap().pixelForCoordinate(point));
+        }
+    }</initializer>
+        <briefdescription>
+<para>The on indicator position changed listener. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" line="152" column="54" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" bodystart="152" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_map_activity_1a7bca819cedd7402499cfeeaa558e4651" prot="private" static="no" mutable="no">
+        <type>final OnMoveListener</type>
+        <definition>final OnMoveListener com.example.sportssphere.MapActivity.onMoveListener</definition>
+        <argsstring></argsstring>
+        <name>onMoveListener</name>
+        <qualifiedname>com.example.sportssphere.MapActivity.onMoveListener</qualifiedname>
+        <initializer>= new OnMoveListener() {
+        @Override
+        public void onMoveBegin(@NonNull MoveGestureDetector moveGestureDetector) {
+            getLocationComponent(mapView).removeOnIndicatorPositionChangedListener(onIndicatorPositionChangedListener);
+            getLocationComponent(mapView).removeOnIndicatorBearingChangedListener(onIndicatorBearingChangedListener);
+            getGestures(mapView).removeOnMoveListener(onMoveListener);
+            floatingActionButton.show();
+        }
+
+        @Override
+        public boolean onMove(@NonNull MoveGestureDetector moveGestureDetector) {
+            return false;
+        }
+
+        @Override
+        public void onMoveEnd(@NonNull MoveGestureDetector moveGestureDetector) {
+
+        }
+    }</initializer>
+        <briefdescription>
+<para>The on move listener. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" line="160" column="34" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" bodystart="160" bodyend="178"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1example_1_1sportssphere_1_1_map_activity_1aa9317d430e2ac2d7f9f5db136afabd72" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>private void com.example.sportssphere.MapActivity::homeButtonLogic</definition>
+        <argsstring>()</argsstring>
+        <name>homeButtonLogic</name>
+        <qualifiedname>com.example.sportssphere.MapActivity.homeButtonLogic</qualifiedname>
+        <briefdescription>
+<para>Home button logic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" line="189" column="18" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" bodystart="189" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1example_1_1sportssphere_1_1_map_activity_1af7bc3bba12ec2d328ca7c9475d39c671" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>private void com.example.sportssphere.MapActivity::searchButtonAndImageLogic</definition>
+        <argsstring>()</argsstring>
+        <name>searchButtonAndImageLogic</name>
+        <qualifiedname>com.example.sportssphere.MapActivity.searchButtonAndImageLogic</qualifiedname>
+        <briefdescription>
+<para>Searches for the first button and image logic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" line="209" column="18" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" bodystart="209" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1example_1_1sportssphere_1_1_map_activity_1ad47850019b4dd066d53afe0711117543" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>private void com.example.sportssphere.MapActivity::performSearch</definition>
+        <argsstring>()</argsstring>
+        <name>performSearch</name>
+        <qualifiedname>com.example.sportssphere.MapActivity.performSearch</qualifiedname>
+        <briefdescription>
+<para>Performs the search action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" line="241" column="18" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" bodystart="241" bodyend="256"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classcom_1_1example_1_1sportssphere_1_1_map_activity_1a6799b9108272b98b6686bfab9447ebda" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>Override protected void com.example.sportssphere.MapActivity::onCreate</definition>
+        <argsstring>(Bundle savedInstanceState)</argsstring>
+        <name>onCreate</name>
+        <qualifiedname>com.example.sportssphere.MapActivity.onCreate</qualifiedname>
+        <param>
+          <type>Bundle</type>
+          <declname>savedInstanceState</declname>
+        </param>
+        <briefdescription>
+<para>Executes the &apos;create&apos; action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>savedInstanceState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" line="270" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" bodystart="270" bodyend="345"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The com.mapbox.common. value converter.to JSON. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The com.mapbox.maps.extension.style.expressions.dsl.generated. expression DSL kt.literal</para>
+<para>The com.mapbox.maps.extension.style.expressions.dsl.generated. expression DSL kt.zoom</para>
+<para>The com.mapbox.maps.plugin.gestures. gestures utils.get gestures</para>
+<para>The com.mapbox.maps.plugin.locationcomponent. location component utils.get location component</para>
+<para>A list of android.s</para>
+<para>The android.content. intent</para>
+<para>Manager for android.content.pm. package</para>
+<para>The android.os. bundle</para>
+<para>The android.text. editable</para>
+<para>The android.text. text watcher</para>
+<para>The android.view. key event</para>
+<para>The android.view. view</para>
+<para>Information describing the android.view.inputmethod. editor</para>
+<para>The android.widget. button</para>
+<para>The android.widget. edit text</para>
+<para>The android.widget. image button</para>
+<para>The android.widget. text view</para>
+<para>The android.widget. toast</para>
+<para>The androidx.activity.result. activity result callback</para>
+<para>The androidx.activity.result. activity result launcher</para>
+<para>The androidx.activity.result.contract. activity result contracts</para>
+<para>The androidx.annotation. non null</para>
+<para>The androidx.appcompat.app. application compatible activity</para>
+<para>The androidx.appcompat.content.res. application compatible resources</para>
+<para>The androidx.core.app. activity compatible</para>
+<para>The com.google.android.material.floatingactionbutton. floating action button</para>
+<para>The com.mapbox.android.gestures. move gesture detector</para>
+<para>The com.mapbox.geojson. point</para>
+<para>Options for controlling the com.mapbox.maps. camera</para>
+<para>The com.mapbox.maps. map view</para>
+<para>The com.mapbox.maps. mapbox map</para>
+<para>The com.mapbox.maps. style</para>
+<para>The com.apollographql.apollo. apollo call</para>
+<para>The com.apollographql.apollo. apollo client</para>
+<para>The com.apollographql.apollo.api. response</para>
+<para>The com.apollographql.apollo.exception. apollo exception</para>
+<para>The com.mapbox.maps.plugin. location puck 2D</para>
+<para>The com.mapbox.maps.plugin.gestures. on move listener</para>
+<para>The com.mapbox.maps.plugin.locationcomponent. location component plugin</para>
+<para>The com.mapbox.maps.plugin.locationcomponent. on indicator bearing changed listener</para>
+<para>The com.mapbox.maps.plugin.locationcomponent. on indicator position changed listener</para>
+<para>A map activity.</para>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AppCompatActivity</label>
+      </node>
+      <node id="1">
+        <label>com.example.sportssphere.MapActivity</label>
+        <link refid="classcom_1_1example_1_1sportssphere_1_1_map_activity"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AppCompatActivity</label>
+      </node>
+      <node id="1">
+        <label>com.example.sportssphere.MapActivity</label>
+        <link refid="classcom_1_1example_1_1sportssphere_1_1_map_activity"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" line="113" column="7" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/MapActivity.java" bodystart="113" bodyend="347"/>
+    <listofallmembers>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_map_activity_1aced64173857d7c7ae9ad528172a516d2" prot="private" virt="non-virtual"><scope>com::example::sportssphere::MapActivity</scope><name>activityResultLauncher</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_map_activity_1ae76b51f8d7b10e2de1b666d56690a78e" prot="package" virt="non-virtual"><scope>com::example::sportssphere::MapActivity</scope><name>apolloClient</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_map_activity_1aab01e55a945d3d8f7b6c98342318f86a" prot="package" virt="non-virtual"><scope>com::example::sportssphere::MapActivity</scope><name>floatingActionButton</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_map_activity_1aaf017262d6bd052fb541e9b79184e12e" prot="package" virt="non-virtual"><scope>com::example::sportssphere::MapActivity</scope><name>homeButton</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_map_activity_1aa9317d430e2ac2d7f9f5db136afabd72" prot="private" virt="non-virtual"><scope>com::example::sportssphere::MapActivity</scope><name>homeButtonLogic</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_map_activity_1ae7b8b31889d69ae089e129cd732cd62e" prot="package" virt="non-virtual"><scope>com::example::sportssphere::MapActivity</scope><name>mapView</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_map_activity_1a6799b9108272b98b6686bfab9447ebda" prot="protected" virt="non-virtual"><scope>com::example::sportssphere::MapActivity</scope><name>onCreate</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_map_activity_1a83dcbb2bc6e057e172391cd0c7589c35" prot="private" virt="non-virtual"><scope>com::example::sportssphere::MapActivity</scope><name>onIndicatorBearingChangedListener</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_map_activity_1a5631d0412514626e4abe6b18ca386f2b" prot="private" virt="non-virtual"><scope>com::example::sportssphere::MapActivity</scope><name>onIndicatorPositionChangedListener</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_map_activity_1a7bca819cedd7402499cfeeaa558e4651" prot="private" virt="non-virtual"><scope>com::example::sportssphere::MapActivity</scope><name>onMoveListener</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_map_activity_1ad47850019b4dd066d53afe0711117543" prot="private" virt="non-virtual"><scope>com::example::sportssphere::MapActivity</scope><name>performSearch</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_map_activity_1a8458bc9e74740c2748d6c9c9c96434c1" prot="package" virt="non-virtual"><scope>com::example::sportssphere::MapActivity</scope><name>point</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_map_activity_1aed79eadfc3b4ccc921164a486e321e1a" prot="package" virt="non-virtual"><scope>com::example::sportssphere::MapActivity</scope><name>searchAddress</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_map_activity_1af4c5604ed3e9015c6e43e9685aa9cdd7" prot="package" virt="non-virtual"><scope>com::example::sportssphere::MapActivity</scope><name>searchButton</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_map_activity_1af7bc3bba12ec2d328ca7c9475d39c671" prot="private" virt="non-virtual"><scope>com::example::sportssphere::MapActivity</scope><name>searchButtonAndImageLogic</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_map_activity_1adab69d4cb4c1cf875da53361b03354ee" prot="package" virt="non-virtual"><scope>com::example::sportssphere::MapActivity</scope><name>searchEnabled</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,308 @@
+\doxysection{coms309.\+Sport.\+Sport\+Controller Class Reference}
+\hypertarget{classcoms309_1_1_sport_1_1_sport_controller}{}\label{classcoms309_1_1_sport_1_1_sport_controller}\index{coms309.Sport.SportController@{coms309.Sport.SportController}}
+
+
+The coms 309. exceptions. not found exception.  
+
+
+
+
+Collaboration diagram for coms309.\+Sport.\+Sport\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classcoms309_1_1_sport_1_1_sport_controller__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{classcoms309_1_1_sport_1_1_sport}{Sport}} $>$ \mbox{\hyperlink{classcoms309_1_1_sport_1_1_sport_controller_ac7457c547dc0f7f0dcaed859a432c8cd}{get\+All\+Sports}} ()
+\begin{DoxyCompactList}\small\item\em Gets all sports. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcoms309_1_1_sport_1_1_sport}{Sport}} \mbox{\hyperlink{classcoms309_1_1_sport_1_1_sport_controller_ad9883e2060c9339605e6a1714c843e2c}{get\+Sport\+By\+Id}} (@Argument int id)
+\begin{DoxyCompactList}\small\item\em Gets sport by identifier. \end{DoxyCompactList}\item 
+Set$<$ Game\+Post $>$ \mbox{\hyperlink{classcoms309_1_1_sport_1_1_sport_controller_a8a539f9e2cfb542ace36c99a60f4b9f8}{get\+All\+Game\+Posts\+Playing\+ASport}} (@Argument int sport\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Gets all game posts playing a sport. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcoms309_1_1_sport_1_1_sport}{Sport}} \mbox{\hyperlink{classcoms309_1_1_sport_1_1_sport_controller_a561eaf15b62f6b6458c06e8ab7f78bb9}{create\+Sport}} (@Argument String sport\+\_\+name, @Argument int skill\+\_\+level\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Creates a sport. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcoms309_1_1_sport_1_1_sport}{Sport}} \mbox{\hyperlink{classcoms309_1_1_sport_1_1_sport_controller_a5dd8b35541acdc8ec0028f9499d80121}{update\+Sport}} (@Argument String sport\+\_\+name, @Argument int sport\+\_\+id, @Argument int skill\+\_\+level\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Updates the sport. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classcoms309_1_1_sport_1_1_sport_controller_aaf308d3abc29290555ba2e4bfb939c8a}{delete\+Sport\+By\+Id}} (@Argument int sport\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Deletes the sport by identifier described by sport\+\_\+id. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classcoms309_1_1_sport_1_1_sport_controller_a8af8bee2b6cb411e0a2879e2a5c75cc2}{delete\+All\+Sports}} ()
+\begin{DoxyCompactList}\small\item\em Deletes all sports. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The coms 309. exceptions. not found exception. 
+
+The coms 309. game post. game post
+
+The coms 309. game post. game post repository
+
+The coms 309. skill level. skill level
+
+The coms 309. skill level. skill level repository
+
+The coms 309. users. user repository
+
+The coms 309. users. users
+
+The jakarta.\+transaction. transactional
+
+The org.\+checkerframework.\+checker.\+units.\+qual. a
+
+The org.\+springframework.\+beans.\+factory.\+annotation. autowired
+
+The org.\+springframework.\+graphql.\+data.\+method.\+annotation. argument
+
+The org.\+springframework.\+graphql.\+data.\+method.\+annotation. mutation mapping
+
+The org.\+springframework.\+graphql.\+data.\+method.\+annotation. query mapping
+
+The org.\+springframework.\+stereotype. controller
+
+Set the java.\+util. hash belongs to
+
+List of java.\+util.\+s
+
+Set the java.\+util. belongs to
+
+A controller for handling sports.
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023 
+\end{DoxyDate}
+
+
+Definition at line \mbox{\hyperlink{_sport_controller_8java_source_l00052}{52}} of file \mbox{\hyperlink{_sport_controller_8java_source}{Sport\+Controller.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcoms309_1_1_sport_1_1_sport_controller_a561eaf15b62f6b6458c06e8ab7f78bb9}\label{classcoms309_1_1_sport_1_1_sport_controller_a561eaf15b62f6b6458c06e8ab7f78bb9} 
+\index{coms309.Sport.SportController@{coms309.Sport.SportController}!createSport@{createSport}}
+\index{createSport@{createSport}!coms309.Sport.SportController@{coms309.Sport.SportController}}
+\doxysubsubsection{\texorpdfstring{createSport()}{createSport()}}
+{\footnotesize\ttfamily Mutation\+Mapping public \mbox{\hyperlink{classcoms309_1_1_sport_1_1_sport}{Sport}} coms309.\+Sport.\+Sport\+Controller.\+create\+Sport (\begin{DoxyParamCaption}\item[{@Argument String}]{sport\+\_\+name,  }\item[{@Argument int}]{skill\+\_\+level\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Creates a sport. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Found\+Exception} & Thrown when the requested element is not present.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em sport\+\_\+name} & Name of the sport. \\
+\hline
+{\em skill\+\_\+level\+\_\+id} & Identifier for the skill level.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new sport. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_sport_controller_8java_source_l00186}{186}} of file \mbox{\hyperlink{_sport_controller_8java_source}{Sport\+Controller.\+java}}.
+
+\Hypertarget{classcoms309_1_1_sport_1_1_sport_controller_a8af8bee2b6cb411e0a2879e2a5c75cc2}\label{classcoms309_1_1_sport_1_1_sport_controller_a8af8bee2b6cb411e0a2879e2a5c75cc2} 
+\index{coms309.Sport.SportController@{coms309.Sport.SportController}!deleteAllSports@{deleteAllSports}}
+\index{deleteAllSports@{deleteAllSports}!coms309.Sport.SportController@{coms309.Sport.SportController}}
+\doxysubsubsection{\texorpdfstring{deleteAllSports()}{deleteAllSports()}}
+{\footnotesize\ttfamily Mutation\+Mapping public String coms309.\+Sport.\+Sport\+Controller.\+delete\+All\+Sports (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deletes all sports. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+A String. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_sport_controller_8java_source_l00269}{269}} of file \mbox{\hyperlink{_sport_controller_8java_source}{Sport\+Controller.\+java}}.
+
+\Hypertarget{classcoms309_1_1_sport_1_1_sport_controller_aaf308d3abc29290555ba2e4bfb939c8a}\label{classcoms309_1_1_sport_1_1_sport_controller_aaf308d3abc29290555ba2e4bfb939c8a} 
+\index{coms309.Sport.SportController@{coms309.Sport.SportController}!deleteSportById@{deleteSportById}}
+\index{deleteSportById@{deleteSportById}!coms309.Sport.SportController@{coms309.Sport.SportController}}
+\doxysubsubsection{\texorpdfstring{deleteSportById()}{deleteSportById()}}
+{\footnotesize\ttfamily Mutation\+Mapping public String coms309.\+Sport.\+Sport\+Controller.\+delete\+Sport\+By\+Id (\begin{DoxyParamCaption}\item[{@Argument int}]{sport\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Deletes the sport by identifier described by sport\+\_\+id. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Found\+Exception} & Thrown when the requested element is not present.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em sport\+\_\+id} & Identifier for the sport.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A String. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_sport_controller_8java_source_l00247}{247}} of file \mbox{\hyperlink{_sport_controller_8java_source}{Sport\+Controller.\+java}}.
+
+\Hypertarget{classcoms309_1_1_sport_1_1_sport_controller_a8a539f9e2cfb542ace36c99a60f4b9f8}\label{classcoms309_1_1_sport_1_1_sport_controller_a8a539f9e2cfb542ace36c99a60f4b9f8} 
+\index{coms309.Sport.SportController@{coms309.Sport.SportController}!getAllGamePostsPlayingASport@{getAllGamePostsPlayingASport}}
+\index{getAllGamePostsPlayingASport@{getAllGamePostsPlayingASport}!coms309.Sport.SportController@{coms309.Sport.SportController}}
+\doxysubsubsection{\texorpdfstring{getAllGamePostsPlayingASport()}{getAllGamePostsPlayingASport()}}
+{\footnotesize\ttfamily Transactional Query\+Mapping public Set$<$ Game\+Post $>$ coms309.\+Sport.\+Sport\+Controller.\+get\+All\+Game\+Posts\+Playing\+ASport (\begin{DoxyParamCaption}\item[{@Argument int}]{sport\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Gets all game posts playing a sport. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Found\+Exception} & Thrown when the requested element is not present.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em sport\+\_\+id} & Identifier for the sport.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+all game posts playing a sport. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_sport_controller_8java_source_l00155}{155}} of file \mbox{\hyperlink{_sport_controller_8java_source}{Sport\+Controller.\+java}}.
+
+\Hypertarget{classcoms309_1_1_sport_1_1_sport_controller_ac7457c547dc0f7f0dcaed859a432c8cd}\label{classcoms309_1_1_sport_1_1_sport_controller_ac7457c547dc0f7f0dcaed859a432c8cd} 
+\index{coms309.Sport.SportController@{coms309.Sport.SportController}!getAllSports@{getAllSports}}
+\index{getAllSports@{getAllSports}!coms309.Sport.SportController@{coms309.Sport.SportController}}
+\doxysubsubsection{\texorpdfstring{getAllSports()}{getAllSports()}}
+{\footnotesize\ttfamily Query\+Mapping public List$<$ \mbox{\hyperlink{classcoms309_1_1_sport_1_1_sport}{Sport}} $>$ coms309.\+Sport.\+Sport\+Controller.\+get\+All\+Sports (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets all sports. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+List\texorpdfstring{$<$}{<}Sport\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_sport_controller_8java_source_l00110}{110}} of file \mbox{\hyperlink{_sport_controller_8java_source}{Sport\+Controller.\+java}}.
+
+\Hypertarget{classcoms309_1_1_sport_1_1_sport_controller_ad9883e2060c9339605e6a1714c843e2c}\label{classcoms309_1_1_sport_1_1_sport_controller_ad9883e2060c9339605e6a1714c843e2c} 
+\index{coms309.Sport.SportController@{coms309.Sport.SportController}!getSportById@{getSportById}}
+\index{getSportById@{getSportById}!coms309.Sport.SportController@{coms309.Sport.SportController}}
+\doxysubsubsection{\texorpdfstring{getSportById()}{getSportById()}}
+{\footnotesize\ttfamily Query\+Mapping public \mbox{\hyperlink{classcoms309_1_1_sport_1_1_sport}{Sport}} coms309.\+Sport.\+Sport\+Controller.\+get\+Sport\+By\+Id (\begin{DoxyParamCaption}\item[{@Argument int}]{id }\end{DoxyParamCaption})}
+
+
+
+Gets sport by identifier. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Found\+Exception} & Thrown when the requested element is not present.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & .\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Sport. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_sport_controller_8java_source_l00130}{130}} of file \mbox{\hyperlink{_sport_controller_8java_source}{Sport\+Controller.\+java}}.
+
+\Hypertarget{classcoms309_1_1_sport_1_1_sport_controller_a5dd8b35541acdc8ec0028f9499d80121}\label{classcoms309_1_1_sport_1_1_sport_controller_a5dd8b35541acdc8ec0028f9499d80121} 
+\index{coms309.Sport.SportController@{coms309.Sport.SportController}!updateSport@{updateSport}}
+\index{updateSport@{updateSport}!coms309.Sport.SportController@{coms309.Sport.SportController}}
+\doxysubsubsection{\texorpdfstring{updateSport()}{updateSport()}}
+{\footnotesize\ttfamily Mutation\+Mapping public \mbox{\hyperlink{classcoms309_1_1_sport_1_1_sport}{Sport}} coms309.\+Sport.\+Sport\+Controller.\+update\+Sport (\begin{DoxyParamCaption}\item[{@Argument String}]{sport\+\_\+name,  }\item[{@Argument int}]{sport\+\_\+id,  }\item[{@Argument int}]{skill\+\_\+level\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Updates the sport. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Found\+Exception} & Thrown when the requested element is not present.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em sport\+\_\+name} & Name of the sport. \\
+\hline
+{\em sport\+\_\+id} & Identifier for the sport. \\
+\hline
+{\em skill\+\_\+level\+\_\+id} & Identifier for the skill level.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Sport. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_sport_controller_8java_source_l00214}{214}} of file \mbox{\hyperlink{_sport_controller_8java_source}{Sport\+Controller.\+java}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Arie/\+Develop/hb\+\_\+215/\+Backend/src/main/java/coms309/\+Sport/\mbox{\hyperlink{_sport_controller_8java}{Sport\+Controller.\+java}}\end{DoxyCompactItemize}

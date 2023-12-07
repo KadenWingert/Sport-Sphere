@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/backgroundLayout">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/profileInfoLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/homeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_back_to_home"
+            android:layout_marginBottom="90dp" />
+
+        <!-- First name Label -->
+        <TextView
+            android:id="@+id/firstNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="75dp"
+            android:layout_marginEnd="48dp"
+            android:paddingLeft="10dp"
+            android:text="First Name"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <!-- First Name  -->
+        <EditText
+            android:id="@+id/firstNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginEnd="75dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <!-- Last name Label -->
+        <TextView
+            android:id="@+id/lastNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="75dp"
+            android:layout_marginEnd="48dp"
+            android:paddingLeft="10dp"
+            android:text="Last Name"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <!-- Last Name  -->
+        <EditText
+            android:id="@+id/lastNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginEnd="75dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:padding="8dp"
+            android:text="Save"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Email info label -->
+        <TextView
+            android:id="@+id/emailLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="75dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="20dp"
+            android:text="Email: "
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+
+        <!-- password label -->
+        <TextView
+            android:id="@+id/passwordLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="75dp"
+            android:layout_marginEnd="48dp"
+            android:text="Password: "
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <!-- change password label -->
+        <TextView
+            android:id="@+id/changePassword"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="-21.75dp"
+            android:text="Change Password "
+            android:textColor="#000000"
+            android:textColorLink="@color/blue4"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

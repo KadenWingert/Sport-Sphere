@@ -1,0 +1,477 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcoms309_1_1_sport_1_1_sport_controller" kind="class" language="Java" prot="public">
+    <compoundname>coms309::Sport::SportController</compoundname>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcoms309_1_1_sport_1_1_sport_controller_1a296bc5f70cebcf19bfa0a45a67e3431d" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecoms309_1_1_sport_1_1_sport_repository" kindref="compound">SportRepository</ref></type>
+        <definition>Autowired SportRepository coms309.Sport.SportController::sportRepository</definition>
+        <argsstring></argsstring>
+        <name>sportRepository</name>
+        <qualifiedname>coms309.Sport.SportController.sportRepository</qualifiedname>
+        <briefdescription>
+<para>Gets the sport repository. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The sport repository. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Sport/SportController.java" line="63" column="21" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Sport/SportController.java" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_sport_1_1_sport_controller_1ad3bfbb34aa4851fe66233e855a1b54b7" prot="package" static="no" mutable="no">
+        <type>GamePostRepository</type>
+        <definition>Autowired GamePostRepository coms309.Sport.SportController::gamePostRepository</definition>
+        <argsstring></argsstring>
+        <name>gamePostRepository</name>
+        <qualifiedname>coms309.Sport.SportController.gamePostRepository</qualifiedname>
+        <briefdescription>
+<para>Gets the game post repository. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The game post repository. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Sport/SportController.java" line="74" column="24" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Sport/SportController.java" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_sport_1_1_sport_controller_1aaebd4af72ced694f1c3d1ce6f4377af8" prot="package" static="no" mutable="no">
+        <type>SkillLevelRepository</type>
+        <definition>Autowired SkillLevelRepository coms309.Sport.SportController::skillLevelRepository</definition>
+        <argsstring></argsstring>
+        <name>skillLevelRepository</name>
+        <qualifiedname>coms309.Sport.SportController.skillLevelRepository</qualifiedname>
+        <briefdescription>
+<para>Gets the skill level repository. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The skill level repository. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Sport/SportController.java" line="85" column="26" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Sport/SportController.java" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_sport_1_1_sport_controller_1a286a3659b2bddb860f5e9e247c407316" prot="package" static="no" mutable="no">
+        <type>UserRepository</type>
+        <definition>Autowired UserRepository coms309.Sport.SportController::userRepository</definition>
+        <argsstring></argsstring>
+        <name>userRepository</name>
+        <qualifiedname>coms309.Sport.SportController.userRepository</qualifiedname>
+        <briefdescription>
+<para>Gets the user repository. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The user repository. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Sport/SportController.java" line="96" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Sport/SportController.java" bodystart="96" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcoms309_1_1_sport_1_1_sport_controller_1ac7457c547dc0f7f0dcaed859a432c8cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcoms309_1_1_sport_1_1_sport" kindref="compound">Sport</ref> &gt;</type>
+        <definition>QueryMapping public List&lt; Sport &gt; coms309.Sport.SportController::getAllSports</definition>
+        <argsstring>()</argsstring>
+        <name>getAllSports</name>
+        <qualifiedname>coms309.Sport.SportController.getAllSports</qualifiedname>
+        <briefdescription>
+<para>Gets all sports. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>List&lt;Sport&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Sport/SportController.java" line="110" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Sport/SportController.java" bodystart="110" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_sport_1_1_sport_controller_1ad9883e2060c9339605e6a1714c843e2c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcoms309_1_1_sport_1_1_sport" kindref="compound">Sport</ref></type>
+        <definition>QueryMapping public Sport coms309.Sport.SportController::getSportById</definition>
+        <argsstring>(@Argument int id)</argsstring>
+        <name>getSportById</name>
+        <qualifiedname>coms309.Sport.SportController.getSportById</qualifiedname>
+        <param>
+          <type>@Argument int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Gets sport by identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>NotFoundException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when the requested element is not present.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Sport. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Sport/SportController.java" line="130" column="18" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Sport/SportController.java" bodystart="130" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_sport_1_1_sport_controller_1a8a539f9e2cfb542ace36c99a60f4b9f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Set&lt; GamePost &gt;</type>
+        <definition>Transactional QueryMapping public Set&lt; GamePost &gt; coms309.Sport.SportController::getAllGamePostsPlayingASport</definition>
+        <argsstring>(@Argument int sport_id)</argsstring>
+        <name>getAllGamePostsPlayingASport</name>
+        <qualifiedname>coms309.Sport.SportController.getAllGamePostsPlayingASport</qualifiedname>
+        <param>
+          <type>@Argument int</type>
+          <declname>sport_id</declname>
+        </param>
+        <briefdescription>
+<para>Gets all game posts playing a sport. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>NotFoundException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when the requested element is not present.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sport_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier for the sport.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>all game posts playing a sport. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Sport/SportController.java" line="155" column="16" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Sport/SportController.java" bodystart="155" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_sport_1_1_sport_controller_1a561eaf15b62f6b6458c06e8ab7f78bb9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcoms309_1_1_sport_1_1_sport" kindref="compound">Sport</ref></type>
+        <definition>MutationMapping public Sport coms309.Sport.SportController::createSport</definition>
+        <argsstring>(@Argument String sport_name, @Argument int skill_level_id)</argsstring>
+        <name>createSport</name>
+        <qualifiedname>coms309.Sport.SportController.createSport</qualifiedname>
+        <param>
+          <type>@Argument String</type>
+          <declname>sport_name</declname>
+        </param>
+        <param>
+          <type>@Argument int</type>
+          <declname>skill_level_id</declname>
+        </param>
+        <briefdescription>
+<para>Creates a sport. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>NotFoundException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when the requested element is not present.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sport_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the sport. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skill_level_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier for the skill level.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new sport. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Sport/SportController.java" line="186" column="18" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Sport/SportController.java" bodystart="186" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_sport_1_1_sport_controller_1a5dd8b35541acdc8ec0028f9499d80121" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcoms309_1_1_sport_1_1_sport" kindref="compound">Sport</ref></type>
+        <definition>MutationMapping public Sport coms309.Sport.SportController::updateSport</definition>
+        <argsstring>(@Argument String sport_name, @Argument int sport_id, @Argument int skill_level_id)</argsstring>
+        <name>updateSport</name>
+        <qualifiedname>coms309.Sport.SportController.updateSport</qualifiedname>
+        <param>
+          <type>@Argument String</type>
+          <declname>sport_name</declname>
+        </param>
+        <param>
+          <type>@Argument int</type>
+          <declname>sport_id</declname>
+        </param>
+        <param>
+          <type>@Argument int</type>
+          <declname>skill_level_id</declname>
+        </param>
+        <briefdescription>
+<para>Updates the sport. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>NotFoundException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when the requested element is not present.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sport_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the sport. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sport_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier for the sport. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skill_level_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier for the skill level.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A Sport. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Sport/SportController.java" line="214" column="18" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Sport/SportController.java" bodystart="214" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_sport_1_1_sport_controller_1aaf308d3abc29290555ba2e4bfb939c8a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>MutationMapping public String coms309.Sport.SportController::deleteSportById</definition>
+        <argsstring>(@Argument int sport_id)</argsstring>
+        <name>deleteSportById</name>
+        <qualifiedname>coms309.Sport.SportController.deleteSportById</qualifiedname>
+        <param>
+          <type>@Argument int</type>
+          <declname>sport_id</declname>
+        </param>
+        <briefdescription>
+<para>Deletes the sport by identifier described by sport_id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>NotFoundException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when the requested element is not present.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sport_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier for the sport.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A String. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Sport/SportController.java" line="247" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Sport/SportController.java" bodystart="247" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_sport_1_1_sport_controller_1a8af8bee2b6cb411e0a2879e2a5c75cc2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>MutationMapping public String coms309.Sport.SportController::deleteAllSports</definition>
+        <argsstring>()</argsstring>
+        <name>deleteAllSports</name>
+        <qualifiedname>coms309.Sport.SportController.deleteAllSports</qualifiedname>
+        <briefdescription>
+<para>Deletes all sports. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>A String. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Sport/SportController.java" line="269" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Sport/SportController.java" bodystart="269" bodyend="275"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcoms309_1_1_sport_1_1_sport_controller_1a1e93e793f2ad5883a7d3b85186dd8291" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>private void coms309.Sport.SportController::deleteSport</definition>
+        <argsstring>(Sport s)</argsstring>
+        <name>deleteSport</name>
+        <qualifiedname>coms309.Sport.SportController.deleteSport</qualifiedname>
+        <param>
+          <type><ref refid="classcoms309_1_1_sport_1_1_sport" kindref="compound">Sport</ref></type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Helper method used in deleting an individual sport. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A Sport to process. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Sport/SportController.java" line="288" column="18" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Sport/SportController.java" bodystart="288" bodyend="302"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The coms 309. exceptions. not found exception. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The coms 309. game post. game post</para>
+<para>The coms 309. game post. game post repository</para>
+<para>The coms 309. skill level. skill level</para>
+<para>The coms 309. skill level. skill level repository</para>
+<para>The coms 309. users. user repository</para>
+<para>The coms 309. users. users</para>
+<para>The jakarta.transaction. transactional</para>
+<para>The org.checkerframework.checker.units.qual. a</para>
+<para>The org.springframework.beans.factory.annotation. autowired</para>
+<para>The org.springframework.graphql.data.method.annotation. argument</para>
+<para>The org.springframework.graphql.data.method.annotation. mutation mapping</para>
+<para>The org.springframework.graphql.data.method.annotation. query mapping</para>
+<para>The org.springframework.stereotype. controller</para>
+<para>Set the java.util. hash belongs to</para>
+<para>List of java.util.s</para>
+<para>Set the java.util. belongs to</para>
+<para>A controller for handling sports.</para>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>JpaRepository&lt; Sport, Integer &gt;</label>
+      </node>
+      <node id="1">
+        <label>coms309.Sport.SportController</label>
+        <link refid="classcoms309_1_1_sport_1_1_sport_controller"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>~sportRepository</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>coms309.Sport.SportRepository</label>
+        <link refid="interfacecoms309_1_1_sport_1_1_sport_repository"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Sport/SportController.java" line="52" column="7" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Sport/SportController.java" bodystart="52" bodyend="303"/>
+    <listofallmembers>
+      <member refid="classcoms309_1_1_sport_1_1_sport_controller_1a561eaf15b62f6b6458c06e8ab7f78bb9" prot="public" virt="non-virtual"><scope>coms309::Sport::SportController</scope><name>createSport</name></member>
+      <member refid="classcoms309_1_1_sport_1_1_sport_controller_1a8af8bee2b6cb411e0a2879e2a5c75cc2" prot="public" virt="non-virtual"><scope>coms309::Sport::SportController</scope><name>deleteAllSports</name></member>
+      <member refid="classcoms309_1_1_sport_1_1_sport_controller_1a1e93e793f2ad5883a7d3b85186dd8291" prot="private" virt="non-virtual"><scope>coms309::Sport::SportController</scope><name>deleteSport</name></member>
+      <member refid="classcoms309_1_1_sport_1_1_sport_controller_1aaf308d3abc29290555ba2e4bfb939c8a" prot="public" virt="non-virtual"><scope>coms309::Sport::SportController</scope><name>deleteSportById</name></member>
+      <member refid="classcoms309_1_1_sport_1_1_sport_controller_1ad3bfbb34aa4851fe66233e855a1b54b7" prot="package" virt="non-virtual"><scope>coms309::Sport::SportController</scope><name>gamePostRepository</name></member>
+      <member refid="classcoms309_1_1_sport_1_1_sport_controller_1a8a539f9e2cfb542ace36c99a60f4b9f8" prot="public" virt="non-virtual"><scope>coms309::Sport::SportController</scope><name>getAllGamePostsPlayingASport</name></member>
+      <member refid="classcoms309_1_1_sport_1_1_sport_controller_1ac7457c547dc0f7f0dcaed859a432c8cd" prot="public" virt="non-virtual"><scope>coms309::Sport::SportController</scope><name>getAllSports</name></member>
+      <member refid="classcoms309_1_1_sport_1_1_sport_controller_1ad9883e2060c9339605e6a1714c843e2c" prot="public" virt="non-virtual"><scope>coms309::Sport::SportController</scope><name>getSportById</name></member>
+      <member refid="classcoms309_1_1_sport_1_1_sport_controller_1aaebd4af72ced694f1c3d1ce6f4377af8" prot="package" virt="non-virtual"><scope>coms309::Sport::SportController</scope><name>skillLevelRepository</name></member>
+      <member refid="classcoms309_1_1_sport_1_1_sport_controller_1a296bc5f70cebcf19bfa0a45a67e3431d" prot="package" virt="non-virtual"><scope>coms309::Sport::SportController</scope><name>sportRepository</name></member>
+      <member refid="classcoms309_1_1_sport_1_1_sport_controller_1a5dd8b35541acdc8ec0028f9499d80121" prot="public" virt="non-virtual"><scope>coms309::Sport::SportController</scope><name>updateSport</name></member>
+      <member refid="classcoms309_1_1_sport_1_1_sport_controller_1a286a3659b2bddb860f5e9e247c407316" prot="package" virt="non-virtual"><scope>coms309::Sport::SportController</scope><name>userRepository</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,68 @@
+\doxysection{Comment.\+java}
+\hypertarget{_comment_8java_source}{}\label{_comment_8java_source}\index{C:/Users/Arie/Develop/hb\_215/Backend/src/main/java/coms309/Comment/Comment.java@{C:/Users/Arie/Develop/hb\_215/Backend/src/main/java/coms309/Comment/Comment.java}}
+\mbox{\hyperlink{_comment_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00004}\mbox{\hyperlink{namespacecoms309_1_1_comment}{00004}}\ \textcolor{keyword}{package\ }coms309.Comment;}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00007}00007\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_game_post}{GamePost}}.\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post}{GamePost}};}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00009}00009\ \textcolor{keyword}{import}\ jakarta.persistence.*;}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00011}00011\ \textcolor{keyword}{import}\ lombok.NoArgsConstructor;}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00013}00013\ \textcolor{comment}{/**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00022}00022\ @Entity}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00023}00023\ @NoArgsConstructor}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00024}\mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment}{00024}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment}{Comment}}\ \{}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00026}00026\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00037}00037\ \ \ \ \ @Id}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00038}00038\ \ \ \ \ @GeneratedValue(strategy\ =\ GenerationType.IDENTITY)}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00039}00039\ \ \ \ \ @Column(name\ =\ \textcolor{stringliteral}{"{}id"{}})}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00040}00040\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{int}\ id;}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00043}00043\ \ \ \ \ \textcolor{keyword}{private}\ String\ message;}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00045}00045\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00056}00056\ \ \ \ \ @ManyToOne}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00057}00057\ \ \ \ \ @JoinColumn(name\ =\ \textcolor{stringliteral}{"{}game\_post\_id"{}})}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00058}00058\ \ \ \ \ \textcolor{keyword}{private}\ GamePost\ gamePost;}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00060}00060\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00072}\mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment_a5b5808c76f0f4251054fa56544b01eb2}{00072}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment_a5b5808c76f0f4251054fa56544b01eb2}{Comment}}(String\ message,\ GamePost\ gamePost)\ \{}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00073}00073\ \ \ \ \ \ \ \ \ this.message\ =\ message;}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00074}00074\ \ \ \ \ \ \ \ \ this.gamePost\ =\ gamePost;}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00075}00075\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00076}00076\ }
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00077}00077\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00088}\mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment_a321445f4a18b17d71ced5575c9cf27f0}{00088}}\ \ \ \ \ \textcolor{keyword}{public}\ String\ \mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment_a321445f4a18b17d71ced5575c9cf27f0}{getMessage}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00089}00089\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ message;}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00090}00090\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00091}00091\ }
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00092}00092\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00103}\mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment_aa7862a32c74f91dada4ca9fabec1f6ae}{00103}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment_aa7862a32c74f91dada4ca9fabec1f6ae}{setMessage}}(String\ message)\ \{}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00104}00104\ \ \ \ \ \ \ \ \ this.message\ =\ message;}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00105}00105\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00106}00106\ }
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00107}00107\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00118}\mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment_aa0f71b1fdc3ac7cd727e501defd62f45}{00118}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment_aa0f71b1fdc3ac7cd727e501defd62f45}{getId}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00119}00119\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ id;}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00120}00120\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00121}00121\ }
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00122}00122\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00133}\mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment_ac78c7b535fd4ecedbc267db03a2e814d}{00133}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment_ac78c7b535fd4ecedbc267db03a2e814d}{setId}}(\textcolor{keywordtype}{int}\ comment\_id)\ \{}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00134}00134\ \ \ \ \ \ \ \ \ this.id\ =\ comment\_id;}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00135}00135\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00136}00136\ }
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00137}00137\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00148}\mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment_ae8a8b7cc850be1bda87578e7323f3cd9}{00148}}\ \ \ \ \ \textcolor{keyword}{public}\ GamePost\ \mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment_ae8a8b7cc850be1bda87578e7323f3cd9}{getGamePost}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00149}00149\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ gamePost;}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00150}00150\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00151}00151\ }
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00152}00152\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00163}\mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment_a2addc1056771988cd6250e96a0e71c01}{00163}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment_a2addc1056771988cd6250e96a0e71c01}{setGamePost}}(GamePost\ gamePost)\ \{}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00164}00164\ \ \ \ \ \ \ \ \ this.gamePost\ =\ gamePost;}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00165}00165\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_comment_8java_source_l00166}00166\ \}}
+
+\end{DoxyCode}

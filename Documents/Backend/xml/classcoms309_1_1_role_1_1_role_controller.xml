@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcoms309_1_1_role_1_1_role_controller" kind="class" language="Java" prot="public">
+    <compoundname>coms309::Role::RoleController</compoundname>
+    <briefdescription>
+<para>The org.springframework.stereotype. controller. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A controller for handling roles.</para>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>coms309.Role.RoleController</label>
+        <link refid="classcoms309_1_1_role_1_1_role_controller"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Role/RoleController.java" line="19" column="7" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Role/RoleController.java" bodystart="19" bodyend="21"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

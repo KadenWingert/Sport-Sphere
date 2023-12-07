@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcom_1_1mockito_1_1_test_user_controller" kind="class" language="Java" prot="public">
+    <compoundname>com::mockito::TestUserController</compoundname>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1mockito_1_1_test_user_controller_1adcc0958dd18ef7b1df04c29680dfa39d" prot="package" static="no" mutable="no">
+        <type>UserController</type>
+        <definition>UserController com.mockito.TestUserController.userController</definition>
+        <argsstring></argsstring>
+        <name>userController</name>
+        <qualifiedname>com.mockito.TestUserController.userController</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/TestUserController.java" line="22" column="16" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/TestUserController.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1mockito_1_1_test_user_controller_1a1b54c2f94b8b9834c696d4c7aa0d43e8" prot="package" static="no" mutable="no">
+        <type>UserRepository</type>
+        <definition>UserRepository com.mockito.TestUserController.repo</definition>
+        <argsstring></argsstring>
+        <name>repo</name>
+        <qualifiedname>com.mockito.TestUserController.repo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/TestUserController.java" line="25" column="16" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/TestUserController.java" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1mockito_1_1_test_user_controller_1aceea72d07c6bfd37200f711f2316a149" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.mockito.TestUserController.init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <qualifiedname>com.mockito.TestUserController.init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/TestUserController.java" line="28" column="13" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/TestUserController.java" bodystart="28" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1mockito_1_1_test_user_controller_1aae6051d6032b066d41e52faeb273a7a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.mockito.TestUserController.getUserByIdTest</definition>
+        <argsstring>()</argsstring>
+        <name>getUserByIdTest</name>
+        <qualifiedname>com.mockito.TestUserController.getUserByIdTest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/TestUserController.java" line="33" column="13" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/TestUserController.java" bodystart="33" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1mockito_1_1_test_user_controller_1aae290f3a660837acb1e0fc8f88afeef5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.mockito.TestUserController.getAllUsers</definition>
+        <argsstring>()</argsstring>
+        <name>getAllUsers</name>
+        <qualifiedname>com.mockito.TestUserController.getAllUsers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/TestUserController.java" line="45" column="13" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/TestUserController.java" bodystart="45" bodyend="61"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.mockito.TestUserController</label>
+        <link refid="classcom_1_1mockito_1_1_test_user_controller"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/TestUserController.java" line="19" column="7" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/TestUserController.java" bodystart="19" bodyend="64"/>
+    <listofallmembers>
+      <member refid="classcom_1_1mockito_1_1_test_user_controller_1aae290f3a660837acb1e0fc8f88afeef5" prot="public" virt="non-virtual"><scope>com::mockito::TestUserController</scope><name>getAllUsers</name></member>
+      <member refid="classcom_1_1mockito_1_1_test_user_controller_1aae6051d6032b066d41e52faeb273a7a0" prot="public" virt="non-virtual"><scope>com::mockito::TestUserController</scope><name>getUserByIdTest</name></member>
+      <member refid="classcom_1_1mockito_1_1_test_user_controller_1aceea72d07c6bfd37200f711f2316a149" prot="public" virt="non-virtual"><scope>com::mockito::TestUserController</scope><name>init</name></member>
+      <member refid="classcom_1_1mockito_1_1_test_user_controller_1a1b54c2f94b8b9834c696d4c7aa0d43e8" prot="package" virt="non-virtual"><scope>com::mockito::TestUserController</scope><name>repo</name></member>
+      <member refid="classcom_1_1mockito_1_1_test_user_controller_1adcc0958dd18ef7b1df04c29680dfa39d" prot="package" virt="non-virtual"><scope>com::mockito::TestUserController</scope><name>userController</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

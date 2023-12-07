@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcoms309_1_1_location_1_1_location" kind="class" language="Java" prot="public">
+    <compoundname>coms309::Location::Location</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcoms309_1_1_location_1_1_location_1af050e5084837b61825d8c102b1849263" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int coms309.Location.Location.id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>coms309.Location.Location.id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/Location.java" line="60" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/Location.java" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_location_1_1_location_1a7d8a7eb92000bd64349d629a243e2b34" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String coms309.Location.Location.address</definition>
+        <argsstring></argsstring>
+        <name>address</name>
+        <qualifiedname>coms309.Location.Location.address</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/Location.java" line="74" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/Location.java" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_location_1_1_location_1a187c273a94eccd406290e6a9f4d22679" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String coms309.Location.Location.gps</definition>
+        <argsstring></argsstring>
+        <name>gps</name>
+        <qualifiedname>coms309.Location.Location.gps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/Location.java" line="88" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/Location.java" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_location_1_1_location_1a9632e9065994db4ad1973e993b234b40" prot="private" static="no" mutable="no">
+        <type>GamePost</type>
+        <definition>OneToOne JsonIgnore private GamePost coms309.Location.Location::gamePost</definition>
+        <argsstring></argsstring>
+        <name>gamePost</name>
+        <qualifiedname>coms309.Location.Location.gamePost</qualifiedname>
+        <briefdescription>
+<para>Gets the game post. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The game post. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/Location.java" line="99" column="22" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/Location.java" bodystart="99" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcoms309_1_1_location_1_1_location_1a5d6053095482eddb8a8a3c6d7aec5cd6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>public coms309.Location.Location::Location</definition>
+        <argsstring>(String address, String gps, GamePost gamePost)</argsstring>
+        <name>Location</name>
+        <qualifiedname>coms309.Location.Location.Location</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>gps</declname>
+        </param>
+        <param>
+          <type>GamePost</type>
+          <declname>gamePost</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The address. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The GPS. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gamePost</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The game post. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/Location.java" line="114" column="12" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/Location.java" bodystart="114" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_location_1_1_location_1a1ce20a20f11c4bf658075b53fd341f59" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>public coms309.Location.Location::Location</definition>
+        <argsstring>(String address, String gps)</argsstring>
+        <name>Location</name>
+        <qualifiedname>coms309.Location.Location.Location</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>gps</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The address. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The GPS. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/Location.java" line="132" column="12" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/Location.java" bodystart="132" bodyend="135"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The jakarta.persistence. entity. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The jakarta.persistence. generated value</para>
+<para>Type of the jakarta.persistence. generation</para>
+<para>Identifier for the jakarta.persistence.</para>
+<para>The com.fasterxml.jackson.annotation. JSON ignore</para>
+<para>The coms 309. game post. game post</para>
+<para>The jakarta.persistence.*</para>
+<para>(Immutable) the jakarta.validation.constraints. not null</para>
+<para>The lombok. getter</para>
+<para>The lombok. no arguments constructor</para>
+<para>The lombok. setter</para>
+<para>The org.hibernate.annotations. not found</para>
+<para>The org.hibernate.annotations. not found action</para>
+<para>Location</para>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>coms309.Location.Location</label>
+        <link refid="classcoms309_1_1_location_1_1_location"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/Location.java" line="44" column="7" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/Location.java" bodystart="44" bodyend="136"/>
+    <listofallmembers>
+      <member refid="classcoms309_1_1_location_1_1_location_1a7d8a7eb92000bd64349d629a243e2b34" prot="private" virt="non-virtual"><scope>coms309::Location::Location</scope><name>address</name></member>
+      <member refid="classcoms309_1_1_location_1_1_location_1a9632e9065994db4ad1973e993b234b40" prot="private" virt="non-virtual"><scope>coms309::Location::Location</scope><name>gamePost</name></member>
+      <member refid="classcoms309_1_1_location_1_1_location_1a187c273a94eccd406290e6a9f4d22679" prot="private" virt="non-virtual"><scope>coms309::Location::Location</scope><name>gps</name></member>
+      <member refid="classcoms309_1_1_location_1_1_location_1af050e5084837b61825d8c102b1849263" prot="private" virt="non-virtual"><scope>coms309::Location::Location</scope><name>id</name></member>
+      <member refid="classcoms309_1_1_location_1_1_location_1a5d6053095482eddb8a8a3c6d7aec5cd6" prot="public" virt="non-virtual"><scope>coms309::Location::Location</scope><name>Location</name></member>
+      <member refid="classcoms309_1_1_location_1_1_location_1a1ce20a20f11c4bf658075b53fd341f59" prot="public" virt="non-virtual"><scope>coms309::Location::Location</scope><name>Location</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_ba7aacfaa07e6e5202173b2b494b9e85" kind="dir">
+    <compoundname>C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com</compoundname>
+    <innerdir refid="dir_24538cd156507857ad53583c215f22af">C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\main",
+    "\\src\\main\\java",
+    "\\src\\main\\java\\coms309",
+    "\\src\\main\\java\\coms309\\GamePost",
+    "\\src\\main\\java\\coms309\\Location",
+    "\\src\\main\\java\\coms309\\Role",
+    "\\src\\main\\java\\coms309\\SkillLevel",
+    "\\src\\main\\java\\coms309\\Sport"
+  ],
+  "SelectedNode": "\\src\\main\\java\\coms309\\Auth\\Auth.java",
+  "PreviewInSolutionExplorer": false
+}

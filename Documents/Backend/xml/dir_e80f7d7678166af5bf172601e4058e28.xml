@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_e80f7d7678166af5bf172601e4058e28" kind="dir">
+    <compoundname>C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Websocket</compoundname>
+    <innerfile refid="_web_socket_config_8java">WebSocketConfig.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Websocket/"/>
+  </compounddef>
+</doxygen>

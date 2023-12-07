@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcom_1_1example_1_1sportssphere_1_1_sign_up_activity" kind="class" language="Java" prot="public">
+    <compoundname>com::example::sportssphere::SignUpActivity</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">AppCompatActivity</basecompoundref>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_sign_up_activity_1a3efdb26ed0ff598f014ee505cfa869fd" prot="package" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button com.example.sportssphere.SignUpActivity.submitButton</definition>
+        <argsstring></argsstring>
+        <name>submitButton</name>
+        <qualifiedname>com.example.sportssphere.SignUpActivity.submitButton</qualifiedname>
+        <briefdescription>
+<para>The submit control. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/SignUpActivity.java" line="46" column="12" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/SignUpActivity.java" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_sign_up_activity_1aad22eed82beaff8880f8475f6bf871ab" prot="package" static="no" mutable="no">
+        <type>EditText</type>
+        <definition>EditText com.example.sportssphere.SignUpActivity.firstNameEditText</definition>
+        <argsstring></argsstring>
+        <name>firstNameEditText</name>
+        <qualifiedname>com.example.sportssphere.SignUpActivity.firstNameEditText</qualifiedname>
+        <briefdescription>
+<para>The first name edit text. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/SignUpActivity.java" line="48" column="14" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/SignUpActivity.java" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_sign_up_activity_1a99b140c25294f5d66e846ec812b767bb" prot="package" static="no" mutable="no">
+        <type>EditText</type>
+        <definition>EditText com.example.sportssphere.SignUpActivity.lastNameEditText</definition>
+        <argsstring></argsstring>
+        <name>lastNameEditText</name>
+        <qualifiedname>com.example.sportssphere.SignUpActivity.lastNameEditText</qualifiedname>
+        <briefdescription>
+<para>The last name edit text. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/SignUpActivity.java" line="50" column="14" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/SignUpActivity.java" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_sign_up_activity_1ad74c49fed6cd17c52662747de4c800cf" prot="package" static="no" mutable="no">
+        <type>EditText</type>
+        <definition>EditText com.example.sportssphere.SignUpActivity.emailEditText</definition>
+        <argsstring></argsstring>
+        <name>emailEditText</name>
+        <qualifiedname>com.example.sportssphere.SignUpActivity.emailEditText</qualifiedname>
+        <briefdescription>
+<para>The email edit text. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/SignUpActivity.java" line="52" column="14" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/SignUpActivity.java" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_sign_up_activity_1a13cd0098621e90037d2f8308105292f3" prot="package" static="no" mutable="no">
+        <type>EditText</type>
+        <definition>EditText com.example.sportssphere.SignUpActivity.passwordEditText</definition>
+        <argsstring></argsstring>
+        <name>passwordEditText</name>
+        <qualifiedname>com.example.sportssphere.SignUpActivity.passwordEditText</qualifiedname>
+        <briefdescription>
+<para>The password edit text. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/SignUpActivity.java" line="54" column="14" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/SignUpActivity.java" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_sign_up_activity_1aa74dcd6df2d8166c9f87bf4248d9489d" prot="package" static="no" mutable="no">
+        <type>EditText</type>
+        <definition>EditText com.example.sportssphere.SignUpActivity.confirmPasswordEditText</definition>
+        <argsstring></argsstring>
+        <name>confirmPasswordEditText</name>
+        <qualifiedname>com.example.sportssphere.SignUpActivity.confirmPasswordEditText</qualifiedname>
+        <briefdescription>
+<para>The confirm password edit text. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/SignUpActivity.java" line="56" column="14" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/SignUpActivity.java" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_sign_up_activity_1afb5e17fd334b5c94b64dbefeef8fab57" prot="package" static="no" mutable="no">
+        <type>ImageView</type>
+        <definition>ImageView com.example.sportssphere.SignUpActivity.logo</definition>
+        <argsstring></argsstring>
+        <name>logo</name>
+        <qualifiedname>com.example.sportssphere.SignUpActivity.logo</qualifiedname>
+        <briefdescription>
+<para>The logo. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/SignUpActivity.java" line="58" column="15" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/SignUpActivity.java" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_sign_up_activity_1a416cf8afbdc3c68d4c92500551c35454" prot="package" static="no" mutable="no">
+        <type>ApolloClient</type>
+        <definition>ApolloClient com.example.sportssphere.SignUpActivity.apolloClient</definition>
+        <argsstring></argsstring>
+        <name>apolloClient</name>
+        <qualifiedname>com.example.sportssphere.SignUpActivity.apolloClient</qualifiedname>
+        <briefdescription>
+<para>The apollo client. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/SignUpActivity.java" line="61" column="18" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/SignUpActivity.java" bodystart="61" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classcom_1_1example_1_1sportssphere_1_1_sign_up_activity_1a988290fab964436631cb4be46a9b40bf" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>Override protected void com.example.sportssphere.SignUpActivity::onCreate</definition>
+        <argsstring>(Bundle savedInstanceState)</argsstring>
+        <name>onCreate</name>
+        <qualifiedname>com.example.sportssphere.SignUpActivity.onCreate</qualifiedname>
+        <param>
+          <type>Bundle</type>
+          <declname>savedInstanceState</declname>
+        </param>
+        <briefdescription>
+<para>Executes the &apos;create&apos; action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>savedInstanceState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/SignUpActivity.java" line="75" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/SignUpActivity.java" bodystart="75" bodyend="137"/>
+        <references refid="classcom_1_1example_1_1sportssphere_1_1_apollo_client_provider_1a2884e2dafe4a18e4b61730aafb948735" compoundref="_apollo_client_provider_8java" startline="32" endline="37">com.example.sportssphere.ApolloClientProvider.setupApolloClient</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The android.content. intent. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The android.os. bundle</para>
+<para>The android.util. log</para>
+<para>The android.view. view</para>
+<para>The android.widget. button</para>
+<para>The android.widget. edit text</para>
+<para>The android.widget. image view</para>
+<para>The android.widget. toast</para>
+<para>The androidx.annotation. non null</para>
+<para>The androidx.appcompat.app. application compatible activity</para>
+<para>The com.apollographql.apollo. apollo call</para>
+<para>The com.apollographql.apollo. apollo client</para>
+<para>The com.apollographql.apollo.api. response</para>
+<para>The com.apollographql.apollo.exception. apollo exception</para>
+<para>A sign up activity.</para>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AppCompatActivity</label>
+      </node>
+      <node id="1">
+        <label>com.example.sportssphere.SignUpActivity</label>
+        <link refid="classcom_1_1example_1_1sportssphere_1_1_sign_up_activity"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AppCompatActivity</label>
+      </node>
+      <node id="1">
+        <label>com.example.sportssphere.SignUpActivity</label>
+        <link refid="classcom_1_1example_1_1sportssphere_1_1_sign_up_activity"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/SignUpActivity.java" line="44" column="7" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/SignUpActivity.java" bodystart="44" bodyend="138"/>
+    <listofallmembers>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_sign_up_activity_1a416cf8afbdc3c68d4c92500551c35454" prot="package" virt="non-virtual"><scope>com::example::sportssphere::SignUpActivity</scope><name>apolloClient</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_sign_up_activity_1aa74dcd6df2d8166c9f87bf4248d9489d" prot="package" virt="non-virtual"><scope>com::example::sportssphere::SignUpActivity</scope><name>confirmPasswordEditText</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_sign_up_activity_1ad74c49fed6cd17c52662747de4c800cf" prot="package" virt="non-virtual"><scope>com::example::sportssphere::SignUpActivity</scope><name>emailEditText</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_sign_up_activity_1aad22eed82beaff8880f8475f6bf871ab" prot="package" virt="non-virtual"><scope>com::example::sportssphere::SignUpActivity</scope><name>firstNameEditText</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_sign_up_activity_1a99b140c25294f5d66e846ec812b767bb" prot="package" virt="non-virtual"><scope>com::example::sportssphere::SignUpActivity</scope><name>lastNameEditText</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_sign_up_activity_1afb5e17fd334b5c94b64dbefeef8fab57" prot="package" virt="non-virtual"><scope>com::example::sportssphere::SignUpActivity</scope><name>logo</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_sign_up_activity_1a988290fab964436631cb4be46a9b40bf" prot="protected" virt="non-virtual"><scope>com::example::sportssphere::SignUpActivity</scope><name>onCreate</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_sign_up_activity_1a13cd0098621e90037d2f8308105292f3" prot="package" virt="non-virtual"><scope>com::example::sportssphere::SignUpActivity</scope><name>passwordEditText</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_sign_up_activity_1a3efdb26ed0ff598f014ee505cfa869fd" prot="package" virt="non-virtual"><scope>com::example::sportssphere::SignUpActivity</scope><name>submitButton</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

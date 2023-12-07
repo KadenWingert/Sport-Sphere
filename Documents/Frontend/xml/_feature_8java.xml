@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_feature_8java" kind="file" language="Java">
+    <compoundname>Feature.java</compoundname>
+    <includes local="no">java.util.List</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Feature.java</label>
+        <link refid="_feature_8java"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>java.util.List</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classmodels_1_1_feature" prot="public">models::Feature</innerclass>
+    <innernamespace refid="namespacemodels">models</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">package<sp/></highlight><highlight class="normal">models;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.List;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classmodels_1_1_feature" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmodels_1_1_feature" kindref="compound">Feature</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>String<sp/>type;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="classmodels_1_1_properties" kindref="compound">Properties</ref><sp/>properties;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>List&lt;Double&gt;<sp/>bbox;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="classmodels_1_1_geometry" kindref="compound">Geometry</ref><sp/>geometry;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classmodels_1_1_feature_1a421cccd5fcdf365f98c7d8abc03adb97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>String<sp/><ref refid="classmodels_1_1_feature_1a421cccd5fcdf365f98c7d8abc03adb97" kindref="member">getType</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>type;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="classmodels_1_1_feature_1a6b686e1666cf8f3fd2eea8f7d6103a7b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmodels_1_1_feature_1a6b686e1666cf8f3fd2eea8f7d6103a7b" kindref="member">setType</ref>(String<sp/>type)<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.type<sp/>=<sp/>type;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="classmodels_1_1_feature_1a4e655b2a51e66b26fb26a1cc193d9cb8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmodels_1_1_properties" kindref="compound">Properties</ref><sp/><ref refid="classmodels_1_1_feature_1a4e655b2a51e66b26fb26a1cc193d9cb8" kindref="member">getProperties</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>properties;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="classmodels_1_1_feature_1ab68fe0db0e0b9365925867049436da43" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmodels_1_1_feature_1ab68fe0db0e0b9365925867049436da43" kindref="member">setProperties</ref>(<ref refid="classmodels_1_1_properties" kindref="compound">Properties</ref><sp/>properties)<sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.properties<sp/>=<sp/>properties;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="classmodels_1_1_feature_1acdf1f8940a65b9a1111eddd885ddf798" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>List&lt;Double&gt;<sp/><ref refid="classmodels_1_1_feature_1acdf1f8940a65b9a1111eddd885ddf798" kindref="member">getBbox</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>bbox;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="classmodels_1_1_feature_1aa41900a6c51f4893da30773c6a2ce4bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmodels_1_1_feature_1aa41900a6c51f4893da30773c6a2ce4bb" kindref="member">setBbox</ref>(List&lt;Double&gt;<sp/>bbox)<sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.bbox<sp/>=<sp/>bbox;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="classmodels_1_1_feature_1a72a321b2c2eeb92549d42287fd4a2027" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmodels_1_1_geometry" kindref="compound">Geometry</ref><sp/><ref refid="classmodels_1_1_feature_1a72a321b2c2eeb92549d42287fd4a2027" kindref="member">getGeometry</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>geometry;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="classmodels_1_1_feature_1a3952002a65f852e98ac4683a3f0124fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmodels_1_1_feature_1a3952002a65f852e98ac4683a3f0124fc" kindref="member">setGeometry</ref>(<ref refid="classmodels_1_1_geometry" kindref="compound">Geometry</ref><sp/>geometry)<sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.geometry<sp/>=<sp/>geometry;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Feature.java"/>
+  </compounddef>
+</doxygen>

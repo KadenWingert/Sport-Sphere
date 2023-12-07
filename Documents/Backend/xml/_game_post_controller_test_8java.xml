@@ -1,0 +1,366 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_game_post_controller_test_8java" kind="file" language="Java">
+    <compoundname>GamePostControllerTest.java</compoundname>
+    <includes local="no">coms309.Auth.Auth</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java</label>
+        <link refid="_game_post_controller_test_8java"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>coms309.Auth.Auth</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classcom_1_1mockito_1_1_game_post_controller_test" prot="package">com::mockito::GamePostControllerTest</innerclass>
+    <innernamespace refid="namespacecom_1_1mockito">com::mockito</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">com.mockito;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespacecoms309" kindref="compound">coms309</ref>.<ref refid="namespacecoms309_1_1_auth" kindref="compound">Auth</ref>.<ref refid="classcoms309_1_1_auth_1_1_auth" kindref="compound">Auth</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespacecoms309" kindref="compound">coms309</ref>.<ref refid="namespacecoms309_1_1_enums" kindref="compound">Enums</ref>.<ref refid="classcoms309_1_1_enums_1_1_permission" kindref="compound">Permission</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespacecoms309" kindref="compound">coms309</ref>.<ref refid="namespacecoms309_1_1_game_post" kindref="compound">GamePost</ref>.<ref refid="classcoms309_1_1_game_post_1_1_game_post" kindref="compound">GamePost</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespacecoms309" kindref="compound">coms309</ref>.<ref refid="namespacecoms309_1_1_game_post" kindref="compound">GamePost</ref>.<ref refid="classcoms309_1_1_game_post_1_1_game_post_controller" kindref="compound">GamePostController</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespacecoms309" kindref="compound">coms309</ref>.<ref refid="namespacecoms309_1_1_game_post" kindref="compound">GamePost</ref>.<ref refid="classcoms309_1_1_game_post_1_1_game_post_publisher" kindref="compound">GamePostPublisher</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespacecoms309" kindref="compound">coms309</ref>.<ref refid="namespacecoms309_1_1_game_post" kindref="compound">GamePost</ref>.<ref refid="interfacecoms309_1_1_game_post_1_1_game_post_repository" kindref="compound">GamePostRepository</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespacecoms309" kindref="compound">coms309</ref>.<ref refid="namespacecoms309_1_1_location" kindref="compound">Location</ref>.<ref refid="classcoms309_1_1_location_1_1_location" kindref="compound">Location</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespacecoms309" kindref="compound">coms309</ref>.<ref refid="namespacecoms309_1_1_sport" kindref="compound">Sport</ref>.<ref refid="classcoms309_1_1_sport_1_1_sport" kindref="compound">Sport</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespacecoms309" kindref="compound">coms309</ref>.<ref refid="namespacecoms309_1_1_sport" kindref="compound">Sport</ref>.<ref refid="interfacecoms309_1_1_sport_1_1_sport_repository" kindref="compound">SportRepository</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespacecoms309" kindref="compound">coms309</ref>.<ref refid="namespacecoms309_1_1_users" kindref="compound">Users</ref>.<ref refid="interfacecoms309_1_1_users_1_1_user_repository" kindref="compound">UserRepository</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespacecoms309" kindref="compound">coms309</ref>.<ref refid="namespacecoms309_1_1_users" kindref="compound">Users</ref>.<ref refid="classcoms309_1_1_users_1_1_users" kindref="compound">Users</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.junit.jupiter.api.BeforeEach;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.junit.jupiter.api.Test;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.mockito.InjectMocks;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.mockito.Mock;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.mockito.MockitoAnnotations;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.*;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="namespacecoms309" kindref="compound">coms309</ref>.<ref refid="namespacecoms309_1_1_auth" kindref="compound">Auth</ref>.<ref refid="classcoms309_1_1_auth_1_1_auth" kindref="compound">Auth</ref>.<ref refid="classcoms309_1_1_auth_1_1_auth_1ab72afc2758e2b85c51557970fa28232d" kindref="member">isAdmin</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="namespacecoms309" kindref="compound">coms309</ref>.<ref refid="namespacecoms309_1_1_enums" kindref="compound">Enums</ref>.<ref refid="classcoms309_1_1_enums_1_1_permission" kindref="compound">Permission</ref>.<ref refid="enumcoms309_1_1_enums_1_1_permission_1_1permission" kindref="compound">permission</ref>.<ref refid="enumcoms309_1_1_enums_1_1_permission_1_1permission_1a78bff52f70a002f0de10c98c99af8928" kindref="member">ADMIN</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="namespacecoms309" kindref="compound">coms309</ref>.<ref refid="namespacecoms309_1_1_enums" kindref="compound">Enums</ref>.<ref refid="classcoms309_1_1_enums_1_1_permission" kindref="compound">Permission</ref>.<ref refid="enumcoms309_1_1_enums_1_1_permission_1_1permission" kindref="compound">permission</ref>.<ref refid="enumcoms309_1_1_enums_1_1_permission_1_1permission_1a98b664dfb82ba1acfd9709064ca7426a" kindref="member">USER</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>graphql.Assert.*;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>org.junit.jupiter.api.Assertions.assertEquals;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>org.junit.jupiter.api.Assertions.assertTrue;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>org.mockito.Mockito.*;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">GamePostControllerTest<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>@InjectMocks</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>GamePostController<sp/>gamePostController;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>@Mock</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>GamePostRepository<sp/>gamePostRepository;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>@Mock</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>UserRepository<sp/>userRepository;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>@Mock</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>SportRepository<sp/>sportRepository;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>@Mock</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>GamePostPublisher<sp/>gamePostPublisher;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>GamePost<sp/>gp1,<sp/>gp2,<sp/>gp3,<sp/>gp4;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>Users<sp/>u1,<sp/>u2;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>Sport<sp/>s1,<sp/>s2,<sp/>s3,<sp/>s4;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>@BeforeEach</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init()<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MockitoAnnotations.initMocks(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s1<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Sport(</highlight><highlight class="stringliteral">&quot;Basketball&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s2<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Sport(</highlight><highlight class="stringliteral">&quot;Pickleball&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s3<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Sport(</highlight><highlight class="stringliteral">&quot;Football&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s4<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Sport(</highlight><highlight class="stringliteral">&quot;Spikeball&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sportRepository.save(s1);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sportRepository.save(s2);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sportRepository.save(s3);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sportRepository.save(s4);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u1<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Users(</highlight><highlight class="stringliteral">&quot;Bill&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Smith&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Bsmith@example.com&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;smith3920&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u2<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Users(</highlight><highlight class="stringliteral">&quot;John&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;1234&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;john@gmail.com&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Mar1o&amp;Lu1g1&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>userRepository.save(u1);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>userRepository.save(u2);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gp1<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>GamePost(s1,<sp/>userRepository.findById(u1.getId()),<sp/>24,<sp/>20,<sp/></highlight><highlight class="stringliteral">&quot;1/12/2023&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;29/09/1988&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gp2<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>GamePost(s2,<sp/>userRepository.findById(u1.getId()),<sp/>16,<sp/>2,<sp/></highlight><highlight class="stringliteral">&quot;1/2/2023&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;1/02/2023&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gp3<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>GamePost(s3,<sp/>userRepository.findById(u2.getId()),<sp/>10,<sp/>8,<sp/></highlight><highlight class="stringliteral">&quot;10/08/2023&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;10/25/2023&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gp4<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>GamePost(s4,<sp/>userRepository.findById(u2.getId()),<sp/>6,<sp/>3,<sp/></highlight><highlight class="stringliteral">&quot;11/1/2023&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;11/09/2023&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gamePostRepository.save(gp1);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gamePostRepository.save(gp2);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gamePostRepository.save(gp3);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gamePostRepository.save(gp4);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>@Test</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getAllGamePosts()<sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>List&lt;GamePost&gt;<sp/>list<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>ArrayList&lt;&gt;();</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>list.add(gp1);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>list.add(gp2);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>list.add(gp3);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>list.add(gp4);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(gamePostRepository.findAll()).thenReturn(list);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>List&lt;GamePost&gt;<sp/>gamePostList<sp/>=<sp/>gamePostController.getAllGamePosts();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(4,<sp/>gamePostList.size());</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(gp1.getId(),<sp/>gamePostList.get(1).getId());</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>verify(gamePostRepository,<sp/>times(1)).findAll();</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>@Test</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getGamePostById()<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(gamePostRepository.findById(0)).thenReturn(gp1);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GamePost<sp/>gamePost<sp/>=<sp/>gamePostController.getGamePostById(0);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(gp1.getId(),<sp/>gamePost.getId());</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(gp1.getSport(),<sp/>gamePost.getSport());</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(gp1.getMax_players(),<sp/>gamePost.getMax_players());</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(gp1.getMin_players(),<sp/>gamePost.getMin_players());</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(gp1.getPlayersSignedUp(),<sp/>gamePost.getPlayersSignedUp());</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(gp1.getCreated_by(),<sp/>gamePost.getCreated_by());</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(gp1.getCreated_on(),<sp/>gamePost.getCreated_on());</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(gp1.getPlaying_on(),<sp/>gamePost.getPlaying_on());</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(gp1.getIs_deleted(),<sp/>gamePost.getIs_deleted());</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(gp1.getComment(),<sp/>gamePost.getComment());</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(gp1.getLocation(),<sp/>gamePost.getLocation());</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>@Test</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getUsersPlaying()<sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(1,<sp/>gp1.getPlayersSignedUp().size());</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Set&lt;Users&gt;<sp/>verifyCreatorIsSignedUp<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>HashSet&lt;&gt;();</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>verifyCreatorIsSignedUp.add(u2);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertTrue(gp1.getPlayersSignedUp().contains(userRepository.findById(1)));</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>gamePostID<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Set&lt;Users&gt;<sp/>players<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>HashSet&lt;&gt;();</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>players.add(u1);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>players.add(u2);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>players.add(gp1.getCreated_by());</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(gamePostRepository.findById(gamePostID)).thenReturn(gp1);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gp1.setPlayersSignedUp(players);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Set&lt;Users&gt;<sp/>result<sp/>=<sp/>gamePostController.getUsersPlaying(gamePostID);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(players,<sp/>result);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(3,<sp/>result.size());</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>@Test</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>createGamePost()<sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sport_id<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>created_by<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_players<sp/>=<sp/>10;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min_players<sp/>=<sp/>5;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>playing_on<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;2/1/2023&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>created_on<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;1/1/2023&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/>is_deleted<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>address<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;123<sp/>Main<sp/>St&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>GPS<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;12.345,67.890&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Sport<sp/>sport<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Sport(</highlight><highlight class="stringliteral">&quot;Tennis&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sport.setId(sport_id);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(sportRepository.findById(sport_id)).thenReturn(sport);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Users<sp/>creator<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Users(</highlight><highlight class="stringliteral">&quot;New&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;User&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;new@example.com&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;password&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>creator.setId(created_by);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(userRepository.findById(created_by)).thenReturn(creator);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GamePost<sp/>gamePost<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>GamePost(sport,<sp/>creator,<sp/>max_players,<sp/>min_players,<sp/>playing_on,</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>created_on,<sp/>is_deleted);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Location<sp/>location<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Location(address,<sp/>GPS);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gamePost.setLocation(location);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(gamePostRepository.save(any(GamePost.class))).thenReturn(gamePost);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GamePost<sp/>result<sp/>=<sp/>gamePostController.createGamePost(sport_id,<sp/>created_by,<sp/>max_players,</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>min_players,<sp/>playing_on,<sp/>created_on,<sp/>is_deleted,<sp/>address,<sp/>GPS,<sp/>creator.getEmail(),</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>creator.getPassword());</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(sport_id,<sp/>result.getSport().getId());</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(created_by,<sp/>result.getCreated_by().getId());</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(max_players,<sp/>result.getMax_players());</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(min_players,<sp/>result.getMin_players());</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(playing_on,<sp/>result.getPlaying_on());</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(created_on,<sp/>result.getCreated_on());</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(is_deleted,<sp/>result.getIs_deleted());</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(creator.getEmail(),<sp/>userRepository.findById(created_by).getEmail());</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(creator.getPassword(),<sp/>userRepository.findById(created_by).getPassword());</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(address,<sp/>result.getLocation().getAddress());</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(GPS,<sp/>result.getLocation().getGps());</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>@Test</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>updateGamePost()<sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_players<sp/>=<sp/>15;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min_players<sp/>=<sp/>8;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>playing_on<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;2/15/2023&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>created_on<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;2/1/2023&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Boolean<sp/>is_deleted<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>address<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;456<sp/>Elm<sp/>St&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>GPS<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;23.456,45.678&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>email<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;user@example.com&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>password<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;password123&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Users<sp/>creator<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Users(</highlight><highlight class="stringliteral">&quot;User&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Test&quot;</highlight><highlight class="normal">,<sp/>email,<sp/>password);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Sport<sp/>sport<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Sport(</highlight><highlight class="stringliteral">&quot;Baseball&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gp1.setCreated_by(creator);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(userRepository.findById(creator.getId())).thenReturn(creator);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(gamePostRepository.findById(gp1.getId())).thenReturn(gp1);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gamePostController.updateGamePost(gp1.getId(),<sp/>sport.getId(),<sp/>max_players,</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>min_players,<sp/>playing_on,<sp/>created_on,<sp/>is_deleted,<sp/>address,<sp/>GPS,<sp/>email,<sp/>password);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(sport.getId(),<sp/>gp1.getSport().getId());</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(max_players,<sp/>gp1.getMax_players());</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(min_players,<sp/>gp1.getMin_players());</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(playing_on,<sp/>gp1.getPlaying_on());</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(created_on,<sp/>gp1.getCreated_on());</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(is_deleted,<sp/>gp1.getIs_deleted());</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(address,<sp/>gp1.getLocation().getAddress());</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(GPS,<sp/>gp1.getLocation().getGps());</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>@Test</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addNewUserPlaying()<sp/>{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>gamePostID<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>email<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;user@example.com&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>password<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;password123&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(userRepository.findById(u2.getId())).thenReturn(u2);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(gamePostRepository.findById(gamePostID)).thenReturn(gp1);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Set&lt;Users&gt;<sp/>playersBeforeAdd<sp/>=<sp/>gp1.getPlayersSignedUp();</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>playersCountBeforeAdd<sp/>=<sp/>playersBeforeAdd.size();</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Set&lt;Users&gt;<sp/>playersAfterAdd<sp/>=<sp/>gamePostController.addNewUserPlaying(gamePostID,<sp/>u2.getId(),</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u2.getEmail(),<sp/>u2.getPassword());</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(playersCountBeforeAdd<sp/>+<sp/>1,<sp/>playersAfterAdd.size());</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertTrue(playersAfterAdd.contains(u2));</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>@Test</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addGamePostToSport()<sp/>{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sport_id<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>created_by<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_players<sp/>=<sp/>10;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min_players<sp/>=<sp/>5;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>playing_on<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;2/1/2023&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>created_on<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;1/1/2023&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/>is_deleted<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>email<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;user@example.com&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>password<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;password123&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Users<sp/>creator<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Users(</highlight><highlight class="stringliteral">&quot;New&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;User&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;new@example.com&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;password&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>creator.setId(created_by);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(userRepository.findById(created_by)).thenReturn(creator);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GamePost<sp/>gamePost<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>GamePost(s1,<sp/>creator,<sp/>max_players,<sp/>min_players,<sp/>playing_on,</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>created_on,<sp/>is_deleted);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(userRepository.findById(gamePost.getCreated_by().getId())).thenReturn(creator);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(gamePostRepository.findById(gamePost.getId())).thenReturn(gamePost);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(sportRepository.findById(s1.getId())).thenReturn(s1);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GamePost<sp/>updatedGamePost<sp/>=<sp/>gamePostController.addGamePostToSport(gamePost.getId(),</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s1.getId(),<sp/>email,<sp/>password);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(s1.getId(),<sp/>updatedGamePost.getSport().getId());</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>@Test</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>void<sp/>removeUserPlaying()<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>String<sp/>email<sp/>=<sp/>&quot;user@example.com&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>String<sp/>password<sp/>=<sp/>&quot;password123&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>Users<sp/>userToRemove<sp/>=<sp/>new<sp/>Users(&quot;User&quot;,<sp/>&quot;Remove&quot;,<sp/>email,<sp/>password);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>when(userRepository.findById(userToRemove.getId())).thenReturn(userToRemove);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>when(gamePostRepository.findById(gp1.getId())).thenReturn(gp1);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>gp1.getPlayersSignedUp().add(userToRemove);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>Set&lt;Users&gt;<sp/>playersBeforeRemove<sp/>=<sp/>gp1.getPlayersSignedUp();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>int<sp/>playersCountBeforeRemove<sp/>=<sp/>playersBeforeRemove.size();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>Set&lt;Users&gt;<sp/>playersAfterRemove<sp/>=<sp/>gamePostController.removeUserPlaying(gp1.getId(),</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>userToRemove.getId(),<sp/>email,<sp/>password);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>assertEquals(playersCountBeforeRemove<sp/>-<sp/>1,<sp/>playersAfterRemove.size());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>assertFalse(playersAfterRemove.contains(userToRemove));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>@Test</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>deleteGamePostById()<sp/>{</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Arrange</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>email<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Bsmith@example.com&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>password<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;smith3920&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Users<sp/>u<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Users(</highlight><highlight class="stringliteral">&quot;George&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Smith&quot;</highlight><highlight class="normal">,<sp/>email,<sp/>password);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Mock<sp/>authentication<sp/>to<sp/>return<sp/>true</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(Auth.isAuthenticated(u,<sp/>email,<sp/>password)).thenReturn(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Sport<sp/>s<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Sport(</highlight><highlight class="stringliteral">&quot;Tennis&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GamePost<sp/>g<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>GamePost(s,<sp/>u,<sp/>24,<sp/>20,<sp/></highlight><highlight class="stringliteral">&quot;1/12/2023&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;29/09/1988&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(sportRepository.findById(s.getId())).thenReturn(s);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(userRepository.findById(u.getId())).thenReturn(u);</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(gamePostRepository.findById(g.getId())).thenReturn(g);</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Act</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>result<sp/>=<sp/>gamePostController.deleteGamePostById(g.getId(),<sp/>email,<sp/>password);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Assert</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>verify(gamePostRepository,<sp/>times(1)).deleteById(anyInt());<sp/></highlight><highlight class="comment">//<sp/>Use<sp/>anyInt()<sp/>here</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(</highlight><highlight class="stringliteral">&quot;Successfully<sp/>deleted<sp/>GamePosts<sp/>with<sp/>id<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>g.getId(),<sp/>result);</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(0,<sp/>gamePostRepository.findAll().size());</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/>@Test</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>deleteAllGamePosts()<sp/>{</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Arrange</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>email<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Bsmith@example.com&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>password<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;smith3920&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Users<sp/>u<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Users(</highlight><highlight class="stringliteral">&quot;George&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Smith&quot;</highlight><highlight class="normal">,<sp/>email,<sp/>password);</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u.setRole(ADMIN);</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Mock<sp/>authentication<sp/>to<sp/>return<sp/>true</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(Auth.isAdmin(u)).thenReturn(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertTrue(u.isAuthenticated(email,<sp/>password));</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertTrue(u.isAdmin(u));</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Sport<sp/>s<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Sport(</highlight><highlight class="stringliteral">&quot;Tennis&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GamePost<sp/>g<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>GamePost(s,<sp/>u,<sp/>24,<sp/>20,<sp/></highlight><highlight class="stringliteral">&quot;1/12/2023&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;29/09/1988&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(sportRepository.findById(s.getId())).thenReturn(s);</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(userRepository.findById(u.getId())).thenReturn(u);</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(userRepository.findByEmail(u.getEmail())).thenReturn(u);</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>when(gamePostRepository.findById(g.getId())).thenReturn(g);</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Act</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>result<sp/>=<sp/>gamePostController.deleteAllGamePosts(email,<sp/>password);</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Assert</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(</highlight><highlight class="stringliteral">&quot;Successfully<sp/>deleted<sp/>all<sp/>GamePosts&quot;</highlight><highlight class="normal">,<sp/>result);</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(0,<sp/>gamePostRepository.findAll().size());</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java"/>
+  </compounddef>
+</doxygen>

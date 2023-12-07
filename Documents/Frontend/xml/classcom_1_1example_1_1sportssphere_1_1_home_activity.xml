@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcom_1_1example_1_1sportssphere_1_1_home_activity" kind="class" language="Java" prot="public">
+    <compoundname>com::example::sportssphere::HomeActivity</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">AppCompatActivity</basecompoundref>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_home_activity_1a02dbe7ead0d7a2702e7efa101561ee76" prot="package" static="no" mutable="no">
+        <type>LinearLayout</type>
+        <definition>LinearLayout com.example.sportssphere.HomeActivity.layout</definition>
+        <argsstring></argsstring>
+        <name>layout</name>
+        <qualifiedname>com.example.sportssphere.HomeActivity.layout</qualifiedname>
+        <briefdescription>
+<para>The layout. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/HomeActivity.java" line="55" column="18" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/HomeActivity.java" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_home_activity_1adb789dc4a060dbff858a1649c5080030" prot="package" static="no" mutable="no">
+        <type>ScrollView</type>
+        <definition>ScrollView com.example.sportssphere.HomeActivity.scrollView</definition>
+        <argsstring></argsstring>
+        <name>scrollView</name>
+        <qualifiedname>com.example.sportssphere.HomeActivity.scrollView</qualifiedname>
+        <briefdescription>
+<para>The scroll view. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/HomeActivity.java" line="57" column="16" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/HomeActivity.java" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_home_activity_1ad802ef926708d46e8fed26e93228b427" prot="package" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button com.example.sportssphere.HomeActivity.profileButton</definition>
+        <argsstring></argsstring>
+        <name>profileButton</name>
+        <qualifiedname>com.example.sportssphere.HomeActivity.profileButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/HomeActivity.java" line="67" column="12" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/HomeActivity.java" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_home_activity_1ac877471178b8e339ccbad9f3eb64a994" prot="package" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button com.example.sportssphere.HomeActivity.createPostButton</definition>
+        <argsstring></argsstring>
+        <name>createPostButton</name>
+        <qualifiedname>com.example.sportssphere.HomeActivity.createPostButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/HomeActivity.java" line="67" column="26" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/HomeActivity.java" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_home_activity_1a3fc0aebe601c98b5a553c9b4a93fd604" prot="package" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button com.example.sportssphere.HomeActivity.settingsButton</definition>
+        <argsstring></argsstring>
+        <name>settingsButton</name>
+        <qualifiedname>com.example.sportssphere.HomeActivity.settingsButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/HomeActivity.java" line="67" column="43" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/HomeActivity.java" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_home_activity_1a3b3a131f1570fdca64f562fac4cb74d6" prot="package" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button profileButton createPostButton settingsButton com.example.sportssphere.HomeActivity::calendarButton</definition>
+        <argsstring></argsstring>
+        <name>calendarButton</name>
+        <qualifiedname>com.example.sportssphere.HomeActivity.calendarButton</qualifiedname>
+        <briefdescription>
+<para>Gets the calendar button. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The calendar button. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/HomeActivity.java" line="67" column="58" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/HomeActivity.java" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_home_activity_1a274f3a6aea20d1567bc5c4eb33a56230" prot="package" static="no" mutable="no">
+        <type>ImageButton</type>
+        <definition>ImageButton com.example.sportssphere.HomeActivity.mapButton</definition>
+        <argsstring></argsstring>
+        <name>mapButton</name>
+        <qualifiedname>com.example.sportssphere.HomeActivity.mapButton</qualifiedname>
+        <briefdescription>
+<para>The map button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/HomeActivity.java" line="69" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/HomeActivity.java" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_home_activity_1aaaa16df8c369a1c747d6bc2455fc8a28" prot="package" static="no" mutable="no">
+        <type>ApolloClient</type>
+        <definition>ApolloClient com.example.sportssphere.HomeActivity.apolloClient</definition>
+        <argsstring></argsstring>
+        <name>apolloClient</name>
+        <qualifiedname>com.example.sportssphere.HomeActivity.apolloClient</qualifiedname>
+        <briefdescription>
+<para>The apollo client. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/HomeActivity.java" line="71" column="18" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/HomeActivity.java" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_home_activity_1aff7bbd4a9eea8e5b8f51fc276d1b96b6" prot="package" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.example.sportssphere.HomeActivity.id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>com.example.sportssphere.HomeActivity.id</qualifiedname>
+        <briefdescription>
+<para>The identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/HomeActivity.java" line="73" column="12" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/HomeActivity.java" bodystart="73" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classcom_1_1example_1_1sportssphere_1_1_home_activity_1ae6b55ef8d26a3b663774c9a64accc8d2" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>Override protected void com.example.sportssphere.HomeActivity::onCreate</definition>
+        <argsstring>(Bundle savedInstanceState)</argsstring>
+        <name>onCreate</name>
+        <qualifiedname>com.example.sportssphere.HomeActivity.onCreate</qualifiedname>
+        <param>
+          <type>Bundle</type>
+          <declname>savedInstanceState</declname>
+        </param>
+        <briefdescription>
+<para>Executes the &apos;create&apos; action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>savedInstanceState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/HomeActivity.java" line="87" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/HomeActivity.java" bodystart="87" bodyend="195"/>
+        <references refid="classcom_1_1example_1_1sportssphere_1_1_apollo_client_provider_1a2884e2dafe4a18e4b61730aafb948735" compoundref="_apollo_client_provider_8java" startline="32" endline="37">com.example.sportssphere.ApolloClientProvider.setupApolloClient</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Context for the android.content. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The android.content. intent</para>
+<para>The android.graphics. color</para>
+<para>The android.os. bundle</para>
+<para>The android.util. log</para>
+<para>The android.view. view</para>
+<para>The android.widget. button</para>
+<para>The android.widget. image button</para>
+<para>The android.widget. linear layout</para>
+<para>The android.widget. scroll view</para>
+<para>The android.widget. text view</para>
+<para>The androidx.annotation. non null</para>
+<para>The androidx.appcompat.app. application compatible activity</para>
+<para>The com.apollographql.apollo. apollo call</para>
+<para>The com.apollographql.apollo. apollo client</para>
+<para>The com.apollographql.apollo.api. response</para>
+<para>The com.apollographql.apollo.exception. apollo exception</para>
+<para>List of java.util.s</para>
+<para>A home activity.</para>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AppCompatActivity</label>
+      </node>
+      <node id="1">
+        <label>com.example.sportssphere.HomeActivity</label>
+        <link refid="classcom_1_1example_1_1sportssphere_1_1_home_activity"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AppCompatActivity</label>
+      </node>
+      <node id="1">
+        <label>com.example.sportssphere.HomeActivity</label>
+        <link refid="classcom_1_1example_1_1sportssphere_1_1_home_activity"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/HomeActivity.java" line="53" column="7" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/HomeActivity.java" bodystart="53" bodyend="196"/>
+    <listofallmembers>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_home_activity_1aaaa16df8c369a1c747d6bc2455fc8a28" prot="package" virt="non-virtual"><scope>com::example::sportssphere::HomeActivity</scope><name>apolloClient</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_home_activity_1a3b3a131f1570fdca64f562fac4cb74d6" prot="package" virt="non-virtual"><scope>com::example::sportssphere::HomeActivity</scope><name>calendarButton</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_home_activity_1ac877471178b8e339ccbad9f3eb64a994" prot="package" virt="non-virtual"><scope>com::example::sportssphere::HomeActivity</scope><name>createPostButton</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_home_activity_1aff7bbd4a9eea8e5b8f51fc276d1b96b6" prot="package" virt="non-virtual"><scope>com::example::sportssphere::HomeActivity</scope><name>id</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_home_activity_1a02dbe7ead0d7a2702e7efa101561ee76" prot="package" virt="non-virtual"><scope>com::example::sportssphere::HomeActivity</scope><name>layout</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_home_activity_1a274f3a6aea20d1567bc5c4eb33a56230" prot="package" virt="non-virtual"><scope>com::example::sportssphere::HomeActivity</scope><name>mapButton</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_home_activity_1ae6b55ef8d26a3b663774c9a64accc8d2" prot="protected" virt="non-virtual"><scope>com::example::sportssphere::HomeActivity</scope><name>onCreate</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_home_activity_1ad802ef926708d46e8fed26e93228b427" prot="package" virt="non-virtual"><scope>com::example::sportssphere::HomeActivity</scope><name>profileButton</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_home_activity_1adb789dc4a060dbff858a1649c5080030" prot="package" virt="non-virtual"><scope>com::example::sportssphere::HomeActivity</scope><name>scrollView</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_home_activity_1a3fc0aebe601c98b5a553c9b4a93fd604" prot="package" virt="non-virtual"><scope>com::example::sportssphere::HomeActivity</scope><name>settingsButton</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

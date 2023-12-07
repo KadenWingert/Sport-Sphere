@@ -1,0 +1,5 @@
+<map id="coms309.Email.EmailSender.SendEmail" name="coms309.Email.EmailSender.SendEmail">
+<area shape="rect" id="Node000001" title="Sends an email." alt="" coords="5,5,199,48"/>
+<area shape="rect" id="Node000002" href="$classcoms309_1_1_email_1_1_email_sender.html#af6efd3e1970df5b884c747cf65dc8b85" title="Sends a simple message." alt="" coords="247,5,468,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,24,231,24,231,29,199,29"/>
+</map>

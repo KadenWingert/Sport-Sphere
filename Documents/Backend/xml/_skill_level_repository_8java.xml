@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_skill_level_repository_8java" kind="file" language="Java">
+    <compoundname>SkillLevelRepository.java</compoundname>
+    <includes local="no">org.springframework.data.jpa.repository.JpaRepository</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevelRepository.java</label>
+        <link refid="_skill_level_repository_8java"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>org.springframework.data.jpa.repository.JpaRepository</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interfacecoms309_1_1_skill_level_1_1_skill_level_repository" prot="public">coms309::SkillLevel::SkillLevelRepository</innerclass>
+    <innernamespace refid="namespacecoms309_1_1_skill_level">coms309::SkillLevel</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">package<sp/></highlight><highlight class="normal">coms309.SkillLevel;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.springframework.data.jpa.repository.JpaRepository;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.springframework.stereotype.Repository;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">@Repository</highlight></codeline>
+<codeline lineno="21" refid="interfacecoms309_1_1_skill_level_1_1_skill_level_repository" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interfacecoms309_1_1_skill_level_1_1_skill_level_repository" kindref="compound">SkillLevelRepository</ref><sp/></highlight><highlight class="keyword">extends</highlight><highlight class="normal"><sp/>JpaRepository&lt;SkillLevel,<sp/>Integer&gt;<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="interfacecoms309_1_1_skill_level_1_1_skill_level_repository_1ac255c4ad56ccd86a3f8cdcf64a7179ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcoms309_1_1_skill_level_1_1_skill_level" kindref="compound">SkillLevel</ref><sp/><ref refid="interfacecoms309_1_1_skill_level_1_1_skill_level_repository_1ac255c4ad56ccd86a3f8cdcf64a7179ad" kindref="member">findById</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="interfacecoms309_1_1_skill_level_1_1_skill_level_repository_1a7a67f0f865ec7e4eef3e6dc87938662d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interfacecoms309_1_1_skill_level_1_1_skill_level_repository_1a7a67f0f865ec7e4eef3e6dc87938662d" kindref="member">deleteById</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevelRepository.java"/>
+  </compounddef>
+</doxygen>

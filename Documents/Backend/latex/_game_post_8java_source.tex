@@ -1,0 +1,218 @@
+\doxysection{Game\+Post.\+java}
+\hypertarget{_game_post_8java_source}{}\label{_game_post_8java_source}\index{C:/Users/Arie/Develop/hb\_215/Backend/src/main/java/coms309/GamePost/GamePost.java@{C:/Users/Arie/Develop/hb\_215/Backend/src/main/java/coms309/GamePost/GamePost.java}}
+\mbox{\hyperlink{_game_post_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00004}\mbox{\hyperlink{namespacecoms309_1_1_game_post}{00004}}\ \textcolor{keyword}{package\ }coms309.GamePost;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00007}00007\ \textcolor{keyword}{import}\ com.fasterxml.jackson.annotation.JsonIgnore;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00009}00009\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_comment}{Comment}}.\mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment}{Comment}};}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00011}00011\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_location}{Location}}.\mbox{\hyperlink{classcoms309_1_1_location_1_1_location}{Location}};}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00013}00013\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_sport}{Sport}}.\mbox{\hyperlink{classcoms309_1_1_sport_1_1_sport}{Sport}};}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00015}00015\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_users}{Users}}.\mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}};}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00017}00017\ \textcolor{keyword}{import}\ lombok.Getter;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00019}00019\ \textcolor{keyword}{import}\ lombok.Setter;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00021}00021\ \textcolor{keyword}{import}\ org.hibernate.annotations.NotFound;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00023}00023\ \textcolor{keyword}{import}\ org.hibernate.annotations.NotFoundAction;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00026}00026\ \textcolor{keyword}{import}\ jakarta.persistence.*;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00028}00028\ \textcolor{keyword}{import}\ java.util.HashSet;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00031}00031\ \textcolor{keyword}{import}\ java.util.Set;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00033}00033\ \textcolor{comment}{/**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00043}00043\ \textcolor{comment}{/**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00052}00052\ @Entity}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00053}00053\ @Getter}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00054}00054\ @Setter}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00055}\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post}{00055}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post}{GamePost}}\ \{}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00057}00057\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00070}00070\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00081}00081\ \ \ \ \ @Id}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00082}00082\ \ \ \ \ @GeneratedValue(strategy\ =\ GenerationType.IDENTITY)}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00083}00083\ \ \ \ \ @NotFound(action\ =\ NotFoundAction.IGNORE)}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00084}00084\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{int}\ id;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00085}00085\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00086}00086\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00099}00099\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00110}00110\ \ \ \ \ @Column(name\ =\ \textcolor{stringliteral}{"{}max\_players"{}})}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00111}00111\ \ \ \ \ @NotFound(action\ =\ NotFoundAction.IGNORE)}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00112}00112\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{int}\ max\_players;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00113}00113\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00114}00114\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00127}00127\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00138}00138\ \ \ \ \ @Column(name\ =\ \textcolor{stringliteral}{"{}min\_players"{}})}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00139}00139\ \ \ \ \ @NotFound(action\ =\ NotFoundAction.IGNORE)}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00140}00140\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{int}\ min\_players;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00141}00141\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00142}00142\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00155}00155\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00166}00166\ \ \ \ \ @Column(name\ =\ \textcolor{stringliteral}{"{}playing\_on"{}})}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00167}00167\ \ \ \ \ @NotFound(action\ =\ NotFoundAction.IGNORE)}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00168}00168\ \ \ \ \ \textcolor{keyword}{private}\ String\ playing\_on;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00169}00169\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00170}00170\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00183}00183\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00194}00194\ \ \ \ \ @Column(name\ =\ \textcolor{stringliteral}{"{}created\_on"{}})}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00195}00195\ \ \ \ \ @NotFound(action\ =\ NotFoundAction.IGNORE)}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00196}00196\ \ \ \ \ \textcolor{keyword}{private}\ String\ created\_on;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00197}00197\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00198}00198\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00211}00211\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00222}00222\ \ \ \ \ @Column(name\ =\ \textcolor{stringliteral}{"{}is\_deleted"{}})}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00223}00223\ \ \ \ \ @NotFound(action\ =\ NotFoundAction.IGNORE)}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00224}00224\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{boolean}\ is\_deleted;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00225}00225\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00226}00226\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00239}00239\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00250}00250\ \ \ \ \ @OneToOne(cascade\ =\ CascadeType.ALL)}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00251}00251\ \ \ \ \ @JoinColumn(name\ =\ \textcolor{stringliteral}{"{}location\_id"{}})}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00252}00252\ \ \ \ \ \textcolor{keyword}{private}\ Location\ location;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00253}00253\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00254}00254\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00266}00266\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00277}00277\ \ \ \ \ @ManyToOne\ \textcolor{comment}{//\ need\ to\ add\ somthing\ to\ make\ it\ notnull}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00278}00278\ \ \ \ \ @JoinColumn(name\ =\ \textcolor{stringliteral}{"{}created\_by\_user\_id"{}})}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00279}00279\ \ \ \ \ \textcolor{keyword}{private}\ Users\ created\_by;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00280}00280\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00281}00281\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00295}00295\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00306}00306\ \ \ \ \ @ManyToMany(fetch\ =\ FetchType.EAGER)}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00307}00307\ \ \ \ \ @JoinTable(name\ =\ \textcolor{stringliteral}{"{}players\_signed\_up"{}},\ joinColumns\ =\ @JoinColumn(name\ =\ \textcolor{stringliteral}{"{}game\_post\_id"{}}),}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00308}00308\ \ \ \ \ \ \ \ \ \ \ \ \ inverseJoinColumns\ =\ @JoinColumn(name\ =\ \textcolor{stringliteral}{"{}user\_id"{}}))}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00309}00309\ \ \ \ \ @JsonIgnore}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00310}00310\ \ \ \ \ \textcolor{keyword}{private}\ Set<Users>\ playersSignedUp\ =\ \textcolor{keyword}{new}\ HashSet<>();}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00311}00311\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00312}00312\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00327}00327\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00340}00340\ \ \ \ \ @OneToMany(mappedBy\ =\ \textcolor{stringliteral}{"{}gamePost"{}},\ cascade\ =\ CascadeType.ALL,\ orphanRemoval\ =\ \textcolor{keyword}{true})}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00341}00341\ \ \ \ \ \textcolor{keyword}{private}\ Set<Comment>\ comment\ =\ \textcolor{keyword}{new}\ HashSet<>();}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00342}00342\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00343}00343\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00355}00355\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00366}00366\ \ \ \ \ @ManyToOne}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00367}00367\ \ \ \ \ @JoinColumn(name\ =\ \textcolor{stringliteral}{"{}sport\_id"{}})\ \textcolor{comment}{//\ links\ the\ Sport\ class\ with\ the\ primary\ key\ of\ the\ GamePost}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00368}00368\ \ \ \ \ \textcolor{keyword}{private}\ Sport\ sport;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00369}00369\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00370}00370\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00382}00382\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00391}\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_a5ce9e4d947c03d771a71c42787c1824d}{00391}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_a5ce9e4d947c03d771a71c42787c1824d}{GamePost}}()\ \{\}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00392}00392\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00393}00393\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00412}00412\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_a5ce9e4d947c03d771a71c42787c1824d}{GamePost}}(Sport\ sport,\ Users\ created\_by,\ \textcolor{keywordtype}{int}\ max\_players,\ \textcolor{keywordtype}{int}\ min\_players,}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00413}00413\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00414}00414\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00422}00422\ \ \ \ \ \ \ \ \ \ \ \ \ String\ playing\_on,\ String\ created\_on,\ \textcolor{keywordtype}{boolean}\ is\_deleted)\ \{}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00423}00423\ \ \ \ \ \ \ \ \ this.sport\ =\ sport;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00424}00424\ \ \ \ \ \ \ \ \ this.created\_by\ =\ created\_by;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00425}00425\ \ \ \ \ \ \ \ \ playersSignedUp.add(created\_by);}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00426}00426\ \ \ \ \ \ \ \ \ this.max\_players\ =\ max\_players;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00427}00427\ \ \ \ \ \ \ \ \ this.min\_players\ =\ min\_players;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00428}00428\ \ \ \ \ \ \ \ \ this.playing\_on\ =\ playing\_on;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00429}00429\ \ \ \ \ \ \ \ \ this.created\_on\ =\ created\_on;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00430}00430\ \ \ \ \ \ \ \ \ this.is\_deleted\ =\ is\_deleted;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00431}00431\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00432}00432\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00433}00433\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00454}00454\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_a5ce9e4d947c03d771a71c42787c1824d}{GamePost}}(Sport\ sport,\ Users\ created\_by,\ \textcolor{keywordtype}{int}\ max\_players,\ \textcolor{keywordtype}{int}\ min\_players,}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00455}00455\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00456}00456\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00464}00464\ \ \ \ \ \ \ \ \ \ \ \ \ String\ playing\_on,\ String\ created\_on,\ \textcolor{keywordtype}{boolean}\ is\_deleted,\ String\ address,\ String\ GPS)\ \{}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00465}00465\ \ \ \ \ \ \ \ \ this.sport\ =\ sport;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00466}00466\ \ \ \ \ \ \ \ \ this.created\_by\ =\ created\_by;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00467}00467\ \ \ \ \ \ \ \ \ playersSignedUp.add(created\_by);}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00468}00468\ \ \ \ \ \ \ \ \ this.max\_players\ =\ max\_players;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00469}00469\ \ \ \ \ \ \ \ \ this.min\_players\ =\ min\_players;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00470}00470\ \ \ \ \ \ \ \ \ this.playing\_on\ =\ playing\_on;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00471}00471\ \ \ \ \ \ \ \ \ this.created\_on\ =\ created\_on;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00472}00472\ \ \ \ \ \ \ \ \ this.is\_deleted\ =\ is\_deleted;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00473}00473\ \ \ \ \ \ \ \ \ this.location\ =\ \textcolor{keyword}{new}\ Location(address,\ GPS);}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00474}00474\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00475}00475\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00476}00476\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00488}00488\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00499}\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_a4d5bbb54dba4fbbf3226cee847c2e864}{00499}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_a4d5bbb54dba4fbbf3226cee847c2e864}{setId}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id})\ \{}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00500}00500\ \ \ \ \ \ \ \ \ this.id\ =\ id;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00501}00501\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00502}00502\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00503}00503\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00515}00515\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00526}\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_a6793da8cae4727bb5b4182721f2f8ea7}{00526}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_a6793da8cae4727bb5b4182721f2f8ea7}{setCreated\_by}}(Users\ created\_by)\ \{}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00527}00527\ \ \ \ \ \ \ \ \ this.created\_by\ =\ created\_by;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00528}00528\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00529}00529\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00530}00530\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00542}00542\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00553}\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_a85b0066769f168dcb24c1f26e0e820a1}{00553}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_a85b0066769f168dcb24c1f26e0e820a1}{setMax\_players}}(\textcolor{keywordtype}{int}\ maxPlayers)\ \{}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00554}00554\ \ \ \ \ \ \ \ \ this.max\_players\ =\ maxPlayers;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00555}00555\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00556}00556\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00557}00557\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00569}00569\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00580}\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_a1c13c5a3a4e9c403993d6984ae79c29f}{00580}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_a1c13c5a3a4e9c403993d6984ae79c29f}{setMin\_players}}(\textcolor{keywordtype}{int}\ minPlayers)\ \{}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00581}00581\ \ \ \ \ \ \ \ \ this.min\_players\ =\ minPlayers;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00582}00582\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00583}00583\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00584}00584\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00596}00596\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00607}\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_af546ed67a01731eff0a6f0e2f5dea0e3}{00607}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_af546ed67a01731eff0a6f0e2f5dea0e3}{setPlaying\_on}}(String\ playingOn)\ \{}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00608}00608\ \ \ \ \ \ \ \ \ this.playing\_on\ =\ playingOn;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00609}00609\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00610}00610\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00611}00611\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00623}00623\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00634}\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_a3acd50a6c040c9784f74948512425c89}{00634}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_a3acd50a6c040c9784f74948512425c89}{setCreated\_on}}(String\ createdOn)\ \{}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00635}00635\ \ \ \ \ \ \ \ \ this.created\_on\ =\ createdOn;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00636}00636\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00637}00637\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00638}00638\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00650}00650\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00661}\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_a01606b6feadb4af5f2584f14e5c14cb5}{00661}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{boolean}\ \mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_a01606b6feadb4af5f2584f14e5c14cb5}{getIs\_deleted}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00662}00662\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ is\_deleted;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00663}00663\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00664}00664\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00665}00665\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00677}00677\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00688}\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_a9ae0475dad512d93f88db6247cd919d3}{00688}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_a9ae0475dad512d93f88db6247cd919d3}{setIs\_deleted}}(\textcolor{keywordtype}{boolean}\ is\_deleted)\ \{}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00689}00689\ \ \ \ \ \ \ \ \ this.is\_deleted\ =\ is\_deleted;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00690}00690\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00691}00691\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00692}00692\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00704}00704\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00715}\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_a9d8497586ca3c7b641fa510d5f756644}{00715}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_a9d8497586ca3c7b641fa510d5f756644}{setPlayersSignedUp}}(Users\ user)\ \{}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00716}00716\ \ \ \ \ \ \ \ \ playersSignedUp.add(user);}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00717}00717\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00718}00718\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00719}00719\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00731}00731\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00742}\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_a28c01fadb4e252269181d964b6c94df3}{00742}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_a28c01fadb4e252269181d964b6c94df3}{setLocation}}(Location\ location)\ \{}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00743}00743\ \ \ \ \ \ \ \ \ this.location\ =\ location;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00744}00744\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00745}00745\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00746}00746\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00758}00758\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00769}\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_aa786021b9c9cdec1f4421729e82bcfa9}{00769}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_aa786021b9c9cdec1f4421729e82bcfa9}{setPlayersSignedUp}}(Set<Users>\ playersSignedUp)\ \{}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00770}00770\ \ \ \ \ \ \ \ \ this.playersSignedUp\ =\ playersSignedUp;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00771}00771\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00772}00772\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00773}00773\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00785}00785\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00796}\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_a598ea38c06473d1637d8c78ec335c9e4}{00796}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_a598ea38c06473d1637d8c78ec335c9e4}{setComment}}(Set<Comment>\ comment)\ \{}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00797}00797\ \ \ \ \ \ \ \ \ this.comment\ =\ comment;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00798}00798\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00799}00799\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00800}00800\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00812}00812\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00823}\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_a2e410af1d12c0849771fd208007c10ba}{00823}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_a2e410af1d12c0849771fd208007c10ba}{setSport}}(Sport\ sport)\ \{}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00824}00824\ \ \ \ \ \ \ \ \ this.sport\ =\ sport;}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00825}00825\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00826}00826\ }
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00827}00827\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00838}\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_a370b2dd4a1a6796403249ef985bf1dcd}{00838}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_a370b2dd4a1a6796403249ef985bf1dcd}{removePlayerSignedUp}}(Users\ user)\ \{}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00839}00839\ \ \ \ \ \ \ \ \ playersSignedUp.removeIf(u\ -\/>\ u.equals(user));}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00840}00840\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_post_8java_source_l00841}00841\ \}}
+
+\end{DoxyCode}

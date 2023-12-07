@@ -1,0 +1,744 @@
+\doxysection{coms309.\+Users.\+Users Class Reference}
+\hypertarget{classcoms309_1_1_users_1_1_users}{}\label{classcoms309_1_1_users_1_1_users}\index{coms309.Users.Users@{coms309.Users.Users}}
+
+
+The coms 309. auth. authentication.  
+
+
+
+
+Collaboration diagram for coms309.\+Users.\+Users\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{classcoms309_1_1_users_1_1_users__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a909b2250dd18985196a8ee6d5b82c62f}{Users}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a99b5095dcab5a8a4f07b7fec74c29c1e}{Users}} (String first\+Name, String last\+\_\+name, String email, String password)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a8ee7b438c8d9bd14723bcde4b6e85b22}{get\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Gets the identifier. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a6bf4a7b20365c8d16d3d8af0f26ed3fe}{set\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Sets an identifier. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a7ab60839a383c7888269bfb8760da998}{get\+First\+\_\+name}} ()
+\begin{DoxyCompactList}\small\item\em Get the first name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a83e203151acbb7eac4dfc09ba79ed952}{set\+First\+\_\+name}} (String first\+Name)
+\begin{DoxyCompactList}\small\item\em Set the first name. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a5a77902853a0507a88959005d3e859d1}{get\+Last\+\_\+name}} ()
+\begin{DoxyCompactList}\small\item\em Get the last name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a3275d9b25cb507063f173dd3436833a3}{set\+Last\+\_\+name}} (String last\+Name)
+\begin{DoxyCompactList}\small\item\em Set the last name. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a37b41a7a616f917cf5a4c925b2c79cbf}{get\+Email}} ()
+\begin{DoxyCompactList}\small\item\em Gets the email. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a779ad0031a7972a279deb6904e114a07}{set\+Email}} (String email)
+\begin{DoxyCompactList}\small\item\em Sets an email. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a8e82e83edc2d64984b02fbb10c62d78c}{get\+Password}} ()
+\begin{DoxyCompactList}\small\item\em Gets the password. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a6d78a4bc32c3d377093c589670df13f8}{set\+Password}} (String password)
+\begin{DoxyCompactList}\small\item\em Sets a password. \end{DoxyCompactList}\item 
+Set$<$ Game\+Post $>$ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a7cd30b96ca52437d70346025b4603b5c}{get\+Game\+Post}} ()
+\begin{DoxyCompactList}\small\item\em Gets game post. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a85937c4b503e01d7e92b9cc633716f80}{set\+Game\+Post}} (Set$<$ Game\+Post $>$ game\+Post)
+\begin{DoxyCompactList}\small\item\em Sets game post. \end{DoxyCompactList}\item 
+Set$<$ Game\+Post $>$ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_af55d3e46fb5f42bb08b3b22679b4badd}{get\+Created\+Game\+Posts}} ()
+\begin{DoxyCompactList}\small\item\em Gets created game posts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a35263d8315373ce079f7548141c6d2ed}{set\+Created\+Game\+Posts}} (Set$<$ Game\+Post $>$ created\+Game\+Posts)
+\begin{DoxyCompactList}\small\item\em Sets created game posts. \end{DoxyCompactList}\item 
+Set$<$ Skill\+Level $>$ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_af48196df7c02de81606755d1b4aca705}{get\+Skill\+\_\+levels}} ()
+\begin{DoxyCompactList}\small\item\em Gets skill levels. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a01552607f9a99671eb8941f958120254}{set\+Skill\+\_\+levels}} (Set$<$ Skill\+Level $>$ sports\+\_\+skill\+\_\+levels)
+\begin{DoxyCompactList}\small\item\em Sets skill levels. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_ae9b5020463990c5e98d68a1e456ca88d}{is\+Authenticated}} (String email, String password)
+\begin{DoxyCompactList}\small\item\em Query if \textquotesingle{}email\textquotesingle{} is authenticated. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_abffe279645215b71f505c92a8810b3bc}{is\+Admin}} (\mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}} u)
+\begin{DoxyCompactList}\small\item\em Query if \textquotesingle{}u\textquotesingle{} is admin. \end{DoxyCompactList}\item 
+permission \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a0a63fd9ffe103bf74018a9dc7a9b96b4}{get\+Role}} ()
+\begin{DoxyCompactList}\small\item\em Gets the role. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_adad243d1804bf82ee68b642ef140c9e2}{set\+Role}} (permission role)
+\begin{DoxyCompactList}\small\item\em Sets a role. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a5e8063462cb311031a42c5df5e0e26a2}{equals}} (Object o)
+\begin{DoxyCompactList}\small\item\em Tests if this Object is considered equal to another. \end{DoxyCompactList}\item 
+Flux$<$ String $>$ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a15f60059dc0420de2b945eef86c7a5d7}{get\+User\+Stream}} ()
+\begin{DoxyCompactList}\small\item\em Gets user stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The coms 309. auth. authentication. 
+
+The coms 309. enums. permission.\+permission
+
+The coms 309. game post. game post
+
+The coms 309. skill level. skill level
+
+The org.\+hibernate.\+annotations. not found
+
+The org.\+hibernate.\+annotations. not found action
+
+The jakarta.\+persistence.\texorpdfstring{$\ast$}{*}
+
+The lombok. getter
+
+The lombok. setter
+
+The reactor.\+core.\+publisher. flux
+
+The reactor.\+core.\+publisher. mono
+
+Duration of the java.\+time.
+
+Set the java.\+util. hash belongs to
+
+The java.\+util. objects
+
+Set the java.\+util. belongs to
+
+An users.
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023 
+\end{DoxyDate}
+
+
+Definition at line \mbox{\hyperlink{_users_8java_source_l00049}{49}} of file \mbox{\hyperlink{_users_8java_source}{Users.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcoms309_1_1_users_1_1_users_a909b2250dd18985196a8ee6d5b82c62f}\label{classcoms309_1_1_users_1_1_users_a909b2250dd18985196a8ee6d5b82c62f} 
+\index{coms309.Users.Users@{coms309.Users.Users}!Users@{Users}}
+\index{Users@{Users}!coms309.Users.Users@{coms309.Users.Users}}
+\doxysubsubsection{\texorpdfstring{Users()}{Users()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily public coms309.\+Users.\+Users.\+Users (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023 
+\end{DoxyDate}
+
+
+Definition at line \mbox{\hyperlink{_users_8java_source_l00193}{193}} of file \mbox{\hyperlink{_users_8java_source}{Users.\+java}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcoms309_1_1_users_1_1_users_a909b2250dd18985196a8ee6d5b82c62f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classcoms309_1_1_users_1_1_users_a99b5095dcab5a8a4f07b7fec74c29c1e}\label{classcoms309_1_1_users_1_1_users_a99b5095dcab5a8a4f07b7fec74c29c1e} 
+\index{coms309.Users.Users@{coms309.Users.Users}!Users@{Users}}
+\index{Users@{Users}!coms309.Users.Users@{coms309.Users.Users}}
+\doxysubsubsection{\texorpdfstring{Users()}{Users()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily public coms309.\+Users.\+Users.\+Users (\begin{DoxyParamCaption}\item[{String}]{first\+Name,  }\item[{String}]{last\+\_\+name,  }\item[{String}]{email,  }\item[{String}]{password }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em first\+Name} & The person\textquotesingle{}s first name. \\
+\hline
+{\em last\+\_\+name} & The person\textquotesingle{}s last name. \\
+\hline
+{\em email} & The email. \\
+\hline
+{\em password} & The password. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_users_8java_source_l00209}{209}} of file \mbox{\hyperlink{_users_8java_source}{Users.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcoms309_1_1_users_1_1_users_a5e8063462cb311031a42c5df5e0e26a2}\label{classcoms309_1_1_users_1_1_users_a5e8063462cb311031a42c5df5e0e26a2} 
+\index{coms309.Users.Users@{coms309.Users.Users}!equals@{equals}}
+\index{equals@{equals}!coms309.Users.Users@{coms309.Users.Users}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily Override public boolean coms309.\+Users.\+Users.\+equals (\begin{DoxyParamCaption}\item[{Object}]{o }\end{DoxyParamCaption})}
+
+
+
+Tests if this Object is considered equal to another. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & The object to compare to this object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the objects are considered equal, false if they are not. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_users_8java_source_l00536}{536}} of file \mbox{\hyperlink{_users_8java_source}{Users.\+java}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcoms309_1_1_users_1_1_users_a5e8063462cb311031a42c5df5e0e26a2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{classcoms309_1_1_users_1_1_users_a5e8063462cb311031a42c5df5e0e26a2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classcoms309_1_1_users_1_1_users_af55d3e46fb5f42bb08b3b22679b4badd}\label{classcoms309_1_1_users_1_1_users_af55d3e46fb5f42bb08b3b22679b4badd} 
+\index{coms309.Users.Users@{coms309.Users.Users}!getCreatedGamePosts@{getCreatedGamePosts}}
+\index{getCreatedGamePosts@{getCreatedGamePosts}!coms309.Users.Users@{coms309.Users.Users}}
+\doxysubsubsection{\texorpdfstring{getCreatedGamePosts()}{getCreatedGamePosts()}}
+{\footnotesize\ttfamily public Set$<$ Game\+Post $>$ coms309.\+Users.\+Users.\+get\+Created\+Game\+Posts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets created game posts. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The created game posts. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_users_8java_source_l00408}{408}} of file \mbox{\hyperlink{_users_8java_source}{Users.\+java}}.
+
+\Hypertarget{classcoms309_1_1_users_1_1_users_a37b41a7a616f917cf5a4c925b2c79cbf}\label{classcoms309_1_1_users_1_1_users_a37b41a7a616f917cf5a4c925b2c79cbf} 
+\index{coms309.Users.Users@{coms309.Users.Users}!getEmail@{getEmail}}
+\index{getEmail@{getEmail}!coms309.Users.Users@{coms309.Users.Users}}
+\doxysubsubsection{\texorpdfstring{getEmail()}{getEmail()}}
+{\footnotesize\ttfamily public String coms309.\+Users.\+Users.\+get\+Email (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the email. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The email. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_users_8java_source_l00318}{318}} of file \mbox{\hyperlink{_users_8java_source}{Users.\+java}}.
+
+\Hypertarget{classcoms309_1_1_users_1_1_users_a7ab60839a383c7888269bfb8760da998}\label{classcoms309_1_1_users_1_1_users_a7ab60839a383c7888269bfb8760da998} 
+\index{coms309.Users.Users@{coms309.Users.Users}!getFirst\_name@{getFirst\_name}}
+\index{getFirst\_name@{getFirst\_name}!coms309.Users.Users@{coms309.Users.Users}}
+\doxysubsubsection{\texorpdfstring{getFirst\_name()}{getFirst\_name()}}
+{\footnotesize\ttfamily public String coms309.\+Users.\+Users.\+get\+First\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the first name. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+String. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_users_8java_source_l00258}{258}} of file \mbox{\hyperlink{_users_8java_source}{Users.\+java}}.
+
+\Hypertarget{classcoms309_1_1_users_1_1_users_a7cd30b96ca52437d70346025b4603b5c}\label{classcoms309_1_1_users_1_1_users_a7cd30b96ca52437d70346025b4603b5c} 
+\index{coms309.Users.Users@{coms309.Users.Users}!getGamePost@{getGamePost}}
+\index{getGamePost@{getGamePost}!coms309.Users.Users@{coms309.Users.Users}}
+\doxysubsubsection{\texorpdfstring{getGamePost()}{getGamePost()}}
+{\footnotesize\ttfamily public Set$<$ Game\+Post $>$ coms309.\+Users.\+Users.\+get\+Game\+Post (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets game post. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The game post. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_users_8java_source_l00378}{378}} of file \mbox{\hyperlink{_users_8java_source}{Users.\+java}}.
+
+\Hypertarget{classcoms309_1_1_users_1_1_users_a8ee7b438c8d9bd14723bcde4b6e85b22}\label{classcoms309_1_1_users_1_1_users_a8ee7b438c8d9bd14723bcde4b6e85b22} 
+\index{coms309.Users.Users@{coms309.Users.Users}!getId@{getId}}
+\index{getId@{getId}!coms309.Users.Users@{coms309.Users.Users}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily public int coms309.\+Users.\+Users.\+get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the identifier. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+int. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_users_8java_source_l00228}{228}} of file \mbox{\hyperlink{_users_8java_source}{Users.\+java}}.
+
+\Hypertarget{classcoms309_1_1_users_1_1_users_a5a77902853a0507a88959005d3e859d1}\label{classcoms309_1_1_users_1_1_users_a5a77902853a0507a88959005d3e859d1} 
+\index{coms309.Users.Users@{coms309.Users.Users}!getLast\_name@{getLast\_name}}
+\index{getLast\_name@{getLast\_name}!coms309.Users.Users@{coms309.Users.Users}}
+\doxysubsubsection{\texorpdfstring{getLast\_name()}{getLast\_name()}}
+{\footnotesize\ttfamily public String coms309.\+Users.\+Users.\+get\+Last\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the last name. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+String. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_users_8java_source_l00288}{288}} of file \mbox{\hyperlink{_users_8java_source}{Users.\+java}}.
+
+\Hypertarget{classcoms309_1_1_users_1_1_users_a8e82e83edc2d64984b02fbb10c62d78c}\label{classcoms309_1_1_users_1_1_users_a8e82e83edc2d64984b02fbb10c62d78c} 
+\index{coms309.Users.Users@{coms309.Users.Users}!getPassword@{getPassword}}
+\index{getPassword@{getPassword}!coms309.Users.Users@{coms309.Users.Users}}
+\doxysubsubsection{\texorpdfstring{getPassword()}{getPassword()}}
+{\footnotesize\ttfamily public String coms309.\+Users.\+Users.\+get\+Password (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the password. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The password. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_users_8java_source_l00348}{348}} of file \mbox{\hyperlink{_users_8java_source}{Users.\+java}}.
+
+\Hypertarget{classcoms309_1_1_users_1_1_users_a0a63fd9ffe103bf74018a9dc7a9b96b4}\label{classcoms309_1_1_users_1_1_users_a0a63fd9ffe103bf74018a9dc7a9b96b4} 
+\index{coms309.Users.Users@{coms309.Users.Users}!getRole@{getRole}}
+\index{getRole@{getRole}!coms309.Users.Users@{coms309.Users.Users}}
+\doxysubsubsection{\texorpdfstring{getRole()}{getRole()}}
+{\footnotesize\ttfamily public permission coms309.\+Users.\+Users.\+get\+Role (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the role. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The role. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_users_8java_source_l00503}{503}} of file \mbox{\hyperlink{_users_8java_source}{Users.\+java}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcoms309_1_1_users_1_1_users_a0a63fd9ffe103bf74018a9dc7a9b96b4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classcoms309_1_1_users_1_1_users_af48196df7c02de81606755d1b4aca705}\label{classcoms309_1_1_users_1_1_users_af48196df7c02de81606755d1b4aca705} 
+\index{coms309.Users.Users@{coms309.Users.Users}!getSkill\_levels@{getSkill\_levels}}
+\index{getSkill\_levels@{getSkill\_levels}!coms309.Users.Users@{coms309.Users.Users}}
+\doxysubsubsection{\texorpdfstring{getSkill\_levels()}{getSkill\_levels()}}
+{\footnotesize\ttfamily public Set$<$ Skill\+Level $>$ coms309.\+Users.\+Users.\+get\+Skill\+\_\+levels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets skill levels. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The skill levels. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_users_8java_source_l00438}{438}} of file \mbox{\hyperlink{_users_8java_source}{Users.\+java}}.
+
+\Hypertarget{classcoms309_1_1_users_1_1_users_a15f60059dc0420de2b945eef86c7a5d7}\label{classcoms309_1_1_users_1_1_users_a15f60059dc0420de2b945eef86c7a5d7} 
+\index{coms309.Users.Users@{coms309.Users.Users}!getUserStream@{getUserStream}}
+\index{getUserStream@{getUserStream}!coms309.Users.Users@{coms309.Users.Users}}
+\doxysubsubsection{\texorpdfstring{getUserStream()}{getUserStream()}}
+{\footnotesize\ttfamily public Flux$<$ String $>$ coms309.\+Users.\+Users.\+get\+User\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets user stream. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The user stream. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_users_8java_source_l00559}{559}} of file \mbox{\hyperlink{_users_8java_source}{Users.\+java}}.
+
+\Hypertarget{classcoms309_1_1_users_1_1_users_abffe279645215b71f505c92a8810b3bc}\label{classcoms309_1_1_users_1_1_users_abffe279645215b71f505c92a8810b3bc} 
+\index{coms309.Users.Users@{coms309.Users.Users}!isAdmin@{isAdmin}}
+\index{isAdmin@{isAdmin}!coms309.Users.Users@{coms309.Users.Users}}
+\doxysubsubsection{\texorpdfstring{isAdmin()}{isAdmin()}}
+{\footnotesize\ttfamily public boolean coms309.\+Users.\+Users.\+is\+Admin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}}}]{u }\end{DoxyParamCaption})}
+
+
+
+Query if \textquotesingle{}u\textquotesingle{} is admin. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em u} & The Users to process.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if admin, false if not. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_users_8java_source_l00488}{488}} of file \mbox{\hyperlink{_users_8java_source}{Users.\+java}}.
+
+\Hypertarget{classcoms309_1_1_users_1_1_users_ae9b5020463990c5e98d68a1e456ca88d}\label{classcoms309_1_1_users_1_1_users_ae9b5020463990c5e98d68a1e456ca88d} 
+\index{coms309.Users.Users@{coms309.Users.Users}!isAuthenticated@{isAuthenticated}}
+\index{isAuthenticated@{isAuthenticated}!coms309.Users.Users@{coms309.Users.Users}}
+\doxysubsubsection{\texorpdfstring{isAuthenticated()}{isAuthenticated()}}
+{\footnotesize\ttfamily public boolean coms309.\+Users.\+Users.\+is\+Authenticated (\begin{DoxyParamCaption}\item[{String}]{email,  }\item[{String}]{password }\end{DoxyParamCaption})}
+
+
+
+Query if \textquotesingle{}email\textquotesingle{} is authenticated. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em email} & The email. \\
+\hline
+{\em password} & The password.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if authenticated, false if not. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_users_8java_source_l00471}{471}} of file \mbox{\hyperlink{_users_8java_source}{Users.\+java}}.
+
+\Hypertarget{classcoms309_1_1_users_1_1_users_a35263d8315373ce079f7548141c6d2ed}\label{classcoms309_1_1_users_1_1_users_a35263d8315373ce079f7548141c6d2ed} 
+\index{coms309.Users.Users@{coms309.Users.Users}!setCreatedGamePosts@{setCreatedGamePosts}}
+\index{setCreatedGamePosts@{setCreatedGamePosts}!coms309.Users.Users@{coms309.Users.Users}}
+\doxysubsubsection{\texorpdfstring{setCreatedGamePosts()}{setCreatedGamePosts()}}
+{\footnotesize\ttfamily public void coms309.\+Users.\+Users.\+set\+Created\+Game\+Posts (\begin{DoxyParamCaption}\item[{Set$<$ Game\+Post $>$}]{created\+Game\+Posts }\end{DoxyParamCaption})}
+
+
+
+Sets created game posts. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em created\+Game\+Posts} & The created game posts. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_users_8java_source_l00423}{423}} of file \mbox{\hyperlink{_users_8java_source}{Users.\+java}}.
+
+\Hypertarget{classcoms309_1_1_users_1_1_users_a779ad0031a7972a279deb6904e114a07}\label{classcoms309_1_1_users_1_1_users_a779ad0031a7972a279deb6904e114a07} 
+\index{coms309.Users.Users@{coms309.Users.Users}!setEmail@{setEmail}}
+\index{setEmail@{setEmail}!coms309.Users.Users@{coms309.Users.Users}}
+\doxysubsubsection{\texorpdfstring{setEmail()}{setEmail()}}
+{\footnotesize\ttfamily public void coms309.\+Users.\+Users.\+set\+Email (\begin{DoxyParamCaption}\item[{String}]{email }\end{DoxyParamCaption})}
+
+
+
+Sets an email. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em email} & The email. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_users_8java_source_l00333}{333}} of file \mbox{\hyperlink{_users_8java_source}{Users.\+java}}.
+
+\Hypertarget{classcoms309_1_1_users_1_1_users_a83e203151acbb7eac4dfc09ba79ed952}\label{classcoms309_1_1_users_1_1_users_a83e203151acbb7eac4dfc09ba79ed952} 
+\index{coms309.Users.Users@{coms309.Users.Users}!setFirst\_name@{setFirst\_name}}
+\index{setFirst\_name@{setFirst\_name}!coms309.Users.Users@{coms309.Users.Users}}
+\doxysubsubsection{\texorpdfstring{setFirst\_name()}{setFirst\_name()}}
+{\footnotesize\ttfamily public void coms309.\+Users.\+Users.\+set\+First\+\_\+name (\begin{DoxyParamCaption}\item[{String}]{first\+Name }\end{DoxyParamCaption})}
+
+
+
+Set the first name. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em first\+Name} & . \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_users_8java_source_l00273}{273}} of file \mbox{\hyperlink{_users_8java_source}{Users.\+java}}.
+
+\Hypertarget{classcoms309_1_1_users_1_1_users_a85937c4b503e01d7e92b9cc633716f80}\label{classcoms309_1_1_users_1_1_users_a85937c4b503e01d7e92b9cc633716f80} 
+\index{coms309.Users.Users@{coms309.Users.Users}!setGamePost@{setGamePost}}
+\index{setGamePost@{setGamePost}!coms309.Users.Users@{coms309.Users.Users}}
+\doxysubsubsection{\texorpdfstring{setGamePost()}{setGamePost()}}
+{\footnotesize\ttfamily public void coms309.\+Users.\+Users.\+set\+Game\+Post (\begin{DoxyParamCaption}\item[{Set$<$ Game\+Post $>$}]{game\+Post }\end{DoxyParamCaption})}
+
+
+
+Sets game post. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Post} & The game post. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_users_8java_source_l00393}{393}} of file \mbox{\hyperlink{_users_8java_source}{Users.\+java}}.
+
+\Hypertarget{classcoms309_1_1_users_1_1_users_a6bf4a7b20365c8d16d3d8af0f26ed3fe}\label{classcoms309_1_1_users_1_1_users_a6bf4a7b20365c8d16d3d8af0f26ed3fe} 
+\index{coms309.Users.Users@{coms309.Users.Users}!setId@{setId}}
+\index{setId@{setId}!coms309.Users.Users@{coms309.Users.Users}}
+\doxysubsubsection{\texorpdfstring{setId()}{setId()}}
+{\footnotesize\ttfamily public void coms309.\+Users.\+Users.\+set\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Sets an identifier. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & . \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_users_8java_source_l00243}{243}} of file \mbox{\hyperlink{_users_8java_source}{Users.\+java}}.
+
+\Hypertarget{classcoms309_1_1_users_1_1_users_a3275d9b25cb507063f173dd3436833a3}\label{classcoms309_1_1_users_1_1_users_a3275d9b25cb507063f173dd3436833a3} 
+\index{coms309.Users.Users@{coms309.Users.Users}!setLast\_name@{setLast\_name}}
+\index{setLast\_name@{setLast\_name}!coms309.Users.Users@{coms309.Users.Users}}
+\doxysubsubsection{\texorpdfstring{setLast\_name()}{setLast\_name()}}
+{\footnotesize\ttfamily public void coms309.\+Users.\+Users.\+set\+Last\+\_\+name (\begin{DoxyParamCaption}\item[{String}]{last\+Name }\end{DoxyParamCaption})}
+
+
+
+Set the last name. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em last\+Name} & . \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_users_8java_source_l00303}{303}} of file \mbox{\hyperlink{_users_8java_source}{Users.\+java}}.
+
+\Hypertarget{classcoms309_1_1_users_1_1_users_a6d78a4bc32c3d377093c589670df13f8}\label{classcoms309_1_1_users_1_1_users_a6d78a4bc32c3d377093c589670df13f8} 
+\index{coms309.Users.Users@{coms309.Users.Users}!setPassword@{setPassword}}
+\index{setPassword@{setPassword}!coms309.Users.Users@{coms309.Users.Users}}
+\doxysubsubsection{\texorpdfstring{setPassword()}{setPassword()}}
+{\footnotesize\ttfamily public void coms309.\+Users.\+Users.\+set\+Password (\begin{DoxyParamCaption}\item[{String}]{password }\end{DoxyParamCaption})}
+
+
+
+Sets a password. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em password} & The password. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_users_8java_source_l00363}{363}} of file \mbox{\hyperlink{_users_8java_source}{Users.\+java}}.
+
+\Hypertarget{classcoms309_1_1_users_1_1_users_adad243d1804bf82ee68b642ef140c9e2}\label{classcoms309_1_1_users_1_1_users_adad243d1804bf82ee68b642ef140c9e2} 
+\index{coms309.Users.Users@{coms309.Users.Users}!setRole@{setRole}}
+\index{setRole@{setRole}!coms309.Users.Users@{coms309.Users.Users}}
+\doxysubsubsection{\texorpdfstring{setRole()}{setRole()}}
+{\footnotesize\ttfamily public void coms309.\+Users.\+Users.\+set\+Role (\begin{DoxyParamCaption}\item[{permission}]{role }\end{DoxyParamCaption})}
+
+
+
+Sets a role. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em role} & The role. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_users_8java_source_l00518}{518}} of file \mbox{\hyperlink{_users_8java_source}{Users.\+java}}.
+
+\Hypertarget{classcoms309_1_1_users_1_1_users_a01552607f9a99671eb8941f958120254}\label{classcoms309_1_1_users_1_1_users_a01552607f9a99671eb8941f958120254} 
+\index{coms309.Users.Users@{coms309.Users.Users}!setSkill\_levels@{setSkill\_levels}}
+\index{setSkill\_levels@{setSkill\_levels}!coms309.Users.Users@{coms309.Users.Users}}
+\doxysubsubsection{\texorpdfstring{setSkill\_levels()}{setSkill\_levels()}}
+{\footnotesize\ttfamily public void coms309.\+Users.\+Users.\+set\+Skill\+\_\+levels (\begin{DoxyParamCaption}\item[{Set$<$ Skill\+Level $>$}]{sports\+\_\+skill\+\_\+levels }\end{DoxyParamCaption})}
+
+
+
+Sets skill levels. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em sports\+\_\+skill\+\_\+levels} & The sports skill levels. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_users_8java_source_l00453}{453}} of file \mbox{\hyperlink{_users_8java_source}{Users.\+java}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Arie/\+Develop/hb\+\_\+215/\+Backend/src/main/java/coms309/\+Users/\mbox{\hyperlink{_users_8java}{Users.\+java}}\end{DoxyCompactItemize}

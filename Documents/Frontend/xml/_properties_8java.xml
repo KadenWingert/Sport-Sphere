@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_properties_8java" kind="file" language="Java">
+    <compoundname>Properties.java</compoundname>
+    <innerclass refid="classmodels_1_1_properties" prot="public">models::Properties</innerclass>
+    <innernamespace refid="namespacemodels">models</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">package<sp/></highlight><highlight class="normal">models;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classmodels_1_1_properties" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmodels_1_1_properties" kindref="compound">Properties</ref><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>String<sp/>place_id;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>String<sp/>osm_type;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>String<sp/>osm_id;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>String<sp/>place_rank;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>String<sp/>category;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>String<sp/>type;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>String<sp/>importance;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>String<sp/>addresstype;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>String<sp/>name;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>String<sp/>display_name;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="classmodels_1_1_address" kindref="compound">Address</ref><sp/>address;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="classmodels_1_1_properties_1a8af02df94e9b34788d2b1c1cdef6d713" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmodels_1_1_address" kindref="compound">Address</ref><sp/><ref refid="classmodels_1_1_properties_1a8af02df94e9b34788d2b1c1cdef6d713" kindref="member">getAddress</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>address;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="classmodels_1_1_properties_1abc4b56a04227423cd2975458585cdec1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmodels_1_1_properties_1abc4b56a04227423cd2975458585cdec1" kindref="member">setAddress</ref>(<ref refid="classmodels_1_1_address" kindref="compound">Address</ref><sp/>address)<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.address<sp/>=<sp/>address;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="classmodels_1_1_properties_1a7c8d7cc43d213dc20857fdfd7d3e7d18" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>String<sp/><ref refid="classmodels_1_1_properties_1a7c8d7cc43d213dc20857fdfd7d3e7d18" kindref="member">getPlace_id</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>place_id;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="classmodels_1_1_properties_1a26d75c0c920a002f3e1972345087f786" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmodels_1_1_properties_1a26d75c0c920a002f3e1972345087f786" kindref="member">setPlace_id</ref>(String<sp/>place_id)<sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.place_id<sp/>=<sp/>place_id;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="classmodels_1_1_properties_1a0823b6c931f67a4b1ff47f3282b3b2f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>String<sp/><ref refid="classmodels_1_1_properties_1a0823b6c931f67a4b1ff47f3282b3b2f4" kindref="member">getOsm_type</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>osm_type;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="classmodels_1_1_properties_1a747016f8b18fa2836ae9f9232a18c48e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmodels_1_1_properties_1a747016f8b18fa2836ae9f9232a18c48e" kindref="member">setOsm_type</ref>(String<sp/>osm_type)<sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.osm_type<sp/>=<sp/>osm_type;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="classmodels_1_1_properties_1aedfafdc59bf42218c22d47b536f89c67" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>String<sp/><ref refid="classmodels_1_1_properties_1aedfafdc59bf42218c22d47b536f89c67" kindref="member">getOsm_id</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>osm_id;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="classmodels_1_1_properties_1a647bb47f944eb5063777b8efdd0b542d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmodels_1_1_properties_1a647bb47f944eb5063777b8efdd0b542d" kindref="member">setOsm_id</ref>(String<sp/>osm_id)<sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.osm_id<sp/>=<sp/>osm_id;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="classmodels_1_1_properties_1abed3a7ad43ba959b86696bf13481db05" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>String<sp/><ref refid="classmodels_1_1_properties_1abed3a7ad43ba959b86696bf13481db05" kindref="member">getPlace_rank</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>place_rank;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184" refid="classmodels_1_1_properties_1a227eda2b1ce5252daf132dea1b7ecc29" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmodels_1_1_properties_1a227eda2b1ce5252daf132dea1b7ecc29" kindref="member">setPlace_rank</ref>(String<sp/>place_rank)<sp/>{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.place_rank<sp/>=<sp/>place_rank;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="classmodels_1_1_properties_1a28ba9eeb126be65e6580821646aa3624" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>String<sp/><ref refid="classmodels_1_1_properties_1a28ba9eeb126be65e6580821646aa3624" kindref="member">getCategory</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>category;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214" refid="classmodels_1_1_properties_1af8c9cb7e8f1e338489fad41049ce73cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmodels_1_1_properties_1af8c9cb7e8f1e338489fad41049ce73cc" kindref="member">setCategory</ref>(String<sp/>category)<sp/>{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.category<sp/>=<sp/>category;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229" refid="classmodels_1_1_properties_1a1e034bd03cec4ad4d3b0672e0d87f774" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>String<sp/><ref refid="classmodels_1_1_properties_1a1e034bd03cec4ad4d3b0672e0d87f774" kindref="member">getType</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>type;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244" refid="classmodels_1_1_properties_1a4c5382eb7028219567ec7415c9f5b86d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmodels_1_1_properties_1a4c5382eb7028219567ec7415c9f5b86d" kindref="member">setType</ref>(String<sp/>type)<sp/>{</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.type<sp/>=<sp/>type;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259" refid="classmodels_1_1_properties_1aef5c0311780523c219ee8ac6b6270cf0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>String<sp/><ref refid="classmodels_1_1_properties_1aef5c0311780523c219ee8ac6b6270cf0" kindref="member">getImportance</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>importance;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274" refid="classmodels_1_1_properties_1a2746987adb2f2c0147b8967c2fb7215b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmodels_1_1_properties_1a2746987adb2f2c0147b8967c2fb7215b" kindref="member">setImportance</ref>(String<sp/>importance)<sp/>{</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.importance<sp/>=<sp/>importance;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289" refid="classmodels_1_1_properties_1a52d7f9d305c5f3710ec9f5825c15916f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>String<sp/><ref refid="classmodels_1_1_properties_1a52d7f9d305c5f3710ec9f5825c15916f" kindref="member">getAddresstype</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>addresstype;</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="304" refid="classmodels_1_1_properties_1a8a7f54d9b3fdc3ffbb850474492f0edb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmodels_1_1_properties_1a8a7f54d9b3fdc3ffbb850474492f0edb" kindref="member">setAddresstype</ref>(String<sp/>addresstype)<sp/>{</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.addresstype<sp/>=<sp/>addresstype;</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="319" refid="classmodels_1_1_properties_1aa85d737b3d1db8dc49f0c1544a242ce7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>String<sp/><ref refid="classmodels_1_1_properties_1aa85d737b3d1db8dc49f0c1544a242ce7" kindref="member">getName</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>name;</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="334" refid="classmodels_1_1_properties_1a84d422a2aac22a046e2608bfe1be8e8f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmodels_1_1_properties_1a84d422a2aac22a046e2608bfe1be8e8f" kindref="member">setName</ref>(String<sp/>name)<sp/>{</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.name<sp/>=<sp/>name;</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="349" refid="classmodels_1_1_properties_1a17b3a830d8c0c9fb49460c7ce17822f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>String<sp/><ref refid="classmodels_1_1_properties_1a17b3a830d8c0c9fb49460c7ce17822f9" kindref="member">getDisplay_name</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>display_name;</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="364" refid="classmodels_1_1_properties_1ab0fec1d6cfe765a78ea9ba99be030817" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmodels_1_1_properties_1ab0fec1d6cfe765a78ea9ba99be030817" kindref="member">setDisplay_name</ref>(String<sp/>display_name)<sp/>{</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.display_name<sp/>=<sp/>display_name;</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="367"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,7 @@
+mutation CreateGamePost($sportId: ID!, $createdBy: ID!, $maxPlayers: Int!, $minPlayers: Int!, $playingOn: String!, $createdOn: String!,
+    $is_deleted: Boolean!,$address: String!, $gps: String!, $email: String!, $password: String!) {
+    createGamePost(sport_id: $sportId, created_by: $createdBy, max_players: $maxPlayers, min_players: $minPlayers, playing_on: $playingOn
+                    created_on: $createdOn, is_deleted: $is_deleted, address: $address, GPS: $gps,email: $email, password: $password) {
+        id
+    }
+}

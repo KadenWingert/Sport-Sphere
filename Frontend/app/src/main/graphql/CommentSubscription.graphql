@@ -1,0 +1,13 @@
+subscription OnCommentAdded {
+    subComments {
+        id
+        comment_details {message}
+        gamePost {
+            id
+        }
+        user {
+            first_name
+            last_name
+        }
+    }
+}

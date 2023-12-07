@@ -1,0 +1,5 @@
+<!-- res/values/dimens.xml -->
+<resources>
+    <dimen name="card_elevation">8dp</dimen>
+    app:cardUseCompatPadding="true"
+</resources>

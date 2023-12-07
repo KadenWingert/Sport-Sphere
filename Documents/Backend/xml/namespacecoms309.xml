@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacecoms309" kind="namespace" language="Java">
+    <compoundname>coms309</compoundname>
+    <innerclass refid="classcoms309_1_1_application" prot="public">coms309::Application</innerclass>
+    <innernamespace refid="namespacecoms309_1_1_auth">coms309::Auth</innernamespace>
+    <innernamespace refid="namespacecoms309_1_1_comment">coms309::Comment</innernamespace>
+    <innernamespace refid="namespacecoms309_1_1_email">coms309::Email</innernamespace>
+    <innernamespace refid="namespacecoms309_1_1_enums">coms309::Enums</innernamespace>
+    <innernamespace refid="namespacecoms309_1_1_exceptions">coms309::Exceptions</innernamespace>
+    <innernamespace refid="namespacecoms309_1_1_game_post">coms309::GamePost</innernamespace>
+    <innernamespace refid="namespacecoms309_1_1_location">coms309::Location</innernamespace>
+    <innernamespace refid="namespacecoms309_1_1_role">coms309::Role</innernamespace>
+    <innernamespace refid="namespacecoms309_1_1_skill_level">coms309::SkillLevel</innernamespace>
+    <innernamespace refid="namespacecoms309_1_1_sport">coms309::Sport</innernamespace>
+    <innernamespace refid="namespacecoms309_1_1_users">coms309::Users</innernamespace>
+    <innernamespace refid="namespacecoms309_1_1_websocket">coms309::Websocket</innernamespace>
+    <briefdescription>
+<para>The coms 309. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Application.java" line="4" column="15"/>
+  </compounddef>
+</doxygen>

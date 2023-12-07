@@ -1,0 +1,343 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > SkillLevel</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">coms309.SkillLevel</a>
+</div>
+
+<h1>Coverage Summary for Class: SkillLevel (coms309.SkillLevel)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">SkillLevel</td>
+<td class="coverageStat">
+  <span class="percent">
+    33.3%
+  </span>
+  <span class="absValue">
+    (3/9)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    57.1%
+  </span>
+  <span class="absValue">
+    (8/14)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">SkillLevel$HibernateInstantiator$UimQSER9</td>
+  </tr>
+  <tr>
+    <td class="name">SkillLevel$HibernateInstantiator$v5Bhglb7</td>
+  </tr>
+  <tr>
+    <td class="name">SkillLevel$HibernateInstantiator$ZVGG5bUk</td>
+  </tr>
+  <tr>
+    <td class="name">SkillLevel$HibernateProxy$AaSBg1Nr</td>
+  </tr>
+  <tr>
+    <td class="name">SkillLevel$HibernateProxy$Sv1pJw7i</td>
+  </tr>
+  <tr>
+    <td class="name">SkillLevel$HibernateProxy$ZTNWGNyl</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    33.3%
+  </span>
+  <span class="absValue">
+    (3/9)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    57.1%
+  </span>
+  <span class="absValue">
+    (8/14)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;
+&nbsp;/** @brief	The coms 309. skill level */
+&nbsp;package coms309.SkillLevel;
+&nbsp;
+&nbsp;/** @brief	The coms 309. sport. sport */
+&nbsp;import coms309.Sport.Sport;
+&nbsp;/** @brief	The coms 309. users. users */
+&nbsp;import coms309.Users.Users;
+&nbsp;/** @brief	The jakarta.persistence.* */
+&nbsp;import jakarta.persistence.*;
+&nbsp;/** @brief	The lombok. getter */
+&nbsp;import lombok.Getter;
+&nbsp;/** @brief	The lombok. no arguments constructor */
+&nbsp;import lombok.NoArgsConstructor;
+&nbsp;/** @brief	The lombok. setter */
+&nbsp;import lombok.Setter;
+&nbsp;/** @brief	The jakarta.persistence. entity */
+&nbsp;import jakarta.persistence.Entity;
+&nbsp;/** @brief	The jakarta.persistence. generated value */
+&nbsp;import jakarta.persistence.GeneratedValue;
+&nbsp;/** @brief	Type of the jakarta.persistence. generation */
+&nbsp;import jakarta.persistence.GenerationType;
+&nbsp;/** @brief	Identifier for the jakarta.persistence. */
+&nbsp;import jakarta.persistence.Id;
+&nbsp;
+&nbsp;/** @brief	Set the java.util. hash belongs to */
+&nbsp;import java.util.HashSet;
+&nbsp;/** @brief	Set the java.util. belongs to */
+&nbsp;import java.util.Set;
+&nbsp;
+&nbsp;/**********************************************************************************************//**
+&nbsp; * @class	SkillLevel
+&nbsp; *
+&nbsp; * @brief	A skill level.
+&nbsp; *
+&nbsp; * @author	Arie
+&nbsp; * @date	10/20/2023
+&nbsp; **************************************************************************************************/
+&nbsp;
+&nbsp;@Entity
+<b class="fc">&nbsp;@Getter @Setter @NoArgsConstructor</b>
+&nbsp;public class SkillLevel {
+&nbsp;
+&nbsp;    /**********************************************************************************************//**
+&nbsp;     * @fn	@Id @GeneratedValue(strategy = GenerationType.IDENTITY) @Column(name = &quot;id&quot;) private int id;
+&nbsp;     *
+&nbsp;     * @brief	Constructor
+&nbsp;     *
+&nbsp;     * @author	Arie
+&nbsp;     * @date	10/20/2023
+&nbsp;     *
+&nbsp;     * @param 	parameter1	(Optional) The first parameter.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @Id
+&nbsp;    @GeneratedValue(strategy = GenerationType.IDENTITY)
+&nbsp;    @Column(name = &quot;id&quot;)
+&nbsp;    private int id;
+&nbsp;    /** @brief	/** @brief	The skill level */
+&nbsp;    private int skill_level;
+&nbsp;
+&nbsp;    /**********************************************************************************************//**
+&nbsp;     * @fn	@ManyToOne @JoinColumn(name = &quot;user_id&quot;) private Users user;
+&nbsp;     *
+&nbsp;     * @brief	Constructor
+&nbsp;     *
+&nbsp;     * @author	Arie
+&nbsp;     * @date	10/20/2023
+&nbsp;     *
+&nbsp;     * @param 	parameter1	(Optional) The first parameter.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @ManyToOne
+&nbsp;    @JoinColumn(name = &quot;user_id&quot;)
+&nbsp;    private Users user;
+&nbsp;
+&nbsp;    /**********************************************************************************************//**
+&nbsp;     * @property	@OneToOne private Sport sport
+&nbsp;     *
+&nbsp;     * @brief	Gets the sport
+&nbsp;     *
+&nbsp;     * @returns	The sport.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @OneToOne
+&nbsp;    private Sport sport;
+&nbsp;
+&nbsp;    /**********************************************************************************************//**
+&nbsp;     * @fn	public SkillLevel(int skill_level, Users user)
+&nbsp;     *
+&nbsp;     * @brief	Constructor
+&nbsp;     *
+&nbsp;     * @author	Arie
+&nbsp;     * @date	10/20/2023
+&nbsp;     *
+&nbsp;     * @param 	skill_level	The skill level.
+&nbsp;     * @param 	user	   	The user.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+<b class="fc">&nbsp;    public SkillLevel(int skill_level, Users user) {</b>
+<b class="fc">&nbsp;        this.skill_level = skill_level;</b>
+<b class="fc">&nbsp;        this.user = user;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************//**
+&nbsp;     * @fn	public SkillLevel(int skill_level, Users user, Sport sport)
+&nbsp;     *
+&nbsp;     * @brief	Constructor
+&nbsp;     *
+&nbsp;     * @author	Arie
+&nbsp;     * @date	10/20/2023
+&nbsp;     *
+&nbsp;     * @param 	skill_level	The skill level.
+&nbsp;     * @param 	user	   	The user.
+&nbsp;     * @param 	sport	   	The sport.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+<b class="fc">&nbsp;    public SkillLevel(int skill_level, Users user, Sport sport) {</b>
+<b class="fc">&nbsp;        this.skill_level = skill_level;</b>
+<b class="fc">&nbsp;        this.user = user;</b>
+<b class="fc">&nbsp;        this.sport = sport;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************//**
+&nbsp;     * @fn	public int getId()
+&nbsp;     *
+&nbsp;     * @brief	Gets the identifier
+&nbsp;     *
+&nbsp;     * @author	Arie
+&nbsp;     * @date	10/20/2023
+&nbsp;     *
+&nbsp;     * @returns	int.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    public int getId() {
+<b class="nc">&nbsp;        return id;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************//**
+&nbsp;     * @fn	public void setId(int skill_level_id)
+&nbsp;     *
+&nbsp;     * @brief	Sets an identifier
+&nbsp;     *
+&nbsp;     * @author	Arie
+&nbsp;     * @date	10/20/2023
+&nbsp;     *
+&nbsp;     * @param 	skill_level_id	Identifier for the skill level.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    public void setId(int skill_level_id) {
+<b class="nc">&nbsp;        this.id = skill_level_id;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************//**
+&nbsp;     * @fn	public int getSkill_level()
+&nbsp;     *
+&nbsp;     * @brief	Gets skill level
+&nbsp;     *
+&nbsp;     * @author	Arie
+&nbsp;     * @date	10/20/2023
+&nbsp;     *
+&nbsp;     * @returns	The skill level.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    public int getSkill_level() {
+<b class="nc">&nbsp;        return skill_level;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************//**
+&nbsp;     * @fn	public void setSkill_level(int skill_level)
+&nbsp;     *
+&nbsp;     * @brief	Sets skill level
+&nbsp;     *
+&nbsp;     * @author	Arie
+&nbsp;     * @date	10/20/2023
+&nbsp;     *
+&nbsp;     * @param 	skill_level	The skill level.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    public void setSkill_level(int skill_level) {
+<b class="nc">&nbsp;        this.skill_level = skill_level;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************//**
+&nbsp;     * @fn	public Users getUser()
+&nbsp;     *
+&nbsp;     * @brief	Gets the user
+&nbsp;     *
+&nbsp;     * @author	Arie
+&nbsp;     * @date	10/20/2023
+&nbsp;     *
+&nbsp;     * @returns	The user.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    public Users getUser() {
+<b class="nc">&nbsp;        return user;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************//**
+&nbsp;     * @fn	public void setUser(Users user)
+&nbsp;     *
+&nbsp;     * @brief	Sets a user
+&nbsp;     *
+&nbsp;     * @author	Arie
+&nbsp;     * @date	10/20/2023
+&nbsp;     *
+&nbsp;     * @param 	user	The user.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    public void setUser(Users user) {
+<b class="nc">&nbsp;        this.user = user;</b>
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-12-04 13:11</div>
+</div>
+</body>
+</html>

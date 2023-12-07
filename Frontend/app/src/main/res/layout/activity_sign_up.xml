@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView">
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:id="@+id/backgroundLayout">
+
+    <!-- Email Label -->
+    <TextView
+        android:id="@+id/emailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="12dp"
+        android:text="Email"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <!-- Email Address -->
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/emailLabel"
+        android:background="@drawable/rounded_edittext_background"
+        android:hint="john.doe@gmail.com"
+        android:paddingLeft="10dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="8dp"
+        android:inputType="textEmailAddress" />
+
+    <!-- Password Label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:paddingLeft="12dp"
+        android:id="@+id/passwordLabel"
+        android:layout_below="@+id/emailEditText"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Password -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/passwordLabel"
+        android:background="@drawable/rounded_edittext_background"
+        android:paddingLeft="10dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="8dp"
+        android:inputType="textPassword" />
+
+    <!-- Confirm Password Label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Password"
+        android:paddingLeft="12dp"
+        android:id="@+id/confirmPasswordLabel"
+        android:layout_below="@+id/passwordEditText"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Confirm Password -->
+    <EditText
+        android:id="@+id/confirmPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/confirmPasswordLabel"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:inputType="textPassword" />
+
+    <!-- First Name Label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Name"
+        android:paddingLeft="12dp"
+        android:id="@+id/firstNameLabel"
+        android:layout_below="@+id/confirmPasswordEditText"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="8dp" />
+
+    <!-- First Name -->
+    <EditText
+        android:id="@+id/firstNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/firstNameLabel"
+        android:background="@drawable/rounded_edittext_background"
+        android:paddingLeft="10dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Last Name Label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Name"
+        android:paddingLeft="12dp"
+        android:id="@+id/lastNameLabel"
+        android:layout_below="@+id/firstNameEditText"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:textColor="#000000"
+        android:layout_marginTop="8dp" />
+
+    <!-- Last Name -->
+    <EditText
+        android:id="@+id/lastNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/lastNameLabel"
+        android:background="@drawable/rounded_edittext_background"
+        android:paddingLeft="10dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Address Text-->
+    <TextView
+        android:id="@+id/addressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address (Optional)"
+        android:layout_below="@+id/lastNameEditText"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:paddingLeft="10dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/addressInput"
+        android:dropDownHeight="wrap_content"
+        android:dropDownAnchor="@+id/addressInput"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/addressText"
+        android:background="@drawable/rounded_edittext_background"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="8dp"
+        android:scrollHorizontally="true"
+        android:inputType="textPostalAddress"
+        android:hint="Address" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/addressInput"
+        android:layout_marginTop="20dp"
+        android:text="Submit" />
+</RelativeLayout>
+</ScrollView>

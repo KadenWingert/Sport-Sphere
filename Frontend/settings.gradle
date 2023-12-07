@@ -1,0 +1,33 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url = uri("https://api.mapbox.com/downloads/v2/releases/maven")
+            authentication {
+               basic(BasicAuthentication)
+            }
+            credentials {
+                // Do not change the username below.
+                // This should always be `mapbox` (not your username).
+                username = "mapbox"
+
+                // Use the secret token you stored in gradle.properties as the password
+                password = "sk.eyJ1Ijoia2FkZW53aW4iLCJhIjoiY2xubThuZ2R5MW43bDJsbzllanU5NG5hNyJ9._cJa24dA_VF9-MBRvXB__Q"
+            }
+        }
+    }
+}
+
+rootProject.name = "SportsSphere"
+include(":app")
+ 

@@ -1,0 +1,383 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcoms309_1_1_skill_level_1_1_skill_level" kind="class" language="Java" prot="public">
+    <compoundname>coms309::SkillLevel::SkillLevel</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcoms309_1_1_skill_level_1_1_skill_level_1a636f9d894a1940e77304aec7e401068e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int coms309.SkillLevel.SkillLevel.id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>coms309.SkillLevel.SkillLevel.id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevel.java" line="59" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevel.java" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_skill_level_1_1_skill_level_1a39aa1a665d5327b89d83a5327085969b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int coms309.SkillLevel.SkillLevel.skill_level</definition>
+        <argsstring></argsstring>
+        <name>skill_level</name>
+        <qualifiedname>coms309.SkillLevel.SkillLevel.skill_level</qualifiedname>
+        <briefdescription>
+<para>/** </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The skill level </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevel.java" line="61" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevel.java" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_skill_level_1_1_skill_level_1adb42310ab2b5245a5b4be287c183a642" prot="private" static="no" mutable="no">
+        <type>Users</type>
+        <definition>Users coms309.SkillLevel.SkillLevel.user</definition>
+        <argsstring></argsstring>
+        <name>user</name>
+        <qualifiedname>coms309.SkillLevel.SkillLevel.user</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevel.java" line="76" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevel.java" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_skill_level_1_1_skill_level_1adac1fc0792671bf48195e3743aff1510" prot="private" static="no" mutable="no">
+        <type>Sport</type>
+        <definition>OneToOne private Sport coms309.SkillLevel.SkillLevel::sport</definition>
+        <argsstring></argsstring>
+        <name>sport</name>
+        <qualifiedname>coms309.SkillLevel.SkillLevel.sport</qualifiedname>
+        <briefdescription>
+<para>Gets the sport. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The sport. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevel.java" line="87" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevel.java" bodystart="87" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcoms309_1_1_skill_level_1_1_skill_level_1a3688c34fa0abc4f0ec55929e409ad928" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>public coms309.SkillLevel.SkillLevel::SkillLevel</definition>
+        <argsstring>(int skill_level, Users user)</argsstring>
+        <name>SkillLevel</name>
+        <qualifiedname>coms309.SkillLevel.SkillLevel.SkillLevel</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>skill_level</declname>
+        </param>
+        <param>
+          <type>Users</type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>skill_level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The skill level. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>user</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevel.java" line="101" column="12" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevel.java" bodystart="101" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_skill_level_1_1_skill_level_1ae1defba278ba5b9e2f2db46d2036b95b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>public coms309.SkillLevel.SkillLevel::SkillLevel</definition>
+        <argsstring>(int skill_level, Users user, Sport sport)</argsstring>
+        <name>SkillLevel</name>
+        <qualifiedname>coms309.SkillLevel.SkillLevel.SkillLevel</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>skill_level</declname>
+        </param>
+        <param>
+          <type>Users</type>
+          <declname>user</declname>
+        </param>
+        <param>
+          <type>Sport</type>
+          <declname>sport</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>skill_level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The skill level. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>user</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sport</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sport. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevel.java" line="119" column="12" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevel.java" bodystart="119" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_skill_level_1_1_skill_level_1aea3580ae9ac23bea67026c65f08ebe3d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>public int coms309.SkillLevel.SkillLevel::getId</definition>
+        <argsstring>()</argsstring>
+        <name>getId</name>
+        <qualifiedname>coms309.SkillLevel.SkillLevel.getId</qualifiedname>
+        <briefdescription>
+<para>Gets the identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>int. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevel.java" line="136" column="16" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevel.java" bodystart="136" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_skill_level_1_1_skill_level_1a1476f42d74360aec2f4324d3d79a7014" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void coms309.SkillLevel.SkillLevel::setId</definition>
+        <argsstring>(int skill_level_id)</argsstring>
+        <name>setId</name>
+        <qualifiedname>coms309.SkillLevel.SkillLevel.setId</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>skill_level_id</declname>
+        </param>
+        <briefdescription>
+<para>Sets an identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>skill_level_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier for the skill level. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevel.java" line="151" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevel.java" bodystart="151" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_skill_level_1_1_skill_level_1a00d7e9128e2a70a813457f228ba545df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>public int coms309.SkillLevel.SkillLevel::getSkill_level</definition>
+        <argsstring>()</argsstring>
+        <name>getSkill_level</name>
+        <qualifiedname>coms309.SkillLevel.SkillLevel.getSkill_level</qualifiedname>
+        <briefdescription>
+<para>Gets skill level. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The skill level. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevel.java" line="166" column="16" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevel.java" bodystart="166" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_skill_level_1_1_skill_level_1ab803136f3faffaade0f89516ee73e89f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void coms309.SkillLevel.SkillLevel::setSkill_level</definition>
+        <argsstring>(int skill_level)</argsstring>
+        <name>setSkill_level</name>
+        <qualifiedname>coms309.SkillLevel.SkillLevel.setSkill_level</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>skill_level</declname>
+        </param>
+        <briefdescription>
+<para>Sets skill level. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>skill_level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The skill level. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevel.java" line="181" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevel.java" bodystart="181" bodyend="183"/>
+        <referencedby refid="classcoms309_1_1_skill_level_1_1_skill_level_controller_1ab75494a632cf6e36a64a9b4f237420b7" compoundref="_skill_level_controller_8java" startline="174" endline="188">coms309.SkillLevel.SkillLevelController.updateSkillLevel</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_skill_level_1_1_skill_level_1a2a743009948f932c9b44d63ec9346f83" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Users</type>
+        <definition>public Users coms309.SkillLevel.SkillLevel::getUser</definition>
+        <argsstring>()</argsstring>
+        <name>getUser</name>
+        <qualifiedname>coms309.SkillLevel.SkillLevel.getUser</qualifiedname>
+        <briefdescription>
+<para>Gets the user. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The user. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevel.java" line="196" column="18" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevel.java" bodystart="196" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_skill_level_1_1_skill_level_1ae679cb39be0561403f7c1f27d28b0d13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void coms309.SkillLevel.SkillLevel::setUser</definition>
+        <argsstring>(Users user)</argsstring>
+        <name>setUser</name>
+        <qualifiedname>coms309.SkillLevel.SkillLevel.setUser</qualifiedname>
+        <param>
+          <type>Users</type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+<para>Sets a user. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>user</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevel.java" line="211" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevel.java" bodystart="211" bodyend="213"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The coms 309. sport. sport. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The coms 309. users. users</para>
+<para>The jakarta.persistence.*</para>
+<para>The lombok. getter</para>
+<para>The lombok. no arguments constructor</para>
+<para>The lombok. setter</para>
+<para>The jakarta.persistence. entity</para>
+<para>The jakarta.persistence. generated value</para>
+<para>Type of the jakarta.persistence. generation</para>
+<para>Identifier for the jakarta.persistence.</para>
+<para>Set the java.util. hash belongs to</para>
+<para>Set the java.util. belongs to</para>
+<para>A skill level.</para>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>coms309.SkillLevel.SkillLevel</label>
+        <link refid="classcoms309_1_1_skill_level_1_1_skill_level"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevel.java" line="43" column="7" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevel.java" bodystart="43" bodyend="214"/>
+    <listofallmembers>
+      <member refid="classcoms309_1_1_skill_level_1_1_skill_level_1aea3580ae9ac23bea67026c65f08ebe3d" prot="public" virt="non-virtual"><scope>coms309::SkillLevel::SkillLevel</scope><name>getId</name></member>
+      <member refid="classcoms309_1_1_skill_level_1_1_skill_level_1a00d7e9128e2a70a813457f228ba545df" prot="public" virt="non-virtual"><scope>coms309::SkillLevel::SkillLevel</scope><name>getSkill_level</name></member>
+      <member refid="classcoms309_1_1_skill_level_1_1_skill_level_1a2a743009948f932c9b44d63ec9346f83" prot="public" virt="non-virtual"><scope>coms309::SkillLevel::SkillLevel</scope><name>getUser</name></member>
+      <member refid="classcoms309_1_1_skill_level_1_1_skill_level_1a636f9d894a1940e77304aec7e401068e" prot="private" virt="non-virtual"><scope>coms309::SkillLevel::SkillLevel</scope><name>id</name></member>
+      <member refid="classcoms309_1_1_skill_level_1_1_skill_level_1a1476f42d74360aec2f4324d3d79a7014" prot="public" virt="non-virtual"><scope>coms309::SkillLevel::SkillLevel</scope><name>setId</name></member>
+      <member refid="classcoms309_1_1_skill_level_1_1_skill_level_1ab803136f3faffaade0f89516ee73e89f" prot="public" virt="non-virtual"><scope>coms309::SkillLevel::SkillLevel</scope><name>setSkill_level</name></member>
+      <member refid="classcoms309_1_1_skill_level_1_1_skill_level_1ae679cb39be0561403f7c1f27d28b0d13" prot="public" virt="non-virtual"><scope>coms309::SkillLevel::SkillLevel</scope><name>setUser</name></member>
+      <member refid="classcoms309_1_1_skill_level_1_1_skill_level_1a39aa1a665d5327b89d83a5327085969b" prot="private" virt="non-virtual"><scope>coms309::SkillLevel::SkillLevel</scope><name>skill_level</name></member>
+      <member refid="classcoms309_1_1_skill_level_1_1_skill_level_1a3688c34fa0abc4f0ec55929e409ad928" prot="public" virt="non-virtual"><scope>coms309::SkillLevel::SkillLevel</scope><name>SkillLevel</name></member>
+      <member refid="classcoms309_1_1_skill_level_1_1_skill_level_1ae1defba278ba5b9e2f2db46d2036b95b" prot="public" virt="non-virtual"><scope>coms309::SkillLevel::SkillLevel</scope><name>SkillLevel</name></member>
+      <member refid="classcoms309_1_1_skill_level_1_1_skill_level_1adac1fc0792671bf48195e3743aff1510" prot="private" virt="non-virtual"><scope>coms309::SkillLevel::SkillLevel</scope><name>sport</name></member>
+      <member refid="classcoms309_1_1_skill_level_1_1_skill_level_1adb42310ab2b5245a5b4be287c183a642" prot="private" virt="non-virtual"><scope>coms309::SkillLevel::SkillLevel</scope><name>user</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

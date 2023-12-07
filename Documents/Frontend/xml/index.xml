@@ -1,0 +1,295 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+  <compound refid="classmodels_1_1_address" kind="class"><name>models::Address</name>
+    <member refid="classmodels_1_1_address_1abc739af04aa9b811d4b9f8c74e749709" kind="variable"><name>house_number</name></member>
+    <member refid="classmodels_1_1_address_1aee1b2fe429286bea893011a6612a013e" kind="variable"><name>highway</name></member>
+    <member refid="classmodels_1_1_address_1aa31c4f5b65f9a5a3d701e6d7cae489fb" kind="variable"><name>road</name></member>
+    <member refid="classmodels_1_1_address_1a0c420fbc10ac47f8b27f8aea5d38dcea" kind="variable"><name>neighbourhood</name></member>
+    <member refid="classmodels_1_1_address_1a33a0a90e4efbfef405d27b8713b98609" kind="variable"><name>city</name></member>
+    <member refid="classmodels_1_1_address_1a7e1f410c90e896c19813c65c0d90a533" kind="variable"><name>county</name></member>
+    <member refid="classmodels_1_1_address_1a9a6fafeda8c1e46cd5b0eef859acf0ba" kind="variable"><name>state</name></member>
+    <member refid="classmodels_1_1_address_1ad3e2904d5d229bde93145df9ec418df7" kind="variable"><name>ISO3166_2_lvl4</name></member>
+    <member refid="classmodels_1_1_address_1af0bf492eb3bc0743bb58ad0be3baf128" kind="variable"><name>postcode</name></member>
+    <member refid="classmodels_1_1_address_1aa02d7fbdfc3f05469345c6b3d21aa95f" kind="variable"><name>country</name></member>
+    <member refid="classmodels_1_1_address_1a08f291ed212b019f456222fece1a1604" kind="variable"><name>country_code</name></member>
+    <member refid="classmodels_1_1_address_1a9b129805db6f97a30a24209d1c9a3833" kind="function"><name>getHouse_number</name></member>
+    <member refid="classmodels_1_1_address_1aa8ad79aa0aec100f124effc9d3387f6a" kind="function"><name>setHouse_number</name></member>
+    <member refid="classmodels_1_1_address_1a7266990366714aab20d07c9ce50406f0" kind="function"><name>getHighway</name></member>
+    <member refid="classmodels_1_1_address_1a947602c383ffb12c6245be0673b3db31" kind="function"><name>setHighway</name></member>
+    <member refid="classmodels_1_1_address_1aa6d8afcbb576025847ce3660d9ecdd61" kind="function"><name>getRoad</name></member>
+    <member refid="classmodels_1_1_address_1a1e0365c6a8e57790b96d130411795fdd" kind="function"><name>setRoad</name></member>
+    <member refid="classmodels_1_1_address_1a795f844dc46cc07a99ab00401f495e1b" kind="function"><name>getNeighbourhood</name></member>
+    <member refid="classmodels_1_1_address_1a4877c528298decc3d3037953a7b7daef" kind="function"><name>setNeighbourhood</name></member>
+    <member refid="classmodels_1_1_address_1a0a93e1d8d81d9e971d7b1584299c6e1b" kind="function"><name>getCity</name></member>
+    <member refid="classmodels_1_1_address_1acc862ccd88bbbf6d8383910cd5cadae7" kind="function"><name>setCity</name></member>
+    <member refid="classmodels_1_1_address_1a5442b94f841f8849092c19b2412f729f" kind="function"><name>getState</name></member>
+    <member refid="classmodels_1_1_address_1ad16652c7994b72083685bdb596293cc6" kind="function"><name>setState</name></member>
+    <member refid="classmodels_1_1_address_1ac8032d34948c44afe43b663740156c4c" kind="function"><name>getCounty</name></member>
+    <member refid="classmodels_1_1_address_1a5c4648f26b5d6539d05d7e3b14b98a2a" kind="function"><name>setCounty</name></member>
+    <member refid="classmodels_1_1_address_1a964036461103dabd26d1e7fb029c42ad" kind="function"><name>getPostcode</name></member>
+    <member refid="classmodels_1_1_address_1a8970a410181039f955bdf3e5f4f6b281" kind="function"><name>setPostcode</name></member>
+    <member refid="classmodels_1_1_address_1ae607540567aabafc94a8ee9c62ecd77a" kind="function"><name>getCountry</name></member>
+    <member refid="classmodels_1_1_address_1a3b2a7f0dd41323df69e1c0c6b3320bef" kind="function"><name>setCountry</name></member>
+    <member refid="classmodels_1_1_address_1ad739e4932684509ca2d2200162d99096" kind="function"><name>getCountry_code</name></member>
+    <member refid="classmodels_1_1_address_1a9c80ecd18b53ba1eacf719b5341b365f" kind="function"><name>setCountry_code</name></member>
+  </compound>
+  <compound refid="classcom_1_1example_1_1sportssphere_1_1_apollo_client_provider" kind="class"><name>com::example::sportssphere::ApolloClientProvider</name>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_apollo_client_provider_1a2884e2dafe4a18e4b61730aafb948735" kind="function"><name>setupApolloClient</name></member>
+  </compound>
+  <compound refid="classcom_1_1example_1_1sportssphere_1_1_calendar_activity" kind="class"><name>com::example::sportssphere::CalendarActivity</name>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_calendar_activity_1aa6adc7393dad27e1b4553fb0c4d00dd0" kind="variable"><name>userId</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_calendar_activity_1ae5dd9016bea91e39c307f9d3ef5201e4" kind="variable"><name>backToHomeButton</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_calendar_activity_1aea0ac58e3f4bba2a7c13e0c8d11ed13f" kind="function"><name>onCreate</name></member>
+  </compound>
+  <compound refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity" kind="class"><name>com::example::sportssphere::CreatePostActivity</name>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a1c6a32fcd207fa673e3cf6cf8fe85490" kind="variable"><name>sportNameInput</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a3134d84a7d79a19f36de82fada389819" kind="variable"><name>maxPlayersInput</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a26e2998130f041dd7767ef17e91ad6dc" kind="variable"><name>minPlayersInput</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a73bd67039816affd8bc2b4aece70bb4b" kind="variable"><name>dateInput</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a512e42e35a0030e22607a520d8b1e276" kind="variable"><name>addressInput</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a83635cc121a0245c42391f2a0c9bb01d" kind="variable"><name>submitButton</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a9dc2e30e3baecd2094e466cb7636eff9" kind="variable"><name>cancelButton</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a625e9e8b09c66a4fcd46f6398b3e8a6c" kind="variable"><name>id</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1ab7caebfa9e4c07be6ca52346e2ad7f95" kind="variable"><name>feature</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a2e549f18f469ca5dac9bc0040c7578ed" kind="variable"><name>retrofit</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a0bee1935ead9e9f59d6d624d54843769" kind="variable"><name>retrofitAPICall</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a3f76c6fd08554bd31aa947578bf7cae6" kind="function"><name>isValidDate</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a9512c040b190a1cd7d28d6e2047cc661" kind="function"><name>createRetrofit</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1ad38293149b1ddd2820710db673fb3831" kind="function"><name>setButtons</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a69323a7625b51121ad1a1aae6ab0482b" kind="function"><name>addressAutoPopulate</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1ad9fe6030593183b4a03d48acef4776f8" kind="function"><name>onCreate</name></member>
+  </compound>
+  <compound refid="classcom_1_1example_1_1sportssphere_1_1_example_instrumented_test" kind="class"><name>com::example::sportssphere::ExampleInstrumentedTest</name>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_example_instrumented_test_1a6561eda68b114f67c7e9f2c837a37cea" kind="function"><name>useAppContext</name></member>
+  </compound>
+  <compound refid="classcom_1_1example_1_1sportssphere_1_1_example_unit_test" kind="class"><name>com::example::sportssphere::ExampleUnitTest</name>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_example_unit_test_1aac8f0f6b010916346948f70a5bc0b64b" kind="function"><name>addition_isCorrect</name></member>
+  </compound>
+  <compound refid="classmodels_1_1_feature" kind="class"><name>models::Feature</name>
+    <member refid="classmodels_1_1_feature_1ace243f259e5dd4993b3c4386eb338e8e" kind="variable"><name>type</name></member>
+    <member refid="classmodels_1_1_feature_1a4c921dcbb0a0ed544e07df0d78d9c853" kind="variable"><name>properties</name></member>
+    <member refid="classmodels_1_1_feature_1a01147be8e511422f75b2af2e9f293c8c" kind="variable"><name>bbox</name></member>
+    <member refid="classmodels_1_1_feature_1a267f88ee7eef055c120447a7f88c9449" kind="variable"><name>geometry</name></member>
+    <member refid="classmodels_1_1_feature_1a421cccd5fcdf365f98c7d8abc03adb97" kind="function"><name>getType</name></member>
+    <member refid="classmodels_1_1_feature_1a6b686e1666cf8f3fd2eea8f7d6103a7b" kind="function"><name>setType</name></member>
+    <member refid="classmodels_1_1_feature_1a4e655b2a51e66b26fb26a1cc193d9cb8" kind="function"><name>getProperties</name></member>
+    <member refid="classmodels_1_1_feature_1ab68fe0db0e0b9365925867049436da43" kind="function"><name>setProperties</name></member>
+    <member refid="classmodels_1_1_feature_1acdf1f8940a65b9a1111eddd885ddf798" kind="function"><name>getBbox</name></member>
+    <member refid="classmodels_1_1_feature_1aa41900a6c51f4893da30773c6a2ce4bb" kind="function"><name>setBbox</name></member>
+    <member refid="classmodels_1_1_feature_1a72a321b2c2eeb92549d42287fd4a2027" kind="function"><name>getGeometry</name></member>
+    <member refid="classmodels_1_1_feature_1a3952002a65f852e98ac4683a3f0124fc" kind="function"><name>setGeometry</name></member>
+  </compound>
+  <compound refid="classmodels_1_1_feature_collection" kind="class"><name>models::FeatureCollection</name>
+    <member refid="classmodels_1_1_feature_collection_1a3e0f54a6418fefb458cc6ff2270c6ed6" kind="variable"><name>type</name></member>
+    <member refid="classmodels_1_1_feature_collection_1af829019065f7c7757c0f48edbd97500e" kind="variable"><name>licence</name></member>
+    <member refid="classmodels_1_1_feature_collection_1ad2866c52c8a9a53d9dc05f4109f600ae" kind="variable"><name>features</name></member>
+    <member refid="classmodels_1_1_feature_collection_1a54ae9adfa0c06a61286473cf7e78dcfe" kind="function"><name>getType</name></member>
+    <member refid="classmodels_1_1_feature_collection_1a2fc340d9635b3abb3ac78f7892a883fc" kind="function"><name>setType</name></member>
+    <member refid="classmodels_1_1_feature_collection_1a5524518fe83aa52d599e50922353f6b4" kind="function"><name>getLicence</name></member>
+    <member refid="classmodels_1_1_feature_collection_1a5f6cdff97caa1a5c04aa57ce021658a3" kind="function"><name>setLicence</name></member>
+    <member refid="classmodels_1_1_feature_collection_1a147049cf09a40d2847066f2905ef3bea" kind="function"><name>getFeatures</name></member>
+    <member refid="classmodels_1_1_feature_collection_1a4492c7412b13b6fc00c0a4f5eeaa2a75" kind="function"><name>setFeatures</name></member>
+  </compound>
+  <compound refid="classmodels_1_1_geometry" kind="class"><name>models::Geometry</name>
+    <member refid="classmodels_1_1_geometry_1a5b517c5b788315b7a0936af4e25a6d42" kind="variable"><name>type</name></member>
+    <member refid="classmodels_1_1_geometry_1ac8b0b5a73322062476388fd19b3fdc53" kind="variable"><name>coordinates</name></member>
+    <member refid="classmodels_1_1_geometry_1a39669cfb137e07ccce94ac4be94509d0" kind="function"><name>getType</name></member>
+    <member refid="classmodels_1_1_geometry_1a5ab3217da4c3ed0e4197f81b2953e8bc" kind="function"><name>setType</name></member>
+    <member refid="classmodels_1_1_geometry_1ae35ffda3acd8a3da1daa6f21bf22da6b" kind="function"><name>getCoordinates</name></member>
+    <member refid="classmodels_1_1_geometry_1a31a53540350f3c1e22392e09db04a6ec" kind="function"><name>setCoordinates</name></member>
+  </compound>
+  <compound refid="classcom_1_1example_1_1sportssphere_1_1_home_activity" kind="class"><name>com::example::sportssphere::HomeActivity</name>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_home_activity_1a02dbe7ead0d7a2702e7efa101561ee76" kind="variable"><name>layout</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_home_activity_1adb789dc4a060dbff858a1649c5080030" kind="variable"><name>scrollView</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_home_activity_1ad802ef926708d46e8fed26e93228b427" kind="variable"><name>profileButton</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_home_activity_1ac877471178b8e339ccbad9f3eb64a994" kind="variable"><name>createPostButton</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_home_activity_1a3fc0aebe601c98b5a553c9b4a93fd604" kind="variable"><name>settingsButton</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_home_activity_1a3b3a131f1570fdca64f562fac4cb74d6" kind="variable"><name>calendarButton</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_home_activity_1a274f3a6aea20d1567bc5c4eb33a56230" kind="variable"><name>mapButton</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_home_activity_1aaaa16df8c369a1c747d6bc2455fc8a28" kind="variable"><name>apolloClient</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_home_activity_1aff7bbd4a9eea8e5b8f51fc276d1b96b6" kind="variable"><name>id</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_home_activity_1ae6b55ef8d26a3b663774c9a64accc8d2" kind="function"><name>onCreate</name></member>
+  </compound>
+  <compound refid="classcom_1_1example_1_1sportssphere_1_1_map_activity" kind="class"><name>com::example::sportssphere::MapActivity</name>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_map_activity_1ae7b8b31889d69ae089e129cd732cd62e" kind="variable"><name>mapView</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_map_activity_1aab01e55a945d3d8f7b6c98342318f86a" kind="variable"><name>floatingActionButton</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_map_activity_1af4c5604ed3e9015c6e43e9685aa9cdd7" kind="variable"><name>searchButton</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_map_activity_1aed79eadfc3b4ccc921164a486e321e1a" kind="variable"><name>searchAddress</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_map_activity_1aaf017262d6bd052fb541e9b79184e12e" kind="variable"><name>homeButton</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_map_activity_1ae76b51f8d7b10e2de1b666d56690a78e" kind="variable"><name>apolloClient</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_map_activity_1a8458bc9e74740c2748d6c9c9c96434c1" kind="variable"><name>point</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_map_activity_1adab69d4cb4c1cf875da53361b03354ee" kind="variable"><name>searchEnabled</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_map_activity_1aced64173857d7c7ae9ad528172a516d2" kind="variable"><name>activityResultLauncher</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_map_activity_1a83dcbb2bc6e057e172391cd0c7589c35" kind="variable"><name>onIndicatorBearingChangedListener</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_map_activity_1a5631d0412514626e4abe6b18ca386f2b" kind="variable"><name>onIndicatorPositionChangedListener</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_map_activity_1a7bca819cedd7402499cfeeaa558e4651" kind="variable"><name>onMoveListener</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_map_activity_1aa9317d430e2ac2d7f9f5db136afabd72" kind="function"><name>homeButtonLogic</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_map_activity_1af7bc3bba12ec2d328ca7c9475d39c671" kind="function"><name>searchButtonAndImageLogic</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_map_activity_1ad47850019b4dd066d53afe0711117543" kind="function"><name>performSearch</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_map_activity_1a6799b9108272b98b6686bfab9447ebda" kind="function"><name>onCreate</name></member>
+  </compound>
+  <compound refid="classmodels_1_1_properties" kind="class"><name>models::Properties</name>
+    <member refid="classmodels_1_1_properties_1afe8106545d1c913837a36b1acdeb1bef" kind="variable"><name>place_id</name></member>
+    <member refid="classmodels_1_1_properties_1a1b334bee4f6d449f6a9e08213bcf2a10" kind="variable"><name>osm_type</name></member>
+    <member refid="classmodels_1_1_properties_1a8f0f4b32e392f2d02a74843da7fa421b" kind="variable"><name>osm_id</name></member>
+    <member refid="classmodels_1_1_properties_1a81bff227d85b225d14296d5f34782043" kind="variable"><name>place_rank</name></member>
+    <member refid="classmodels_1_1_properties_1ad2bd1535907db8892aaee5a9cd37b1fe" kind="variable"><name>category</name></member>
+    <member refid="classmodels_1_1_properties_1ae9c572f8a55610c6245c001ce54b03b0" kind="variable"><name>type</name></member>
+    <member refid="classmodels_1_1_properties_1a361f05e5aa99d3e94c9da03afc68e5dd" kind="variable"><name>importance</name></member>
+    <member refid="classmodels_1_1_properties_1a55755a3ef94e8d45575a0e59ce3748ad" kind="variable"><name>addresstype</name></member>
+    <member refid="classmodels_1_1_properties_1a5d5e785bbd7741e9f3196cadbe70c7ea" kind="variable"><name>name</name></member>
+    <member refid="classmodels_1_1_properties_1a73892696235833d0e2d16cf39e7062c9" kind="variable"><name>display_name</name></member>
+    <member refid="classmodels_1_1_properties_1aa8660809594e190833664e94385228a8" kind="variable"><name>address</name></member>
+    <member refid="classmodels_1_1_properties_1a8af02df94e9b34788d2b1c1cdef6d713" kind="function"><name>getAddress</name></member>
+    <member refid="classmodels_1_1_properties_1abc4b56a04227423cd2975458585cdec1" kind="function"><name>setAddress</name></member>
+    <member refid="classmodels_1_1_properties_1a7c8d7cc43d213dc20857fdfd7d3e7d18" kind="function"><name>getPlace_id</name></member>
+    <member refid="classmodels_1_1_properties_1a26d75c0c920a002f3e1972345087f786" kind="function"><name>setPlace_id</name></member>
+    <member refid="classmodels_1_1_properties_1a0823b6c931f67a4b1ff47f3282b3b2f4" kind="function"><name>getOsm_type</name></member>
+    <member refid="classmodels_1_1_properties_1a747016f8b18fa2836ae9f9232a18c48e" kind="function"><name>setOsm_type</name></member>
+    <member refid="classmodels_1_1_properties_1aedfafdc59bf42218c22d47b536f89c67" kind="function"><name>getOsm_id</name></member>
+    <member refid="classmodels_1_1_properties_1a647bb47f944eb5063777b8efdd0b542d" kind="function"><name>setOsm_id</name></member>
+    <member refid="classmodels_1_1_properties_1abed3a7ad43ba959b86696bf13481db05" kind="function"><name>getPlace_rank</name></member>
+    <member refid="classmodels_1_1_properties_1a227eda2b1ce5252daf132dea1b7ecc29" kind="function"><name>setPlace_rank</name></member>
+    <member refid="classmodels_1_1_properties_1a28ba9eeb126be65e6580821646aa3624" kind="function"><name>getCategory</name></member>
+    <member refid="classmodels_1_1_properties_1af8c9cb7e8f1e338489fad41049ce73cc" kind="function"><name>setCategory</name></member>
+    <member refid="classmodels_1_1_properties_1a1e034bd03cec4ad4d3b0672e0d87f774" kind="function"><name>getType</name></member>
+    <member refid="classmodels_1_1_properties_1a4c5382eb7028219567ec7415c9f5b86d" kind="function"><name>setType</name></member>
+    <member refid="classmodels_1_1_properties_1aef5c0311780523c219ee8ac6b6270cf0" kind="function"><name>getImportance</name></member>
+    <member refid="classmodels_1_1_properties_1a2746987adb2f2c0147b8967c2fb7215b" kind="function"><name>setImportance</name></member>
+    <member refid="classmodels_1_1_properties_1a52d7f9d305c5f3710ec9f5825c15916f" kind="function"><name>getAddresstype</name></member>
+    <member refid="classmodels_1_1_properties_1a8a7f54d9b3fdc3ffbb850474492f0edb" kind="function"><name>setAddresstype</name></member>
+    <member refid="classmodels_1_1_properties_1aa85d737b3d1db8dc49f0c1544a242ce7" kind="function"><name>getName</name></member>
+    <member refid="classmodels_1_1_properties_1a84d422a2aac22a046e2608bfe1be8e8f" kind="function"><name>setName</name></member>
+    <member refid="classmodels_1_1_properties_1a17b3a830d8c0c9fb49460c7ce17822f9" kind="function"><name>getDisplay_name</name></member>
+    <member refid="classmodels_1_1_properties_1ab0fec1d6cfe765a78ea9ba99be030817" kind="function"><name>setDisplay_name</name></member>
+  </compound>
+  <compound refid="interface_retro_fit_a_p_i_1_1_retrofit_a_p_i_call" kind="interface"><name>RetroFitAPI::RetrofitAPICall</name>
+    <member refid="interface_retro_fit_a_p_i_1_1_retrofit_a_p_i_call_1a46ce71c40a199a61e9cd42ca0c2ae28c" kind="function"><name>getFeatureCollection</name></member>
+  </compound>
+  <compound refid="classcom_1_1example_1_1sportssphere_1_1_settings_home_activity" kind="class"><name>com::example::sportssphere::SettingsHomeActivity</name>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_settings_home_activity_1a8b0ed34eb2fd057ddc531749aee6f725" kind="variable"><name>id</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_settings_home_activity_1a32992894c105253b9b184d8c92f3c4a6" kind="function"><name>onCreate</name></member>
+  </compound>
+  <compound refid="classcom_1_1example_1_1sportssphere_1_1_sign_up_activity" kind="class"><name>com::example::sportssphere::SignUpActivity</name>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_sign_up_activity_1a3efdb26ed0ff598f014ee505cfa869fd" kind="variable"><name>submitButton</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_sign_up_activity_1aad22eed82beaff8880f8475f6bf871ab" kind="variable"><name>firstNameEditText</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_sign_up_activity_1a99b140c25294f5d66e846ec812b767bb" kind="variable"><name>lastNameEditText</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_sign_up_activity_1ad74c49fed6cd17c52662747de4c800cf" kind="variable"><name>emailEditText</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_sign_up_activity_1a13cd0098621e90037d2f8308105292f3" kind="variable"><name>passwordEditText</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_sign_up_activity_1aa74dcd6df2d8166c9f87bf4248d9489d" kind="variable"><name>confirmPasswordEditText</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_sign_up_activity_1afb5e17fd334b5c94b64dbefeef8fab57" kind="variable"><name>logo</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_sign_up_activity_1a416cf8afbdc3c68d4c92500551c35454" kind="variable"><name>apolloClient</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_sign_up_activity_1a988290fab964436631cb4be46a9b40bf" kind="function"><name>onCreate</name></member>
+  </compound>
+  <compound refid="classcom_1_1example_1_1sportssphere_1_1_start_activity" kind="class"><name>com::example::sportssphere::StartActivity</name>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_start_activity_1a27dcbce8f539b2b99a0b271bb7ead686" kind="variable"><name>button</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_start_activity_1aa7cf941eff9d8dcb14c75606c6215447" kind="variable"><name>button2</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_start_activity_1ad75b59283c93666ee8097bcc7cdbe597" kind="variable"><name>editText</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_start_activity_1aae704f69c59ef0c69500b0461d9bb7d1" kind="variable"><name>editText2</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_start_activity_1a9eb0036a7ef096527c00aba7720ce668" kind="variable"><name>logo</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_start_activity_1a7fa873684ef27dd50f617d170d687519" kind="variable"><name>signInError</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_start_activity_1a3b6774dee1a0d77b05031db28759a354" kind="variable"><name>apolloClient</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_start_activity_1adc5a9739f3455f2ebf2044385e4e35ef" kind="function"><name>onCreate</name></member>
+  </compound>
+  <compound refid="classcom_1_1example_1_1sportssphere_1_1_view_profile_activity" kind="class"><name>com::example::sportssphere::ViewProfileActivity</name>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_view_profile_activity_1ab8f90713d9bd7ba78c5f59c558ffc4d2" kind="variable"><name>id</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_view_profile_activity_1a79b82e3b41786e9d30bb769ce7b06961" kind="variable"><name>apolloClient</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_view_profile_activity_1a67cd967c98a12616b9380a12615ccdba" kind="variable"><name>userNameText</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_view_profile_activity_1a137d3e7311cf4e75011aaf55b8526233" kind="function"><name>onCreate</name></member>
+    <member refid="classcom_1_1example_1_1sportssphere_1_1_view_profile_activity_1acfb117cfb6c98da15a50f9c6716a45ba" kind="function"><name>fetchUserData</name></member>
+  </compound>
+  <compound refid="namespacecom" kind="namespace"><name>com</name>
+  </compound>
+  <compound refid="namespacecom_1_1example" kind="namespace"><name>com::example</name>
+  </compound>
+  <compound refid="namespacecom_1_1example_1_1sportssphere" kind="namespace"><name>com::example::sportssphere</name>
+  </compound>
+  <compound refid="namespacejava_1_1lang" kind="namespace"><name>java::lang</name>
+  </compound>
+  <compound refid="namespacemodels" kind="namespace"><name>models</name>
+  </compound>
+  <compound refid="namespace_retro_fit_a_p_i" kind="namespace"><name>RetroFitAPI</name>
+  </compound>
+  <compound refid="_example_instrumented_test_8java" kind="file"><name>ExampleInstrumentedTest.java</name>
+  </compound>
+  <compound refid="_apollo_client_provider_8java" kind="file"><name>ApolloClientProvider.java</name>
+  </compound>
+  <compound refid="_calendar_activity_8java" kind="file"><name>CalendarActivity.java</name>
+  </compound>
+  <compound refid="_create_post_activity_8java" kind="file"><name>CreatePostActivity.java</name>
+  </compound>
+  <compound refid="_home_activity_8java" kind="file"><name>HomeActivity.java</name>
+  </compound>
+  <compound refid="_map_activity_8java" kind="file"><name>MapActivity.java</name>
+  </compound>
+  <compound refid="_settings_home_activity_8java" kind="file"><name>SettingsHomeActivity.java</name>
+  </compound>
+  <compound refid="_sign_up_activity_8java" kind="file"><name>SignUpActivity.java</name>
+  </compound>
+  <compound refid="_start_activity_8java" kind="file"><name>StartActivity.java</name>
+  </compound>
+  <compound refid="_view_profile_activity_8java" kind="file"><name>ViewProfileActivity.java</name>
+  </compound>
+  <compound refid="_address_8java" kind="file"><name>Address.java</name>
+  </compound>
+  <compound refid="_feature_8java" kind="file"><name>Feature.java</name>
+  </compound>
+  <compound refid="_feature_collection_8java" kind="file"><name>FeatureCollection.java</name>
+  </compound>
+  <compound refid="_geometry_8java" kind="file"><name>Geometry.java</name>
+  </compound>
+  <compound refid="_properties_8java" kind="file"><name>Properties.java</name>
+  </compound>
+  <compound refid="_retrofit_a_p_i_call_8java" kind="file"><name>RetrofitAPICall.java</name>
+  </compound>
+  <compound refid="_example_unit_test_8java" kind="file"><name>ExampleUnitTest.java</name>
+  </compound>
+  <compound refid="dir_dc5895ff080fc411c2158caefceb5037" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Frontend/app/src/androidTest</name>
+  </compound>
+  <compound refid="dir_a176f029e356c79b3f072e791e749041" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Frontend/app</name>
+  </compound>
+  <compound refid="dir_b2621b04608365bd7915bd75b5124aa7" kind="dir"><name>C:/Users/Arie</name>
+  </compound>
+  <compound refid="dir_72bbe8083acb2143f2fdde422806b588" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Frontend/app/src/androidTest/java/com</name>
+  </compound>
+  <compound refid="dir_3008f100dc4cd03fc9991d866bb2b11f" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com</name>
+  </compound>
+  <compound refid="dir_149202d9f9e88f83cf57d1424c1dd240" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Frontend/app/src/test/java/com</name>
+  </compound>
+  <compound refid="dir_9e2db2d2f9075fd6beb3b2de36923699" kind="dir"><name>C:/Users/Arie/Develop</name>
+  </compound>
+  <compound refid="dir_961b03839ccc2717da1c29375db6c9dd" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Frontend/app/src/androidTest/java/com/example</name>
+  </compound>
+  <compound refid="dir_a9e0383d0643389a959d784671c04012" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example</name>
+  </compound>
+  <compound refid="dir_16b37ef4550d51a8340381959af22212" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Frontend/app/src/test/java/com/example</name>
+  </compound>
+  <compound refid="dir_30cb4232e2b4e2bb2ab779903852d3e8" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Frontend</name>
+  </compound>
+  <compound refid="dir_00f6f73dae81c3aa2e0c2564973212a7" kind="dir"><name>C:/Users/Arie/Develop/hb_215</name>
+  </compound>
+  <compound refid="dir_510170a21b816c97f912bf327b01381b" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Frontend/app/src/androidTest/java</name>
+  </compound>
+  <compound refid="dir_4f04f985eaabdaff02b57374ac289bde" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java</name>
+  </compound>
+  <compound refid="dir_0fe6b7545d89138d86dc14a1d54fa9fa" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Frontend/app/src/test/java</name>
+  </compound>
+  <compound refid="dir_30352816142b9c3c6b15e361a8636f71" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Frontend/app/src/main</name>
+  </compound>
+  <compound refid="dir_913ab0cae0ecc5755c0005cdab3abfcf" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models</name>
+  </compound>
+  <compound refid="dir_91ccc4be09eefdda0b356feac8bb2b36" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/RetroFitAPI</name>
+  </compound>
+  <compound refid="dir_ba80e03a4e7321669897e7e3361e3947" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Frontend/app/src/androidTest/java/com/example/sportssphere</name>
+  </compound>
+  <compound refid="dir_3d70de92842a248c4d7a798bb6356efb" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere</name>
+  </compound>
+  <compound refid="dir_43fcae57dee242d8c474fbdd8e4685fb" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Frontend/app/src/test/java/com/example/sportssphere</name>
+  </compound>
+  <compound refid="dir_fa89a39f9b4750c44130d6da01379fce" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Frontend/app/src</name>
+  </compound>
+  <compound refid="dir_0bdcb704d0dbb4513053850b6caa96ba" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Frontend/app/src/test</name>
+  </compound>
+  <compound refid="dir_d522931ffa1371640980b621734a4381" kind="dir"><name>C:/Users</name>
+  </compound>
+</doxygenindex>

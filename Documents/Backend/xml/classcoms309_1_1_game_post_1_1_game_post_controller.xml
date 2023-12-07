@@ -1,0 +1,489 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcoms309_1_1_game_post_1_1_game_post_controller" kind="class" language="Java" prot="public">
+    <compoundname>coms309::GamePost::GamePostController</compoundname>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcoms309_1_1_game_post_1_1_game_post_controller_1a1a711ba9193ebb31ac2fcddee1873cdf" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecoms309_1_1_game_post_1_1_game_post_repository" kindref="compound">GamePostRepository</ref></type>
+        <definition>Autowired GamePostRepository coms309.GamePost.GamePostController::gamePostRepository</definition>
+        <argsstring></argsstring>
+        <name>gamePostRepository</name>
+        <qualifiedname>coms309.GamePost.GamePostController.gamePostRepository</qualifiedname>
+        <briefdescription>
+<para>Gets the game post repository. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The game post repository. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostController.java" line="103" column="24" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostController.java" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_game_post_1_1_game_post_controller_1a51a71a612388a604245779b0f7f0e49e" prot="package" static="no" mutable="no">
+        <type>UserRepository</type>
+        <definition>Autowired UserRepository coms309.GamePost.GamePostController::userRepository</definition>
+        <argsstring></argsstring>
+        <name>userRepository</name>
+        <qualifiedname>coms309.GamePost.GamePostController.userRepository</qualifiedname>
+        <briefdescription>
+<para>Gets the user repository. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The user repository. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostController.java" line="123" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostController.java" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_game_post_1_1_game_post_controller_1ae970a8eded11388135a687fbdc67efe6" prot="package" static="no" mutable="no">
+        <type>LocationRepository</type>
+        <definition>Autowired LocationRepository coms309.GamePost.GamePostController::locationRepository</definition>
+        <argsstring></argsstring>
+        <name>locationRepository</name>
+        <qualifiedname>coms309.GamePost.GamePostController.locationRepository</qualifiedname>
+        <briefdescription>
+<para>Gets the location repository. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The location repository. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostController.java" line="143" column="24" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostController.java" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_game_post_1_1_game_post_controller_1a16af667dcbc43e8a0e49d51f782d36e3" prot="package" static="no" mutable="no">
+        <type>SportRepository</type>
+        <definition>Autowired SportRepository coms309.GamePost.GamePostController::sportRepository</definition>
+        <argsstring></argsstring>
+        <name>sportRepository</name>
+        <qualifiedname>coms309.GamePost.GamePostController.sportRepository</qualifiedname>
+        <briefdescription>
+<para>Gets the sport repository. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The sport repository. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostController.java" line="163" column="21" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostController.java" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_game_post_1_1_game_post_controller_1a1add1ccabfc70e0d4c16d33435afee13" prot="package" static="no" mutable="no">
+        <type><ref refid="classcoms309_1_1_game_post_1_1_game_post_publisher" kindref="compound">GamePostPublisher</ref></type>
+        <definition>Autowired GamePostPublisher coms309.GamePost.GamePostController::gamePostPublisher</definition>
+        <argsstring></argsstring>
+        <name>gamePostPublisher</name>
+        <qualifiedname>coms309.GamePost.GamePostController.gamePostPublisher</qualifiedname>
+        <briefdescription>
+<para>Gets the game post publisher. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The game post publisher. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostController.java" line="174" column="23" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostController.java" bodystart="174" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcoms309_1_1_game_post_1_1_game_post_controller_1a82d45e644b834a731aceda454fe6376d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcoms309_1_1_game_post_1_1_game_post" kindref="compound">GamePost</ref> &gt;</type>
+        <definition>QueryMapping public List&lt; GamePost &gt; coms309.GamePost.GamePostController::getAllGamePosts</definition>
+        <argsstring>()</argsstring>
+        <name>getAllGamePosts</name>
+        <qualifiedname>coms309.GamePost.GamePostController.getAllGamePosts</qualifiedname>
+        <briefdescription>
+<para>Gets all game posts. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>List&lt;GamePost&gt;</para>
+</simplesect>
+<simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023</para>
+</simplesect>
+<simplesect kind="return"><para>all game posts. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostController.java" line="200" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostController.java" bodystart="200" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_game_post_1_1_game_post_controller_1a260ca43f5eaf7ce11f3d2f1c4a37c0ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcoms309_1_1_game_post_1_1_game_post" kindref="compound">GamePost</ref></type>
+        <definition>QueryMapping public GamePost coms309.GamePost.GamePostController::getGamePostById</definition>
+        <argsstring>(@Argument int id)</argsstring>
+        <name>getGamePostById</name>
+        <qualifiedname>coms309.GamePost.GamePostController.getGamePostById</qualifiedname>
+        <param>
+          <type>@Argument int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Gets game post by identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>NotFoundException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when the requested element is not present.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>GamePost.</para>
+</simplesect>
+<simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>NotFoundException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when the requested element is not present.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The game post by identifier. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostController.java" line="237" column="21" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostController.java" bodystart="237" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_game_post_1_1_game_post_controller_1a09ba57be08ea82320cc55760bc10f95f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Set&lt; Users &gt;</type>
+        <definition>QueryMapping public Set&lt; Users &gt; coms309.GamePost.GamePostController::getUsersPlaying</definition>
+        <argsstring>(@Argument int gamePostID)</argsstring>
+        <name>getUsersPlaying</name>
+        <qualifiedname>coms309.GamePost.GamePostController.getUsersPlaying</qualifiedname>
+        <param>
+          <type>@Argument int</type>
+          <declname>gamePostID</declname>
+        </param>
+        <briefdescription>
+<para>Gets users playing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>NotFoundException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when the requested element is not present.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gamePostID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier for the game post.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The users playing.</para>
+</simplesect>
+<simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>NotFoundException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when the requested element is not present.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gamePostID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier for the game post.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The users playing. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostController.java" line="279" column="16" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostController.java" bodystart="279" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_game_post_1_1_game_post_controller_1a44f16301cfe929f6f71b220a6fcd99af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>MutationMapping public String coms309.GamePost.GamePostController::deleteAllGamePosts</definition>
+        <argsstring>(@Argument String email, @Argument String password)</argsstring>
+        <name>deleteAllGamePosts</name>
+        <qualifiedname>coms309.GamePost.GamePostController.deleteAllGamePosts</qualifiedname>
+        <param>
+          <type>@Argument String</type>
+          <declname>email</declname>
+        </param>
+        <param>
+          <type>@Argument String</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+<para>Deletes all game posts. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>email</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The email. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The password.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A String.</para>
+</simplesect>
+<simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>email</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The email. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The password.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A String. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostController.java" line="602" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostController.java" bodystart="602" bodyend="613"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_game_post_1_1_game_post_controller_1ad1439a717601e47a319d1cd30b5c9146" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Flux&lt; Integer &gt;</type>
+        <definition>SubscriptionMapping public Flux&lt; Integer &gt; coms309.GamePost.GamePostController::getCommentByPost</definition>
+        <argsstring>(int gamePostId)</argsstring>
+        <name>getCommentByPost</name>
+        <qualifiedname>coms309.GamePost.GamePostController.getCommentByPost</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>gamePostId</declname>
+        </param>
+        <briefdescription>
+<para>Gets comment by post. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gamePostId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier for the game post. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+<simplesect kind="return"><para>The comment by post.</para>
+</simplesect>
+<simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gamePostId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier for the game post.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The comment by post. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostController.java" line="645" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostController.java" bodystart="645" bodyend="661"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_game_post_1_1_game_post_controller_1a1cf6f9618bec10c3d06240b60c338b70" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Publisher&lt; <ref refid="classcoms309_1_1_game_post_1_1_game_post" kindref="compound">GamePost</ref> &gt;</type>
+        <definition>SubscriptionMapping public Publisher&lt; GamePost &gt; coms309.GamePost.GamePostController::subGamePost</definition>
+        <argsstring>()</argsstring>
+        <name>subGamePost</name>
+        <qualifiedname>coms309.GamePost.GamePostController.subGamePost</qualifiedname>
+        <briefdescription>
+<para>Sub game post. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023</para>
+</simplesect>
+<simplesect kind="return"><para>A Publisher&lt;GamePost&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostController.java" line="680" column="22" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostController.java" bodystart="680" bodyend="682"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The coms 309. auth. authentication. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A controller for handling game posts.</para>
+<para>The coms 309. exceptions. duplicate exception</para>
+<para>The coms 309. exceptions. not found exception</para>
+<para>The coms 309. location. location</para>
+<para>The coms 309. location. location repository</para>
+<para>The coms 309. sport. sport</para>
+<para>The coms 309. sport. sport repository</para>
+<para>The coms 309. users. users</para>
+<para>The graphql.com.google.common.base. optional</para>
+<para>The coms 309. comment. comment</para>
+<para>The coms 309. comment. comment repository</para>
+<para>The coms 309. users. user repository</para>
+<para>The org.springframework.beans.factory.annotation. autowired</para>
+<para>The org.springframework.graphql.data.method.annotation. argument</para>
+<para>The org.springframework.graphql.data.method.annotation. mutation mapping</para>
+<para>The org.springframework.graphql.data.method.annotation. query mapping</para>
+<para>The org.springframework.graphql.data.method.annotation. subscription mapping</para>
+<para>The org.springframework.stereotype. controller</para>
+<para>The reactor.core.publisher. flux</para>
+<para>The reactor.core.publisher. flux sink</para>
+<para>The reactor.core.publisher. mono</para>
+<para>Stack of org.hibernate.internal.util.collections.s</para>
+<para>The org.reactivestreams. publisher</para>
+<para>List of java.util. arrays</para>
+<para>List of java.util.s</para>
+<para>Set the java.util. belongs to</para>
+<para>Duration of the java.time.</para>
+<para>A controller for handling game posts.</para>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>JpaRepository&lt; GamePost, Integer &gt;</label>
+      </node>
+      <node id="1">
+        <label>coms309.GamePost.GamePostController</label>
+        <link refid="classcoms309_1_1_game_post_1_1_game_post_controller"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>~gamePostRepository</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>~gamePostPublisher</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>coms309.GamePost.GamePostPublisher</label>
+        <link refid="classcoms309_1_1_game_post_1_1_game_post_publisher"/>
+      </node>
+      <node id="2">
+        <label>coms309.GamePost.GamePostRepository</label>
+        <link refid="interfacecoms309_1_1_game_post_1_1_game_post_repository"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostController.java" line="83" column="7" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostController.java" bodystart="83" bodyend="683"/>
+    <listofallmembers>
+      <member refid="classcoms309_1_1_game_post_1_1_game_post_controller_1a44f16301cfe929f6f71b220a6fcd99af" prot="public" virt="non-virtual"><scope>coms309::GamePost::GamePostController</scope><name>deleteAllGamePosts</name></member>
+      <member refid="classcoms309_1_1_game_post_1_1_game_post_controller_1a1add1ccabfc70e0d4c16d33435afee13" prot="package" virt="non-virtual"><scope>coms309::GamePost::GamePostController</scope><name>gamePostPublisher</name></member>
+      <member refid="classcoms309_1_1_game_post_1_1_game_post_controller_1a1a711ba9193ebb31ac2fcddee1873cdf" prot="package" virt="non-virtual"><scope>coms309::GamePost::GamePostController</scope><name>gamePostRepository</name></member>
+      <member refid="classcoms309_1_1_game_post_1_1_game_post_controller_1a82d45e644b834a731aceda454fe6376d" prot="public" virt="non-virtual"><scope>coms309::GamePost::GamePostController</scope><name>getAllGamePosts</name></member>
+      <member refid="classcoms309_1_1_game_post_1_1_game_post_controller_1ad1439a717601e47a319d1cd30b5c9146" prot="public" virt="non-virtual"><scope>coms309::GamePost::GamePostController</scope><name>getCommentByPost</name></member>
+      <member refid="classcoms309_1_1_game_post_1_1_game_post_controller_1a260ca43f5eaf7ce11f3d2f1c4a37c0ff" prot="public" virt="non-virtual"><scope>coms309::GamePost::GamePostController</scope><name>getGamePostById</name></member>
+      <member refid="classcoms309_1_1_game_post_1_1_game_post_controller_1a09ba57be08ea82320cc55760bc10f95f" prot="public" virt="non-virtual"><scope>coms309::GamePost::GamePostController</scope><name>getUsersPlaying</name></member>
+      <member refid="classcoms309_1_1_game_post_1_1_game_post_controller_1ae970a8eded11388135a687fbdc67efe6" prot="package" virt="non-virtual"><scope>coms309::GamePost::GamePostController</scope><name>locationRepository</name></member>
+      <member refid="classcoms309_1_1_game_post_1_1_game_post_controller_1a16af667dcbc43e8a0e49d51f782d36e3" prot="package" virt="non-virtual"><scope>coms309::GamePost::GamePostController</scope><name>sportRepository</name></member>
+      <member refid="classcoms309_1_1_game_post_1_1_game_post_controller_1a1cf6f9618bec10c3d06240b60c338b70" prot="public" virt="non-virtual"><scope>coms309::GamePost::GamePostController</scope><name>subGamePost</name></member>
+      <member refid="classcoms309_1_1_game_post_1_1_game_post_controller_1a51a71a612388a604245779b0f7f0e49e" prot="package" virt="non-virtual"><scope>coms309::GamePost::GamePostController</scope><name>userRepository</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

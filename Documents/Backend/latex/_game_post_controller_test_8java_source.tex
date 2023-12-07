@@ -1,0 +1,345 @@
+\doxysection{Game\+Post\+Controller\+Test.\+java}
+\hypertarget{_game_post_controller_test_8java_source}{}\label{_game_post_controller_test_8java_source}\index{C:/Users/Arie/Develop/hb\_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java@{C:/Users/Arie/Develop/hb\_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java}}
+\mbox{\hyperlink{_game_post_controller_test_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00001}00001\ \textcolor{keyword}{package\ }com.mockito;}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00003}00003\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_auth}{Auth}}.\mbox{\hyperlink{classcoms309_1_1_auth_1_1_auth}{Auth}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00004}00004\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_enums}{Enums}}.\mbox{\hyperlink{classcoms309_1_1_enums_1_1_permission}{Permission}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00005}00005\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_game_post}{GamePost}}.\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post}{GamePost}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00006}00006\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_game_post}{GamePost}}.\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_controller}{GamePostController}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00007}00007\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_game_post}{GamePost}}.\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_publisher}{GamePostPublisher}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00008}00008\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_game_post}{GamePost}}.\mbox{\hyperlink{interfacecoms309_1_1_game_post_1_1_game_post_repository}{GamePostRepository}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00009}00009\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_location}{Location}}.\mbox{\hyperlink{classcoms309_1_1_location_1_1_location}{Location}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00010}00010\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_sport}{Sport}}.\mbox{\hyperlink{classcoms309_1_1_sport_1_1_sport}{Sport}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00011}00011\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_sport}{Sport}}.\mbox{\hyperlink{interfacecoms309_1_1_sport_1_1_sport_repository}{SportRepository}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00012}00012\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_users}{Users}}.\mbox{\hyperlink{interfacecoms309_1_1_users_1_1_user_repository}{UserRepository}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00013}00013\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_users}{Users}}.\mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00014}00014\ \textcolor{keyword}{import}\ org.junit.jupiter.api.BeforeEach;}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00015}00015\ \textcolor{keyword}{import}\ org.junit.jupiter.api.Test;}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00016}00016\ \textcolor{keyword}{import}\ org.mockito.InjectMocks;}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00017}00017\ \textcolor{keyword}{import}\ org.mockito.Mock;}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00018}00018\ \textcolor{keyword}{import}\ org.mockito.MockitoAnnotations;}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00020}00020\ \textcolor{keyword}{import}\ java.util.*;}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00022}00022\ \textcolor{keyword}{import}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_auth}{Auth}}.\mbox{\hyperlink{classcoms309_1_1_auth_1_1_auth}{Auth}}.\mbox{\hyperlink{classcoms309_1_1_auth_1_1_auth_ab72afc2758e2b85c51557970fa28232d}{isAdmin}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00023}00023\ \textcolor{keyword}{import}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_enums}{Enums}}.\mbox{\hyperlink{classcoms309_1_1_enums_1_1_permission}{Permission}}.\mbox{\hyperlink{enumcoms309_1_1_enums_1_1_permission_1_1permission}{permission}}.\mbox{\hyperlink{enumcoms309_1_1_enums_1_1_permission_1_1permission_a78bff52f70a002f0de10c98c99af8928}{ADMIN}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00024}00024\ \textcolor{keyword}{import}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_enums}{Enums}}.\mbox{\hyperlink{classcoms309_1_1_enums_1_1_permission}{Permission}}.\mbox{\hyperlink{enumcoms309_1_1_enums_1_1_permission_1_1permission}{permission}}.\mbox{\hyperlink{enumcoms309_1_1_enums_1_1_permission_1_1permission_a98b664dfb82ba1acfd9709064ca7426a}{USER}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00025}00025\ \textcolor{keyword}{import}\ \textcolor{keyword}{static}\ graphql.Assert.*;}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00026}00026\ \textcolor{keyword}{import}\ \textcolor{keyword}{static}\ org.junit.jupiter.api.Assertions.assertEquals;}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00027}00027\ \textcolor{keyword}{import}\ \textcolor{keyword}{static}\ org.junit.jupiter.api.Assertions.assertTrue;}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00028}00028\ \textcolor{keyword}{import}\ \textcolor{keyword}{static}\ org.mockito.Mockito.*;}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00030}00030\ \textcolor{keyword}{class\ }GamePostControllerTest\ \{}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00033}00033\ \ \ \ \ @InjectMocks}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00034}00034\ \ \ \ \ GamePostController\ gamePostController;}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00036}00036\ \ \ \ \ @Mock}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00037}00037\ \ \ \ \ GamePostRepository\ gamePostRepository;}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00038}00038\ \ \ \ \ @Mock}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00039}00039\ \ \ \ \ UserRepository\ userRepository;}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00040}00040\ \ \ \ \ @Mock}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00041}00041\ \ \ \ \ SportRepository\ sportRepository;}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00042}00042\ \ \ \ \ @Mock}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00043}00043\ \ \ \ \ GamePostPublisher\ gamePostPublisher;}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00044}00044\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00045}00045\ \ \ \ \ \textcolor{keyword}{private}\ GamePost\ gp1,\ gp2,\ gp3,\ gp4;}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00046}00046\ \ \ \ \ \textcolor{keyword}{private}\ Users\ u1,\ u2;}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00047}00047\ \ \ \ \ \textcolor{keyword}{private}\ Sport\ s1,\ s2,\ s3,\ s4;}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00049}00049\ \ \ \ \ @BeforeEach}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00050}00050\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ init()\ \{}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00051}00051\ \ \ \ \ \ \ \ \ MockitoAnnotations.initMocks(\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00053}00053\ \ \ \ \ \ \ \ \ s1\ =\ \textcolor{keyword}{new}\ Sport(\textcolor{stringliteral}{"{}Basketball"{}});}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00054}00054\ \ \ \ \ \ \ \ \ s2\ =\ \textcolor{keyword}{new}\ Sport(\textcolor{stringliteral}{"{}Pickleball"{}});}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00055}00055\ \ \ \ \ \ \ \ \ s3\ =\ \textcolor{keyword}{new}\ Sport(\textcolor{stringliteral}{"{}Football"{}});}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00056}00056\ \ \ \ \ \ \ \ \ s4\ =\ \textcolor{keyword}{new}\ Sport(\textcolor{stringliteral}{"{}Spikeball"{}});}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00057}00057\ \ \ \ \ \ \ \ \ sportRepository.save(s1);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00058}00058\ \ \ \ \ \ \ \ \ sportRepository.save(s2);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00059}00059\ \ \ \ \ \ \ \ \ sportRepository.save(s3);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00060}00060\ \ \ \ \ \ \ \ \ sportRepository.save(s4);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00062}00062\ \ \ \ \ \ \ \ \ u1\ =\ \textcolor{keyword}{new}\ Users(\textcolor{stringliteral}{"{}Bill"{}},\ \textcolor{stringliteral}{"{}Smith"{}},\ \textcolor{stringliteral}{"{}Bsmith@example.com"{}},\ \textcolor{stringliteral}{"{}smith3920"{}});}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00063}00063\ \ \ \ \ \ \ \ \ u2\ =\ \textcolor{keyword}{new}\ Users(\textcolor{stringliteral}{"{}John"{}},\ \textcolor{stringliteral}{"{}1234"{}},\ \textcolor{stringliteral}{"{}john@gmail.com"{}},\ \textcolor{stringliteral}{"{}Mar1o\&Lu1g1"{}});}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00064}00064\ \ \ \ \ \ \ \ \ userRepository.save(u1);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00065}00065\ \ \ \ \ \ \ \ \ userRepository.save(u2);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00066}00066\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00067}00067\ \ \ \ \ \ \ \ \ gp1\ =\ \textcolor{keyword}{new}\ GamePost(s1,\ userRepository.findById(u1.getId()),\ 24,\ 20,\ \textcolor{stringliteral}{"{}1/12/2023"{}},}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}29/09/1988"{}},\ \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00069}00069\ \ \ \ \ \ \ \ \ gp2\ =\ \textcolor{keyword}{new}\ GamePost(s2,\ userRepository.findById(u1.getId()),\ 16,\ 2,\ \textcolor{stringliteral}{"{}1/2/2023"{}},\ \textcolor{stringliteral}{"{}1/02/2023"{}},}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00070}00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00071}00071\ \ \ \ \ \ \ \ \ gp3\ =\ \textcolor{keyword}{new}\ GamePost(s3,\ userRepository.findById(u2.getId()),\ 10,\ 8,\ \textcolor{stringliteral}{"{}10/08/2023"{}},}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00072}00072\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}10/25/2023"{}},\ \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00073}00073\ \ \ \ \ \ \ \ \ gp4\ =\ \textcolor{keyword}{new}\ GamePost(s4,\ userRepository.findById(u2.getId()),\ 6,\ 3,\ \textcolor{stringliteral}{"{}11/1/2023"{}},\ \textcolor{stringliteral}{"{}11/09/2023"{}},}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00074}00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00075}00075\ \ \ \ \ \ \ \ \ gamePostRepository.save(gp1);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00076}00076\ \ \ \ \ \ \ \ \ gamePostRepository.save(gp2);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00077}00077\ \ \ \ \ \ \ \ \ gamePostRepository.save(gp3);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00078}00078\ \ \ \ \ \ \ \ \ gamePostRepository.save(gp4);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00079}00079\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00080}00080\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00081}00081\ \ \ \ \ @Test}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00082}00082\ \ \ \ \ \textcolor{keywordtype}{void}\ getAllGamePosts()\ \{}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00083}00083\ \ \ \ \ \ \ \ \ List<GamePost>\ list\ =\ \textcolor{keyword}{new}\ ArrayList<>();}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00084}00084\ \ \ \ \ \ \ \ \ list.add(gp1);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00085}00085\ \ \ \ \ \ \ \ \ list.add(gp2);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00086}00086\ \ \ \ \ \ \ \ \ list.add(gp3);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00087}00087\ \ \ \ \ \ \ \ \ list.add(gp4);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00088}00088\ \ \ \ \ \ \ \ \ when(gamePostRepository.findAll()).thenReturn(list);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00089}00089\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00090}00090\ \ \ \ \ \ \ \ \ List<GamePost>\ gamePostList\ =\ gamePostController.getAllGamePosts();}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00091}00091\ \ \ \ \ \ \ \ \ assertEquals(4,\ gamePostList.size());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00092}00092\ \ \ \ \ \ \ \ \ assertEquals(gp1.getId(),\ gamePostList.get(1).getId());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00093}00093\ \ \ \ \ \ \ \ \ verify(gamePostRepository,\ times(1)).findAll();}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00094}00094\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00095}00095\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00096}00096\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00097}00097\ \ \ \ \ @Test}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00098}00098\ \ \ \ \ \textcolor{keywordtype}{void}\ getGamePostById()\ \{}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00099}00099\ \ \ \ \ \ \ \ \ when(gamePostRepository.findById(0)).thenReturn(gp1);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00100}00100\ \ \ \ \ \ \ \ \ GamePost\ gamePost\ =\ gamePostController.getGamePostById(0);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00101}00101\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00102}00102\ \ \ \ \ \ \ \ \ assertEquals(gp1.getId(),\ gamePost.getId());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00103}00103\ \ \ \ \ \ \ \ \ assertEquals(gp1.getSport(),\ gamePost.getSport());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00104}00104\ \ \ \ \ \ \ \ \ assertEquals(gp1.getMax\_players(),\ gamePost.getMax\_players());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00105}00105\ \ \ \ \ \ \ \ \ assertEquals(gp1.getMin\_players(),\ gamePost.getMin\_players());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00106}00106\ \ \ \ \ \ \ \ \ assertEquals(gp1.getPlayersSignedUp(),\ gamePost.getPlayersSignedUp());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00107}00107\ \ \ \ \ \ \ \ \ assertEquals(gp1.getCreated\_by(),\ gamePost.getCreated\_by());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00108}00108\ \ \ \ \ \ \ \ \ assertEquals(gp1.getCreated\_on(),\ gamePost.getCreated\_on());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00109}00109\ \ \ \ \ \ \ \ \ assertEquals(gp1.getPlaying\_on(),\ gamePost.getPlaying\_on());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00110}00110\ \ \ \ \ \ \ \ \ assertEquals(gp1.getIs\_deleted(),\ gamePost.getIs\_deleted());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00111}00111\ \ \ \ \ \ \ \ \ assertEquals(gp1.getComment(),\ gamePost.getComment());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00112}00112\ \ \ \ \ \ \ \ \ assertEquals(gp1.getLocation(),\ gamePost.getLocation());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00113}00113\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00114}00114\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00115}00115\ \ \ \ \ @Test}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00116}00116\ \ \ \ \ \textcolor{keywordtype}{void}\ getUsersPlaying()\ \{}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00117}00117\ \ \ \ \ \ \ \ \ assertEquals(1,\ gp1.getPlayersSignedUp().size());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00118}00118\ \ \ \ \ \ \ \ \ Set<Users>\ verifyCreatorIsSignedUp\ =\ \textcolor{keyword}{new}\ HashSet<>();}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00119}00119\ \ \ \ \ \ \ \ \ verifyCreatorIsSignedUp.add(u2);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00120}00120\ \ \ \ \ \ \ \ \ assertTrue(gp1.getPlayersSignedUp().contains(userRepository.findById(1)));}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00121}00121\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00122}00122\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ gamePostID\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00123}00123\ \ \ \ \ \ \ \ \ Set<Users>\ players\ =\ \textcolor{keyword}{new}\ HashSet<>();}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00124}00124\ \ \ \ \ \ \ \ \ players.add(u1);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00125}00125\ \ \ \ \ \ \ \ \ players.add(u2);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00126}00126\ \ \ \ \ \ \ \ \ players.add(gp1.getCreated\_by());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00127}00127\ \ \ \ \ \ \ \ \ when(gamePostRepository.findById(gamePostID)).thenReturn(gp1);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00128}00128\ \ \ \ \ \ \ \ \ gp1.setPlayersSignedUp(players);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00129}00129\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00130}00130\ \ \ \ \ \ \ \ \ Set<Users>\ result\ =\ gamePostController.getUsersPlaying(gamePostID);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00131}00131\ \ \ \ \ \ \ \ \ assertEquals(players,\ result);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00132}00132\ \ \ \ \ \ \ \ \ assertEquals(3,\ result.size());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00133}00133\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00134}00134\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00135}00135\ \ \ \ \ @Test}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00136}00136\ \ \ \ \ \textcolor{keywordtype}{void}\ createGamePost()\ \{}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00137}00137\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ sport\_id\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00138}00138\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ created\_by\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00139}00139\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ max\_players\ =\ 10;}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00140}00140\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ min\_players\ =\ 5;}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00141}00141\ \ \ \ \ \ \ \ \ String\ playing\_on\ =\ \textcolor{stringliteral}{"{}2/1/2023"{}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00142}00142\ \ \ \ \ \ \ \ \ String\ created\_on\ =\ \textcolor{stringliteral}{"{}1/1/2023"{}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00143}00143\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{boolean}\ is\_deleted\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00144}00144\ \ \ \ \ \ \ \ \ String\ address\ =\ \textcolor{stringliteral}{"{}123\ Main\ St"{}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00145}00145\ \ \ \ \ \ \ \ \ String\ GPS\ =\ \textcolor{stringliteral}{"{}12.345,67.890"{}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00146}00146\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00147}00147\ \ \ \ \ \ \ \ \ Sport\ sport\ =\ \textcolor{keyword}{new}\ Sport(\textcolor{stringliteral}{"{}Tennis"{}});}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00148}00148\ \ \ \ \ \ \ \ \ sport.setId(sport\_id);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00149}00149\ \ \ \ \ \ \ \ \ when(sportRepository.findById(sport\_id)).thenReturn(sport);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00150}00150\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00151}00151\ \ \ \ \ \ \ \ \ Users\ creator\ =\ \textcolor{keyword}{new}\ Users(\textcolor{stringliteral}{"{}New"{}},\ \textcolor{stringliteral}{"{}User"{}},\ \textcolor{stringliteral}{"{}new@example.com"{}},\ \textcolor{stringliteral}{"{}password"{}});}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00152}00152\ \ \ \ \ \ \ \ \ creator.setId(created\_by);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00153}00153\ \ \ \ \ \ \ \ \ when(userRepository.findById(created\_by)).thenReturn(creator);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00154}00154\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00155}00155\ \ \ \ \ \ \ \ \ GamePost\ gamePost\ =\ \textcolor{keyword}{new}\ GamePost(sport,\ creator,\ max\_players,\ min\_players,\ playing\_on,}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00156}00156\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ created\_on,\ is\_deleted);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00157}00157\ \ \ \ \ \ \ \ \ Location\ location\ =\ \textcolor{keyword}{new}\ Location(address,\ GPS);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00158}00158\ \ \ \ \ \ \ \ \ gamePost.setLocation(location);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00159}00159\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00160}00160\ \ \ \ \ \ \ \ \ when(gamePostRepository.save(any(GamePost.class))).thenReturn(gamePost);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00161}00161\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00162}00162\ \ \ \ \ \ \ \ \ GamePost\ result\ =\ gamePostController.createGamePost(sport\_id,\ created\_by,\ max\_players,}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00163}00163\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ min\_players,\ playing\_on,\ created\_on,\ is\_deleted,\ address,\ GPS,\ creator.getEmail(),}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00164}00164\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ creator.getPassword());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00165}00165\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00166}00166\ \ \ \ \ \ \ \ \ assertEquals(sport\_id,\ result.getSport().getId());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00167}00167\ \ \ \ \ \ \ \ \ assertEquals(created\_by,\ result.getCreated\_by().getId());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00168}00168\ \ \ \ \ \ \ \ \ assertEquals(max\_players,\ result.getMax\_players());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00169}00169\ \ \ \ \ \ \ \ \ assertEquals(min\_players,\ result.getMin\_players());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00170}00170\ \ \ \ \ \ \ \ \ assertEquals(playing\_on,\ result.getPlaying\_on());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00171}00171\ \ \ \ \ \ \ \ \ assertEquals(created\_on,\ result.getCreated\_on());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00172}00172\ \ \ \ \ \ \ \ \ assertEquals(is\_deleted,\ result.getIs\_deleted());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00173}00173\ \ \ \ \ \ \ \ \ assertEquals(creator.getEmail(),\ userRepository.findById(created\_by).getEmail());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00174}00174\ \ \ \ \ \ \ \ \ assertEquals(creator.getPassword(),\ userRepository.findById(created\_by).getPassword());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00175}00175\ \ \ \ \ \ \ \ \ assertEquals(address,\ result.getLocation().getAddress());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00176}00176\ \ \ \ \ \ \ \ \ assertEquals(GPS,\ result.getLocation().getGps());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00177}00177\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00178}00178\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00179}00179\ \ \ \ \ @Test}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00180}00180\ \ \ \ \ \textcolor{keywordtype}{void}\ updateGamePost()\ \{}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00181}00181\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00182}00182\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ max\_players\ =\ 15;}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00183}00183\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ min\_players\ =\ 8;}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00184}00184\ \ \ \ \ \ \ \ \ String\ playing\_on\ =\ \textcolor{stringliteral}{"{}2/15/2023"{}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00185}00185\ \ \ \ \ \ \ \ \ String\ created\_on\ =\ \textcolor{stringliteral}{"{}2/1/2023"{}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00186}00186\ \ \ \ \ \ \ \ \ Boolean\ is\_deleted\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00187}00187\ \ \ \ \ \ \ \ \ String\ address\ =\ \textcolor{stringliteral}{"{}456\ Elm\ St"{}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00188}00188\ \ \ \ \ \ \ \ \ String\ GPS\ =\ \textcolor{stringliteral}{"{}23.456,45.678"{}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00189}00189\ \ \ \ \ \ \ \ \ String\ email\ =\ \textcolor{stringliteral}{"{}user@example.com"{}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00190}00190\ \ \ \ \ \ \ \ \ String\ password\ =\ \textcolor{stringliteral}{"{}password123"{}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00191}00191\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00192}00192\ \ \ \ \ \ \ \ \ Users\ creator\ =\ \textcolor{keyword}{new}\ Users(\textcolor{stringliteral}{"{}User"{}},\ \textcolor{stringliteral}{"{}Test"{}},\ email,\ password);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00193}00193\ \ \ \ \ \ \ \ \ Sport\ sport\ =\ \textcolor{keyword}{new}\ Sport(\textcolor{stringliteral}{"{}Baseball"{}});}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00194}00194\ \ \ \ \ \ \ \ \ gp1.setCreated\_by(creator);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00195}00195\ \ \ \ \ \ \ \ \ when(userRepository.findById(creator.getId())).thenReturn(creator);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00196}00196\ \ \ \ \ \ \ \ \ when(gamePostRepository.findById(gp1.getId())).thenReturn(gp1);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00197}00197\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00198}00198\ \ \ \ \ \ \ \ \ gamePostController.updateGamePost(gp1.getId(),\ sport.getId(),\ max\_players,}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00199}00199\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ min\_players,\ playing\_on,\ created\_on,\ is\_deleted,\ address,\ GPS,\ email,\ password);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00200}00200\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00201}00201\ \ \ \ \ \ \ \ \ assertEquals(sport.getId(),\ gp1.getSport().getId());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00202}00202\ \ \ \ \ \ \ \ \ assertEquals(max\_players,\ gp1.getMax\_players());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00203}00203\ \ \ \ \ \ \ \ \ assertEquals(min\_players,\ gp1.getMin\_players());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00204}00204\ \ \ \ \ \ \ \ \ assertEquals(playing\_on,\ gp1.getPlaying\_on());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00205}00205\ \ \ \ \ \ \ \ \ assertEquals(created\_on,\ gp1.getCreated\_on());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00206}00206\ \ \ \ \ \ \ \ \ assertEquals(is\_deleted,\ gp1.getIs\_deleted());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00207}00207\ \ \ \ \ \ \ \ \ assertEquals(address,\ gp1.getLocation().getAddress());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00208}00208\ \ \ \ \ \ \ \ \ assertEquals(GPS,\ gp1.getLocation().getGps());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00209}00209\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00210}00210\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00211}00211\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00212}00212\ \ \ \ \ @Test}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00213}00213\ \ \ \ \ \textcolor{keywordtype}{void}\ addNewUserPlaying()\ \{}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00214}00214\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ gamePostID\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00215}00215\ \ \ \ \ \ \ \ \ String\ email\ =\ \textcolor{stringliteral}{"{}user@example.com"{}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00216}00216\ \ \ \ \ \ \ \ \ String\ password\ =\ \textcolor{stringliteral}{"{}password123"{}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00217}00217\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00218}00218\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00219}00219\ \ \ \ \ \ \ \ \ when(userRepository.findById(u2.getId())).thenReturn(u2);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00220}00220\ \ \ \ \ \ \ \ \ when(gamePostRepository.findById(gamePostID)).thenReturn(gp1);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00221}00221\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00222}00222\ \ \ \ \ \ \ \ \ Set<Users>\ playersBeforeAdd\ =\ gp1.getPlayersSignedUp();}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00223}00223\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ playersCountBeforeAdd\ =\ playersBeforeAdd.size();}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00224}00224\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00225}00225\ \ \ \ \ \ \ \ \ Set<Users>\ playersAfterAdd\ =\ gamePostController.addNewUserPlaying(gamePostID,\ u2.getId(),}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00226}00226\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ u2.getEmail(),\ u2.getPassword());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00227}00227\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00228}00228\ \ \ \ \ \ \ \ \ assertEquals(playersCountBeforeAdd\ +\ 1,\ playersAfterAdd.size());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00229}00229\ \ \ \ \ \ \ \ \ assertTrue(playersAfterAdd.contains(u2));}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00230}00230\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00231}00231\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00232}00232\ \ \ \ \ @Test}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00233}00233\ \ \ \ \ \textcolor{keywordtype}{void}\ addGamePostToSport()\ \{}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00234}00234\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ sport\_id\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00235}00235\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ created\_by\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00236}00236\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ max\_players\ =\ 10;}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00237}00237\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ min\_players\ =\ 5;}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00238}00238\ \ \ \ \ \ \ \ \ String\ playing\_on\ =\ \textcolor{stringliteral}{"{}2/1/2023"{}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00239}00239\ \ \ \ \ \ \ \ \ String\ created\_on\ =\ \textcolor{stringliteral}{"{}1/1/2023"{}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00240}00240\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{boolean}\ is\_deleted\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00241}00241\ \ \ \ \ \ \ \ \ String\ email\ =\ \textcolor{stringliteral}{"{}user@example.com"{}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00242}00242\ \ \ \ \ \ \ \ \ String\ password\ =\ \textcolor{stringliteral}{"{}password123"{}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00243}00243\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00244}00244\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00245}00245\ \ \ \ \ \ \ \ \ Users\ creator\ =\ \textcolor{keyword}{new}\ Users(\textcolor{stringliteral}{"{}New"{}},\ \textcolor{stringliteral}{"{}User"{}},\ \textcolor{stringliteral}{"{}new@example.com"{}},\ \textcolor{stringliteral}{"{}password"{}});}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00246}00246\ \ \ \ \ \ \ \ \ creator.setId(created\_by);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00247}00247\ \ \ \ \ \ \ \ \ when(userRepository.findById(created\_by)).thenReturn(creator);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00248}00248\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00249}00249\ \ \ \ \ \ \ \ \ GamePost\ gamePost\ =\ \textcolor{keyword}{new}\ GamePost(s1,\ creator,\ max\_players,\ min\_players,\ playing\_on,}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00250}00250\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ created\_on,\ is\_deleted);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00251}00251\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00252}00252\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00253}00253\ \ \ \ \ \ \ \ \ when(userRepository.findById(gamePost.getCreated\_by().getId())).thenReturn(creator);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00254}00254\ \ \ \ \ \ \ \ \ when(gamePostRepository.findById(gamePost.getId())).thenReturn(gamePost);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00255}00255\ \ \ \ \ \ \ \ \ when(sportRepository.findById(s1.getId())).thenReturn(s1);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00256}00256\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00257}00257\ \ \ \ \ \ \ \ \ GamePost\ updatedGamePost\ =\ gamePostController.addGamePostToSport(gamePost.getId(),}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00258}00258\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ s1.getId(),\ email,\ password);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00259}00259\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00260}00260\ \ \ \ \ \ \ \ \ assertEquals(s1.getId(),\ updatedGamePost.getSport().getId());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00261}00261\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00262}00262\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00263}00263\ \ \ \ \ \textcolor{comment}{//\ @Test}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00264}00264\ \ \ \ \ \textcolor{comment}{//\ void\ removeUserPlaying()\ \{}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00265}00265\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ String\ email\ =\ "{}user@example.com"{};}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00266}00266\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ String\ password\ =\ "{}password123"{};}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00267}00267\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00268}00268\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ Users\ userToRemove\ =\ new\ Users("{}User"{},\ "{}Remove"{},\ email,\ password);}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00269}00269\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00270}00270\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ when(userRepository.findById(userToRemove.getId())).thenReturn(userToRemove);}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00271}00271\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ when(gamePostRepository.findById(gp1.getId())).thenReturn(gp1);}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00272}00272\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00273}00273\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ gp1.getPlayersSignedUp().add(userToRemove);}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00274}00274\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ Set<Users>\ playersBeforeRemove\ =\ gp1.getPlayersSignedUp();}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00275}00275\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ int\ playersCountBeforeRemove\ =\ playersBeforeRemove.size();}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00276}00276\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00277}00277\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ Set<Users>\ playersAfterRemove\ =\ gamePostController.removeUserPlaying(gp1.getId(),}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00278}00278\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ \ userToRemove.getId(),\ email,\ password);}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00279}00279\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00280}00280\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ assertEquals(playersCountBeforeRemove\ -\/\ 1,\ playersAfterRemove.size());}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00281}00281\ \ \ \ \ \textcolor{comment}{//\ \ \ \ \ assertFalse(playersAfterRemove.contains(userToRemove));}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00282}00282\ \ \ \ \ \textcolor{comment}{//\ \}}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00283}00283\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00284}00284\ \ \ \ \ @Test}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00285}00285\ \ \ \ \ \textcolor{keywordtype}{void}\ deleteGamePostById()\ \{}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00286}00286\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Arrange}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00287}00287\ \ \ \ \ \ \ \ \ String\ email\ =\ \textcolor{stringliteral}{"{}Bsmith@example.com"{}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00288}00288\ \ \ \ \ \ \ \ \ String\ password\ =\ \textcolor{stringliteral}{"{}smith3920"{}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00289}00289\ \ \ \ \ \ \ \ \ Users\ u\ =\ \textcolor{keyword}{new}\ Users(\textcolor{stringliteral}{"{}George"{}},\ \textcolor{stringliteral}{"{}Smith"{}},\ email,\ password);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00290}00290\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00291}00291\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Mock\ authentication\ to\ return\ true}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00292}00292\ \ \ \ \ \ \ \ \ when(Auth.isAuthenticated(u,\ email,\ password)).thenReturn(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00293}00293\ \ \ \ \ \ \ \ \ Sport\ s\ =\ \textcolor{keyword}{new}\ Sport(\textcolor{stringliteral}{"{}Tennis"{}});}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00294}00294\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00295}00295\ \ \ \ \ \ \ \ \ GamePost\ g\ =\ \textcolor{keyword}{new}\ GamePost(s,\ u,\ 24,\ 20,\ \textcolor{stringliteral}{"{}1/12/2023"{}},\ \textcolor{stringliteral}{"{}29/09/1988"{}},\ \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00296}00296\ \ \ \ \ \ \ \ \ when(sportRepository.findById(s.getId())).thenReturn(s);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00297}00297\ \ \ \ \ \ \ \ \ when(userRepository.findById(u.getId())).thenReturn(u);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00298}00298\ \ \ \ \ \ \ \ \ when(gamePostRepository.findById(g.getId())).thenReturn(g);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00299}00299\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00300}00300\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Act}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00301}00301\ \ \ \ \ \ \ \ \ String\ result\ =\ gamePostController.deleteGamePostById(g.getId(),\ email,\ password);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00302}00302\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00303}00303\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Assert}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00304}00304\ \ \ \ \ \ \ \ \ verify(gamePostRepository,\ times(1)).deleteById(anyInt());\ \textcolor{comment}{//\ Use\ anyInt()\ here}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00305}00305\ \ \ \ \ \ \ \ \ assertEquals(\textcolor{stringliteral}{"{}Successfully\ deleted\ GamePosts\ with\ id\ "{}}\ +\ g.getId(),\ result);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00306}00306\ \ \ \ \ \ \ \ \ assertEquals(0,\ gamePostRepository.findAll().size());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00307}00307\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00308}00308\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00309}00309\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00310}00310\ \ \ \ \ @Test}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00311}00311\ \ \ \ \ \textcolor{keywordtype}{void}\ deleteAllGamePosts()\ \{}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00312}00312\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Arrange}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00313}00313\ \ \ \ \ \ \ \ \ String\ email\ =\ \textcolor{stringliteral}{"{}Bsmith@example.com"{}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00314}00314\ \ \ \ \ \ \ \ \ String\ password\ =\ \textcolor{stringliteral}{"{}smith3920"{}};}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00315}00315\ \ \ \ \ \ \ \ \ Users\ u\ =\ \textcolor{keyword}{new}\ Users(\textcolor{stringliteral}{"{}George"{}},\ \textcolor{stringliteral}{"{}Smith"{}},\ email,\ password);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00316}00316\ \ \ \ \ \ \ \ \ u.setRole(ADMIN);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00317}00317\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Mock\ authentication\ to\ return\ true}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00318}00318\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00319}00319\ \ \ \ \ \ \ \ \ when(Auth.isAdmin(u)).thenReturn(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00320}00320\ \ \ \ \ \ \ \ \ assertTrue(u.isAuthenticated(email,\ password));}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00321}00321\ \ \ \ \ \ \ \ \ assertTrue(u.isAdmin(u));}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00322}00322\ \ \ \ \ \ \ \ \ Sport\ s\ =\ \textcolor{keyword}{new}\ Sport(\textcolor{stringliteral}{"{}Tennis"{}});}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00323}00323\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00324}00324\ \ \ \ \ \ \ \ \ GamePost\ g\ =\ \textcolor{keyword}{new}\ GamePost(s,\ u,\ 24,\ 20,\ \textcolor{stringliteral}{"{}1/12/2023"{}},\ \textcolor{stringliteral}{"{}29/09/1988"{}},\ \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00325}00325\ \ \ \ \ \ \ \ \ when(sportRepository.findById(s.getId())).thenReturn(s);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00326}00326\ \ \ \ \ \ \ \ \ when(userRepository.findById(u.getId())).thenReturn(u);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00327}00327\ \ \ \ \ \ \ \ \ when(userRepository.findByEmail(u.getEmail())).thenReturn(u);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00328}00328\ \ \ \ \ \ \ \ \ when(gamePostRepository.findById(g.getId())).thenReturn(g);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00329}00329\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00330}00330\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Act}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00331}00331\ \ \ \ \ \ \ \ \ String\ result\ =\ gamePostController.deleteAllGamePosts(email,\ password);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00332}00332\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00333}00333\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Assert}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00334}00334\ \ \ \ \ \ \ \ \ assertEquals(\textcolor{stringliteral}{"{}Successfully\ deleted\ all\ GamePosts"{}},\ result);}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00335}00335\ \ \ \ \ \ \ \ \ assertEquals(0,\ gamePostRepository.findAll().size());}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00336}00336\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00337}00337\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00338}00338\ }
+\DoxyCodeLine{\Hypertarget{_game_post_controller_test_8java_source_l00339}00339\ \}}
+
+\end{DoxyCode}

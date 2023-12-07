@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_not_found_exception_8java" kind="file" language="Java">
+    <compoundname>NotFoundException.java</compoundname>
+    <includes local="no">org.springframework.http.HttpStatus</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Exceptions/NotFoundException.java</label>
+        <link refid="_not_found_exception_8java"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>org.springframework.http.HttpStatus</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classcoms309_1_1_exceptions_1_1_not_found_exception" prot="public">coms309::Exceptions::NotFoundException</innerclass>
+    <innernamespace refid="namespacecoms309_1_1_exceptions">coms309::Exceptions</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">package<sp/></highlight><highlight class="normal">coms309.Exceptions;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.springframework.http.HttpStatus;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.springframework.web.bind.annotation.ResponseStatus;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">@ResponseStatus(value<sp/>=<sp/>HttpStatus.NOT_FOUND)</highlight></codeline>
+<codeline lineno="23" refid="classcoms309_1_1_exceptions_1_1_not_found_exception" refkind="compound"><highlight class="normal">public<sp/>class<sp/><ref refid="classcoms309_1_1_exceptions_1_1_not_found_exception" kindref="compound">NotFoundException</ref><sp/>extends<sp/>RuntimeException<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="classcoms309_1_1_exceptions_1_1_not_found_exception_1ac500367e6a1476bb271a750f14a7c2cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classcoms309_1_1_exceptions_1_1_not_found_exception_1ac500367e6a1476bb271a750f14a7c2cd" kindref="member">NotFoundException</ref>(String<sp/>message)<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super(message);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Exceptions/NotFoundException.java"/>
+  </compounddef>
+</doxygen>

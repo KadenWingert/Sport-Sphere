@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_example_instrumented_test_8java" kind="file" language="Java">
+    <compoundname>ExampleInstrumentedTest.java</compoundname>
+    <includes local="no">android.content.Context</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/Arie/Develop/hb_215/Frontend/app/src/androidTest/java/com/example/sportssphere/ExampleInstrumentedTest.java</label>
+        <link refid="_example_instrumented_test_8java"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>android.content.Context</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classcom_1_1example_1_1sportssphere_1_1_example_instrumented_test" prot="public">com::example::sportssphere::ExampleInstrumentedTest</innerclass>
+    <innernamespace refid="namespacecom_1_1example_1_1sportssphere">com::example::sportssphere</innernamespace>
+    <innernamespace refid="namespacejava_1_1lang">java::lang</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacecom_1_1example_1_1sportssphere" refkind="compound"><highlight class="keyword">package<sp/></highlight><highlight class="normal">com.example.sportssphere;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>android.content.Context;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>androidx.test.platform.app.InstrumentationRegistry;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>androidx.test.ext.junit.runners.AndroidJUnit4;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.junit.Test;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.junit.runner.RunWith;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>org.junit.Assert.*;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">@RunWith(AndroidJUnit4.class)</highlight></codeline>
+<codeline lineno="19" refid="classcom_1_1example_1_1sportssphere_1_1_example_instrumented_test" refkind="compound"><highlight class="normal">public<sp/>class<sp/><ref refid="classcom_1_1example_1_1sportssphere_1_1_example_instrumented_test" kindref="compound">ExampleInstrumentedTest</ref><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>@Test</highlight></codeline>
+<codeline lineno="21" refid="classcom_1_1example_1_1sportssphere_1_1_example_instrumented_test_1a6561eda68b114f67c7e9f2c837a37cea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcom_1_1example_1_1sportssphere_1_1_example_instrumented_test_1a6561eda68b114f67c7e9f2c837a37cea" kindref="member">useAppContext</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Context<sp/>of<sp/>the<sp/>app<sp/>under<sp/>test.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Context<sp/>appContext<sp/>=<sp/>InstrumentationRegistry.getInstrumentation().getTargetContext();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(</highlight><highlight class="stringliteral">&quot;com.example.sportssphere&quot;</highlight><highlight class="normal">,<sp/>appContext.getPackageName());</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/androidTest/java/com/example/sportssphere/ExampleInstrumentedTest.java"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcom_1_1example_1_1sportssphere_1_1_calendar_activity" kind="class" language="Java" prot="public">
+    <compoundname>com::example::sportssphere::CalendarActivity</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">AppCompatActivity</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_calendar_activity_1aa6adc7393dad27e1b4553fb0c4d00dd0" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.example.sportssphere.CalendarActivity.userId</definition>
+        <argsstring></argsstring>
+        <name>userId</name>
+        <qualifiedname>com.example.sportssphere.CalendarActivity.userId</qualifiedname>
+        <briefdescription>
+<para>Identifier for the user. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CalendarActivity.java" line="28" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CalendarActivity.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_calendar_activity_1ae5dd9016bea91e39c307f9d3ef5201e4" prot="private" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button com.example.sportssphere.CalendarActivity.backToHomeButton</definition>
+        <argsstring></argsstring>
+        <name>backToHomeButton</name>
+        <qualifiedname>com.example.sportssphere.CalendarActivity.backToHomeButton</qualifiedname>
+        <briefdescription>
+<para>The back to home control. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CalendarActivity.java" line="30" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CalendarActivity.java" bodystart="30" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classcom_1_1example_1_1sportssphere_1_1_calendar_activity_1aea0ac58e3f4bba2a7c13e0c8d11ed13f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>Override protected void com.example.sportssphere.CalendarActivity::onCreate</definition>
+        <argsstring>(Bundle savedInstanceState)</argsstring>
+        <name>onCreate</name>
+        <qualifiedname>com.example.sportssphere.CalendarActivity.onCreate</qualifiedname>
+        <param>
+          <type>Bundle</type>
+          <declname>savedInstanceState</declname>
+        </param>
+        <briefdescription>
+<para>Executes the &apos;create&apos; action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>savedInstanceState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>State of the saved instance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CalendarActivity.java" line="44" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CalendarActivity.java" bodystart="44" bodyend="67"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The android.content. intent. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The android.os. bundle</para>
+<para>The android.view. view</para>
+<para>The android.widget. button</para>
+<para>The android.widget. toast</para>
+<para>The androidx.appcompat.app. application compatible activity</para>
+<para>A calendar activity.</para>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AppCompatActivity</label>
+      </node>
+      <node id="1">
+        <label>com.example.sportssphere.CalendarActivity</label>
+        <link refid="classcom_1_1example_1_1sportssphere_1_1_calendar_activity"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AppCompatActivity</label>
+      </node>
+      <node id="1">
+        <label>com.example.sportssphere.CalendarActivity</label>
+        <link refid="classcom_1_1example_1_1sportssphere_1_1_calendar_activity"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CalendarActivity.java" line="26" column="7" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CalendarActivity.java" bodystart="26" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_calendar_activity_1ae5dd9016bea91e39c307f9d3ef5201e4" prot="private" virt="non-virtual"><scope>com::example::sportssphere::CalendarActivity</scope><name>backToHomeButton</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_calendar_activity_1aea0ac58e3f4bba2a7c13e0c8d11ed13f" prot="protected" virt="non-virtual"><scope>com::example::sportssphere::CalendarActivity</scope><name>onCreate</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_calendar_activity_1aa6adc7393dad27e1b4553fb0c4d00dd0" prot="private" virt="non-virtual"><scope>com::example::sportssphere::CalendarActivity</scope><name>userId</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

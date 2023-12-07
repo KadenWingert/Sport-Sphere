@@ -1,0 +1,45 @@
+\doxysection{Auth.\+java}
+\hypertarget{_auth_8java_source}{}\label{_auth_8java_source}\index{C:/Users/Arie/Develop/hb\_215/Backend/src/main/java/coms309/Auth/Auth.java@{C:/Users/Arie/Develop/hb\_215/Backend/src/main/java/coms309/Auth/Auth.java}}
+\mbox{\hyperlink{_auth_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00004}\mbox{\hyperlink{namespacecoms309_1_1_auth}{00004}}\ \textcolor{keyword}{package\ }coms309.Auth;}
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00007}00007\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_users}{Users}}.\mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}};}
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00009}00009\ \textcolor{keyword}{import}\ org.springframework.stereotype.Service;}
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00011}00011\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_enums}{Enums}}.\mbox{\hyperlink{classcoms309_1_1_enums_1_1_permission}{Permission}}.\mbox{\hyperlink{enumcoms309_1_1_enums_1_1_permission_1_1permission}{permission}};}
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00013}00013\ \textcolor{comment}{/**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00022}00022\ @Service}
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00023}\mbox{\hyperlink{classcoms309_1_1_auth_1_1_auth}{00023}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{final}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classcoms309_1_1_auth_1_1_auth}{Auth}}\ \{}
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00025}00025\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00034}00034\ \ \ \ \ \textcolor{keyword}{private}\ \mbox{\hyperlink{classcoms309_1_1_auth_1_1_auth}{Auth}}()\ \{\}}
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00036}00036\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00051}\mbox{\hyperlink{classcoms309_1_1_auth_1_1_auth_a36df8f1021a4d416a3ee1589fefcc666}{00051}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{boolean}\ \mbox{\hyperlink{classcoms309_1_1_auth_1_1_auth_a36df8f1021a4d416a3ee1589fefcc666}{isAuthenticated}}(Users\ user,\ String\ email,\ String\ password)\ \{}
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00052}00052\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{boolean}\ authenticated\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00053}00053\ }
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00054}00054\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Admin\ is\ always\ authenticated}}
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00055}00055\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (user\ !=\ \textcolor{keyword}{null}\ \&\&\ (user.getEmail().toLowerCase().equals(email.toLowerCase())}
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00056}00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \&\&\ user.getPassword().equals(password))\ ||\ \mbox{\hyperlink{classcoms309_1_1_auth_1_1_auth_ab72afc2758e2b85c51557970fa28232d}{isAdmin}}(user))\ \{}
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ authenticated\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00058}00058\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00060}00060\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ authenticated;}
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00061}00061\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00062}00062\ }
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00063}00063\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00076}\mbox{\hyperlink{classcoms309_1_1_auth_1_1_auth_ab72afc2758e2b85c51557970fa28232d}{00076}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{boolean}\ \mbox{\hyperlink{classcoms309_1_1_auth_1_1_auth_ab72afc2758e2b85c51557970fa28232d}{isAdmin}}(Users\ user)\ \{}
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00077}00077\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{boolean}\ admin\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00079}00079\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (user\ !=\ \textcolor{keyword}{null}\ \&\&\ user.getRole()\ ==\ permission.ADMIN)\ \{}
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00080}00080\ \ \ \ \ \ \ \ \ \ \ \ \ admin\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00081}00081\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00082}00082\ }
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00083}00083\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ admin;}
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00084}00084\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_auth_8java_source_l00085}00085\ \}}
+
+\end{DoxyCode}

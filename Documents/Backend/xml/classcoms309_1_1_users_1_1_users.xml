@@ -1,0 +1,934 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcoms309_1_1_users_1_1_users" kind="class" language="Java" prot="public">
+    <compoundname>coms309::Users::Users</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcoms309_1_1_users_1_1_users_1a54c2965b5edf24e60fad463e797ef31a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int coms309.Users.Users.id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>coms309.Users.Users.id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="65" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_users_1_1_users_1a681019f33735759ddec5a7f45eb2b1fa" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String coms309.Users.Users.first_name</definition>
+        <argsstring></argsstring>
+        <name>first_name</name>
+        <qualifiedname>coms309.Users.Users.first_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="79" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_users_1_1_users_1acde3b790f2da7e93417cd06f8ec64360" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String coms309.Users.Users.last_name</definition>
+        <argsstring></argsstring>
+        <name>last_name</name>
+        <qualifiedname>coms309.Users.Users.last_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="93" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_users_1_1_users_1aaa715fa28d026810bc09092460351e86" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String coms309.Users.Users.email</definition>
+        <argsstring></argsstring>
+        <name>email</name>
+        <qualifiedname>coms309.Users.Users.email</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="107" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_users_1_1_users_1a9605af4e5d155062a8b481f7f8dee5ae" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String coms309.Users.Users.password</definition>
+        <argsstring></argsstring>
+        <name>password</name>
+        <qualifiedname>coms309.Users.Users.password</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="121" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_users_1_1_users_1abd543c28e9f644f938c218331c726a6f" prot="private" static="no" mutable="no">
+        <type>permission</type>
+        <definition>permission coms309.Users.Users.role</definition>
+        <argsstring></argsstring>
+        <name>role</name>
+        <qualifiedname>coms309.Users.Users.role</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="135" column="24" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_users_1_1_users_1a77bda4920dd1066353dde1531e354858" prot="private" static="no" mutable="no">
+        <type>Set&lt; GamePost &gt;</type>
+        <definition>Set&lt;GamePost&gt; coms309.Users.Users.createdGamePosts</definition>
+        <argsstring></argsstring>
+        <name>createdGamePosts</name>
+        <qualifiedname>coms309.Users.Users.createdGamePosts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="165" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_users_1_1_users_1a97cc0e25d5dfdd5c3464e491019ec626" prot="private" static="no" mutable="no">
+        <type>Set&lt; SkillLevel &gt;</type>
+        <definition>Set&lt;SkillLevel&gt; coms309.Users.Users.skill_levels</definition>
+        <argsstring></argsstring>
+        <name>skill_levels</name>
+        <qualifiedname>coms309.Users.Users.skill_levels</qualifiedname>
+        <initializer>= new HashSet&lt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="182" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="182" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcoms309_1_1_users_1_1_users_1a616adb9b099daa2bac688f4fd24f1f9d" prot="package" static="no" mutable="no">
+        <type>Set&lt; GamePost &gt;</type>
+        <definition>Set&lt;GamePost&gt; coms309.Users.Users.gamePost</definition>
+        <argsstring></argsstring>
+        <name>gamePost</name>
+        <qualifiedname>coms309.Users.Users.gamePost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="149" column="9" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="149" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_users_1a909b2250dd18985196a8ee6d5b82c62f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>public coms309.Users.Users::Users</definition>
+        <argsstring>()</argsstring>
+        <name>Users</name>
+        <qualifiedname>coms309.Users.Users.Users</qualifiedname>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="193" column="12" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="193" bodyend="193"/>
+        <referencedby refid="classcoms309_1_1_users_1_1_users_1a5e8063462cb311031a42c5df5e0e26a2" compoundref="_users_8java" startline="536" endline="546">coms309.Users.Users.equals</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_users_1a99b5095dcab5a8a4f07b7fec74c29c1e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>public coms309.Users.Users::Users</definition>
+        <argsstring>(String firstName, String last_name, String email, String password)</argsstring>
+        <name>Users</name>
+        <qualifiedname>coms309.Users.Users.Users</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>firstName</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>last_name</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>email</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>firstName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The person&apos;s first name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>last_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The person&apos;s last name. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>email</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The email. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The password. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="209" column="12" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="209" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_users_1a8ee7b438c8d9bd14723bcde4b6e85b22" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>public int coms309.Users.Users::getId</definition>
+        <argsstring>()</argsstring>
+        <name>getId</name>
+        <qualifiedname>coms309.Users.Users.getId</qualifiedname>
+        <briefdescription>
+<para>Gets the identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>int. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="228" column="16" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="228" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_users_1a6bf4a7b20365c8d16d3d8af0f26ed3fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void coms309.Users.Users::setId</definition>
+        <argsstring>(int id)</argsstring>
+        <name>setId</name>
+        <qualifiedname>coms309.Users.Users.setId</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Sets an identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="243" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="243" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_users_1a7ab60839a383c7888269bfb8760da998" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>public String coms309.Users.Users::getFirst_name</definition>
+        <argsstring>()</argsstring>
+        <name>getFirst_name</name>
+        <qualifiedname>coms309.Users.Users.getFirst_name</qualifiedname>
+        <briefdescription>
+<para>Get the first name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>String. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="258" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="258" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_users_1a83e203151acbb7eac4dfc09ba79ed952" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void coms309.Users.Users::setFirst_name</definition>
+        <argsstring>(String firstName)</argsstring>
+        <name>setFirst_name</name>
+        <qualifiedname>coms309.Users.Users.setFirst_name</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>firstName</declname>
+        </param>
+        <briefdescription>
+<para>Set the first name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>firstName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="273" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="273" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_users_1a5a77902853a0507a88959005d3e859d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>public String coms309.Users.Users::getLast_name</definition>
+        <argsstring>()</argsstring>
+        <name>getLast_name</name>
+        <qualifiedname>coms309.Users.Users.getLast_name</qualifiedname>
+        <briefdescription>
+<para>Get the last name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>String. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="288" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="288" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_users_1a3275d9b25cb507063f173dd3436833a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void coms309.Users.Users::setLast_name</definition>
+        <argsstring>(String lastName)</argsstring>
+        <name>setLast_name</name>
+        <qualifiedname>coms309.Users.Users.setLast_name</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>lastName</declname>
+        </param>
+        <briefdescription>
+<para>Set the last name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lastName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="303" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="303" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_users_1a37b41a7a616f917cf5a4c925b2c79cbf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>public String coms309.Users.Users::getEmail</definition>
+        <argsstring>()</argsstring>
+        <name>getEmail</name>
+        <qualifiedname>coms309.Users.Users.getEmail</qualifiedname>
+        <briefdescription>
+<para>Gets the email. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The email. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="318" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="318" bodyend="320"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_users_1a779ad0031a7972a279deb6904e114a07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void coms309.Users.Users::setEmail</definition>
+        <argsstring>(String email)</argsstring>
+        <name>setEmail</name>
+        <qualifiedname>coms309.Users.Users.setEmail</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>email</declname>
+        </param>
+        <briefdescription>
+<para>Sets an email. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>email</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The email. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="333" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="333" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_users_1a8e82e83edc2d64984b02fbb10c62d78c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>public String coms309.Users.Users::getPassword</definition>
+        <argsstring>()</argsstring>
+        <name>getPassword</name>
+        <qualifiedname>coms309.Users.Users.getPassword</qualifiedname>
+        <briefdescription>
+<para>Gets the password. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The password. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="348" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="348" bodyend="350"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_users_1a6d78a4bc32c3d377093c589670df13f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void coms309.Users.Users::setPassword</definition>
+        <argsstring>(String password)</argsstring>
+        <name>setPassword</name>
+        <qualifiedname>coms309.Users.Users.setPassword</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+<para>Sets a password. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The password. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="363" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="363" bodyend="365"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_users_1a7cd30b96ca52437d70346025b4603b5c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Set&lt; GamePost &gt;</type>
+        <definition>public Set&lt; GamePost &gt; coms309.Users.Users::getGamePost</definition>
+        <argsstring>()</argsstring>
+        <name>getGamePost</name>
+        <qualifiedname>coms309.Users.Users.getGamePost</qualifiedname>
+        <briefdescription>
+<para>Gets game post. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The game post. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="378" column="16" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="378" bodyend="380"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_users_1a85937c4b503e01d7e92b9cc633716f80" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void coms309.Users.Users::setGamePost</definition>
+        <argsstring>(Set&lt; GamePost &gt; gamePost)</argsstring>
+        <name>setGamePost</name>
+        <qualifiedname>coms309.Users.Users.setGamePost</qualifiedname>
+        <param>
+          <type>Set&lt; GamePost &gt;</type>
+          <declname>gamePost</declname>
+        </param>
+        <briefdescription>
+<para>Sets game post. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gamePost</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The game post. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="393" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="393" bodyend="395"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_users_1af55d3e46fb5f42bb08b3b22679b4badd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Set&lt; GamePost &gt;</type>
+        <definition>public Set&lt; GamePost &gt; coms309.Users.Users::getCreatedGamePosts</definition>
+        <argsstring>()</argsstring>
+        <name>getCreatedGamePosts</name>
+        <qualifiedname>coms309.Users.Users.getCreatedGamePosts</qualifiedname>
+        <briefdescription>
+<para>Gets created game posts. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The created game posts. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="408" column="16" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="408" bodyend="410"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_users_1a35263d8315373ce079f7548141c6d2ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void coms309.Users.Users::setCreatedGamePosts</definition>
+        <argsstring>(Set&lt; GamePost &gt; createdGamePosts)</argsstring>
+        <name>setCreatedGamePosts</name>
+        <qualifiedname>coms309.Users.Users.setCreatedGamePosts</qualifiedname>
+        <param>
+          <type>Set&lt; GamePost &gt;</type>
+          <declname>createdGamePosts</declname>
+        </param>
+        <briefdescription>
+<para>Sets created game posts. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>createdGamePosts</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The created game posts. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="423" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="423" bodyend="425"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_users_1af48196df7c02de81606755d1b4aca705" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Set&lt; SkillLevel &gt;</type>
+        <definition>public Set&lt; SkillLevel &gt; coms309.Users.Users::getSkill_levels</definition>
+        <argsstring>()</argsstring>
+        <name>getSkill_levels</name>
+        <qualifiedname>coms309.Users.Users.getSkill_levels</qualifiedname>
+        <briefdescription>
+<para>Gets skill levels. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The skill levels. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="438" column="16" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="438" bodyend="440"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_users_1a01552607f9a99671eb8941f958120254" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void coms309.Users.Users::setSkill_levels</definition>
+        <argsstring>(Set&lt; SkillLevel &gt; sports_skill_levels)</argsstring>
+        <name>setSkill_levels</name>
+        <qualifiedname>coms309.Users.Users.setSkill_levels</qualifiedname>
+        <param>
+          <type>Set&lt; SkillLevel &gt;</type>
+          <declname>sports_skill_levels</declname>
+        </param>
+        <briefdescription>
+<para>Sets skill levels. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sports_skill_levels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sports skill levels. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="453" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="453" bodyend="455"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_users_1ae9b5020463990c5e98d68a1e456ca88d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>public boolean coms309.Users.Users::isAuthenticated</definition>
+        <argsstring>(String email, String password)</argsstring>
+        <name>isAuthenticated</name>
+        <qualifiedname>coms309.Users.Users.isAuthenticated</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>email</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+<para>Query if &apos;email&apos; is authenticated. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>email</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The email. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The password.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if authenticated, false if not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="471" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="471" bodyend="473"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_users_1abffe279645215b71f505c92a8810b3bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>public boolean coms309.Users.Users::isAdmin</definition>
+        <argsstring>(Users u)</argsstring>
+        <name>isAdmin</name>
+        <qualifiedname>coms309.Users.Users.isAdmin</qualifiedname>
+        <param>
+          <type><ref refid="classcoms309_1_1_users_1_1_users" kindref="compound">Users</ref></type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+<para>Query if &apos;u&apos; is admin. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Users to process.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if admin, false if not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="488" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="488" bodyend="490"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_users_1a0a63fd9ffe103bf74018a9dc7a9b96b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>permission</type>
+        <definition>public permission coms309.Users.Users::getRole</definition>
+        <argsstring>()</argsstring>
+        <name>getRole</name>
+        <qualifiedname>coms309.Users.Users.getRole</qualifiedname>
+        <briefdescription>
+<para>Gets the role. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The role. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="503" column="23" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="503" bodyend="505"/>
+        <referencedby refid="classcoms309_1_1_users_1_1_user_controller_1a98878f05406359f0372c930f085948d2" compoundref="_user_controller_8java" startline="576" endline="595">coms309.Users.UserController.getUserRole</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_users_1adad243d1804bf82ee68b642ef140c9e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void coms309.Users.Users::setRole</definition>
+        <argsstring>(permission role)</argsstring>
+        <name>setRole</name>
+        <qualifiedname>coms309.Users.Users.setRole</qualifiedname>
+        <param>
+          <type>permission</type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+<para>Sets a role. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>role</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The role. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="518" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="518" bodyend="520"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_users_1a5e8063462cb311031a42c5df5e0e26a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>Override public boolean coms309.Users.Users::equals</definition>
+        <argsstring>(Object o)</argsstring>
+        <name>equals</name>
+        <qualifiedname>coms309.Users.Users.equals</qualifiedname>
+        <param>
+          <type>Object</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+<para>Tests if this Object is considered equal to another. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>o</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to compare to this object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the objects are considered equal, false if they are not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="536" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="536" bodyend="546"/>
+        <references refid="classcoms309_1_1_users_1_1_users_1a5e8063462cb311031a42c5df5e0e26a2" compoundref="_users_8java" startline="536" endline="546">coms309.Users.Users.equals</references>
+        <references refid="classcoms309_1_1_users_1_1_users_1a909b2250dd18985196a8ee6d5b82c62f" compoundref="_users_8java" startline="193" endline="193">coms309.Users.Users.Users</references>
+        <referencedby refid="classcoms309_1_1_users_1_1_users_1a5e8063462cb311031a42c5df5e0e26a2" compoundref="_users_8java" startline="536" endline="546">coms309.Users.Users.equals</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_users_1a15f60059dc0420de2b945eef86c7a5d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Flux&lt; String &gt;</type>
+        <definition>public Flux&lt; String &gt; coms309.Users.Users::getUserStream</definition>
+        <argsstring>()</argsstring>
+        <name>getUserStream</name>
+        <qualifiedname>coms309.Users.Users.getUserStream</qualifiedname>
+        <briefdescription>
+<para>Gets user stream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The user stream. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="559" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="559" bodyend="563"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The coms 309. auth. authentication. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The coms 309. enums. permission.permission</para>
+<para>The coms 309. game post. game post</para>
+<para>The coms 309. skill level. skill level</para>
+<para>The org.hibernate.annotations. not found</para>
+<para>The org.hibernate.annotations. not found action</para>
+<para>The jakarta.persistence.*</para>
+<para>The lombok. getter</para>
+<para>The lombok. setter</para>
+<para>The reactor.core.publisher. flux</para>
+<para>The reactor.core.publisher. mono</para>
+<para>Duration of the java.time.</para>
+<para>Set the java.util. hash belongs to</para>
+<para>The java.util. objects</para>
+<para>Set the java.util. belongs to</para>
+<para>An users.</para>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>coms309.Users.Users</label>
+        <link refid="classcoms309_1_1_users_1_1_users"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" line="49" column="7" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/Users.java" bodystart="49" bodyend="564"/>
+    <listofallmembers>
+      <member refid="classcoms309_1_1_users_1_1_users_1a77bda4920dd1066353dde1531e354858" prot="private" virt="non-virtual"><scope>coms309::Users::Users</scope><name>createdGamePosts</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_1aaa715fa28d026810bc09092460351e86" prot="private" virt="non-virtual"><scope>coms309::Users::Users</scope><name>email</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_1a5e8063462cb311031a42c5df5e0e26a2" prot="public" virt="non-virtual"><scope>coms309::Users::Users</scope><name>equals</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_1a681019f33735759ddec5a7f45eb2b1fa" prot="private" virt="non-virtual"><scope>coms309::Users::Users</scope><name>first_name</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_1a616adb9b099daa2bac688f4fd24f1f9d" prot="package" virt="non-virtual"><scope>coms309::Users::Users</scope><name>gamePost</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_1af55d3e46fb5f42bb08b3b22679b4badd" prot="public" virt="non-virtual"><scope>coms309::Users::Users</scope><name>getCreatedGamePosts</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_1a37b41a7a616f917cf5a4c925b2c79cbf" prot="public" virt="non-virtual"><scope>coms309::Users::Users</scope><name>getEmail</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_1a7ab60839a383c7888269bfb8760da998" prot="public" virt="non-virtual"><scope>coms309::Users::Users</scope><name>getFirst_name</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_1a7cd30b96ca52437d70346025b4603b5c" prot="public" virt="non-virtual"><scope>coms309::Users::Users</scope><name>getGamePost</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_1a8ee7b438c8d9bd14723bcde4b6e85b22" prot="public" virt="non-virtual"><scope>coms309::Users::Users</scope><name>getId</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_1a5a77902853a0507a88959005d3e859d1" prot="public" virt="non-virtual"><scope>coms309::Users::Users</scope><name>getLast_name</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_1a8e82e83edc2d64984b02fbb10c62d78c" prot="public" virt="non-virtual"><scope>coms309::Users::Users</scope><name>getPassword</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_1a0a63fd9ffe103bf74018a9dc7a9b96b4" prot="public" virt="non-virtual"><scope>coms309::Users::Users</scope><name>getRole</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_1af48196df7c02de81606755d1b4aca705" prot="public" virt="non-virtual"><scope>coms309::Users::Users</scope><name>getSkill_levels</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_1a15f60059dc0420de2b945eef86c7a5d7" prot="public" virt="non-virtual"><scope>coms309::Users::Users</scope><name>getUserStream</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_1a54c2965b5edf24e60fad463e797ef31a" prot="private" virt="non-virtual"><scope>coms309::Users::Users</scope><name>id</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_1abffe279645215b71f505c92a8810b3bc" prot="public" virt="non-virtual"><scope>coms309::Users::Users</scope><name>isAdmin</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_1ae9b5020463990c5e98d68a1e456ca88d" prot="public" virt="non-virtual"><scope>coms309::Users::Users</scope><name>isAuthenticated</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_1acde3b790f2da7e93417cd06f8ec64360" prot="private" virt="non-virtual"><scope>coms309::Users::Users</scope><name>last_name</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_1a9605af4e5d155062a8b481f7f8dee5ae" prot="private" virt="non-virtual"><scope>coms309::Users::Users</scope><name>password</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_1abd543c28e9f644f938c218331c726a6f" prot="private" virt="non-virtual"><scope>coms309::Users::Users</scope><name>role</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_1a35263d8315373ce079f7548141c6d2ed" prot="public" virt="non-virtual"><scope>coms309::Users::Users</scope><name>setCreatedGamePosts</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_1a779ad0031a7972a279deb6904e114a07" prot="public" virt="non-virtual"><scope>coms309::Users::Users</scope><name>setEmail</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_1a83e203151acbb7eac4dfc09ba79ed952" prot="public" virt="non-virtual"><scope>coms309::Users::Users</scope><name>setFirst_name</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_1a85937c4b503e01d7e92b9cc633716f80" prot="public" virt="non-virtual"><scope>coms309::Users::Users</scope><name>setGamePost</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_1a6bf4a7b20365c8d16d3d8af0f26ed3fe" prot="public" virt="non-virtual"><scope>coms309::Users::Users</scope><name>setId</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_1a3275d9b25cb507063f173dd3436833a3" prot="public" virt="non-virtual"><scope>coms309::Users::Users</scope><name>setLast_name</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_1a6d78a4bc32c3d377093c589670df13f8" prot="public" virt="non-virtual"><scope>coms309::Users::Users</scope><name>setPassword</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_1adad243d1804bf82ee68b642ef140c9e2" prot="public" virt="non-virtual"><scope>coms309::Users::Users</scope><name>setRole</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_1a01552607f9a99671eb8941f958120254" prot="public" virt="non-virtual"><scope>coms309::Users::Users</scope><name>setSkill_levels</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_1a97cc0e25d5dfdd5c3464e491019ec626" prot="private" virt="non-virtual"><scope>coms309::Users::Users</scope><name>skill_levels</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_1a909b2250dd18985196a8ee6d5b82c62f" prot="public" virt="non-virtual"><scope>coms309::Users::Users</scope><name>Users</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_1a99b5095dcab5a8a4f07b7fec74c29c1e" prot="public" virt="non-virtual"><scope>coms309::Users::Users</scope><name>Users</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

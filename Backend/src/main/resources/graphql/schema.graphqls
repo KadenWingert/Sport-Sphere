@@ -1,0 +1,363 @@
+type Query {
+  getAllUsers: [Users]
+  getUserById(id: ID!): Users
+  getUserByEmail(email: String): Users
+  getUserRole(email: String!, password: String!): permission
+
+  getAllGamePosts: [GamePost]
+  getGamePostById(id: ID!): GamePost
+  getUsersPlaying(gamePostID: ID!): [Users]
+
+  getAllLocations: [Location]
+  getLocationById(id: ID!): Location
+  getGamePostsAtLocation(address: String!): [GamePost]
+
+  getAllSkillLevels: [SkillLevel]
+  getSkillLevelById(id: ID!): SkillLevel
+
+  getAllComments: [Comment]
+  getCommentById(id: ID!): Comment
+  getCommentDetails: [CommentMessage]
+
+  getAllSports: [Sport]
+  getSportById(id: ID!): Sport
+  #    getAllSportsAUserHasASkillLevelFor(user_id : ID!,  sport_name: String!) : [Sport]
+  getAllGamePostsPlayingASport(sport_id: Int): [GamePost]
+
+  getPreferenceValueById(id: ID!): PreferenceValue
+  getAllPreferenceValues: [PreferenceValue]
+
+  getAllUserAddresses: [UserAddress]
+  getuserAddressByID(id: ID!): UserAddress
+
+  getAllSavedGamePosts: [SavedGamePost]
+  getSavedGamePostById(id: ID!): SavedGamePost
+  getSavedGamePostByUserId(id: ID!): SavedGamePost
+
+  getProfileById(id: ID!): Profile
+  getProfileByUsername(username: String!): Profile
+  getProfileByUserId(id: ID!): Profile
+  getAllProfiles: [Profile]
+}
+
+type Mutation {
+  createDummyData: String
+  createUser(
+    first_name: String!
+    last_name: String!
+    email: String!
+    password: String!
+  ): Users
+  updateUser(
+    id: ID!
+    first_name: String
+    last_name: String
+    email: String
+    password: String
+  ): Users
+  updateRole(email: String!, password: String!, newRole: permission!): Users
+  updatePassword(
+    email: String!
+    oldPassword: String!
+    newPassword: String!
+  ): Users
+  updatePasswordByAdmin(
+    adminEmail: String!
+    adminPassword: String!
+    userEmail: String!
+    newPassword: String!
+  ): Users
+  deleteUser(id: ID!, email: String!, password: String!): Users
+  deleteUserByEmail(email: String!, password: String!): Users
+
+  createGamePost(
+    sport_id: ID!
+    created_by: ID!
+    max_players: Int
+    min_players: Int
+    playing_on: String!
+    created_on: String!
+    is_deleted: Boolean
+    address: String
+    GPS: String
+    email: String!
+    password: String!
+  ): GamePost
+  updateGamePost(
+    gamePostID: ID!
+    sport_id: ID
+    max_players: Int
+    min_players: Int
+    playing_on: String
+    created_on: String
+    is_deleted: Boolean
+    address: String
+    GPS: String
+    email: String!
+    password: String!
+  ): GamePost
+  addNewUserPlaying(
+    gamePostID: ID!
+    userID: ID!
+    email: String!
+    password: String!
+  ): [Users]
+  addGamePostToSport(
+    gamePost_id: ID!
+    sport_id: ID!
+    email: String!
+    password: String!
+  ): GamePost
+  removeUserPlaying(
+    gamePostID: ID!
+    userID: ID!
+    email: String!
+    password: String!
+  ): [Users]
+  deleteGamePostById(id: ID!, email: String!, password: String!): String
+  deleteAllGamePosts(email: String!, password: String!): String
+
+  createLocation(address: String!, gps: String!, gamePostID: ID): Location
+  updateLocation(locationID: ID, address: String, gps: String): Location
+  deleteLocation(id: ID!): Location
+
+  createSkillLevel(user_id: Int!, skill_level: Int!, sport_id: ID!): SkillLevel
+  updateSkillLevel(skill_id: ID!, skill_level: Int, sport_id: ID): SkillLevel
+  deleteSkillLevelById(id: ID!): String
+  deleteAllSkillLevels: String
+
+  # Comments
+  createComment(
+    game_post_id: ID!
+    comment_details: String
+    user_id: ID!
+  ): Comment
+
+  updateComment(comment_id: ID!, new_message: String): Comment
+  deleteCommentById(id: ID!): Comment
+  deleteAllComments: String
+
+  createSport(sport_name: String!, skill_level_id: Int): Sport
+  updateSport(sport_name: String, sport_id: ID!, skill_level_id: ID): Sport
+  deleteSportById(sport_id: Int!): String
+  deleteAllSports: String
+
+  createPreferenceValue(
+    name: String
+    enabled: Boolean
+    int_value: Int
+    string_value: String
+    userID: ID!
+  ): PreferenceValue
+
+  createUserAddress(userID: ID!, address: String!, gps: String!): UserAddress
+  updateUserAddress(
+    userAddressID: ID
+    address: String
+    gps: String
+  ): UserAddress
+  deleteUserAddress(id: ID!): UserAddress
+
+  createSavedGamePost(userID: ID!, gamePostId: ID!): SavedGamePost
+  updateSavedGamePost(
+    savedPostId: ID!
+    userID: ID!
+    gamePostId: ID!
+  ): SavedGamePost
+  deleteSavedGamePost(id: ID!): String
+
+  createProfile(
+    username: String
+    bio: String
+    profilePicture: String
+    profileBanner: String
+    profileColor: String
+    profileTextColor: String
+    user: ID!
+  ): Profile
+}
+
+type Subscription {
+  greetings: String
+  subUsers: Users
+  # subCommentByPost(gamePostId: ID): Comment
+  subComments: Comment
+  subCommentsById(id: ID!): Comment
+  subGamePost: GamePost
+}
+
+type Users {
+  id: ID
+  first_name: String
+  last_name: String
+  email: String
+  password: String
+}
+
+input UserInput {
+  id: ID
+  first_name: String
+  last_name: String
+  email: String
+  password: String
+}
+
+enum permission {
+  USER
+  ADMIN
+}
+
+type GamePost {
+  id: ID
+  sport: Sport
+  created_by: Users
+  max_players: Int
+  min_players: Int
+  playing_on: String
+  created_on: String
+  is_deleted: Boolean
+  location: Location
+}
+
+input GamePostInput {
+  id: ID
+  sport: SportInput
+  created_by: UserInput
+  max_players: Int
+  min_players: Int
+  playing_on: String
+  created_on: String
+  is_deleted: Boolean
+  location: LocationInput
+}
+
+type Location {
+  id: ID
+  address: String
+  gps: String
+  gamePost: GamePost
+}
+
+input LocationInput {
+  id: ID
+  address: String
+  gps: String
+  gamePost: GamePostInput
+}
+type SkillLevel {
+  id: ID
+  skill_level: Int
+  user: Users
+  sport: Sport
+}
+
+input SkillLevelInput {
+  id: ID
+  skill_level: Int
+  user: UserInput
+  sport: SportInput
+}
+
+type Comment {
+  id: ID
+  gamePost: GamePost
+  comment_details: CommentMessage
+  user: Users
+}
+
+input CommentInput {
+  id: ID
+  gamePost: GamePostInput
+  comment_details: CommentMessageInput
+  user: UserInput
+}
+
+type CommentMessage {
+  id: ID
+  message: String
+  created_at: LocalDateTime
+  updated_at: LocalDateTime
+}
+
+input CommentMessageInput {
+  id: ID
+  message: String
+}
+
+type Sport {
+  id: ID
+  sport_name: String
+  skillLevel: SkillLevel
+}
+
+input SportInput {
+  id: ID
+  sport_name: String
+  skillLevel: SkillLevelInput
+}
+
+type PreferenceValue {
+  id: ID
+  name: String
+  enabled: Boolean
+  int_value: Int
+  string_value: String
+}
+
+input PreferenceValueInput {
+  id: ID
+  name: String
+  enabled: Boolean
+  int_value: Int
+  string_value: String
+  user: UserInput
+}
+
+type UserAddress {
+  id: ID
+  address: String
+  gps: String
+}
+
+input UserAddressInput {
+  id: ID
+  address: String
+  gps: String
+  user: UserInput
+}
+
+type SavedGamePost {
+  id: ID
+  gamePost: Int
+  user: Users
+}
+
+input SavedGamePostInput {
+  id: ID
+  gamePost: Int
+  user: UserInput
+}
+
+type Profile {
+  id: ID
+  username: String
+  bio: String
+  profilePicture: String
+  profileBanner: String
+  profileColor: String
+  profileTextColor: String
+  user: Users
+}
+
+input ProfileInput {
+  id: ID
+  username: String
+  bio: String
+  profilePicture: String
+  profileBanner: String
+  profileColor: String
+  profileTextColor: String
+  user: UserInput
+}
+
+scalar LocalDateTime

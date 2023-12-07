@@ -1,0 +1,35 @@
+mutation CreateComment($game_post_id: ID!, $comment_message: String!, $user_id: ID!) {
+    createComment(game_post_id: $game_post_id, comment_details: $comment_message, user_id: $user_id) {
+        id
+        comment_details {
+
+            message
+
+        }
+        user {
+            id
+        }
+        gamePost {
+            id
+            sport {
+                id
+                sport_name
+            }
+            created_by {
+                id
+                first_name
+                last_name
+            }
+            max_players
+            min_players
+            playing_on
+            created_on
+            is_deleted
+            location {
+                id
+                address
+                gps
+            }
+        }
+    }
+}

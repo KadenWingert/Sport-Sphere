@@ -1,0 +1,150 @@
+\doxysection{coms309.\+Email.\+Email\+Sender Class Reference}
+\hypertarget{classcoms309_1_1_email_1_1_email_sender}{}\label{classcoms309_1_1_email_1_1_email_sender}\index{coms309.Email.EmailSender@{coms309.Email.EmailSender}}
+
+
+The java.\+util. optional.  
+
+
+
+
+Inheritance diagram for coms309.\+Email.\+Email\+Sender\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{classcoms309_1_1_email_1_1_email_sender__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for coms309.\+Email.\+Email\+Sender\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{classcoms309_1_1_email_1_1_email_sender__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classcoms309_1_1_email_1_1_email_sender_aefe3f0d7681a539fadf5215793bd7c1c}{Send\+Email}} (Users user, String subject, String msg)
+\begin{DoxyCompactList}\small\item\em Sends an email. \end{DoxyCompactList}\item 
+static Message\+Response \mbox{\hyperlink{classcoms309_1_1_email_1_1_email_sender_af6efd3e1970df5b884c747cf65dc8b85}{send\+Simple\+Message}} (Users user, String subject, String msg)
+\begin{DoxyCompactList}\small\item\em Sends a simple message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The java.\+util. optional. 
+
+The coms 309. exceptions. not found exception
+
+The coms 309. users. users
+
+The org.\+slf 4j. logger
+
+The org.\+slf 4j. logger factory
+
+The com.\+mailgun.\+api.\+v 3. mailgun messages API
+
+The com.\+mailgun.\+client. mailgun client
+
+Message describing the com.\+mailgun.\+model.\+message.
+
+The com.\+mailgun.\+model.\+message. message response
+
+You can send up to 300 emails/day from this sandbox server. Next, you should add your own domain so you can send 10000 emails/month for free.
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023 
+\end{DoxyDate}
+
+
+Definition at line \mbox{\hyperlink{_email_sender_8java_source_l00038}{38}} of file \mbox{\hyperlink{_email_sender_8java_source}{Email\+Sender.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcoms309_1_1_email_1_1_email_sender_aefe3f0d7681a539fadf5215793bd7c1c}\label{classcoms309_1_1_email_1_1_email_sender_aefe3f0d7681a539fadf5215793bd7c1c} 
+\index{coms309.Email.EmailSender@{coms309.Email.EmailSender}!SendEmail@{SendEmail}}
+\index{SendEmail@{SendEmail}!coms309.Email.EmailSender@{coms309.Email.EmailSender}}
+\doxysubsubsection{\texorpdfstring{SendEmail()}{SendEmail()}}
+{\footnotesize\ttfamily public static void coms309.\+Email.\+Email\+Sender.\+Send\+Email (\begin{DoxyParamCaption}\item[{Users}]{user,  }\item[{String}]{subject,  }\item[{String}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sends an email. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em user} & . \\
+\hline
+{\em subject} & . \\
+\hline
+{\em msg} & . \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_email_sender_8java_source_l00056}{56}} of file \mbox{\hyperlink{_email_sender_8java_source}{Email\+Sender.\+java}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcoms309_1_1_email_1_1_email_sender_aefe3f0d7681a539fadf5215793bd7c1c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classcoms309_1_1_email_1_1_email_sender_af6efd3e1970df5b884c747cf65dc8b85}\label{classcoms309_1_1_email_1_1_email_sender_af6efd3e1970df5b884c747cf65dc8b85} 
+\index{coms309.Email.EmailSender@{coms309.Email.EmailSender}!sendSimpleMessage@{sendSimpleMessage}}
+\index{sendSimpleMessage@{sendSimpleMessage}!coms309.Email.EmailSender@{coms309.Email.EmailSender}}
+\doxysubsubsection{\texorpdfstring{sendSimpleMessage()}{sendSimpleMessage()}}
+{\footnotesize\ttfamily public static Message\+Response coms309.\+Email.\+Email\+Sender.\+send\+Simple\+Message (\begin{DoxyParamCaption}\item[{Users}]{user,  }\item[{String}]{subject,  }\item[{String}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sends a simple message. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em user} & The user. \\
+\hline
+{\em subject} & The subject. \\
+\hline
+{\em msg} & The message.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Message\+Response. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_email_sender_8java_source_l00099}{99}} of file \mbox{\hyperlink{_email_sender_8java_source}{Email\+Sender.\+java}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcoms309_1_1_email_1_1_email_sender_af6efd3e1970df5b884c747cf65dc8b85_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Arie/\+Develop/hb\+\_\+215/\+Backend/src/main/java/coms309/\+Email/\mbox{\hyperlink{_email_sender_8java}{Email\+Sender.\+java}}\end{DoxyCompactItemize}

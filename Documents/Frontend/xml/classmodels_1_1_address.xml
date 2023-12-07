@@ -1,0 +1,769 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmodels_1_1_address" kind="class" language="Java" prot="public">
+    <compoundname>models::Address</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmodels_1_1_address_1abc739af04aa9b811d4b9f8c74e749709" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String models.Address.house_number</definition>
+        <argsstring></argsstring>
+        <name>house_number</name>
+        <qualifiedname>models.Address.house_number</qualifiedname>
+        <briefdescription>
+<para>The house number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" line="15" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodels_1_1_address_1aee1b2fe429286bea893011a6612a013e" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String models.Address.highway</definition>
+        <argsstring></argsstring>
+        <name>highway</name>
+        <qualifiedname>models.Address.highway</qualifiedname>
+        <briefdescription>
+<para>The highway. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" line="17" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodels_1_1_address_1aa31c4f5b65f9a5a3d701e6d7cae489fb" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String models.Address.road</definition>
+        <argsstring></argsstring>
+        <name>road</name>
+        <qualifiedname>models.Address.road</qualifiedname>
+        <briefdescription>
+<para>The road. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" line="19" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodels_1_1_address_1a0c420fbc10ac47f8b27f8aea5d38dcea" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String models.Address.neighbourhood</definition>
+        <argsstring></argsstring>
+        <name>neighbourhood</name>
+        <qualifiedname>models.Address.neighbourhood</qualifiedname>
+        <briefdescription>
+<para>The neighbourhood. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" line="21" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodels_1_1_address_1a33a0a90e4efbfef405d27b8713b98609" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String models.Address.city</definition>
+        <argsstring></argsstring>
+        <name>city</name>
+        <qualifiedname>models.Address.city</qualifiedname>
+        <briefdescription>
+<para>The city. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" line="23" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodels_1_1_address_1a7e1f410c90e896c19813c65c0d90a533" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String models.Address.county</definition>
+        <argsstring></argsstring>
+        <name>county</name>
+        <qualifiedname>models.Address.county</qualifiedname>
+        <briefdescription>
+<para>The county. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" line="25" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodels_1_1_address_1a9a6fafeda8c1e46cd5b0eef859acf0ba" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String models.Address.state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <qualifiedname>models.Address.state</qualifiedname>
+        <briefdescription>
+<para>The state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" line="27" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodels_1_1_address_1ad3e2904d5d229bde93145df9ec418df7" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String models.Address.ISO3166_2_lvl4</definition>
+        <argsstring></argsstring>
+        <name>ISO3166_2_lvl4</name>
+        <qualifiedname>models.Address.ISO3166_2_lvl4</qualifiedname>
+        <briefdescription>
+<para>The fourth ISO 3166 2 level. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" line="29" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodels_1_1_address_1af0bf492eb3bc0743bb58ad0be3baf128" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String models.Address.postcode</definition>
+        <argsstring></argsstring>
+        <name>postcode</name>
+        <qualifiedname>models.Address.postcode</qualifiedname>
+        <briefdescription>
+<para>The postcode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" line="31" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodels_1_1_address_1aa02d7fbdfc3f05469345c6b3d21aa95f" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String models.Address.country</definition>
+        <argsstring></argsstring>
+        <name>country</name>
+        <qualifiedname>models.Address.country</qualifiedname>
+        <briefdescription>
+<para>The country. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" line="33" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodels_1_1_address_1a08f291ed212b019f456222fece1a1604" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String models.Address.country_code</definition>
+        <argsstring></argsstring>
+        <name>country_code</name>
+        <qualifiedname>models.Address.country_code</qualifiedname>
+        <briefdescription>
+<para>The country code. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" line="35" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmodels_1_1_address_1a9b129805db6f97a30a24209d1c9a3833" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>public String models.Address::getHouse_number</definition>
+        <argsstring>()</argsstring>
+        <name>getHouse_number</name>
+        <qualifiedname>models.Address.getHouse_number</qualifiedname>
+        <briefdescription>
+<para>Getters and setters ... </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The house number. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" line="49" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" bodystart="49" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_address_1aa8ad79aa0aec100f124effc9d3387f6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void models.Address::setHouse_number</definition>
+        <argsstring>(String house_number)</argsstring>
+        <name>setHouse_number</name>
+        <qualifiedname>models.Address.setHouse_number</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>house_number</declname>
+        </param>
+        <briefdescription>
+<para>Sets house number. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>house_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The house number. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" line="64" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" bodystart="64" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_address_1a7266990366714aab20d07c9ce50406f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>public String models.Address::getHighway</definition>
+        <argsstring>()</argsstring>
+        <name>getHighway</name>
+        <qualifiedname>models.Address.getHighway</qualifiedname>
+        <briefdescription>
+<para>Gets the highway. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The highway. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" line="79" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" bodystart="79" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_address_1a947602c383ffb12c6245be0673b3db31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void models.Address::setHighway</definition>
+        <argsstring>(String highway)</argsstring>
+        <name>setHighway</name>
+        <qualifiedname>models.Address.setHighway</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>highway</declname>
+        </param>
+        <briefdescription>
+<para>Sets a highway. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>highway</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The highway. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" line="94" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" bodystart="94" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_address_1aa6d8afcbb576025847ce3660d9ecdd61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>public String models.Address::getRoad</definition>
+        <argsstring>()</argsstring>
+        <name>getRoad</name>
+        <qualifiedname>models.Address.getRoad</qualifiedname>
+        <briefdescription>
+<para>Gets the road. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The road. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" line="109" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" bodystart="109" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_address_1a1e0365c6a8e57790b96d130411795fdd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void models.Address::setRoad</definition>
+        <argsstring>(String road)</argsstring>
+        <name>setRoad</name>
+        <qualifiedname>models.Address.setRoad</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>road</declname>
+        </param>
+        <briefdescription>
+<para>Sets a road. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>road</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The road. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" line="124" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" bodystart="124" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_address_1a795f844dc46cc07a99ab00401f495e1b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>public String models.Address::getNeighbourhood</definition>
+        <argsstring>()</argsstring>
+        <name>getNeighbourhood</name>
+        <qualifiedname>models.Address.getNeighbourhood</qualifiedname>
+        <briefdescription>
+<para>Gets the neighbourhood. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The neighbourhood. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" line="139" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" bodystart="139" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_address_1a4877c528298decc3d3037953a7b7daef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void models.Address::setNeighbourhood</definition>
+        <argsstring>(String neighbourhood)</argsstring>
+        <name>setNeighbourhood</name>
+        <qualifiedname>models.Address.setNeighbourhood</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>neighbourhood</declname>
+        </param>
+        <briefdescription>
+<para>Sets a neighbourhood. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>neighbourhood</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The neighbourhood. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" line="154" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" bodystart="154" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_address_1a0a93e1d8d81d9e971d7b1584299c6e1b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>public String models.Address::getCity</definition>
+        <argsstring>()</argsstring>
+        <name>getCity</name>
+        <qualifiedname>models.Address.getCity</qualifiedname>
+        <briefdescription>
+<para>Gets the city. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The city. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" line="169" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" bodystart="169" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_address_1acc862ccd88bbbf6d8383910cd5cadae7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void models.Address::setCity</definition>
+        <argsstring>(String city)</argsstring>
+        <name>setCity</name>
+        <qualifiedname>models.Address.setCity</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>city</declname>
+        </param>
+        <briefdescription>
+<para>Sets a city. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>city</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The city. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" line="184" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" bodystart="184" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_address_1a5442b94f841f8849092c19b2412f729f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>public String models.Address::getState</definition>
+        <argsstring>()</argsstring>
+        <name>getState</name>
+        <qualifiedname>models.Address.getState</qualifiedname>
+        <briefdescription>
+<para>Gets the state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The state. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" line="199" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" bodystart="199" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_address_1ad16652c7994b72083685bdb596293cc6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void models.Address::setState</definition>
+        <argsstring>(String state)</argsstring>
+        <name>setState</name>
+        <qualifiedname>models.Address.setState</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Sets a state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The state. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" line="214" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" bodystart="214" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_address_1ac8032d34948c44afe43b663740156c4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>public String models.Address::getCounty</definition>
+        <argsstring>()</argsstring>
+        <name>getCounty</name>
+        <qualifiedname>models.Address.getCounty</qualifiedname>
+        <briefdescription>
+<para>Gets the county. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The county. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" line="229" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" bodystart="229" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_address_1a5c4648f26b5d6539d05d7e3b14b98a2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void models.Address::setCounty</definition>
+        <argsstring>(String county)</argsstring>
+        <name>setCounty</name>
+        <qualifiedname>models.Address.setCounty</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>county</declname>
+        </param>
+        <briefdescription>
+<para>Sets a county. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>county</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The county. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" line="244" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" bodystart="244" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_address_1a964036461103dabd26d1e7fb029c42ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>public String models.Address::getPostcode</definition>
+        <argsstring>()</argsstring>
+        <name>getPostcode</name>
+        <qualifiedname>models.Address.getPostcode</qualifiedname>
+        <briefdescription>
+<para>Gets the postcode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The postcode. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" line="259" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" bodystart="259" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_address_1a8970a410181039f955bdf3e5f4f6b281" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void models.Address::setPostcode</definition>
+        <argsstring>(String postcode)</argsstring>
+        <name>setPostcode</name>
+        <qualifiedname>models.Address.setPostcode</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>postcode</declname>
+        </param>
+        <briefdescription>
+<para>Sets a postcode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>postcode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The postcode. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" line="274" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" bodystart="274" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_address_1ae607540567aabafc94a8ee9c62ecd77a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>public String models.Address::getCountry</definition>
+        <argsstring>()</argsstring>
+        <name>getCountry</name>
+        <qualifiedname>models.Address.getCountry</qualifiedname>
+        <briefdescription>
+<para>Gets the country. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The country. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" line="289" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" bodystart="289" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_address_1a3b2a7f0dd41323df69e1c0c6b3320bef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void models.Address::setCountry</definition>
+        <argsstring>(String country)</argsstring>
+        <name>setCountry</name>
+        <qualifiedname>models.Address.setCountry</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>country</declname>
+        </param>
+        <briefdescription>
+<para>Sets a country. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>country</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The country. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" line="304" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" bodystart="304" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_address_1ad739e4932684509ca2d2200162d99096" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>public String models.Address::getCountry_code</definition>
+        <argsstring>()</argsstring>
+        <name>getCountry_code</name>
+        <qualifiedname>models.Address.getCountry_code</qualifiedname>
+        <briefdescription>
+<para>Gets country code. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The country code. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" line="319" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" bodystart="319" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_address_1a9c80ecd18b53ba1eacf719b5341b365f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void models.Address::setCountry_code</definition>
+        <argsstring>(String country_code)</argsstring>
+        <name>setCountry_code</name>
+        <qualifiedname>models.Address.setCountry_code</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>country_code</declname>
+        </param>
+        <briefdescription>
+<para>Sets country code. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>country_code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The country code. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" line="334" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" bodystart="334" bodyend="336"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>An address. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" line="13" column="7" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Address.java" bodystart="13" bodyend="338"/>
+    <listofallmembers>
+      <member refid="classmodels_1_1_address_1a33a0a90e4efbfef405d27b8713b98609" prot="private" virt="non-virtual"><scope>models::Address</scope><name>city</name></member>
+      <member refid="classmodels_1_1_address_1aa02d7fbdfc3f05469345c6b3d21aa95f" prot="private" virt="non-virtual"><scope>models::Address</scope><name>country</name></member>
+      <member refid="classmodels_1_1_address_1a08f291ed212b019f456222fece1a1604" prot="private" virt="non-virtual"><scope>models::Address</scope><name>country_code</name></member>
+      <member refid="classmodels_1_1_address_1a7e1f410c90e896c19813c65c0d90a533" prot="private" virt="non-virtual"><scope>models::Address</scope><name>county</name></member>
+      <member refid="classmodels_1_1_address_1a0a93e1d8d81d9e971d7b1584299c6e1b" prot="public" virt="non-virtual"><scope>models::Address</scope><name>getCity</name></member>
+      <member refid="classmodels_1_1_address_1ae607540567aabafc94a8ee9c62ecd77a" prot="public" virt="non-virtual"><scope>models::Address</scope><name>getCountry</name></member>
+      <member refid="classmodels_1_1_address_1ad739e4932684509ca2d2200162d99096" prot="public" virt="non-virtual"><scope>models::Address</scope><name>getCountry_code</name></member>
+      <member refid="classmodels_1_1_address_1ac8032d34948c44afe43b663740156c4c" prot="public" virt="non-virtual"><scope>models::Address</scope><name>getCounty</name></member>
+      <member refid="classmodels_1_1_address_1a7266990366714aab20d07c9ce50406f0" prot="public" virt="non-virtual"><scope>models::Address</scope><name>getHighway</name></member>
+      <member refid="classmodels_1_1_address_1a9b129805db6f97a30a24209d1c9a3833" prot="public" virt="non-virtual"><scope>models::Address</scope><name>getHouse_number</name></member>
+      <member refid="classmodels_1_1_address_1a795f844dc46cc07a99ab00401f495e1b" prot="public" virt="non-virtual"><scope>models::Address</scope><name>getNeighbourhood</name></member>
+      <member refid="classmodels_1_1_address_1a964036461103dabd26d1e7fb029c42ad" prot="public" virt="non-virtual"><scope>models::Address</scope><name>getPostcode</name></member>
+      <member refid="classmodels_1_1_address_1aa6d8afcbb576025847ce3660d9ecdd61" prot="public" virt="non-virtual"><scope>models::Address</scope><name>getRoad</name></member>
+      <member refid="classmodels_1_1_address_1a5442b94f841f8849092c19b2412f729f" prot="public" virt="non-virtual"><scope>models::Address</scope><name>getState</name></member>
+      <member refid="classmodels_1_1_address_1aee1b2fe429286bea893011a6612a013e" prot="private" virt="non-virtual"><scope>models::Address</scope><name>highway</name></member>
+      <member refid="classmodels_1_1_address_1abc739af04aa9b811d4b9f8c74e749709" prot="private" virt="non-virtual"><scope>models::Address</scope><name>house_number</name></member>
+      <member refid="classmodels_1_1_address_1ad3e2904d5d229bde93145df9ec418df7" prot="private" virt="non-virtual"><scope>models::Address</scope><name>ISO3166_2_lvl4</name></member>
+      <member refid="classmodels_1_1_address_1a0c420fbc10ac47f8b27f8aea5d38dcea" prot="private" virt="non-virtual"><scope>models::Address</scope><name>neighbourhood</name></member>
+      <member refid="classmodels_1_1_address_1af0bf492eb3bc0743bb58ad0be3baf128" prot="private" virt="non-virtual"><scope>models::Address</scope><name>postcode</name></member>
+      <member refid="classmodels_1_1_address_1aa31c4f5b65f9a5a3d701e6d7cae489fb" prot="private" virt="non-virtual"><scope>models::Address</scope><name>road</name></member>
+      <member refid="classmodels_1_1_address_1acc862ccd88bbbf6d8383910cd5cadae7" prot="public" virt="non-virtual"><scope>models::Address</scope><name>setCity</name></member>
+      <member refid="classmodels_1_1_address_1a3b2a7f0dd41323df69e1c0c6b3320bef" prot="public" virt="non-virtual"><scope>models::Address</scope><name>setCountry</name></member>
+      <member refid="classmodels_1_1_address_1a9c80ecd18b53ba1eacf719b5341b365f" prot="public" virt="non-virtual"><scope>models::Address</scope><name>setCountry_code</name></member>
+      <member refid="classmodels_1_1_address_1a5c4648f26b5d6539d05d7e3b14b98a2a" prot="public" virt="non-virtual"><scope>models::Address</scope><name>setCounty</name></member>
+      <member refid="classmodels_1_1_address_1a947602c383ffb12c6245be0673b3db31" prot="public" virt="non-virtual"><scope>models::Address</scope><name>setHighway</name></member>
+      <member refid="classmodels_1_1_address_1aa8ad79aa0aec100f124effc9d3387f6a" prot="public" virt="non-virtual"><scope>models::Address</scope><name>setHouse_number</name></member>
+      <member refid="classmodels_1_1_address_1a4877c528298decc3d3037953a7b7daef" prot="public" virt="non-virtual"><scope>models::Address</scope><name>setNeighbourhood</name></member>
+      <member refid="classmodels_1_1_address_1a8970a410181039f955bdf3e5f4f6b281" prot="public" virt="non-virtual"><scope>models::Address</scope><name>setPostcode</name></member>
+      <member refid="classmodels_1_1_address_1a1e0365c6a8e57790b96d130411795fdd" prot="public" virt="non-virtual"><scope>models::Address</scope><name>setRoad</name></member>
+      <member refid="classmodels_1_1_address_1ad16652c7994b72083685bdb596293cc6" prot="public" virt="non-virtual"><scope>models::Address</scope><name>setState</name></member>
+      <member refid="classmodels_1_1_address_1a9a6fafeda8c1e46cd5b0eef859acf0ba" prot="private" virt="non-virtual"><scope>models::Address</scope><name>state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

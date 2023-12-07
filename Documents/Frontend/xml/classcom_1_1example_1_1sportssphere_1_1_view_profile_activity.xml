@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcom_1_1example_1_1sportssphere_1_1_view_profile_activity" kind="class" language="Java" prot="public">
+    <compoundname>com::example::sportssphere::ViewProfileActivity</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">AppCompatActivity</basecompoundref>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_view_profile_activity_1ab8f90713d9bd7ba78c5f59c558ffc4d2" prot="package" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.example.sportssphere.ViewProfileActivity.id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>com.example.sportssphere.ViewProfileActivity.id</qualifiedname>
+        <briefdescription>
+<para>The identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/ViewProfileActivity.java" line="41" column="12" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/ViewProfileActivity.java" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_view_profile_activity_1a79b82e3b41786e9d30bb769ce7b06961" prot="package" static="no" mutable="no">
+        <type>ApolloClient</type>
+        <definition>ApolloClient com.example.sportssphere.ViewProfileActivity.apolloClient</definition>
+        <argsstring></argsstring>
+        <name>apolloClient</name>
+        <qualifiedname>com.example.sportssphere.ViewProfileActivity.apolloClient</qualifiedname>
+        <briefdescription>
+<para>The apollo client. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/ViewProfileActivity.java" line="44" column="18" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/ViewProfileActivity.java" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_view_profile_activity_1a67cd967c98a12616b9380a12615ccdba" prot="package" static="no" mutable="no">
+        <type>TextView</type>
+        <definition>TextView com.example.sportssphere.ViewProfileActivity.userNameText</definition>
+        <argsstring></argsstring>
+        <name>userNameText</name>
+        <qualifiedname>com.example.sportssphere.ViewProfileActivity.userNameText</qualifiedname>
+        <briefdescription>
+<para>The user name text. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/ViewProfileActivity.java" line="46" column="14" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/ViewProfileActivity.java" bodystart="46" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classcom_1_1example_1_1sportssphere_1_1_view_profile_activity_1a137d3e7311cf4e75011aaf55b8526233" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>Override protected void com.example.sportssphere.ViewProfileActivity::onCreate</definition>
+        <argsstring>(Bundle savedInstanceState)</argsstring>
+        <name>onCreate</name>
+        <qualifiedname>com.example.sportssphere.ViewProfileActivity.onCreate</qualifiedname>
+        <param>
+          <type>Bundle</type>
+          <declname>savedInstanceState</declname>
+        </param>
+        <briefdescription>
+<para>Executes the &apos;create&apos; action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>savedInstanceState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/ViewProfileActivity.java" line="60" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/ViewProfileActivity.java" bodystart="60" bodyend="80"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1example_1_1sportssphere_1_1_view_profile_activity_1acfb117cfb6c98da15a50f9c6716a45ba" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>private void com.example.sportssphere.ViewProfileActivity::fetchUserData</definition>
+        <argsstring>()</argsstring>
+        <name>fetchUserData</name>
+        <qualifiedname>com.example.sportssphere.ViewProfileActivity.fetchUserData</qualifiedname>
+        <briefdescription>
+<para>Fetches user data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/ViewProfileActivity.java" line="91" column="18" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/ViewProfileActivity.java" bodystart="91" bodyend="114"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The android.content. intent. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The android.os. bundle</para>
+<para>The android.util. log</para>
+<para>The android.view. view</para>
+<para>The android.widget. button</para>
+<para>The android.widget. text view</para>
+<para>The androidx.annotation. non null</para>
+<para>The androidx.appcompat.app. application compatible activity</para>
+<para>The com.apollographql.apollo. apollo call</para>
+<para>The com.apollographql.apollo. apollo client</para>
+<para>The com.apollographql.apollo.api. response</para>
+<para>The com.apollographql.apollo.exception. apollo exception</para>
+<para>A view profile activity.</para>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AppCompatActivity</label>
+      </node>
+      <node id="1">
+        <label>com.example.sportssphere.ViewProfileActivity</label>
+        <link refid="classcom_1_1example_1_1sportssphere_1_1_view_profile_activity"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AppCompatActivity</label>
+      </node>
+      <node id="1">
+        <label>com.example.sportssphere.ViewProfileActivity</label>
+        <link refid="classcom_1_1example_1_1sportssphere_1_1_view_profile_activity"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/ViewProfileActivity.java" line="39" column="7" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/ViewProfileActivity.java" bodystart="39" bodyend="115"/>
+    <listofallmembers>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_view_profile_activity_1a79b82e3b41786e9d30bb769ce7b06961" prot="package" virt="non-virtual"><scope>com::example::sportssphere::ViewProfileActivity</scope><name>apolloClient</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_view_profile_activity_1acfb117cfb6c98da15a50f9c6716a45ba" prot="private" virt="non-virtual"><scope>com::example::sportssphere::ViewProfileActivity</scope><name>fetchUserData</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_view_profile_activity_1ab8f90713d9bd7ba78c5f59c558ffc4d2" prot="package" virt="non-virtual"><scope>com::example::sportssphere::ViewProfileActivity</scope><name>id</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_view_profile_activity_1a137d3e7311cf4e75011aaf55b8526233" prot="protected" virt="non-virtual"><scope>com::example::sportssphere::ViewProfileActivity</scope><name>onCreate</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_view_profile_activity_1a67cd967c98a12616b9380a12615ccdba" prot="package" virt="non-virtual"><scope>com::example::sportssphere::ViewProfileActivity</scope><name>userNameText</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

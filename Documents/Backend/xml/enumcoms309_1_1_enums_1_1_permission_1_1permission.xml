@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="enumcoms309_1_1_enums_1_1_permission_1_1permission" kind="enum" language="Java" prot="public">
+    <compoundname>coms309::Enums::Permission::permission</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="enumcoms309_1_1_enums_1_1_permission_1_1permission_1a98b664dfb82ba1acfd9709064ca7426a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>coms309.Enums.Permission.permission.USER</definition>
+        <argsstring></argsstring>
+        <name>USER</name>
+        <qualifiedname>coms309.Enums.Permission.permission.USER</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Enums/Permission.java" line="23" column="27" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Enums/Permission.java" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="enumcoms309_1_1_enums_1_1_permission_1_1permission_1a78bff52f70a002f0de10c98c99af8928" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>coms309.Enums.Permission.permission.ADMIN</definition>
+        <argsstring></argsstring>
+        <name>ADMIN</name>
+        <qualifiedname>coms309.Enums.Permission.permission.ADMIN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Enums/Permission.java" line="23" column="27" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Enums/Permission.java" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>coms309.Enums.Permission.permission</label>
+        <link refid="enumcoms309_1_1_enums_1_1_permission_1_1permission"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Enums/Permission.java" line="23" column="11" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Enums/Permission.java" bodystart="23" bodyend="23"/>
+    <listofallmembers>
+      <member refid="enumcoms309_1_1_enums_1_1_permission_1_1permission_1a78bff52f70a002f0de10c98c99af8928" prot="public" virt="non-virtual"><scope>coms309::Enums::Permission::permission</scope><name>ADMIN</name></member>
+      <member refid="enumcoms309_1_1_enums_1_1_permission_1_1permission_1a98b664dfb82ba1acfd9709064ca7426a" prot="public" virt="non-virtual"><scope>coms309::Enums::Permission::permission</scope><name>USER</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

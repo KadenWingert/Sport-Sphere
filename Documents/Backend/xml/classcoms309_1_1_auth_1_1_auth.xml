@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcoms309_1_1_auth_1_1_auth" kind="class" language="Java" prot="public">
+    <compoundname>coms309::Auth::Auth</compoundname>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcoms309_1_1_auth_1_1_auth_1a0e9fdb451991b460de5b04eef3a359a5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>private coms309.Auth.Auth::Auth</definition>
+        <argsstring>()</argsstring>
+        <name>Auth</name>
+        <qualifiedname>coms309.Auth.Auth.Auth</qualifiedname>
+        <briefdescription>
+<para>Constructor that prevents a default instance of this class from being created. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Auth/Auth.java" line="34" column="13" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Auth/Auth.java" bodystart="34" bodyend="34"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcoms309_1_1_auth_1_1_auth_1a36df8f1021a4d416a3ee1589fefcc666" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>public static boolean coms309.Auth.Auth::isAuthenticated</definition>
+        <argsstring>(Users user, String email, String password)</argsstring>
+        <name>isAuthenticated</name>
+        <qualifiedname>coms309.Auth.Auth.isAuthenticated</qualifiedname>
+        <param>
+          <type>Users</type>
+          <declname>user</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>email</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+<para>Query if &apos;user&apos; is authenticated. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>user</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>email</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean: authenticated. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Auth/Auth.java" line="51" column="27" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Auth/Auth.java" bodystart="51" bodyend="61"/>
+        <references refid="classcoms309_1_1_auth_1_1_auth_1ab72afc2758e2b85c51557970fa28232d" compoundref="_auth_8java" startline="76" endline="84">coms309.Auth.Auth.isAdmin</references>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_auth_1_1_auth_1ab72afc2758e2b85c51557970fa28232d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>public static boolean coms309.Auth.Auth::isAdmin</definition>
+        <argsstring>(Users user)</argsstring>
+        <name>isAdmin</name>
+        <qualifiedname>coms309.Auth.Auth.isAdmin</qualifiedname>
+        <param>
+          <type>Users</type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+<para>Query if &apos;user&apos; is admin. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>user</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean: authenticated. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Auth/Auth.java" line="76" column="27" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Auth/Auth.java" bodystart="76" bodyend="84"/>
+        <referencedby refid="classcoms309_1_1_auth_1_1_auth_1a36df8f1021a4d416a3ee1589fefcc666" compoundref="_auth_8java" startline="51" endline="61">coms309.Auth.Auth.isAuthenticated</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The coms 309. users. users. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The org.springframework.stereotype. service</para>
+<para>The coms 309. enums. permission.permission</para>
+<para>Class to simulate an authentication process.</para>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>coms309.Auth.Auth</label>
+        <link refid="classcoms309_1_1_auth_1_1_auth"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Auth/Auth.java" line="23" column="13" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Auth/Auth.java" bodystart="23" bodyend="85"/>
+    <listofallmembers>
+      <member refid="classcoms309_1_1_auth_1_1_auth_1a0e9fdb451991b460de5b04eef3a359a5" prot="private" virt="non-virtual"><scope>coms309::Auth::Auth</scope><name>Auth</name></member>
+      <member refid="classcoms309_1_1_auth_1_1_auth_1ab72afc2758e2b85c51557970fa28232d" prot="public" virt="non-virtual"><scope>coms309::Auth::Auth</scope><name>isAdmin</name></member>
+      <member refid="classcoms309_1_1_auth_1_1_auth_1a36df8f1021a4d416a3ee1589fefcc666" prot="public" virt="non-virtual"><scope>coms309::Auth::Auth</scope><name>isAuthenticated</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

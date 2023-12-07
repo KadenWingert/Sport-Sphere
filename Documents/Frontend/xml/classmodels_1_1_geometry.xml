@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmodels_1_1_geometry" kind="class" language="Java" prot="public">
+    <compoundname>models::Geometry</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmodels_1_1_geometry_1a5b517c5b788315b7a0936af4e25a6d42" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String models.Geometry.type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>models.Geometry.type</qualifiedname>
+        <briefdescription>
+<para>The type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Geometry.java" line="18" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Geometry.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodels_1_1_geometry_1ac8b0b5a73322062476388fd19b3fdc53" prot="private" static="no" mutable="no">
+        <type>List&lt; Double &gt;</type>
+        <definition>List&lt;Double&gt; models.Geometry.coordinates</definition>
+        <argsstring></argsstring>
+        <name>coordinates</name>
+        <qualifiedname>models.Geometry.coordinates</qualifiedname>
+        <briefdescription>
+<para>The coordinates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Geometry.java" line="20" column="18" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Geometry.java" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmodels_1_1_geometry_1a39669cfb137e07ccce94ac4be94509d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>public String models.Geometry::getType</definition>
+        <argsstring>()</argsstring>
+        <name>getType</name>
+        <qualifiedname>models.Geometry.getType</qualifiedname>
+        <briefdescription>
+<para>Getters and setters ... </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The type. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Geometry.java" line="34" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Geometry.java" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_geometry_1a5ab3217da4c3ed0e4197f81b2953e8bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void models.Geometry::setType</definition>
+        <argsstring>(String type)</argsstring>
+        <name>setType</name>
+        <qualifiedname>models.Geometry.setType</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Sets a type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Geometry.java" line="49" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Geometry.java" bodystart="49" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_geometry_1ae35ffda3acd8a3da1daa6f21bf22da6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; Double &gt;</type>
+        <definition>public List&lt; Double &gt; models.Geometry::getCoordinates</definition>
+        <argsstring>()</argsstring>
+        <name>getCoordinates</name>
+        <qualifiedname>models.Geometry.getCoordinates</qualifiedname>
+        <briefdescription>
+<para>Gets the coordinates. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The coordinates. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Geometry.java" line="64" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Geometry.java" bodystart="64" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_geometry_1a31a53540350f3c1e22392e09db04a6ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void models.Geometry::setCoordinates</definition>
+        <argsstring>(List&lt; Double &gt; coordinates)</argsstring>
+        <name>setCoordinates</name>
+        <qualifiedname>models.Geometry.setCoordinates</qualifiedname>
+        <param>
+          <type>List&lt; Double &gt;</type>
+          <declname>coordinates</declname>
+        </param>
+        <briefdescription>
+<para>Sets the coordinates. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coordinates</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The coordinates. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Geometry.java" line="79" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Geometry.java" bodystart="79" bodyend="81"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>List of java.util.s. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A geometry.</para>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Geometry.java" line="16" column="7" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Geometry.java" bodystart="16" bodyend="83"/>
+    <listofallmembers>
+      <member refid="classmodels_1_1_geometry_1ac8b0b5a73322062476388fd19b3fdc53" prot="private" virt="non-virtual"><scope>models::Geometry</scope><name>coordinates</name></member>
+      <member refid="classmodels_1_1_geometry_1ae35ffda3acd8a3da1daa6f21bf22da6b" prot="public" virt="non-virtual"><scope>models::Geometry</scope><name>getCoordinates</name></member>
+      <member refid="classmodels_1_1_geometry_1a39669cfb137e07ccce94ac4be94509d0" prot="public" virt="non-virtual"><scope>models::Geometry</scope><name>getType</name></member>
+      <member refid="classmodels_1_1_geometry_1a31a53540350f3c1e22392e09db04a6ec" prot="public" virt="non-virtual"><scope>models::Geometry</scope><name>setCoordinates</name></member>
+      <member refid="classmodels_1_1_geometry_1a5ab3217da4c3ed0e4197f81b2953e8bc" prot="public" virt="non-virtual"><scope>models::Geometry</scope><name>setType</name></member>
+      <member refid="classmodels_1_1_geometry_1a5b517c5b788315b7a0936af4e25a6d42" prot="private" virt="non-virtual"><scope>models::Geometry</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

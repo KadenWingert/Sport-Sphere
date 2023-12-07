@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcoms309_1_1_application" kind="class" language="Java" prot="public">
+    <compoundname>coms309::Application</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcoms309_1_1_application_1a6c9d41811f775380dfb3d38f48f2523c" prot="private" static="yes" mutable="no">
+        <type>final Logger</type>
+        <definition>final Logger coms309.Application.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>coms309.Application.logger</qualifiedname>
+        <initializer>= LoggerFactory.getLogger(Application.class)</initializer>
+        <briefdescription>
+<para>/** </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The logger </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Application.java" line="29" column="33" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Application.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcoms309_1_1_application_1a58f13a21d38a21e87a9fdc86d86066ea" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public static void coms309.Application::main</definition>
+        <argsstring>(String[] args)</argsstring>
+        <name>main</name>
+        <qualifiedname>coms309.Application.main</qualifiedname>
+        <param>
+          <type>String[]</type>
+          <declname>args</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+<para>Main entry-point for this application. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Application.java" line="42" column="24" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Application.java" bodystart="42" bodyend="49"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The org.springframework.boot. spring application. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The org.springframework.boot.autoconfigure. spring boot application</para>
+<para>The org.slf 4j. logger</para>
+<para>The org.slf 4j. logger factory</para>
+<para>An application.</para>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>coms309.Application</label>
+        <link refid="classcoms309_1_1_application"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Application.java" line="26" column="7" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Application.java" bodystart="26" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classcoms309_1_1_application_1a6c9d41811f775380dfb3d38f48f2523c" prot="private" virt="non-virtual"><scope>coms309::Application</scope><name>logger</name></member>
+      <member refid="classcoms309_1_1_application_1a58f13a21d38a21e87a9fdc86d86066ea" prot="public" virt="non-virtual"><scope>coms309::Application</scope><name>main</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

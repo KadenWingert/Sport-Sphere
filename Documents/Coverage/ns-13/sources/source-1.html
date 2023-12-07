@@ -1,0 +1,899 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > UserController</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">coms309.Users</a>
+</div>
+
+<h1>Coverage Summary for Class: UserController (coms309.Users)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">UserController</td>
+<td class="coverageStat">
+  <span class="percent">
+    57.9%
+  </span>
+  <span class="absValue">
+    (11/19)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    27%
+  </span>
+  <span class="absValue">
+    (62/230)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">UserController$$SpringCGLIB$$0</td>
+  </tr>
+  <tr>
+    <td class="name">UserController$$SpringCGLIB$$1</td>
+  </tr>
+  <tr>
+    <td class="name">UserController$$SpringCGLIB$$2</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    57.9%
+  </span>
+  <span class="absValue">
+    (11/19)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    27%
+  </span>
+  <span class="absValue">
+    (62/230)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;/** @brief The coms 309. users */
+&nbsp;package coms309.Users;
+&nbsp;
+&nbsp;/** @brief The coms 309. auth. authentication */
+&nbsp;import coms309.Auth.Auth;
+&nbsp;/** @brief The coms 309. comment. comment */
+&nbsp;import coms309.Comment.Comment;
+&nbsp;/** @brief The coms 309. comment. comment repository */
+&nbsp;import coms309.Comment.CommentRepository;
+&nbsp;import coms309.CommentMessage.CommentMessage;
+&nbsp;import coms309.CommentMessage.CommentMessageRepository;
+&nbsp;/** @brief The coms 309. email. email sender */
+&nbsp;import coms309.Email.EmailSender;
+&nbsp;/** @brief The coms 309. enums. permission.permission */
+&nbsp;import coms309.Enums.Permission.permission;
+&nbsp;/** @brief The coms 309. exceptions. duplicate exception */
+&nbsp;import coms309.Exceptions.DuplicateException;
+&nbsp;/** @brief The coms 309. exceptions. not found exception */
+&nbsp;import coms309.Exceptions.NotFoundException;
+&nbsp;/** @brief The coms 309. game post. game post */
+&nbsp;import coms309.GamePost.GamePost;
+&nbsp;/** @brief The coms 309. game post. game post repository */
+&nbsp;import coms309.GamePost.GamePostRepository;
+&nbsp;/** @brief The coms 309. location. location */
+&nbsp;import coms309.Location.Location;
+&nbsp;import coms309.PreferenceValue.PreferenceValueRepository;
+&nbsp;/** @brief The coms 309. skill level. skill level */
+&nbsp;import coms309.SkillLevel.SkillLevel;
+&nbsp;/** @brief The coms 309. skill level. skill level repository */
+&nbsp;import coms309.SkillLevel.SkillLevelRepository;
+&nbsp;/** @brief The coms 309. sport. sport */
+&nbsp;import coms309.Sport.Sport;
+&nbsp;/** @brief The coms 309. sport. sport repository */
+&nbsp;import coms309.Sport.SportRepository;
+&nbsp;/** @brief The graphql. graph ql error */
+&nbsp;import graphql.GraphQLError;
+&nbsp;import graphql.GraphQLException;
+&nbsp;import jakarta.transaction.Transactional;
+&nbsp;/** @brief The reactor.core.publisher. flux */
+&nbsp;import reactor.core.publisher.Flux;
+&nbsp;/** @brief The reactor.core.publisher. mono */
+&nbsp;import reactor.core.publisher.Mono;
+&nbsp;/** @brief The org.springframework.beans.factory.annotation. autowired */
+&nbsp;import org.springframework.beans.factory.annotation.Autowired;
+&nbsp;/** @brief The org.springframework.graphql.data.method.annotation. argument */
+&nbsp;import org.springframework.graphql.data.method.annotation.Argument;
+&nbsp;/** @brief The org.springframework.graphql.data.method.annotation. graph ql exception handler */
+&nbsp;import org.springframework.graphql.data.method.annotation.GraphQlExceptionHandler;
+&nbsp;/** @brief The org.springframework.graphql.data.method.annotation. mutation mapping */
+&nbsp;import org.springframework.graphql.data.method.annotation.MutationMapping;
+&nbsp;/** @brief The org.springframework.graphql.data.method.annotation. query mapping */
+&nbsp;import org.springframework.graphql.data.method.annotation.QueryMapping;
+&nbsp;/** @brief The org.springframework.graphql.data.method.annotation. subscription mapping */
+&nbsp;import org.springframework.graphql.data.method.annotation.SubscriptionMapping;
+&nbsp;/** @brief Type of the org.springframework.graphql.execution. error */
+&nbsp;import org.springframework.graphql.execution.ErrorType;
+&nbsp;/** @brief The org.springframework.stereotype. controller */
+&nbsp;import org.springframework.stereotype.Controller;
+&nbsp;/** @brief The org.reactivestreams. publisher */
+&nbsp;import org.reactivestreams.Publisher;
+&nbsp;/** @brief The org.slf 4j. logger */
+&nbsp;import org.slf4j.Logger;
+&nbsp;/** @brief The org.slf 4j. logger factory */
+&nbsp;import org.slf4j.LoggerFactory;
+&nbsp;/** @brief The java.net. bind exception */
+&nbsp;import java.net.BindException;
+&nbsp;/** @brief Duration of the java.time. */
+&nbsp;import java.time.Duration;
+&nbsp;/** @brief Set the java.util. hash belongs to */
+&nbsp;import java.util.HashSet;
+&nbsp;/** @brief Set the java.util. belongs to */
+&nbsp;import java.util.Set;
+&nbsp;
+&nbsp;/** @brief List of java.util.s */
+&nbsp;import java.util.List;
+&nbsp;
+&nbsp;
+&nbsp;/**********************************************************************************************/
+&nbsp;/**
+&nbsp; * @class UserController
+&nbsp; *
+&nbsp; * @brief A controller for handling users.
+&nbsp; *
+&nbsp; * @author Arie
+&nbsp; * @date 10/30/2023
+&nbsp; **************************************************************************************************/
+&nbsp;
+&nbsp;@Controller
+&nbsp;@Transactional
+<b class="fc">&nbsp;public class UserController {</b>
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @property @Autowired UserRepository userRepository
+&nbsp;     *
+&nbsp;     * @brief Gets the user repository
+&nbsp;     *
+&nbsp;     * @returns The user repository.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @Autowired
+&nbsp;    UserRepository userRepository;
+&nbsp;
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @property @Autowired GamePostRepository gamePostRepository
+&nbsp;     *
+&nbsp;     * @brief Gets the game post repository
+&nbsp;     *
+&nbsp;     * @returns The game post repository.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @Autowired
+&nbsp;    GamePostRepository gamePostRepository;
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @property @Autowired SportRepository sportRepository
+&nbsp;     *
+&nbsp;     * @brief Gets the sport repository
+&nbsp;     *
+&nbsp;     * @returns The sport repository.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @Autowired
+&nbsp;    SportRepository sportRepository;
+&nbsp;
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @property @Autowired CommentRepository commentRepository
+&nbsp;     *
+&nbsp;     * @brief Gets the comment repository
+&nbsp;     *
+&nbsp;     * @returns The comment repository.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @Autowired
+&nbsp;    CommentRepository commentRepository;
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @property @Autowired SkillLevelRepository skillLevelRepository
+&nbsp;     *
+&nbsp;     * @brief Gets the skill level repository
+&nbsp;     *
+&nbsp;     * @returns The skill level repository.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @Autowired
+&nbsp;    SkillLevelRepository skillLevelRepository;
+&nbsp;
+&nbsp;    /** @brief /** @brief The logger */
+<b class="fc">&nbsp;    private static final Logger logger = LoggerFactory.getLogger(UserController.class);</b>
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @property @Autowired UsersPublisher usersPublisher
+&nbsp;     *
+&nbsp;     * @brief Gets the users publisher
+&nbsp;     *
+&nbsp;     * @returns The users publisher.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @Autowired
+&nbsp;    UsersPublisher usersPublisher;
+&nbsp;
+&nbsp;    @Autowired
+&nbsp;    PreferenceValueRepository preferenceValueRepository;
+&nbsp;
+&nbsp;    @Autowired
+&nbsp;    CommentMessageRepository commentMessageRepository;
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn @MutationMapping public String createDummyData()
+&nbsp;     *
+&nbsp;     * @brief Creates dummy data
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @returns The new dummy data.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @MutationMapping
+&nbsp;    public String createDummyData() {
+&nbsp;
+<b class="nc">&nbsp;        Users u1 = new Users(&quot;Mark&quot;, &quot;Heath&quot;, &quot;Mheath@gmail.com&quot;, &quot;batman100&quot;);</b>
+<b class="nc">&nbsp;        Users u2 = new Users(&quot;Phil&quot;, &quot;Kittle&quot;, &quot;pkittle@yahoo.com&quot;, &quot;goState&quot;);</b>
+<b class="nc">&nbsp;        Users u3 = new Users(&quot;Jack&quot;, &quot;Purdy&quot;, &quot;jpurdy@fakeEmail,com&quot;, &quot;redhouse12&quot;);</b>
+<b class="nc">&nbsp;        Users u4 = new Users(&quot;George&quot;, &quot;Watt&quot;, &quot;george.watt@iastate.edu&quot;, &quot;steelers43football&quot;);</b>
+<b class="nc">&nbsp;        Users u5 = new Users(&quot;k&quot;, &quot;k&quot;, &quot;k&quot;, &quot;k&quot;);</b>
+&nbsp;
+<b class="nc">&nbsp;        userRepository.save(u1);</b>
+<b class="nc">&nbsp;        userRepository.save(u2);</b>
+<b class="nc">&nbsp;        userRepository.save(u3);</b>
+<b class="nc">&nbsp;        userRepository.save(u4);</b>
+<b class="nc">&nbsp;        userRepository.save(u5);</b>
+&nbsp;
+<b class="nc">&nbsp;        SkillLevel sk1 = new SkillLevel(9, u1);</b>
+<b class="nc">&nbsp;        SkillLevel sk2 = new SkillLevel(8, u1);</b>
+<b class="nc">&nbsp;        SkillLevel sk3 = new SkillLevel(7, u2);</b>
+<b class="nc">&nbsp;        SkillLevel sk4 = new SkillLevel(3, u3);</b>
+<b class="nc">&nbsp;        SkillLevel sk5 = new SkillLevel(10, u3);</b>
+<b class="nc">&nbsp;        SkillLevel sk6 = new SkillLevel(3, u3);</b>
+<b class="nc">&nbsp;        SkillLevel sk7 = new SkillLevel(8, u3);</b>
+&nbsp;
+<b class="nc">&nbsp;        skillLevelRepository.save(sk1);</b>
+<b class="nc">&nbsp;        skillLevelRepository.save(sk2);</b>
+<b class="nc">&nbsp;        skillLevelRepository.save(sk3);</b>
+<b class="nc">&nbsp;        skillLevelRepository.save(sk4);</b>
+<b class="nc">&nbsp;        skillLevelRepository.save(sk5);</b>
+<b class="nc">&nbsp;        skillLevelRepository.save(sk6);</b>
+<b class="nc">&nbsp;        skillLevelRepository.save(sk7);</b>
+&nbsp;
+<b class="nc">&nbsp;        Sport s1 = new Sport(&quot;Basketball&quot;);</b>
+<b class="nc">&nbsp;        Sport s2 = new Sport(&quot;Pickleball&quot;);</b>
+<b class="nc">&nbsp;        Sport s3 = new Sport(&quot;Football&quot;);</b>
+<b class="nc">&nbsp;        Sport s4 = new Sport(&quot;Spikeball&quot;);</b>
+<b class="nc">&nbsp;        Sport s5 = new Sport(&quot;Tennis&quot;);</b>
+<b class="nc">&nbsp;        Sport s6 = new Sport(&quot;Volleyball&quot;);</b>
+<b class="nc">&nbsp;        Sport s7 = new Sport(&quot;Softball&quot;);</b>
+<b class="nc">&nbsp;        Sport s8 = new Sport(&quot;Hockey&quot;);</b>
+&nbsp;
+<b class="nc">&nbsp;        sportRepository.save(s1);</b>
+<b class="nc">&nbsp;        sportRepository.save(s2);</b>
+<b class="nc">&nbsp;        sportRepository.save(s3);</b>
+<b class="nc">&nbsp;        sportRepository.save(s4);</b>
+<b class="nc">&nbsp;        sportRepository.save(s5);</b>
+<b class="nc">&nbsp;        sportRepository.save(s6);</b>
+<b class="nc">&nbsp;        sportRepository.save(s7);</b>
+<b class="nc">&nbsp;        sportRepository.save(s8);</b>
+&nbsp;
+<b class="nc">&nbsp;        sk1.setSport(s1);</b>
+<b class="nc">&nbsp;        sk2.setSport(s2);</b>
+<b class="nc">&nbsp;        sk3.setSport(s3);</b>
+<b class="nc">&nbsp;        sk4.setSport(s4);</b>
+&nbsp;
+<b class="nc">&nbsp;        s1.setSkillLevel(sk1);</b>
+<b class="nc">&nbsp;        s2.setSkillLevel(sk2);</b>
+<b class="nc">&nbsp;        s3.setSkillLevel(sk3);</b>
+<b class="nc">&nbsp;        s4.setSkillLevel(sk4);</b>
+&nbsp;
+<b class="nc">&nbsp;        skillLevelRepository.save(sk1);</b>
+<b class="nc">&nbsp;        skillLevelRepository.save(sk2);</b>
+<b class="nc">&nbsp;        skillLevelRepository.save(sk3);</b>
+<b class="nc">&nbsp;        skillLevelRepository.save(sk4);</b>
+&nbsp;
+<b class="nc">&nbsp;        sportRepository.save(s1);</b>
+<b class="nc">&nbsp;        sportRepository.save(s2);</b>
+<b class="nc">&nbsp;        sportRepository.save(s3);</b>
+<b class="nc">&nbsp;        sportRepository.save(s4);</b>
+&nbsp;
+<b class="nc">&nbsp;        GamePost gp1 = new GamePost(s1, userRepository.findById(3), 24, 20, &quot;1/12/2023&quot;,</b>
+<b class="nc">&nbsp;                &quot;29/09/1988&quot;, false);</b>
+<b class="nc">&nbsp;        GamePost gp2 =</b>
+<b class="nc">&nbsp;                new GamePost(s2, userRepository.findById(1), 16, 2, &quot;1/2/2023&quot;, &quot;1/02/2023&quot;, false);</b>
+<b class="nc">&nbsp;        GamePost gp3 = new GamePost(s3, userRepository.findById(1), 10, 8, &quot;10/08/2023&quot;,</b>
+<b class="nc">&nbsp;                &quot;10/25/2023&quot;, false);</b>
+<b class="nc">&nbsp;        GamePost gp4 = new GamePost(s4, userRepository.findById(4), 6, 3, &quot;11/1/2023&quot;, &quot;11/09/2023&quot;,</b>
+<b class="nc">&nbsp;                false);</b>
+&nbsp;
+<b class="nc">&nbsp;        gp1.setSport(s1);</b>
+<b class="nc">&nbsp;        gp2.setSport(s2);</b>
+<b class="nc">&nbsp;        gp3.setSport(s3);</b>
+<b class="nc">&nbsp;        gp4.setSport(s4);</b>
+&nbsp;
+<b class="nc">&nbsp;        Set&lt;GamePost&gt; gamePostSet1 = new HashSet&lt;&gt;();</b>
+<b class="nc">&nbsp;        gamePostSet1.add(gp1);</b>
+<b class="nc">&nbsp;        s1.setGamePosts(gamePostSet1);</b>
+<b class="nc">&nbsp;        Set&lt;GamePost&gt; gamePostSet2 = new HashSet&lt;&gt;();</b>
+<b class="nc">&nbsp;        gamePostSet2.add(gp2);</b>
+<b class="nc">&nbsp;        s1.setGamePosts(gamePostSet2);</b>
+<b class="nc">&nbsp;        Set&lt;GamePost&gt; gamePostSet3 = new HashSet&lt;&gt;();</b>
+<b class="nc">&nbsp;        gamePostSet3.add(gp3);</b>
+<b class="nc">&nbsp;        s1.setGamePosts(gamePostSet3);</b>
+<b class="nc">&nbsp;        Set&lt;GamePost&gt; gamePostSet4 = new HashSet&lt;&gt;();</b>
+<b class="nc">&nbsp;        gamePostSet4.add(gp4);</b>
+<b class="nc">&nbsp;        s1.setGamePosts(gamePostSet4);</b>
+&nbsp;
+<b class="nc">&nbsp;        s1.getGamePosts().add(gp1);</b>
+<b class="nc">&nbsp;        s2.getGamePosts().add(gp2);</b>
+<b class="nc">&nbsp;        s3.getGamePosts().add(gp3);</b>
+<b class="nc">&nbsp;        s4.getGamePosts().add(gp4);</b>
+&nbsp;
+<b class="nc">&nbsp;        gamePostRepository.save(gp1);</b>
+<b class="nc">&nbsp;        gamePostRepository.save(gp2);</b>
+<b class="nc">&nbsp;        gamePostRepository.save(gp3);</b>
+<b class="nc">&nbsp;        gamePostRepository.save(gp4);</b>
+&nbsp;
+<b class="nc">&nbsp;        gp1.setPlayersSignedUp(gp1.getCreated_by());</b>
+<b class="nc">&nbsp;        gp1.setPlayersSignedUp(u2);</b>
+<b class="nc">&nbsp;        gp1.setLocation(new Location(&quot;28 South Duff ave&quot;, &quot;34, 23&quot;, gp1));</b>
+<b class="nc">&nbsp;        gp2.setPlayersSignedUp(gp2.getCreated_by());</b>
+<b class="nc">&nbsp;        gp2.setLocation(new Location(&quot;4730 Beach Road&quot;, &quot;756, 21&quot;, gp2));</b>
+<b class="nc">&nbsp;        gp3.setPlayersSignedUp(gp3.getCreated_by());</b>
+<b class="nc">&nbsp;        gp3.setLocation(new Location(&quot;PGA Drive&quot;, &quot;309, 24&quot;, gp3));</b>
+<b class="nc">&nbsp;        gp4.setPlayersSignedUp(gp4.getCreated_by());</b>
+<b class="nc">&nbsp;        gp4.setLocation(new Location(&quot;New Orleans road&quot;, &quot;894, 124&quot;, gp4));</b>
+&nbsp;
+<b class="nc">&nbsp;        Comment c1 = new Comment(gp2, u1);</b>
+<b class="nc">&nbsp;        Comment c2 = new Comment(gp2, u2);</b>
+<b class="nc">&nbsp;        Comment c3 = new Comment(gp3, u3);</b>
+<b class="nc">&nbsp;        Comment c4 = new Comment(gp1, u1);</b>
+&nbsp;
+<b class="nc">&nbsp;        commentRepository.save(c1);</b>
+<b class="nc">&nbsp;        commentRepository.save(c2);</b>
+<b class="nc">&nbsp;        commentRepository.save(c3);</b>
+<b class="nc">&nbsp;        commentRepository.save(c4);</b>
+&nbsp;
+<b class="nc">&nbsp;        CommentMessage cm1 = new CommentMessage(&quot;This event will be held inside&quot;, c1);</b>
+<b class="nc">&nbsp;        CommentMessage cm2 = new CommentMessage(&quot;I will be there&quot;, c2);</b>
+<b class="nc">&nbsp;        CommentMessage cm3 = new CommentMessage(&quot;This is a third comment&quot;, c3);</b>
+<b class="nc">&nbsp;        CommentMessage cm4 = new CommentMessage(&quot;This is a fourth comment&quot;, c4);</b>
+&nbsp;
+<b class="nc">&nbsp;        commentMessageRepository.save(cm1);</b>
+<b class="nc">&nbsp;        commentMessageRepository.save(cm2);</b>
+<b class="nc">&nbsp;        commentMessageRepository.save(cm3);</b>
+<b class="nc">&nbsp;        commentMessageRepository.save(cm4);</b>
+&nbsp;
+<b class="nc">&nbsp;        logger.info(&quot;created dummy data&quot;);</b>
+<b class="nc">&nbsp;        return &quot;Successfully created dummy data&quot;;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn @QueryMapping public List&lt;Users&gt; getAllUsers()
+&nbsp;     *
+&nbsp;     * @brief Gets all users
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @returns all users.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @QueryMapping
+&nbsp;    public List&lt;Users&gt; getAllUsers() {
+<b class="fc">&nbsp;        System.out.println(&quot;Got a request&quot;);</b>
+&nbsp;
+<b class="fc">&nbsp;        logger.info(&quot;getAllUsers request&quot;);</b>
+<b class="fc">&nbsp;        return userRepository.findAll();</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn @QueryMapping public Users getUserById(@Argument int id)
+&nbsp;     *
+&nbsp;     * @brief Gets user by identifier
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @exception NotFoundException Thrown when the requested element is not present.
+&nbsp;     *
+&nbsp;     * @param id The identifier.
+&nbsp;     *
+&nbsp;     * @returns The user by identifier.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @QueryMapping
+&nbsp;    public Users getUserById(@Argument int id) {
+<b class="fc">&nbsp;        System.out.println(&quot;Got a request&quot;);</b>
+&nbsp;
+<b class="fc">&nbsp;        Users user = userRepository.findById((id));</b>
+<b class="fc">&nbsp;        if (user == null) {</b>
+<b class="nc">&nbsp;            logger.debug(&quot;User with ID &quot; + id + &quot; not found&quot;);</b>
+<b class="nc">&nbsp;            throw new NotFoundException(&quot;User with ID &quot; + id + &quot; not found&quot;);</b>
+&nbsp;        }
+<b class="fc">&nbsp;        return user;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn @QueryMapping public Users getUserByEmail(@Argument String email)
+&nbsp;     *
+&nbsp;     * @brief Gets user by email
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @exception Exception Thrown when an exception error condition occurs.
+&nbsp;     *
+&nbsp;     * @param email The email.
+&nbsp;     *
+&nbsp;     * @returns The user by email.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @QueryMapping
+&nbsp;    public Users getUserByEmail(@Argument String email) {
+&nbsp;
+<b class="fc">&nbsp;        System.out.println(&quot;Got a request&quot;);</b>
+<b class="fc">&nbsp;        Users user = null;</b>
+&nbsp;
+&nbsp;        try {
+<b class="fc">&nbsp;            user = userRepository.findByEmail(email);</b>
+&nbsp;
+<b class="fc">&nbsp;        } catch (Exception e) {</b>
+&nbsp;            // TODO: handle exception
+<b class="nc">&nbsp;            logger.error(email, e);</b>
+<b class="nc">&nbsp;            throw e;</b>
+&nbsp;        }
+&nbsp;
+<b class="fc">&nbsp;        return user;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn @QueryMapping public permission getUserRole(@Argument String email, @Argument String
+&nbsp;     *     password)
+&nbsp;     *
+&nbsp;     * @brief Gets user role
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @exception Exception Thrown when an exception error condition occurs.
+&nbsp;     *
+&nbsp;     * @param email The email.
+&nbsp;     * @param password The password.
+&nbsp;     *
+&nbsp;     * @returns The user role.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @QueryMapping
+&nbsp;    public permission getUserRole(@Argument String email, @Argument String password) {
+<b class="nc">&nbsp;        System.out.println(&quot;Got a userRole request&quot;);</b>
+&nbsp;
+<b class="nc">&nbsp;        permission userRole = null;</b>
+&nbsp;
+&nbsp;        try {
+<b class="nc">&nbsp;            Users user = userRepository.findByEmail(email);</b>
+&nbsp;
+<b class="nc">&nbsp;            if (Auth.isAuthenticated(user, email, password)) {</b>
+<b class="nc">&nbsp;                userRole = user.getRole();</b>
+&nbsp;            }
+&nbsp;
+<b class="nc">&nbsp;        } catch (Exception e) {</b>
+&nbsp;            // TODO: handle exception
+<b class="nc">&nbsp;            logger.error(e.getMessage(), e);</b>
+<b class="nc">&nbsp;            throw e;</b>
+&nbsp;        }
+&nbsp;
+<b class="nc">&nbsp;        return userRole;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @property @Argument String email, @Argument String password)
+&nbsp;     *
+&nbsp;     * @brief Gets the password)
+&nbsp;     *
+&nbsp;     * @exception DuplicateException Thrown when a Duplicate error condition occurs.
+&nbsp;     * @exception Exception Thrown when an exception error condition occurs.
+&nbsp;     *
+&nbsp;     * @returns The password)
+&nbsp;     **************************************************************************************************/
+&nbsp;    @MutationMapping
+&nbsp;    public Users createUser(@Argument String first_name, @Argument String last_name,
+&nbsp;            @Argument String email, @Argument String password) {
+&nbsp;
+<b class="fc">&nbsp;        Users user = null;</b>
+&nbsp;
+&nbsp;        try {
+<b class="fc">&nbsp;            if (doesEmailExist(email)) {</b>
+<b class="nc">&nbsp;                throw new DuplicateException(&quot;A user with this email already exists&quot;);</b>
+&nbsp;            } else {
+<b class="fc">&nbsp;                user = new Users(first_name, last_name, email, password);</b>
+<b class="fc">&nbsp;                userRepository.save(user);</b>
+&nbsp;
+&nbsp;                // send welcome emailemail
+<b class="fc">&nbsp;                EmailSender.SendEmail(user, &quot;New User Welcome Message&quot;, String.format(</b>
+<b class="fc">&nbsp;                        &quot;Hello, %s!\nWelcome to SportSphere! We are so glad you joined us.\n\nThe SportSphere team&quot;,</b>
+<b class="fc">&nbsp;                        user.getFirst_name()));</b>
+&nbsp;            }
+<b class="fc">&nbsp;        } catch (Exception e) {</b>
+&nbsp;            // TODO: handle exception
+<b class="nc">&nbsp;            System.out.println(e.getMessage());</b>
+<b class="nc">&nbsp;            logger.error(e.getMessage(), e);</b>
+<b class="nc">&nbsp;            throw e;</b>
+&nbsp;        }
+&nbsp;
+&nbsp;        // user.doOnNext(usersPublisher::publish).subscribe();
+<b class="fc">&nbsp;        usersPublisher.publish(user);</b>
+<b class="fc">&nbsp;        return user;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @property @Argument String last_name, @Argument String email, @Argument String password)
+&nbsp;     *
+&nbsp;     * @brief Gets the password)
+&nbsp;     *
+&nbsp;     * @exception Exception Thrown when an exception error condition occurs.
+&nbsp;     *
+&nbsp;     * @returns The password)
+&nbsp;     **************************************************************************************************/
+&nbsp;    @MutationMapping
+&nbsp;    public Users updateUser(@Argument int id, @Argument String first_name,
+&nbsp;            @Argument String last_name, @Argument String email, @Argument String password) {
+<b class="fc">&nbsp;        Users user = null;</b>
+<b class="fc">&nbsp;        Users result = null;</b>
+&nbsp;        try {
+<b class="fc">&nbsp;            user = userRepository.findById(id);</b>
+<b class="fc">&nbsp;            result = user;</b>
+&nbsp;
+&nbsp;            // only authenticated users are permitted to make changes
+<b class="fc">&nbsp;            if (Auth.isAuthenticated(user, email, password)) {</b>
+<b class="fc">&nbsp;                if (first_name != null) {</b>
+<b class="fc">&nbsp;                    user.setFirst_name(first_name);</b>
+&nbsp;                }
+<b class="fc">&nbsp;                if (last_name != null) {</b>
+<b class="fc">&nbsp;                    user.setLast_name((last_name));</b>
+&nbsp;                }
+<b class="fc">&nbsp;                if (email != null) {</b>
+<b class="fc">&nbsp;                    user.setEmail(email);</b>
+&nbsp;                }
+<b class="fc">&nbsp;                if (password != null) {</b>
+<b class="fc">&nbsp;                    user.setPassword(password);</b>
+&nbsp;                }
+&nbsp;
+<b class="fc">&nbsp;                result = userRepository.save(user);</b>
+&nbsp;            }
+<b class="fc">&nbsp;        } catch (GraphQLException graphQLException) {</b>
+<b class="nc">&nbsp;            logger.error(graphQLException.getMessage(), graphQLException);</b>
+<b class="nc">&nbsp;            throw graphQLException;</b>
+<b class="nc">&nbsp;        } catch (Exception e) {</b>
+&nbsp;            // TODO: handle exception
+<b class="nc">&nbsp;            logger.error(e.getMessage(), e);</b>
+<b class="nc">&nbsp;            throw e;</b>
+&nbsp;        }
+&nbsp;
+<b class="fc">&nbsp;        return result;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @property @Argument String newPassword)
+&nbsp;     *
+&nbsp;     * @brief Gets the new password)
+&nbsp;     *
+&nbsp;     * @returns The new password)
+&nbsp;     **************************************************************************************************/
+&nbsp;    @MutationMapping
+&nbsp;    public Users updatePassword(@Argument String email, @Argument String oldPassword,
+&nbsp;            @Argument String newPassword) {
+<b class="nc">&nbsp;        Users _user = userRepository.findByEmail(email);</b>
+&nbsp;
+<b class="nc">&nbsp;        if (Auth.isAuthenticated(_user, email, oldPassword)) {</b>
+<b class="nc">&nbsp;            _user.setPassword(newPassword);</b>
+<b class="nc">&nbsp;            userRepository.save(_user);</b>
+&nbsp;        }
+&nbsp;
+<b class="nc">&nbsp;        return _user;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @property @Argument String email, @Argument String newPassword)
+&nbsp;     *
+&nbsp;     * @brief Gets the new password)
+&nbsp;     *
+&nbsp;     * @returns The new password)
+&nbsp;     **************************************************************************************************/
+&nbsp;    @MutationMapping
+&nbsp;    public Users updatePasswordByAdmin(@Argument String adminEmail, @Argument String adminPassword,
+&nbsp;            @Argument String email, @Argument String newPassword) {
+&nbsp;
+<b class="nc">&nbsp;        Users _user = userRepository.findByEmail(email);</b>
+<b class="nc">&nbsp;        Users admin = userRepository.findByEmail(adminEmail);</b>
+&nbsp;
+<b class="nc">&nbsp;        if (Auth.isAuthenticated(admin, adminEmail, adminPassword)) {</b>
+<b class="nc">&nbsp;            _user.setPassword(newPassword);</b>
+&nbsp;        }
+&nbsp;
+<b class="nc">&nbsp;        return _user;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn @MutationMapping public Users deleteUser(@Argument int id, @Argument String
+&nbsp;     *     email, @Argument String password)
+&nbsp;     *
+&nbsp;     * @brief Deletes the user
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @exception NotFoundException Thrown when the requested element is not present.
+&nbsp;     * @exception Exception Thrown when an exception error condition occurs.
+&nbsp;     *
+&nbsp;     * @param id The identifier.
+&nbsp;     * @param email The email.
+&nbsp;     * @param password The password.
+&nbsp;     *
+&nbsp;     * @returns The Users.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @MutationMapping
+&nbsp;    public Users deleteUser(@Argument int id, @Argument String email, @Argument String password) {
+<b class="fc">&nbsp;        Users user = null;</b>
+&nbsp;
+&nbsp;        try {
+&nbsp;            // only authenticated users are permitted to make changes
+&nbsp;
+<b class="fc">&nbsp;            user = userRepository.findById(id);</b>
+<b class="fc">&nbsp;            if (user == null) {</b>
+<b class="nc">&nbsp;                throw new NotFoundException(&quot;User with ID&quot; + id + &quot;not found.&quot;);</b>
+&nbsp;            }
+&nbsp;
+<b class="fc">&nbsp;            if (Auth.isAuthenticated(user, email, password)) {</b>
+<b class="fc">&nbsp;                userRepository.deleteById(id);</b>
+<b class="fc">&nbsp;                user = null;</b>
+&nbsp;            }
+&nbsp;
+<b class="fc">&nbsp;        } catch (Exception e) {</b>
+&nbsp;            // TODO: handle exception
+<b class="nc">&nbsp;            logger.error(e.getMessage(), e);</b>
+<b class="nc">&nbsp;            throw e;</b>
+&nbsp;        }
+&nbsp;
+<b class="fc">&nbsp;        return user;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @MutationMapping
+&nbsp;    public Users deleteUserByEmail(@Argument String email, @Argument String password) {
+<b class="fc">&nbsp;        Users user = null;</b>
+&nbsp;
+&nbsp;        try {
+&nbsp;            // only authenticated users are permitted to make changes
+&nbsp;
+<b class="fc">&nbsp;            user = userRepository.findByEmail(email);</b>
+<b class="fc">&nbsp;            if (user == null) {</b>
+<b class="nc">&nbsp;                throw new NotFoundException(&quot;User with ID&quot; + email + &quot;not found.&quot;);</b>
+&nbsp;            }
+&nbsp;
+<b class="fc">&nbsp;            if (Auth.isAuthenticated(user, email, password)) {</b>
+<b class="fc">&nbsp;                userRepository.deleteById(user.getId());</b>
+<b class="fc">&nbsp;                user = null;</b>
+&nbsp;            }
+&nbsp;
+<b class="fc">&nbsp;        } catch (Exception e) {</b>
+&nbsp;            // TODO: handle exception
+<b class="nc">&nbsp;            logger.error(e.getMessage(), e);</b>
+<b class="nc">&nbsp;            throw e;</b>
+&nbsp;        }
+&nbsp;
+<b class="fc">&nbsp;        return user;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @property @Argument permission newRole)
+&nbsp;     *
+&nbsp;     * @brief Gets the new role)
+&nbsp;     *
+&nbsp;     * @returns The new role)
+&nbsp;     **************************************************************************************************/
+&nbsp;    @MutationMapping
+&nbsp;    public Users updateRole(@Argument String email, @Argument String password,
+&nbsp;            @Argument permission newRole) {
+<b class="nc">&nbsp;        Users user = userRepository.findByEmail(email);</b>
+&nbsp;
+<b class="nc">&nbsp;        if (Auth.isAuthenticated(user, email, password) || Auth.isAdmin(user)) {</b>
+<b class="nc">&nbsp;            user.setRole(newRole);</b>
+<b class="nc">&nbsp;            userRepository.save(user);</b>
+&nbsp;        }
+&nbsp;
+<b class="nc">&nbsp;        return user;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @MutationMapping
+&nbsp;    public Users addUserPreference(@Argument int userId, @Argument String email,
+&nbsp;            @Argument String password, @Argument String preferenceValue) {
+<b class="nc">&nbsp;        Users user = userRepository.findById(userId);</b>
+&nbsp;        // UserPreference userPreference = userPreferenceReprository.findByUser(user);
+&nbsp;
+&nbsp;
+&nbsp;        try {
+<b class="nc">&nbsp;            if (Auth.isAuthenticated(user, email, password) || Auth.isAdmin(user)) {</b>
+&nbsp;
+&nbsp;                // userPreference.setPreferenceValue(new PreferenceValue(preferenceValue));
+&nbsp;                // userPreferenceReprository.save(userPreference);
+&nbsp;                // userRepository.save(user);
+&nbsp;            }
+&nbsp;
+<b class="nc">&nbsp;        } catch (Exception e) {</b>
+&nbsp;            // TODO: handle exception
+<b class="nc">&nbsp;            logger.error(e.getMessage(), e);</b>
+<b class="nc">&nbsp;            throw e;</b>
+&nbsp;        }
+&nbsp;
+<b class="nc">&nbsp;        return user;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn @SubscriptionMapping public Flux&lt;String&gt; greetings()
+&nbsp;     *
+&nbsp;     * @brief Gets the greetings
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @returns A Flux&amp;lt;String&amp;gt;
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @SubscriptionMapping
+&nbsp;    public Flux&lt;String&gt; greetings() {
+&nbsp;
+&nbsp;        // Users user = userRepository.findById((id));
+&nbsp;        // return user.getUserStream();
+<b class="fc">&nbsp;        System.out.println(&quot;\n\nsubscribed to greetings\n\n&quot;);</b>
+<b class="fc">&nbsp;        logger.info(&quot;subscribed to greetings&quot;);</b>
+<b class="fc">&nbsp;        return Mono.delay(Duration.ofMillis(200))</b>
+<b class="fc">&nbsp;                .flatMapMany(aLong -&gt; Flux.just(&quot;Hi!&quot;, &quot;Bonjour!&quot;, &quot;Hola!&quot;, &quot;Ciao!&quot;, &quot;Zdravo!&quot;));</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn @SubscriptionMapping public Publisher&lt;Users&gt; greetings2()
+&nbsp;     *
+&nbsp;     * @brief Greetings 2
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @returns A Publisher&amp;lt;Users&amp;gt;
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @SubscriptionMapping
+&nbsp;    public Publisher&lt;Users&gt; subUsers() {
+&nbsp;
+<b class="nc">&nbsp;        logger.info(&quot;subscribed to users&quot;);</b>
+<b class="nc">&nbsp;        return usersPublisher.getUsers();</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn public boolean doesEmailExist(String email)
+&nbsp;     *
+&nbsp;     * @brief Query if &#39;email&#39; does email exist
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @param email The email.
+&nbsp;     *
+&nbsp;     * @returns True if it succeeds, false if it fails.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    public boolean doesEmailExist(String email) {
+<b class="fc">&nbsp;        Users users = userRepository.findByEmail(email);</b>
+<b class="fc">&nbsp;        return users != null;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn @GraphQlExceptionHandler public GraphQLError handle(BindException ex)
+&nbsp;     *
+&nbsp;     * @brief Handles
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @param ex Details of the exception.
+&nbsp;     *
+&nbsp;     * @returns A GraphQLError.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @GraphQlExceptionHandler
+&nbsp;    public GraphQLError handle(BindException ex) {
+<b class="nc">&nbsp;        logger.error(ex.getMessage(), ex);</b>
+<b class="nc">&nbsp;        return GraphQLError.newError().errorType(ErrorType.BAD_REQUEST).message(&quot;...&quot;).build();</b>
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-12-04 13:11</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="interfacecoms309_1_1_users_1_1_user_repository" kind="interface" language="Java" prot="public">
+    <compoundname>coms309::Users::UserRepository</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">JpaRepository&lt; Users, Integer &gt;</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interfacecoms309_1_1_users_1_1_user_repository_1a5d5b337ba67b628c83b1be7c6d740e1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcoms309_1_1_users_1_1_users" kindref="compound">Users</ref></type>
+        <definition>Users coms309.Users.UserRepository::findById</definition>
+        <argsstring>(int id)</argsstring>
+        <name>findById</name>
+        <qualifiedname>coms309.Users.UserRepository.findById</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Searches for the first identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The found identifier. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserRepository.java" line="37" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecoms309_1_1_users_1_1_user_repository_1ac0ebf6e72fe1d4a3d312b22129885198" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcoms309_1_1_users_1_1_users" kindref="compound">Users</ref></type>
+        <definition>Users coms309.Users.UserRepository::findByEmail</definition>
+        <argsstring>(String email)</argsstring>
+        <name>findByEmail</name>
+        <qualifiedname>coms309.Users.UserRepository.findByEmail</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>email</declname>
+        </param>
+        <briefdescription>
+<para>Searches for the first email. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>email</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The email.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The found email. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserRepository.java" line="52" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecoms309_1_1_users_1_1_user_repository_1a82201c9972451a21e4e22c35271c9bcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void coms309.Users.UserRepository::deleteById</definition>
+        <argsstring>(int id)</argsstring>
+        <name>deleteById</name>
+        <qualifiedname>coms309.Users.UserRepository.deleteById</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Deletes the by identifier described by ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserRepository.java" line="67" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecoms309_1_1_users_1_1_user_repository_1a1cc0bbff4f853e2c11c8f2b4a39e29e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcoms309_1_1_users_1_1_users" kindref="compound">Users</ref></type>
+        <definition>Users coms309.Users.UserRepository::findByRole</definition>
+        <argsstring>(int id)</argsstring>
+        <name>findByRole</name>
+        <qualifiedname>coms309.Users.UserRepository.findByRole</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Searches for the first role. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The found role. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserRepository.java" line="82" column="11"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The org.springframework.data.jpa.repository. jpa repository. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The org.springframework.stereotype. repository</para>
+<para>Interface for user repository.</para>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>JpaRepository&lt; Users, Integer &gt;</label>
+      </node>
+      <node id="1">
+        <label>coms309.Users.UserRepository</label>
+        <link refid="interfacecoms309_1_1_users_1_1_user_repository"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>JpaRepository&lt; Users, Integer &gt;</label>
+      </node>
+      <node id="1">
+        <label>coms309.Users.UserRepository</label>
+        <link refid="interfacecoms309_1_1_users_1_1_user_repository"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserRepository.java" line="22" column="18" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserRepository.java" bodystart="22" bodyend="83"/>
+    <listofallmembers>
+      <member refid="interfacecoms309_1_1_users_1_1_user_repository_1a82201c9972451a21e4e22c35271c9bcf" prot="public" virt="non-virtual"><scope>coms309::Users::UserRepository</scope><name>deleteById</name></member>
+      <member refid="interfacecoms309_1_1_users_1_1_user_repository_1ac0ebf6e72fe1d4a3d312b22129885198" prot="public" virt="non-virtual"><scope>coms309::Users::UserRepository</scope><name>findByEmail</name></member>
+      <member refid="interfacecoms309_1_1_users_1_1_user_repository_1a5d5b337ba67b628c83b1be7c6d740e1d" prot="public" virt="non-virtual"><scope>coms309::Users::UserRepository</scope><name>findById</name></member>
+      <member refid="interfacecoms309_1_1_users_1_1_user_repository_1a1cc0bbff4f853e2c11c8f2b4a39e29e7" prot="public" virt="non-virtual"><scope>coms309::Users::UserRepository</scope><name>findByRole</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,21 @@
+query GamePost {
+    getAllGamePosts {
+        id
+        sport {
+            sport_name
+        }
+        created_by {
+            first_name
+            last_name
+        }
+        max_players
+        min_players
+        playing_on
+        created_on
+        is_deleted
+        location {
+            address
+            gps
+        }
+    }
+}

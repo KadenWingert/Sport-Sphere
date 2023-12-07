@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcoms309_1_1_email_1_1_email_sender" kind="class" language="Java" prot="public">
+    <compoundname>coms309::Email::EmailSender</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Exception</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcoms309_1_1_email_1_1_email_sender_1a71e89f39d3197ad995c25a564b5af2bc" prot="private" static="yes" mutable="no">
+        <type>final Logger</type>
+        <definition>final Logger coms309.Email.EmailSender.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>coms309.Email.EmailSender.logger</qualifiedname>
+        <initializer>= LoggerFactory.getLogger(EmailSender.class)</initializer>
+        <briefdescription>
+<para>/** </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The logger </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Email/EmailSender.java" line="41" column="37" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Email/EmailSender.java" bodystart="41" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcoms309_1_1_email_1_1_email_sender_1aefe3f0d7681a539fadf5215793bd7c1c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public static void coms309.Email.EmailSender::SendEmail</definition>
+        <argsstring>(Users user, String subject, String msg)</argsstring>
+        <name>SendEmail</name>
+        <qualifiedname>coms309.Email.EmailSender.SendEmail</qualifiedname>
+        <param>
+          <type>Users</type>
+          <declname>user</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>subject</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Sends an email. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>user</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>subject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Email/EmailSender.java" line="56" column="28" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Email/EmailSender.java" bodystart="56" bodyend="82"/>
+        <references refid="classcoms309_1_1_email_1_1_email_sender_1af6efd3e1970df5b884c747cf65dc8b85" compoundref="_email_sender_8java" startline="99" endline="109">coms309.Email.EmailSender.sendSimpleMessage</references>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_email_1_1_email_sender_1af6efd3e1970df5b884c747cf65dc8b85" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MessageResponse</type>
+        <definition>public static MessageResponse coms309.Email.EmailSender::sendSimpleMessage</definition>
+        <argsstring>(Users user, String subject, String msg)</argsstring>
+        <name>sendSimpleMessage</name>
+        <qualifiedname>coms309.Email.EmailSender.sendSimpleMessage</qualifiedname>
+        <param>
+          <type>Users</type>
+          <declname>user</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>subject</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Sends a simple message. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>user</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>subject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The subject. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A MessageResponse. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Email/EmailSender.java" line="99" column="39" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Email/EmailSender.java" bodystart="99" bodyend="109"/>
+        <referencedby refid="classcoms309_1_1_email_1_1_email_sender_1aefe3f0d7681a539fadf5215793bd7c1c" compoundref="_email_sender_8java" startline="56" endline="82">coms309.Email.EmailSender.SendEmail</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classcoms309_1_1_email_1_1_email_sender_1a23ca0bc996a1db33eb103fdad7b38d84" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>private static String coms309.Email.EmailSender::getApiKey</definition>
+        <argsstring>()</argsstring>
+        <name>getApiKey</name>
+        <qualifiedname>coms309.Email.EmailSender.getApiKey</qualifiedname>
+        <briefdescription>
+<para>Gets API key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>String. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Email/EmailSender.java" line="122" column="31" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Email/EmailSender.java" bodystart="122" bodyend="135"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The java.util. optional. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The coms 309. exceptions. not found exception</para>
+<para>The coms 309. users. users</para>
+<para>The org.slf 4j. logger</para>
+<para>The org.slf 4j. logger factory</para>
+<para>The com.mailgun.api.v 3. mailgun messages API</para>
+<para>The com.mailgun.client. mailgun client</para>
+<para>Message describing the com.mailgun.model.message.</para>
+<para>The com.mailgun.model.message. message response</para>
+<para>You can send up to 300 emails/day from this sandbox server. Next, you should add your own domain so you can send 10000 emails/month for free.</para>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+      <node id="1">
+        <label>coms309.Email.EmailSender</label>
+        <link refid="classcoms309_1_1_email_1_1_email_sender"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+      <node id="1">
+        <label>coms309.Email.EmailSender</label>
+        <link refid="classcoms309_1_1_email_1_1_email_sender"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Email/EmailSender.java" line="38" column="13" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Email/EmailSender.java" bodystart="38" bodyend="136"/>
+    <listofallmembers>
+      <member refid="classcoms309_1_1_email_1_1_email_sender_1a23ca0bc996a1db33eb103fdad7b38d84" prot="private" virt="non-virtual"><scope>coms309::Email::EmailSender</scope><name>getApiKey</name></member>
+      <member refid="classcoms309_1_1_email_1_1_email_sender_1a71e89f39d3197ad995c25a564b5af2bc" prot="private" virt="non-virtual"><scope>coms309::Email::EmailSender</scope><name>logger</name></member>
+      <member refid="classcoms309_1_1_email_1_1_email_sender_1aefe3f0d7681a539fadf5215793bd7c1c" prot="public" virt="non-virtual"><scope>coms309::Email::EmailSender</scope><name>SendEmail</name></member>
+      <member refid="classcoms309_1_1_email_1_1_email_sender_1af6efd3e1970df5b884c747cf65dc8b85" prot="public" virt="non-virtual"><scope>coms309::Email::EmailSender</scope><name>sendSimpleMessage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

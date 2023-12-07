@@ -1,0 +1,9 @@
+<map id="coms309.GamePost.GamePostController" name="coms309.GamePost.GamePostController">
+<area shape="rect" id="Node000001" title="The coms 309. auth. authentication." alt="" coords="109,364,321,727"/>
+<area shape="rect" id="Node000002" href="$interfacecoms309_1_1_game_post_1_1_game_post_repository.html" title="List of java.util.s." alt="" coords="5,156,203,284"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,283,150,347,145,349,123,285"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="17,5,191,91"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="107,105,107,156,101,156,101,105"/>
+<area shape="rect" id="Node000004" href="$classcoms309_1_1_game_post_1_1_game_post_publisher.html" title="The org.reactivestreams. publisher." alt="" coords="227,140,424,300"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="301,301,284,349,279,347,296,299"/>
+</map>

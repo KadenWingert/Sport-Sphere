@@ -1,0 +1,492 @@
+\doxysection{User\+Controller.\+java}
+\hypertarget{_user_controller_8java_source}{}\label{_user_controller_8java_source}\index{C:/Users/Arie/Develop/hb\_215/Backend/src/main/java/coms309/Users/UserController.java@{C:/Users/Arie/Develop/hb\_215/Backend/src/main/java/coms309/Users/UserController.java}}
+\mbox{\hyperlink{_user_controller_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00004}\mbox{\hyperlink{namespacecoms309_1_1_users}{00004}}\ \textcolor{keyword}{package\ }coms309.Users;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00007}00007\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_auth}{Auth}}.\mbox{\hyperlink{classcoms309_1_1_auth_1_1_auth}{Auth}};}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00009}00009\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_comment}{Comment}}.\mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment}{Comment}};}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00011}00011\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_comment}{Comment}}.\mbox{\hyperlink{interfacecoms309_1_1_comment_1_1_comment_repository}{CommentRepository}};}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00013}00013\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_email}{Email}}.\mbox{\hyperlink{classcoms309_1_1_email_1_1_email_sender}{EmailSender}};}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00015}00015\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_enums}{Enums}}.\mbox{\hyperlink{classcoms309_1_1_enums_1_1_permission}{Permission}}.\mbox{\hyperlink{enumcoms309_1_1_enums_1_1_permission_1_1permission}{permission}};}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00017}00017\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_exceptions}{Exceptions}}.\mbox{\hyperlink{classcoms309_1_1_exceptions_1_1_duplicate_exception}{DuplicateException}};}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00019}00019\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_exceptions}{Exceptions}}.\mbox{\hyperlink{classcoms309_1_1_exceptions_1_1_not_found_exception}{NotFoundException}};}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00021}00021\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_game_post}{GamePost}}.\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post}{GamePost}};}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00023}00023\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_game_post}{GamePost}}.\mbox{\hyperlink{interfacecoms309_1_1_game_post_1_1_game_post_repository}{GamePostRepository}};}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00025}00025\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_location}{Location}}.\mbox{\hyperlink{classcoms309_1_1_location_1_1_location}{Location}};}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00027}00027\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_skill_level}{SkillLevel}}.\mbox{\hyperlink{classcoms309_1_1_skill_level_1_1_skill_level}{SkillLevel}};}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00029}00029\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_skill_level}{SkillLevel}}.\mbox{\hyperlink{interfacecoms309_1_1_skill_level_1_1_skill_level_repository}{SkillLevelRepository}};}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00031}00031\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_sport}{Sport}}.\mbox{\hyperlink{classcoms309_1_1_sport_1_1_sport}{Sport}};}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00033}00033\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_sport}{Sport}}.\mbox{\hyperlink{interfacecoms309_1_1_sport_1_1_sport_repository}{SportRepository}};}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00035}00035\ \textcolor{keyword}{import}\ graphql.GraphQLError;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00037}00037\ \textcolor{keyword}{import}\ reactor.core.publisher.Flux;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00039}00039\ \textcolor{keyword}{import}\ reactor.core.publisher.Mono;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00041}00041\ \textcolor{keyword}{import}\ org.springframework.beans.factory.annotation.Autowired;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00043}00043\ \textcolor{keyword}{import}\ org.springframework.graphql.data.method.annotation.Argument;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00045}00045\ \textcolor{keyword}{import}\ org.springframework.graphql.data.method.annotation.GraphQlExceptionHandler;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00047}00047\ \textcolor{keyword}{import}\ org.springframework.graphql.data.method.annotation.MutationMapping;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00049}00049\ \textcolor{keyword}{import}\ org.springframework.graphql.data.method.annotation.QueryMapping;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00051}00051\ \textcolor{keyword}{import}\ org.springframework.graphql.data.method.annotation.SubscriptionMapping;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00053}00053\ \textcolor{keyword}{import}\ org.springframework.graphql.execution.ErrorType;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00055}00055\ \textcolor{keyword}{import}\ org.springframework.stereotype.Controller;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00057}00057\ \textcolor{keyword}{import}\ org.reactivestreams.Publisher;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00059}00059\ \textcolor{keyword}{import}\ org.slf4j.Logger;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00061}00061\ \textcolor{keyword}{import}\ org.slf4j.LoggerFactory;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00063}00063\ \textcolor{keyword}{import}\ java.net.BindException;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00065}00065\ \textcolor{keyword}{import}\ java.time.Duration;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00067}00067\ \textcolor{keyword}{import}\ java.util.*;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00068}00068\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00070}00070\ \textcolor{keyword}{import}\ lombok.AllArgsConstructor;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00072}00072\ \textcolor{keyword}{import}\ lombok.Data;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00074}00074\ \textcolor{keyword}{import}\ lombok.NoArgsConstructor;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00076}00076\ \textcolor{keyword}{import}\ lombok.extern.slf4j.Slf4j;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00078}00078\ \textcolor{keyword}{import}\ org.springframework.boot.SpringApplication;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00080}00080\ \textcolor{keyword}{import}\ org.springframework.boot.autoconfigure.SpringBootApplication;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00082}00082\ \textcolor{keyword}{import}\ org.springframework.context.annotation.Bean;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00084}00084\ \textcolor{keyword}{import}\ org.springframework.context.annotation.Configuration;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00086}00086\ \textcolor{keyword}{import}\ org.springframework.data.annotation.Id;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00088}00088\ \textcolor{keyword}{import}\ org.springframework.data.repository.reactive.ReactiveCrudRepository;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00090}00090\ \textcolor{keyword}{import}\ org.springframework.graphql.client.HttpGraphQlClient;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00092}00092\ \textcolor{keyword}{import}\ org.springframework.graphql.data.method.annotation.*;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00094}00094\ \textcolor{keyword}{import}\ org.springframework.graphql.server.WebGraphQlInterceptor;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00096}00096\ \textcolor{keyword}{import}\ org.springframework.graphql.server.WebGraphQlRequest;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00098}00098\ \textcolor{keyword}{import}\ org.springframework.graphql.server.WebGraphQlResponse;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00100}00100\ \textcolor{keyword}{import}\ org.springframework.stereotype.Component;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00102}00102\ \textcolor{keyword}{import}\ org.springframework.web.bind.annotation.GetMapping;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00104}00104\ \textcolor{keyword}{import}\ org.springframework.web.bind.annotation.RestController;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00105}00105\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00106}00106\ \textcolor{comment}{//\ import\ org.hibernate.annotations.NotFound;}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00107}00107\ \textcolor{comment}{//\ import\ org.hibernate.annotations.NotFoundAction;}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00108}00108\ \textcolor{comment}{//\ import\ jakarta.persistence.*;}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00110}00110\ \textcolor{keyword}{import}\ lombok.Getter;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00112}00112\ \textcolor{keyword}{import}\ lombok.Setter;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00114}00114\ \textcolor{keyword}{import}\ java.util.HashSet;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00116}00116\ \textcolor{keyword}{import}\ java.util.Objects;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00118}00118\ \textcolor{keyword}{import}\ java.util.Set;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00119}00119\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00121}00121\ \textcolor{keyword}{import}\ java.util.ArrayList;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00123}00123\ \textcolor{keyword}{import}\ java.util.Collection;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00125}00125\ \textcolor{keyword}{import}\ java.util.List;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00127}00127\ \textcolor{keyword}{import}\ java.util.Map;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00129}00129\ \textcolor{keyword}{import}\ java.util.function.Function;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00130}00130\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00131}00131\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00132}00132\ \textcolor{comment}{/**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00142}00142\ \textcolor{comment}{/**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00151}00151\ @Controller}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00152}\mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller}{00152}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller}{UserController}}\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00153}00153\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00154}00154\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00163}00163\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00171}00171\ \ \ \ \ @Autowired}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00172}00172\ \ \ \ \ \mbox{\hyperlink{interfacecoms309_1_1_users_1_1_user_repository}{UserRepository}}\ userRepository;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00173}00173\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00174}00174\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00183}00183\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00191}00191\ \ \ \ \ @Autowired}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00192}00192\ \ \ \ \ GamePostRepository\ gamePostRepository;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00193}00193\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00194}00194\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00203}00203\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00211}00211\ \ \ \ \ @Autowired}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00212}00212\ \ \ \ \ SportRepository\ sportRepository;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00213}00213\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00214}00214\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00223}00223\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00231}00231\ \ \ \ \ @Autowired}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00232}00232\ \ \ \ \ CommentRepository\ commentRepository;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00233}00233\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00234}00234\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00243}00243\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00251}00251\ \ \ \ \ @Autowired}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00252}00252\ \ \ \ \ SkillLevelRepository\ skillLevelRepository;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00253}00253\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00255}00255\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ \textcolor{keyword}{final}\ Logger\ logger\ =\ LoggerFactory.getLogger(\mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller}{UserController}}.class);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00256}00256\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00257}00257\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00265}00265\ \ \ \ \ @Autowired}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00266}00266\ \ \ \ \ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_publisher}{UsersPublisher}}\ usersPublisher;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00267}00267\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00268}00268\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00280}00280\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00291}00291\ \ \ \ \ @MutationMapping}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00292}\mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller_a78f0085408943daa6614318d6d326d6e}{00292}}\ \ \ \ \ \textcolor{keyword}{public}\ String\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller_a78f0085408943daa6614318d6d326d6e}{createDummyData}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00293}00293\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00294}00294\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00295}00295\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}}\ u1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}}(\textcolor{stringliteral}{"{}Mark"{}},\ \textcolor{stringliteral}{"{}Heath"{}},\ \textcolor{stringliteral}{"{}Mheath@gmail.com"{}},\ \textcolor{stringliteral}{"{}batman100"{}});}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00296}00296\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}}\ u2\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}}(\textcolor{stringliteral}{"{}Phil"{}},\ \textcolor{stringliteral}{"{}Kittle"{}},\ \textcolor{stringliteral}{"{}pkittle@yahoo.com"{}},\ \textcolor{stringliteral}{"{}goState"{}});}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00297}00297\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}}\ u3\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}}(\textcolor{stringliteral}{"{}Jack"{}},\ \textcolor{stringliteral}{"{}Purdy"{}},\ \textcolor{stringliteral}{"{}jpurdy@fakeEmail,com"{}},\ \textcolor{stringliteral}{"{}redhouse12"{}});}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00298}00298\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}}\ u4\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}}(\textcolor{stringliteral}{"{}George"{}},\ \textcolor{stringliteral}{"{}Watt"{}},\ \textcolor{stringliteral}{"{}george.watt@iastate.edu"{}},\ \textcolor{stringliteral}{"{}steelers43football"{}});}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00299}00299\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00300}00300\ \ \ \ \ \ \ \ \ userRepository.save(u1);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00301}00301\ \ \ \ \ \ \ \ \ userRepository.save(u2);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00302}00302\ \ \ \ \ \ \ \ \ userRepository.save(u3);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00303}00303\ \ \ \ \ \ \ \ \ userRepository.save(u4);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00304}00304\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00305}00305\ \ \ \ \ \ \ \ \ SkillLevel\ sk1\ =\ \textcolor{keyword}{new}\ SkillLevel(9,\ u1);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00306}00306\ \ \ \ \ \ \ \ \ SkillLevel\ sk2\ =\ \textcolor{keyword}{new}\ SkillLevel(8,\ u1);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00307}00307\ \ \ \ \ \ \ \ \ SkillLevel\ sk3\ =\ \textcolor{keyword}{new}\ SkillLevel(7,\ u2);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00308}00308\ \ \ \ \ \ \ \ \ SkillLevel\ sk4\ =\ \textcolor{keyword}{new}\ SkillLevel(3,\ u3);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00309}00309\ \ \ \ \ \ \ \ \ SkillLevel\ sk5\ =\ \textcolor{keyword}{new}\ SkillLevel(10,\ u3);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00310}00310\ \ \ \ \ \ \ \ \ SkillLevel\ sk6\ =\ \textcolor{keyword}{new}\ SkillLevel(3,\ u3);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00311}00311\ \ \ \ \ \ \ \ \ SkillLevel\ sk7\ =\ \textcolor{keyword}{new}\ SkillLevel(8,\ u3);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00312}00312\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00313}00313\ \ \ \ \ \ \ \ \ skillLevelRepository.save(sk1);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00314}00314\ \ \ \ \ \ \ \ \ skillLevelRepository.save(sk2);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00315}00315\ \ \ \ \ \ \ \ \ skillLevelRepository.save(sk3);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00316}00316\ \ \ \ \ \ \ \ \ skillLevelRepository.save(sk4);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00317}00317\ \ \ \ \ \ \ \ \ skillLevelRepository.save(sk5);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00318}00318\ \ \ \ \ \ \ \ \ skillLevelRepository.save(sk6);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00319}00319\ \ \ \ \ \ \ \ \ skillLevelRepository.save(sk7);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00320}00320\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00321}00321\ \ \ \ \ \ \ \ \ Sport\ s1\ =\ \textcolor{keyword}{new}\ Sport(\textcolor{stringliteral}{"{}Basketball"{}});}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00322}00322\ \ \ \ \ \ \ \ \ Sport\ s2\ =\ \textcolor{keyword}{new}\ Sport(\textcolor{stringliteral}{"{}Pickleball"{}});}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00323}00323\ \ \ \ \ \ \ \ \ Sport\ s3\ =\ \textcolor{keyword}{new}\ Sport(\textcolor{stringliteral}{"{}Football"{}});}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00324}00324\ \ \ \ \ \ \ \ \ Sport\ s4\ =\ \textcolor{keyword}{new}\ Sport(\textcolor{stringliteral}{"{}Spikeball"{}});}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00325}00325\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00326}00326\ \ \ \ \ \ \ \ \ sportRepository.save(s1);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00327}00327\ \ \ \ \ \ \ \ \ sportRepository.save(s2);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00328}00328\ \ \ \ \ \ \ \ \ sportRepository.save(s3);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00329}00329\ \ \ \ \ \ \ \ \ sportRepository.save(s4);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00330}00330\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00331}00331\ \ \ \ \ \ \ \ \ sk1.setSport(s1);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00332}00332\ \ \ \ \ \ \ \ \ sk2.setSport(s2);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00333}00333\ \ \ \ \ \ \ \ \ sk3.setSport(s3);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00334}00334\ \ \ \ \ \ \ \ \ sk4.setSport(s4);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00335}00335\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00336}00336\ \ \ \ \ \ \ \ \ s1.setSkillLevel(sk1);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00337}00337\ \ \ \ \ \ \ \ \ s2.setSkillLevel(sk2);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00338}00338\ \ \ \ \ \ \ \ \ s3.setSkillLevel(sk3);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00339}00339\ \ \ \ \ \ \ \ \ s4.setSkillLevel(sk4);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00340}00340\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00341}00341\ \ \ \ \ \ \ \ \ skillLevelRepository.save(sk1);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00342}00342\ \ \ \ \ \ \ \ \ skillLevelRepository.save(sk2);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00343}00343\ \ \ \ \ \ \ \ \ skillLevelRepository.save(sk3);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00344}00344\ \ \ \ \ \ \ \ \ skillLevelRepository.save(sk4);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00345}00345\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00346}00346\ \ \ \ \ \ \ \ \ sportRepository.save(s1);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00347}00347\ \ \ \ \ \ \ \ \ sportRepository.save(s2);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00348}00348\ \ \ \ \ \ \ \ \ sportRepository.save(s3);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00349}00349\ \ \ \ \ \ \ \ \ sportRepository.save(s4);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00350}00350\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00351}00351\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00352}00352\ \ \ \ \ \ \ \ \ GamePost\ gp1\ =\ \textcolor{keyword}{new}\ GamePost(s1,\ userRepository.findById(3),\ 24,\ 20,\ \textcolor{stringliteral}{"{}1/12/2023"{}},}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00353}00353\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}29/09/1988"{}},\ \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00354}00354\ \ \ \ \ \ \ \ \ GamePost\ gp2\ =}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00355}00355\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ GamePost(s2,\ userRepository.findById(1),\ 16,\ 2,\ \textcolor{stringliteral}{"{}1/2/2023"{}},\ \textcolor{stringliteral}{"{}1/02/2023"{}},\ \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00356}00356\ \ \ \ \ \ \ \ \ GamePost\ gp3\ =\ \textcolor{keyword}{new}\ GamePost(s3,\ userRepository.findById(1),\ 10,\ 8,\ \textcolor{stringliteral}{"{}10/08/2023"{}},}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00357}00357\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}10/25/2023"{}},\ \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00358}00358\ \ \ \ \ \ \ \ \ GamePost\ gp4\ =\ \textcolor{keyword}{new}\ GamePost(s4,\ userRepository.findById(4),\ 6,\ 3,\ \textcolor{stringliteral}{"{}11/1/2023"{}},\ \textcolor{stringliteral}{"{}11/09/2023"{}},}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00359}00359\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00360}00360\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00361}00361\ \ \ \ \ \ \ \ \ gp1.setSport(s1);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00362}00362\ \ \ \ \ \ \ \ \ gp2.setSport(s2);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00363}00363\ \ \ \ \ \ \ \ \ gp3.setSport(s3);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00364}00364\ \ \ \ \ \ \ \ \ gp4.setSport(s4);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00365}00365\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00366}00366\ \ \ \ \ \ \ \ \ Set<GamePost>\ gamePostSet1\ =\ \textcolor{keyword}{new}\ HashSet<>();}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00367}00367\ \ \ \ \ \ \ \ \ gamePostSet1.add(gp1);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00368}00368\ \ \ \ \ \ \ \ \ s1.setGamePosts(gamePostSet1);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00369}00369\ \ \ \ \ \ \ \ \ Set<GamePost>\ gamePostSet2\ =\ \textcolor{keyword}{new}\ HashSet<>();}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00370}00370\ \ \ \ \ \ \ \ \ gamePostSet2.add(gp2);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00371}00371\ \ \ \ \ \ \ \ \ s1.setGamePosts(gamePostSet2);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00372}00372\ \ \ \ \ \ \ \ \ Set<GamePost>\ gamePostSet3\ =\ \textcolor{keyword}{new}\ HashSet<>();}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00373}00373\ \ \ \ \ \ \ \ \ gamePostSet3.add(gp3);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00374}00374\ \ \ \ \ \ \ \ \ s1.setGamePosts(gamePostSet3);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00375}00375\ \ \ \ \ \ \ \ \ Set<GamePost>\ gamePostSet4\ =\ \textcolor{keyword}{new}\ HashSet<>();}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00376}00376\ \ \ \ \ \ \ \ \ gamePostSet4.add(gp4);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00377}00377\ \ \ \ \ \ \ \ \ s1.setGamePosts(gamePostSet4);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00378}00378\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00379}00379\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00380}00380\ \ \ \ \ \ \ \ \ s1.getGamePosts().add(gp1);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00381}00381\ \ \ \ \ \ \ \ \ s2.getGamePosts().add(gp2);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00382}00382\ \ \ \ \ \ \ \ \ s3.getGamePosts().add(gp3);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00383}00383\ \ \ \ \ \ \ \ \ s4.getGamePosts().add(gp4);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00384}00384\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00385}00385\ \ \ \ \ \ \ \ \ gamePostRepository.save(gp1);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00386}00386\ \ \ \ \ \ \ \ \ gamePostRepository.save(gp2);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00387}00387\ \ \ \ \ \ \ \ \ gamePostRepository.save(gp3);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00388}00388\ \ \ \ \ \ \ \ \ gamePostRepository.save(gp4);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00389}00389\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00390}00390\ \ \ \ \ \ \ \ \ gp1.setPlayersSignedUp(gp1.getCreated\_by());}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00391}00391\ \ \ \ \ \ \ \ \ gp1.setPlayersSignedUp(u2);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00392}00392\ \ \ \ \ \ \ \ \ gp1.setLocation(\textcolor{keyword}{new}\ Location(\textcolor{stringliteral}{"{}28\ South\ Duff\ ave"{}},\ \textcolor{stringliteral}{"{}34,\ 23"{}},\ gp1));}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00393}00393\ \ \ \ \ \ \ \ \ gp2.setPlayersSignedUp(gp2.getCreated\_by());}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00394}00394\ \ \ \ \ \ \ \ \ gp2.setLocation(\textcolor{keyword}{new}\ Location(\textcolor{stringliteral}{"{}4730\ Beach\ Road"{}},\ \textcolor{stringliteral}{"{}756,\ 21"{}},\ gp2));}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00395}00395\ \ \ \ \ \ \ \ \ gp3.setPlayersSignedUp(gp3.getCreated\_by());}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00396}00396\ \ \ \ \ \ \ \ \ gp3.setLocation(\textcolor{keyword}{new}\ Location(\textcolor{stringliteral}{"{}PGA\ Drive"{}},\ \textcolor{stringliteral}{"{}309,\ 24"{}},\ gp3));}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00397}00397\ \ \ \ \ \ \ \ \ gp4.setPlayersSignedUp(gp4.getCreated\_by());}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00398}00398\ \ \ \ \ \ \ \ \ gp4.setLocation(\textcolor{keyword}{new}\ Location(\textcolor{stringliteral}{"{}New\ Orleans\ road"{}},\ \textcolor{stringliteral}{"{}894,\ 124"{}},\ gp4));}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00399}00399\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00400}00400\ \ \ \ \ \ \ \ \ Comment\ c1\ =\ \textcolor{keyword}{new}\ Comment(\textcolor{stringliteral}{"{}This\ event\ will\ be\ held\ inside"{}},\ gp2);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00401}00401\ \ \ \ \ \ \ \ \ Comment\ c2\ =\ \textcolor{keyword}{new}\ Comment(\textcolor{stringliteral}{"{}I\ will\ be\ there"{}},\ gp2);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00402}00402\ \ \ \ \ \ \ \ \ Comment\ c3\ =\ \textcolor{keyword}{new}\ Comment(\textcolor{stringliteral}{"{}This\ is\ a\ comment"{}},\ gp3);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00403}00403\ \ \ \ \ \ \ \ \ Comment\ c4\ =\ \textcolor{keyword}{new}\ Comment(\textcolor{stringliteral}{"{}I\ will\ be\ there\ later"{}},\ gp1);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00404}00404\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00405}00405\ \ \ \ \ \ \ \ \ commentRepository.save(c1);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00406}00406\ \ \ \ \ \ \ \ \ commentRepository.save(c2);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00407}00407\ \ \ \ \ \ \ \ \ commentRepository.save(c3);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00408}00408\ \ \ \ \ \ \ \ \ commentRepository.save(c4);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00409}00409\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00410}00410\ \ \ \ \ \ \ \ \ gamePostRepository.save(gp1);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00411}00411\ \ \ \ \ \ \ \ \ gamePostRepository.save(gp2);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00412}00412\ \ \ \ \ \ \ \ \ gamePostRepository.save(gp3);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00413}00413\ \ \ \ \ \ \ \ \ gamePostRepository.save(gp4);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00414}00414\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00415}00415\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Successfully\ created\ dummy\ data"{}};}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00416}00416\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00417}00417\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00418}00418\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00430}00430\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00441}00441\ \ \ \ \ @QueryMapping}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00442}\mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller_af77bb8407daf80d1ac85649ed8dae69a}{00442}}\ \ \ \ \ \textcolor{keyword}{public}\ List<Users>\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller_af77bb8407daf80d1ac85649ed8dae69a}{getAllUsers}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00443}00443\ \ \ \ \ \ \ \ \ System.out.println(\textcolor{stringliteral}{"{}Got\ a\ request"{}});}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00444}00444\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00445}00445\ \ \ \ \ \ \ \ \ logger.info(\textcolor{stringliteral}{"{}getAllUsers\ request"{}});}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00446}00446\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ userRepository.findAll();}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00447}00447\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00448}00448\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00449}00449\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00465}00465\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00480}00480\ \ \ \ \ @QueryMapping}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00481}\mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller_a202fad0e09356aef167af14fa2d8d26a}{00481}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}}\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller_a202fad0e09356aef167af14fa2d8d26a}{getUserById}}(@Argument\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id})\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00482}00482\ \ \ \ \ \ \ \ \ System.out.println(\textcolor{stringliteral}{"{}Got\ a\ request"{}});}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00483}00483\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00484}00484\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}}\ user\ =\ userRepository.findById((\textcolor{keywordtype}{id}));}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00485}00485\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (user\ ==\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00486}00486\ \ \ \ \ \ \ \ \ \ \ \ \ logger.debug(\textcolor{stringliteral}{"{}User\ with\ ID\ "{}}\ +\ \textcolor{keywordtype}{id}\ +\ \textcolor{stringliteral}{"{}\ not\ found"{}});}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00487}00487\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ NotFoundException(\textcolor{stringliteral}{"{}User\ with\ ID\ "{}}\ +\ \textcolor{keywordtype}{id}\ +\ \textcolor{stringliteral}{"{}\ not\ found"{}});}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00488}00488\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00489}00489\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ user;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00490}00490\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00491}00491\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00492}00492\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00508}00508\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00523}00523\ \ \ \ \ @QueryMapping}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00524}\mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller_a54aee816f10e06b95d3ee0e6db61181a}{00524}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}}\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller_a54aee816f10e06b95d3ee0e6db61181a}{getUserByEmail}}(@Argument\ String\ email)\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00525}00525\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00526}00526\ \ \ \ \ \ \ \ \ System.out.println(\textcolor{stringliteral}{"{}Got\ a\ request"{}});}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00527}00527\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}}\ user\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00528}00528\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00529}00529\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00530}00530\ \ \ \ \ \ \ \ \ \ \ \ \ user\ =\ userRepository.findByEmail(email);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00531}00531\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00532}00532\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (Exception\ e)\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00533}00533\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ TODO:\ handle\ exception}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00534}00534\ \ \ \ \ \ \ \ \ \ \ \ \ logger.error(email,\ e);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00535}00535\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ e;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00536}00536\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00537}00537\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00538}00538\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ user;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00539}00539\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00540}00540\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00541}00541\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00559}00559\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00575}00575\ \ \ \ \ @QueryMapping}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00576}\mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller_a98878f05406359f0372c930f085948d2}{00576}}\ \ \ \ \ \textcolor{keyword}{public}\ permission\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller_a98878f05406359f0372c930f085948d2}{getUserRole}}(@Argument\ String\ email,\ @Argument\ String\ password)\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00577}00577\ \ \ \ \ \ \ \ \ System.out.println(\textcolor{stringliteral}{"{}Got\ a\ userRole\ request"{}});}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00578}00578\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00579}00579\ \ \ \ \ \ \ \ \ permission\ userRole\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00580}00580\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00581}00581\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00582}00582\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}}\ user\ =\ userRepository.findByEmail(email);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00583}00583\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00584}00584\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (Auth.isAuthenticated(user,\ email,\ password))\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00585}00585\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ userRole\ =\ user.\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a0a63fd9ffe103bf74018a9dc7a9b96b4}{getRole}}();}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00586}00586\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00587}00587\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00588}00588\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (Exception\ e)\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00589}00589\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ TODO:\ handle\ exception}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00590}00590\ \ \ \ \ \ \ \ \ \ \ \ \ logger.error(e.getMessage(),\ e);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00591}00591\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ e;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00592}00592\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00593}00593\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00594}00594\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ userRole;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00595}00595\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00596}00596\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00597}00597\ \ \ \ \ @MutationMapping}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00598}00598\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}}\ createUser(@Argument\ String\ first\_name,\ @Argument\ String\ last\_name,}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00599}00599\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00600}00600\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00612}00612\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00623}00623\ \ \ \ \ \ \ \ \ \ \ \ \ @Argument\ String\ email,\ @Argument\ String\ password)\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00624}00624\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00625}00625\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}}\ user\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00626}00626\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00627}00627\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00628}00628\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller_ac8ca53d16a566e6325c3d9e5392b3f9c}{doesEmailExist}}(email))\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00629}00629\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ DuplicateException(\textcolor{stringliteral}{"{}A\ user\ with\ this\ email\ already\ exists"{}});}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00630}00630\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00631}00631\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00632}00632\ \ \ \ \ \ \ \ \ \ \ \ \ user\ =\ \textcolor{keyword}{new}\ Users(first\_name,\ last\_name,\ email,\ password);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00633}00633\ \ \ \ \ \ \ \ \ \ \ \ \ userRepository.save(user);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00634}00634\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00635}00635\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ send\ welcome\ emailemail}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00636}00636\ \ \ \ \ \ \ \ \ \ \ \ \ EmailSender.SendEmail(user,\ \textcolor{stringliteral}{"{}New\ User\ Welcome\ Message"{}},\ String.format(}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00637}00637\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Hello,\ \%s!\(\backslash\)nWelcome\ to\ SportSphere!\ We\ are\ so\ glad\ you\ joined\ us.\(\backslash\)n\(\backslash\)nThe\ SportSphere\ team"{}},}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00638}00638\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ user.\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a7ab60839a383c7888269bfb8760da998}{getFirst\_name}}()));}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00639}00639\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00640}00640\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (Exception\ e)\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00641}00641\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ TODO:\ handle\ exception}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00642}00642\ \ \ \ \ \ \ \ \ \ \ \ \ System.out.println(e.getMessage());}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00643}00643\ \ \ \ \ \ \ \ \ \ \ \ \ logger.error(e.getMessage(),\ e);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00644}00644\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ e;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00645}00645\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00646}00646\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00647}00647\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ user.doOnNext(usersPublisher::publish).subscribe();}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00648}00648\ \ \ \ \ \ \ \ \ usersPublisher.publish(user);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00649}00649\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ user;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00650}00650\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00651}00651\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00652}00652\ \ \ \ \ @MutationMapping}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00653}00653\ \ \ \ \ \textcolor{keyword}{public}\ Users\ updateUser(@Argument\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ @Argument\ String\ first\_name,}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00654}00654\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00655}00655\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00667}00667\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00677}00677\ \ \ \ \ \ \ \ \ \ \ \ \ @Argument\ String\ last\_name,\ @Argument\ String\ email,\ @Argument\ String\ password)\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00678}00678\ \ \ \ \ \ \ \ \ Users\ user\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00679}00679\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00680}00680\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00681}00681\ \ \ \ \ \ \ \ \ \ \ \ \ user\ =\ userRepository.findById(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00682}00682\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00683}00683\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ only\ authenticated\ users\ are\ permitted\ to\ make\ changes}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00684}00684\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (Auth.isAuthenticated(user,\ email,\ password))\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00685}00685\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (first\_name\ !=\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00686}00686\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ user.\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a83e203151acbb7eac4dfc09ba79ed952}{setFirst\_name}}(first\_name);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00687}00687\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00688}00688\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (last\_name\ !=\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00689}00689\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ user.setLast\_name((last\_name));}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00690}00690\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00691}00691\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (email\ !=\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00692}00692\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ user.setEmail(email);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00693}00693\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00694}00694\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (password\ !=\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00695}00695\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ user.setPassword(password);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00696}00696\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00697}00697\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ userRepository.save(user);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00698}00698\ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00699}00699\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ user\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00700}00700\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00701}00701\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (Exception\ e)\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00702}00702\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ TODO:\ handle\ exception}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00703}00703\ \ \ \ \ \ \ \ \ \ \ \ \ logger.error(e.getMessage(),\ e);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00704}00704\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ e;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00705}00705\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00706}00706\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00707}00707\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ user;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00708}00708\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00709}00709\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00710}00710\ \ \ \ \ @MutationMapping}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00711}00711\ \ \ \ \ \textcolor{keyword}{public}\ Users\ updatePassword(@Argument\ String\ email,\ @Argument\ String\ oldPassword,}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00712}00712\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00713}00713\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00722}00722\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00730}00730\ \ \ \ \ \ \ \ \ \ \ \ \ @Argument\ String\ newPassword)\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00731}00731\ \ \ \ \ \ \ \ \ Users\ \_user\ =\ userRepository.findByEmail(email);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00732}00732\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00733}00733\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (Auth.isAuthenticated(\_user,\ email,\ oldPassword))\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00734}00734\ \ \ \ \ \ \ \ \ \ \ \ \ \_user.setPassword(newPassword);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00735}00735\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00736}00736\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00737}00737\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \_user;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00738}00738\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00739}00739\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00740}00740\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00748}00748\ \ \ \ \ @MutationMapping}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00749}00749\ \ \ \ \ \textcolor{keyword}{public}\ Users\ updatePasswordByAdmin(@Argument\ String\ adminEmail,\ @Argument\ String\ adminPassword,}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00750}00750\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00751}00751\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00759}00759\ \ \ \ \ \ \ \ \ \ \ \ \ @Argument\ String\ email,\ @Argument\ String\ newPassword)\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00760}00760\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00761}00761\ \ \ \ \ \ \ \ \ Users\ \_user\ =\ userRepository.findByEmail(email);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00762}00762\ \ \ \ \ \ \ \ \ Users\ admin\ =\ userRepository.findByEmail(adminEmail);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00763}00763\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00764}00764\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (Auth.isAuthenticated(admin,\ adminEmail,\ adminPassword))\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00765}00765\ \ \ \ \ \ \ \ \ \ \ \ \ \_user.setPassword(newPassword);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00766}00766\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00767}00767\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00768}00768\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \_user;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00769}00769\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00770}00770\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00771}00771\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00791}00791\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00809}00809\ \ \ \ \ @MutationMapping}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00810}\mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller_a5c81d4016bb038d21cf4280d7ca36e85}{00810}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}}\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller_a5c81d4016bb038d21cf4280d7ca36e85}{deleteUser}}(@Argument\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ @Argument\ String\ email,\ @Argument\ String\ password)\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00811}00811\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}}\ user\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00812}00812\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00813}00813\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00814}00814\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ only\ authenticated\ users\ are\ permitted\ to\ make\ changes}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00815}00815\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00816}00816\ \ \ \ \ \ \ \ \ \ \ \ \ user\ =\ userRepository.findById(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00817}00817\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (user\ ==\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00818}00818\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ NotFoundException(\textcolor{stringliteral}{"{}User\ with\ ID"{}}\ +\ \textcolor{keywordtype}{id}\ +\ \textcolor{stringliteral}{"{}not\ found."{}});}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00819}00819\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00820}00820\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00821}00821\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (Auth.isAuthenticated(user,\ email,\ password))\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00822}00822\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ userRepository.deleteById(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00823}00823\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ user\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00824}00824\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00825}00825\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00826}00826\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (Exception\ e)\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00827}00827\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ TODO:\ handle\ exception}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00828}00828\ \ \ \ \ \ \ \ \ \ \ \ \ logger.error(e.getMessage(),\ e);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00829}00829\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ e;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00830}00830\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00831}00831\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00832}00832\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ user;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00833}00833\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00834}00834\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00835}00835\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00843}00843\ \ \ \ \ @MutationMapping}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00844}00844\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}}\ updateRole(@Argument\ String\ email,\ @Argument\ String\ password,}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00845}00845\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00846}00846\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00854}00854\ \ \ \ \ \ \ \ \ \ \ \ \ @Argument\ permission\ newRole)\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00855}00855\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}}\ user\ =\ userRepository.findByEmail(email);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00856}00856\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00857}00857\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (Auth.isAuthenticated(user,\ email,\ password)\ ||\ Auth.isAdmin(user))\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00858}00858\ \ \ \ \ \ \ \ \ \ \ \ \ user.\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_adad243d1804bf82ee68b642ef140c9e2}{setRole}}(newRole);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00859}00859\ \ \ \ \ \ \ \ \ \ \ \ \ userRepository.save(user);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00860}00860\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00861}00861\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00862}00862\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ user;}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00863}00863\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00864}00864\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00865}00865\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00877}00877\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00888}00888\ \ \ \ \ @SubscriptionMapping}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00889}\mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller_a791c7e700ba5c3148bf3d8357ddea9ee}{00889}}\ \ \ \ \ \textcolor{keyword}{public}\ Flux<String>\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller_a791c7e700ba5c3148bf3d8357ddea9ee}{greetings}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00890}00890\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00891}00891\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Users\ user\ =\ userRepository.findById((id));}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00892}00892\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ return\ user.getUserStream();}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00893}00893\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ Mono.delay(Duration.ofMillis(50))}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00894}00894\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .flatMapMany(aLong\ -\/>\ Flux.just(\textcolor{stringliteral}{"{}Hi!"{}},\ \textcolor{stringliteral}{"{}Bonjour!"{}},\ \textcolor{stringliteral}{"{}Hola!"{}},\ \textcolor{stringliteral}{"{}Ciao!"{}},\ \textcolor{stringliteral}{"{}Zdravo!"{}}));}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00895}00895\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00896}00896\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00897}00897\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00908}00908\ \ \ \ \ @SubscriptionMapping}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00909}\mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller_a0413f6c2a73a72bb17d9dfafe6715aa2}{00909}}\ \ \ \ \ \textcolor{keyword}{public}\ Publisher<Users>\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller_a0413f6c2a73a72bb17d9dfafe6715aa2}{greetings2}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00910}00910\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00911}00911\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Users\ user\ =\ userRepository.findById((id));}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00912}00912\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ return\ user.getUserStream();}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00913}00913\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ usersPublisher.getUsers();}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00914}00914\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00915}00915\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00916}00916\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00930}00930\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00943}\mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller_ac8ca53d16a566e6325c3d9e5392b3f9c}{00943}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{boolean}\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller_ac8ca53d16a566e6325c3d9e5392b3f9c}{doesEmailExist}}(String\ email)\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00944}00944\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}}\ users\ =\ userRepository.findByEmail(email);}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00945}00945\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ users\ !=\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00946}00946\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00947}00947\ }
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00948}00948\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00962}00962\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00975}00975\ \ \ \ \ @GraphQlExceptionHandler}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00976}\mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller_af52bfc2347fe3d4d68d89723dfe43526}{00976}}\ \ \ \ \ \textcolor{keyword}{public}\ GraphQLError\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller_af52bfc2347fe3d4d68d89723dfe43526}{handle}}(BindException\ ex)\ \{}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00977}00977\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ GraphQLError.newError().errorType(ErrorType.BAD\_REQUEST).message(\textcolor{stringliteral}{"{}..."{}}).build();}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00978}00978\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_user_controller_8java_source_l00979}00979\ \}}
+
+\end{DoxyCode}

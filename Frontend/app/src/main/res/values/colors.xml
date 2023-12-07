@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue1">#3490de</color>
+    <color name="blue2">#60a8e5</color>
+    <color name="blue3">#1f76c0</color>
+    <color name="blue4">#8cc0ec</color>
+    <color name="lightGrey">#F1F1F1</color>
+    <color name="white">#ffffff</color>
+    <color name="background">#DCDCDC</color>
+    <color name ="gray">#F3F3F3</color>
+    <color name="black">#FF000000</color>
+    <color name="offwhite">#F8F8F8</color>
+    <color name="orange">#DE8234</color>
+    <color name="cancelButton">#CCC6C6</color>
+    <color name="deleteButton">#a32121</color>
+    <color name="leaveButton">#a13737</color>
+    <color name="editButton">#bf7878</color>
+    <color name="joinButton">#39E050</color>
+    <color name="basketball">#FFF3DF</color>
+    <color name="pickleball">#FBFCB2</color>
+    <color name="football">#DFFFE4</color>
+    <color name="spikeball">#FFE3DF</color>
+    <color name="tennis">#cfcfca</color>
+    <color name="volleyball">#E4DFFF</color>
+    <color name="softball">#ffffff</color>
+    <color name="hockey">#F6C7DE</color>
+
+</resources>

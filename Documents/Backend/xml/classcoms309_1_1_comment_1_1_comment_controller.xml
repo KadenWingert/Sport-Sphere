@@ -1,0 +1,561 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcoms309_1_1_comment_1_1_comment_controller" kind="class" language="Java" prot="public">
+    <compoundname>coms309::Comment::CommentController</compoundname>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcoms309_1_1_comment_1_1_comment_controller_1a0f09fa787fb7c8a2f7acb46d4819399b" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecoms309_1_1_comment_1_1_comment_repository" kindref="compound">CommentRepository</ref></type>
+        <definition>Autowired CommentRepository coms309.Comment.CommentController::commentRepository</definition>
+        <argsstring></argsstring>
+        <name>commentRepository</name>
+        <qualifiedname>coms309.Comment.CommentController.commentRepository</qualifiedname>
+        <briefdescription>
+<para>Gets the comment repository. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The comment repository. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentController.java" line="80" column="23" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentController.java" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_comment_1_1_comment_controller_1af0398d2c5283de10973ec21d45c53736" prot="package" static="no" mutable="no">
+        <type>GamePostRepository</type>
+        <definition>Autowired GamePostRepository coms309.Comment.CommentController::gamePostRepository</definition>
+        <argsstring></argsstring>
+        <name>gamePostRepository</name>
+        <qualifiedname>coms309.Comment.CommentController.gamePostRepository</qualifiedname>
+        <briefdescription>
+<para>Gets the game post repository. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The game post repository. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentController.java" line="100" column="24" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentController.java" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_comment_1_1_comment_controller_1ac92e98fe9af87b3d301bf6cddb08153a" prot="package" static="no" mutable="no">
+        <type><ref refid="classcoms309_1_1_comment_1_1_comment_publisher" kindref="compound">CommentPublisher</ref></type>
+        <definition>Autowired CommentPublisher coms309.Comment.CommentController::commentPublisher</definition>
+        <argsstring></argsstring>
+        <name>commentPublisher</name>
+        <qualifiedname>coms309.Comment.CommentController.commentPublisher</qualifiedname>
+        <briefdescription>
+<para>Gets the comment publisher. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The comment publisher. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentController.java" line="111" column="22" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentController.java" bodystart="111" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcoms309_1_1_comment_1_1_comment_controller_1adcba0e094c7738cbcd02e6bb2a5562f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcoms309_1_1_comment_1_1_comment" kindref="compound">Comment</ref> &gt;</type>
+        <definition>QueryMapping public List&lt; Comment &gt; coms309.Comment.CommentController::getAllComments</definition>
+        <argsstring>()</argsstring>
+        <name>getAllComments</name>
+        <qualifiedname>coms309.Comment.CommentController.getAllComments</qualifiedname>
+        <briefdescription>
+<para>Gets all comments. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>List&lt;Comment&gt;</para>
+</simplesect>
+<simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023</para>
+</simplesect>
+<simplesect kind="return"><para>all comments. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentController.java" line="137" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentController.java" bodystart="137" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_comment_1_1_comment_controller_1a14d97af2059f5e3cbb350a47183c2712" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcoms309_1_1_comment_1_1_comment" kindref="compound">Comment</ref></type>
+        <definition>QueryMapping public Comment coms309.Comment.CommentController::getCommentById</definition>
+        <argsstring>(@Argument int id)</argsstring>
+        <name>getCommentById</name>
+        <qualifiedname>coms309.Comment.CommentController.getCommentById</qualifiedname>
+        <param>
+          <type>@Argument int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Gets comment by identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>NotFoundException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when the requested element is not present.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Comment.</para>
+</simplesect>
+<simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>NotFoundException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when the requested element is not present.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The comment by identifier. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentController.java" line="173" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentController.java" bodystart="173" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_comment_1_1_comment_controller_1a4bc9ddca68590853c4b7119206475917" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcoms309_1_1_comment_1_1_comment" kindref="compound">Comment</ref></type>
+        <definition>MutationMapping public Comment coms309.Comment.CommentController::createComment</definition>
+        <argsstring>(@Argument int game_post_id, @Argument String comment_message)</argsstring>
+        <name>createComment</name>
+        <qualifiedname>coms309.Comment.CommentController.createComment</qualifiedname>
+        <param>
+          <type>@Argument int</type>
+          <declname>game_post_id</declname>
+        </param>
+        <param>
+          <type>@Argument String</type>
+          <declname>comment_message</declname>
+        </param>
+        <briefdescription>
+<para>Creates a comment. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>NotFoundException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when the requested element is not present.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>game_post_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier for the game post. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>comment_message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message describing the comment.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new comment.</para>
+</simplesect>
+<simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>NotFoundException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when the requested element is not present.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>game_post_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier for the game post. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>comment_message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message describing the comment.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new comment. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentController.java" line="216" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentController.java" bodystart="216" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_comment_1_1_comment_controller_1a4f12259a206433b69ecf815be069cd33" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcoms309_1_1_comment_1_1_comment" kindref="compound">Comment</ref></type>
+        <definition>MutationMapping public Comment coms309.Comment.CommentController::updateComment</definition>
+        <argsstring>(@Argument int comment_id, @Argument String new_message)</argsstring>
+        <name>updateComment</name>
+        <qualifiedname>coms309.Comment.CommentController.updateComment</qualifiedname>
+        <param>
+          <type>@Argument int</type>
+          <declname>comment_id</declname>
+        </param>
+        <param>
+          <type>@Argument String</type>
+          <declname>new_message</declname>
+        </param>
+        <briefdescription>
+<para>Updates the comment. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>NotFoundException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when the requested element is not present.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>comment_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier for the comment. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>new_message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message describing the new.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A Comment.</para>
+</simplesect>
+<simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>NotFoundException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when the requested element is not present.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>comment_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier for the comment. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>new_message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message describing the new.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A Comment. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentController.java" line="265" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentController.java" bodystart="265" bodyend="275"/>
+        <references refid="classcoms309_1_1_comment_1_1_comment_1aa7862a32c74f91dada4ca9fabec1f6ae" compoundref="_comment_8java" startline="103" endline="105">coms309.Comment.Comment.setMessage</references>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_comment_1_1_comment_controller_1a87958650336aab3325b98118dd31ef1e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcoms309_1_1_comment_1_1_comment" kindref="compound">Comment</ref></type>
+        <definition>MutationMapping public Comment coms309.Comment.CommentController::deleteCommentById</definition>
+        <argsstring>(@Argument int id)</argsstring>
+        <name>deleteCommentById</name>
+        <qualifiedname>coms309.Comment.CommentController.deleteCommentById</qualifiedname>
+        <param>
+          <type>@Argument int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Deletes the comment by identifier described by ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>NotFoundException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when the requested element is not present.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A Comment.</para>
+</simplesect>
+<simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>NotFoundException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when the requested element is not present.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A Comment. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentController.java" line="309" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentController.java" bodystart="309" bodyend="319"/>
+        <references refid="classcoms309_1_1_comment_1_1_comment_1ae8a8b7cc850be1bda87578e7323f3cd9" compoundref="_comment_8java" startline="148" endline="150">coms309.Comment.Comment.getGamePost</references>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_comment_1_1_comment_controller_1ab7bf800d9d204b826513e8be670a2acf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>MutationMapping public String coms309.Comment.CommentController::deleteAllComments</definition>
+        <argsstring>()</argsstring>
+        <name>deleteAllComments</name>
+        <qualifiedname>coms309.Comment.CommentController.deleteAllComments</qualifiedname>
+        <briefdescription>
+<para>Deletes all comments. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>A String.</para>
+</simplesect>
+<simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023</para>
+</simplesect>
+<simplesect kind="return"><para>A String. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentController.java" line="345" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentController.java" bodystart="345" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_comment_1_1_comment_controller_1a5ef6eb79525b68f0cea25063974cdc79" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Publisher&lt; <ref refid="classcoms309_1_1_comment_1_1_comment" kindref="compound">Comment</ref> &gt;</type>
+        <definition>SubscriptionMapping public Publisher&lt; Comment &gt; coms309.Comment.CommentController::subComments</definition>
+        <argsstring>()</argsstring>
+        <name>subComments</name>
+        <qualifiedname>coms309.Comment.CommentController.subComments</qualifiedname>
+        <briefdescription>
+<para>Sub comments. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023</para>
+</simplesect>
+<simplesect kind="return"><para>A Publisher&lt;Comment&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentController.java" line="366" column="22" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentController.java" bodystart="366" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_comment_1_1_comment_controller_1a157eb4caec601748f631f80cabd2a117" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Publisher&lt; <ref refid="classcoms309_1_1_comment_1_1_comment" kindref="compound">Comment</ref> &gt;</type>
+        <definition>SubscriptionMapping public Publisher&lt; Comment &gt; coms309.Comment.CommentController::subCommentsById</definition>
+        <argsstring>(int id)</argsstring>
+        <name>subCommentsById</name>
+        <qualifiedname>coms309.Comment.CommentController.subCommentsById</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Sub comments by identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A Publisher&lt;Comment&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentController.java" line="384" column="22" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentController.java" bodystart="384" bodyend="386"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The coms 309. exceptions. not found exception. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A controller for handling comments.</para>
+<para>The coms 309. game post. game post</para>
+<para>The coms 309. game post. game post repository</para>
+<para>The reactor.core.publisher. flux</para>
+<para>The reactor.core.publisher. mono</para>
+<para>The org.checkerframework.checker.units.qual. a</para>
+<para>The org.reactivestreams. publisher</para>
+<para>The org.springframework.beans.factory.annotation. autowired</para>
+<para>The org.springframework.graphql.data.method.annotation. argument</para>
+<para>The org.springframework.graphql.data.method.annotation. mutation mapping</para>
+<para>The org.springframework.graphql.data.method.annotation. query mapping</para>
+<para>The org.springframework.graphql.data.method.annotation. subscription mapping</para>
+<para>The org.springframework.stereotype. component</para>
+<para>The org.springframework.stereotype. controller</para>
+<para>Duration of the java.time.</para>
+<para>List of java.util.s</para>
+<para>A controller for handling comments.</para>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>JpaRepository&lt; Comment, Integer &gt;</label>
+      </node>
+      <node id="1">
+        <label>coms309.Comment.CommentController</label>
+        <link refid="classcoms309_1_1_comment_1_1_comment_controller"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>~commentRepository</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>~commentPublisher</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>coms309.Comment.CommentPublisher</label>
+        <link refid="classcoms309_1_1_comment_1_1_comment_publisher"/>
+      </node>
+      <node id="2">
+        <label>coms309.Comment.CommentRepository</label>
+        <link refid="interfacecoms309_1_1_comment_1_1_comment_repository"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentController.java" line="60" column="7" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentController.java" bodystart="60" bodyend="387"/>
+    <listofallmembers>
+      <member refid="classcoms309_1_1_comment_1_1_comment_controller_1ac92e98fe9af87b3d301bf6cddb08153a" prot="package" virt="non-virtual"><scope>coms309::Comment::CommentController</scope><name>commentPublisher</name></member>
+      <member refid="classcoms309_1_1_comment_1_1_comment_controller_1a0f09fa787fb7c8a2f7acb46d4819399b" prot="package" virt="non-virtual"><scope>coms309::Comment::CommentController</scope><name>commentRepository</name></member>
+      <member refid="classcoms309_1_1_comment_1_1_comment_controller_1a4bc9ddca68590853c4b7119206475917" prot="public" virt="non-virtual"><scope>coms309::Comment::CommentController</scope><name>createComment</name></member>
+      <member refid="classcoms309_1_1_comment_1_1_comment_controller_1ab7bf800d9d204b826513e8be670a2acf" prot="public" virt="non-virtual"><scope>coms309::Comment::CommentController</scope><name>deleteAllComments</name></member>
+      <member refid="classcoms309_1_1_comment_1_1_comment_controller_1a87958650336aab3325b98118dd31ef1e" prot="public" virt="non-virtual"><scope>coms309::Comment::CommentController</scope><name>deleteCommentById</name></member>
+      <member refid="classcoms309_1_1_comment_1_1_comment_controller_1af0398d2c5283de10973ec21d45c53736" prot="package" virt="non-virtual"><scope>coms309::Comment::CommentController</scope><name>gamePostRepository</name></member>
+      <member refid="classcoms309_1_1_comment_1_1_comment_controller_1adcba0e094c7738cbcd02e6bb2a5562f5" prot="public" virt="non-virtual"><scope>coms309::Comment::CommentController</scope><name>getAllComments</name></member>
+      <member refid="classcoms309_1_1_comment_1_1_comment_controller_1a14d97af2059f5e3cbb350a47183c2712" prot="public" virt="non-virtual"><scope>coms309::Comment::CommentController</scope><name>getCommentById</name></member>
+      <member refid="classcoms309_1_1_comment_1_1_comment_controller_1a5ef6eb79525b68f0cea25063974cdc79" prot="public" virt="non-virtual"><scope>coms309::Comment::CommentController</scope><name>subComments</name></member>
+      <member refid="classcoms309_1_1_comment_1_1_comment_controller_1a157eb4caec601748f631f80cabd2a117" prot="public" virt="non-virtual"><scope>coms309::Comment::CommentController</scope><name>subCommentsById</name></member>
+      <member refid="classcoms309_1_1_comment_1_1_comment_controller_1a4f12259a206433b69ecf815be069cd33" prot="public" virt="non-virtual"><scope>coms309::Comment::CommentController</scope><name>updateComment</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

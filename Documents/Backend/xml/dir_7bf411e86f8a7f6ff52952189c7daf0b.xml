@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_7bf411e86f8a7f6ff52952189c7daf0b" kind="dir">
+    <compoundname>C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Email</compoundname>
+    <innerfile refid="_email_sender_8java">EmailSender.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Email/"/>
+  </compounddef>
+</doxygen>

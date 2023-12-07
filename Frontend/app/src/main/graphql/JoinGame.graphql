@@ -1,0 +1,5 @@
+mutation JoinGame($gameID: ID!, $userID: ID!, $email: String!, $password: String!){
+    addNewUserPlaying(gamePostID: $gameID, userID: $userID, email: $email, password: $password) {
+        id
+    }
+}

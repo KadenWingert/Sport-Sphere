@@ -1,0 +1,186 @@
+\doxysection{Location\+Controller\+Test.\+java}
+\hypertarget{_location_controller_test_8java_source}{}\label{_location_controller_test_8java_source}\index{C:/Users/Arie/Develop/hb\_215/Backend/src/test/java/com/mockito/LocationControllerTest.java@{C:/Users/Arie/Develop/hb\_215/Backend/src/test/java/com/mockito/LocationControllerTest.java}}
+\mbox{\hyperlink{_location_controller_test_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00001}00001\ \textcolor{keyword}{package\ }com.mockito;}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00003}00003\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_game_post}{GamePost}}.\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post}{GamePost}};}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00004}00004\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_game_post}{GamePost}}.\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_controller}{GamePostController}};}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00005}00005\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_game_post}{GamePost}}.\mbox{\hyperlink{interfacecoms309_1_1_game_post_1_1_game_post_repository}{GamePostRepository}};}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00006}00006\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_location}{Location}}.\mbox{\hyperlink{classcoms309_1_1_location_1_1_location}{Location}};}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00007}00007\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_location}{Location}}.\mbox{\hyperlink{classcoms309_1_1_location_1_1_location_controller}{LocationController}};}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00008}00008\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_location}{Location}}.\mbox{\hyperlink{interfacecoms309_1_1_location_1_1_location_repository}{LocationRepository}};}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00009}00009\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_sport}{Sport}}.\mbox{\hyperlink{classcoms309_1_1_sport_1_1_sport}{Sport}};}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00010}00010\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_sport}{Sport}}.\mbox{\hyperlink{interfacecoms309_1_1_sport_1_1_sport_repository}{SportRepository}};}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00011}00011\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_users}{Users}}.\mbox{\hyperlink{interfacecoms309_1_1_users_1_1_user_repository}{UserRepository}};}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00012}00012\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_users}{Users}}.\mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}};}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00013}00013\ \textcolor{keyword}{import}\ org.junit.jupiter.api.BeforeEach;}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00014}00014\ \textcolor{keyword}{import}\ org.junit.jupiter.api.Test;}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00015}00015\ \textcolor{keyword}{import}\ org.mockito.InjectMocks;}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00016}00016\ \textcolor{keyword}{import}\ org.mockito.Mock;}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00017}00017\ \textcolor{keyword}{import}\ org.mockito.MockitoAnnotations;}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00019}00019\ \textcolor{keyword}{import}\ java.util.Arrays;}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00020}00020\ \textcolor{keyword}{import}\ java.util.HashSet;}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00021}00021\ \textcolor{keyword}{import}\ java.util.List;}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00022}00022\ \textcolor{keyword}{import}\ java.util.Set;}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00024}00024\ \textcolor{keyword}{import}\ \textcolor{keyword}{static}\ org.junit.jupiter.api.Assertions.*;}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00025}00025\ \textcolor{keyword}{import}\ \textcolor{keyword}{static}\ org.mockito.Mockito.*;}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00028}00028\ \textcolor{keyword}{class\ }LocationControllerTest\ \{}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00031}00031\ \ \ \ \ @InjectMocks}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00032}00032\ \ \ \ \ LocationController\ locationController;}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00034}00034\ \ \ \ \ @Mock}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00035}00035\ \ \ \ \ LocationRepository\ locationRepository;}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00036}00036\ \ \ \ \ @Mock}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00037}00037\ \ \ \ \ GamePostRepository\ gamePostRepository;}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00038}00038\ \ \ \ \ @Mock}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00039}00039\ \ \ \ \ UserRepository\ userRepository;}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00040}00040\ \ \ \ \ @Mock}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00041}00041\ \ \ \ \ SportRepository\ sportRepository;}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00043}00043\ \ \ \ \ \textcolor{keyword}{private}\ GamePost\ gp1,gp2,gp3,gp4;}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00044}00044\ \ \ \ \ \textcolor{keyword}{private}\ Users\ u1,u2;}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00045}00045\ \ \ \ \ \textcolor{keyword}{private}\ Sport\ s1,s2,s3,s4;}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00046}00046\ \ \ \ \ \textcolor{keyword}{private}\ Location\ l1,\ l2,\ l3,\ l4;}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00048}00048\ \ \ \ \ @BeforeEach}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00049}00049\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ init()\{}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00050}00050\ \ \ \ \ \ \ \ \ MockitoAnnotations.initMocks(\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00052}00052\ \ \ \ \ \ \ \ \ Sport\ s1=\textcolor{keyword}{new}\ Sport(\textcolor{stringliteral}{"{}Basketball"{}});}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00053}00053\ \ \ \ \ \ \ \ \ Sport\ s2=\textcolor{keyword}{new}\ Sport(\textcolor{stringliteral}{"{}Pickleball"{}});}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00054}00054\ \ \ \ \ \ \ \ \ Sport\ s3=\textcolor{keyword}{new}\ Sport(\textcolor{stringliteral}{"{}Football"{}});}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00055}00055\ \ \ \ \ \ \ \ \ Sport\ s4=\textcolor{keyword}{new}\ Sport(\textcolor{stringliteral}{"{}Spikeball"{}});}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00057}00057\ \ \ \ \ \ \ \ \ u1=\textcolor{keyword}{new}\ Users(\textcolor{stringliteral}{"{}Bill"{}},\textcolor{stringliteral}{"{}Smith"{}},\textcolor{stringliteral}{"{}Bsmith@example.com"{}},\textcolor{stringliteral}{"{}smith3920"{}});}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00058}00058\ \ \ \ \ \ \ \ \ u2=\textcolor{keyword}{new}\ Users(\textcolor{stringliteral}{"{}John"{}},\textcolor{stringliteral}{"{}1234"{}},\textcolor{stringliteral}{"{}john@gmail.com"{}},\textcolor{stringliteral}{"{}Mar1o\&Lu1g1"{}});}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00060}00060\ \ \ \ \ \ \ \ \ gp1\ =\ \textcolor{keyword}{new}\ GamePost(s1,\ userRepository.findById(u1.getId()),\ 24,\ 20,\ \textcolor{stringliteral}{"{}1/12/2023"{}},\ \textcolor{stringliteral}{"{}29/09/1988"{}},\ \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00061}00061\ \ \ \ \ \ \ \ \ gp2\ =\ \textcolor{keyword}{new}\ GamePost(s2,\ userRepository.findById(u1.getId()),\ 16,\ 2,\ \textcolor{stringliteral}{"{}1/2/2023"{}},\ \textcolor{stringliteral}{"{}1/02/2023"{}},\ \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00062}00062\ \ \ \ \ \ \ \ \ gp3\ =\ \textcolor{keyword}{new}\ GamePost(s3,\ userRepository.findById(u2.getId()),\ 10,\ 8,\ \textcolor{stringliteral}{"{}10/08/2023"{}},\ \textcolor{stringliteral}{"{}10/25/2023"{}},\ \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00063}00063\ \ \ \ \ \ \ \ \ gp4\ =\ \textcolor{keyword}{new}\ GamePost(s4,\ userRepository.findById(u2.getId()),\ 6,\ 3,\ \textcolor{stringliteral}{"{}11/1/2023"{}},\ \textcolor{stringliteral}{"{}11/09/2023"{}},\ \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00065}00065\ \ \ \ \ \ \ \ \ l1\ =\ \textcolor{keyword}{new}\ Location(\textcolor{stringliteral}{"{}324\ South\ James\ street"{}},\ \textcolor{stringliteral}{"{}34,23"{}},gp1);}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00066}00066\ \ \ \ \ \ \ \ \ l2\ =\ \textcolor{keyword}{new}\ Location(\textcolor{stringliteral}{"{}123\ Hyland\ Ave"{}},\ \textcolor{stringliteral}{"{}56,23"{}},\ gp2);}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00067}00067\ \ \ \ \ \ \ \ \ l3\ =\ \textcolor{keyword}{new}\ Location(\textcolor{stringliteral}{"{}123\ Hyland\ Ave"{}},\ \textcolor{stringliteral}{"{}52,390"{}},gp3);}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00068}00068\ \ \ \ \ \ \ \ \ l4\ =\ \textcolor{keyword}{new}\ Location(\textcolor{stringliteral}{"{}324\ PGA\ Drive"{}},\ \textcolor{stringliteral}{"{}964,234"{}},gp4);}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00069}00069\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00070}00070\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00071}00071\ \ \ \ \ @Test}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00072}00072\ \ \ \ \ \textcolor{keywordtype}{void}\ getAllLocations()\ \{}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00073}00073\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Arrange}}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00074}00074\ \ \ \ \ \ \ \ \ List<Location>\ expectedLocations\ =\ Arrays.asList(l1,\ l2,\ l3,\ l4);}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00075}00075\ \ \ \ \ \ \ \ \ when(locationRepository.findAll()).thenReturn(expectedLocations);}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00076}00076\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00077}00077\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Act}}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00078}00078\ \ \ \ \ \ \ \ \ List<Location>\ actualLocations\ =\ locationController.getAllLocations();}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00079}00079\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00080}00080\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Assert}}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00081}00081\ \ \ \ \ \ \ \ \ assertEquals(expectedLocations,\ actualLocations);}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00082}00082\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00083}00083\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00084}00084\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00085}00085\ \ \ \ \ @Test}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00086}00086\ \ \ \ \ \textcolor{keywordtype}{void}\ getLocationById()\ \{}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00087}00087\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Arrange}}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00088}00088\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ locationId\ =\ 1;\ \textcolor{comment}{//\ Replace\ with\ a\ valid\ location\ ID}}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00089}00089\ \ \ \ \ \ \ \ \ when(locationRepository.findById(locationId)).thenReturn(l1);}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00090}00090\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00091}00091\ \ \ \ \ \ \ \ \ Location\ actualLocation\ =\ locationController.getLocationById(locationId);}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00092}00092\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00093}00093\ \ \ \ \ \ \ \ \ assertEquals(l1,\ actualLocation);}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00094}00094\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00095}00095\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00096}00096\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00097}00097\ \ \ \ \ @Test}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00098}00098\ \ \ \ \ \textcolor{keywordtype}{void}\ getGamePostsAtLocation()\ \{}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00099}00099\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Arrange}}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00100}00100\ \ \ \ \ \ \ \ \ String\ address\ =\ \textcolor{stringliteral}{"{}123\ Hyland\ Ave"{}};\ \textcolor{comment}{//\ Replace\ with\ a\ valid\ address}}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00101}00101\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00102}00102\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Create\ two\ GamePost\ objects\ with\ the\ desired\ address}}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00103}00103\ \ \ \ \ \ \ \ \ GamePost\ gpWithAddress1\ =\ \textcolor{keyword}{new}\ GamePost(s1,\ userRepository.findById(u1.getId()),\ 16,\ 2,\ \textcolor{stringliteral}{"{}1/2/2023"{}},\ \textcolor{stringliteral}{"{}1/02/2023"{}},\ \textcolor{keyword}{false},\ \textcolor{stringliteral}{"{}123\ Hyland\ Ave"{}},\ \textcolor{stringliteral}{"{}23.3"{}});}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00104}00104\ \ \ \ \ \ \ \ \ GamePost\ gpWithAddress2\ =\ \textcolor{keyword}{new}\ GamePost(s3,\ userRepository.findById(u2.getId()),\ 10,\ 8,\ \textcolor{stringliteral}{"{}10/08/2023"{}},\ \textcolor{stringliteral}{"{}10/25/2023"{}},\ \textcolor{keyword}{false},\textcolor{stringliteral}{"{}123\ Hyland\ Ave"{}},\ \textcolor{stringliteral}{"{}23.3"{}});}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00105}00105\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00106}00106\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Create\ a\ list\ of\ GamePost\ objects\ that\ includes\ the\ ones\ with\ the\ desired\ address}}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00107}00107\ \ \ \ \ \ \ \ \ List<GamePost>\ gamePosts\ =\ Arrays.asList(gp1,\ gpWithAddress1,\ gpWithAddress2,\ gp4);}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00108}00108\ \ \ \ \ \ \ \ \ when(gamePostRepository.findAll()).thenReturn(gamePosts);}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00109}00109\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00110}00110\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Act}}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00111}00111\ \ \ \ \ \ \ \ \ Set<GamePost>\ actualGamePosts\ =\ locationController.getGamePostsAtLocation(address);}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00112}00112\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00113}00113\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Assert}}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00114}00114\ \ \ \ \ \ \ \ \ Set<GamePost>\ expectedGamePosts\ =\ \textcolor{keyword}{new}\ HashSet<>(Arrays.asList(gpWithAddress1,\ gpWithAddress2));}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00115}00115\ \ \ \ \ \ \ \ \ assertEquals(expectedGamePosts.size(),\ actualGamePosts.size());}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00116}00116\ \ \ \ \ \ \ \ \ assertTrue(actualGamePosts.containsAll(expectedGamePosts));}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00117}00117\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00118}00118\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00119}00119\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00120}00120\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00121}00121\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00122}00122\ \ \ \ \ @Test}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00123}00123\ \ \ \ \ \textcolor{keywordtype}{void}\ createLocation()\ \{}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00124}00124\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Arrange}}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00125}00125\ \ \ \ \ \ \ \ \ String\ address\ =\ \textcolor{stringliteral}{"{}123\ New\ Street"{}};}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00126}00126\ \ \ \ \ \ \ \ \ String\ gps\ =\ \textcolor{stringliteral}{"{}45,67"{}};}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00127}00127\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ gamePostID\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00128}00128\ \ \ \ \ \ \ \ \ GamePost\ gamePost\ =\ \textcolor{keyword}{new}\ GamePost(s1,\ userRepository.findById(u1.getId()),\ 24,\ 20,\ \textcolor{stringliteral}{"{}1/12/2023"{}},\ \textcolor{stringliteral}{"{}29/09/1988"{}},\ \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00129}00129\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00130}00130\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Mock\ the\ gamePostRepository\ to\ return\ the\ gamePost\ when\ findById\ is\ called}}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00131}00131\ \ \ \ \ \ \ \ \ when(gamePostRepository.findById(gamePostID)).thenReturn(gamePost);}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00132}00132\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00133}00133\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Act}}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00134}00134\ \ \ \ \ \ \ \ \ Location\ createdLocation\ =\ locationController.createLocation(address,\ gps,\ gamePostID);}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00135}00135\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00136}00136\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Assert}}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00137}00137\ \ \ \ \ \ \ \ \ assertEquals(address,\ createdLocation.getAddress());}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00138}00138\ \ \ \ \ \ \ \ \ assertEquals(gps,\ createdLocation.getGps());}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00139}00139\ \ \ \ \ \ \ \ \ assertEquals(gamePost.getId(),\ createdLocation.getGamePost().getId());}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00140}00140\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00141}00141\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00142}00142\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00143}00143\ \ \ \ \ @Test}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00144}00144\ \ \ \ \ \textcolor{keywordtype}{void}\ updateLocation()\ \{}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00145}00145\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Arrange}}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00146}00146\ \ \ \ \ \ \ \ \ String\ newAddress\ =\ \textcolor{stringliteral}{"{}456\ Updated\ Street"{}};}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00147}00147\ \ \ \ \ \ \ \ \ String\ newGPS\ =\ \textcolor{stringliteral}{"{}12,34"{}};}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00148}00148\ \ \ \ \ \ \ \ \ Location\ existingLocation\ =\ \textcolor{keyword}{new}\ Location(\textcolor{stringliteral}{"{}123\ Old\ Street"{}},\ \textcolor{stringliteral}{"{}56,78"{}},\ gp1);}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00149}00149\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00150}00150\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Mock\ the\ locationRepository\ to\ return\ the\ existingLocation\ when\ findById\ is\ called}}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00151}00151\ \ \ \ \ \ \ \ \ when(locationRepository.findById(existingLocation.getId())).thenReturn(existingLocation);}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00152}00152\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00153}00153\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Act}}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00154}00154\ \ \ \ \ \ \ \ \ Location\ updatedLocation\ =\ locationController.updateLocation(existingLocation.getId(),\ newAddress,\ newGPS);}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00155}00155\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00156}00156\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Assert}}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00157}00157\ \ \ \ \ \ \ \ \ assertEquals(existingLocation.getId(),\ updatedLocation.getId());}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00158}00158\ \ \ \ \ \ \ \ \ assertEquals(newAddress,\ updatedLocation.getAddress());}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00159}00159\ \ \ \ \ \ \ \ \ assertEquals(newGPS,\ updatedLocation.getGps());}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00160}00160\ \ \ \ \ \ \ \ \ verify(locationRepository,\ times(1)).save(existingLocation);\ \textcolor{comment}{//\ Verify\ that\ locationRepository.save\ is\ called\ once}}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00161}00161\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00162}00162\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00163}00163\ \ \ \ \ @Test}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00164}00164\ \ \ \ \ \textcolor{keywordtype}{void}\ deleteLocation()\ \{}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00165}00165\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Arrange}}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00166}00166\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ locationID\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00167}00167\ \ \ \ \ \ \ \ \ Location\ locationToDelete\ =\ \textcolor{keyword}{new}\ Location(\textcolor{stringliteral}{"{}123\ Old\ Street"{}},\ \textcolor{stringliteral}{"{}56,78"{}},\ gp1);}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00168}00168\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00169}00169\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Mock\ the\ locationRepository\ to\ return\ the\ locationToDelete\ when\ findById\ is\ called}}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00170}00170\ \ \ \ \ \ \ \ \ when(gamePostRepository.findById(gp1.getId())).thenReturn(gp1);}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00171}00171\ \ \ \ \ \ \ \ \ when(locationRepository.findById(locationID)).thenReturn(locationToDelete);}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00172}00172\ \ \ \ \ \ \ \ \ when(locationRepository.findAll()).thenReturn(Arrays.asList(locationToDelete,l2,l3,l4));}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00173}00173\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Act}}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00174}00174\ \ \ \ \ \ \ \ \ Location\ deletedLocation\ =\ locationController.deleteLocation(locationID);}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00175}00175\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Assert}}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00176}00176\ \ \ \ \ \ \ \ \ assertEquals(locationToDelete,\ deletedLocation);}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00177}00177\ \ \ \ \ \ \ \ \ verify(locationRepository,\ times(1)).deleteById(locationID);\ \textcolor{comment}{//\ Verify\ that\ locationRepository.deleteById\ is\ called\ once}}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00178}00178\ \ \ \ \ \ \ \ \ assertNull(gp1.getLocation());}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00179}00179\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_location_controller_test_8java_source_l00180}00180\ \}}
+
+\end{DoxyCode}

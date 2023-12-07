@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcoms309_1_1_role_1_1_role" kind="class" language="Java" prot="public">
+    <compoundname>coms309::Role::Role</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcoms309_1_1_role_1_1_role_1adffe4385d65724cbc3749a835e63cf31" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int coms309.Role.Role.id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>coms309.Role.Role.id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Role/Role.java" line="56" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Role/Role.java" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_role_1_1_role_1a1b60b9469173b7886e3deddd0e0278af" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int coms309.Role.Role.userId</definition>
+        <argsstring></argsstring>
+        <name>userId</name>
+        <qualifiedname>coms309.Role.Role.userId</qualifiedname>
+        <briefdescription>
+<para>/** </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Identifier for the user </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Role/Role.java" line="58" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Role/Role.java" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_role_1_1_role_1a364f3c32b6339fd7fe242d430ceb3ff5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int coms309.Role.Role.permissionId</definition>
+        <argsstring></argsstring>
+        <name>permissionId</name>
+        <qualifiedname>coms309.Role.Role.permissionId</qualifiedname>
+        <briefdescription>
+<para>/** </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Identifier for the permission </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Role/Role.java" line="60" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Role/Role.java" bodystart="60" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The jakarta.persistence. entity. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The jakarta.persistence. generated value</para>
+<para>Type of the jakarta.persistence. generation</para>
+<para>The jakarta.persistence. generated value</para>
+<para>Type of the jakarta.persistence. generation</para>
+<para>Identifier for the jakarta.persistence.</para>
+<para>The lombok. getter</para>
+<para>The lombok. no arguments constructor</para>
+<para>The lombok. setter</para>
+<para>The org.hibernate.annotations. not found</para>
+<para>The org.hibernate.annotations. not found action</para>
+<para>A role.</para>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>coms309.Role.Role</label>
+        <link refid="classcoms309_1_1_role_1_1_role"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Role/Role.java" line="40" column="7" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Role/Role.java" bodystart="40" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classcoms309_1_1_role_1_1_role_1adffe4385d65724cbc3749a835e63cf31" prot="private" virt="non-virtual"><scope>coms309::Role::Role</scope><name>id</name></member>
+      <member refid="classcoms309_1_1_role_1_1_role_1a364f3c32b6339fd7fe242d430ceb3ff5" prot="private" virt="non-virtual"><scope>coms309::Role::Role</scope><name>permissionId</name></member>
+      <member refid="classcoms309_1_1_role_1_1_role_1a1b60b9469173b7886e3deddd0e0278af" prot="private" virt="non-virtual"><scope>coms309::Role::Role</scope><name>userId</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

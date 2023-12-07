@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_retrofit_a_p_i_call_8java" kind="file" language="Java">
+    <compoundname>RetrofitAPICall.java</compoundname>
+    <includes local="no">java.util.List</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/RetroFitAPI/RetrofitAPICall.java</label>
+        <link refid="_retrofit_a_p_i_call_8java"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>java.util.List</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interface_retro_fit_a_p_i_1_1_retrofit_a_p_i_call" prot="public">RetroFitAPI::RetrofitAPICall</innerclass>
+    <innernamespace refid="namespace_retro_fit_a_p_i">RetroFitAPI</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2" refid="namespace_retro_fit_a_p_i" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">package<sp/></highlight><highlight class="normal">RetroFitAPI;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.List;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespacemodels" kindref="compound">models</ref>.<ref refid="classmodels_1_1_feature_collection" kindref="compound">FeatureCollection</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>retrofit2.Call;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>retrofit2.http.GET;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>retrofit2.http.Query;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="interface_retro_fit_a_p_i_1_1_retrofit_a_p_i_call" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_retro_fit_a_p_i_1_1_retrofit_a_p_i_call" kindref="compound">RetrofitAPICall</ref><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>as<sp/>we<sp/>are<sp/>making<sp/>a<sp/>get<sp/>request<sp/>specifying<sp/>annotation<sp/>as<sp/>get<sp/>and<sp/>adding<sp/>a<sp/>url<sp/>end<sp/>point<sp/>to<sp/>it.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>@GET(</highlight><highlight class="stringliteral">&quot;search?addressdetails=1&amp;limit=5&amp;format=geojson&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="interface_retro_fit_a_p_i_1_1_retrofit_a_p_i_call_1a46ce71c40a199a61e9cd42ca0c2ae28c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Call&lt;FeatureCollection&gt;<sp/><ref refid="interface_retro_fit_a_p_i_1_1_retrofit_a_p_i_call_1a46ce71c40a199a61e9cd42ca0c2ae28c" kindref="member">getFeatureCollection</ref>(@Query(&quot;q&quot;)<sp/>String<sp/>searchForAddress);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/RetroFitAPI/RetrofitAPICall.java"/>
+  </compounddef>
+</doxygen>

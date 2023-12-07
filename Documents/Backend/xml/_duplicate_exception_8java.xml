@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_duplicate_exception_8java" kind="file" language="Java">
+    <compoundname>DuplicateException.java</compoundname>
+    <innerclass refid="classcoms309_1_1_exceptions_1_1_duplicate_exception" prot="public">coms309::Exceptions::DuplicateException</innerclass>
+    <innernamespace refid="namespacecoms309_1_1_exceptions">coms309::Exceptions</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="namespacecoms309_1_1_exceptions" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">package<sp/></highlight><highlight class="normal">coms309.Exceptions;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classcoms309_1_1_exceptions_1_1_duplicate_exception" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcoms309_1_1_exceptions_1_1_duplicate_exception" kindref="compound">DuplicateException</ref><sp/></highlight><highlight class="keyword">extends</highlight><highlight class="normal"><sp/>RuntimeException<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classcoms309_1_1_exceptions_1_1_duplicate_exception_1a834ab0a935a9fa2ca8eb4dca9b9d5794" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classcoms309_1_1_exceptions_1_1_duplicate_exception_1a834ab0a935a9fa2ca8eb4dca9b9d5794" kindref="member">DuplicateException</ref>(String<sp/>message)<sp/>{super(message);}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Exceptions/DuplicateException.java"/>
+  </compounddef>
+</doxygen>

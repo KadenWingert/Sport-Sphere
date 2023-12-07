@@ -1,0 +1,3 @@
+query UserPermissions($email: String!, $password: String!) {
+    getUserRole(email: $email, password: $password)
+}

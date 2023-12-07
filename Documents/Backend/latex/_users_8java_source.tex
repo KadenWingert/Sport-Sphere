@@ -1,0 +1,203 @@
+\doxysection{Users.\+java}
+\hypertarget{_users_8java_source}{}\label{_users_8java_source}\index{C:/Users/Arie/Develop/hb\_215/Backend/src/main/java/coms309/Users/Users.java@{C:/Users/Arie/Develop/hb\_215/Backend/src/main/java/coms309/Users/Users.java}}
+\mbox{\hyperlink{_users_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00004}00004\ \textcolor{keyword}{package\ }coms309.Users;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00007}00007\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_auth}{Auth}}.\mbox{\hyperlink{classcoms309_1_1_auth_1_1_auth}{Auth}};}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00009}00009\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_enums}{Enums}}.\mbox{\hyperlink{classcoms309_1_1_enums_1_1_permission}{Permission}}.\mbox{\hyperlink{enumcoms309_1_1_enums_1_1_permission_1_1permission}{permission}};}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00011}00011\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_game_post}{GamePost}}.\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post}{GamePost}};}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00013}00013\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_skill_level}{SkillLevel}}.\mbox{\hyperlink{classcoms309_1_1_skill_level_1_1_skill_level}{SkillLevel}};}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00015}00015\ \textcolor{keyword}{import}\ org.hibernate.annotations.NotFound;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00017}00017\ \textcolor{keyword}{import}\ org.hibernate.annotations.NotFoundAction;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00019}00019\ \textcolor{keyword}{import}\ jakarta.persistence.*;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00021}00021\ \textcolor{keyword}{import}\ lombok.Getter;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00023}00023\ \textcolor{keyword}{import}\ lombok.Setter;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00025}00025\ \textcolor{keyword}{import}\ reactor.core.publisher.Flux;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00027}00027\ \textcolor{keyword}{import}\ reactor.core.publisher.Mono;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00029}00029\ \textcolor{keyword}{import}\ java.time.Duration;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00031}00031\ \textcolor{keyword}{import}\ java.util.HashSet;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00033}00033\ \textcolor{keyword}{import}\ java.util.Objects;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00035}00035\ \textcolor{keyword}{import}\ java.util.Set;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00037}00037\ \textcolor{comment}{/**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00046}00046\ @Entity}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00047}00047\ @Getter}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00048}00048\ @Setter}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00049}\mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{00049}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}}\ \{}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00051}00051\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00062}00062\ \ \ \ \ @Id}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00063}00063\ \ \ \ \ @GeneratedValue(strategy\ =\ GenerationType.IDENTITY)}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00064}00064\ \ \ \ \ @NotFound(action\ =\ NotFoundAction.IGNORE)}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00065}00065\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{int}\ id;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00066}00066\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00067}00067\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00078}00078\ \ \ \ \ @NotFound(action\ =\ NotFoundAction.IGNORE)}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00079}00079\ \ \ \ \ \textcolor{keyword}{private}\ String\ first\_name;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00080}00080\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00081}00081\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00092}00092\ \ \ \ \ @NotFound(action\ =\ NotFoundAction.IGNORE)}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00093}00093\ \ \ \ \ \textcolor{keyword}{private}\ String\ last\_name;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00094}00094\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00095}00095\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00106}00106\ \ \ \ \ @NotFound(action\ =\ NotFoundAction.IGNORE)}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00107}00107\ \ \ \ \ \textcolor{keyword}{private}\ String\ email;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00108}00108\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00109}00109\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00120}00120\ \ \ \ \ @NotFound(action\ =\ NotFoundAction.IGNORE)}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00121}00121\ \ \ \ \ \textcolor{keyword}{private}\ String\ password;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00122}00122\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00123}00123\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00134}00134\ \ \ \ \ @NotFound(action\ =\ NotFoundAction.IGNORE)}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00135}00135\ \ \ \ \ \textcolor{keyword}{private}\ permission\ role;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00136}00136\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00137}00137\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00148}00148\ \ \ \ \ @ManyToMany(mappedBy\ =\ \textcolor{stringliteral}{"{}playersSignedUp"{}})}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00149}00149\ \ \ \ \ Set<GamePost>\ gamePost;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00150}00150\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00151}00151\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00164}00164\ \ \ \ \ @OneToMany(mappedBy\ =\ \textcolor{stringliteral}{"{}created\_by"{}},\ cascade\ =\ CascadeType.ALL,\ orphanRemoval\ =\ \textcolor{keyword}{true})}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00165}00165\ \ \ \ \ \textcolor{keyword}{private}\ Set<GamePost>\ createdGamePosts;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00166}00166\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00167}00167\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00181}00181\ \ \ \ \ @OneToMany(mappedBy\ =\ \textcolor{stringliteral}{"{}user"{}},\ cascade\ =\ CascadeType.ALL,\ orphanRemoval\ =\ \textcolor{keyword}{true},\ fetch\ =\ FetchType.EAGER)}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00182}00182\ \ \ \ \ \textcolor{keyword}{private}\ Set<SkillLevel>\ skill\_levels\ =\ \textcolor{keyword}{new}\ HashSet<>();}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00183}00183\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00184}00184\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00193}\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a909b2250dd18985196a8ee6d5b82c62f}{00193}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a909b2250dd18985196a8ee6d5b82c62f}{Users}}()\ \{\}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00194}00194\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00195}00195\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00209}\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a99b5095dcab5a8a4f07b7fec74c29c1e}{00209}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a99b5095dcab5a8a4f07b7fec74c29c1e}{Users}}(String\ firstName,\ String\ last\_name,\ String\ email,\ String\ password)\ \{}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00210}00210\ \ \ \ \ \ \ \ \ this.first\_name\ =\ firstName;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00211}00211\ \ \ \ \ \ \ \ \ this.last\_name\ =\ last\_name;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00212}00212\ \ \ \ \ \ \ \ \ this.email\ =\ email;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00213}00213\ \ \ \ \ \ \ \ \ this.password\ =\ password;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00214}00214\ \ \ \ \ \ \ \ \ this.role\ =\ permission.USER;\ \textcolor{comment}{//\ default\ to\ user\ level}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00215}00215\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00216}00216\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00217}00217\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00228}\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a8ee7b438c8d9bd14723bcde4b6e85b22}{00228}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a8ee7b438c8d9bd14723bcde4b6e85b22}{getId}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00229}00229\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ id;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00230}00230\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00231}00231\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00232}00232\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00243}\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a6bf4a7b20365c8d16d3d8af0f26ed3fe}{00243}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a6bf4a7b20365c8d16d3d8af0f26ed3fe}{setId}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id})\ \{}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00244}00244\ \ \ \ \ \ \ \ \ this.id\ =\ id;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00245}00245\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00246}00246\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00247}00247\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00258}\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a7ab60839a383c7888269bfb8760da998}{00258}}\ \ \ \ \ \textcolor{keyword}{public}\ String\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a7ab60839a383c7888269bfb8760da998}{getFirst\_name}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00259}00259\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ first\_name;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00260}00260\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00261}00261\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00262}00262\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00273}\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a83e203151acbb7eac4dfc09ba79ed952}{00273}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a83e203151acbb7eac4dfc09ba79ed952}{setFirst\_name}}(String\ firstName)\ \{}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00274}00274\ \ \ \ \ \ \ \ \ this.first\_name\ =\ firstName;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00275}00275\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00276}00276\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00277}00277\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00288}\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a5a77902853a0507a88959005d3e859d1}{00288}}\ \ \ \ \ \textcolor{keyword}{public}\ String\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a5a77902853a0507a88959005d3e859d1}{getLast\_name}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00289}00289\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ last\_name;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00290}00290\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00291}00291\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00292}00292\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00303}\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a3275d9b25cb507063f173dd3436833a3}{00303}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a3275d9b25cb507063f173dd3436833a3}{setLast\_name}}(String\ lastName)\ \{}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00304}00304\ \ \ \ \ \ \ \ \ this.last\_name\ =\ lastName;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00305}00305\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00306}00306\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00307}00307\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00318}\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a37b41a7a616f917cf5a4c925b2c79cbf}{00318}}\ \ \ \ \ \textcolor{keyword}{public}\ String\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a37b41a7a616f917cf5a4c925b2c79cbf}{getEmail}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00319}00319\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ email;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00320}00320\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00321}00321\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00322}00322\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00333}\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a779ad0031a7972a279deb6904e114a07}{00333}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a779ad0031a7972a279deb6904e114a07}{setEmail}}(String\ email)\ \{}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00334}00334\ \ \ \ \ \ \ \ \ this.email\ =\ email;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00335}00335\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00336}00336\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00337}00337\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00348}\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a8e82e83edc2d64984b02fbb10c62d78c}{00348}}\ \ \ \ \ \textcolor{keyword}{public}\ String\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a8e82e83edc2d64984b02fbb10c62d78c}{getPassword}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00349}00349\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ password;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00350}00350\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00351}00351\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00352}00352\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00363}\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a6d78a4bc32c3d377093c589670df13f8}{00363}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a6d78a4bc32c3d377093c589670df13f8}{setPassword}}(String\ password)\ \{}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00364}00364\ \ \ \ \ \ \ \ \ this.password\ =\ password;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00365}00365\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00366}00366\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00367}00367\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00378}\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a7cd30b96ca52437d70346025b4603b5c}{00378}}\ \ \ \ \ \textcolor{keyword}{public}\ Set<GamePost>\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a7cd30b96ca52437d70346025b4603b5c}{getGamePost}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00379}00379\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ gamePost;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00380}00380\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00381}00381\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00382}00382\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00393}\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a85937c4b503e01d7e92b9cc633716f80}{00393}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a85937c4b503e01d7e92b9cc633716f80}{setGamePost}}(Set<GamePost>\ gamePost)\ \{}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00394}00394\ \ \ \ \ \ \ \ \ this.gamePost\ =\ gamePost;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00395}00395\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00396}00396\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00397}00397\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00408}\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_af55d3e46fb5f42bb08b3b22679b4badd}{00408}}\ \ \ \ \ \textcolor{keyword}{public}\ Set<GamePost>\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_af55d3e46fb5f42bb08b3b22679b4badd}{getCreatedGamePosts}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00409}00409\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ createdGamePosts;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00410}00410\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00411}00411\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00412}00412\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00423}\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a35263d8315373ce079f7548141c6d2ed}{00423}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a35263d8315373ce079f7548141c6d2ed}{setCreatedGamePosts}}(Set<GamePost>\ createdGamePosts)\ \{}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00424}00424\ \ \ \ \ \ \ \ \ this.createdGamePosts\ =\ createdGamePosts;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00425}00425\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00426}00426\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00427}00427\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00438}\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_af48196df7c02de81606755d1b4aca705}{00438}}\ \ \ \ \ \textcolor{keyword}{public}\ Set<SkillLevel>\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_af48196df7c02de81606755d1b4aca705}{getSkill\_levels}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00439}00439\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ skill\_levels;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00440}00440\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00441}00441\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00442}00442\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00453}\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a01552607f9a99671eb8941f958120254}{00453}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a01552607f9a99671eb8941f958120254}{setSkill\_levels}}(Set<SkillLevel>\ sports\_skill\_levels)\ \{}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00454}00454\ \ \ \ \ \ \ \ \ this.skill\_levels\ =\ sports\_skill\_levels;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00455}00455\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00456}00456\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00457}00457\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00471}\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_ae9b5020463990c5e98d68a1e456ca88d}{00471}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{boolean}\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_ae9b5020463990c5e98d68a1e456ca88d}{isAuthenticated}}(String\ email,\ String\ password)\ \{}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00472}00472\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ Auth.isAuthenticated(\textcolor{keyword}{this},\ email,\ password);}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00473}00473\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00474}00474\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00475}00475\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00488}\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_abffe279645215b71f505c92a8810b3bc}{00488}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{boolean}\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_abffe279645215b71f505c92a8810b3bc}{isAdmin}}(\mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}}\ u)\ \{}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00489}00489\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ Auth.isAdmin(\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00490}00490\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00491}00491\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00492}00492\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00503}\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a0a63fd9ffe103bf74018a9dc7a9b96b4}{00503}}\ \ \ \ \ \textcolor{keyword}{public}\ permission\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a0a63fd9ffe103bf74018a9dc7a9b96b4}{getRole}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00504}00504\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ role;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00505}00505\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00506}00506\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00507}00507\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00518}\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_adad243d1804bf82ee68b642ef140c9e2}{00518}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_adad243d1804bf82ee68b642ef140c9e2}{setRole}}(permission\ role)\ \{}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00519}00519\ \ \ \ \ \ \ \ \ this.role\ =\ role;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00520}00520\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00521}00521\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00522}00522\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00535}00535\ \ \ \ \ @Override}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00536}\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a5e8063462cb311031a42c5df5e0e26a2}{00536}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{boolean}\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a5e8063462cb311031a42c5df5e0e26a2}{equals}}(Object\ o)\ \{}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00537}00537\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{this}\ ==\ o)\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00538}00538\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (o\ ==\ \textcolor{keyword}{null}\ ||\ getClass()\ !=\ o.getClass())\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00539}00539\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}}\ users\ =\ (\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a909b2250dd18985196a8ee6d5b82c62f}{Users}})\ o;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00540}00540\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keywordtype}{id}\ ==\ users.id\ \&\&}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00541}00541\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Objects.\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a5e8063462cb311031a42c5df5e0e26a2}{equals}}(first\_name,\ users.first\_name)\ \&\&}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00542}00542\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Objects.equals(last\_name,\ users.last\_name)\ \&\&}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00543}00543\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Objects.equals(email,\ users.email)\ \&\&}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00544}00544\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Objects.equals(password,\ users.password)\ \&\&}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00545}00545\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ role\ ==\ users.role;}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00546}00546\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00547}00547\ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00548}00548\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00559}\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a15f60059dc0420de2b945eef86c7a5d7}{00559}}\ \ \ \ \ \textcolor{keyword}{public}\ Flux<String>\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_a15f60059dc0420de2b945eef86c7a5d7}{getUserStream}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00560}00560\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00561}00561\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ Mono.delay(Duration.ofMillis(50))}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00562}00562\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .flatMapMany(aLong\ -\/>\ Flux.just(\textcolor{stringliteral}{"{}Hi!"{}},\ \textcolor{stringliteral}{"{}Bonjour!"{}},\ \textcolor{stringliteral}{"{}Hola!"{}},\ \textcolor{stringliteral}{"{}Ciao!"{}},\ \textcolor{stringliteral}{"{}Zdravo!"{}}));}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00563}00563\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_users_8java_source_l00564}00564\ \}}
+
+\end{DoxyCode}

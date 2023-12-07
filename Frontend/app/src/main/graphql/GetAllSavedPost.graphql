@@ -1,0 +1,9 @@
+query GetAllSavedPost {
+    getAllSavedGamePosts {
+        id
+        user {
+            id
+        }
+        gamePost
+    }
+}

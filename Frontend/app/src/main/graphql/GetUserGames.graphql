@@ -1,0 +1,15 @@
+query GamePostsByUserId($userId: ID!) {
+    getAllGamePosts {
+        id
+        sport {
+            sport_name
+        }
+        created_by {
+            first_name
+            last_name
+        }
+    }
+    players: getUsersPlaying(gamePostID: $userId) {
+        id
+    }
+}

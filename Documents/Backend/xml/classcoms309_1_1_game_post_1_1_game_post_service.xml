@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcoms309_1_1_game_post_1_1_game_post_service" kind="class" language="Java" prot="public">
+    <compoundname>coms309::GamePost::GamePostService</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcoms309_1_1_game_post_1_1_game_post_service_1a8ec2e325be2fa7d752b4e20c36fa0556" prot="private" static="no" mutable="no">
+        <type>final <ref refid="interfacecoms309_1_1_game_post_1_1_game_post_repository" kindref="compound">GamePostRepository</ref></type>
+        <definition>private final GamePostRepository coms309.GamePost.GamePostService::gamePostRepository</definition>
+        <argsstring></argsstring>
+        <name>gamePostRepository</name>
+        <qualifiedname>coms309.GamePost.GamePostService.gamePostRepository</qualifiedname>
+        <briefdescription>
+<para>Gets the game post repository. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The game post repository. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostService.java" line="38" column="38" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostService.java" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcoms309_1_1_game_post_1_1_game_post_service_1a4821aa56ad7b53fe74366018afc170e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Flux&lt; <ref refid="classcoms309_1_1_game_post_1_1_game_post" kindref="compound">GamePost</ref> &gt;</type>
+        <definition>public Flux&lt; GamePost &gt; coms309.GamePost.GamePostService::findAll</definition>
+        <argsstring>()</argsstring>
+        <name>findAll</name>
+        <qualifiedname>coms309.GamePost.GamePostService.findAll</qualifiedname>
+        <briefdescription>
+<para>Searches for the first all. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The found all. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostService.java" line="61" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostService.java" bodystart="61" bodyend="64"/>
+        <references refid="interfacecoms309_1_1_game_post_1_1_game_post_repository_1a98bdf374b051e5c8501577124ed41e8e">coms309.GamePost.GamePostRepository.findAll</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The org.springframework.beans.factory.annotation. autowired. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The org.springframework.stereotype. service</para>
+<para>The lombok. required arguments constructor</para>
+<para>The reactor.core.publisher. flux</para>
+<para>The reactor.core.publisher. mono</para>
+<para>A service for accessing game posts information.</para>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>coms309.GamePost.GamePostService</label>
+        <link refid="classcoms309_1_1_game_post_1_1_game_post_service"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostService.java" line="26" column="7" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostService.java" bodystart="26" bodyend="65"/>
+    <listofallmembers>
+      <member refid="classcoms309_1_1_game_post_1_1_game_post_service_1a4821aa56ad7b53fe74366018afc170e1" prot="public" virt="non-virtual"><scope>coms309::GamePost::GamePostService</scope><name>findAll</name></member>
+      <member refid="classcoms309_1_1_game_post_1_1_game_post_service_1a8ec2e325be2fa7d752b4e20c36fa0556" prot="private" virt="non-virtual"><scope>coms309::GamePost::GamePostService</scope><name>gamePostRepository</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

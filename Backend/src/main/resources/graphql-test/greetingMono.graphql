@@ -1,0 +1,5 @@
+query greetingMono {
+  greetings {
+    greetings
+  }
+}

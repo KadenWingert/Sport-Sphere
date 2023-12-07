@@ -1,0 +1,7 @@
+<map id="com.example.sportssphere.CreatePostActivity.onCreate" name="com.example.sportssphere.CreatePostActivity.onCreate">
+<area shape="rect" id="Node000001" title="Executes the &#39;create&#39; action." alt="" coords="5,51,190,93"/>
+<area shape="rect" id="Node000002" href="$classcom_1_1example_1_1sportssphere_1_1_create_post_activity.html#a69323a7625b51121ad1a1aae6ab0482b" title="Address automatic populate." alt="" coords="238,5,443,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,55,222,50,223,55,191,60"/>
+<area shape="rect" id="Node000003" href="$classcom_1_1example_1_1sportssphere_1_1_create_post_activity.html#ad38293149b1ddd2820710db673fb3831" title="Sets the buttons." alt="" coords="243,88,438,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="191,84,228,89,227,95,190,89"/>
+</map>

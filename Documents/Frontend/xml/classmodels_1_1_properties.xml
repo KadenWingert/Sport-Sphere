@@ -1,0 +1,826 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmodels_1_1_properties" kind="class" language="Java" prot="public">
+    <compoundname>models::Properties</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmodels_1_1_properties_1afe8106545d1c913837a36b1acdeb1bef" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String models.Properties.place_id</definition>
+        <argsstring></argsstring>
+        <name>place_id</name>
+        <qualifiedname>models.Properties.place_id</qualifiedname>
+        <briefdescription>
+<para>Identifier for the place. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="15" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodels_1_1_properties_1a1b334bee4f6d449f6a9e08213bcf2a10" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String models.Properties.osm_type</definition>
+        <argsstring></argsstring>
+        <name>osm_type</name>
+        <qualifiedname>models.Properties.osm_type</qualifiedname>
+        <briefdescription>
+<para>Type of the osm. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="17" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodels_1_1_properties_1a8f0f4b32e392f2d02a74843da7fa421b" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String models.Properties.osm_id</definition>
+        <argsstring></argsstring>
+        <name>osm_id</name>
+        <qualifiedname>models.Properties.osm_id</qualifiedname>
+        <briefdescription>
+<para>Identifier for the osm. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="19" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodels_1_1_properties_1a81bff227d85b225d14296d5f34782043" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String models.Properties.place_rank</definition>
+        <argsstring></argsstring>
+        <name>place_rank</name>
+        <qualifiedname>models.Properties.place_rank</qualifiedname>
+        <briefdescription>
+<para>The place rank. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="21" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodels_1_1_properties_1ad2bd1535907db8892aaee5a9cd37b1fe" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String models.Properties.category</definition>
+        <argsstring></argsstring>
+        <name>category</name>
+        <qualifiedname>models.Properties.category</qualifiedname>
+        <briefdescription>
+<para>The category. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="23" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodels_1_1_properties_1ae9c572f8a55610c6245c001ce54b03b0" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String models.Properties.type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>models.Properties.type</qualifiedname>
+        <briefdescription>
+<para>The type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="25" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodels_1_1_properties_1a361f05e5aa99d3e94c9da03afc68e5dd" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String models.Properties.importance</definition>
+        <argsstring></argsstring>
+        <name>importance</name>
+        <qualifiedname>models.Properties.importance</qualifiedname>
+        <briefdescription>
+<para>The importance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="27" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodels_1_1_properties_1a55755a3ef94e8d45575a0e59ce3748ad" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String models.Properties.addresstype</definition>
+        <argsstring></argsstring>
+        <name>addresstype</name>
+        <qualifiedname>models.Properties.addresstype</qualifiedname>
+        <briefdescription>
+<para>The addresstype. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="29" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodels_1_1_properties_1a5d5e785bbd7741e9f3196cadbe70c7ea" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String models.Properties.name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>models.Properties.name</qualifiedname>
+        <briefdescription>
+<para>The name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="31" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodels_1_1_properties_1a73892696235833d0e2d16cf39e7062c9" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String models.Properties.display_name</definition>
+        <argsstring></argsstring>
+        <name>display_name</name>
+        <qualifiedname>models.Properties.display_name</qualifiedname>
+        <briefdescription>
+<para>Name of the display. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="33" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodels_1_1_properties_1aa8660809594e190833664e94385228a8" prot="private" static="no" mutable="no">
+        <type><ref refid="classmodels_1_1_address" kindref="compound">Address</ref></type>
+        <definition>Address models.Properties.address</definition>
+        <argsstring></argsstring>
+        <name>address</name>
+        <qualifiedname>models.Properties.address</qualifiedname>
+        <briefdescription>
+<para>The address. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="35" column="21" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmodels_1_1_properties_1a8af02df94e9b34788d2b1c1cdef6d713" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmodels_1_1_address" kindref="compound">Address</ref></type>
+        <definition>public Address models.Properties::getAddress</definition>
+        <argsstring>()</argsstring>
+        <name>getAddress</name>
+        <qualifiedname>models.Properties.getAddress</qualifiedname>
+        <briefdescription>
+<para>Getters and setters ... </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The address. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="49" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="49" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_properties_1abc4b56a04227423cd2975458585cdec1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void models.Properties::setAddress</definition>
+        <argsstring>(Address address)</argsstring>
+        <name>setAddress</name>
+        <qualifiedname>models.Properties.setAddress</qualifiedname>
+        <param>
+          <type><ref refid="classmodels_1_1_address" kindref="compound">Address</ref></type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+<para>Sets the address. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The address. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="64" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="64" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_properties_1a7c8d7cc43d213dc20857fdfd7d3e7d18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>public String models.Properties::getPlace_id</definition>
+        <argsstring>()</argsstring>
+        <name>getPlace_id</name>
+        <qualifiedname>models.Properties.getPlace_id</qualifiedname>
+        <briefdescription>
+<para>Gets place identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The place identifier. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="79" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="79" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_properties_1a26d75c0c920a002f3e1972345087f786" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void models.Properties::setPlace_id</definition>
+        <argsstring>(String place_id)</argsstring>
+        <name>setPlace_id</name>
+        <qualifiedname>models.Properties.setPlace_id</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>place_id</declname>
+        </param>
+        <briefdescription>
+<para>Sets place identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>place_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier for the place. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="94" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="94" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_properties_1a0823b6c931f67a4b1ff47f3282b3b2f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>public String models.Properties::getOsm_type</definition>
+        <argsstring>()</argsstring>
+        <name>getOsm_type</name>
+        <qualifiedname>models.Properties.getOsm_type</qualifiedname>
+        <briefdescription>
+<para>Gets osm type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The osm type. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="109" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="109" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_properties_1a747016f8b18fa2836ae9f9232a18c48e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void models.Properties::setOsm_type</definition>
+        <argsstring>(String osm_type)</argsstring>
+        <name>setOsm_type</name>
+        <qualifiedname>models.Properties.setOsm_type</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>osm_type</declname>
+        </param>
+        <briefdescription>
+<para>Sets osm type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>osm_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the osm. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="124" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="124" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_properties_1aedfafdc59bf42218c22d47b536f89c67" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>public String models.Properties::getOsm_id</definition>
+        <argsstring>()</argsstring>
+        <name>getOsm_id</name>
+        <qualifiedname>models.Properties.getOsm_id</qualifiedname>
+        <briefdescription>
+<para>Gets osm identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The osm identifier. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="139" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="139" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_properties_1a647bb47f944eb5063777b8efdd0b542d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void models.Properties::setOsm_id</definition>
+        <argsstring>(String osm_id)</argsstring>
+        <name>setOsm_id</name>
+        <qualifiedname>models.Properties.setOsm_id</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>osm_id</declname>
+        </param>
+        <briefdescription>
+<para>Sets osm identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>osm_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier for the osm. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="154" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="154" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_properties_1abed3a7ad43ba959b86696bf13481db05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>public String models.Properties::getPlace_rank</definition>
+        <argsstring>()</argsstring>
+        <name>getPlace_rank</name>
+        <qualifiedname>models.Properties.getPlace_rank</qualifiedname>
+        <briefdescription>
+<para>Gets place rank. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The place rank. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="169" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="169" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_properties_1a227eda2b1ce5252daf132dea1b7ecc29" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void models.Properties::setPlace_rank</definition>
+        <argsstring>(String place_rank)</argsstring>
+        <name>setPlace_rank</name>
+        <qualifiedname>models.Properties.setPlace_rank</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>place_rank</declname>
+        </param>
+        <briefdescription>
+<para>Sets place rank. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>place_rank</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The place rank. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="184" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="184" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_properties_1a28ba9eeb126be65e6580821646aa3624" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>public String models.Properties::getCategory</definition>
+        <argsstring>()</argsstring>
+        <name>getCategory</name>
+        <qualifiedname>models.Properties.getCategory</qualifiedname>
+        <briefdescription>
+<para>Gets the category. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The category. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="199" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="199" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_properties_1af8c9cb7e8f1e338489fad41049ce73cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void models.Properties::setCategory</definition>
+        <argsstring>(String category)</argsstring>
+        <name>setCategory</name>
+        <qualifiedname>models.Properties.setCategory</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>category</declname>
+        </param>
+        <briefdescription>
+<para>Sets a category. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>category</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The category. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="214" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="214" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_properties_1a1e034bd03cec4ad4d3b0672e0d87f774" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>public String models.Properties::getType</definition>
+        <argsstring>()</argsstring>
+        <name>getType</name>
+        <qualifiedname>models.Properties.getType</qualifiedname>
+        <briefdescription>
+<para>Gets the type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The type. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="229" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="229" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_properties_1a4c5382eb7028219567ec7415c9f5b86d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void models.Properties::setType</definition>
+        <argsstring>(String type)</argsstring>
+        <name>setType</name>
+        <qualifiedname>models.Properties.setType</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Sets a type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="244" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="244" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_properties_1aef5c0311780523c219ee8ac6b6270cf0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>public String models.Properties::getImportance</definition>
+        <argsstring>()</argsstring>
+        <name>getImportance</name>
+        <qualifiedname>models.Properties.getImportance</qualifiedname>
+        <briefdescription>
+<para>Gets the importance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The importance. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="259" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="259" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_properties_1a2746987adb2f2c0147b8967c2fb7215b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void models.Properties::setImportance</definition>
+        <argsstring>(String importance)</argsstring>
+        <name>setImportance</name>
+        <qualifiedname>models.Properties.setImportance</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>importance</declname>
+        </param>
+        <briefdescription>
+<para>Sets an importance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>importance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The importance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="274" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="274" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_properties_1a52d7f9d305c5f3710ec9f5825c15916f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>public String models.Properties::getAddresstype</definition>
+        <argsstring>()</argsstring>
+        <name>getAddresstype</name>
+        <qualifiedname>models.Properties.getAddresstype</qualifiedname>
+        <briefdescription>
+<para>Gets the addresstype. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The addresstype. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="289" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="289" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_properties_1a8a7f54d9b3fdc3ffbb850474492f0edb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void models.Properties::setAddresstype</definition>
+        <argsstring>(String addresstype)</argsstring>
+        <name>setAddresstype</name>
+        <qualifiedname>models.Properties.setAddresstype</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>addresstype</declname>
+        </param>
+        <briefdescription>
+<para>Sets an addresstype. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>addresstype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The addresstype. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="304" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="304" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_properties_1aa85d737b3d1db8dc49f0c1544a242ce7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>public String models.Properties::getName</definition>
+        <argsstring>()</argsstring>
+        <name>getName</name>
+        <qualifiedname>models.Properties.getName</qualifiedname>
+        <briefdescription>
+<para>Gets the name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The name. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="319" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="319" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_properties_1a84d422a2aac22a046e2608bfe1be8e8f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void models.Properties::setName</definition>
+        <argsstring>(String name)</argsstring>
+        <name>setName</name>
+        <qualifiedname>models.Properties.setName</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Sets a name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="334" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="334" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_properties_1a17b3a830d8c0c9fb49460c7ce17822f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>public String models.Properties::getDisplay_name</definition>
+        <argsstring>()</argsstring>
+        <name>getDisplay_name</name>
+        <qualifiedname>models.Properties.getDisplay_name</qualifiedname>
+        <briefdescription>
+<para>Gets display name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The display name. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="349" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="349" bodyend="351"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_properties_1ab0fec1d6cfe765a78ea9ba99be030817" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void models.Properties::setDisplay_name</definition>
+        <argsstring>(String display_name)</argsstring>
+        <name>setDisplay_name</name>
+        <qualifiedname>models.Properties.setDisplay_name</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>display_name</declname>
+        </param>
+        <briefdescription>
+<para>Sets display name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>display_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the display. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="364" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="364" bodyend="366"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A properties. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" line="13" column="7" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Properties.java" bodystart="13" bodyend="367"/>
+    <listofallmembers>
+      <member refid="classmodels_1_1_properties_1aa8660809594e190833664e94385228a8" prot="private" virt="non-virtual"><scope>models::Properties</scope><name>address</name></member>
+      <member refid="classmodels_1_1_properties_1a55755a3ef94e8d45575a0e59ce3748ad" prot="private" virt="non-virtual"><scope>models::Properties</scope><name>addresstype</name></member>
+      <member refid="classmodels_1_1_properties_1ad2bd1535907db8892aaee5a9cd37b1fe" prot="private" virt="non-virtual"><scope>models::Properties</scope><name>category</name></member>
+      <member refid="classmodels_1_1_properties_1a73892696235833d0e2d16cf39e7062c9" prot="private" virt="non-virtual"><scope>models::Properties</scope><name>display_name</name></member>
+      <member refid="classmodels_1_1_properties_1a8af02df94e9b34788d2b1c1cdef6d713" prot="public" virt="non-virtual"><scope>models::Properties</scope><name>getAddress</name></member>
+      <member refid="classmodels_1_1_properties_1a52d7f9d305c5f3710ec9f5825c15916f" prot="public" virt="non-virtual"><scope>models::Properties</scope><name>getAddresstype</name></member>
+      <member refid="classmodels_1_1_properties_1a28ba9eeb126be65e6580821646aa3624" prot="public" virt="non-virtual"><scope>models::Properties</scope><name>getCategory</name></member>
+      <member refid="classmodels_1_1_properties_1a17b3a830d8c0c9fb49460c7ce17822f9" prot="public" virt="non-virtual"><scope>models::Properties</scope><name>getDisplay_name</name></member>
+      <member refid="classmodels_1_1_properties_1aef5c0311780523c219ee8ac6b6270cf0" prot="public" virt="non-virtual"><scope>models::Properties</scope><name>getImportance</name></member>
+      <member refid="classmodels_1_1_properties_1aa85d737b3d1db8dc49f0c1544a242ce7" prot="public" virt="non-virtual"><scope>models::Properties</scope><name>getName</name></member>
+      <member refid="classmodels_1_1_properties_1aedfafdc59bf42218c22d47b536f89c67" prot="public" virt="non-virtual"><scope>models::Properties</scope><name>getOsm_id</name></member>
+      <member refid="classmodels_1_1_properties_1a0823b6c931f67a4b1ff47f3282b3b2f4" prot="public" virt="non-virtual"><scope>models::Properties</scope><name>getOsm_type</name></member>
+      <member refid="classmodels_1_1_properties_1a7c8d7cc43d213dc20857fdfd7d3e7d18" prot="public" virt="non-virtual"><scope>models::Properties</scope><name>getPlace_id</name></member>
+      <member refid="classmodels_1_1_properties_1abed3a7ad43ba959b86696bf13481db05" prot="public" virt="non-virtual"><scope>models::Properties</scope><name>getPlace_rank</name></member>
+      <member refid="classmodels_1_1_properties_1a1e034bd03cec4ad4d3b0672e0d87f774" prot="public" virt="non-virtual"><scope>models::Properties</scope><name>getType</name></member>
+      <member refid="classmodels_1_1_properties_1a361f05e5aa99d3e94c9da03afc68e5dd" prot="private" virt="non-virtual"><scope>models::Properties</scope><name>importance</name></member>
+      <member refid="classmodels_1_1_properties_1a5d5e785bbd7741e9f3196cadbe70c7ea" prot="private" virt="non-virtual"><scope>models::Properties</scope><name>name</name></member>
+      <member refid="classmodels_1_1_properties_1a8f0f4b32e392f2d02a74843da7fa421b" prot="private" virt="non-virtual"><scope>models::Properties</scope><name>osm_id</name></member>
+      <member refid="classmodels_1_1_properties_1a1b334bee4f6d449f6a9e08213bcf2a10" prot="private" virt="non-virtual"><scope>models::Properties</scope><name>osm_type</name></member>
+      <member refid="classmodels_1_1_properties_1afe8106545d1c913837a36b1acdeb1bef" prot="private" virt="non-virtual"><scope>models::Properties</scope><name>place_id</name></member>
+      <member refid="classmodels_1_1_properties_1a81bff227d85b225d14296d5f34782043" prot="private" virt="non-virtual"><scope>models::Properties</scope><name>place_rank</name></member>
+      <member refid="classmodels_1_1_properties_1abc4b56a04227423cd2975458585cdec1" prot="public" virt="non-virtual"><scope>models::Properties</scope><name>setAddress</name></member>
+      <member refid="classmodels_1_1_properties_1a8a7f54d9b3fdc3ffbb850474492f0edb" prot="public" virt="non-virtual"><scope>models::Properties</scope><name>setAddresstype</name></member>
+      <member refid="classmodels_1_1_properties_1af8c9cb7e8f1e338489fad41049ce73cc" prot="public" virt="non-virtual"><scope>models::Properties</scope><name>setCategory</name></member>
+      <member refid="classmodels_1_1_properties_1ab0fec1d6cfe765a78ea9ba99be030817" prot="public" virt="non-virtual"><scope>models::Properties</scope><name>setDisplay_name</name></member>
+      <member refid="classmodels_1_1_properties_1a2746987adb2f2c0147b8967c2fb7215b" prot="public" virt="non-virtual"><scope>models::Properties</scope><name>setImportance</name></member>
+      <member refid="classmodels_1_1_properties_1a84d422a2aac22a046e2608bfe1be8e8f" prot="public" virt="non-virtual"><scope>models::Properties</scope><name>setName</name></member>
+      <member refid="classmodels_1_1_properties_1a647bb47f944eb5063777b8efdd0b542d" prot="public" virt="non-virtual"><scope>models::Properties</scope><name>setOsm_id</name></member>
+      <member refid="classmodels_1_1_properties_1a747016f8b18fa2836ae9f9232a18c48e" prot="public" virt="non-virtual"><scope>models::Properties</scope><name>setOsm_type</name></member>
+      <member refid="classmodels_1_1_properties_1a26d75c0c920a002f3e1972345087f786" prot="public" virt="non-virtual"><scope>models::Properties</scope><name>setPlace_id</name></member>
+      <member refid="classmodels_1_1_properties_1a227eda2b1ce5252daf132dea1b7ecc29" prot="public" virt="non-virtual"><scope>models::Properties</scope><name>setPlace_rank</name></member>
+      <member refid="classmodels_1_1_properties_1a4c5382eb7028219567ec7415c9f5b86d" prot="public" virt="non-virtual"><scope>models::Properties</scope><name>setType</name></member>
+      <member refid="classmodels_1_1_properties_1ae9c572f8a55610c6245c001ce54b03b0" prot="private" virt="non-virtual"><scope>models::Properties</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

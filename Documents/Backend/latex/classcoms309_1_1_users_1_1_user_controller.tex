@@ -1,0 +1,625 @@
+\doxysection{coms309.\+Users.\+User\+Controller Class Reference}
+\hypertarget{classcoms309_1_1_users_1_1_user_controller}{}\label{classcoms309_1_1_users_1_1_user_controller}\index{coms309.Users.UserController@{coms309.Users.UserController}}
+
+
+The coms 309. auth. authentication.  
+
+
+
+
+Collaboration diagram for coms309.\+Users.\+User\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classcoms309_1_1_users_1_1_user_controller__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller_a78f0085408943daa6614318d6d326d6e}{create\+Dummy\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Creates dummy data. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}} $>$ \mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller_af77bb8407daf80d1ac85649ed8dae69a}{get\+All\+Users}} ()
+\begin{DoxyCompactList}\small\item\em Gets all users. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}} \mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller_a202fad0e09356aef167af14fa2d8d26a}{get\+User\+By\+Id}} (@Argument int id)
+\begin{DoxyCompactList}\small\item\em Gets user by identifier. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}} \mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller_a54aee816f10e06b95d3ee0e6db61181a}{get\+User\+By\+Email}} (@Argument String email)
+\begin{DoxyCompactList}\small\item\em Gets user by email. \end{DoxyCompactList}\item 
+permission \mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller_a98878f05406359f0372c930f085948d2}{get\+User\+Role}} (@Argument String email, @Argument String password)
+\begin{DoxyCompactList}\small\item\em Gets user role. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}} \mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller_a5c81d4016bb038d21cf4280d7ca36e85}{delete\+User}} (@Argument int id, @Argument String email, @Argument String password)
+\begin{DoxyCompactList}\small\item\em Deletes the user. \end{DoxyCompactList}\item 
+Flux$<$ String $>$ \mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller_a791c7e700ba5c3148bf3d8357ddea9ee}{greetings}} ()
+\begin{DoxyCompactList}\small\item\em Example to test with... \end{DoxyCompactList}\item 
+Publisher$<$ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}} $>$ \mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller_a0413f6c2a73a72bb17d9dfafe6715aa2}{greetings2}} ()
+\begin{DoxyCompactList}\small\item\em Greetings 2. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller_ac8ca53d16a566e6325c3d9e5392b3f9c}{does\+Email\+Exist}} (String email)
+\begin{DoxyCompactList}\small\item\em Query if \textquotesingle{}email\textquotesingle{} does email exist. \end{DoxyCompactList}\item 
+Graph\+QLError \mbox{\hyperlink{classcoms309_1_1_users_1_1_user_controller_af52bfc2347fe3d4d68d89723dfe43526}{handle}} (Bind\+Exception ex)
+\begin{DoxyCompactList}\small\item\em Handles. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The coms 309. auth. authentication. 
+
+A controller for handling users.
+
+The coms 309. comment. comment
+
+The coms 309. comment. comment repository
+
+The coms 309. email. email sender
+
+The coms 309. enums. permission.\+permission
+
+The coms 309. exceptions. duplicate exception
+
+The coms 309. exceptions. not found exception
+
+The coms 309. game post. game post
+
+The coms 309. game post. game post repository
+
+The coms 309. location. location
+
+The coms 309. skill level. skill level
+
+The coms 309. skill level. skill level repository
+
+The coms 309. sport. sport
+
+The coms 309. sport. sport repository
+
+The graphql. graph ql error
+
+The reactor.\+core.\+publisher. flux
+
+The reactor.\+core.\+publisher. mono
+
+The org.\+springframework.\+beans.\+factory.\+annotation. autowired
+
+The org.\+springframework.\+graphql.\+data.\+method.\+annotation. argument
+
+The org.\+springframework.\+graphql.\+data.\+method.\+annotation. graph ql exception handler
+
+The org.\+springframework.\+graphql.\+data.\+method.\+annotation. mutation mapping
+
+The org.\+springframework.\+graphql.\+data.\+method.\+annotation. query mapping
+
+The org.\+springframework.\+graphql.\+data.\+method.\+annotation. subscription mapping
+
+Type of the org.\+springframework.\+graphql.\+execution. error
+
+The org.\+springframework.\+stereotype. controller
+
+The org.\+reactivestreams. publisher
+
+The org.\+slf 4j. logger
+
+The org.\+slf 4j. logger factory
+
+The java.\+net. bind exception
+
+Duration of the java.\+time.
+
+The java.\+util.\texorpdfstring{$\ast$}{*}
+
+The lombok. all arguments constructor
+
+Information describing the lombok.
+
+The lombok. no arguments constructor
+
+The lombok.\+extern.\+slf 4j. slf 4j
+
+The org.\+springframework.\+boot. spring application
+
+The org.\+springframework.\+boot.\+autoconfigure. spring boot application
+
+The org.\+springframework.\+context.\+annotation. bean
+
+The org.\+springframework.\+context.\+annotation. configuration
+
+Identifier for the org.\+springframework.\+data.\+annotation.
+
+The org.\+springframework.\+data.\+repository.\+reactive. reactive crud repository
+
+The org.\+springframework.\+graphql.\+client. HTTP graph ql client
+
+The org.\+springframework.\+graphql.\+data.\+method.\+annotation.\texorpdfstring{$\ast$}{*}
+
+The org.\+springframework.\+graphql.\+server. web graph ql interceptor
+
+The org.\+springframework.\+graphql.\+server. web graph ql request
+
+The org.\+springframework.\+graphql.\+server. web graph ql response
+
+The org.\+springframework.\+stereotype. component
+
+The org.\+springframework.\+web.\+bind.\+annotation. get mapping
+
+The org.\+springframework.\+web.\+bind.\+annotation. REST controller
+
+The lombok. getter
+
+The lombok. setter
+
+Set the java.\+util. hash belongs to
+
+The java.\+util. objects
+
+Set the java.\+util. belongs to
+
+List of java.\+util. arrays
+
+Collection of java.\+util.\+s
+
+List of java.\+util.\+s
+
+The java.\+util. map
+
+The java.\+util.\+function. function
+
+A controller for handling users.
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/30/2023 
+\end{DoxyDate}
+
+
+Definition at line \mbox{\hyperlink{_user_controller_8java_source_l00152}{152}} of file \mbox{\hyperlink{_user_controller_8java_source}{User\+Controller.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcoms309_1_1_users_1_1_user_controller_a78f0085408943daa6614318d6d326d6e}\label{classcoms309_1_1_users_1_1_user_controller_a78f0085408943daa6614318d6d326d6e} 
+\index{coms309.Users.UserController@{coms309.Users.UserController}!createDummyData@{createDummyData}}
+\index{createDummyData@{createDummyData}!coms309.Users.UserController@{coms309.Users.UserController}}
+\doxysubsubsection{\texorpdfstring{createDummyData()}{createDummyData()}}
+{\footnotesize\ttfamily Mutation\+Mapping public String coms309.\+Users.\+User\+Controller.\+create\+Dummy\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates dummy data. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+String.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/30/2023
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The new dummy data. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_user_controller_8java_source_l00292}{292}} of file \mbox{\hyperlink{_user_controller_8java_source}{User\+Controller.\+java}}.
+
+\Hypertarget{classcoms309_1_1_users_1_1_user_controller_a5c81d4016bb038d21cf4280d7ca36e85}\label{classcoms309_1_1_users_1_1_user_controller_a5c81d4016bb038d21cf4280d7ca36e85} 
+\index{coms309.Users.UserController@{coms309.Users.UserController}!deleteUser@{deleteUser}}
+\index{deleteUser@{deleteUser}!coms309.Users.UserController@{coms309.Users.UserController}}
+\doxysubsubsection{\texorpdfstring{deleteUser()}{deleteUser()}}
+{\footnotesize\ttfamily Mutation\+Mapping public \mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}} coms309.\+Users.\+User\+Controller.\+delete\+User (\begin{DoxyParamCaption}\item[{@Argument int}]{id,  }\item[{@Argument String}]{email,  }\item[{@Argument String}]{password }\end{DoxyParamCaption})}
+
+
+
+Deletes the user. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Found\+Exception} & Thrown when the requested element is not present. \\
+\hline
+{\em Exception} & Thrown when an exception error condition occurs.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The identifier. \\
+\hline
+{\em email} & The email. \\
+\hline
+{\em password} & The password.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Users.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/30/2023
+\end{DoxyDate}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Found\+Exception} & Thrown when the requested element is not present. \\
+\hline
+{\em Exception} & Thrown when an exception error condition occurs.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The identifier. \\
+\hline
+{\em email} & The email. \\
+\hline
+{\em password} & The password.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Users. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_user_controller_8java_source_l00810}{810}} of file \mbox{\hyperlink{_user_controller_8java_source}{User\+Controller.\+java}}.
+
+\Hypertarget{classcoms309_1_1_users_1_1_user_controller_ac8ca53d16a566e6325c3d9e5392b3f9c}\label{classcoms309_1_1_users_1_1_user_controller_ac8ca53d16a566e6325c3d9e5392b3f9c} 
+\index{coms309.Users.UserController@{coms309.Users.UserController}!doesEmailExist@{doesEmailExist}}
+\index{doesEmailExist@{doesEmailExist}!coms309.Users.UserController@{coms309.Users.UserController}}
+\doxysubsubsection{\texorpdfstring{doesEmailExist()}{doesEmailExist()}}
+{\footnotesize\ttfamily public boolean coms309.\+Users.\+User\+Controller.\+does\+Email\+Exist (\begin{DoxyParamCaption}\item[{String}]{email }\end{DoxyParamCaption})}
+
+
+
+Query if \textquotesingle{}email\textquotesingle{} does email exist. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em email} & The email.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it succeeds, false if it fails.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/30/2023
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em email} & The email.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it succeeds, false if it fails. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_user_controller_8java_source_l00943}{943}} of file \mbox{\hyperlink{_user_controller_8java_source}{User\+Controller.\+java}}.
+
+\Hypertarget{classcoms309_1_1_users_1_1_user_controller_af77bb8407daf80d1ac85649ed8dae69a}\label{classcoms309_1_1_users_1_1_user_controller_af77bb8407daf80d1ac85649ed8dae69a} 
+\index{coms309.Users.UserController@{coms309.Users.UserController}!getAllUsers@{getAllUsers}}
+\index{getAllUsers@{getAllUsers}!coms309.Users.UserController@{coms309.Users.UserController}}
+\doxysubsubsection{\texorpdfstring{getAllUsers()}{getAllUsers()}}
+{\footnotesize\ttfamily Query\+Mapping public List$<$ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}} $>$ coms309.\+Users.\+User\+Controller.\+get\+All\+Users (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets all users. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+List\texorpdfstring{$<$}{<}Users\texorpdfstring{$>$}{>}
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/30/2023
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+all users. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_user_controller_8java_source_l00442}{442}} of file \mbox{\hyperlink{_user_controller_8java_source}{User\+Controller.\+java}}.
+
+\Hypertarget{classcoms309_1_1_users_1_1_user_controller_a54aee816f10e06b95d3ee0e6db61181a}\label{classcoms309_1_1_users_1_1_user_controller_a54aee816f10e06b95d3ee0e6db61181a} 
+\index{coms309.Users.UserController@{coms309.Users.UserController}!getUserByEmail@{getUserByEmail}}
+\index{getUserByEmail@{getUserByEmail}!coms309.Users.UserController@{coms309.Users.UserController}}
+\doxysubsubsection{\texorpdfstring{getUserByEmail()}{getUserByEmail()}}
+{\footnotesize\ttfamily Query\+Mapping public \mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}} coms309.\+Users.\+User\+Controller.\+get\+User\+By\+Email (\begin{DoxyParamCaption}\item[{@Argument String}]{email }\end{DoxyParamCaption})}
+
+
+
+Gets user by email. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Thrown when an exception error condition occurs.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em email} & The email.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The user by email.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/30/2023
+\end{DoxyDate}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Thrown when an exception error condition occurs.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em email} & The email.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The user by email. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_user_controller_8java_source_l00524}{524}} of file \mbox{\hyperlink{_user_controller_8java_source}{User\+Controller.\+java}}.
+
+\Hypertarget{classcoms309_1_1_users_1_1_user_controller_a202fad0e09356aef167af14fa2d8d26a}\label{classcoms309_1_1_users_1_1_user_controller_a202fad0e09356aef167af14fa2d8d26a} 
+\index{coms309.Users.UserController@{coms309.Users.UserController}!getUserById@{getUserById}}
+\index{getUserById@{getUserById}!coms309.Users.UserController@{coms309.Users.UserController}}
+\doxysubsubsection{\texorpdfstring{getUserById()}{getUserById()}}
+{\footnotesize\ttfamily Query\+Mapping public \mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}} coms309.\+Users.\+User\+Controller.\+get\+User\+By\+Id (\begin{DoxyParamCaption}\item[{@Argument int}]{id }\end{DoxyParamCaption})}
+
+
+
+Gets user by identifier. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Found\+Exception} & Thrown when the requested element is not present.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & .\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The user by identifier.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/30/2023
+\end{DoxyDate}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Found\+Exception} & Thrown when the requested element is not present.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The identifier.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The user by identifier. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_user_controller_8java_source_l00481}{481}} of file \mbox{\hyperlink{_user_controller_8java_source}{User\+Controller.\+java}}.
+
+\Hypertarget{classcoms309_1_1_users_1_1_user_controller_a98878f05406359f0372c930f085948d2}\label{classcoms309_1_1_users_1_1_user_controller_a98878f05406359f0372c930f085948d2} 
+\index{coms309.Users.UserController@{coms309.Users.UserController}!getUserRole@{getUserRole}}
+\index{getUserRole@{getUserRole}!coms309.Users.UserController@{coms309.Users.UserController}}
+\doxysubsubsection{\texorpdfstring{getUserRole()}{getUserRole()}}
+{\footnotesize\ttfamily Query\+Mapping public permission coms309.\+Users.\+User\+Controller.\+get\+User\+Role (\begin{DoxyParamCaption}\item[{@Argument String}]{email,  }\item[{@Argument String}]{password }\end{DoxyParamCaption})}
+
+
+
+Gets user role. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Thrown when an exception error condition occurs.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em email} & . \\
+\hline
+{\em password} & .\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The user role.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/30/2023
+\end{DoxyDate}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Thrown when an exception error condition occurs.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em email} & The email. \\
+\hline
+{\em password} & The password.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The user role. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_user_controller_8java_source_l00576}{576}} of file \mbox{\hyperlink{_user_controller_8java_source}{User\+Controller.\+java}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcoms309_1_1_users_1_1_user_controller_a98878f05406359f0372c930f085948d2_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classcoms309_1_1_users_1_1_user_controller_a791c7e700ba5c3148bf3d8357ddea9ee}\label{classcoms309_1_1_users_1_1_user_controller_a791c7e700ba5c3148bf3d8357ddea9ee} 
+\index{coms309.Users.UserController@{coms309.Users.UserController}!greetings@{greetings}}
+\index{greetings@{greetings}!coms309.Users.UserController@{coms309.Users.UserController}}
+\doxysubsubsection{\texorpdfstring{greetings()}{greetings()}}
+{\footnotesize\ttfamily Subscription\+Mapping public Flux$<$ String $>$ coms309.\+Users.\+User\+Controller.\+greetings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Example to test with... 
+
+Gets the greetings.
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+A Flux\texorpdfstring{$<$}{<}String\texorpdfstring{$>$}{>}
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/30/2023
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+A Flux\texorpdfstring{$<$}{<}String\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_user_controller_8java_source_l00889}{889}} of file \mbox{\hyperlink{_user_controller_8java_source}{User\+Controller.\+java}}.
+
+\Hypertarget{classcoms309_1_1_users_1_1_user_controller_a0413f6c2a73a72bb17d9dfafe6715aa2}\label{classcoms309_1_1_users_1_1_user_controller_a0413f6c2a73a72bb17d9dfafe6715aa2} 
+\index{coms309.Users.UserController@{coms309.Users.UserController}!greetings2@{greetings2}}
+\index{greetings2@{greetings2}!coms309.Users.UserController@{coms309.Users.UserController}}
+\doxysubsubsection{\texorpdfstring{greetings2()}{greetings2()}}
+{\footnotesize\ttfamily Subscription\+Mapping public Publisher$<$ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}} $>$ coms309.\+Users.\+User\+Controller.\+greetings2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Greetings 2. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/30/2023
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+A Publisher\texorpdfstring{$<$}{<}Users\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_user_controller_8java_source_l00909}{909}} of file \mbox{\hyperlink{_user_controller_8java_source}{User\+Controller.\+java}}.
+
+\Hypertarget{classcoms309_1_1_users_1_1_user_controller_af52bfc2347fe3d4d68d89723dfe43526}\label{classcoms309_1_1_users_1_1_user_controller_af52bfc2347fe3d4d68d89723dfe43526} 
+\index{coms309.Users.UserController@{coms309.Users.UserController}!handle@{handle}}
+\index{handle@{handle}!coms309.Users.UserController@{coms309.Users.UserController}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily Graph\+Ql\+Exception\+Handler public Graph\+QLError coms309.\+Users.\+User\+Controller.\+handle (\begin{DoxyParamCaption}\item[{Bind\+Exception}]{ex }\end{DoxyParamCaption})}
+
+
+
+Handles. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em ex} & Details of the exception.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Graph\+QLError.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/30/2023
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em ex} & Details of the exception.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Graph\+QLError. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_user_controller_8java_source_l00976}{976}} of file \mbox{\hyperlink{_user_controller_8java_source}{User\+Controller.\+java}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Arie/\+Develop/hb\+\_\+215/\+Backend/src/main/java/coms309/\+Users/\mbox{\hyperlink{_user_controller_8java}{User\+Controller.\+java}}\end{DoxyCompactItemize}

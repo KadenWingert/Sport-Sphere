@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_game_post_repository_8java" kind="file" language="Java">
+    <compoundname>GamePostRepository.java</compoundname>
+    <includes local="no">java.util.List</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostRepository.java</label>
+        <link refid="_game_post_repository_8java"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>java.util.List</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interfacecoms309_1_1_game_post_1_1_game_post_repository" prot="public">coms309::GamePost::GamePostRepository</innerclass>
+    <innernamespace refid="namespacecoms309_1_1_game_post">coms309::GamePost</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">package<sp/></highlight><highlight class="normal">coms309.GamePost;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.List;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.springframework.data.jpa.repository.JpaRepository;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.springframework.stereotype.Repository;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>reactor.core.publisher.Flux;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>reactor.core.publisher.Mono;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">@Repository</highlight></codeline>
+<codeline lineno="27" refid="interfacecoms309_1_1_game_post_1_1_game_post_repository" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interfacecoms309_1_1_game_post_1_1_game_post_repository" kindref="compound">GamePostRepository</ref><sp/></highlight><highlight class="keyword">extends</highlight><highlight class="normal"><sp/>JpaRepository&lt;GamePost,<sp/>Integer&gt;<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="interfacecoms309_1_1_game_post_1_1_game_post_repository_1a33b629f71dd8010f5233090eb8f01756" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcoms309_1_1_game_post_1_1_game_post" kindref="compound">GamePost</ref><sp/><ref refid="interfacecoms309_1_1_game_post_1_1_game_post_repository_1a33b629f71dd8010f5233090eb8f01756" kindref="member">findById</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="interfacecoms309_1_1_game_post_1_1_game_post_repository_1a98bdf374b051e5c8501577124ed41e8e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>List&lt;GamePost&gt;<sp/><ref refid="interfacecoms309_1_1_game_post_1_1_game_post_repository_1a98bdf374b051e5c8501577124ed41e8e" kindref="member">findAll</ref>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Flux&lt;GamePost&gt;<sp/>findByLocation(int<sp/>id);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Flux&lt;GamePost&gt;<sp/>findAll();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="interfacecoms309_1_1_game_post_1_1_game_post_repository_1a65dc33db9ac75b12c9685ca2e3f39507" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interfacecoms309_1_1_game_post_1_1_game_post_repository_1a65dc33db9ac75b12c9685ca2e3f39507" kindref="member">deleteById</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Mono&lt;GamePost&gt;<sp/>findByIdFlux(int<sp/>id);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Flux&lt;GamePost&gt;<sp/>findAllFlux();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>List&lt;GamePost&gt;<sp/>findByCreated_on(String<sp/>created_on);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostRepository.java"/>
+  </compounddef>
+</doxygen>

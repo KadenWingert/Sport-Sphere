@@ -1,0 +1,4 @@
+mutation DeletePost($gameID: ID!, $email: String!, $password: String!)
+{
+    deleteGamePostById(id: $gameID, email: $email, password: $password)
+}

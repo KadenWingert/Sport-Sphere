@@ -1,0 +1,6 @@
+mutation LeavePost($gameID: ID!, $userID: ID!, $email: String!, $password: String!) {
+    removeUserPlaying(gamePostID: $gameID, userID: $userID, email: $email, password: $password) {
+        id
+    }
+
+}

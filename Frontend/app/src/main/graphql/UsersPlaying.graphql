@@ -1,0 +1,8 @@
+query UsersPlaying($id: ID!){
+    getUsersPlaying(gamePostID: $id){
+        id
+        first_name
+        last_name
+        email
+    }
+}

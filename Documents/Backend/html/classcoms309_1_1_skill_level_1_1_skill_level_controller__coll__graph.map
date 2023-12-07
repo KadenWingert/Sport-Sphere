@@ -1,0 +1,7 @@
+<map id="coms309.SkillLevel.SkillLevelController" name="coms309.SkillLevel.SkillLevelController">
+<area shape="rect" id="Node000001" title="The coms 309. exceptions. not found exception." alt="" coords="5,327,217,684"/>
+<area shape="rect" id="Node000002" href="$interfacecoms309_1_1_skill_level_1_1_skill_level_repository.html" title="The org.springframework.data.jpa.repository. jpa repository." alt="" coords="35,140,188,263"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,263,114,310,109,310,109,263"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="29,5,194,91"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="114,105,114,140,109,140,109,105"/>
+</map>

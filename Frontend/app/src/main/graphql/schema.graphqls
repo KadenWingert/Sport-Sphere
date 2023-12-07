@@ -1,0 +1,723 @@
+type Comment {
+  id: ID
+
+  gamePost: GamePost
+
+  comment_details: CommentMessage
+
+  user: Users
+}
+
+input CommentInput {
+  id: ID
+
+  gamePost: GamePostInput
+
+  comment_details: CommentMessageInput
+
+  user: UserInput
+}
+
+type CommentMessage {
+  id: ID
+
+  message: String
+
+  created_at: LocalDateTime
+
+  updated_at: LocalDateTime
+}
+
+input CommentMessageInput {
+  id: ID
+
+  message: String
+}
+
+type GamePost {
+  id: ID
+
+  sport: Sport
+
+  created_by: Users
+
+  max_players: Int
+
+  min_players: Int
+
+  playing_on: String
+
+  created_on: String
+
+  is_deleted: Boolean
+
+  location: Location
+}
+
+input GamePostInput {
+  id: ID
+
+  sport: SportInput
+
+  created_by: UserInput
+
+  max_players: Int
+
+  min_players: Int
+
+  playing_on: String
+
+  created_on: String
+
+  is_deleted: Boolean
+
+  location: LocationInput
+}
+
+"""
+LocalDateTime type
+"""
+scalar LocalDateTime
+
+type Location {
+  id: ID
+
+  address: String
+
+  gps: String
+
+  gamePost: GamePost
+}
+
+input LocationInput {
+  id: ID
+
+  address: String
+
+  gps: String
+
+  gamePost: GamePostInput
+}
+
+type Mutation {
+  createDummyData: String
+
+  createUser(first_name: String!, last_name: String!, email: String!, password: String!): Users
+
+  updateUser(id: ID!, first_name: String, last_name: String, email: String, password: String): Users
+
+  updateRole(email: String!, password: String!, newRole: permission!): Users
+
+  updatePassword(email: String!, oldPassword: String!, newPassword: String!): Users
+
+  updatePasswordByAdmin(adminEmail: String!, adminPassword: String!, userEmail: String!, newPassword: String!): Users
+
+  deleteUser(id: ID!, email: String!, password: String!): Users
+
+  createGamePost(sport_id: ID!, created_by: ID!, max_players: Int, min_players: Int, playing_on: String!, created_on: String!, is_deleted: Boolean, address: String, GPS: String, email: String!, password: String!): GamePost
+
+  updateGamePost(gamePostID: ID!, sport_id: ID, max_players: Int, min_players: Int, playing_on: String, created_on: String, is_deleted: Boolean, address: String, GPS: String, email: String!, password: String!): GamePost
+
+  addNewUserPlaying(gamePostID: ID!, userID: ID!, email: String!, password: String!): [Users]
+
+  addGamePostToSport(gamePost_id: ID!, sport_id: ID!, email: String!, password: String!): GamePost
+
+  removeUserPlaying(gamePostID: ID!, userID: ID!, email: String!, password: String!): [Users]
+
+  deleteGamePostById(id: ID!, email: String!, password: String!): String
+
+  deleteAllGamePosts(email: String!, password: String!): String
+
+  createLocation(address: String!, gps: String!, gamePostID: ID): Location
+
+  updateLocation(locationID: ID, address: String, gps: String): Location
+
+  deleteLocation(id: ID!): Location
+
+  createSkillLevel(user_id: Int!, skill_level: Int!, sport_id: ID!): SkillLevel
+
+  updateSkillLevel(skill_id: ID!, skill_level: Int, sport_id: ID): SkillLevel
+
+  deleteSkillLevelById(id: ID!): String
+
+  deleteAllSkillLevels: String
+
+  """
+   Comments
+  """
+  createComment(game_post_id: ID!, comment_details: String, user_id: ID!): Comment
+
+  updateComment(comment_id: ID!, new_message: String): Comment
+
+  deleteCommentById(id: ID!): Comment
+
+  deleteAllComments: String
+
+  createSport(sport_name: String!, skill_level_id: Int): Sport
+
+  updateSport(sport_name: String, sport_id: ID!, skill_level_id: ID): Sport
+
+  deleteSportById(sport_id: Int!): String
+
+  deleteAllSports: String
+
+  createPreferenceValue(name: String, enabled: Boolean, int_value: Int, string_value: String, userID: ID!): PreferenceValue
+
+  createUserAddress(userID: ID!, address: String!, gps: String!): UserAddress
+
+  updateUserAddress(userAddressID: ID, address: String, gps: String): UserAddress
+
+  deleteUserAddress(id: ID!): UserAddress
+
+  createSavedGamePost(userID: ID!, gamePostId: ID!): SavedGamePost
+
+  updateSavedGamePost(savedPostId: ID!, userID: ID!, gamePostId: ID!): SavedGamePost
+
+  deleteSavedGamePost(id: ID!): String
+
+  createProfile(username: String, bio: String, profilePicture: String, profileBanner: String, profileColor: String, profileTextColor: String, user: ID!): Profile
+}
+
+type PreferenceValue {
+  id: ID
+
+  name: String
+
+  enabled: Boolean
+
+  int_value: Int
+
+  string_value: String
+}
+
+input PreferenceValueInput {
+  id: ID
+
+  name: String
+
+  enabled: Boolean
+
+  int_value: Int
+
+  string_value: String
+
+  user: UserInput
+}
+
+type Profile {
+  id: ID
+
+  username: String
+
+  bio: String
+
+  profilePicture: String
+
+  profileBanner: String
+
+  profileColor: String
+
+  profileTextColor: String
+
+  user: Users
+}
+
+input ProfileInput {
+  id: ID
+
+  username: String
+
+  bio: String
+
+  profilePicture: String
+
+  profileBanner: String
+
+  profileColor: String
+
+  profileTextColor: String
+
+  user: UserInput
+}
+
+type Query {
+  getAllUsers: [Users]
+
+  getUserById(id: ID!): Users
+
+  getUserByEmail(email: String): Users
+
+  getUserRole(email: String!, password: String!): permission
+
+  getAllGamePosts: [GamePost]
+
+  getGamePostById(id: ID!): GamePost
+
+  getUsersPlaying(gamePostID: ID!): [Users]
+
+  getAllLocations: [Location]
+
+  getLocationById(id: ID!): Location
+
+  getGamePostsAtLocation(address: String!): [GamePost]
+
+  getAllSkillLevels: [SkillLevel]
+
+  getSkillLevelById(id: ID!): SkillLevel
+
+  getAllComments: [Comment]
+
+  getCommentById(id: ID!): Comment
+
+  getCommentDetails: [CommentMessage]
+
+  getAllSports: [Sport]
+
+  getSportById(id: ID!): Sport
+
+  """
+      getAllSportsAUserHasASkillLevelFor(user_id : ID!,  sport_name: String!) : [Sport]
+  """
+  getAllGamePostsPlayingASport(sport_id: Int): [GamePost]
+
+  getPreferenceValueById(id: ID!): PreferenceValue
+
+  getAllPreferenceValues: [PreferenceValue]
+
+  getAllUserAddresses: [UserAddress]
+
+  getuserAddressByID(id: ID!): UserAddress
+
+  getAllSavedGamePosts: [SavedGamePost]
+
+  getSavedGamePostById(id: ID!): SavedGamePost
+
+  getSavedGamePostByUserId(id: ID!): SavedGamePost
+
+  getProfileById(id: ID!): Profile
+
+  getProfileByUsername(username: String!): Profile
+
+  getProfileByUserId(id: ID!): Profile
+
+  getAllProfiles: [Profile]
+}
+
+type SavedGamePost {
+  id: ID
+
+  gamePost: Int
+
+  user: Users
+}
+
+input SavedGamePostInput {
+  id: ID
+
+  gamePost: Int
+
+  user: UserInput
+}
+
+type SkillLevel {
+  id: ID
+
+  skill_level: Int
+
+  user: Users
+
+  sport: Sport
+}
+
+input SkillLevelInput {
+  id: ID
+
+  skill_level: Int
+
+  user: UserInput
+
+  sport: SportInput
+}
+
+type Sport {
+  id: ID
+
+  sport_name: String
+
+  skillLevel: SkillLevel
+}
+
+input SportInput {
+  id: ID
+
+  sport_name: String
+
+  skillLevel: SkillLevelInput
+}
+
+type Subscription {
+  greetings: String
+
+  subUsers: Users
+
+  """
+   subCommentByPost(gamePostId: ID): Comment
+  """
+  subComments: Comment
+
+  subCommentsById(id: ID!): Comment
+
+  subGamePost: GamePost
+}
+
+type UserAddress {
+  id: ID
+
+  address: String
+
+  gps: String
+}
+
+input UserAddressInput {
+  id: ID
+
+  address: String
+
+  gps: String
+
+  user: UserInput
+}
+
+input UserInput {
+  id: ID
+
+  first_name: String
+
+  last_name: String
+
+  email: String
+
+  password: String
+}
+
+type Users {
+  id: ID
+
+  first_name: String
+
+  last_name: String
+
+  email: String
+
+  password: String
+}
+
+# See https://github.com/JetBrains/js-graphql-intellij-plugin/issues/665
+# noinspection GraphQLTypeRedefinition
+type __Directive {
+  """
+  The __Directive type represents a Directive that a server supports.
+  """
+  name: String!
+
+  description: String
+
+  isRepeatable: Boolean!
+
+  locations: [__DirectiveLocation!]!
+
+  args(includeDeprecated: Boolean = false): [__InputValue!]!
+}
+
+# See https://github.com/JetBrains/js-graphql-intellij-plugin/issues/665
+# noinspection GraphQLTypeRedefinition
+"""
+An enum describing valid locations where a directive can be placed
+"""
+enum __DirectiveLocation {
+  """
+  Indicates the directive is valid on queries.
+  """
+  QUERY
+
+  """
+  Indicates the directive is valid on mutations.
+  """
+  MUTATION
+
+  """
+  Indicates the directive is valid on subscriptions.
+  """
+  SUBSCRIPTION
+
+  """
+  Indicates the directive is valid on fields.
+  """
+  FIELD
+
+  """
+  Indicates the directive is valid on fragment definitions.
+  """
+  FRAGMENT_DEFINITION
+
+  """
+  Indicates the directive is valid on fragment spreads.
+  """
+  FRAGMENT_SPREAD
+
+  """
+  Indicates the directive is valid on inline fragments.
+  """
+  INLINE_FRAGMENT
+
+  """
+  Indicates the directive is valid on variable definitions.
+  """
+  VARIABLE_DEFINITION
+
+  """
+  Indicates the directive is valid on a schema SDL definition.
+  """
+  SCHEMA
+
+  """
+  Indicates the directive is valid on a scalar SDL definition.
+  """
+  SCALAR
+
+  """
+  Indicates the directive is valid on an object SDL definition.
+  """
+  OBJECT
+
+  """
+  Indicates the directive is valid on a field SDL definition.
+  """
+  FIELD_DEFINITION
+
+  """
+  Indicates the directive is valid on a field argument SDL definition.
+  """
+  ARGUMENT_DEFINITION
+
+  """
+  Indicates the directive is valid on an interface SDL definition.
+  """
+  INTERFACE
+
+  """
+  Indicates the directive is valid on an union SDL definition.
+  """
+  UNION
+
+  """
+  Indicates the directive is valid on an enum SDL definition.
+  """
+  ENUM
+
+  """
+  Indicates the directive is valid on an enum value SDL definition.
+  """
+  ENUM_VALUE
+
+  """
+  Indicates the directive is valid on an input object SDL definition.
+  """
+  INPUT_OBJECT
+
+  """
+  Indicates the directive is valid on an input object field SDL definition.
+  """
+  INPUT_FIELD_DEFINITION
+}
+
+# See https://github.com/JetBrains/js-graphql-intellij-plugin/issues/665
+# noinspection GraphQLTypeRedefinition
+type __EnumValue {
+  name: String!
+
+  description: String
+
+  isDeprecated: Boolean!
+
+  deprecationReason: String
+}
+
+# See https://github.com/JetBrains/js-graphql-intellij-plugin/issues/665
+# noinspection GraphQLTypeRedefinition
+type __Field {
+  name: String!
+
+  description: String
+
+  args(includeDeprecated: Boolean = false): [__InputValue!]!
+
+  type: __Type!
+
+  isDeprecated: Boolean!
+
+  deprecationReason: String
+}
+
+# See https://github.com/JetBrains/js-graphql-intellij-plugin/issues/665
+# noinspection GraphQLTypeRedefinition
+type __InputValue {
+  name: String!
+
+  description: String
+
+  type: __Type!
+
+  defaultValue: String
+
+  isDeprecated: Boolean
+
+  deprecationReason: String
+}
+
+# See https://github.com/JetBrains/js-graphql-intellij-plugin/issues/665
+# noinspection GraphQLTypeRedefinition
+"""
+A GraphQL Introspection defines the capabilities of a GraphQL server. It exposes all available types and directives on the server, the entry points for query, mutation, and subscription operations.
+"""
+type __Schema {
+  description: String
+
+  """
+  A list of all types supported by this server.
+  """
+  types: [__Type!]!
+
+  """
+  The type that query operations will be rooted at.
+  """
+  queryType: __Type!
+
+  """
+  If this server supports mutation, the type that mutation operations will be rooted at.
+  """
+  mutationType: __Type
+
+  """
+  'A list of all directives supported by this server.
+  """
+  directives: [__Directive!]!
+
+  """
+  'If this server support subscription, the type that subscription operations will be rooted at.
+  """
+  subscriptionType: __Type
+}
+
+# See https://github.com/JetBrains/js-graphql-intellij-plugin/issues/665
+# noinspection GraphQLTypeRedefinition
+type __Type {
+  kind: __TypeKind!
+
+  name: String
+
+  description: String
+
+  fields(includeDeprecated: Boolean = false): [__Field!]
+
+  interfaces: [__Type!]
+
+  possibleTypes: [__Type!]
+
+  enumValues(includeDeprecated: Boolean = false): [__EnumValue!]
+
+  inputFields(includeDeprecated: Boolean = false): [__InputValue!]
+
+  ofType: __Type
+
+  specifiedByURL: String
+
+  specifiedByUrl: String @deprecated(reason: "This legacy name has been replaced by `specifiedByURL`")
+}
+
+# See https://github.com/JetBrains/js-graphql-intellij-plugin/issues/665
+# noinspection GraphQLTypeRedefinition
+"""
+An enum describing what kind of type a given __Type is
+"""
+enum __TypeKind {
+  """
+  Indicates this type is a scalar. 'specifiedByURL' is a valid field
+  """
+  SCALAR
+
+  """
+  Indicates this type is an object. `fields` and `interfaces` are valid fields.
+  """
+  OBJECT
+
+  """
+  Indicates this type is an interface. `fields` and `possibleTypes` are valid fields.
+  """
+  INTERFACE
+
+  """
+  Indicates this type is a union. `possibleTypes` is a valid field.
+  """
+  UNION
+
+  """
+  Indicates this type is an enum. `enumValues` is a valid field.
+  """
+  ENUM
+
+  """
+  Indicates this type is an input object. `inputFields` is a valid field.
+  """
+  INPUT_OBJECT
+
+  """
+  Indicates this type is a list. `ofType` is a valid field.
+  """
+  LIST
+
+  """
+  Indicates this type is a non-null. `ofType` is a valid field.
+  """
+  NON_NULL
+}
+
+enum permission {
+  USER
+
+  ADMIN
+}
+
+# See https://github.com/JetBrains/js-graphql-intellij-plugin/issues/665
+# noinspection GraphQLTypeRedefinition
+"""
+Directs the executor to include this field or fragment only when the `if` argument is true
+"""
+directive @include ("Included when true." if: Boolean!) on FIELD|FRAGMENT_SPREAD|INLINE_FRAGMENT
+
+# See https://github.com/JetBrains/js-graphql-intellij-plugin/issues/665
+# noinspection GraphQLTypeRedefinition
+"""
+Directs the executor to skip this field or fragment when the `if` argument is true.
+"""
+directive @skip ("Skipped when true." if: Boolean!) on FIELD|FRAGMENT_SPREAD|INLINE_FRAGMENT
+
+# See https://github.com/JetBrains/js-graphql-intellij-plugin/issues/665
+# noinspection GraphQLTypeRedefinition
+"""
+Marks the field, argument, input field or enum value as deprecated
+"""
+directive @deprecated ("The reason for the deprecation" reason: String = "No longer supported") on FIELD_DEFINITION|ARGUMENT_DEFINITION|ENUM_VALUE|INPUT_FIELD_DEFINITION
+
+# See https://github.com/JetBrains/js-graphql-intellij-plugin/issues/665
+# noinspection GraphQLTypeRedefinition
+"""
+Exposes a URL that specifies the behaviour of this scalar.
+"""
+directive @specifiedBy ("The URL that specifies the behaviour of this scalar." url: String!) on SCALAR
+
+schema {
+  query: Query
+  mutation: Mutation
+  subscription: Subscription
+}

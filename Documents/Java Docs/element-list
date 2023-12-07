@@ -1,0 +1,14 @@
+com.mockito
+coms309
+coms309.Auth
+coms309.Comment
+coms309.Email
+coms309.Enums
+coms309.Exceptions
+coms309.GamePost
+coms309.Location
+coms309.Role
+coms309.SkillLevel
+coms309.Sport
+coms309.Users
+coms309.Websocket

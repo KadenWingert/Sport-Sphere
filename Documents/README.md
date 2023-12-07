@@ -1,0 +1,2 @@
+Our backend controllers can be viewed through the Graphiql webpage that runs while the server is running. This tool will show every subscription (websocket), query (get method), and mutation (post and put) requests that exist for this project. It also will show each type that the mehtod takes as well as each of the properties of our custom objects.
+Access our Graphiql link here: http://coms-309-005.class.las.iastate.edu:8080/graphiql?path=/graphql

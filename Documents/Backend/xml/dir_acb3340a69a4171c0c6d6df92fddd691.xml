@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_acb3340a69a4171c0c6d6df92fddd691" kind="dir">
+    <compoundname>C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Enums</compoundname>
+    <innerfile refid="_permission_8java">Permission.java</innerfile>
+    <innerfile refid="_sport_name_8java">SportName.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Enums/"/>
+  </compounddef>
+</doxygen>

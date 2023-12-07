@@ -1,0 +1,178 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > SavedGamePostController</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">coms309.SavedGamePost</a>
+</div>
+
+<h1>Coverage Summary for Class: SavedGamePostController (coms309.SavedGamePost)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">SavedGamePostController</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    14.3%
+  </span>
+  <span class="absValue">
+    (1/7)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    5.9%
+  </span>
+  <span class="absValue">
+    (1/17)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package coms309.SavedGamePost;
+&nbsp;
+&nbsp;import java.util.ArrayList;
+&nbsp;import java.util.Arrays;
+&nbsp;import java.util.List;
+&nbsp;import org.springframework.beans.factory.annotation.Autowired;
+&nbsp;import org.springframework.data.jpa.repository.Query;
+&nbsp;import org.springframework.graphql.data.method.annotation.Argument;
+&nbsp;import org.springframework.graphql.data.method.annotation.MutationMapping;
+&nbsp;import org.springframework.graphql.data.method.annotation.QueryMapping;
+&nbsp;import org.springframework.stereotype.Controller;
+&nbsp;import coms309.GamePost.GamePost;
+&nbsp;import coms309.GamePost.GamePostRepository;
+&nbsp;import coms309.Users.UserRepository;
+&nbsp;import coms309.Users.Users;
+&nbsp;import feign.QueryMap;
+&nbsp;
+&nbsp;@Controller
+<b class="fc">&nbsp;public class SavedGamePostController {</b>
+&nbsp;    @Autowired
+&nbsp;    private SavedGamePostRepository savedGamePostRepository;
+&nbsp;
+&nbsp;    @Autowired
+&nbsp;    private UserRepository userRepository;
+&nbsp;
+&nbsp;    @Autowired
+&nbsp;    private GamePostRepository gamePostRepository;
+&nbsp;
+&nbsp;    @QueryMapping
+&nbsp;    public List&lt;SavedGamePost&gt; getAllSavedGamePosts() {
+<b class="nc">&nbsp;        return savedGamePostRepository.findAll();</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @QueryMapping
+&nbsp;    public SavedGamePost getSavedGamePostById(@Argument int id) {
+<b class="nc">&nbsp;        return savedGamePostRepository.findById(id).orElse(null);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @QueryMapping
+&nbsp;    public SavedGamePost getSavedGamePostByUserId(@Argument int userId) {
+<b class="nc">&nbsp;        return savedGamePostRepository.findByUserId(userId);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @MutationMapping
+&nbsp;    private SavedGamePost createSavedGamePost(@Argument int userID, @Argument int gamePostId) {
+<b class="nc">&nbsp;        GamePost game = gamePostRepository.findById(gamePostId);</b>
+&nbsp;
+<b class="nc">&nbsp;        SavedGamePost savedGamePost =</b>
+<b class="nc">&nbsp;                new SavedGamePost(userRepository.findById(userID), gamePostId);</b>
+<b class="nc">&nbsp;        savedGamePostRepository.save(savedGamePost);</b>
+&nbsp;
+<b class="nc">&nbsp;        return savedGamePost;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @MutationMapping
+&nbsp;    public SavedGamePost updateSavedGamePost(@Argument int savedPostId, @Argument int userID,
+&nbsp;            @Argument int gamePostId) {
+<b class="nc">&nbsp;        SavedGamePost gamePost = savedGamePostRepository.findById(savedPostId).orElse(null);</b>
+<b class="nc">&nbsp;        if (gamePost == null) {</b>
+<b class="nc">&nbsp;            gamePost = new SavedGamePost();</b>
+&nbsp;        }
+<b class="nc">&nbsp;        gamePost.setUser(userRepository.findById(userID));</b>
+<b class="nc">&nbsp;        gamePost.setGamePost(gamePostId);</b>
+&nbsp;
+<b class="nc">&nbsp;        return savedGamePostRepository.save(gamePost);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @MutationMapping
+&nbsp;    public String deleteSavedGamePost(@Argument int id) {
+<b class="nc">&nbsp;        savedGamePostRepository.deleteById(id);</b>
+<b class="nc">&nbsp;        return &quot;Delete complete&quot;;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-12-04 13:11</div>
+</div>
+</body>
+</html>

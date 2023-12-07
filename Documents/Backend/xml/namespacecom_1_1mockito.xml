@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacecom_1_1mockito" kind="namespace" language="Java">
+    <compoundname>com::mockito</compoundname>
+    <innerclass refid="classcom_1_1mockito_1_1_comment_controller_test" prot="package">com::mockito::CommentControllerTest</innerclass>
+    <innerclass refid="classcom_1_1mockito_1_1_game_post_controller_test" prot="package">com::mockito::GamePostControllerTest</innerclass>
+    <innerclass refid="classcom_1_1mockito_1_1_location_controller_test" prot="package">com::mockito::LocationControllerTest</innerclass>
+    <innerclass refid="classcom_1_1mockito_1_1_skill_level_controller_test" prot="package">com::mockito::SkillLevelControllerTest</innerclass>
+    <innerclass refid="classcom_1_1mockito_1_1_sport_controller_test" prot="package">com::mockito::SportControllerTest</innerclass>
+    <innerclass refid="classcom_1_1mockito_1_1_test_user_controller" prot="public">com::mockito::TestUserController</innerclass>
+    <innerclass refid="classcom_1_1mockito_1_1_users_controller_test" prot="public">com::mockito::UsersControllerTest</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/CommentControllerTest.java" line="1" column="15"/>
+  </compounddef>
+</doxygen>

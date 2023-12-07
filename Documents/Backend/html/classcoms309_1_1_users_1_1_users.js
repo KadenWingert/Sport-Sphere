@@ -1,0 +1,27 @@
+var classcoms309_1_1_users_1_1_users =
+[
+    [ "Users", "classcoms309_1_1_users_1_1_users.html#a909b2250dd18985196a8ee6d5b82c62f", null ],
+    [ "Users", "classcoms309_1_1_users_1_1_users.html#a99b5095dcab5a8a4f07b7fec74c29c1e", null ],
+    [ "equals", "classcoms309_1_1_users_1_1_users.html#a5e8063462cb311031a42c5df5e0e26a2", null ],
+    [ "getCreatedGamePosts", "classcoms309_1_1_users_1_1_users.html#af55d3e46fb5f42bb08b3b22679b4badd", null ],
+    [ "getEmail", "classcoms309_1_1_users_1_1_users.html#a37b41a7a616f917cf5a4c925b2c79cbf", null ],
+    [ "getFirst_name", "classcoms309_1_1_users_1_1_users.html#a7ab60839a383c7888269bfb8760da998", null ],
+    [ "getGamePost", "classcoms309_1_1_users_1_1_users.html#a7cd30b96ca52437d70346025b4603b5c", null ],
+    [ "getId", "classcoms309_1_1_users_1_1_users.html#a8ee7b438c8d9bd14723bcde4b6e85b22", null ],
+    [ "getLast_name", "classcoms309_1_1_users_1_1_users.html#a5a77902853a0507a88959005d3e859d1", null ],
+    [ "getPassword", "classcoms309_1_1_users_1_1_users.html#a8e82e83edc2d64984b02fbb10c62d78c", null ],
+    [ "getRole", "classcoms309_1_1_users_1_1_users.html#a0a63fd9ffe103bf74018a9dc7a9b96b4", null ],
+    [ "getSkill_levels", "classcoms309_1_1_users_1_1_users.html#af48196df7c02de81606755d1b4aca705", null ],
+    [ "getUserStream", "classcoms309_1_1_users_1_1_users.html#a15f60059dc0420de2b945eef86c7a5d7", null ],
+    [ "isAdmin", "classcoms309_1_1_users_1_1_users.html#abffe279645215b71f505c92a8810b3bc", null ],
+    [ "isAuthenticated", "classcoms309_1_1_users_1_1_users.html#ae9b5020463990c5e98d68a1e456ca88d", null ],
+    [ "setCreatedGamePosts", "classcoms309_1_1_users_1_1_users.html#a35263d8315373ce079f7548141c6d2ed", null ],
+    [ "setEmail", "classcoms309_1_1_users_1_1_users.html#a779ad0031a7972a279deb6904e114a07", null ],
+    [ "setFirst_name", "classcoms309_1_1_users_1_1_users.html#a83e203151acbb7eac4dfc09ba79ed952", null ],
+    [ "setGamePost", "classcoms309_1_1_users_1_1_users.html#a85937c4b503e01d7e92b9cc633716f80", null ],
+    [ "setId", "classcoms309_1_1_users_1_1_users.html#a6bf4a7b20365c8d16d3d8af0f26ed3fe", null ],
+    [ "setLast_name", "classcoms309_1_1_users_1_1_users.html#a3275d9b25cb507063f173dd3436833a3", null ],
+    [ "setPassword", "classcoms309_1_1_users_1_1_users.html#a6d78a4bc32c3d377093c589670df13f8", null ],
+    [ "setRole", "classcoms309_1_1_users_1_1_users.html#adad243d1804bf82ee68b642ef140c9e2", null ],
+    [ "setSkill_levels", "classcoms309_1_1_users_1_1_users.html#a01552607f9a99671eb8941f958120254", null ]
+];

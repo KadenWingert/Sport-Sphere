@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="interfacecoms309_1_1_role_1_1_role_repository" kind="interface" language="Java" prot="public">
+    <compoundname>coms309::Role::RoleRepository</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">JpaRepository&lt; Role, Integer &gt;</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interfacecoms309_1_1_role_1_1_role_repository_1ad1a31e063b5889fee88933287d912cad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcoms309_1_1_role_1_1_role" kindref="compound">Role</ref></type>
+        <definition>Role coms309.Role.RoleRepository::findById</definition>
+        <argsstring>(int id)</argsstring>
+        <name>findById</name>
+        <qualifiedname>coms309.Role.RoleRepository.findById</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Searches for the first identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The found identifier. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Role/RoleRepository.java" line="39" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacecoms309_1_1_role_1_1_role_repository_1a77ee762311f5da3120176797ce6bcc03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void coms309.Role.RoleRepository::deleteById</definition>
+        <argsstring>(int id)</argsstring>
+        <name>deleteById</name>
+        <qualifiedname>coms309.Role.RoleRepository.deleteById</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Deletes the by identifier described by ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Role/RoleRepository.java" line="52" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The org.springframework.data.jpa.repository. jpa repository. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The org.springframework.stereotype. repository</para>
+<para>The javax.xml.stream.events. comment</para>
+<para>Interface for role repository.</para>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>JpaRepository&lt; Role, Integer &gt;</label>
+      </node>
+      <node id="1">
+        <label>coms309.Role.RoleRepository</label>
+        <link refid="interfacecoms309_1_1_role_1_1_role_repository"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>JpaRepository&lt; Role, Integer &gt;</label>
+      </node>
+      <node id="1">
+        <label>coms309.Role.RoleRepository</label>
+        <link refid="interfacecoms309_1_1_role_1_1_role_repository"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Role/RoleRepository.java" line="24" column="18" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Role/RoleRepository.java" bodystart="24" bodyend="53"/>
+    <listofallmembers>
+      <member refid="interfacecoms309_1_1_role_1_1_role_repository_1a77ee762311f5da3120176797ce6bcc03" prot="public" virt="non-virtual"><scope>coms309::Role::RoleRepository</scope><name>deleteById</name></member>
+      <member refid="interfacecoms309_1_1_role_1_1_role_repository_1ad1a31e063b5889fee88933287d912cad" prot="public" virt="non-virtual"><scope>coms309::Role::RoleRepository</scope><name>findById</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

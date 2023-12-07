@@ -1,0 +1,7 @@
+mutation SavePost($userID: ID!, $gameID: ID!)
+{
+    createSavedGamePost(userID: $userID, gamePostId: $gameID)
+    {
+        id
+    }
+}

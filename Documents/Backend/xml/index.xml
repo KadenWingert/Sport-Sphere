@@ -1,0 +1,629 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+  <compound refid="classcoms309_1_1_application" kind="class"><name>coms309::Application</name>
+    <member refid="classcoms309_1_1_application_1a6c9d41811f775380dfb3d38f48f2523c" kind="variable"><name>logger</name></member>
+    <member refid="classcoms309_1_1_application_1a58f13a21d38a21e87a9fdc86d86066ea" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="classcoms309_1_1_auth_1_1_auth" kind="class"><name>coms309::Auth::Auth</name>
+    <member refid="classcoms309_1_1_auth_1_1_auth_1a0e9fdb451991b460de5b04eef3a359a5" kind="function"><name>Auth</name></member>
+    <member refid="classcoms309_1_1_auth_1_1_auth_1a36df8f1021a4d416a3ee1589fefcc666" kind="function"><name>isAuthenticated</name></member>
+    <member refid="classcoms309_1_1_auth_1_1_auth_1ab72afc2758e2b85c51557970fa28232d" kind="function"><name>isAdmin</name></member>
+  </compound>
+  <compound refid="classcoms309_1_1_comment_1_1_comment" kind="class"><name>coms309::Comment::Comment</name>
+    <member refid="classcoms309_1_1_comment_1_1_comment_1a1f10a362b88dc3b24839e540422583f4" kind="variable"><name>id</name></member>
+    <member refid="classcoms309_1_1_comment_1_1_comment_1a32f849b772e78b089ea79882ac0d83c4" kind="variable"><name>message</name></member>
+    <member refid="classcoms309_1_1_comment_1_1_comment_1a56d29ae550caf79f332f706894314232" kind="variable"><name>gamePost</name></member>
+    <member refid="classcoms309_1_1_comment_1_1_comment_1a5b5808c76f0f4251054fa56544b01eb2" kind="function"><name>Comment</name></member>
+    <member refid="classcoms309_1_1_comment_1_1_comment_1a321445f4a18b17d71ced5575c9cf27f0" kind="function"><name>getMessage</name></member>
+    <member refid="classcoms309_1_1_comment_1_1_comment_1aa7862a32c74f91dada4ca9fabec1f6ae" kind="function"><name>setMessage</name></member>
+    <member refid="classcoms309_1_1_comment_1_1_comment_1aa0f71b1fdc3ac7cd727e501defd62f45" kind="function"><name>getId</name></member>
+    <member refid="classcoms309_1_1_comment_1_1_comment_1ac78c7b535fd4ecedbc267db03a2e814d" kind="function"><name>setId</name></member>
+    <member refid="classcoms309_1_1_comment_1_1_comment_1ae8a8b7cc850be1bda87578e7323f3cd9" kind="function"><name>getGamePost</name></member>
+    <member refid="classcoms309_1_1_comment_1_1_comment_1a2addc1056771988cd6250e96a0e71c01" kind="function"><name>setGamePost</name></member>
+  </compound>
+  <compound refid="classcoms309_1_1_comment_1_1_comment_controller" kind="class"><name>coms309::Comment::CommentController</name>
+    <member refid="classcoms309_1_1_comment_1_1_comment_controller_1a0f09fa787fb7c8a2f7acb46d4819399b" kind="variable"><name>commentRepository</name></member>
+    <member refid="classcoms309_1_1_comment_1_1_comment_controller_1af0398d2c5283de10973ec21d45c53736" kind="variable"><name>gamePostRepository</name></member>
+    <member refid="classcoms309_1_1_comment_1_1_comment_controller_1ac92e98fe9af87b3d301bf6cddb08153a" kind="variable"><name>commentPublisher</name></member>
+    <member refid="classcoms309_1_1_comment_1_1_comment_controller_1adcba0e094c7738cbcd02e6bb2a5562f5" kind="function"><name>getAllComments</name></member>
+    <member refid="classcoms309_1_1_comment_1_1_comment_controller_1a14d97af2059f5e3cbb350a47183c2712" kind="function"><name>getCommentById</name></member>
+    <member refid="classcoms309_1_1_comment_1_1_comment_controller_1a4bc9ddca68590853c4b7119206475917" kind="function"><name>createComment</name></member>
+    <member refid="classcoms309_1_1_comment_1_1_comment_controller_1a4f12259a206433b69ecf815be069cd33" kind="function"><name>updateComment</name></member>
+    <member refid="classcoms309_1_1_comment_1_1_comment_controller_1a87958650336aab3325b98118dd31ef1e" kind="function"><name>deleteCommentById</name></member>
+    <member refid="classcoms309_1_1_comment_1_1_comment_controller_1ab7bf800d9d204b826513e8be670a2acf" kind="function"><name>deleteAllComments</name></member>
+    <member refid="classcoms309_1_1_comment_1_1_comment_controller_1a5ef6eb79525b68f0cea25063974cdc79" kind="function"><name>subComments</name></member>
+    <member refid="classcoms309_1_1_comment_1_1_comment_controller_1a157eb4caec601748f631f80cabd2a117" kind="function"><name>subCommentsById</name></member>
+  </compound>
+  <compound refid="classcom_1_1mockito_1_1_comment_controller_test" kind="class"><name>com::mockito::CommentControllerTest</name>
+    <member refid="classcom_1_1mockito_1_1_comment_controller_test_1a5541db6450ad9959a56ce5ce3a2d7a7f" kind="variable"><name>commentController</name></member>
+    <member refid="classcom_1_1mockito_1_1_comment_controller_test_1a23c807f0fae9b20d7f5d608df1f53e8c" kind="variable"><name>commentRepository</name></member>
+    <member refid="classcom_1_1mockito_1_1_comment_controller_test_1a6acd82bd426f30c89007551054bbeb26" kind="variable"><name>gamePostRepository</name></member>
+    <member refid="classcom_1_1mockito_1_1_comment_controller_test_1a3dbebe8ef61603d570dd615898bd64c1" kind="variable"><name>userRepository</name></member>
+    <member refid="classcom_1_1mockito_1_1_comment_controller_test_1a5cef391d9ab357a8b2bdb18e1cb39153" kind="variable"><name>sportRepository</name></member>
+    <member refid="classcom_1_1mockito_1_1_comment_controller_test_1a16fb23655291e44d20c0e711c5081d0e" kind="variable"><name>skillLevelRepository</name></member>
+    <member refid="classcom_1_1mockito_1_1_comment_controller_test_1a43559f207ea173e6b050e791bf848dbf" kind="variable"><name>commentPublisher</name></member>
+    <member refid="classcom_1_1mockito_1_1_comment_controller_test_1aa9d1b96fd66b864e98fec96f4a673120" kind="variable"><name>gp1</name></member>
+    <member refid="classcom_1_1mockito_1_1_comment_controller_test_1aa11386aac9d5d44b028c489f46953262" kind="variable"><name>gp2</name></member>
+    <member refid="classcom_1_1mockito_1_1_comment_controller_test_1abb5a1005a92d96fa0846e30aefc20ae3" kind="variable"><name>gp3</name></member>
+    <member refid="classcom_1_1mockito_1_1_comment_controller_test_1a9308894034a717f1530e5d8653bc01cf" kind="variable"><name>gp4</name></member>
+    <member refid="classcom_1_1mockito_1_1_comment_controller_test_1ab36de7635edbf7b4b9bad9c04d4c7618" kind="variable"><name>u1</name></member>
+    <member refid="classcom_1_1mockito_1_1_comment_controller_test_1ae6b7ca59938faebdf53b5dbcc13b8cfb" kind="variable"><name>u2</name></member>
+    <member refid="classcom_1_1mockito_1_1_comment_controller_test_1a00033270064823cd5c7589f70807705a" kind="variable"><name>s1</name></member>
+    <member refid="classcom_1_1mockito_1_1_comment_controller_test_1a0e733f46f2dcfcdb89e7eda54e280954" kind="variable"><name>s2</name></member>
+    <member refid="classcom_1_1mockito_1_1_comment_controller_test_1a9857b19c9c746bb4b83702f8e2f91233" kind="variable"><name>s3</name></member>
+    <member refid="classcom_1_1mockito_1_1_comment_controller_test_1a9aaff87207bbb9973373757c13e1293d" kind="variable"><name>s4</name></member>
+    <member refid="classcom_1_1mockito_1_1_comment_controller_test_1a8fbc328ddb6c267fc683daf0a72939a1" kind="variable"><name>sk1</name></member>
+    <member refid="classcom_1_1mockito_1_1_comment_controller_test_1a86d3e20e64f3a1f805afb7dfe41ee92f" kind="variable"><name>c1</name></member>
+    <member refid="classcom_1_1mockito_1_1_comment_controller_test_1ae6fc5fe47ca1c5ac561e7ecb2681a5fa" kind="variable"><name>c2</name></member>
+    <member refid="classcom_1_1mockito_1_1_comment_controller_test_1a7dc1575f0f5882876425f8ceb7e70ceb" kind="variable"><name>c3</name></member>
+    <member refid="classcom_1_1mockito_1_1_comment_controller_test_1a4a00b2d8ae1b7122fa1ed6c97b2972f7" kind="variable"><name>c4</name></member>
+    <member refid="classcom_1_1mockito_1_1_comment_controller_test_1a9a30f71833b1813fd976b3883a8b0ce4" kind="variable"><name>c5</name></member>
+    <member refid="classcom_1_1mockito_1_1_comment_controller_test_1ab674ebc607c0c0a0bf1238823c3aa6c4" kind="function"><name>init</name></member>
+    <member refid="classcom_1_1mockito_1_1_comment_controller_test_1a869f683a6e8e2bdd9d1c1ea1c502154f" kind="function"><name>getAllComments</name></member>
+    <member refid="classcom_1_1mockito_1_1_comment_controller_test_1a536faac51a3e6ba9150a828d80e2aaac" kind="function"><name>getCommentByID</name></member>
+    <member refid="classcom_1_1mockito_1_1_comment_controller_test_1ae5354c1cce274c3b3ee8504907de1691" kind="function"><name>createComment</name></member>
+    <member refid="classcom_1_1mockito_1_1_comment_controller_test_1a7e09fd3b7a6e6fe854940998a2a9c48b" kind="function"><name>updateComment</name></member>
+    <member refid="classcom_1_1mockito_1_1_comment_controller_test_1aa3649301c5cea0eed40edfe3ecdbd429" kind="function"><name>deleteComment</name></member>
+    <member refid="classcom_1_1mockito_1_1_comment_controller_test_1a53fb38b5d073722c3a1d847bceb9fc6c" kind="function"><name>deleteAllComments</name></member>
+  </compound>
+  <compound refid="classcoms309_1_1_comment_1_1_comment_publisher" kind="class"><name>coms309::Comment::CommentPublisher</name>
+    <member refid="classcoms309_1_1_comment_1_1_comment_publisher_1a601fc0ce4cbe73acb60c4b0af7aaa864" kind="variable"><name>processor</name></member>
+    <member refid="classcoms309_1_1_comment_1_1_comment_publisher_1adc0f4cd7d8ffd970ec147b0352967eb5" kind="variable"><name>sink</name></member>
+    <member refid="classcoms309_1_1_comment_1_1_comment_publisher_1a289111bbacb2fb873ba3bfaaec4ba3a6" kind="function"><name>CommentPublisher</name></member>
+    <member refid="classcoms309_1_1_comment_1_1_comment_publisher_1ad156026ec9394818eade144baa2cb794" kind="function"><name>publish</name></member>
+    <member refid="classcoms309_1_1_comment_1_1_comment_publisher_1aa71eabd2b0fc8d3f77240843c09406e7" kind="function"><name>subCommentsById</name></member>
+    <member refid="classcoms309_1_1_comment_1_1_comment_publisher_1ac5e80fcd9137338c7cda9b7a93e43788" kind="function"><name>subComments</name></member>
+  </compound>
+  <compound refid="interfacecoms309_1_1_comment_1_1_comment_repository" kind="interface"><name>coms309::Comment::CommentRepository</name>
+    <member refid="interfacecoms309_1_1_comment_1_1_comment_repository_1ab21993f21c44b52d47a05bf69de5c8ae" kind="function"><name>findById</name></member>
+    <member refid="interfacecoms309_1_1_comment_1_1_comment_repository_1ab65fed9a5b3a3a3de966ea0ef7b8a43f" kind="function"><name>deleteById</name></member>
+  </compound>
+  <compound refid="classcoms309_1_1_exceptions_1_1_duplicate_exception" kind="class"><name>coms309::Exceptions::DuplicateException</name>
+    <member refid="classcoms309_1_1_exceptions_1_1_duplicate_exception_1a834ab0a935a9fa2ca8eb4dca9b9d5794" kind="function"><name>DuplicateException</name></member>
+  </compound>
+  <compound refid="classcoms309_1_1_email_1_1_email_sender" kind="class"><name>coms309::Email::EmailSender</name>
+    <member refid="classcoms309_1_1_email_1_1_email_sender_1a71e89f39d3197ad995c25a564b5af2bc" kind="variable"><name>logger</name></member>
+    <member refid="classcoms309_1_1_email_1_1_email_sender_1aefe3f0d7681a539fadf5215793bd7c1c" kind="function"><name>SendEmail</name></member>
+    <member refid="classcoms309_1_1_email_1_1_email_sender_1af6efd3e1970df5b884c747cf65dc8b85" kind="function"><name>sendSimpleMessage</name></member>
+    <member refid="classcoms309_1_1_email_1_1_email_sender_1a23ca0bc996a1db33eb103fdad7b38d84" kind="function"><name>getApiKey</name></member>
+  </compound>
+  <compound refid="classcoms309_1_1_game_post_1_1_game_post" kind="class"><name>coms309::GamePost::GamePost</name>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_1a20de733d3d951da07c1fbdaecddeb546" kind="variable"><name>id</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_1a735bf46b2369b8a5ecde726ece6c8a69" kind="variable"><name>max_players</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_1a29c2ca2a8f4504228b548412fa024ace" kind="variable"><name>min_players</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_1a337a689877ce64d5f6b8c3c99dcde97e" kind="variable"><name>playing_on</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_1aaf7da9be0953fed0aa4fa5f3ec1754d4" kind="variable"><name>created_on</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_1afb11e73cf6ce39623d7c82cf4a33c4d6" kind="variable"><name>is_deleted</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_1a561dc354ae3cb537b1a3306f5b6a2a52" kind="variable"><name>location</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_1a6226c4df8e9a744c5bac583ac1d3926d" kind="variable"><name>created_by</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_1aec596881632e5fdbebf0e51889839aad" kind="variable"><name>playersSignedUp</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_1a78d74eff7a9d06c9968facdfff832c15" kind="variable"><name>comment</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_1a331785f6ef9a728e0ac564211654da55" kind="variable"><name>sport</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_1a5ce9e4d947c03d771a71c42787c1824d" kind="function"><name>GamePost</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_1a4d5bbb54dba4fbbf3226cee847c2e864" kind="function"><name>setId</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_1a6793da8cae4727bb5b4182721f2f8ea7" kind="function"><name>setCreated_by</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_1a85b0066769f168dcb24c1f26e0e820a1" kind="function"><name>setMax_players</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_1a1c13c5a3a4e9c403993d6984ae79c29f" kind="function"><name>setMin_players</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_1af546ed67a01731eff0a6f0e2f5dea0e3" kind="function"><name>setPlaying_on</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_1a3acd50a6c040c9784f74948512425c89" kind="function"><name>setCreated_on</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_1a01606b6feadb4af5f2584f14e5c14cb5" kind="function"><name>getIs_deleted</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_1a9ae0475dad512d93f88db6247cd919d3" kind="function"><name>setIs_deleted</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_1a9d8497586ca3c7b641fa510d5f756644" kind="function"><name>setPlayersSignedUp</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_1a28c01fadb4e252269181d964b6c94df3" kind="function"><name>setLocation</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_1aa786021b9c9cdec1f4421729e82bcfa9" kind="function"><name>setPlayersSignedUp</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_1a598ea38c06473d1637d8c78ec335c9e4" kind="function"><name>setComment</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_1a2e410af1d12c0849771fd208007c10ba" kind="function"><name>setSport</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_1a370b2dd4a1a6796403249ef985bf1dcd" kind="function"><name>removePlayerSignedUp</name></member>
+  </compound>
+  <compound refid="classcoms309_1_1_game_post_1_1_game_post_controller" kind="class"><name>coms309::GamePost::GamePostController</name>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_controller_1a1a711ba9193ebb31ac2fcddee1873cdf" kind="variable"><name>gamePostRepository</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_controller_1a51a71a612388a604245779b0f7f0e49e" kind="variable"><name>userRepository</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_controller_1ae970a8eded11388135a687fbdc67efe6" kind="variable"><name>locationRepository</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_controller_1a16af667dcbc43e8a0e49d51f782d36e3" kind="variable"><name>sportRepository</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_controller_1a1add1ccabfc70e0d4c16d33435afee13" kind="variable"><name>gamePostPublisher</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_controller_1a82d45e644b834a731aceda454fe6376d" kind="function"><name>getAllGamePosts</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_controller_1a260ca43f5eaf7ce11f3d2f1c4a37c0ff" kind="function"><name>getGamePostById</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_controller_1a09ba57be08ea82320cc55760bc10f95f" kind="function"><name>getUsersPlaying</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_controller_1a44f16301cfe929f6f71b220a6fcd99af" kind="function"><name>deleteAllGamePosts</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_controller_1ad1439a717601e47a319d1cd30b5c9146" kind="function"><name>getCommentByPost</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_controller_1a1cf6f9618bec10c3d06240b60c338b70" kind="function"><name>subGamePost</name></member>
+  </compound>
+  <compound refid="classcom_1_1mockito_1_1_game_post_controller_test" kind="class"><name>com::mockito::GamePostControllerTest</name>
+    <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a023b0436d63cec3ed471a48bd8ce7f60" kind="variable"><name>gamePostController</name></member>
+    <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1ab532a6b12f980a1254fae3977883d03d" kind="variable"><name>gamePostRepository</name></member>
+    <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1ab72f2bc462450fe277de7c67e889cef1" kind="variable"><name>userRepository</name></member>
+    <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a945ef9bece0d93dea3d360ebda21335f" kind="variable"><name>sportRepository</name></member>
+    <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1af2e37fef7e0581e5bd69d4bc7abbdec0" kind="variable"><name>gamePostPublisher</name></member>
+    <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a364ca97ccbea33ac8a0d5a4d52edd896" kind="variable"><name>gp1</name></member>
+    <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1aa2ff87c2c2e48cf8a53f77430286850c" kind="variable"><name>gp2</name></member>
+    <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1ab3828b34c1d4c76c65388be8c9fe862e" kind="variable"><name>gp3</name></member>
+    <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a7899174dbe3e69cd89db8f5f64ba94ed" kind="variable"><name>gp4</name></member>
+    <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a98d847d9e3e2e02e0c286d1bfac831eb" kind="variable"><name>u1</name></member>
+    <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a7d3db2533646d6ee08d8301241180ad5" kind="variable"><name>u2</name></member>
+    <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a10e5e3bdba352cd2313c6ebdb13013ce" kind="variable"><name>s1</name></member>
+    <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a78ab3a13c06cb92c6bdc5ea4d6a1d8ee" kind="variable"><name>s2</name></member>
+    <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a4494853ffef8563a92a193338721b427" kind="variable"><name>s3</name></member>
+    <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a746ff5a95d732ac3603dd97c73bce6a0" kind="variable"><name>s4</name></member>
+    <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a42b4efb3a4110b593bfeff6b3e33c0c4" kind="function"><name>init</name></member>
+    <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a9976a9d2dc8a242defff15a735444cb2" kind="function"><name>getAllGamePosts</name></member>
+    <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1ad95199f28f64528fdbba7c9bca2f3b19" kind="function"><name>getGamePostById</name></member>
+    <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a5895b26037088f4e88a2a6aa8a025b95" kind="function"><name>getUsersPlaying</name></member>
+    <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a340528cb8e1bbb828096309a7d9c5ce7" kind="function"><name>createGamePost</name></member>
+    <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a5e9985e6c67c96e3ebd9e1b183bc5474" kind="function"><name>updateGamePost</name></member>
+    <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a12d7f9bf1a1ef21b156d99e1f64bf2bd" kind="function"><name>addNewUserPlaying</name></member>
+    <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a8f7b753ee7b8a8f2288458c615103717" kind="function"><name>addGamePostToSport</name></member>
+    <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1ae96eed752857ffe444c123575c25ecae" kind="function"><name>deleteGamePostById</name></member>
+    <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1ab0e5388a00ffbcda8e6124c459b99715" kind="function"><name>deleteAllGamePosts</name></member>
+  </compound>
+  <compound refid="classcoms309_1_1_game_post_1_1_game_post_publisher" kind="class"><name>coms309::GamePost::GamePostPublisher</name>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_publisher_1a411a79cb76e79a4512a1e5f78c41b3bf" kind="variable"><name>processor</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_publisher_1a7a9302740c812d1fa857527cf6bc8b80" kind="variable"><name>sink</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_publisher_1aa32ea4074896f467e0252e9986b31c53" kind="function"><name>GamePostPublisher</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_publisher_1af9f03e9e35540169c719955555135105" kind="function"><name>publish</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_publisher_1a895aba3b8af5c16b97949f1658aa96d5" kind="function"><name>subGamePost</name></member>
+  </compound>
+  <compound refid="interfacecoms309_1_1_game_post_1_1_game_post_repository" kind="interface"><name>coms309::GamePost::GamePostRepository</name>
+    <member refid="interfacecoms309_1_1_game_post_1_1_game_post_repository_1a33b629f71dd8010f5233090eb8f01756" kind="function"><name>findById</name></member>
+    <member refid="interfacecoms309_1_1_game_post_1_1_game_post_repository_1a98bdf374b051e5c8501577124ed41e8e" kind="function"><name>findAll</name></member>
+    <member refid="interfacecoms309_1_1_game_post_1_1_game_post_repository_1a65dc33db9ac75b12c9685ca2e3f39507" kind="function"><name>deleteById</name></member>
+  </compound>
+  <compound refid="classcoms309_1_1_game_post_1_1_game_post_service" kind="class"><name>coms309::GamePost::GamePostService</name>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_service_1a8ec2e325be2fa7d752b4e20c36fa0556" kind="variable"><name>gamePostRepository</name></member>
+    <member refid="classcoms309_1_1_game_post_1_1_game_post_service_1a4821aa56ad7b53fe74366018afc170e1" kind="function"><name>findAll</name></member>
+  </compound>
+  <compound refid="classcoms309_1_1_location_1_1_location" kind="class"><name>coms309::Location::Location</name>
+    <member refid="classcoms309_1_1_location_1_1_location_1af050e5084837b61825d8c102b1849263" kind="variable"><name>id</name></member>
+    <member refid="classcoms309_1_1_location_1_1_location_1a7d8a7eb92000bd64349d629a243e2b34" kind="variable"><name>address</name></member>
+    <member refid="classcoms309_1_1_location_1_1_location_1a187c273a94eccd406290e6a9f4d22679" kind="variable"><name>gps</name></member>
+    <member refid="classcoms309_1_1_location_1_1_location_1a9632e9065994db4ad1973e993b234b40" kind="variable"><name>gamePost</name></member>
+    <member refid="classcoms309_1_1_location_1_1_location_1a5d6053095482eddb8a8a3c6d7aec5cd6" kind="function"><name>Location</name></member>
+    <member refid="classcoms309_1_1_location_1_1_location_1a1ce20a20f11c4bf658075b53fd341f59" kind="function"><name>Location</name></member>
+  </compound>
+  <compound refid="classcoms309_1_1_location_1_1_location_controller" kind="class"><name>coms309::Location::LocationController</name>
+    <member refid="classcoms309_1_1_location_1_1_location_controller_1ad40859810074be22e6ba00812d8298e1" kind="variable"><name>locationRepository</name></member>
+    <member refid="classcoms309_1_1_location_1_1_location_controller_1a74285245d82685d034f6d78d239fbf9a" kind="variable"><name>gamePostRepository</name></member>
+    <member refid="classcoms309_1_1_location_1_1_location_controller_1a4c984b667c6f154d29fccb2457b0dbfe" kind="function"><name>getAllLocations</name></member>
+    <member refid="classcoms309_1_1_location_1_1_location_controller_1a937ada7117002a1518cc36f28d79ee5a" kind="function"><name>getLocationById</name></member>
+    <member refid="classcoms309_1_1_location_1_1_location_controller_1a0f140436dd2f05d749c099170be313f6" kind="function"><name>getGamePostsAtLocation</name></member>
+    <member refid="classcoms309_1_1_location_1_1_location_controller_1a88bdb5418d610c332c1ce5c1701d5f43" kind="function"><name>createLocation</name></member>
+    <member refid="classcoms309_1_1_location_1_1_location_controller_1a0d65723d2f87fcd9bc5eb5b8f78f3122" kind="function"><name>updateLocation</name></member>
+    <member refid="classcoms309_1_1_location_1_1_location_controller_1a6c1479f9193eac68e50db8e172e6bd69" kind="function"><name>deleteLocation</name></member>
+  </compound>
+  <compound refid="classcom_1_1mockito_1_1_location_controller_test" kind="class"><name>com::mockito::LocationControllerTest</name>
+    <member refid="classcom_1_1mockito_1_1_location_controller_test_1a53cfa5d983d7b3b9ee18d8958e65d750" kind="variable"><name>locationController</name></member>
+    <member refid="classcom_1_1mockito_1_1_location_controller_test_1af9adbe8535d6845ea2fb62dd474d69c1" kind="variable"><name>locationRepository</name></member>
+    <member refid="classcom_1_1mockito_1_1_location_controller_test_1a4ae644fe6708276f2a2127b2eab9b4e2" kind="variable"><name>gamePostRepository</name></member>
+    <member refid="classcom_1_1mockito_1_1_location_controller_test_1afa1506fa71bc2e926f7c8201e4e771fd" kind="variable"><name>userRepository</name></member>
+    <member refid="classcom_1_1mockito_1_1_location_controller_test_1a20f42fd7a7f08d51084b2bf8abbcdfdb" kind="variable"><name>sportRepository</name></member>
+    <member refid="classcom_1_1mockito_1_1_location_controller_test_1ade632692308fab5eea9bc0859b4e8821" kind="variable"><name>gp1</name></member>
+    <member refid="classcom_1_1mockito_1_1_location_controller_test_1a41d041a444c9ff718a267539ae1550a5" kind="variable"><name>gp2</name></member>
+    <member refid="classcom_1_1mockito_1_1_location_controller_test_1ab699bf2e82e6b6b2ac98a876c11c5597" kind="variable"><name>gp3</name></member>
+    <member refid="classcom_1_1mockito_1_1_location_controller_test_1a5f5c9138d4747efa28a3df624069f11a" kind="variable"><name>gp4</name></member>
+    <member refid="classcom_1_1mockito_1_1_location_controller_test_1ac0c49b604f2fb8536f71e0d94216b862" kind="variable"><name>u1</name></member>
+    <member refid="classcom_1_1mockito_1_1_location_controller_test_1af76ee85a2d1b9a346c84b3388d3bf87f" kind="variable"><name>u2</name></member>
+    <member refid="classcom_1_1mockito_1_1_location_controller_test_1adad389ef2f614a5bb56184314bf7e799" kind="variable"><name>s1</name></member>
+    <member refid="classcom_1_1mockito_1_1_location_controller_test_1abb7d1677d12fea79d6c6980313b2280e" kind="variable"><name>s2</name></member>
+    <member refid="classcom_1_1mockito_1_1_location_controller_test_1a06bbe8a69cff77821954511099440047" kind="variable"><name>s3</name></member>
+    <member refid="classcom_1_1mockito_1_1_location_controller_test_1a413a578dc018401b496a4c88c807f22f" kind="variable"><name>s4</name></member>
+    <member refid="classcom_1_1mockito_1_1_location_controller_test_1a2266387d4e4b4f1c80e3dae1d8d29da2" kind="variable"><name>l1</name></member>
+    <member refid="classcom_1_1mockito_1_1_location_controller_test_1ac6f3af8237cefbec9890c1fe9179f3ea" kind="variable"><name>l2</name></member>
+    <member refid="classcom_1_1mockito_1_1_location_controller_test_1abb25495f3a79fcb27b9ae665419ec8be" kind="variable"><name>l3</name></member>
+    <member refid="classcom_1_1mockito_1_1_location_controller_test_1a9d26d3e2c9a96d6140c6591b29378599" kind="variable"><name>l4</name></member>
+    <member refid="classcom_1_1mockito_1_1_location_controller_test_1abf498f33bc9c5df274eef5303b2001a1" kind="function"><name>init</name></member>
+    <member refid="classcom_1_1mockito_1_1_location_controller_test_1af5adbedba63622018fd98418a1cb3d9e" kind="function"><name>getAllLocations</name></member>
+    <member refid="classcom_1_1mockito_1_1_location_controller_test_1aaa2ebe55b64bf32bd27e68c9af9879e5" kind="function"><name>getLocationById</name></member>
+    <member refid="classcom_1_1mockito_1_1_location_controller_test_1ad00cd4b44e6bcd5e27558da4e9937699" kind="function"><name>getGamePostsAtLocation</name></member>
+    <member refid="classcom_1_1mockito_1_1_location_controller_test_1a9f0b502a6d646fcfa0fd482dbaebc1dc" kind="function"><name>createLocation</name></member>
+    <member refid="classcom_1_1mockito_1_1_location_controller_test_1a08b07bf5b09bf96b1ec453fca8759bc3" kind="function"><name>updateLocation</name></member>
+    <member refid="classcom_1_1mockito_1_1_location_controller_test_1ae87739eb647afdf978073f0d61b9c5a3" kind="function"><name>deleteLocation</name></member>
+  </compound>
+  <compound refid="interfacecoms309_1_1_location_1_1_location_repository" kind="interface"><name>coms309::Location::LocationRepository</name>
+    <member refid="interfacecoms309_1_1_location_1_1_location_repository_1a4d919c5228b55d947b2d6f89243e3e44" kind="function"><name>findById</name></member>
+    <member refid="interfacecoms309_1_1_location_1_1_location_repository_1ad59a291859ddbc6a227210ae51964f3b" kind="function"><name>deleteById</name></member>
+  </compound>
+  <compound refid="classcoms309_1_1_exceptions_1_1_not_found_exception" kind="class"><name>coms309::Exceptions::NotFoundException</name>
+    <member refid="classcoms309_1_1_exceptions_1_1_not_found_exception_1ac500367e6a1476bb271a750f14a7c2cd" kind="function"><name>NotFoundException</name></member>
+  </compound>
+  <compound refid="classcoms309_1_1_enums_1_1_permission" kind="class"><name>coms309::Enums::Permission</name>
+  </compound>
+  <compound refid="enumcoms309_1_1_enums_1_1_permission_1_1permission" kind="enum"><name>coms309::Enums::Permission::permission</name>
+    <member refid="enumcoms309_1_1_enums_1_1_permission_1_1permission_1a98b664dfb82ba1acfd9709064ca7426a" kind="variable"><name>USER</name></member>
+    <member refid="enumcoms309_1_1_enums_1_1_permission_1_1permission_1a78bff52f70a002f0de10c98c99af8928" kind="variable"><name>ADMIN</name></member>
+  </compound>
+  <compound refid="classcoms309_1_1_role_1_1_role" kind="class"><name>coms309::Role::Role</name>
+    <member refid="classcoms309_1_1_role_1_1_role_1adffe4385d65724cbc3749a835e63cf31" kind="variable"><name>id</name></member>
+    <member refid="classcoms309_1_1_role_1_1_role_1a1b60b9469173b7886e3deddd0e0278af" kind="variable"><name>userId</name></member>
+    <member refid="classcoms309_1_1_role_1_1_role_1a364f3c32b6339fd7fe242d430ceb3ff5" kind="variable"><name>permissionId</name></member>
+  </compound>
+  <compound refid="classcoms309_1_1_role_1_1_role_controller" kind="class"><name>coms309::Role::RoleController</name>
+  </compound>
+  <compound refid="interfacecoms309_1_1_role_1_1_role_repository" kind="interface"><name>coms309::Role::RoleRepository</name>
+    <member refid="interfacecoms309_1_1_role_1_1_role_repository_1ad1a31e063b5889fee88933287d912cad" kind="function"><name>findById</name></member>
+    <member refid="interfacecoms309_1_1_role_1_1_role_repository_1a77ee762311f5da3120176797ce6bcc03" kind="function"><name>deleteById</name></member>
+  </compound>
+  <compound refid="classcoms309_1_1_skill_level_1_1_skill_level" kind="class"><name>coms309::SkillLevel::SkillLevel</name>
+    <member refid="classcoms309_1_1_skill_level_1_1_skill_level_1a636f9d894a1940e77304aec7e401068e" kind="variable"><name>id</name></member>
+    <member refid="classcoms309_1_1_skill_level_1_1_skill_level_1a39aa1a665d5327b89d83a5327085969b" kind="variable"><name>skill_level</name></member>
+    <member refid="classcoms309_1_1_skill_level_1_1_skill_level_1adb42310ab2b5245a5b4be287c183a642" kind="variable"><name>user</name></member>
+    <member refid="classcoms309_1_1_skill_level_1_1_skill_level_1adac1fc0792671bf48195e3743aff1510" kind="variable"><name>sport</name></member>
+    <member refid="classcoms309_1_1_skill_level_1_1_skill_level_1a3688c34fa0abc4f0ec55929e409ad928" kind="function"><name>SkillLevel</name></member>
+    <member refid="classcoms309_1_1_skill_level_1_1_skill_level_1ae1defba278ba5b9e2f2db46d2036b95b" kind="function"><name>SkillLevel</name></member>
+    <member refid="classcoms309_1_1_skill_level_1_1_skill_level_1aea3580ae9ac23bea67026c65f08ebe3d" kind="function"><name>getId</name></member>
+    <member refid="classcoms309_1_1_skill_level_1_1_skill_level_1a1476f42d74360aec2f4324d3d79a7014" kind="function"><name>setId</name></member>
+    <member refid="classcoms309_1_1_skill_level_1_1_skill_level_1a00d7e9128e2a70a813457f228ba545df" kind="function"><name>getSkill_level</name></member>
+    <member refid="classcoms309_1_1_skill_level_1_1_skill_level_1ab803136f3faffaade0f89516ee73e89f" kind="function"><name>setSkill_level</name></member>
+    <member refid="classcoms309_1_1_skill_level_1_1_skill_level_1a2a743009948f932c9b44d63ec9346f83" kind="function"><name>getUser</name></member>
+    <member refid="classcoms309_1_1_skill_level_1_1_skill_level_1ae679cb39be0561403f7c1f27d28b0d13" kind="function"><name>setUser</name></member>
+  </compound>
+  <compound refid="classcoms309_1_1_skill_level_1_1_skill_level_controller" kind="class"><name>coms309::SkillLevel::SkillLevelController</name>
+    <member refid="classcoms309_1_1_skill_level_1_1_skill_level_controller_1ab9667bb87615a008f7326aedcb72425c" kind="variable"><name>skillLevelRepository</name></member>
+    <member refid="classcoms309_1_1_skill_level_1_1_skill_level_controller_1a4fef558b7d90d4c83489c5aa4e748e5b" kind="variable"><name>userRepository</name></member>
+    <member refid="classcoms309_1_1_skill_level_1_1_skill_level_controller_1aab787d3a49ed2be271e5080ee94ae717" kind="variable"><name>sportRepository</name></member>
+    <member refid="classcoms309_1_1_skill_level_1_1_skill_level_controller_1a6cab2ecae0969e142d84114c82095d05" kind="function"><name>getAllSkillLevels</name></member>
+    <member refid="classcoms309_1_1_skill_level_1_1_skill_level_controller_1abb0c04374519ce5ae9e444f0282b05b7" kind="function"><name>getSkillLevelById</name></member>
+    <member refid="classcoms309_1_1_skill_level_1_1_skill_level_controller_1a3e6fd82a08ae6a9e1fb1d4e21562c2a1" kind="function"><name>createSkillLevel</name></member>
+    <member refid="classcoms309_1_1_skill_level_1_1_skill_level_controller_1ab75494a632cf6e36a64a9b4f237420b7" kind="function"><name>updateSkillLevel</name></member>
+    <member refid="classcoms309_1_1_skill_level_1_1_skill_level_controller_1aaa4d4a88e5b96be398665e9f312eb63c" kind="function"><name>deleteSkillLevelById</name></member>
+    <member refid="classcoms309_1_1_skill_level_1_1_skill_level_controller_1a95216a012a4a57b020f097d30c6b019f" kind="function"><name>deleteAllSkillLevels</name></member>
+    <member refid="classcoms309_1_1_skill_level_1_1_skill_level_controller_1a8f500529e70810d2af0bdbb59cd10199" kind="function"><name>deleteSkillLevel</name></member>
+  </compound>
+  <compound refid="classcom_1_1mockito_1_1_skill_level_controller_test" kind="class"><name>com::mockito::SkillLevelControllerTest</name>
+    <member refid="classcom_1_1mockito_1_1_skill_level_controller_test_1a32901da8a314951c4fb77a8fab2f4efb" kind="variable"><name>skillLevelController</name></member>
+    <member refid="classcom_1_1mockito_1_1_skill_level_controller_test_1a9a0ff28f775e1e393db8b6bb198014e6" kind="variable"><name>commentRepository</name></member>
+    <member refid="classcom_1_1mockito_1_1_skill_level_controller_test_1a3e9e66cec663410c6b5f64cd3f383049" kind="variable"><name>gamePostRepository</name></member>
+    <member refid="classcom_1_1mockito_1_1_skill_level_controller_test_1a35ef41082ec55ba0d5060278946b2ba3" kind="variable"><name>userRepository</name></member>
+    <member refid="classcom_1_1mockito_1_1_skill_level_controller_test_1a5e7c9c6a4baf27cb09bf3d04d101d728" kind="variable"><name>sportRepository</name></member>
+    <member refid="classcom_1_1mockito_1_1_skill_level_controller_test_1abd76ea22aa3ce8eb3cd2e3861ebe1c81" kind="variable"><name>skillLevelRepository</name></member>
+    <member refid="classcom_1_1mockito_1_1_skill_level_controller_test_1aba26a69a53f06163aab777ce74bcff56" kind="variable"><name>gp1</name></member>
+    <member refid="classcom_1_1mockito_1_1_skill_level_controller_test_1a865b59c0c309446b680565e0a5e45383" kind="variable"><name>gp2</name></member>
+    <member refid="classcom_1_1mockito_1_1_skill_level_controller_test_1a181a99cc630f21cb2c23caeb7b15d4fd" kind="variable"><name>gp3</name></member>
+    <member refid="classcom_1_1mockito_1_1_skill_level_controller_test_1acaeb01e45da56b7cffab77813d1d5108" kind="variable"><name>gp4</name></member>
+    <member refid="classcom_1_1mockito_1_1_skill_level_controller_test_1a2ffc62b7af050c16674d3089f279adf4" kind="variable"><name>u1</name></member>
+    <member refid="classcom_1_1mockito_1_1_skill_level_controller_test_1a5ffc53608006d2e26d8d66ce9261d7a8" kind="variable"><name>u2</name></member>
+    <member refid="classcom_1_1mockito_1_1_skill_level_controller_test_1a9ed3000c6edcfa5304d491e517bc4fea" kind="variable"><name>s1</name></member>
+    <member refid="classcom_1_1mockito_1_1_skill_level_controller_test_1a1b36567ba5627cee200242e57f6a0bbe" kind="variable"><name>s2</name></member>
+    <member refid="classcom_1_1mockito_1_1_skill_level_controller_test_1ab2896c02689bee5d39f8b0b0eecf0d7c" kind="variable"><name>s3</name></member>
+    <member refid="classcom_1_1mockito_1_1_skill_level_controller_test_1aafbde8cc6cf6e5ae5d972433a8ba6dcd" kind="variable"><name>s4</name></member>
+    <member refid="classcom_1_1mockito_1_1_skill_level_controller_test_1aa9f26bf0fbe4c2ccce6974862934ce96" kind="variable"><name>sk1</name></member>
+    <member refid="classcom_1_1mockito_1_1_skill_level_controller_test_1a6712f52cf6a9bb0ed992873b3e738f65" kind="variable"><name>sk2</name></member>
+    <member refid="classcom_1_1mockito_1_1_skill_level_controller_test_1abf17d33525c4d41d8989d26e2803b6e1" kind="variable"><name>sk3</name></member>
+    <member refid="classcom_1_1mockito_1_1_skill_level_controller_test_1a9e1b78514aedeaada2ff03d455e64807" kind="variable"><name>sk4</name></member>
+    <member refid="classcom_1_1mockito_1_1_skill_level_controller_test_1adabaa069f59522c93d8a0def607e883a" kind="variable"><name>c1</name></member>
+    <member refid="classcom_1_1mockito_1_1_skill_level_controller_test_1a254caf955baab3d45fd6d948de6b85c7" kind="variable"><name>c2</name></member>
+    <member refid="classcom_1_1mockito_1_1_skill_level_controller_test_1aa6d95163af36ec34fb148bc9a92f3ba2" kind="variable"><name>c3</name></member>
+    <member refid="classcom_1_1mockito_1_1_skill_level_controller_test_1a5b441d13ac71fcc03e410373c3b5e182" kind="variable"><name>c4</name></member>
+    <member refid="classcom_1_1mockito_1_1_skill_level_controller_test_1a09b7c894fc38b757071e63cf80f3cc85" kind="variable"><name>c5</name></member>
+    <member refid="classcom_1_1mockito_1_1_skill_level_controller_test_1a87a09f762f601c9d81e7d4ec23a12b33" kind="function"><name>init</name></member>
+    <member refid="classcom_1_1mockito_1_1_skill_level_controller_test_1afc1980f35b172ed134ebe3a319638a8c" kind="function"><name>getAllSkillLevels</name></member>
+    <member refid="classcom_1_1mockito_1_1_skill_level_controller_test_1aa98aef82c8a29d33e2c20d4affe0e85a" kind="function"><name>getSkillLevelBuId</name></member>
+    <member refid="classcom_1_1mockito_1_1_skill_level_controller_test_1a1e7f978ead21fe30bead1208113993cd" kind="function"><name>createSkillLevel</name></member>
+    <member refid="classcom_1_1mockito_1_1_skill_level_controller_test_1abc4a8cbe146d8dd67d4b450fcb7fd531" kind="function"><name>updateSkillLevel</name></member>
+    <member refid="classcom_1_1mockito_1_1_skill_level_controller_test_1a6c61018d1d1001c259adb1ab285c34f2" kind="function"><name>deleteSkillLevelById</name></member>
+    <member refid="classcom_1_1mockito_1_1_skill_level_controller_test_1a5171777ef5f655d618eb7c4565c81464" kind="function"><name>deleteAllSkillLevels</name></member>
+  </compound>
+  <compound refid="interfacecoms309_1_1_skill_level_1_1_skill_level_repository" kind="interface"><name>coms309::SkillLevel::SkillLevelRepository</name>
+    <member refid="interfacecoms309_1_1_skill_level_1_1_skill_level_repository_1ac255c4ad56ccd86a3f8cdcf64a7179ad" kind="function"><name>findById</name></member>
+    <member refid="interfacecoms309_1_1_skill_level_1_1_skill_level_repository_1a7a67f0f865ec7e4eef3e6dc87938662d" kind="function"><name>deleteById</name></member>
+  </compound>
+  <compound refid="classcoms309_1_1_sport_1_1_sport" kind="class"><name>coms309::Sport::Sport</name>
+    <member refid="classcoms309_1_1_sport_1_1_sport_1a9ff811a6d7956a32ed2fd28f2b6f48fd" kind="variable"><name>id</name></member>
+    <member refid="classcoms309_1_1_sport_1_1_sport_1aba126feb15d27c4ad9a0f3c029ee409a" kind="variable"><name>sport_name</name></member>
+    <member refid="classcoms309_1_1_sport_1_1_sport_1a383e2a0a4a78bd83496ef97c09539a62" kind="variable"><name>gamePosts</name></member>
+    <member refid="classcoms309_1_1_sport_1_1_sport_1a6752777eaddb37f1944b41617bd93677" kind="variable"><name>skillLevel</name></member>
+    <member refid="classcoms309_1_1_sport_1_1_sport_1afcf55aa57858fce4626f01d0a0ceac71" kind="function"><name>Sport</name></member>
+    <member refid="classcoms309_1_1_sport_1_1_sport_1a5c05ddad954d72f22b7fd147b750eb2d" kind="function"><name>Sport</name></member>
+  </compound>
+  <compound refid="enumcoms309_1_1_enums_1_1_sport_name_1_1sport__name" kind="enum"><name>coms309::Enums::SportName::sport_name</name>
+    <member refid="enumcoms309_1_1_enums_1_1_sport_name_1_1sport__name_1a06232a29e8389b3fc2a9effde215a982" kind="variable"><name>Football</name></member>
+    <member refid="enumcoms309_1_1_enums_1_1_sport_name_1_1sport__name_1a6c6b99a15b83d7761d6cddd840240579" kind="variable"><name>Basketball</name></member>
+    <member refid="enumcoms309_1_1_enums_1_1_sport_name_1_1sport__name_1a31bf43ac17c3368599072ec3d1327e64" kind="variable"><name>Baseball</name></member>
+    <member refid="enumcoms309_1_1_enums_1_1_sport_name_1_1sport__name_1a7bbef2e7e50b62be54872216d12d4c15" kind="variable"><name>Volleyball</name></member>
+    <member refid="enumcoms309_1_1_enums_1_1_sport_name_1_1sport__name_1a474af299b7f472cec26c6719fa8041cc" kind="variable"><name>Disc_golf</name></member>
+    <member refid="enumcoms309_1_1_enums_1_1_sport_name_1_1sport__name_1a1073d940a278a0709f7d6503cd05375e" kind="variable"><name>Spikeball</name></member>
+    <member refid="enumcoms309_1_1_enums_1_1_sport_name_1_1sport__name_1a3dd5962128167862d1927d0c517ba67d" kind="variable"><name>Tennis</name></member>
+    <member refid="enumcoms309_1_1_enums_1_1_sport_name_1_1sport__name_1a7e95c1f245bd938f048065755880f7d3" kind="variable"><name>Pickleball</name></member>
+    <member refid="enumcoms309_1_1_enums_1_1_sport_name_1_1sport__name_1ac6778575001cea83b10b461fa64107c0" kind="variable"><name>Wrestling</name></member>
+    <member refid="enumcoms309_1_1_enums_1_1_sport_name_1_1sport__name_1a0f93f80eea9cdd6687fd82c30be35013" kind="variable"><name>Bouldering</name></member>
+    <member refid="enumcoms309_1_1_enums_1_1_sport_name_1_1sport__name_1ab4b4c5a5e4971e9328492b3171e07c6e" kind="variable"><name>Soccer</name></member>
+    <member refid="enumcoms309_1_1_enums_1_1_sport_name_1_1sport__name_1af167edf9f505c446ed5d3269d446cbf7" kind="variable"><name>Ping_pong</name></member>
+    <member refid="enumcoms309_1_1_enums_1_1_sport_name_1_1sport__name_1a1df1b2221eece6ff8cf1391420c2a485" kind="variable"><name>Swimming</name></member>
+  </compound>
+  <compound refid="classcoms309_1_1_sport_1_1_sport_controller" kind="class"><name>coms309::Sport::SportController</name>
+    <member refid="classcoms309_1_1_sport_1_1_sport_controller_1a296bc5f70cebcf19bfa0a45a67e3431d" kind="variable"><name>sportRepository</name></member>
+    <member refid="classcoms309_1_1_sport_1_1_sport_controller_1ad3bfbb34aa4851fe66233e855a1b54b7" kind="variable"><name>gamePostRepository</name></member>
+    <member refid="classcoms309_1_1_sport_1_1_sport_controller_1aaebd4af72ced694f1c3d1ce6f4377af8" kind="variable"><name>skillLevelRepository</name></member>
+    <member refid="classcoms309_1_1_sport_1_1_sport_controller_1a286a3659b2bddb860f5e9e247c407316" kind="variable"><name>userRepository</name></member>
+    <member refid="classcoms309_1_1_sport_1_1_sport_controller_1ac7457c547dc0f7f0dcaed859a432c8cd" kind="function"><name>getAllSports</name></member>
+    <member refid="classcoms309_1_1_sport_1_1_sport_controller_1ad9883e2060c9339605e6a1714c843e2c" kind="function"><name>getSportById</name></member>
+    <member refid="classcoms309_1_1_sport_1_1_sport_controller_1a8a539f9e2cfb542ace36c99a60f4b9f8" kind="function"><name>getAllGamePostsPlayingASport</name></member>
+    <member refid="classcoms309_1_1_sport_1_1_sport_controller_1a561eaf15b62f6b6458c06e8ab7f78bb9" kind="function"><name>createSport</name></member>
+    <member refid="classcoms309_1_1_sport_1_1_sport_controller_1a5dd8b35541acdc8ec0028f9499d80121" kind="function"><name>updateSport</name></member>
+    <member refid="classcoms309_1_1_sport_1_1_sport_controller_1aaf308d3abc29290555ba2e4bfb939c8a" kind="function"><name>deleteSportById</name></member>
+    <member refid="classcoms309_1_1_sport_1_1_sport_controller_1a8af8bee2b6cb411e0a2879e2a5c75cc2" kind="function"><name>deleteAllSports</name></member>
+    <member refid="classcoms309_1_1_sport_1_1_sport_controller_1a1e93e793f2ad5883a7d3b85186dd8291" kind="function"><name>deleteSport</name></member>
+  </compound>
+  <compound refid="classcom_1_1mockito_1_1_sport_controller_test" kind="class"><name>com::mockito::SportControllerTest</name>
+    <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a77e6798ca4381dcf4a57ed5d38943964" kind="variable"><name>sportController</name></member>
+    <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a5430ebf6aaeb0022f3d910a3c80193c0" kind="variable"><name>gamePostRepository</name></member>
+    <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a88bb14e4857659b6aff437612c3e7be8" kind="variable"><name>userRepository</name></member>
+    <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a4f27a40bdf61b93390c097f39274a6e4" kind="variable"><name>sportRepository</name></member>
+    <member refid="classcom_1_1mockito_1_1_sport_controller_test_1af161d43c63291404bb66fc43d23935a1" kind="variable"><name>skillLevelRepository</name></member>
+    <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a6223fefd643bc4864097f9fd6dc7bf4a" kind="variable"><name>gp1</name></member>
+    <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a3cc82e7fb75b8bc230358adb8d66dc8e" kind="variable"><name>gp2</name></member>
+    <member refid="classcom_1_1mockito_1_1_sport_controller_test_1ab2fb5a954f6af8a9aa3d939260c64f05" kind="variable"><name>gp3</name></member>
+    <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a495fc18b304c9cfc4ebca65d5edb3e11" kind="variable"><name>gp4</name></member>
+    <member refid="classcom_1_1mockito_1_1_sport_controller_test_1aca68466105ddb234129fd2a5504b28be" kind="variable"><name>u1</name></member>
+    <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a1f2a7048099d03a4c5bc1a3204260758" kind="variable"><name>u2</name></member>
+    <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a4366cec60f86d901fb0e4a8ca8908564" kind="variable"><name>s1</name></member>
+    <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a86f69825968c4e6e5a027fd9c7e53a0e" kind="variable"><name>s2</name></member>
+    <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a3325712cefea8a8d58dd484dd1e19f71" kind="variable"><name>s3</name></member>
+    <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a6ec486e35dc13ec37b88fa597ad5d69e" kind="variable"><name>s4</name></member>
+    <member refid="classcom_1_1mockito_1_1_sport_controller_test_1aac25ce4be3143a7f09af6353c6fa7210" kind="variable"><name>sk1</name></member>
+    <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a91a6612d79283e82275c79ced70ded84" kind="function"><name>init</name></member>
+    <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a6b4140393f3792e3e0c9c1d29a02560e" kind="function"><name>getAllSports</name></member>
+    <member refid="classcom_1_1mockito_1_1_sport_controller_test_1ad49c72f62d3c99df0ad7ab56d57cf96b" kind="function"><name>getSportById</name></member>
+    <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a869a23f286d0098708ad4645201e5fe3" kind="function"><name>getAllGamePostsPlayingASport</name></member>
+    <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a751becaa7786ce1b91024dc951f54912" kind="function"><name>createSport</name></member>
+    <member refid="classcom_1_1mockito_1_1_sport_controller_test_1ab1a21a518813f49dcb7451108ae41839" kind="function"><name>updateSport</name></member>
+    <member refid="classcom_1_1mockito_1_1_sport_controller_test_1af13c95b5664a5ab7809330c5e8a3ae66" kind="function"><name>deleteSportById</name></member>
+    <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a7650e1cf83a1803c3cb2da508e4f7ad5" kind="function"><name>deleteAllSports</name></member>
+  </compound>
+  <compound refid="classcoms309_1_1_enums_1_1_sport_name" kind="class"><name>coms309::Enums::SportName</name>
+  </compound>
+  <compound refid="interfacecoms309_1_1_sport_1_1_sport_repository" kind="interface"><name>coms309::Sport::SportRepository</name>
+    <member refid="interfacecoms309_1_1_sport_1_1_sport_repository_1a3142e48f1853689241903dea4d14dfdc" kind="function"><name>findById</name></member>
+    <member refid="interfacecoms309_1_1_sport_1_1_sport_repository_1a5530271744f2d7ff2022a1c3deff2a20" kind="function"><name>deleteById</name></member>
+  </compound>
+  <compound refid="classcom_1_1mockito_1_1_test_user_controller" kind="class"><name>com::mockito::TestUserController</name>
+    <member refid="classcom_1_1mockito_1_1_test_user_controller_1adcc0958dd18ef7b1df04c29680dfa39d" kind="variable"><name>userController</name></member>
+    <member refid="classcom_1_1mockito_1_1_test_user_controller_1a1b54c2f94b8b9834c696d4c7aa0d43e8" kind="variable"><name>repo</name></member>
+    <member refid="classcom_1_1mockito_1_1_test_user_controller_1aceea72d07c6bfd37200f711f2316a149" kind="function"><name>init</name></member>
+    <member refid="classcom_1_1mockito_1_1_test_user_controller_1aae6051d6032b066d41e52faeb273a7a0" kind="function"><name>getUserByIdTest</name></member>
+    <member refid="classcom_1_1mockito_1_1_test_user_controller_1aae290f3a660837acb1e0fc8f88afeef5" kind="function"><name>getAllUsers</name></member>
+  </compound>
+  <compound refid="classcoms309_1_1_users_1_1_user_controller" kind="class"><name>coms309::Users::UserController</name>
+    <member refid="classcoms309_1_1_users_1_1_user_controller_1a8fdc30827c2cca5d673cd3f0334002b0" kind="variable"><name>userRepository</name></member>
+    <member refid="classcoms309_1_1_users_1_1_user_controller_1ab4239e6fc95b0c9a9abe53a5e2f29b25" kind="variable"><name>gamePostRepository</name></member>
+    <member refid="classcoms309_1_1_users_1_1_user_controller_1aa413f9320fc38e9936f6d930dc719652" kind="variable"><name>sportRepository</name></member>
+    <member refid="classcoms309_1_1_users_1_1_user_controller_1a45e4ca881714fde209b2ce7f24e3bd3f" kind="variable"><name>commentRepository</name></member>
+    <member refid="classcoms309_1_1_users_1_1_user_controller_1a46dfe268d2928b54016e3373554a74c1" kind="variable"><name>skillLevelRepository</name></member>
+    <member refid="classcoms309_1_1_users_1_1_user_controller_1a1ea145661c33c9a21a5396dbd6041be4" kind="variable"><name>usersPublisher</name></member>
+    <member refid="classcoms309_1_1_users_1_1_user_controller_1a3913afae007d87465e05ba97672359ed" kind="variable"><name>logger</name></member>
+    <member refid="classcoms309_1_1_users_1_1_user_controller_1a78f0085408943daa6614318d6d326d6e" kind="function"><name>createDummyData</name></member>
+    <member refid="classcoms309_1_1_users_1_1_user_controller_1af77bb8407daf80d1ac85649ed8dae69a" kind="function"><name>getAllUsers</name></member>
+    <member refid="classcoms309_1_1_users_1_1_user_controller_1a202fad0e09356aef167af14fa2d8d26a" kind="function"><name>getUserById</name></member>
+    <member refid="classcoms309_1_1_users_1_1_user_controller_1a54aee816f10e06b95d3ee0e6db61181a" kind="function"><name>getUserByEmail</name></member>
+    <member refid="classcoms309_1_1_users_1_1_user_controller_1a98878f05406359f0372c930f085948d2" kind="function"><name>getUserRole</name></member>
+    <member refid="classcoms309_1_1_users_1_1_user_controller_1a5c81d4016bb038d21cf4280d7ca36e85" kind="function"><name>deleteUser</name></member>
+    <member refid="classcoms309_1_1_users_1_1_user_controller_1a791c7e700ba5c3148bf3d8357ddea9ee" kind="function"><name>greetings</name></member>
+    <member refid="classcoms309_1_1_users_1_1_user_controller_1a0413f6c2a73a72bb17d9dfafe6715aa2" kind="function"><name>greetings2</name></member>
+    <member refid="classcoms309_1_1_users_1_1_user_controller_1ac8ca53d16a566e6325c3d9e5392b3f9c" kind="function"><name>doesEmailExist</name></member>
+    <member refid="classcoms309_1_1_users_1_1_user_controller_1af52bfc2347fe3d4d68d89723dfe43526" kind="function"><name>handle</name></member>
+  </compound>
+  <compound refid="interfacecoms309_1_1_users_1_1_user_repository" kind="interface"><name>coms309::Users::UserRepository</name>
+    <member refid="interfacecoms309_1_1_users_1_1_user_repository_1a5d5b337ba67b628c83b1be7c6d740e1d" kind="function"><name>findById</name></member>
+    <member refid="interfacecoms309_1_1_users_1_1_user_repository_1ac0ebf6e72fe1d4a3d312b22129885198" kind="function"><name>findByEmail</name></member>
+    <member refid="interfacecoms309_1_1_users_1_1_user_repository_1a82201c9972451a21e4e22c35271c9bcf" kind="function"><name>deleteById</name></member>
+    <member refid="interfacecoms309_1_1_users_1_1_user_repository_1a1cc0bbff4f853e2c11c8f2b4a39e29e7" kind="function"><name>findByRole</name></member>
+  </compound>
+  <compound refid="classcoms309_1_1_users_1_1_users" kind="class"><name>coms309::Users::Users</name>
+    <member refid="classcoms309_1_1_users_1_1_users_1a54c2965b5edf24e60fad463e797ef31a" kind="variable"><name>id</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_1a681019f33735759ddec5a7f45eb2b1fa" kind="variable"><name>first_name</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_1acde3b790f2da7e93417cd06f8ec64360" kind="variable"><name>last_name</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_1aaa715fa28d026810bc09092460351e86" kind="variable"><name>email</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_1a9605af4e5d155062a8b481f7f8dee5ae" kind="variable"><name>password</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_1abd543c28e9f644f938c218331c726a6f" kind="variable"><name>role</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_1a77bda4920dd1066353dde1531e354858" kind="variable"><name>createdGamePosts</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_1a97cc0e25d5dfdd5c3464e491019ec626" kind="variable"><name>skill_levels</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_1a616adb9b099daa2bac688f4fd24f1f9d" kind="variable"><name>gamePost</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_1a909b2250dd18985196a8ee6d5b82c62f" kind="function"><name>Users</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_1a99b5095dcab5a8a4f07b7fec74c29c1e" kind="function"><name>Users</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_1a8ee7b438c8d9bd14723bcde4b6e85b22" kind="function"><name>getId</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_1a6bf4a7b20365c8d16d3d8af0f26ed3fe" kind="function"><name>setId</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_1a7ab60839a383c7888269bfb8760da998" kind="function"><name>getFirst_name</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_1a83e203151acbb7eac4dfc09ba79ed952" kind="function"><name>setFirst_name</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_1a5a77902853a0507a88959005d3e859d1" kind="function"><name>getLast_name</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_1a3275d9b25cb507063f173dd3436833a3" kind="function"><name>setLast_name</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_1a37b41a7a616f917cf5a4c925b2c79cbf" kind="function"><name>getEmail</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_1a779ad0031a7972a279deb6904e114a07" kind="function"><name>setEmail</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_1a8e82e83edc2d64984b02fbb10c62d78c" kind="function"><name>getPassword</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_1a6d78a4bc32c3d377093c589670df13f8" kind="function"><name>setPassword</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_1a7cd30b96ca52437d70346025b4603b5c" kind="function"><name>getGamePost</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_1a85937c4b503e01d7e92b9cc633716f80" kind="function"><name>setGamePost</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_1af55d3e46fb5f42bb08b3b22679b4badd" kind="function"><name>getCreatedGamePosts</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_1a35263d8315373ce079f7548141c6d2ed" kind="function"><name>setCreatedGamePosts</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_1af48196df7c02de81606755d1b4aca705" kind="function"><name>getSkill_levels</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_1a01552607f9a99671eb8941f958120254" kind="function"><name>setSkill_levels</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_1ae9b5020463990c5e98d68a1e456ca88d" kind="function"><name>isAuthenticated</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_1abffe279645215b71f505c92a8810b3bc" kind="function"><name>isAdmin</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_1a0a63fd9ffe103bf74018a9dc7a9b96b4" kind="function"><name>getRole</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_1adad243d1804bf82ee68b642ef140c9e2" kind="function"><name>setRole</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_1a5e8063462cb311031a42c5df5e0e26a2" kind="function"><name>equals</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_1a15f60059dc0420de2b945eef86c7a5d7" kind="function"><name>getUserStream</name></member>
+  </compound>
+  <compound refid="classcom_1_1mockito_1_1_users_controller_test" kind="class"><name>com::mockito::UsersControllerTest</name>
+    <member refid="classcom_1_1mockito_1_1_users_controller_test_1a784bc07eaa14d5517edf1a439a48b1df" kind="variable"><name>userController</name></member>
+    <member refid="classcom_1_1mockito_1_1_users_controller_test_1a274a39ab05a2c0ff6d6a6bea0d6a4d8d" kind="variable"><name>userRepository</name></member>
+    <member refid="classcom_1_1mockito_1_1_users_controller_test_1ae06e5eec10cb668e7a63906e1bd4bb1d" kind="variable"><name>usersPublisher</name></member>
+    <member refid="classcom_1_1mockito_1_1_users_controller_test_1ab11bd29320825c4bc68c8c0e35015eb3" kind="variable"><name>testUser1</name></member>
+    <member refid="classcom_1_1mockito_1_1_users_controller_test_1acd4b2ec3e4edf020d6c1550866437acb" kind="variable"><name>testUser2</name></member>
+    <member refid="classcom_1_1mockito_1_1_users_controller_test_1a2d28fc44e9fd62637e2ef4a690e80302" kind="variable"><name>testUser3</name></member>
+    <member refid="classcom_1_1mockito_1_1_users_controller_test_1a6afec5e58d81be0ada193d07df0084de" kind="variable"><name>testUser4</name></member>
+    <member refid="classcom_1_1mockito_1_1_users_controller_test_1a94eef5ee6aae5e45a1814f537f033be1" kind="function"><name>init</name></member>
+    <member refid="classcom_1_1mockito_1_1_users_controller_test_1a720084159556ef668a6675016f6ac7fd" kind="function"><name>GetUserById</name></member>
+    <member refid="classcom_1_1mockito_1_1_users_controller_test_1afd0233abe39efe9dc8f52b6601f60596" kind="function"><name>GetAllUsers</name></member>
+    <member refid="classcom_1_1mockito_1_1_users_controller_test_1a454119cb5fa2742cc458b1bb9ada75f7" kind="function"><name>CreateUser</name></member>
+    <member refid="classcom_1_1mockito_1_1_users_controller_test_1a66eb4511840f7d51995789d5fb38153f" kind="function"><name>UpdateUser</name></member>
+    <member refid="classcom_1_1mockito_1_1_users_controller_test_1a70eb826c9c63a365577a8c487d7a1b06" kind="function"><name>DeleteUser</name></member>
+  </compound>
+  <compound refid="classcoms309_1_1_users_1_1_users_publisher" kind="class"><name>coms309::Users::UsersPublisher</name>
+    <member refid="classcoms309_1_1_users_1_1_users_publisher_1a6bb9f3ac457da82048f82454428832cc" kind="variable"><name>processor</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_publisher_1aba7d5d4f941228a0a9a214e51b1ce70d" kind="variable"><name>sink</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_publisher_1a4e1e5956d1f1ad3ba38c702a7fafa621" kind="function"><name>UsersPublisher</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_publisher_1a9cea8b4936786632857148cd78586b6b" kind="function"><name>getUsers</name></member>
+    <member refid="classcoms309_1_1_users_1_1_users_publisher_1a0463249e9962a5a1752ea55f5e7c648b" kind="function"><name>publish</name></member>
+  </compound>
+  <compound refid="classcoms309_1_1_websocket_1_1_web_socket_config" kind="class"><name>coms309::Websocket::WebSocketConfig</name>
+    <member refid="classcoms309_1_1_websocket_1_1_web_socket_config_1a9ce715be191502960bb0e5f38bc0a4d0" kind="function"><name>serverEndpointExporter</name></member>
+  </compound>
+  <compound refid="namespacecom" kind="namespace"><name>com</name>
+  </compound>
+  <compound refid="namespacecom_1_1mockito" kind="namespace"><name>com::mockito</name>
+  </compound>
+  <compound refid="namespacecoms309" kind="namespace"><name>coms309</name>
+  </compound>
+  <compound refid="namespacecoms309_1_1_auth" kind="namespace"><name>coms309::Auth</name>
+  </compound>
+  <compound refid="namespacecoms309_1_1_comment" kind="namespace"><name>coms309::Comment</name>
+  </compound>
+  <compound refid="namespacecoms309_1_1_email" kind="namespace"><name>coms309::Email</name>
+  </compound>
+  <compound refid="namespacecoms309_1_1_enums" kind="namespace"><name>coms309::Enums</name>
+  </compound>
+  <compound refid="namespacecoms309_1_1_exceptions" kind="namespace"><name>coms309::Exceptions</name>
+  </compound>
+  <compound refid="namespacecoms309_1_1_game_post" kind="namespace"><name>coms309::GamePost</name>
+  </compound>
+  <compound refid="namespacecoms309_1_1_location" kind="namespace"><name>coms309::Location</name>
+  </compound>
+  <compound refid="namespacecoms309_1_1_role" kind="namespace"><name>coms309::Role</name>
+  </compound>
+  <compound refid="namespacecoms309_1_1_skill_level" kind="namespace"><name>coms309::SkillLevel</name>
+  </compound>
+  <compound refid="namespacecoms309_1_1_sport" kind="namespace"><name>coms309::Sport</name>
+  </compound>
+  <compound refid="namespacecoms309_1_1_users" kind="namespace"><name>coms309::Users</name>
+  </compound>
+  <compound refid="namespacecoms309_1_1_websocket" kind="namespace"><name>coms309::Websocket</name>
+  </compound>
+  <compound refid="namespacejava_1_1lang" kind="namespace"><name>java::lang</name>
+  </compound>
+  <compound refid="_readme_8md" kind="file"><name>Readme.md</name>
+  </compound>
+  <compound refid="_application_8java" kind="file"><name>Application.java</name>
+  </compound>
+  <compound refid="_auth_8java" kind="file"><name>Auth.java</name>
+  </compound>
+  <compound refid="_comment_8java" kind="file"><name>Comment.java</name>
+  </compound>
+  <compound refid="_comment_controller_8java" kind="file"><name>CommentController.java</name>
+  </compound>
+  <compound refid="_comment_publisher_8java" kind="file"><name>CommentPublisher.java</name>
+  </compound>
+  <compound refid="_comment_repository_8java" kind="file"><name>CommentRepository.java</name>
+  </compound>
+  <compound refid="_comment_service_8java" kind="file"><name>CommentService.java</name>
+  </compound>
+  <compound refid="_email_sender_8java" kind="file"><name>EmailSender.java</name>
+  </compound>
+  <compound refid="_permission_8java" kind="file"><name>Permission.java</name>
+  </compound>
+  <compound refid="_sport_name_8java" kind="file"><name>SportName.java</name>
+  </compound>
+  <compound refid="_duplicate_exception_8java" kind="file"><name>DuplicateException.java</name>
+  </compound>
+  <compound refid="_not_found_exception_8java" kind="file"><name>NotFoundException.java</name>
+  </compound>
+  <compound refid="_game_post_8java" kind="file"><name>GamePost.java</name>
+  </compound>
+  <compound refid="_game_post_controller_8java" kind="file"><name>GamePostController.java</name>
+  </compound>
+  <compound refid="_game_post_publisher_8java" kind="file"><name>GamePostPublisher.java</name>
+  </compound>
+  <compound refid="_game_post_repository_8java" kind="file"><name>GamePostRepository.java</name>
+  </compound>
+  <compound refid="_game_post_service_8java" kind="file"><name>GamePostService.java</name>
+  </compound>
+  <compound refid="_location_8java" kind="file"><name>Location.java</name>
+  </compound>
+  <compound refid="_location_controller_8java" kind="file"><name>LocationController.java</name>
+  </compound>
+  <compound refid="_location_repository_8java" kind="file"><name>LocationRepository.java</name>
+  </compound>
+  <compound refid="_role_8java" kind="file"><name>Role.java</name>
+  </compound>
+  <compound refid="_role_controller_8java" kind="file"><name>RoleController.java</name>
+  </compound>
+  <compound refid="_role_repository_8java" kind="file"><name>RoleRepository.java</name>
+  </compound>
+  <compound refid="_skill_level_8java" kind="file"><name>SkillLevel.java</name>
+  </compound>
+  <compound refid="_skill_level_controller_8java" kind="file"><name>SkillLevelController.java</name>
+  </compound>
+  <compound refid="_skill_level_repository_8java" kind="file"><name>SkillLevelRepository.java</name>
+  </compound>
+  <compound refid="_sport_8java" kind="file"><name>Sport.java</name>
+  </compound>
+  <compound refid="_sport_controller_8java" kind="file"><name>SportController.java</name>
+  </compound>
+  <compound refid="_sport_repository_8java" kind="file"><name>SportRepository.java</name>
+  </compound>
+  <compound refid="_user_controller_8java" kind="file"><name>UserController.java</name>
+  </compound>
+  <compound refid="_user_repository_8java" kind="file"><name>UserRepository.java</name>
+  </compound>
+  <compound refid="_users_8java" kind="file"><name>Users.java</name>
+  </compound>
+  <compound refid="_users_publisher_8java" kind="file"><name>UsersPublisher.java</name>
+  </compound>
+  <compound refid="_web_socket_config_8java" kind="file"><name>WebSocketConfig.java</name>
+  </compound>
+  <compound refid="_comment_controller_test_8java" kind="file"><name>CommentControllerTest.java</name>
+  </compound>
+  <compound refid="_game_post_controller_test_8java" kind="file"><name>GamePostControllerTest.java</name>
+  </compound>
+  <compound refid="_location_controller_test_8java" kind="file"><name>LocationControllerTest.java</name>
+  </compound>
+  <compound refid="_skill_level_controller_test_8java" kind="file"><name>SkillLevelControllerTest.java</name>
+  </compound>
+  <compound refid="_sport_controller_test_8java" kind="file"><name>SportControllerTest.java</name>
+  </compound>
+  <compound refid="_test_user_controller_8java" kind="file"><name>TestUserController.java</name>
+  </compound>
+  <compound refid="_users_controller_test_8java" kind="file"><name>UsersControllerTest.java</name>
+  </compound>
+  <compound refid="md__c_1_2_users_2_arie_2_develop_2hb__215_2_backend_2_readme" kind="page"><name>md__c_1_2_users_2_arie_2_develop_2hb__215_2_backend_2_readme</name>
+  </compound>
+  <compound refid="dir_ace2110e20a654888a787e8f41b5d9c8" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Auth</name>
+  </compound>
+  <compound refid="dir_d97893c72dedf4e0b2e9e1e8df755fbd" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Backend</name>
+  </compound>
+  <compound refid="dir_ba7aacfaa07e6e5202173b2b494b9e85" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com</name>
+  </compound>
+  <compound refid="dir_64b30a98163c6ba3974a33ceff621053" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment</name>
+  </compound>
+  <compound refid="dir_1f0d40d8fde20c022b22e3677d5625e7" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309</name>
+  </compound>
+  <compound refid="dir_6e5a8bd5f707905b9d885861b51489e8" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Email</name>
+  </compound>
+  <compound refid="dir_e85c06d9d790e4df60081a4401c2a937" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Enums</name>
+  </compound>
+  <compound refid="dir_7aeb95b319efde129b42c94134c72e9c" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Exceptions</name>
+  </compound>
+  <compound refid="dir_0c616988860ae8d724e6f4e7c0d3ff5e" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost</name>
+  </compound>
+  <compound refid="dir_b3eacae5fd9f70fb47599ea7727a95b6" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Backend/src/main/java</name>
+  </compound>
+  <compound refid="dir_957a188e22912998f7412c1822ddb4a1" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Backend/src/test/java</name>
+  </compound>
+  <compound refid="dir_ae264378e7a3f75a9a0593956aca71c3" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location</name>
+  </compound>
+  <compound refid="dir_55120cf952ff48049759b891cfd6fc18" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Backend/src/main</name>
+  </compound>
+  <compound refid="dir_24538cd156507857ad53583c215f22af" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito</name>
+  </compound>
+  <compound refid="dir_3d4adb1fa2901242012d8312db03a94c" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Role</name>
+  </compound>
+  <compound refid="dir_53e8972ef7164fd9a120bb4275036f22" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel</name>
+  </compound>
+  <compound refid="dir_10233ce70e8f756bf38009191929b403" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Sport</name>
+  </compound>
+  <compound refid="dir_1bff4b228f0c4ca2e8328f48ba06a85d" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Backend/src</name>
+  </compound>
+  <compound refid="dir_f6dc844f31739de6f7a3503bf7ace084" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Backend/src/test</name>
+  </compound>
+  <compound refid="dir_6e889048b07f0d9f6628e3c9b6805a16" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users</name>
+  </compound>
+  <compound refid="dir_c861cfe5bd3218e376e5dbcb347d740c" kind="dir"><name>C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Websocket</name>
+  </compound>
+</doxygenindex>

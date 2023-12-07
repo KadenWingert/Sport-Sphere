@@ -1,0 +1,218 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > UserAddressController</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">coms309.UserAddress</a>
+</div>
+
+<h1>Coverage Summary for Class: UserAddressController (coms309.UserAddress)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">UserAddressController</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    16.7%
+  </span>
+  <span class="absValue">
+    (1/6)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    3.1%
+  </span>
+  <span class="absValue">
+    (1/32)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;
+&nbsp;/** @brief	The coms 309. location */
+&nbsp;package coms309.UserAddress;
+&nbsp;
+&nbsp;/** @brief	The coms 309. exceptions. duplicate exception */
+&nbsp;
+&nbsp;import coms309.Exceptions.DuplicateException;
+&nbsp;import coms309.Exceptions.NotFoundException;
+&nbsp;import coms309.Users.UserRepository;
+&nbsp;import coms309.Users.Users;
+&nbsp;import org.springframework.beans.factory.annotation.Autowired;
+&nbsp;import org.springframework.graphql.data.method.annotation.Argument;
+&nbsp;import org.springframework.graphql.data.method.annotation.MutationMapping;
+&nbsp;import org.springframework.graphql.data.method.annotation.QueryMapping;
+&nbsp;import org.springframework.stereotype.Controller;
+&nbsp;
+&nbsp;import java.util.HashSet;
+&nbsp;import java.util.List;
+&nbsp;import java.util.Set;
+&nbsp;
+&nbsp;/**********************************************************************************************//**
+&nbsp; * @class	LocationController
+&nbsp; *
+&nbsp; * @brief	A controller for handling locations.
+&nbsp; *
+&nbsp; * @author	Arie
+&nbsp; * @date	10/20/2023
+&nbsp; **************************************************************************************************/
+&nbsp;
+&nbsp;@Controller
+<b class="fc">&nbsp;public class UserAddressController {</b>
+&nbsp;
+&nbsp;    @Autowired
+&nbsp;    UserRepository userRepository;
+&nbsp;
+&nbsp;
+&nbsp;    @Autowired
+&nbsp;    UserAddressRepository userAddressRepository;
+&nbsp;
+&nbsp;
+&nbsp;    @QueryMapping
+&nbsp;    public List&lt;UserAddress&gt; getAllUserAddresses() {
+<b class="nc">&nbsp;        return userAddressRepository.findAll();</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;    @QueryMapping
+&nbsp;   public UserAddress getuserAddressByID(@Argument int id){
+<b class="nc">&nbsp;        UserAddress userAddress = userAddressRepository.findById((id));</b>
+<b class="nc">&nbsp;        if(userAddress == null){</b>
+<b class="nc">&nbsp;            throw new NotFoundException(&quot;User Address with ID &quot; + id + &quot; not found&quot;);</b>
+&nbsp;        }
+<b class="nc">&nbsp;        return userAddress;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @MutationMapping
+&nbsp;    public UserAddress createUserAddress(@Argument int userID, @Argument String address, @Argument String gps){
+<b class="nc">&nbsp;        Users user = userRepository.findById(userID);</b>
+<b class="nc">&nbsp;        if(user == null){</b>
+<b class="nc">&nbsp;            throw new NotFoundException(&quot;User with id: &quot; + userID + &quot; not found&quot;);</b>
+&nbsp;        }
+<b class="nc">&nbsp;        if(user.getUserAddress() != null){</b>
+<b class="nc">&nbsp;            throw new DuplicateException(&quot;user with id: &quot; + userID + &quot; Already has an address. Do you want to update the location instead?&quot;);</b>
+&nbsp;        }
+<b class="nc">&nbsp;        UserAddress userAddress = new UserAddress(user, address,gps);</b>
+<b class="nc">&nbsp;       user.setUserAddress(userAddress);</b>
+<b class="nc">&nbsp;       userAddressRepository.save(userAddress);</b>
+<b class="nc">&nbsp;        return userAddress;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @MutationMapping
+&nbsp;    public UserAddress updateUserAddress(@Argument int userAddressID, @Argument String address, @Argument String GPS){
+<b class="nc">&nbsp;        UserAddress userAddress = userAddressRepository.findById(userAddressID);</b>
+<b class="nc">&nbsp;        if(userAddress == null)</b>
+<b class="nc">&nbsp;            throw new NotFoundException(&quot;userAddressID with id: &quot; + userAddressID + &quot; not found&quot;);</b>
+&nbsp;
+<b class="nc">&nbsp;        if(address != null)</b>
+<b class="nc">&nbsp;            userAddress.setAddress(address);</b>
+&nbsp;
+<b class="nc">&nbsp;        if(GPS != null)</b>
+<b class="nc">&nbsp;            userAddress.setGps(GPS);</b>
+<b class="nc">&nbsp;        userAddressRepository.save(userAddress);</b>
+<b class="nc">&nbsp;        return userAddress;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************//**
+&nbsp;     * @fn	@MutationMapping public Location deleteLocation(@Argument int id)
+&nbsp;     *
+&nbsp;     * @brief	Deletes the location described by ID
+&nbsp;     *
+&nbsp;     * @author	Arie
+&nbsp;     * @date	10/20/2023
+&nbsp;     *
+&nbsp;     * @exception	NotFoundException	Thrown when the requested element is not present.
+&nbsp;     *
+&nbsp;     * @param 	id	The identifier.
+&nbsp;     *
+&nbsp;     * @returns	A Location.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @MutationMapping
+&nbsp;    public UserAddress deleteUserAddress(@Argument int id) {
+<b class="nc">&nbsp;        UserAddress userAddress = userAddressRepository.findById(id);</b>
+<b class="nc">&nbsp;        if (userAddress == null) {</b>
+<b class="nc">&nbsp;            throw new NotFoundException(&quot;userAddress with ID&quot; + id + &quot;not found.&quot;);</b>
+&nbsp;        }
+<b class="nc">&nbsp;        Users user = userRepository.findById(userAddress.getUser().getId());</b>
+<b class="nc">&nbsp;       user.setUserAddress(null);</b>
+<b class="nc">&nbsp;        userRepository.save(user);</b>
+<b class="nc">&nbsp;        userAddressRepository.deleteById(id);</b>
+<b class="nc">&nbsp;        return userAddress;</b>
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-12-04 13:11</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<map id="com.example.sportssphere.ApolloClientProvider.setupApolloClient" name="com.example.sportssphere.ApolloClientProvider.setupApolloClient">
+<area shape="rect" id="Node000001" title="Sets up the apollo client." alt="" coords="236,31,444,89"/>
+<area shape="rect" id="Node000002" href="$classcom_1_1example_1_1sportssphere_1_1_home_activity.html#ae6b55ef8d26a3b663774c9a64accc8d2" title="Executes the &#39;create&#39; action." alt="" coords="5,5,188,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,46,188,42,189,37,220,41"/>
+<area shape="rect" id="Node000003" href="$classcom_1_1example_1_1sportssphere_1_1_sign_up_activity.html#a988290fab964436631cb4be46a9b40bf" title="Executes the &#39;create&#39; action." alt="" coords="5,72,188,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="220,79,189,83,188,78,220,74"/>
+</map>

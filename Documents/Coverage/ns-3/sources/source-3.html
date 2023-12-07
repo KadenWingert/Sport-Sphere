@@ -1,0 +1,223 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > CommentPublisher</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">coms309.Comment</a>
+</div>
+
+<h1>Coverage Summary for Class: CommentPublisher (coms309.Comment)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">CommentPublisher</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    16.7%
+  </span>
+  <span class="absValue">
+    (1/6)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    33.3%
+  </span>
+  <span class="absValue">
+    (3/9)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;package coms309.Comment;
+&nbsp;
+&nbsp;/** @brief The org.reactivestreams. publisher */
+&nbsp;import org.reactivestreams.Publisher;
+&nbsp;/** @brief The org.springframework.stereotype. component */
+&nbsp;import org.springframework.stereotype.Component;
+&nbsp;/** @brief The reactor.core.publisher. direct processor */
+&nbsp;import reactor.core.publisher.DirectProcessor;
+&nbsp;/** @brief The reactor.core.publisher. flux processor */
+&nbsp;import reactor.core.publisher.FluxProcessor;
+&nbsp;/** @brief The reactor.core.publisher. flux sink */
+&nbsp;import reactor.core.publisher.FluxSink;
+&nbsp;
+&nbsp;/**********************************************************************************************/
+&nbsp;/**
+&nbsp; * @class CommentPublisher
+&nbsp; *
+&nbsp; * @brief A comment publisher.
+&nbsp; *
+&nbsp; * @author Arie
+&nbsp; * @date 10/30/2023
+&nbsp; **************************************************************************************************/
+&nbsp;
+&nbsp;@Component
+&nbsp;public class CommentPublisher {
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @property private final FluxProcessor&lt;Comment, Comment&gt; processor
+&nbsp;     *
+&nbsp;     * @brief Gets the processor
+&nbsp;     *
+&nbsp;     * @returns The processor.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    private final FluxProcessor&lt;Comment, Comment&gt; processor;
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @property private final FluxSink&lt;Comment&gt; sink
+&nbsp;     *
+&nbsp;     * @brief Gets the sink
+&nbsp;     *
+&nbsp;     * @returns The sink.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    private final FluxSink&lt;Comment&gt; sink;
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn public CommentPublisher()
+&nbsp;     *
+&nbsp;     * @brief Default constructor
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     **************************************************************************************************/
+&nbsp;
+<b class="fc">&nbsp;    public CommentPublisher() {</b>
+<b class="fc">&nbsp;        this.processor = DirectProcessor.&lt;Comment&gt;create().serialize();</b>
+<b class="fc">&nbsp;        this.sink = processor.sink();</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn public void publish(Comment comment)
+&nbsp;     *
+&nbsp;     * @brief Publishes the given comment
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @param comment The comment.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    public void publish(Comment comment) {
+<b class="nc">&nbsp;        sink.next(comment);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn public Publisher&lt;Comment&gt; subCommentsById(int id)
+&nbsp;     *
+&nbsp;     * @brief Sub comments by identifier
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @param id The identifier.
+&nbsp;     *
+&nbsp;     * @returns A Publisher&amp;lt;Comment&amp;gt;
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    public Publisher&lt;Comment&gt; subCommentsById(int id) {
+<b class="nc">&nbsp;        return processor.map(comment -&gt; {</b>
+<b class="nc">&nbsp;            return comment;</b>
+<b class="nc">&nbsp;        }).filter(comment -&gt; comment.getId() == id);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn public Publisher&lt;Comment&gt; subComments()
+&nbsp;     *
+&nbsp;     * @brief Sub comments
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @returns A Publisher&amp;lt;Comment&amp;gt;
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    public Publisher&lt;Comment&gt; subComments() {
+<b class="nc">&nbsp;        return processor.map((comment -&gt; {</b>
+<b class="nc">&nbsp;            return comment;</b>
+&nbsp;        }));
+&nbsp;    }
+&nbsp;
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-12-04 13:11</div>
+</div>
+</body>
+</html>

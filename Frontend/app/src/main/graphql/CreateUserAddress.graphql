@@ -1,0 +1,3 @@
+mutation CreateUserAddress($user_id: ID!, $address: String!, $gps: String!) {
+    createUserAddress(userID: $user_id, address: $address, gps: $gps) {address}
+}

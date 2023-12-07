@@ -1,0 +1,426 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > SportController</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">coms309.Sport</a>
+</div>
+
+<h1>Coverage Summary for Class: SportController (coms309.Sport)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">SportController</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (9/9)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    78.4%
+  </span>
+  <span class="absValue">
+    (40/51)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">SportController$$SpringCGLIB$$0</td>
+  </tr>
+  <tr>
+    <td class="name">SportController$$SpringCGLIB$$1</td>
+  </tr>
+  <tr>
+    <td class="name">SportController$$SpringCGLIB$$2</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (9/9)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    78.4%
+  </span>
+  <span class="absValue">
+    (40/51)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;
+&nbsp;/** @brief	The coms 309. sport */
+&nbsp;package coms309.Sport;
+&nbsp;
+&nbsp;/** @brief	The coms 309. exceptions. not found exception */
+&nbsp;import coms309.Exceptions.NotFoundException;
+&nbsp;/** @brief	The coms 309. game post. game post */
+&nbsp;import coms309.GamePost.GamePost;
+&nbsp;/** @brief	The coms 309. game post. game post repository */
+&nbsp;import coms309.GamePost.GamePostRepository;
+&nbsp;/** @brief	The coms 309. skill level. skill level */
+&nbsp;import coms309.SkillLevel.SkillLevel;
+&nbsp;/** @brief	The coms 309. skill level. skill level repository */
+&nbsp;import coms309.SkillLevel.SkillLevelRepository;
+&nbsp;/** @brief	The coms 309. users. user repository */
+&nbsp;import coms309.Users.UserRepository;
+&nbsp;/** @brief	The coms 309. users. users */
+&nbsp;import coms309.Users.Users;
+&nbsp;/** @brief	The jakarta.transaction. transactional */
+&nbsp;import jakarta.transaction.Transactional;
+&nbsp;/** @brief	The org.checkerframework.checker.units.qual. a */
+&nbsp;import org.checkerframework.checker.units.qual.A;
+&nbsp;/** @brief	The org.springframework.beans.factory.annotation. autowired */
+&nbsp;import org.springframework.beans.factory.annotation.Autowired;
+&nbsp;/** @brief	The org.springframework.graphql.data.method.annotation. argument */
+&nbsp;import org.springframework.graphql.data.method.annotation.Argument;
+&nbsp;/** @brief	The org.springframework.graphql.data.method.annotation. mutation mapping */
+&nbsp;import org.springframework.graphql.data.method.annotation.MutationMapping;
+&nbsp;/** @brief	The org.springframework.graphql.data.method.annotation. query mapping */
+&nbsp;import org.springframework.graphql.data.method.annotation.QueryMapping;
+&nbsp;/** @brief	The org.springframework.stereotype. controller */
+&nbsp;import org.springframework.stereotype.Controller;
+&nbsp;
+&nbsp;/** @brief	Set the java.util. hash belongs to */
+&nbsp;import java.util.HashSet;
+&nbsp;/** @brief	List of java.util.s */
+&nbsp;import java.util.List;
+&nbsp;/** @brief	Set the java.util. belongs to */
+&nbsp;import java.util.Set;
+&nbsp;
+&nbsp;/**********************************************************************************************//**
+&nbsp; * @class	SportController
+&nbsp; *
+&nbsp; * @brief	A controller for handling sports.
+&nbsp; *
+&nbsp; * @author	Arie
+&nbsp; * @date	10/20/2023
+&nbsp; **************************************************************************************************/
+&nbsp;
+&nbsp;@Controller
+<b class="fc">&nbsp;public class SportController {</b>
+&nbsp;
+&nbsp;    /**********************************************************************************************//**
+&nbsp;     * @property	@Autowired SportRepository sportRepository
+&nbsp;     *
+&nbsp;     * @brief	Gets the sport repository
+&nbsp;     *
+&nbsp;     * @returns	The sport repository.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @Autowired
+&nbsp;    SportRepository sportRepository;
+&nbsp;
+&nbsp;    /**********************************************************************************************//**
+&nbsp;     * @property	@Autowired GamePostRepository gamePostRepository
+&nbsp;     *
+&nbsp;     * @brief	Gets the game post repository
+&nbsp;     *
+&nbsp;     * @returns	The game post repository.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @Autowired
+&nbsp;    GamePostRepository gamePostRepository;
+&nbsp;
+&nbsp;    /**********************************************************************************************//**
+&nbsp;     * @property	@Autowired SkillLevelRepository skillLevelRepository
+&nbsp;     *
+&nbsp;     * @brief	Gets the skill level repository
+&nbsp;     *
+&nbsp;     * @returns	The skill level repository.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @Autowired
+&nbsp;    SkillLevelRepository skillLevelRepository;
+&nbsp;
+&nbsp;    /**********************************************************************************************//**
+&nbsp;     * @property	@Autowired UserRepository userRepository
+&nbsp;     *
+&nbsp;     * @brief	Gets the user repository
+&nbsp;     *
+&nbsp;     * @returns	The user repository.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @Autowired
+&nbsp;    UserRepository userRepository;
+&nbsp;
+&nbsp;    /**********************************************************************************************//**
+&nbsp;     * @fn	@QueryMapping public List&lt;Sport&gt; getAllSports()
+&nbsp;     *
+&nbsp;     * @brief	Gets all sports
+&nbsp;     *
+&nbsp;     * @author	Arie
+&nbsp;     * @date	10/20/2023
+&nbsp;     *
+&nbsp;     * @returns	List&amp;lt;Sport&amp;gt;
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @QueryMapping
+&nbsp;    public List&lt;Sport&gt; getAllSports() {
+<b class="fc">&nbsp;        return sportRepository.findAll();</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************//**
+&nbsp;     * @fn	@QueryMapping public Sport getSportById(@Argument int id)
+&nbsp;     *
+&nbsp;     * @brief	Gets sport by identifier
+&nbsp;     *
+&nbsp;     * @author	Arie
+&nbsp;     * @date	10/20/2023
+&nbsp;     *
+&nbsp;     * @exception	NotFoundException	Thrown when the requested element is not present.
+&nbsp;     *
+&nbsp;     * @param 	id	.
+&nbsp;     *
+&nbsp;     * @returns	Sport.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @QueryMapping
+&nbsp;    public Sport getSportById(@Argument int id) {
+<b class="fc">&nbsp;        Sport sport = sportRepository.findById((id));</b>
+<b class="fc">&nbsp;        if (sport == null) {</b>
+<b class="nc">&nbsp;            throw new NotFoundException(&quot;Sport with ID &quot; + id + &quot; not found&quot;);</b>
+&nbsp;        }
+<b class="fc">&nbsp;        return sport;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************//**
+&nbsp;     * @fn	@Transactional @QueryMapping public Set&lt;GamePost&gt; getAllGamePostsPlayingASport(@Argument int sport_id)
+&nbsp;     *
+&nbsp;     * @brief	Gets all game posts playing a sport
+&nbsp;     *
+&nbsp;     * @author	Arie
+&nbsp;     * @date	10/20/2023
+&nbsp;     *
+&nbsp;     * @exception	NotFoundException	Thrown when the requested element is not present.
+&nbsp;     *
+&nbsp;     * @param 	sport_id	Identifier for the sport.
+&nbsp;     *
+&nbsp;     * @returns	all game posts playing a sport.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @Transactional//This gets rid of the following error:failed to lazily initialize a collection of role: coms309.Sport.Sport.gamePosts: could not initialize proxy - no Session
+&nbsp;    @QueryMapping
+&nbsp;    public Set&lt;GamePost&gt; getAllGamePostsPlayingASport(@Argument int sport_id){
+<b class="fc">&nbsp;        Sport sport = sportRepository.findById(sport_id);</b>
+<b class="fc">&nbsp;        if(sport == null){</b>
+<b class="nc">&nbsp;            throw new NotFoundException(&quot;Sport with ID &quot; + sport + &quot; not found&quot;);</b>
+&nbsp;        }
+<b class="fc">&nbsp;        Set&lt;GamePost&gt; gamePosts = new HashSet&lt;&gt;();</b>
+<b class="fc">&nbsp;        for(GamePost gp : sport.getGamePosts()){</b>
+<b class="fc">&nbsp;            if(gp.getSport().getSport_name().equals(sport.getSport_name())){</b>
+<b class="fc">&nbsp;                gamePosts.add(gp);</b>
+&nbsp;            }
+&nbsp;        }
+<b class="fc">&nbsp;       return gamePosts;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************//**
+&nbsp;     * @fn	@MutationMapping public Sport createSport(@Argument String sport_name, @Argument int skill_level_id)
+&nbsp;     *
+&nbsp;     * @brief	Creates a sport
+&nbsp;     *
+&nbsp;     * @author	Arie
+&nbsp;     * @date	10/20/2023
+&nbsp;     *
+&nbsp;     * @exception	NotFoundException	Thrown when the requested element is not present.
+&nbsp;     *
+&nbsp;     * @param 	sport_name	  	Name of the sport.
+&nbsp;     * @param 	skill_level_id	Identifier for the skill level.
+&nbsp;     *
+&nbsp;     * @returns	The new sport.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @MutationMapping
+&nbsp;    public Sport createSport(@Argument String sport_name, @Argument int skill_level_id){
+<b class="fc">&nbsp;        SkillLevel skillLevel = skillLevelRepository.findById(skill_level_id);</b>
+&nbsp;        Sport sport;
+<b class="fc">&nbsp;        if(skillLevel == null){</b>
+<b class="nc">&nbsp;            sport = new Sport(sport_name, null);</b>
+<b class="nc">&nbsp;        }</b>
+&nbsp;        else {
+<b class="fc">&nbsp;            sport = new Sport(sport_name, skillLevel);</b>
+&nbsp;        }
+<b class="fc">&nbsp;        sportRepository.save(sport);</b>
+<b class="fc">&nbsp;        return sport;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************//**
+&nbsp;     * @fn	@MutationMapping public Sport updateSport(@Argument String sport_name, @Argument int sport_id, @Argument int skill_level_id)
+&nbsp;     *
+&nbsp;     * @brief	Updates the sport
+&nbsp;     *
+&nbsp;     * @author	Arie
+&nbsp;     * @date	10/20/2023
+&nbsp;     *
+&nbsp;     * @exception	NotFoundException	Thrown when the requested element is not present.
+&nbsp;     *
+&nbsp;     * @param 	sport_name	  	Name of the sport.
+&nbsp;     * @param 	sport_id	  	Identifier for the sport.
+&nbsp;     * @param 	skill_level_id	Identifier for the skill level.
+&nbsp;     *
+&nbsp;     * @returns	A Sport.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @MutationMapping
+&nbsp;    public Sport updateSport(@Argument String sport_name, @Argument int sport_id, @Argument int skill_level_id){
+<b class="fc">&nbsp;        Sport sport = sportRepository.findById(sport_id);</b>
+<b class="fc">&nbsp;        if(sport == null){</b>
+<b class="nc">&nbsp;            throw new NotFoundException(&quot;Sport with ID &quot; + sport_id + &quot; not found.&quot;);</b>
+&nbsp;        }
+<b class="fc">&nbsp;        SkillLevel skillLevel = skillLevelRepository.findById(skill_level_id);</b>
+<b class="fc">&nbsp;        if(skillLevel == null){</b>
+<b class="nc">&nbsp;            throw new NotFoundException(&quot;Skill_level with ID &quot; + skill_level_id + &quot; not found.&quot;);</b>
+&nbsp;        }
+<b class="fc">&nbsp;        sport.setSkillLevel(skillLevel);</b>
+<b class="fc">&nbsp;        if(sport_name != null){</b>
+<b class="fc">&nbsp;            sport.setSport_name(sport_name);</b>
+&nbsp;        }
+<b class="fc">&nbsp;        sportRepository.save(sport);</b>
+<b class="fc">&nbsp;        return sport;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************//**
+&nbsp;     * @fn	@MutationMapping public String deleteSportById(@Argument int sport_id)
+&nbsp;     *
+&nbsp;     * @brief	Deletes the sport by identifier described by sport_id
+&nbsp;     *
+&nbsp;     * @author	Arie
+&nbsp;     * @date	10/20/2023
+&nbsp;     *
+&nbsp;     * @exception	NotFoundException	Thrown when the requested element is not present.
+&nbsp;     *
+&nbsp;     * @param 	sport_id	Identifier for the sport.
+&nbsp;     *
+&nbsp;     * @returns	A String.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @MutationMapping
+&nbsp;    public String deleteSportById(@Argument int sport_id) {
+<b class="fc">&nbsp;        Sport sport = sportRepository.findById(sport_id);</b>
+<b class="fc">&nbsp;        if(sport == null){</b>
+<b class="nc">&nbsp;            throw new NotFoundException(&quot;Sport with ID&quot; + sport_id + &quot; not found.&quot;);</b>
+&nbsp;        }
+<b class="fc">&nbsp;        deleteSport(sport);</b>
+<b class="fc">&nbsp;        sportRepository.deleteById(sport_id);</b>
+<b class="fc">&nbsp;        return &quot;Sport with id &quot; + sport_id + &quot; has been deleted&quot;;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************//**
+&nbsp;     * @fn	@MutationMapping public String deleteAllSports()
+&nbsp;     *
+&nbsp;     * @brief	Deletes all sports
+&nbsp;     *
+&nbsp;     * @author	Arie
+&nbsp;     * @date	10/20/2023
+&nbsp;     *
+&nbsp;     * @returns	A String.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @MutationMapping
+&nbsp;    public String deleteAllSports() {
+<b class="fc">&nbsp;        for(Sport s : sportRepository.findAll()) {</b>
+<b class="fc">&nbsp;            deleteSport(s);</b>
+&nbsp;        }
+<b class="fc">&nbsp;        sportRepository.deleteAll();</b>
+<b class="fc">&nbsp;        return &quot;All sports have been deleted&quot;;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************//**
+&nbsp;     * @fn	private void deleteSport(Sport s)
+&nbsp;     *
+&nbsp;     * @brief	Helper method used in deleting an individual sport
+&nbsp;     *
+&nbsp;     * @author	Arie
+&nbsp;     * @date	10/20/2023
+&nbsp;     *
+&nbsp;     * @param 	s	A Sport to process.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    private void deleteSport(Sport s) {
+<b class="fc">&nbsp;        SkillLevel skillLevel = s.getSkillLevel();</b>
+<b class="fc">&nbsp;        if (skillLevel != null) {</b>
+<b class="nc">&nbsp;            skillLevel.setSport(null);</b>
+<b class="nc">&nbsp;            skillLevelRepository.save(skillLevel);</b>
+&nbsp;        }
+&nbsp;
+<b class="fc">&nbsp;        Set&lt;GamePost&gt; gamePost = s.getGamePosts();</b>
+<b class="fc">&nbsp;        if (gamePost != null) {</b>
+<b class="fc">&nbsp;            for (GamePost gp : gamePost) {</b>
+<b class="nc">&nbsp;                gp.setSport(null);</b>
+<b class="nc">&nbsp;                gamePostRepository.save(gp);</b>
+&nbsp;            }
+&nbsp;        }
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-12-04 13:11</div>
+</div>
+</body>
+</html>

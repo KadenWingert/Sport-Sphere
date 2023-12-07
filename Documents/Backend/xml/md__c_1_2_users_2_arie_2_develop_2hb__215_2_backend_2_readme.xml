@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="md__c_1_2_users_2_arie_2_develop_2hb__215_2_backend_2_readme" kind="page">
+    <compoundname>md__c_1_2_users_2_arie_2_develop_2hb__215_2_backend_2_readme</compoundname>
+    <title>Sportsphere Spring Boot application</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="md__c_1_2_users_2_arie_2_develop_2hb__215_2_backend_2_readme_1autotoc_md0"/> </para>
+<sect2 id="md__c_1_2_users_2_arie_2_develop_2hb__215_2_backend_2_readme_1autotoc_md1">
+<title>Functionalities</title>
+<para><orderedlist>
+<listitem><para>Utilizes graphql to have a single endpoint where requests are mapped</para>
+</listitem><listitem><para>Allows users to edit profile information and create posts</para>
+</listitem><listitem><para>Users can join or leave posts and make comments</para>
+</listitem></orderedlist>
+</para>
+</sect2>
+<sect2 id="md__c_1_2_users_2_arie_2_develop_2hb__215_2_backend_2_readme_1autotoc_md2">
+<title>Pre requisites</title>
+<para><orderedlist>
+<listitem><para>Maven has to be installed on command line OR your IDE must be configured with maven</para>
+</listitem><listitem><para>Java version 17 or higher</para>
+</listitem></orderedlist>
+</para>
+</sect2>
+<sect2 id="md__c_1_2_users_2_arie_2_develop_2hb__215_2_backend_2_readme_1autotoc_md3">
+<title>To Run the project</title>
+<para><orderedlist>
+<listitem><para>Command Line (Make sure that you are in the folder containing pom.xml) <computeroutput> mvn clean install</computeroutput> <computeroutput>cd target</computeroutput> <computeroutput>java -jar sportsphere-1.0.0.jar</computeroutput></para>
+</listitem><listitem><para>IDE : Right click on <ref refid="_application_8java" kindref="compound">Application.java</ref> and run as Java Application </para>
+</listitem></orderedlist>
+</para>
+</sect2>
+    </detaileddescription>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/Readme.md"/>
+  </compounddef>
+</doxygen>

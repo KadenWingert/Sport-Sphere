@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcoms309_1_1_websocket_1_1_web_socket_config" kind="class" language="Java" prot="public">
+    <compoundname>coms309::Websocket::WebSocketConfig</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcoms309_1_1_websocket_1_1_web_socket_config_1a9ce715be191502960bb0e5f38bc0a4d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ServerEndpointExporter</type>
+        <definition>Bean public ServerEndpointExporter coms309.Websocket.WebSocketConfig::serverEndpointExporter</definition>
+        <argsstring>()</argsstring>
+        <name>serverEndpointExporter</name>
+        <qualifiedname>coms309.Websocket.WebSocketConfig.serverEndpointExporter</qualifiedname>
+        <briefdescription>
+<para>Server endpoint exporter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>ServerEndpointExporter. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Websocket/WebSocketConfig.java" line="35" column="35" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Websocket/WebSocketConfig.java" bodystart="35" bodyend="37"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The org.springframework.context.annotation. bean. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The org.springframework.context.annotation. configuration</para>
+<para>The org.springframework.web.socket.server.standard. server endpoint exporter</para>
+<para>A web socket configuration.</para>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>coms309.Websocket.WebSocketConfig</label>
+        <link refid="classcoms309_1_1_websocket_1_1_web_socket_config"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Websocket/WebSocketConfig.java" line="21" column="7" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Websocket/WebSocketConfig.java" bodystart="21" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classcoms309_1_1_websocket_1_1_web_socket_config_1a9ce715be191502960bb0e5f38bc0a4d0" prot="public" virt="non-virtual"><scope>coms309::Websocket::WebSocketConfig</scope><name>serverEndpointExporter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

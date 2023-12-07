@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_1f0d40d8fde20c022b22e3677d5625e7" kind="dir">
+    <compoundname>C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309</compoundname>
+    <innerdir refid="dir_ace2110e20a654888a787e8f41b5d9c8">C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Auth</innerdir>
+    <innerdir refid="dir_64b30a98163c6ba3974a33ceff621053">C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment</innerdir>
+    <innerdir refid="dir_6e5a8bd5f707905b9d885861b51489e8">C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Email</innerdir>
+    <innerdir refid="dir_e85c06d9d790e4df60081a4401c2a937">C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Enums</innerdir>
+    <innerdir refid="dir_7aeb95b319efde129b42c94134c72e9c">C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Exceptions</innerdir>
+    <innerdir refid="dir_0c616988860ae8d724e6f4e7c0d3ff5e">C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost</innerdir>
+    <innerdir refid="dir_ae264378e7a3f75a9a0593956aca71c3">C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location</innerdir>
+    <innerdir refid="dir_3d4adb1fa2901242012d8312db03a94c">C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Role</innerdir>
+    <innerdir refid="dir_53e8972ef7164fd9a120bb4275036f22">C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel</innerdir>
+    <innerdir refid="dir_10233ce70e8f756bf38009191929b403">C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Sport</innerdir>
+    <innerdir refid="dir_6e889048b07f0d9f6628e3c9b6805a16">C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users</innerdir>
+    <innerdir refid="dir_c861cfe5bd3218e376e5dbcb347d740c">C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Websocket</innerdir>
+    <innerfile refid="_application_8java">Application.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/"/>
+  </compounddef>
+</doxygen>

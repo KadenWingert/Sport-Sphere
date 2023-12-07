@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacecoms309_1_1_enums" kind="namespace" language="Java">
+    <compoundname>coms309::Enums</compoundname>
+    <innerclass refid="classcoms309_1_1_enums_1_1_permission" prot="public">coms309::Enums::Permission</innerclass>
+    <innerclass refid="classcoms309_1_1_enums_1_1_sport_name" prot="public">coms309::Enums::SportName</innerclass>
+    <briefdescription>
+<para>The coms 309. enums. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Enums/Permission.java" line="4" column="15"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcoms309_1_1_game_post_1_1_game_post_publisher" kind="class" language="Java" prot="public">
+    <compoundname>coms309::GamePost::GamePostPublisher</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcoms309_1_1_game_post_1_1_game_post_publisher_1a411a79cb76e79a4512a1e5f78c41b3bf" prot="private" static="no" mutable="no">
+        <type>final FluxProcessor&lt; <ref refid="classcoms309_1_1_game_post_1_1_game_post" kindref="compound">GamePost</ref>, <ref refid="classcoms309_1_1_game_post_1_1_game_post" kindref="compound">GamePost</ref> &gt;</type>
+        <definition>private final FluxProcessor&lt; GamePost, GamePost &gt; coms309.GamePost.GamePostPublisher::processor</definition>
+        <argsstring></argsstring>
+        <name>processor</name>
+        <qualifiedname>coms309.GamePost.GamePostPublisher.processor</qualifiedname>
+        <briefdescription>
+<para>Gets the processor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The processor. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostPublisher.java" line="37" column="33" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostPublisher.java" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_game_post_1_1_game_post_publisher_1a7a9302740c812d1fa857527cf6bc8b80" prot="private" static="no" mutable="no">
+        <type>final FluxSink&lt; <ref refid="classcoms309_1_1_game_post_1_1_game_post" kindref="compound">GamePost</ref> &gt;</type>
+        <definition>private final FluxSink&lt; GamePost &gt; coms309.GamePost.GamePostPublisher::sink</definition>
+        <argsstring></argsstring>
+        <name>sink</name>
+        <qualifiedname>coms309.GamePost.GamePostPublisher.sink</qualifiedname>
+        <briefdescription>
+<para>Gets the sink. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The sink. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostPublisher.java" line="47" column="28" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostPublisher.java" bodystart="47" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcoms309_1_1_game_post_1_1_game_post_publisher_1aa32ea4074896f467e0252e9986b31c53" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>public coms309.GamePost.GamePostPublisher::GamePostPublisher</definition>
+        <argsstring>()</argsstring>
+        <name>GamePostPublisher</name>
+        <qualifiedname>coms309.GamePost.GamePostPublisher.GamePostPublisher</qualifiedname>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostPublisher.java" line="64" column="12" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostPublisher.java" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_game_post_1_1_game_post_publisher_1af9f03e9e35540169c719955555135105" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void coms309.GamePost.GamePostPublisher::publish</definition>
+        <argsstring>(GamePost gamePost)</argsstring>
+        <name>publish</name>
+        <qualifiedname>coms309.GamePost.GamePostPublisher.publish</qualifiedname>
+        <param>
+          <type><ref refid="classcoms309_1_1_game_post_1_1_game_post" kindref="compound">GamePost</ref></type>
+          <declname>gamePost</declname>
+        </param>
+        <briefdescription>
+<para>Publishes the given game post. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gamePost</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The game post. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostPublisher.java" line="80" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostPublisher.java" bodystart="80" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_game_post_1_1_game_post_publisher_1a895aba3b8af5c16b97949f1658aa96d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Publisher&lt; <ref refid="classcoms309_1_1_game_post_1_1_game_post" kindref="compound">GamePost</ref> &gt;</type>
+        <definition>public Publisher&lt; GamePost &gt; coms309.GamePost.GamePostPublisher::subGamePost</definition>
+        <argsstring>()</argsstring>
+        <name>subGamePost</name>
+        <qualifiedname>coms309.GamePost.GamePostPublisher.subGamePost</qualifiedname>
+        <briefdescription>
+<para>Sub game post. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023</para>
+</simplesect>
+<simplesect kind="return"><para>A Publisher&lt;GamePost&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostPublisher.java" line="95" column="22" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostPublisher.java" bodystart="95" bodyend="99"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The org.reactivestreams. publisher. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The org.springframework.stereotype. component</para>
+<para>The coms 309. comment. comment</para>
+<para>The reactor.core.publisher. direct processor</para>
+<para>The reactor.core.publisher. flux processor</para>
+<para>The reactor.core.publisher. flux sink</para>
+<para>A game post publisher.</para>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>coms309.GamePost.GamePostPublisher</label>
+        <link refid="classcoms309_1_1_game_post_1_1_game_post_publisher"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostPublisher.java" line="27" column="7" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/GamePostPublisher.java" bodystart="27" bodyend="100"/>
+    <listofallmembers>
+      <member refid="classcoms309_1_1_game_post_1_1_game_post_publisher_1aa32ea4074896f467e0252e9986b31c53" prot="public" virt="non-virtual"><scope>coms309::GamePost::GamePostPublisher</scope><name>GamePostPublisher</name></member>
+      <member refid="classcoms309_1_1_game_post_1_1_game_post_publisher_1a411a79cb76e79a4512a1e5f78c41b3bf" prot="private" virt="non-virtual"><scope>coms309::GamePost::GamePostPublisher</scope><name>processor</name></member>
+      <member refid="classcoms309_1_1_game_post_1_1_game_post_publisher_1af9f03e9e35540169c719955555135105" prot="public" virt="non-virtual"><scope>coms309::GamePost::GamePostPublisher</scope><name>publish</name></member>
+      <member refid="classcoms309_1_1_game_post_1_1_game_post_publisher_1a7a9302740c812d1fa857527cf6bc8b80" prot="private" virt="non-virtual"><scope>coms309::GamePost::GamePostPublisher</scope><name>sink</name></member>
+      <member refid="classcoms309_1_1_game_post_1_1_game_post_publisher_1a895aba3b8af5c16b97949f1658aa96d5" prot="public" virt="non-virtual"><scope>coms309::GamePost::GamePostPublisher</scope><name>subGamePost</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

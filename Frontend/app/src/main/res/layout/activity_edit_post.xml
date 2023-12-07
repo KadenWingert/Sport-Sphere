@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:id="@+id/background"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        tools:ignore="ExtraText">
+
+
+        <!-- Max Players Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Max Players"
+            android:id="@+id/maxplayerstext"
+            android:layout_alignParentStart="true"
+            android:textSize="20sp"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginTop="10dp" />
+
+        <!-- Max Players  -->
+        <EditText
+            android:id="@+id/maxPlayersInput"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:inputType="number"
+            />
+
+
+        <!-- Min Players Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Min Players"
+            android:id="@+id/minPlayersText"
+            android:layout_alignParentStart="true"
+            android:textSize="20sp"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <!-- Min Players Text -->
+        <EditText
+            android:id="@+id/minPlayersInput"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:inputType="number"/>
+
+        <!-- Address Text-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:id="@+id/addressText"
+            android:layout_alignParentStart="true"
+            android:textSize="20sp"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginTop="10dp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/addressInput"
+            android:dropDownHeight="wrap_content"
+            android:dropDownVerticalOffset="5dp"
+            android:dropDownAnchor="@+id/addressInput"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/confirmPasswordLabel"
+            android:background="@drawable/rounded_edittext_background"
+            android:paddingLeft="10dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Address" />
+
+        <!-- Date Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:id="@+id/dateText"
+            android:paddingLeft="10dp"
+            android:layout_alignParentStart="true"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginTop="10dp"
+            android:inputType="date"/>
+
+        <!-- Date Input -->
+        <EditText
+            android:id="@+id/dateInput"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="MM/DD/YYYY"
+            android:background="@drawable/rounded_edittext_background"
+            android:paddingLeft="10dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="date"/>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="15dp"
+            android:text="Submit" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:text="Cancel" />
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,268 @@
+\doxysection{coms309.\+Location.\+Location\+Controller Class Reference}
+\hypertarget{classcoms309_1_1_location_1_1_location_controller}{}\label{classcoms309_1_1_location_1_1_location_controller}\index{coms309.Location.LocationController@{coms309.Location.LocationController}}
+
+
+The coms 309. exceptions. duplicate exception.  
+
+
+
+
+Collaboration diagram for coms309.\+Location.\+Location\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classcoms309_1_1_location_1_1_location_controller__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{classcoms309_1_1_location_1_1_location}{Location}} $>$ \mbox{\hyperlink{classcoms309_1_1_location_1_1_location_controller_a4c984b667c6f154d29fccb2457b0dbfe}{get\+All\+Locations}} ()
+\begin{DoxyCompactList}\small\item\em Gets all locations. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcoms309_1_1_location_1_1_location}{Location}} \mbox{\hyperlink{classcoms309_1_1_location_1_1_location_controller_a937ada7117002a1518cc36f28d79ee5a}{get\+Location\+By\+Id}} (@Argument int id)
+\begin{DoxyCompactList}\small\item\em Gets location by identifier. \end{DoxyCompactList}\item 
+Set$<$ Game\+Post $>$ \mbox{\hyperlink{classcoms309_1_1_location_1_1_location_controller_a0f140436dd2f05d749c099170be313f6}{get\+Game\+Posts\+At\+Location}} (@Argument String address)
+\begin{DoxyCompactList}\small\item\em Gets game posts at location. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcoms309_1_1_location_1_1_location}{Location}} \mbox{\hyperlink{classcoms309_1_1_location_1_1_location_controller_a88bdb5418d610c332c1ce5c1701d5f43}{create\+Location}} (@Argument String address, @Argument String gps, @Argument int game\+Post\+ID)
+\begin{DoxyCompactList}\small\item\em Creates a location. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcoms309_1_1_location_1_1_location}{Location}} \mbox{\hyperlink{classcoms309_1_1_location_1_1_location_controller_a0d65723d2f87fcd9bc5eb5b8f78f3122}{update\+Location}} (@Argument int location\+ID, @Argument String address, @Argument String GPS)
+\begin{DoxyCompactList}\small\item\em Updates the location. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcoms309_1_1_location_1_1_location}{Location}} \mbox{\hyperlink{classcoms309_1_1_location_1_1_location_controller_a6c1479f9193eac68e50db8e172e6bd69}{delete\+Location}} (@Argument int id)
+\begin{DoxyCompactList}\small\item\em Deletes the location described by ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The coms 309. exceptions. duplicate exception. 
+
+The coms 309. exceptions. not found exception
+
+The coms 309. game post. game post
+
+The coms 309. game post. game post repository
+
+The org.\+springframework.\+beans.\+factory.\+annotation. autowired
+
+The org.\+springframework.\+graphql.\+data.\+method.\+annotation. argument
+
+The org.\+springframework.\+graphql.\+data.\+method.\+annotation. mutation mapping
+
+The org.\+springframework.\+graphql.\+data.\+method.\+annotation. query mapping
+
+The org.\+springframework.\+stereotype. controller
+
+The java.\+util.\texorpdfstring{$\ast$}{*}
+
+A controller for handling locations.
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023 
+\end{DoxyDate}
+
+
+Definition at line \mbox{\hyperlink{_location_controller_8java_source_l00038}{38}} of file \mbox{\hyperlink{_location_controller_8java_source}{Location\+Controller.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcoms309_1_1_location_1_1_location_controller_a88bdb5418d610c332c1ce5c1701d5f43}\label{classcoms309_1_1_location_1_1_location_controller_a88bdb5418d610c332c1ce5c1701d5f43} 
+\index{coms309.Location.LocationController@{coms309.Location.LocationController}!createLocation@{createLocation}}
+\index{createLocation@{createLocation}!coms309.Location.LocationController@{coms309.Location.LocationController}}
+\doxysubsubsection{\texorpdfstring{createLocation()}{createLocation()}}
+{\footnotesize\ttfamily Mutation\+Mapping public \mbox{\hyperlink{classcoms309_1_1_location_1_1_location}{Location}} coms309.\+Location.\+Location\+Controller.\+create\+Location (\begin{DoxyParamCaption}\item[{@Argument String}]{address,  }\item[{@Argument String}]{gps,  }\item[{@Argument int}]{game\+Post\+ID }\end{DoxyParamCaption})}
+
+
+
+Creates a location. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Found\+Exception} & Thrown when the requested element is not present. \\
+\hline
+{\em Duplicate\+Exception} & Thrown when a Duplicate error condition occurs.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em address} & The address. \\
+\hline
+{\em gps} & The GPS. \\
+\hline
+{\em game\+Post\+ID} & Identifier for the game post.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new location. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_location_controller_8java_source_l00148}{148}} of file \mbox{\hyperlink{_location_controller_8java_source}{Location\+Controller.\+java}}.
+
+\Hypertarget{classcoms309_1_1_location_1_1_location_controller_a6c1479f9193eac68e50db8e172e6bd69}\label{classcoms309_1_1_location_1_1_location_controller_a6c1479f9193eac68e50db8e172e6bd69} 
+\index{coms309.Location.LocationController@{coms309.Location.LocationController}!deleteLocation@{deleteLocation}}
+\index{deleteLocation@{deleteLocation}!coms309.Location.LocationController@{coms309.Location.LocationController}}
+\doxysubsubsection{\texorpdfstring{deleteLocation()}{deleteLocation()}}
+{\footnotesize\ttfamily Mutation\+Mapping public \mbox{\hyperlink{classcoms309_1_1_location_1_1_location}{Location}} coms309.\+Location.\+Location\+Controller.\+delete\+Location (\begin{DoxyParamCaption}\item[{@Argument int}]{id }\end{DoxyParamCaption})}
+
+
+
+Deletes the location described by ID. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Found\+Exception} & Thrown when the requested element is not present.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The identifier.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Location. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_location_controller_8java_source_l00210}{210}} of file \mbox{\hyperlink{_location_controller_8java_source}{Location\+Controller.\+java}}.
+
+\Hypertarget{classcoms309_1_1_location_1_1_location_controller_a4c984b667c6f154d29fccb2457b0dbfe}\label{classcoms309_1_1_location_1_1_location_controller_a4c984b667c6f154d29fccb2457b0dbfe} 
+\index{coms309.Location.LocationController@{coms309.Location.LocationController}!getAllLocations@{getAllLocations}}
+\index{getAllLocations@{getAllLocations}!coms309.Location.LocationController@{coms309.Location.LocationController}}
+\doxysubsubsection{\texorpdfstring{getAllLocations()}{getAllLocations()}}
+{\footnotesize\ttfamily Query\+Mapping public List$<$ \mbox{\hyperlink{classcoms309_1_1_location_1_1_location}{Location}} $>$ coms309.\+Location.\+Location\+Controller.\+get\+All\+Locations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets all locations. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+List\texorpdfstring{$<$}{<}Location\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_location_controller_8java_source_l00074}{74}} of file \mbox{\hyperlink{_location_controller_8java_source}{Location\+Controller.\+java}}.
+
+\Hypertarget{classcoms309_1_1_location_1_1_location_controller_a0f140436dd2f05d749c099170be313f6}\label{classcoms309_1_1_location_1_1_location_controller_a0f140436dd2f05d749c099170be313f6} 
+\index{coms309.Location.LocationController@{coms309.Location.LocationController}!getGamePostsAtLocation@{getGamePostsAtLocation}}
+\index{getGamePostsAtLocation@{getGamePostsAtLocation}!coms309.Location.LocationController@{coms309.Location.LocationController}}
+\doxysubsubsection{\texorpdfstring{getGamePostsAtLocation()}{getGamePostsAtLocation()}}
+{\footnotesize\ttfamily Query\+Mapping public Set$<$ Game\+Post $>$ coms309.\+Location.\+Location\+Controller.\+get\+Game\+Posts\+At\+Location (\begin{DoxyParamCaption}\item[{@Argument String}]{address }\end{DoxyParamCaption})}
+
+
+
+Gets game posts at location. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em address} & The address.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The game posts at location. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_location_controller_8java_source_l00116}{116}} of file \mbox{\hyperlink{_location_controller_8java_source}{Location\+Controller.\+java}}.
+
+\Hypertarget{classcoms309_1_1_location_1_1_location_controller_a937ada7117002a1518cc36f28d79ee5a}\label{classcoms309_1_1_location_1_1_location_controller_a937ada7117002a1518cc36f28d79ee5a} 
+\index{coms309.Location.LocationController@{coms309.Location.LocationController}!getLocationById@{getLocationById}}
+\index{getLocationById@{getLocationById}!coms309.Location.LocationController@{coms309.Location.LocationController}}
+\doxysubsubsection{\texorpdfstring{getLocationById()}{getLocationById()}}
+{\footnotesize\ttfamily Query\+Mapping public \mbox{\hyperlink{classcoms309_1_1_location_1_1_location}{Location}} coms309.\+Location.\+Location\+Controller.\+get\+Location\+By\+Id (\begin{DoxyParamCaption}\item[{@Argument int}]{id }\end{DoxyParamCaption})}
+
+
+
+Gets location by identifier. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Found\+Exception} & Thrown when the requested element is not present.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & .\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Location. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_location_controller_8java_source_l00094}{94}} of file \mbox{\hyperlink{_location_controller_8java_source}{Location\+Controller.\+java}}.
+
+\Hypertarget{classcoms309_1_1_location_1_1_location_controller_a0d65723d2f87fcd9bc5eb5b8f78f3122}\label{classcoms309_1_1_location_1_1_location_controller_a0d65723d2f87fcd9bc5eb5b8f78f3122} 
+\index{coms309.Location.LocationController@{coms309.Location.LocationController}!updateLocation@{updateLocation}}
+\index{updateLocation@{updateLocation}!coms309.Location.LocationController@{coms309.Location.LocationController}}
+\doxysubsubsection{\texorpdfstring{updateLocation()}{updateLocation()}}
+{\footnotesize\ttfamily Mutation\+Mapping public \mbox{\hyperlink{classcoms309_1_1_location_1_1_location}{Location}} coms309.\+Location.\+Location\+Controller.\+update\+Location (\begin{DoxyParamCaption}\item[{@Argument int}]{location\+ID,  }\item[{@Argument String}]{address,  }\item[{@Argument String}]{GPS }\end{DoxyParamCaption})}
+
+
+
+Updates the location. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Found\+Exception} & Thrown when the requested element is not present.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em location\+ID} & Identifier for the location. \\
+\hline
+{\em address} & The address. \\
+\hline
+{\em GPS} & The GPS.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Location. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_location_controller_8java_source_l00180}{180}} of file \mbox{\hyperlink{_location_controller_8java_source}{Location\+Controller.\+java}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Arie/\+Develop/hb\+\_\+215/\+Backend/src/main/java/coms309/\+Location/\mbox{\hyperlink{_location_controller_8java}{Location\+Controller.\+java}}\end{DoxyCompactItemize}

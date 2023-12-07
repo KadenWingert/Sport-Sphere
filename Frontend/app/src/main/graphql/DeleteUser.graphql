@@ -1,0 +1,8 @@
+mutation DeleteUser($id: ID!, $email: String!, $password: String!) {
+    deleteUser(id: $id, email: $email, password: $password) {
+        id
+        first_name
+        last_name
+        email
+    }
+}

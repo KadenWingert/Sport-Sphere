@@ -1,0 +1,6 @@
+query GetSports {
+    getAllSports {
+        id
+        sport_name
+    }
+}

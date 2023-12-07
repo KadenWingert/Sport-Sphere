@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_79e63144661bd9a996e8e7ebee0b0f65" kind="dir">
+    <compoundname>C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost</compoundname>
+    <innerfile refid="_game_post_8java">GamePost.java</innerfile>
+    <innerfile refid="_game_post_controller_8java">GamePostController.java</innerfile>
+    <innerfile refid="_game_post_repository_8java">GamePostRepository.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/GamePost/"/>
+  </compounddef>
+</doxygen>

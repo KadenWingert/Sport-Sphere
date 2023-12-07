@@ -1,0 +1,23 @@
+graphql:
+  registry:
+    uri: http://localhost:8080
+  endpoint:
+    subscriptions: /graphql
+  # servlet:
+  #   mapping: /graphql
+  #   enabled: true
+  #   corsEnabled: true
+  #   websocket:
+  #     enabled: true
+  #     path: /graphql
+  #   subscriptions:
+  #     websocket:
+  #       path: /graphql
+
+server:
+  port: 8080
+
+logging:
+  file:
+    name: /home/target/backend_logs.log
+    size: 2bk

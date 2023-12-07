@@ -1,0 +1,158 @@
+\doxysection{coms309.\+Users.\+User\+Repository Interface Reference}
+\hypertarget{interfacecoms309_1_1_users_1_1_user_repository}{}\label{interfacecoms309_1_1_users_1_1_user_repository}\index{coms309.Users.UserRepository@{coms309.Users.UserRepository}}
+
+
+The org.\+springframework.\+data.\+jpa.\+repository. jpa repository.  
+
+
+
+
+Inheritance diagram for coms309.\+Users.\+User\+Repository\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{interfacecoms309_1_1_users_1_1_user_repository__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for coms309.\+Users.\+User\+Repository\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{interfacecoms309_1_1_users_1_1_user_repository__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}} \mbox{\hyperlink{interfacecoms309_1_1_users_1_1_user_repository_a5d5b337ba67b628c83b1be7c6d740e1d}{find\+By\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Searches for the first identifier. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}} \mbox{\hyperlink{interfacecoms309_1_1_users_1_1_user_repository_ac0ebf6e72fe1d4a3d312b22129885198}{find\+By\+Email}} (String email)
+\begin{DoxyCompactList}\small\item\em Searches for the first email. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecoms309_1_1_users_1_1_user_repository_a82201c9972451a21e4e22c35271c9bcf}{delete\+By\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Deletes the by identifier described by ID. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}} \mbox{\hyperlink{interfacecoms309_1_1_users_1_1_user_repository_a1cc0bbff4f853e2c11c8f2b4a39e29e7}{find\+By\+Role}} (int id)
+\begin{DoxyCompactList}\small\item\em Searches for the first role. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The org.\+springframework.\+data.\+jpa.\+repository. jpa repository. 
+
+The org.\+springframework.\+stereotype. repository
+
+Interface for user repository.
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023 
+\end{DoxyDate}
+
+
+Definition at line \mbox{\hyperlink{_user_repository_8java_source_l00022}{22}} of file \mbox{\hyperlink{_user_repository_8java_source}{User\+Repository.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interfacecoms309_1_1_users_1_1_user_repository_a82201c9972451a21e4e22c35271c9bcf}\label{interfacecoms309_1_1_users_1_1_user_repository_a82201c9972451a21e4e22c35271c9bcf} 
+\index{coms309.Users.UserRepository@{coms309.Users.UserRepository}!deleteById@{deleteById}}
+\index{deleteById@{deleteById}!coms309.Users.UserRepository@{coms309.Users.UserRepository}}
+\doxysubsubsection{\texorpdfstring{deleteById()}{deleteById()}}
+{\footnotesize\ttfamily void coms309.\+Users.\+User\+Repository.\+delete\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Deletes the by identifier described by ID. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The identifier. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{interfacecoms309_1_1_users_1_1_user_repository_ac0ebf6e72fe1d4a3d312b22129885198}\label{interfacecoms309_1_1_users_1_1_user_repository_ac0ebf6e72fe1d4a3d312b22129885198} 
+\index{coms309.Users.UserRepository@{coms309.Users.UserRepository}!findByEmail@{findByEmail}}
+\index{findByEmail@{findByEmail}!coms309.Users.UserRepository@{coms309.Users.UserRepository}}
+\doxysubsubsection{\texorpdfstring{findByEmail()}{findByEmail()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}} coms309.\+Users.\+User\+Repository.\+find\+By\+Email (\begin{DoxyParamCaption}\item[{String}]{email }\end{DoxyParamCaption})}
+
+
+
+Searches for the first email. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em email} & The email.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The found email. 
+\end{DoxyReturn}
+\Hypertarget{interfacecoms309_1_1_users_1_1_user_repository_a5d5b337ba67b628c83b1be7c6d740e1d}\label{interfacecoms309_1_1_users_1_1_user_repository_a5d5b337ba67b628c83b1be7c6d740e1d} 
+\index{coms309.Users.UserRepository@{coms309.Users.UserRepository}!findById@{findById}}
+\index{findById@{findById}!coms309.Users.UserRepository@{coms309.Users.UserRepository}}
+\doxysubsubsection{\texorpdfstring{findById()}{findById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}} coms309.\+Users.\+User\+Repository.\+find\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Searches for the first identifier. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The identifier.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The found identifier. 
+\end{DoxyReturn}
+\Hypertarget{interfacecoms309_1_1_users_1_1_user_repository_a1cc0bbff4f853e2c11c8f2b4a39e29e7}\label{interfacecoms309_1_1_users_1_1_user_repository_a1cc0bbff4f853e2c11c8f2b4a39e29e7} 
+\index{coms309.Users.UserRepository@{coms309.Users.UserRepository}!findByRole@{findByRole}}
+\index{findByRole@{findByRole}!coms309.Users.UserRepository@{coms309.Users.UserRepository}}
+\doxysubsubsection{\texorpdfstring{findByRole()}{findByRole()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}} coms309.\+Users.\+User\+Repository.\+find\+By\+Role (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Searches for the first role. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The identifier.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The found role. 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Arie/\+Develop/hb\+\_\+215/\+Backend/src/main/java/coms309/\+Users/\mbox{\hyperlink{_user_repository_8java}{User\+Repository.\+java}}\end{DoxyCompactItemize}

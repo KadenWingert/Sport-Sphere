@@ -1,0 +1,4 @@
+#schema: schema.graphql
+#documents: '**/*.graphql'
+schema: http://10.90.74.30:8080/graphql
+documents: 'app/src/main/**/*.graphql'

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_permission_8java" kind="file" language="Java">
+    <compoundname>Permission.java</compoundname>
+    <innerclass refid="classcoms309_1_1_enums_1_1_permission" prot="public">coms309::Enums::Permission</innerclass>
+    <innerclass refid="enumcoms309_1_1_enums_1_1_permission_1_1permission" prot="public">coms309::Enums::Permission::permission</innerclass>
+    <innernamespace refid="namespacecoms309_1_1_enums">coms309::Enums</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="namespacecoms309_1_1_enums" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">package<sp/></highlight><highlight class="normal">coms309.Enums;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classcoms309_1_1_enums_1_1_permission" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcoms309_1_1_enums_1_1_permission" kindref="compound">Permission</ref><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="enumcoms309_1_1_enums_1_1_permission_1_1permission_1a78bff52f70a002f0de10c98c99af8928" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="enumcoms309_1_1_enums_1_1_permission_1_1permission" kindref="compound">permission</ref>{USER,<sp/>ADMIN}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Enums/Permission.java"/>
+  </compounddef>
+</doxygen>

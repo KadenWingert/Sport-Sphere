@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_location_repository_8java" kind="file" language="Java">
+    <compoundname>LocationRepository.java</compoundname>
+    <includes local="no">org.springframework.data.jpa.repository.JpaRepository</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/LocationRepository.java</label>
+        <link refid="_location_repository_8java"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>org.springframework.data.jpa.repository.JpaRepository</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interfacecoms309_1_1_location_1_1_location_repository" prot="public">coms309::Location::LocationRepository</innerclass>
+    <innernamespace refid="namespacecoms309_1_1_location">coms309::Location</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">package<sp/></highlight><highlight class="normal">coms309.Location;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.springframework.data.jpa.repository.JpaRepository;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.springframework.stereotype.Repository;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>javax.xml.stream.events.Comment;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">@Repository</highlight></codeline>
+<codeline lineno="24" refid="interfacecoms309_1_1_location_1_1_location_repository" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interfacecoms309_1_1_location_1_1_location_repository" kindref="compound">LocationRepository</ref><sp/></highlight><highlight class="keyword">extends</highlight><highlight class="normal"><sp/>JpaRepository&lt;Location,<sp/>Integer&gt;<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="interfacecoms309_1_1_location_1_1_location_repository_1a4d919c5228b55d947b2d6f89243e3e44" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcoms309_1_1_location_1_1_location" kindref="compound">Location</ref><sp/><ref refid="interfacecoms309_1_1_location_1_1_location_repository_1a4d919c5228b55d947b2d6f89243e3e44" kindref="member">findById</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="interfacecoms309_1_1_location_1_1_location_repository_1ad59a291859ddbc6a227210ae51964f3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interfacecoms309_1_1_location_1_1_location_repository_1ad59a291859ddbc6a227210ae51964f3b" kindref="member">deleteById</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/LocationRepository.java"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,25 @@
+var classmodels_1_1_properties =
+[
+    [ "getAddress", "classmodels_1_1_properties.html#a8af02df94e9b34788d2b1c1cdef6d713", null ],
+    [ "getAddresstype", "classmodels_1_1_properties.html#a52d7f9d305c5f3710ec9f5825c15916f", null ],
+    [ "getCategory", "classmodels_1_1_properties.html#a28ba9eeb126be65e6580821646aa3624", null ],
+    [ "getDisplay_name", "classmodels_1_1_properties.html#a17b3a830d8c0c9fb49460c7ce17822f9", null ],
+    [ "getImportance", "classmodels_1_1_properties.html#aef5c0311780523c219ee8ac6b6270cf0", null ],
+    [ "getName", "classmodels_1_1_properties.html#aa85d737b3d1db8dc49f0c1544a242ce7", null ],
+    [ "getOsm_id", "classmodels_1_1_properties.html#aedfafdc59bf42218c22d47b536f89c67", null ],
+    [ "getOsm_type", "classmodels_1_1_properties.html#a0823b6c931f67a4b1ff47f3282b3b2f4", null ],
+    [ "getPlace_id", "classmodels_1_1_properties.html#a7c8d7cc43d213dc20857fdfd7d3e7d18", null ],
+    [ "getPlace_rank", "classmodels_1_1_properties.html#abed3a7ad43ba959b86696bf13481db05", null ],
+    [ "getType", "classmodels_1_1_properties.html#a1e034bd03cec4ad4d3b0672e0d87f774", null ],
+    [ "setAddress", "classmodels_1_1_properties.html#abc4b56a04227423cd2975458585cdec1", null ],
+    [ "setAddresstype", "classmodels_1_1_properties.html#a8a7f54d9b3fdc3ffbb850474492f0edb", null ],
+    [ "setCategory", "classmodels_1_1_properties.html#af8c9cb7e8f1e338489fad41049ce73cc", null ],
+    [ "setDisplay_name", "classmodels_1_1_properties.html#ab0fec1d6cfe765a78ea9ba99be030817", null ],
+    [ "setImportance", "classmodels_1_1_properties.html#a2746987adb2f2c0147b8967c2fb7215b", null ],
+    [ "setName", "classmodels_1_1_properties.html#a84d422a2aac22a046e2608bfe1be8e8f", null ],
+    [ "setOsm_id", "classmodels_1_1_properties.html#a647bb47f944eb5063777b8efdd0b542d", null ],
+    [ "setOsm_type", "classmodels_1_1_properties.html#a747016f8b18fa2836ae9f9232a18c48e", null ],
+    [ "setPlace_id", "classmodels_1_1_properties.html#a26d75c0c920a002f3e1972345087f786", null ],
+    [ "setPlace_rank", "classmodels_1_1_properties.html#a227eda2b1ce5252daf132dea1b7ecc29", null ],
+    [ "setType", "classmodels_1_1_properties.html#a4c5382eb7028219567ec7415c9f5b86d", null ]
+];

@@ -1,0 +1,6 @@
+mutation EditPost($gamePostID: ID!, $sport_id: ID!, $maxPlayers: Int!, $minPlayers: Int!, $playingOn: String!, $createdOn: String!, $isDeleted: Boolean!, $address: String!, $GPS: String!, $email: String!, $password: String!)
+{
+    updateGamePost(gamePostID: $gamePostID, sport_id: $sport_id, max_players: $maxPlayers, min_players: $minPlayers, playing_on: $playingOn, created_on: $createdOn, is_deleted: $isDeleted, address: $address, GPS: $GPS, email: $email, password: $password){
+        id
+    }
+}

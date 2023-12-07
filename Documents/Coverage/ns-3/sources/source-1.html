@@ -1,0 +1,329 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > Comment</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">coms309.Comment</a>
+</div>
+
+<h1>Coverage Summary for Class: Comment (coms309.Comment)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Comment</td>
+<td class="coverageStat">
+  <span class="percent">
+    75%
+  </span>
+  <span class="absValue">
+    (9/12)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    82.4%
+  </span>
+  <span class="absValue">
+    (14/17)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">Comment$HibernateInstantiator$7jstfZq2</td>
+  </tr>
+  <tr>
+    <td class="name">Comment$HibernateInstantiator$9RrtCf5z</td>
+  </tr>
+  <tr>
+    <td class="name">Comment$HibernateInstantiator$fWGyuOhk</td>
+  </tr>
+  <tr>
+    <td class="name">Comment$HibernateProxy$5y5srjmg</td>
+  </tr>
+  <tr>
+    <td class="name">Comment$HibernateProxy$DLs2eu77</td>
+  </tr>
+  <tr>
+    <td class="name">Comment$HibernateProxy$oyr39ADC</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    75%
+  </span>
+  <span class="absValue">
+    (9/12)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    82.4%
+  </span>
+  <span class="absValue">
+    (14/17)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;
+&nbsp;/** @brief The coms 309. comment */
+&nbsp;package coms309.Comment;
+&nbsp;
+&nbsp;import coms309.CommentMessage.CommentMessage;
+&nbsp;/** @brief The coms 309. game post. game post */
+&nbsp;import coms309.GamePost.GamePost;
+&nbsp;import coms309.Users.Users;
+&nbsp;/** @brief The jakarta.persistence.* */
+&nbsp;import jakarta.persistence.*;
+&nbsp;import lombok.AllArgsConstructor;
+&nbsp;import lombok.Getter;
+&nbsp;/** @brief The lombok. no arguments constructor */
+&nbsp;import lombok.NoArgsConstructor;
+&nbsp;import lombok.RequiredArgsConstructor;
+&nbsp;import lombok.Setter;
+&nbsp;
+&nbsp;/**********************************************************************************************/
+&nbsp;/**
+&nbsp; * @class Comment
+&nbsp; *
+&nbsp; * @brief A comment.
+&nbsp; *
+&nbsp; * @author Arie
+&nbsp; * @date 10/20/2023
+&nbsp; **************************************************************************************************/
+&nbsp;
+&nbsp;@Entity
+&nbsp;// @NoArgsConstructor
+<b class="fc">&nbsp;@RequiredArgsConstructor</b>
+<b class="nc">&nbsp;@AllArgsConstructor</b>
+<b class="fc">&nbsp;@Getter</b>
+<b class="fc">&nbsp;@Setter</b>
+&nbsp;@Table(name = &quot;comment&quot;)
+&nbsp;public class Comment {
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn @Id @GeneratedValue(strategy = GenerationType.IDENTITY) @Column(name = &quot;id&quot;) private int
+&nbsp;     *     id;
+&nbsp;     *
+&nbsp;     * @brief Constructor
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/20/2023
+&nbsp;     *
+&nbsp;     * @param parameter1 (Optional) The first parameter.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @Id
+&nbsp;    @GeneratedValue(strategy = GenerationType.IDENTITY)
+&nbsp;    @Column(name = &quot;id&quot;)
+&nbsp;    private int id;
+&nbsp;
+&nbsp;    @OneToOne(mappedBy = &quot;comment&quot;, fetch = FetchType.LAZY, optional = false)
+&nbsp;    // @JoinColumn(name = &quot;message_id&quot;, nullable = false)
+&nbsp;    private CommentMessage comment_details;
+&nbsp;
+&nbsp;    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+&nbsp;    @JoinColumn(name = &quot;user_id&quot;, nullable = false)
+&nbsp;    private Users user;
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn @ManyToOne @JoinColumn(name = &quot;game_post_id&quot;) private GamePost gamePost;
+&nbsp;     *
+&nbsp;     * @brief Constructor
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/20/2023
+&nbsp;     *
+&nbsp;     * @param parameter1 (Optional) The first parameter.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @ManyToOne
+&nbsp;    @JoinColumn(name = &quot;game_post_id&quot;)
+&nbsp;    private GamePost gamePost;
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn public Comment(String message, GamePost gamePost)
+&nbsp;     *
+&nbsp;     * @brief Constructor
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/20/2023
+&nbsp;     *
+&nbsp;     * @param message The message.
+&nbsp;     * @param gamePost The game post.
+&nbsp;     * @param userID2
+&nbsp;     **************************************************************************************************/
+&nbsp;
+<b class="fc">&nbsp;    public Comment(GamePost gamePost, Users user) {</b>
+<b class="fc">&nbsp;        this.gamePost = gamePost;</b>
+<b class="fc">&nbsp;        this.user = user;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn public String getMessage()
+&nbsp;     *
+&nbsp;     * @brief Gets the message
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/20/2023
+&nbsp;     *
+&nbsp;     * @returns String.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    public CommentMessage getMessage() {
+<b class="fc">&nbsp;        return comment_details;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn public void setMessage(String message)
+&nbsp;     *
+&nbsp;     * @brief Sets a message
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/20/2023
+&nbsp;     *
+&nbsp;     * @param message .
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    public void setMessage(CommentMessage message) {
+<b class="fc">&nbsp;        this.comment_details = message;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn public int getId()
+&nbsp;     *
+&nbsp;     * @brief Gets the identifier
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/20/2023
+&nbsp;     *
+&nbsp;     * @returns The identifier.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    public int getId() {
+<b class="fc">&nbsp;        return id;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn public void setId(int comment_id)
+&nbsp;     *
+&nbsp;     * @brief Sets an identifier
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/20/2023
+&nbsp;     *
+&nbsp;     * @param comment_id Identifier for the comment.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    public void setId(int comment_id) {
+<b class="nc">&nbsp;        this.id = comment_id;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn public GamePost getGamePost()
+&nbsp;     *
+&nbsp;     * @brief Gets game post
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/20/2023
+&nbsp;     *
+&nbsp;     * @returns The game post.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    public GamePost getGamePost() {
+<b class="fc">&nbsp;        return gamePost;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn public void setGamePost(GamePost gamePost)
+&nbsp;     *
+&nbsp;     * @brief Sets game post
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/20/2023
+&nbsp;     *
+&nbsp;     * @param gamePost The game post.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    public void setGamePost(GamePost gamePost) {
+<b class="nc">&nbsp;        this.gamePost = gamePost;</b>
+&nbsp;    }
+&nbsp;
+<b class="fc">&nbsp;    public Comment(GamePost gp1, Users u1, CommentMessage cm) {</b>
+<b class="fc">&nbsp;        this.gamePost = gp1;</b>
+<b class="fc">&nbsp;        this.user = u1;</b>
+<b class="fc">&nbsp;        this.comment_details = cm;</b>
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-12-04 13:11</div>
+</div>
+</body>
+</html>

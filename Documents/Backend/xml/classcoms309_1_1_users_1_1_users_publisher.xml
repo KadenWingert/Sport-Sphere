@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcoms309_1_1_users_1_1_users_publisher" kind="class" language="Java" prot="public">
+    <compoundname>coms309::Users::UsersPublisher</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcoms309_1_1_users_1_1_users_publisher_1a6bb9f3ac457da82048f82454428832cc" prot="private" static="no" mutable="no">
+        <type>final FluxProcessor&lt; <ref refid="classcoms309_1_1_users_1_1_users" kindref="compound">Users</ref>, <ref refid="classcoms309_1_1_users_1_1_users" kindref="compound">Users</ref> &gt;</type>
+        <definition>private final FluxProcessor&lt; Users, Users &gt; coms309.Users.UsersPublisher::processor</definition>
+        <argsstring></argsstring>
+        <name>processor</name>
+        <qualifiedname>coms309.Users.UsersPublisher.processor</qualifiedname>
+        <briefdescription>
+<para>Gets the processor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The processor. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UsersPublisher.java" line="39" column="33" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UsersPublisher.java" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_users_1_1_users_publisher_1aba7d5d4f941228a0a9a214e51b1ce70d" prot="private" static="no" mutable="no">
+        <type>final FluxSink&lt; <ref refid="classcoms309_1_1_users_1_1_users" kindref="compound">Users</ref> &gt;</type>
+        <definition>private final FluxSink&lt; Users &gt; coms309.Users.UsersPublisher::sink</definition>
+        <argsstring></argsstring>
+        <name>sink</name>
+        <qualifiedname>coms309.Users.UsersPublisher.sink</qualifiedname>
+        <briefdescription>
+<para>Gets the sink. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The sink. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UsersPublisher.java" line="49" column="28" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UsersPublisher.java" bodystart="49" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_users_publisher_1a4e1e5956d1f1ad3ba38c702a7fafa621" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>public coms309.Users.UsersPublisher::UsersPublisher</definition>
+        <argsstring>()</argsstring>
+        <name>UsersPublisher</name>
+        <qualifiedname>coms309.Users.UsersPublisher.UsersPublisher</qualifiedname>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UsersPublisher.java" line="60" column="12" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UsersPublisher.java" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_users_publisher_1a9cea8b4936786632857148cd78586b6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Publisher&lt; <ref refid="classcoms309_1_1_users_1_1_users" kindref="compound">Users</ref> &gt;</type>
+        <definition>public Publisher&lt; Users &gt; coms309.Users.UsersPublisher::getUsers</definition>
+        <argsstring>()</argsstring>
+        <name>getUsers</name>
+        <qualifiedname>coms309.Users.UsersPublisher.getUsers</qualifiedname>
+        <briefdescription>
+<para>Gets the users. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The users. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UsersPublisher.java" line="76" column="22" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UsersPublisher.java" bodystart="76" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_users_publisher_1a0463249e9962a5a1752ea55f5e7c648b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void coms309.Users.UsersPublisher::publish</definition>
+        <argsstring>(Users user)</argsstring>
+        <name>publish</name>
+        <qualifiedname>coms309.Users.UsersPublisher.publish</qualifiedname>
+        <param>
+          <type><ref refid="classcoms309_1_1_users_1_1_users" kindref="compound">Users</ref></type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+<para>Publishes the given user. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>user</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UsersPublisher.java" line="93" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UsersPublisher.java" bodystart="93" bodyend="95"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The org.reactivestreams. publisher. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The org.springframework.stereotype. component</para>
+<para>The lombok. no arguments constructor</para>
+<para>The reactor.core.publisher. direct processor</para>
+<para>The reactor.core.publisher. flux processor</para>
+<para>The reactor.core.publisher. flux sink</para>
+<para>The reactor.core.publisher. mono</para>
+<para>The users publisher.</para>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>coms309.Users.UsersPublisher</label>
+        <link refid="classcoms309_1_1_users_1_1_users_publisher"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UsersPublisher.java" line="29" column="7" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UsersPublisher.java" bodystart="29" bodyend="97"/>
+    <listofallmembers>
+      <member refid="classcoms309_1_1_users_1_1_users_publisher_1a9cea8b4936786632857148cd78586b6b" prot="public" virt="non-virtual"><scope>coms309::Users::UsersPublisher</scope><name>getUsers</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_publisher_1a6bb9f3ac457da82048f82454428832cc" prot="private" virt="non-virtual"><scope>coms309::Users::UsersPublisher</scope><name>processor</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_publisher_1a0463249e9962a5a1752ea55f5e7c648b" prot="public" virt="non-virtual"><scope>coms309::Users::UsersPublisher</scope><name>publish</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_publisher_1aba7d5d4f941228a0a9a214e51b1ce70d" prot="private" virt="non-virtual"><scope>coms309::Users::UsersPublisher</scope><name>sink</name></member>
+      <member refid="classcoms309_1_1_users_1_1_users_publisher_1a4e1e5956d1f1ad3ba38c702a7fafa621" prot="public" virt="non-virtual"><scope>coms309::Users::UsersPublisher</scope><name>UsersPublisher</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,181 @@
+\doxysection{Sport\+Controller\+Test.\+java}
+\hypertarget{_sport_controller_test_8java_source}{}\label{_sport_controller_test_8java_source}\index{C:/Users/Arie/Develop/hb\_215/Backend/src/test/java/com/mockito/SportControllerTest.java@{C:/Users/Arie/Develop/hb\_215/Backend/src/test/java/com/mockito/SportControllerTest.java}}
+\mbox{\hyperlink{_sport_controller_test_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00001}00001\ \textcolor{keyword}{package\ }com.mockito;}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00003}00003\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_game_post}{GamePost}}.\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post}{GamePost}};}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00004}00004\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_game_post}{GamePost}}.\mbox{\hyperlink{interfacecoms309_1_1_game_post_1_1_game_post_repository}{GamePostRepository}};}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00005}00005\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_location}{Location}}.\mbox{\hyperlink{classcoms309_1_1_location_1_1_location}{Location}};}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00006}00006\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_skill_level}{SkillLevel}}.\mbox{\hyperlink{classcoms309_1_1_skill_level_1_1_skill_level}{SkillLevel}};}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00007}00007\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_skill_level}{SkillLevel}}.\mbox{\hyperlink{interfacecoms309_1_1_skill_level_1_1_skill_level_repository}{SkillLevelRepository}};}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00008}00008\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_sport}{Sport}}.\mbox{\hyperlink{classcoms309_1_1_sport_1_1_sport}{Sport}};}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00009}00009\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_sport}{Sport}}.\mbox{\hyperlink{classcoms309_1_1_sport_1_1_sport_controller}{SportController}};}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00010}00010\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_sport}{Sport}}.\mbox{\hyperlink{interfacecoms309_1_1_sport_1_1_sport_repository}{SportRepository}};}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00011}00011\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_users}{Users}}.\mbox{\hyperlink{interfacecoms309_1_1_users_1_1_user_repository}{UserRepository}};}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00012}00012\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_users}{Users}}.\mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}};}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00013}00013\ \textcolor{keyword}{import}\ org.junit.jupiter.api.BeforeEach;}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00014}00014\ \textcolor{keyword}{import}\ org.junit.jupiter.api.Test;}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00015}00015\ \textcolor{keyword}{import}\ org.mockito.InjectMocks;}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00016}00016\ \textcolor{keyword}{import}\ org.mockito.Mock;}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00017}00017\ \textcolor{keyword}{import}\ org.mockito.MockitoAnnotations;}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00019}00019\ \textcolor{keyword}{import}\ java.util.*;}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00021}00021\ \textcolor{keyword}{import}\ \textcolor{keyword}{static}\ org.junit.jupiter.api.Assertions.*;}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00022}00022\ \textcolor{keyword}{import}\ \textcolor{keyword}{static}\ org.mockito.Mockito.*;}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00024}00024\ \textcolor{keyword}{class\ }SportControllerTest\ \{}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00025}00025\ \ \ \ \ @InjectMocks}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00026}00026\ \ \ \ \ SportController\ sportController;}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00028}00028\ \ \ \ \ @Mock}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00029}00029\ \ \ \ \ GamePostRepository\ gamePostRepository;}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00030}00030\ \ \ \ \ @Mock}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00031}00031\ \ \ \ \ UserRepository\ userRepository;}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00032}00032\ \ \ \ \ @Mock}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00033}00033\ \ \ \ \ SportRepository\ sportRepository;}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00034}00034\ \ \ \ \ @Mock}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00035}00035\ \ \ \ \ SkillLevelRepository\ skillLevelRepository;}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00037}00037\ \ \ \ \ \textcolor{keyword}{private}\ GamePost\ gp1,\ gp2,\ gp3,\ gp4;}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00038}00038\ \ \ \ \ \textcolor{keyword}{private}\ Users\ u1,\ u2;}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00039}00039\ \ \ \ \ \textcolor{keyword}{private}\ Sport\ s1,\ s2,\ s3,\ s4;}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00040}00040\ \ \ \ \ \textcolor{keyword}{private}\ SkillLevel\ sk1;}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00042}00042\ \ \ \ \ @BeforeEach}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00043}00043\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ init()\ \{}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00044}00044\ \ \ \ \ \ \ \ \ MockitoAnnotations.initMocks(\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00046}00046\ \ \ \ \ \ \ \ \ s1\ =\ \textcolor{keyword}{new}\ Sport(\textcolor{stringliteral}{"{}Basketball"{}});}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00047}00047\ \ \ \ \ \ \ \ \ s2\ =\ \textcolor{keyword}{new}\ Sport(\textcolor{stringliteral}{"{}Pickleball"{}});}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00048}00048\ \ \ \ \ \ \ \ \ s3\ =\ \textcolor{keyword}{new}\ Sport(\textcolor{stringliteral}{"{}Football"{}});}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00049}00049\ \ \ \ \ \ \ \ \ s4\ =\ \textcolor{keyword}{new}\ Sport(\textcolor{stringliteral}{"{}Spikeball"{}});}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00050}00050\ \ \ \ \ \ \ \ \ sportRepository.save(s1);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00051}00051\ \ \ \ \ \ \ \ \ sportRepository.save(s2);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00052}00052\ \ \ \ \ \ \ \ \ sportRepository.save(s3);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00053}00053\ \ \ \ \ \ \ \ \ sportRepository.save(s4);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00056}00056\ \ \ \ \ \ \ \ \ u1\ =\ \textcolor{keyword}{new}\ Users(\textcolor{stringliteral}{"{}Bill"{}},\ \textcolor{stringliteral}{"{}Smith"{}},\ \textcolor{stringliteral}{"{}Bsmith@example.com"{}},\ \textcolor{stringliteral}{"{}smith3920"{}});}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00057}00057\ \ \ \ \ \ \ \ \ u2\ =\ \textcolor{keyword}{new}\ Users(\textcolor{stringliteral}{"{}John"{}},\ \textcolor{stringliteral}{"{}1234"{}},\ \textcolor{stringliteral}{"{}john@gmail.com"{}},\ \textcolor{stringliteral}{"{}Mar1o\&Lu1g1"{}});}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00058}00058\ \ \ \ \ \ \ \ \ userRepository.save(u1);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00059}00059\ \ \ \ \ \ \ \ \ userRepository.save(u2);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00061}00061\ \ \ \ \ \ \ \ \ sk1\ =\ \textcolor{keyword}{new}\ SkillLevel(9,\ u1);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00062}00062\ \ \ \ \ \ \ \ \ skillLevelRepository.save(sk1);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00064}00064\ \ \ \ \ \ \ \ \ gp1\ =\ \textcolor{keyword}{new}\ GamePost(s1,\ userRepository.findById(u1.getId()),\ 24,\ 20,\ \textcolor{stringliteral}{"{}1/12/2023"{}},\ \textcolor{stringliteral}{"{}29/09/1988"{}},\ \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00065}00065\ \ \ \ \ \ \ \ \ gp2\ =\ \textcolor{keyword}{new}\ GamePost(s1,\ userRepository.findById(u1.getId()),\ 16,\ 2,\ \textcolor{stringliteral}{"{}1/2/2023"{}},\ \textcolor{stringliteral}{"{}1/02/2023"{}},\ \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00066}00066\ \ \ \ \ \ \ \ \ gp3\ =\ \textcolor{keyword}{new}\ GamePost(s3,\ userRepository.findById(u2.getId()),\ 10,\ 8,\ \textcolor{stringliteral}{"{}10/08/2023"{}},\ \textcolor{stringliteral}{"{}10/25/2023"{}},\ \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00067}00067\ \ \ \ \ \ \ \ \ gp4\ =\ \textcolor{keyword}{new}\ GamePost(s4,\ userRepository.findById(u2.getId()),\ 6,\ 3,\ \textcolor{stringliteral}{"{}11/1/2023"{}},\ \textcolor{stringliteral}{"{}11/09/2023"{}},\ \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00068}00068\ \ \ \ \ \ \ \ \ gamePostRepository.save(gp1);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00069}00069\ \ \ \ \ \ \ \ \ gamePostRepository.save(gp2);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00070}00070\ \ \ \ \ \ \ \ \ gamePostRepository.save(gp3);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00071}00071\ \ \ \ \ \ \ \ \ gamePostRepository.save(gp4);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00072}00072\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00073}00073\ }
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00074}00074\ \ \ \ \ @Test}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00075}00075\ \ \ \ \ \textcolor{keywordtype}{void}\ getAllSports()\ \{}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00076}00076\ \ \ \ \ \ \ \ \ List<Sport>\ sports\ =\ \textcolor{keyword}{new}\ ArrayList<>();}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00077}00077\ \ \ \ \ \ \ \ \ sports.add(s1);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00078}00078\ \ \ \ \ \ \ \ \ sports.add(s2);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00079}00079\ \ \ \ \ \ \ \ \ sports.add(s3);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00080}00080\ \ \ \ \ \ \ \ \ sports.add(s4);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00081}00081\ }
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00082}00082\ \ \ \ \ \ \ \ \ when(sportRepository.findAll()).thenReturn(sports);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00083}00083\ }
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00084}00084\ \ \ \ \ \ \ \ \ List<Sport>\ result\ =\ sportController.getAllSports();}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00085}00085\ }
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00086}00086\ \ \ \ \ \ \ \ \ assertEquals(4,\ result.size());}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00087}00087\ \ \ \ \ \ \ \ \ assertEquals(\textcolor{stringliteral}{"{}Basketball"{}},\ result.get(0).getSport\_name());}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00088}00088\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00089}00089\ }
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00090}00090\ \ \ \ \ @Test}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00091}00091\ \ \ \ \ \textcolor{keywordtype}{void}\ getSportById()\ \{}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00092}00092\ \ \ \ \ \ \ \ \ when(sportRepository.findById(1)).thenReturn(s1);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00093}00093\ \ \ \ \ \ \ \ \ Sport\ result\ =\ sportController.getSportById(1);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00094}00094\ }
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00095}00095\ \ \ \ \ \ \ \ \ assertNotNull(result);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00096}00096\ \ \ \ \ \ \ \ \ assertEquals(\textcolor{stringliteral}{"{}Basketball"{}},\ result.getSport\_name());}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00097}00097\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00098}00098\ \ \ \ \ @Test}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00099}00099\ \ \ \ \ \textcolor{keywordtype}{void}\ getAllGamePostsPlayingASport()\{}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00100}00100\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ sport\_id\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00101}00101\ \ \ \ \ \ \ \ \ when(sportRepository.findById(sport\_id)).thenReturn(s1);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00102}00102\ \ \ \ \ \ \ \ \ Set<GamePost>\ expectedGPList\ =\ \textcolor{keyword}{new}\ HashSet<>();}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00103}00103\ \ \ \ \ \ \ \ \ expectedGPList.add(gp1);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00104}00104\ \ \ \ \ \ \ \ \ expectedGPList.add(gp2);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00105}00105\ \ \ \ \ \ \ \ \ s1.setGamePosts(expectedGPList);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00106}00106\ }
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00107}00107\ \ \ \ \ \ \ \ \ Set<GamePost>\ actualGPList\ =\ sportController.getAllGamePostsPlayingASport(sport\_id);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00108}00108\ }
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00109}00109\ \ \ \ \ \ \ \ \ assertEquals(expectedGPList.size(),\ actualGPList.size());}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00110}00110\ \ \ \ \ \ \ \ \ assertTrue(actualGPList.contains(gp2));}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00111}00111\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00112}00112\ }
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00113}00113\ \ \ \ \ @Test}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00114}00114\ \ \ \ \ \textcolor{keywordtype}{void}\ createSport()\ \{}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00115}00115\ \ \ \ \ \ \ \ \ List<Sport>\ sportList\ =\ \textcolor{keyword}{new}\ ArrayList<>();}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00116}00116\ \ \ \ \ \ \ \ \ SkillLevel\ sk\ =\ \textcolor{keyword}{new}\ SkillLevel(1,\ userRepository.findById(1),\ sportRepository.findById(1));}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00117}00117\ \ \ \ \ \ \ \ \ when(skillLevelRepository.findById(1)).thenReturn(sk);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00118}00118\ \ \ \ \ \ \ \ \ when(userRepository.findById(1)).thenReturn(u1);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00119}00119\ \ \ \ \ \ \ \ \ when(sportRepository.findById(1)).thenReturn(s1);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00120}00120\ \ \ \ \ \ \ \ \ String\ sportName\ =\ \textcolor{stringliteral}{"{}Rugby"{}};}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00121}00121\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ skillLevelId\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00122}00122\ \ \ \ \ \ \ \ \ Sport\ sport\ =\ \textcolor{keyword}{new}\ Sport(sportName,\ sk);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00123}00123\ \ \ \ \ \ \ \ \ when(sportRepository.findAll()).thenReturn(sportList);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00124}00124\ }
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00125}00125\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ sportRepoSize\ =\ sportRepository.findAll().size();}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00126}00126\ \ \ \ \ \ \ \ \ Sport\ createdSport\ =\ sportController.createSport(sportName,\ skillLevelId);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00127}00127\ \ \ \ \ \ \ \ \ sportList.add(sport);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00128}00128\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ newSportRepoSize\ =\ sportRepository.findAll().size();}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00129}00129\ }
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00130}00130\ \ \ \ \ \ \ \ \ assertEquals(sportName,\ createdSport.getSport\_name());}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00131}00131\ \ \ \ \ \ \ \ \ assertEquals(sportRepoSize\ +\ 1,\ newSportRepoSize);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00132}00132\ }
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00133}00133\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00134}00134\ }
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00135}00135\ \ \ \ \ @Test}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00136}00136\ \ \ \ \ \textcolor{keywordtype}{void}\ updateSport()\ \{}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00137}00137\ \ \ \ \ \ \ \ \ String\ sportName\ =\ \textcolor{stringliteral}{"{}Football"{}};}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00138}00138\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ sport\_id\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00139}00139\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ skillLevel\_id\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00140}00140\ \ \ \ \ \ \ \ \ when(skillLevelRepository.findById(skillLevel\_id)).thenReturn(sk1);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00141}00141\ \ \ \ \ \ \ \ \ when(sportRepository.findById(sport\_id)).thenReturn(s1);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00142}00142\ \ \ \ \ \ \ \ \ Sport\ updatedSport\ =\ sportController.updateSport(\textcolor{stringliteral}{"{}Hockey"{}},sport\_id,\ skillLevel\_id);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00143}00143\ }
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00144}00144\ \ \ \ \ \ \ \ \ assertEquals(s1.getSport\_name(),\ updatedSport.getSport\_name());}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00145}00145\ }
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00146}00146\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00147}00147\ }
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00148}00148\ \ \ \ \ @Test}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00149}00149\ \ \ \ \ \textcolor{keywordtype}{void}\ deleteSportById()\ \{}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00150}00150\ \ \ \ \ \ \ \ \ List<Sport>\ sportList\ =\ Arrays.asList(s1,s2,s3,s4);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00151}00151\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ sport\_id\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00152}00152\ }
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00153}00153\ \ \ \ \ \ \ \ \ when(sportRepository.findById(sport\_id)).thenReturn(s1);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00154}00154\ \ \ \ \ \ \ \ \ when(sportRepository.findAll()).thenReturn(sportList);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00155}00155\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Act}}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00156}00156\ \ \ \ \ \ \ \ \ String\ deletedSport\ =\ sportController.deleteSportById(sport\_id);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00157}00157\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Assert}}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00158}00158\ \ \ \ \ \ \ \ \ verify(sportRepository,\ times(1)).deleteById(sport\_id);\ \textcolor{comment}{//\ Verify\ that\ locationRepository.deleteById\ is\ called\ once}}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00159}00159\ \ \ \ \ \ \ \ \ assertEquals(\textcolor{stringliteral}{"{}Sport\ with\ id\ "{}}\ +\ sport\_id\ +\ \textcolor{stringliteral}{"{}\ has\ been\ deleted"{}},\ deletedSport);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00160}00160\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00161}00161\ }
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00162}00162\ \ \ \ \ @Test}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00163}00163\ \ \ \ \ \textcolor{keywordtype}{void}\ deleteAllSports()\ \{}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00164}00164\ \ \ \ \ \ \ \ \ List<Sport>\ sportList\ =\ Arrays.asList(s1,s2,s3,s4);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00165}00165\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ sport\_id\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00166}00166\ }
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00167}00167\ \ \ \ \ \ \ \ \ when(sportRepository.findById(sport\_id)).thenReturn(s1);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00168}00168\ \ \ \ \ \ \ \ \ when(sportRepository.findAll()).thenReturn(sportList);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00169}00169\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Act}}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00170}00170\ \ \ \ \ \ \ \ \ String\ deletedSports\ =\ sportController.deleteAllSports();}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00171}00171\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Assert}}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00172}00172\ \ \ \ \ \ \ \ \ verify(sportRepository,\ times(1)).deleteAll();\ \textcolor{comment}{//\ Verify\ that\ locationRepository.deleteById\ is\ called\ once}}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00173}00173\ \ \ \ \ \ \ \ \ assertEquals(\textcolor{stringliteral}{"{}All\ sports\ have\ been\ deleted"{}},\ deletedSports);}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00174}00174\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_sport_controller_test_8java_source_l00175}00175\ \}}
+
+\end{DoxyCode}

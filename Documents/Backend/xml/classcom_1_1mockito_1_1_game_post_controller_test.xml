@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcom_1_1mockito_1_1_game_post_controller_test" kind="class" language="Java" prot="package">
+    <compoundname>com::mockito::GamePostControllerTest</compoundname>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1mockito_1_1_game_post_controller_test_1a023b0436d63cec3ed471a48bd8ce7f60" prot="package" static="no" mutable="no">
+        <type>GamePostController</type>
+        <definition>GamePostController com.mockito.GamePostControllerTest.gamePostController</definition>
+        <argsstring></argsstring>
+        <name>gamePostController</name>
+        <qualifiedname>com.mockito.GamePostControllerTest.gamePostController</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" line="34" column="24" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1mockito_1_1_game_post_controller_test_1ab532a6b12f980a1254fae3977883d03d" prot="package" static="no" mutable="no">
+        <type>GamePostRepository</type>
+        <definition>GamePostRepository com.mockito.GamePostControllerTest.gamePostRepository</definition>
+        <argsstring></argsstring>
+        <name>gamePostRepository</name>
+        <qualifiedname>com.mockito.GamePostControllerTest.gamePostRepository</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" line="37" column="24" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1mockito_1_1_game_post_controller_test_1ab72f2bc462450fe277de7c67e889cef1" prot="package" static="no" mutable="no">
+        <type>UserRepository</type>
+        <definition>UserRepository com.mockito.GamePostControllerTest.userRepository</definition>
+        <argsstring></argsstring>
+        <name>userRepository</name>
+        <qualifiedname>com.mockito.GamePostControllerTest.userRepository</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" line="39" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1mockito_1_1_game_post_controller_test_1a945ef9bece0d93dea3d360ebda21335f" prot="package" static="no" mutable="no">
+        <type>SportRepository</type>
+        <definition>SportRepository com.mockito.GamePostControllerTest.sportRepository</definition>
+        <argsstring></argsstring>
+        <name>sportRepository</name>
+        <qualifiedname>com.mockito.GamePostControllerTest.sportRepository</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" line="41" column="21" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1mockito_1_1_game_post_controller_test_1af2e37fef7e0581e5bd69d4bc7abbdec0" prot="package" static="no" mutable="no">
+        <type>GamePostPublisher</type>
+        <definition>GamePostPublisher com.mockito.GamePostControllerTest.gamePostPublisher</definition>
+        <argsstring></argsstring>
+        <name>gamePostPublisher</name>
+        <qualifiedname>com.mockito.GamePostControllerTest.gamePostPublisher</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" line="43" column="23" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" bodystart="43" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1mockito_1_1_game_post_controller_test_1a364ca97ccbea33ac8a0d5a4d52edd896" prot="private" static="no" mutable="no">
+        <type>GamePost</type>
+        <definition>GamePost com.mockito.GamePostControllerTest.gp1</definition>
+        <argsstring></argsstring>
+        <name>gp1</name>
+        <qualifiedname>com.mockito.GamePostControllerTest.gp1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" line="45" column="22" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1mockito_1_1_game_post_controller_test_1aa2ff87c2c2e48cf8a53f77430286850c" prot="private" static="no" mutable="no">
+        <type>GamePost</type>
+        <definition>GamePost com.mockito.GamePostControllerTest.gp2</definition>
+        <argsstring></argsstring>
+        <name>gp2</name>
+        <qualifiedname>com.mockito.GamePostControllerTest.gp2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" line="45" column="26" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1mockito_1_1_game_post_controller_test_1ab3828b34c1d4c76c65388be8c9fe862e" prot="private" static="no" mutable="no">
+        <type>GamePost</type>
+        <definition>GamePost com.mockito.GamePostControllerTest.gp3</definition>
+        <argsstring></argsstring>
+        <name>gp3</name>
+        <qualifiedname>com.mockito.GamePostControllerTest.gp3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" line="45" column="30" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1mockito_1_1_game_post_controller_test_1a7899174dbe3e69cd89db8f5f64ba94ed" prot="private" static="no" mutable="no">
+        <type>GamePost</type>
+        <definition>GamePost com.mockito.GamePostControllerTest.gp4</definition>
+        <argsstring></argsstring>
+        <name>gp4</name>
+        <qualifiedname>com.mockito.GamePostControllerTest.gp4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" line="45" column="34" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1mockito_1_1_game_post_controller_test_1a98d847d9e3e2e02e0c286d1bfac831eb" prot="private" static="no" mutable="no">
+        <type>Users</type>
+        <definition>Users com.mockito.GamePostControllerTest.u1</definition>
+        <argsstring></argsstring>
+        <name>u1</name>
+        <qualifiedname>com.mockito.GamePostControllerTest.u1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" line="46" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1mockito_1_1_game_post_controller_test_1a7d3db2533646d6ee08d8301241180ad5" prot="private" static="no" mutable="no">
+        <type>Users</type>
+        <definition>Users com.mockito.GamePostControllerTest.u2</definition>
+        <argsstring></argsstring>
+        <name>u2</name>
+        <qualifiedname>com.mockito.GamePostControllerTest.u2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" line="46" column="22" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1mockito_1_1_game_post_controller_test_1a10e5e3bdba352cd2313c6ebdb13013ce" prot="private" static="no" mutable="no">
+        <type>Sport</type>
+        <definition>Sport com.mockito.GamePostControllerTest.s1</definition>
+        <argsstring></argsstring>
+        <name>s1</name>
+        <qualifiedname>com.mockito.GamePostControllerTest.s1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" line="47" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1mockito_1_1_game_post_controller_test_1a78ab3a13c06cb92c6bdc5ea4d6a1d8ee" prot="private" static="no" mutable="no">
+        <type>Sport</type>
+        <definition>Sport com.mockito.GamePostControllerTest.s2</definition>
+        <argsstring></argsstring>
+        <name>s2</name>
+        <qualifiedname>com.mockito.GamePostControllerTest.s2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" line="47" column="22" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1mockito_1_1_game_post_controller_test_1a4494853ffef8563a92a193338721b427" prot="private" static="no" mutable="no">
+        <type>Sport</type>
+        <definition>Sport com.mockito.GamePostControllerTest.s3</definition>
+        <argsstring></argsstring>
+        <name>s3</name>
+        <qualifiedname>com.mockito.GamePostControllerTest.s3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" line="47" column="25" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1mockito_1_1_game_post_controller_test_1a746ff5a95d732ac3603dd97c73bce6a0" prot="private" static="no" mutable="no">
+        <type>Sport</type>
+        <definition>Sport com.mockito.GamePostControllerTest.s4</definition>
+        <argsstring></argsstring>
+        <name>s4</name>
+        <qualifiedname>com.mockito.GamePostControllerTest.s4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" line="47" column="28" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" bodystart="47" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1mockito_1_1_game_post_controller_test_1a42b4efb3a4110b593bfeff6b3e33c0c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.mockito.GamePostControllerTest.init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <qualifiedname>com.mockito.GamePostControllerTest.init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" line="50" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" bodystart="50" bodyend="79"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-func">
+      <memberdef kind="function" id="classcom_1_1mockito_1_1_game_post_controller_test_1a9976a9d2dc8a242defff15a735444cb2" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.mockito.GamePostControllerTest.getAllGamePosts</definition>
+        <argsstring>()</argsstring>
+        <name>getAllGamePosts</name>
+        <qualifiedname>com.mockito.GamePostControllerTest.getAllGamePosts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" line="82" column="10" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" bodystart="82" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1mockito_1_1_game_post_controller_test_1ad95199f28f64528fdbba7c9bca2f3b19" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.mockito.GamePostControllerTest.getGamePostById</definition>
+        <argsstring>()</argsstring>
+        <name>getGamePostById</name>
+        <qualifiedname>com.mockito.GamePostControllerTest.getGamePostById</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" line="98" column="10" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" bodystart="98" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1mockito_1_1_game_post_controller_test_1a5895b26037088f4e88a2a6aa8a025b95" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.mockito.GamePostControllerTest.getUsersPlaying</definition>
+        <argsstring>()</argsstring>
+        <name>getUsersPlaying</name>
+        <qualifiedname>com.mockito.GamePostControllerTest.getUsersPlaying</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" line="116" column="10" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" bodystart="116" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1mockito_1_1_game_post_controller_test_1a340528cb8e1bbb828096309a7d9c5ce7" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.mockito.GamePostControllerTest.createGamePost</definition>
+        <argsstring>()</argsstring>
+        <name>createGamePost</name>
+        <qualifiedname>com.mockito.GamePostControllerTest.createGamePost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" line="136" column="10" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" bodystart="136" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1mockito_1_1_game_post_controller_test_1a5e9985e6c67c96e3ebd9e1b183bc5474" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.mockito.GamePostControllerTest.updateGamePost</definition>
+        <argsstring>()</argsstring>
+        <name>updateGamePost</name>
+        <qualifiedname>com.mockito.GamePostControllerTest.updateGamePost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" line="180" column="10" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" bodystart="180" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1mockito_1_1_game_post_controller_test_1a12d7f9bf1a1ef21b156d99e1f64bf2bd" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.mockito.GamePostControllerTest.addNewUserPlaying</definition>
+        <argsstring>()</argsstring>
+        <name>addNewUserPlaying</name>
+        <qualifiedname>com.mockito.GamePostControllerTest.addNewUserPlaying</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" line="213" column="10" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" bodystart="213" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1mockito_1_1_game_post_controller_test_1a8f7b753ee7b8a8f2288458c615103717" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.mockito.GamePostControllerTest.addGamePostToSport</definition>
+        <argsstring>()</argsstring>
+        <name>addGamePostToSport</name>
+        <qualifiedname>com.mockito.GamePostControllerTest.addGamePostToSport</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" line="233" column="10" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" bodystart="233" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1mockito_1_1_game_post_controller_test_1ae96eed752857ffe444c123575c25ecae" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.mockito.GamePostControllerTest.deleteGamePostById</definition>
+        <argsstring>()</argsstring>
+        <name>deleteGamePostById</name>
+        <qualifiedname>com.mockito.GamePostControllerTest.deleteGamePostById</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" line="285" column="10" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" bodystart="285" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1mockito_1_1_game_post_controller_test_1ab0e5388a00ffbcda8e6124c459b99715" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.mockito.GamePostControllerTest.deleteAllGamePosts</definition>
+        <argsstring>()</argsstring>
+        <name>deleteAllGamePosts</name>
+        <qualifiedname>com.mockito.GamePostControllerTest.deleteAllGamePosts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" line="311" column="10" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" bodystart="311" bodyend="337"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.mockito.GamePostControllerTest</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" line="30" column="1" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/GamePostControllerTest.java" bodystart="30" bodyend="339"/>
+    <listofallmembers>
+      <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a8f7b753ee7b8a8f2288458c615103717" prot="package" virt="non-virtual"><scope>com::mockito::GamePostControllerTest</scope><name>addGamePostToSport</name></member>
+      <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a12d7f9bf1a1ef21b156d99e1f64bf2bd" prot="package" virt="non-virtual"><scope>com::mockito::GamePostControllerTest</scope><name>addNewUserPlaying</name></member>
+      <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a340528cb8e1bbb828096309a7d9c5ce7" prot="package" virt="non-virtual"><scope>com::mockito::GamePostControllerTest</scope><name>createGamePost</name></member>
+      <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1ab0e5388a00ffbcda8e6124c459b99715" prot="package" virt="non-virtual"><scope>com::mockito::GamePostControllerTest</scope><name>deleteAllGamePosts</name></member>
+      <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1ae96eed752857ffe444c123575c25ecae" prot="package" virt="non-virtual"><scope>com::mockito::GamePostControllerTest</scope><name>deleteGamePostById</name></member>
+      <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a023b0436d63cec3ed471a48bd8ce7f60" prot="package" virt="non-virtual"><scope>com::mockito::GamePostControllerTest</scope><name>gamePostController</name></member>
+      <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1af2e37fef7e0581e5bd69d4bc7abbdec0" prot="package" virt="non-virtual"><scope>com::mockito::GamePostControllerTest</scope><name>gamePostPublisher</name></member>
+      <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1ab532a6b12f980a1254fae3977883d03d" prot="package" virt="non-virtual"><scope>com::mockito::GamePostControllerTest</scope><name>gamePostRepository</name></member>
+      <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a9976a9d2dc8a242defff15a735444cb2" prot="package" virt="non-virtual"><scope>com::mockito::GamePostControllerTest</scope><name>getAllGamePosts</name></member>
+      <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1ad95199f28f64528fdbba7c9bca2f3b19" prot="package" virt="non-virtual"><scope>com::mockito::GamePostControllerTest</scope><name>getGamePostById</name></member>
+      <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a5895b26037088f4e88a2a6aa8a025b95" prot="package" virt="non-virtual"><scope>com::mockito::GamePostControllerTest</scope><name>getUsersPlaying</name></member>
+      <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a364ca97ccbea33ac8a0d5a4d52edd896" prot="private" virt="non-virtual"><scope>com::mockito::GamePostControllerTest</scope><name>gp1</name></member>
+      <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1aa2ff87c2c2e48cf8a53f77430286850c" prot="private" virt="non-virtual"><scope>com::mockito::GamePostControllerTest</scope><name>gp2</name></member>
+      <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1ab3828b34c1d4c76c65388be8c9fe862e" prot="private" virt="non-virtual"><scope>com::mockito::GamePostControllerTest</scope><name>gp3</name></member>
+      <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a7899174dbe3e69cd89db8f5f64ba94ed" prot="private" virt="non-virtual"><scope>com::mockito::GamePostControllerTest</scope><name>gp4</name></member>
+      <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a42b4efb3a4110b593bfeff6b3e33c0c4" prot="public" virt="non-virtual"><scope>com::mockito::GamePostControllerTest</scope><name>init</name></member>
+      <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a10e5e3bdba352cd2313c6ebdb13013ce" prot="private" virt="non-virtual"><scope>com::mockito::GamePostControllerTest</scope><name>s1</name></member>
+      <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a78ab3a13c06cb92c6bdc5ea4d6a1d8ee" prot="private" virt="non-virtual"><scope>com::mockito::GamePostControllerTest</scope><name>s2</name></member>
+      <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a4494853ffef8563a92a193338721b427" prot="private" virt="non-virtual"><scope>com::mockito::GamePostControllerTest</scope><name>s3</name></member>
+      <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a746ff5a95d732ac3603dd97c73bce6a0" prot="private" virt="non-virtual"><scope>com::mockito::GamePostControllerTest</scope><name>s4</name></member>
+      <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a945ef9bece0d93dea3d360ebda21335f" prot="package" virt="non-virtual"><scope>com::mockito::GamePostControllerTest</scope><name>sportRepository</name></member>
+      <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a98d847d9e3e2e02e0c286d1bfac831eb" prot="private" virt="non-virtual"><scope>com::mockito::GamePostControllerTest</scope><name>u1</name></member>
+      <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a7d3db2533646d6ee08d8301241180ad5" prot="private" virt="non-virtual"><scope>com::mockito::GamePostControllerTest</scope><name>u2</name></member>
+      <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1a5e9985e6c67c96e3ebd9e1b183bc5474" prot="package" virt="non-virtual"><scope>com::mockito::GamePostControllerTest</scope><name>updateGamePost</name></member>
+      <member refid="classcom_1_1mockito_1_1_game_post_controller_test_1ab72f2bc462450fe277de7c67e889cef1" prot="package" virt="non-virtual"><scope>com::mockito::GamePostControllerTest</scope><name>userRepository</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

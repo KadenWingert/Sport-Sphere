@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcoms309_1_1_exceptions_1_1_not_found_exception" kind="class" language="Java" prot="public">
+    <compoundname>coms309::Exceptions::NotFoundException</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">RuntimeException</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcoms309_1_1_exceptions_1_1_not_found_exception_1ac500367e6a1476bb271a750f14a7c2cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>public coms309.Exceptions.NotFoundException::NotFoundException</definition>
+        <argsstring>(String message)</argsstring>
+        <name>NotFoundException</name>
+        <qualifiedname>coms309.Exceptions.NotFoundException.NotFoundException</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Exceptions/NotFoundException.java" line="36" column="12" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Exceptions/NotFoundException.java" bodystart="36" bodyend="38"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>RuntimeException</label>
+      </node>
+      <node id="1">
+        <label>coms309.Exceptions.NotFoundException</label>
+        <link refid="classcoms309_1_1_exceptions_1_1_not_found_exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>RuntimeException</label>
+      </node>
+      <node id="1">
+        <label>coms309.Exceptions.NotFoundException</label>
+        <link refid="classcoms309_1_1_exceptions_1_1_not_found_exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Exceptions/NotFoundException.java" line="23" column="7" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Exceptions/NotFoundException.java" bodystart="23" bodyend="39"/>
+    <listofallmembers>
+      <member refid="classcoms309_1_1_exceptions_1_1_not_found_exception_1ac500367e6a1476bb271a750f14a7c2cd" prot="public" virt="non-virtual"><scope>coms309::Exceptions::NotFoundException</scope><name>NotFoundException</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,4 @@
+mutation UnSavePost($id: ID!)
+{
+    deleteSavedGamePost(id: $id)
+}

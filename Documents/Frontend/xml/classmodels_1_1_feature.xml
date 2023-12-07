@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmodels_1_1_feature" kind="class" language="Java" prot="public">
+    <compoundname>models::Feature</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmodels_1_1_feature_1ace243f259e5dd4993b3c4386eb338e8e" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String models.Feature.type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>models.Feature.type</qualifiedname>
+        <briefdescription>
+<para>The type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Feature.java" line="18" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Feature.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodels_1_1_feature_1a4c921dcbb0a0ed544e07df0d78d9c853" prot="private" static="no" mutable="no">
+        <type><ref refid="classmodels_1_1_properties" kindref="compound">Properties</ref></type>
+        <definition>Properties models.Feature.properties</definition>
+        <argsstring></argsstring>
+        <name>properties</name>
+        <qualifiedname>models.Feature.properties</qualifiedname>
+        <briefdescription>
+<para>The properties. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Feature.java" line="20" column="24" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Feature.java" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodels_1_1_feature_1a01147be8e511422f75b2af2e9f293c8c" prot="private" static="no" mutable="no">
+        <type>List&lt; Double &gt;</type>
+        <definition>List&lt;Double&gt; models.Feature.bbox</definition>
+        <argsstring></argsstring>
+        <name>bbox</name>
+        <qualifiedname>models.Feature.bbox</qualifiedname>
+        <briefdescription>
+<para>The bounding box. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Feature.java" line="22" column="18" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Feature.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmodels_1_1_feature_1a267f88ee7eef055c120447a7f88c9449" prot="private" static="no" mutable="no">
+        <type><ref refid="classmodels_1_1_geometry" kindref="compound">Geometry</ref></type>
+        <definition>Geometry models.Feature.geometry</definition>
+        <argsstring></argsstring>
+        <name>geometry</name>
+        <qualifiedname>models.Feature.geometry</qualifiedname>
+        <briefdescription>
+<para>The geometry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Feature.java" line="24" column="22" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Feature.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmodels_1_1_feature_1a421cccd5fcdf365f98c7d8abc03adb97" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>public String models.Feature::getType</definition>
+        <argsstring>()</argsstring>
+        <name>getType</name>
+        <qualifiedname>models.Feature.getType</qualifiedname>
+        <briefdescription>
+<para>Getters and setters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The type. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Feature.java" line="37" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Feature.java" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_feature_1a6b686e1666cf8f3fd2eea8f7d6103a7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void models.Feature::setType</definition>
+        <argsstring>(String type)</argsstring>
+        <name>setType</name>
+        <qualifiedname>models.Feature.setType</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Sets a type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Feature.java" line="52" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Feature.java" bodystart="52" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_feature_1a4e655b2a51e66b26fb26a1cc193d9cb8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmodels_1_1_properties" kindref="compound">Properties</ref></type>
+        <definition>public Properties models.Feature::getProperties</definition>
+        <argsstring>()</argsstring>
+        <name>getProperties</name>
+        <qualifiedname>models.Feature.getProperties</qualifiedname>
+        <briefdescription>
+<para>Gets the properties. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The properties. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Feature.java" line="67" column="23" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Feature.java" bodystart="67" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_feature_1ab68fe0db0e0b9365925867049436da43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void models.Feature::setProperties</definition>
+        <argsstring>(Properties properties)</argsstring>
+        <name>setProperties</name>
+        <qualifiedname>models.Feature.setProperties</qualifiedname>
+        <param>
+          <type><ref refid="classmodels_1_1_properties" kindref="compound">Properties</ref></type>
+          <declname>properties</declname>
+        </param>
+        <briefdescription>
+<para>Sets the properties. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>properties</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The properties. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Feature.java" line="82" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Feature.java" bodystart="82" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_feature_1acdf1f8940a65b9a1111eddd885ddf798" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; Double &gt;</type>
+        <definition>public List&lt; Double &gt; models.Feature::getBbox</definition>
+        <argsstring>()</argsstring>
+        <name>getBbox</name>
+        <qualifiedname>models.Feature.getBbox</qualifiedname>
+        <briefdescription>
+<para>Gets the bounding box. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The bounding box. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Feature.java" line="97" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Feature.java" bodystart="97" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_feature_1aa41900a6c51f4893da30773c6a2ce4bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void models.Feature::setBbox</definition>
+        <argsstring>(List&lt; Double &gt; bbox)</argsstring>
+        <name>setBbox</name>
+        <qualifiedname>models.Feature.setBbox</qualifiedname>
+        <param>
+          <type>List&lt; Double &gt;</type>
+          <declname>bbox</declname>
+        </param>
+        <briefdescription>
+<para>Sets a bounding box. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bbox</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bounding box. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Feature.java" line="112" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Feature.java" bodystart="112" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_feature_1a72a321b2c2eeb92549d42287fd4a2027" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classmodels_1_1_geometry" kindref="compound">Geometry</ref></type>
+        <definition>public Geometry models.Feature::getGeometry</definition>
+        <argsstring>()</argsstring>
+        <name>getGeometry</name>
+        <qualifiedname>models.Feature.getGeometry</qualifiedname>
+        <briefdescription>
+<para>Gets the geometry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The geometry. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Feature.java" line="127" column="21" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Feature.java" bodystart="127" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classmodels_1_1_feature_1a3952002a65f852e98ac4683a3f0124fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void models.Feature::setGeometry</definition>
+        <argsstring>(Geometry geometry)</argsstring>
+        <name>setGeometry</name>
+        <qualifiedname>models.Feature.setGeometry</qualifiedname>
+        <param>
+          <type><ref refid="classmodels_1_1_geometry" kindref="compound">Geometry</ref></type>
+          <declname>geometry</declname>
+        </param>
+        <briefdescription>
+<para>Sets a geometry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>geometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The geometry. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Feature.java" line="142" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Feature.java" bodystart="142" bodyend="144"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>List of java.util.s. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A feature.</para>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Feature.java" line="16" column="7" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/models/Feature.java" bodystart="16" bodyend="145"/>
+    <listofallmembers>
+      <member refid="classmodels_1_1_feature_1a01147be8e511422f75b2af2e9f293c8c" prot="private" virt="non-virtual"><scope>models::Feature</scope><name>bbox</name></member>
+      <member refid="classmodels_1_1_feature_1a267f88ee7eef055c120447a7f88c9449" prot="private" virt="non-virtual"><scope>models::Feature</scope><name>geometry</name></member>
+      <member refid="classmodels_1_1_feature_1acdf1f8940a65b9a1111eddd885ddf798" prot="public" virt="non-virtual"><scope>models::Feature</scope><name>getBbox</name></member>
+      <member refid="classmodels_1_1_feature_1a72a321b2c2eeb92549d42287fd4a2027" prot="public" virt="non-virtual"><scope>models::Feature</scope><name>getGeometry</name></member>
+      <member refid="classmodels_1_1_feature_1a4e655b2a51e66b26fb26a1cc193d9cb8" prot="public" virt="non-virtual"><scope>models::Feature</scope><name>getProperties</name></member>
+      <member refid="classmodels_1_1_feature_1a421cccd5fcdf365f98c7d8abc03adb97" prot="public" virt="non-virtual"><scope>models::Feature</scope><name>getType</name></member>
+      <member refid="classmodels_1_1_feature_1a4c921dcbb0a0ed544e07df0d78d9c853" prot="private" virt="non-virtual"><scope>models::Feature</scope><name>properties</name></member>
+      <member refid="classmodels_1_1_feature_1aa41900a6c51f4893da30773c6a2ce4bb" prot="public" virt="non-virtual"><scope>models::Feature</scope><name>setBbox</name></member>
+      <member refid="classmodels_1_1_feature_1a3952002a65f852e98ac4683a3f0124fc" prot="public" virt="non-virtual"><scope>models::Feature</scope><name>setGeometry</name></member>
+      <member refid="classmodels_1_1_feature_1ab68fe0db0e0b9365925867049436da43" prot="public" virt="non-virtual"><scope>models::Feature</scope><name>setProperties</name></member>
+      <member refid="classmodels_1_1_feature_1a6b686e1666cf8f3fd2eea8f7d6103a7b" prot="public" virt="non-virtual"><scope>models::Feature</scope><name>setType</name></member>
+      <member refid="classmodels_1_1_feature_1ace243f259e5dd4993b3c4386eb338e8e" prot="private" virt="non-virtual"><scope>models::Feature</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

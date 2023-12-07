@@ -1,0 +1,812 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcoms309_1_1_users_1_1_user_controller" kind="class" language="Java" prot="public">
+    <compoundname>coms309::Users::UserController</compoundname>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcoms309_1_1_users_1_1_user_controller_1a8fdc30827c2cca5d673cd3f0334002b0" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecoms309_1_1_users_1_1_user_repository" kindref="compound">UserRepository</ref></type>
+        <definition>Autowired UserRepository coms309.Users.UserController::userRepository</definition>
+        <argsstring></argsstring>
+        <name>userRepository</name>
+        <qualifiedname>coms309.Users.UserController.userRepository</qualifiedname>
+        <briefdescription>
+<para>Gets the user repository. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The user repository. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" line="172" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_users_1_1_user_controller_1ab4239e6fc95b0c9a9abe53a5e2f29b25" prot="package" static="no" mutable="no">
+        <type>GamePostRepository</type>
+        <definition>Autowired GamePostRepository coms309.Users.UserController::gamePostRepository</definition>
+        <argsstring></argsstring>
+        <name>gamePostRepository</name>
+        <qualifiedname>coms309.Users.UserController.gamePostRepository</qualifiedname>
+        <briefdescription>
+<para>Gets the game post repository. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The game post repository. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" line="192" column="24" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_users_1_1_user_controller_1aa413f9320fc38e9936f6d930dc719652" prot="package" static="no" mutable="no">
+        <type>SportRepository</type>
+        <definition>Autowired SportRepository coms309.Users.UserController::sportRepository</definition>
+        <argsstring></argsstring>
+        <name>sportRepository</name>
+        <qualifiedname>coms309.Users.UserController.sportRepository</qualifiedname>
+        <briefdescription>
+<para>Gets the sport repository. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The sport repository. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" line="212" column="21" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_users_1_1_user_controller_1a45e4ca881714fde209b2ce7f24e3bd3f" prot="package" static="no" mutable="no">
+        <type>CommentRepository</type>
+        <definition>Autowired CommentRepository coms309.Users.UserController::commentRepository</definition>
+        <argsstring></argsstring>
+        <name>commentRepository</name>
+        <qualifiedname>coms309.Users.UserController.commentRepository</qualifiedname>
+        <briefdescription>
+<para>Gets the comment repository. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The comment repository. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" line="232" column="23" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_users_1_1_user_controller_1a46dfe268d2928b54016e3373554a74c1" prot="package" static="no" mutable="no">
+        <type>SkillLevelRepository</type>
+        <definition>Autowired SkillLevelRepository coms309.Users.UserController::skillLevelRepository</definition>
+        <argsstring></argsstring>
+        <name>skillLevelRepository</name>
+        <qualifiedname>coms309.Users.UserController.skillLevelRepository</qualifiedname>
+        <briefdescription>
+<para>Gets the skill level repository. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The skill level repository. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" line="252" column="26" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_users_1_1_user_controller_1a1ea145661c33c9a21a5396dbd6041be4" prot="package" static="no" mutable="no">
+        <type><ref refid="classcoms309_1_1_users_1_1_users_publisher" kindref="compound">UsersPublisher</ref></type>
+        <definition>Autowired UsersPublisher coms309.Users.UserController::usersPublisher</definition>
+        <argsstring></argsstring>
+        <name>usersPublisher</name>
+        <qualifiedname>coms309.Users.UserController.usersPublisher</qualifiedname>
+        <briefdescription>
+<para>Gets the users publisher. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The users publisher. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" line="266" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" bodystart="266" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcoms309_1_1_users_1_1_user_controller_1a3913afae007d87465e05ba97672359ed" prot="private" static="yes" mutable="no">
+        <type>final Logger</type>
+        <definition>final Logger coms309.Users.UserController.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>coms309.Users.UserController.logger</qualifiedname>
+        <initializer>= LoggerFactory.getLogger(UserController.class)</initializer>
+        <briefdescription>
+<para>/** </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The logger </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" line="255" column="33" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" bodystart="255" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_user_controller_1a78f0085408943daa6614318d6d326d6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>MutationMapping public String coms309.Users.UserController::createDummyData</definition>
+        <argsstring>()</argsstring>
+        <name>createDummyData</name>
+        <qualifiedname>coms309.Users.UserController.createDummyData</qualifiedname>
+        <briefdescription>
+<para>Creates dummy data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>String.</para>
+</simplesect>
+<simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023</para>
+</simplesect>
+<simplesect kind="return"><para>The new dummy data. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" line="292" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" bodystart="292" bodyend="416"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_user_controller_1af77bb8407daf80d1ac85649ed8dae69a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcoms309_1_1_users_1_1_users" kindref="compound">Users</ref> &gt;</type>
+        <definition>QueryMapping public List&lt; Users &gt; coms309.Users.UserController::getAllUsers</definition>
+        <argsstring>()</argsstring>
+        <name>getAllUsers</name>
+        <qualifiedname>coms309.Users.UserController.getAllUsers</qualifiedname>
+        <briefdescription>
+<para>Gets all users. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>List&lt;Users&gt;</para>
+</simplesect>
+<simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023</para>
+</simplesect>
+<simplesect kind="return"><para>all users. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" line="442" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" bodystart="442" bodyend="447"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_user_controller_1a202fad0e09356aef167af14fa2d8d26a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcoms309_1_1_users_1_1_users" kindref="compound">Users</ref></type>
+        <definition>QueryMapping public Users coms309.Users.UserController::getUserById</definition>
+        <argsstring>(@Argument int id)</argsstring>
+        <name>getUserById</name>
+        <qualifiedname>coms309.Users.UserController.getUserById</qualifiedname>
+        <param>
+          <type>@Argument int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Gets user by identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>NotFoundException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when the requested element is not present.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The user by identifier.</para>
+</simplesect>
+<simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>NotFoundException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when the requested element is not present.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The user by identifier. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" line="481" column="18" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" bodystart="481" bodyend="490"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_user_controller_1a54aee816f10e06b95d3ee0e6db61181a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcoms309_1_1_users_1_1_users" kindref="compound">Users</ref></type>
+        <definition>QueryMapping public Users coms309.Users.UserController::getUserByEmail</definition>
+        <argsstring>(@Argument String email)</argsstring>
+        <name>getUserByEmail</name>
+        <qualifiedname>coms309.Users.UserController.getUserByEmail</qualifiedname>
+        <param>
+          <type>@Argument String</type>
+          <declname>email</declname>
+        </param>
+        <briefdescription>
+<para>Gets user by email. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when an exception error condition occurs.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>email</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The email.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The user by email.</para>
+</simplesect>
+<simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when an exception error condition occurs.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>email</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The email.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The user by email. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" line="524" column="18" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" bodystart="524" bodyend="539"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_user_controller_1a98878f05406359f0372c930f085948d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>permission</type>
+        <definition>QueryMapping public permission coms309.Users.UserController::getUserRole</definition>
+        <argsstring>(@Argument String email, @Argument String password)</argsstring>
+        <name>getUserRole</name>
+        <qualifiedname>coms309.Users.UserController.getUserRole</qualifiedname>
+        <param>
+          <type>@Argument String</type>
+          <declname>email</declname>
+        </param>
+        <param>
+          <type>@Argument String</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+<para>Gets user role. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when an exception error condition occurs.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>email</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The user role.</para>
+</simplesect>
+<simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when an exception error condition occurs.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>email</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The email. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The password.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The user role. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" line="576" column="23" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" bodystart="576" bodyend="595"/>
+        <references refid="classcoms309_1_1_users_1_1_users_1a0a63fd9ffe103bf74018a9dc7a9b96b4" compoundref="_users_8java" startline="503" endline="505">coms309.Users.Users.getRole</references>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_user_controller_1a5c81d4016bb038d21cf4280d7ca36e85" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcoms309_1_1_users_1_1_users" kindref="compound">Users</ref></type>
+        <definition>MutationMapping public Users coms309.Users.UserController::deleteUser</definition>
+        <argsstring>(@Argument int id, @Argument String email, @Argument String password)</argsstring>
+        <name>deleteUser</name>
+        <qualifiedname>coms309.Users.UserController.deleteUser</qualifiedname>
+        <param>
+          <type>@Argument int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>@Argument String</type>
+          <declname>email</declname>
+        </param>
+        <param>
+          <type>@Argument String</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+<para>Deletes the user. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>NotFoundException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when the requested element is not present. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when an exception error condition occurs.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>email</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The email. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The password.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The Users.</para>
+</simplesect>
+<simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>NotFoundException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when the requested element is not present. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when an exception error condition occurs.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>email</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The email. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The password.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The Users. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" line="810" column="18" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" bodystart="810" bodyend="833"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_user_controller_1a791c7e700ba5c3148bf3d8357ddea9ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Flux&lt; String &gt;</type>
+        <definition>SubscriptionMapping public Flux&lt; String &gt; coms309.Users.UserController::greetings</definition>
+        <argsstring>()</argsstring>
+        <name>greetings</name>
+        <qualifiedname>coms309.Users.UserController.greetings</qualifiedname>
+        <briefdescription>
+<para>Example to test with... </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the greetings.</para>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>A Flux&lt;String&gt;</para>
+</simplesect>
+<simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023</para>
+</simplesect>
+<simplesect kind="return"><para>A Flux&lt;String&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" line="889" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" bodystart="889" bodyend="895"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_user_controller_1a0413f6c2a73a72bb17d9dfafe6715aa2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Publisher&lt; <ref refid="classcoms309_1_1_users_1_1_users" kindref="compound">Users</ref> &gt;</type>
+        <definition>SubscriptionMapping public Publisher&lt; Users &gt; coms309.Users.UserController::greetings2</definition>
+        <argsstring>()</argsstring>
+        <name>greetings2</name>
+        <qualifiedname>coms309.Users.UserController.greetings2</qualifiedname>
+        <briefdescription>
+<para>Greetings 2. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023</para>
+</simplesect>
+<simplesect kind="return"><para>A Publisher&lt;Users&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" line="909" column="22" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" bodystart="909" bodyend="914"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_user_controller_1ac8ca53d16a566e6325c3d9e5392b3f9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>public boolean coms309.Users.UserController::doesEmailExist</definition>
+        <argsstring>(String email)</argsstring>
+        <name>doesEmailExist</name>
+        <qualifiedname>coms309.Users.UserController.doesEmailExist</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>email</declname>
+        </param>
+        <briefdescription>
+<para>Query if &apos;email&apos; does email exist. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>email</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The email.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if it succeeds, false if it fails.</para>
+</simplesect>
+<simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>email</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The email.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if it succeeds, false if it fails. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" line="943" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" bodystart="943" bodyend="946"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_users_1_1_user_controller_1af52bfc2347fe3d4d68d89723dfe43526" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GraphQLError</type>
+        <definition>GraphQlExceptionHandler public GraphQLError coms309.Users.UserController::handle</definition>
+        <argsstring>(BindException ex)</argsstring>
+        <name>handle</name>
+        <qualifiedname>coms309.Users.UserController.handle</qualifiedname>
+        <param>
+          <type>BindException</type>
+          <declname>ex</declname>
+        </param>
+        <briefdescription>
+<para>Handles. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Details of the exception.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A GraphQLError.</para>
+</simplesect>
+<simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Details of the exception.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A GraphQLError. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" line="976" column="25" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" bodystart="976" bodyend="978"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The coms 309. auth. authentication. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A controller for handling users.</para>
+<para>The coms 309. comment. comment</para>
+<para>The coms 309. comment. comment repository</para>
+<para>The coms 309. email. email sender</para>
+<para>The coms 309. enums. permission.permission</para>
+<para>The coms 309. exceptions. duplicate exception</para>
+<para>The coms 309. exceptions. not found exception</para>
+<para>The coms 309. game post. game post</para>
+<para>The coms 309. game post. game post repository</para>
+<para>The coms 309. location. location</para>
+<para>The coms 309. skill level. skill level</para>
+<para>The coms 309. skill level. skill level repository</para>
+<para>The coms 309. sport. sport</para>
+<para>The coms 309. sport. sport repository</para>
+<para>The graphql. graph ql error</para>
+<para>The reactor.core.publisher. flux</para>
+<para>The reactor.core.publisher. mono</para>
+<para>The org.springframework.beans.factory.annotation. autowired</para>
+<para>The org.springframework.graphql.data.method.annotation. argument</para>
+<para>The org.springframework.graphql.data.method.annotation. graph ql exception handler</para>
+<para>The org.springframework.graphql.data.method.annotation. mutation mapping</para>
+<para>The org.springframework.graphql.data.method.annotation. query mapping</para>
+<para>The org.springframework.graphql.data.method.annotation. subscription mapping</para>
+<para>Type of the org.springframework.graphql.execution. error</para>
+<para>The org.springframework.stereotype. controller</para>
+<para>The org.reactivestreams. publisher</para>
+<para>The org.slf 4j. logger</para>
+<para>The org.slf 4j. logger factory</para>
+<para>The java.net. bind exception</para>
+<para>Duration of the java.time.</para>
+<para>The java.util.*</para>
+<para>The lombok. all arguments constructor</para>
+<para>Information describing the lombok.</para>
+<para>The lombok. no arguments constructor</para>
+<para>The lombok.extern.slf 4j. slf 4j</para>
+<para>The org.springframework.boot. spring application</para>
+<para>The org.springframework.boot.autoconfigure. spring boot application</para>
+<para>The org.springframework.context.annotation. bean</para>
+<para>The org.springframework.context.annotation. configuration</para>
+<para>Identifier for the org.springframework.data.annotation.</para>
+<para>The org.springframework.data.repository.reactive. reactive crud repository</para>
+<para>The org.springframework.graphql.client. HTTP graph ql client</para>
+<para>The org.springframework.graphql.data.method.annotation.*</para>
+<para>The org.springframework.graphql.server. web graph ql interceptor</para>
+<para>The org.springframework.graphql.server. web graph ql request</para>
+<para>The org.springframework.graphql.server. web graph ql response</para>
+<para>The org.springframework.stereotype. component</para>
+<para>The org.springframework.web.bind.annotation. get mapping</para>
+<para>The org.springframework.web.bind.annotation. REST controller</para>
+<para>The lombok. getter</para>
+<para>The lombok. setter</para>
+<para>Set the java.util. hash belongs to</para>
+<para>The java.util. objects</para>
+<para>Set the java.util. belongs to</para>
+<para>List of java.util. arrays</para>
+<para>Collection of java.util.s</para>
+<para>List of java.util.s</para>
+<para>The java.util. map</para>
+<para>The java.util.function. function</para>
+<para>A controller for handling users.</para>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>JpaRepository&lt; Users, Integer &gt;</label>
+      </node>
+      <node id="1">
+        <label>coms309.Users.UserController</label>
+        <link refid="classcoms309_1_1_users_1_1_user_controller"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>~userRepository</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>~usersPublisher</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>coms309.Users.UserRepository</label>
+        <link refid="interfacecoms309_1_1_users_1_1_user_repository"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>coms309.Users.UsersPublisher</label>
+        <link refid="classcoms309_1_1_users_1_1_users_publisher"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" line="152" column="7" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Users/UserController.java" bodystart="152" bodyend="979"/>
+    <listofallmembers>
+      <member refid="classcoms309_1_1_users_1_1_user_controller_1a45e4ca881714fde209b2ce7f24e3bd3f" prot="package" virt="non-virtual"><scope>coms309::Users::UserController</scope><name>commentRepository</name></member>
+      <member refid="classcoms309_1_1_users_1_1_user_controller_1a78f0085408943daa6614318d6d326d6e" prot="public" virt="non-virtual"><scope>coms309::Users::UserController</scope><name>createDummyData</name></member>
+      <member refid="classcoms309_1_1_users_1_1_user_controller_1a5c81d4016bb038d21cf4280d7ca36e85" prot="public" virt="non-virtual"><scope>coms309::Users::UserController</scope><name>deleteUser</name></member>
+      <member refid="classcoms309_1_1_users_1_1_user_controller_1ac8ca53d16a566e6325c3d9e5392b3f9c" prot="public" virt="non-virtual"><scope>coms309::Users::UserController</scope><name>doesEmailExist</name></member>
+      <member refid="classcoms309_1_1_users_1_1_user_controller_1ab4239e6fc95b0c9a9abe53a5e2f29b25" prot="package" virt="non-virtual"><scope>coms309::Users::UserController</scope><name>gamePostRepository</name></member>
+      <member refid="classcoms309_1_1_users_1_1_user_controller_1af77bb8407daf80d1ac85649ed8dae69a" prot="public" virt="non-virtual"><scope>coms309::Users::UserController</scope><name>getAllUsers</name></member>
+      <member refid="classcoms309_1_1_users_1_1_user_controller_1a54aee816f10e06b95d3ee0e6db61181a" prot="public" virt="non-virtual"><scope>coms309::Users::UserController</scope><name>getUserByEmail</name></member>
+      <member refid="classcoms309_1_1_users_1_1_user_controller_1a202fad0e09356aef167af14fa2d8d26a" prot="public" virt="non-virtual"><scope>coms309::Users::UserController</scope><name>getUserById</name></member>
+      <member refid="classcoms309_1_1_users_1_1_user_controller_1a98878f05406359f0372c930f085948d2" prot="public" virt="non-virtual"><scope>coms309::Users::UserController</scope><name>getUserRole</name></member>
+      <member refid="classcoms309_1_1_users_1_1_user_controller_1a791c7e700ba5c3148bf3d8357ddea9ee" prot="public" virt="non-virtual"><scope>coms309::Users::UserController</scope><name>greetings</name></member>
+      <member refid="classcoms309_1_1_users_1_1_user_controller_1a0413f6c2a73a72bb17d9dfafe6715aa2" prot="public" virt="non-virtual"><scope>coms309::Users::UserController</scope><name>greetings2</name></member>
+      <member refid="classcoms309_1_1_users_1_1_user_controller_1af52bfc2347fe3d4d68d89723dfe43526" prot="public" virt="non-virtual"><scope>coms309::Users::UserController</scope><name>handle</name></member>
+      <member refid="classcoms309_1_1_users_1_1_user_controller_1a3913afae007d87465e05ba97672359ed" prot="private" virt="non-virtual"><scope>coms309::Users::UserController</scope><name>logger</name></member>
+      <member refid="classcoms309_1_1_users_1_1_user_controller_1a46dfe268d2928b54016e3373554a74c1" prot="package" virt="non-virtual"><scope>coms309::Users::UserController</scope><name>skillLevelRepository</name></member>
+      <member refid="classcoms309_1_1_users_1_1_user_controller_1aa413f9320fc38e9936f6d930dc719652" prot="package" virt="non-virtual"><scope>coms309::Users::UserController</scope><name>sportRepository</name></member>
+      <member refid="classcoms309_1_1_users_1_1_user_controller_1a8fdc30827c2cca5d673cd3f0334002b0" prot="package" virt="non-virtual"><scope>coms309::Users::UserController</scope><name>userRepository</name></member>
+      <member refid="classcoms309_1_1_users_1_1_user_controller_1a1ea145661c33c9a21a5396dbd6041be4" prot="package" virt="non-virtual"><scope>coms309::Users::UserController</scope><name>usersPublisher</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,366 @@
+\doxysection{coms309.\+Game\+Post.\+Game\+Post\+Controller Class Reference}
+\hypertarget{classcoms309_1_1_game_post_1_1_game_post_controller}{}\label{classcoms309_1_1_game_post_1_1_game_post_controller}\index{coms309.GamePost.GamePostController@{coms309.GamePost.GamePostController}}
+
+
+The coms 309. auth. authentication.  
+
+
+
+
+Collaboration diagram for coms309.\+Game\+Post.\+Game\+Post\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classcoms309_1_1_game_post_1_1_game_post_controller__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post}{Game\+Post}} $>$ \mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_controller_a82d45e644b834a731aceda454fe6376d}{get\+All\+Game\+Posts}} ()
+\begin{DoxyCompactList}\small\item\em Gets all game posts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post}{Game\+Post}} \mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_controller_a260ca43f5eaf7ce11f3d2f1c4a37c0ff}{get\+Game\+Post\+By\+Id}} (@Argument int id)
+\begin{DoxyCompactList}\small\item\em Gets game post by identifier. \end{DoxyCompactList}\item 
+Set$<$ Users $>$ \mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_controller_a09ba57be08ea82320cc55760bc10f95f}{get\+Users\+Playing}} (@Argument int game\+Post\+ID)
+\begin{DoxyCompactList}\small\item\em Gets users playing. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_controller_a44f16301cfe929f6f71b220a6fcd99af}{delete\+All\+Game\+Posts}} (@Argument String email, @Argument String password)
+\begin{DoxyCompactList}\small\item\em Deletes all game posts. \end{DoxyCompactList}\item 
+Flux$<$ Integer $>$ \mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_controller_ad1439a717601e47a319d1cd30b5c9146}{get\+Comment\+By\+Post}} (int game\+Post\+Id)
+\begin{DoxyCompactList}\small\item\em Gets comment by post. \end{DoxyCompactList}\item 
+Publisher$<$ \mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post}{Game\+Post}} $>$ \mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_controller_a1cf6f9618bec10c3d06240b60c338b70}{sub\+Game\+Post}} ()
+\begin{DoxyCompactList}\small\item\em Sub game post. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The coms 309. auth. authentication. 
+
+A controller for handling game posts.
+
+The coms 309. exceptions. duplicate exception
+
+The coms 309. exceptions. not found exception
+
+The coms 309. location. location
+
+The coms 309. location. location repository
+
+The coms 309. sport. sport
+
+The coms 309. sport. sport repository
+
+The coms 309. users. users
+
+The graphql.\+com.\+google.\+common.\+base. optional
+
+The coms 309. comment. comment
+
+The coms 309. comment. comment repository
+
+The coms 309. users. user repository
+
+The org.\+springframework.\+beans.\+factory.\+annotation. autowired
+
+The org.\+springframework.\+graphql.\+data.\+method.\+annotation. argument
+
+The org.\+springframework.\+graphql.\+data.\+method.\+annotation. mutation mapping
+
+The org.\+springframework.\+graphql.\+data.\+method.\+annotation. query mapping
+
+The org.\+springframework.\+graphql.\+data.\+method.\+annotation. subscription mapping
+
+The org.\+springframework.\+stereotype. controller
+
+The reactor.\+core.\+publisher. flux
+
+The reactor.\+core.\+publisher. flux sink
+
+The reactor.\+core.\+publisher. mono
+
+Stack of org.\+hibernate.\+internal.\+util.\+collections.\+s
+
+The org.\+reactivestreams. publisher
+
+List of java.\+util. arrays
+
+List of java.\+util.\+s
+
+Set the java.\+util. belongs to
+
+Duration of the java.\+time.
+
+A controller for handling game posts.
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/30/2023 
+\end{DoxyDate}
+
+
+Definition at line \mbox{\hyperlink{_game_post_controller_8java_source_l00083}{83}} of file \mbox{\hyperlink{_game_post_controller_8java_source}{Game\+Post\+Controller.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcoms309_1_1_game_post_1_1_game_post_controller_a44f16301cfe929f6f71b220a6fcd99af}\label{classcoms309_1_1_game_post_1_1_game_post_controller_a44f16301cfe929f6f71b220a6fcd99af} 
+\index{coms309.GamePost.GamePostController@{coms309.GamePost.GamePostController}!deleteAllGamePosts@{deleteAllGamePosts}}
+\index{deleteAllGamePosts@{deleteAllGamePosts}!coms309.GamePost.GamePostController@{coms309.GamePost.GamePostController}}
+\doxysubsubsection{\texorpdfstring{deleteAllGamePosts()}{deleteAllGamePosts()}}
+{\footnotesize\ttfamily Mutation\+Mapping public String coms309.\+Game\+Post.\+Game\+Post\+Controller.\+delete\+All\+Game\+Posts (\begin{DoxyParamCaption}\item[{@Argument String}]{email,  }\item[{@Argument String}]{password }\end{DoxyParamCaption})}
+
+
+
+Deletes all game posts. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em email} & The email. \\
+\hline
+{\em password} & The password.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A String.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/30/2023
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em email} & The email. \\
+\hline
+{\em password} & The password.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A String. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_game_post_controller_8java_source_l00602}{602}} of file \mbox{\hyperlink{_game_post_controller_8java_source}{Game\+Post\+Controller.\+java}}.
+
+\Hypertarget{classcoms309_1_1_game_post_1_1_game_post_controller_a82d45e644b834a731aceda454fe6376d}\label{classcoms309_1_1_game_post_1_1_game_post_controller_a82d45e644b834a731aceda454fe6376d} 
+\index{coms309.GamePost.GamePostController@{coms309.GamePost.GamePostController}!getAllGamePosts@{getAllGamePosts}}
+\index{getAllGamePosts@{getAllGamePosts}!coms309.GamePost.GamePostController@{coms309.GamePost.GamePostController}}
+\doxysubsubsection{\texorpdfstring{getAllGamePosts()}{getAllGamePosts()}}
+{\footnotesize\ttfamily Query\+Mapping public List$<$ \mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post}{Game\+Post}} $>$ coms309.\+Game\+Post.\+Game\+Post\+Controller.\+get\+All\+Game\+Posts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets all game posts. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+List\texorpdfstring{$<$}{<}Game\+Post\texorpdfstring{$>$}{>}
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/30/2023
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+all game posts. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_game_post_controller_8java_source_l00200}{200}} of file \mbox{\hyperlink{_game_post_controller_8java_source}{Game\+Post\+Controller.\+java}}.
+
+\Hypertarget{classcoms309_1_1_game_post_1_1_game_post_controller_ad1439a717601e47a319d1cd30b5c9146}\label{classcoms309_1_1_game_post_1_1_game_post_controller_ad1439a717601e47a319d1cd30b5c9146} 
+\index{coms309.GamePost.GamePostController@{coms309.GamePost.GamePostController}!getCommentByPost@{getCommentByPost}}
+\index{getCommentByPost@{getCommentByPost}!coms309.GamePost.GamePostController@{coms309.GamePost.GamePostController}}
+\doxysubsubsection{\texorpdfstring{getCommentByPost()}{getCommentByPost()}}
+{\footnotesize\ttfamily Subscription\+Mapping public Flux$<$ Integer $>$ coms309.\+Game\+Post.\+Game\+Post\+Controller.\+get\+Comment\+By\+Post (\begin{DoxyParamCaption}\item[{int}]{game\+Post\+Id }\end{DoxyParamCaption})}
+
+
+
+Gets comment by post. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Post\+Id} & Identifier for the game post. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+
+The comment by post.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/30/2023
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Post\+Id} & Identifier for the game post.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The comment by post. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_game_post_controller_8java_source_l00645}{645}} of file \mbox{\hyperlink{_game_post_controller_8java_source}{Game\+Post\+Controller.\+java}}.
+
+\Hypertarget{classcoms309_1_1_game_post_1_1_game_post_controller_a260ca43f5eaf7ce11f3d2f1c4a37c0ff}\label{classcoms309_1_1_game_post_1_1_game_post_controller_a260ca43f5eaf7ce11f3d2f1c4a37c0ff} 
+\index{coms309.GamePost.GamePostController@{coms309.GamePost.GamePostController}!getGamePostById@{getGamePostById}}
+\index{getGamePostById@{getGamePostById}!coms309.GamePost.GamePostController@{coms309.GamePost.GamePostController}}
+\doxysubsubsection{\texorpdfstring{getGamePostById()}{getGamePostById()}}
+{\footnotesize\ttfamily Query\+Mapping public \mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post}{Game\+Post}} coms309.\+Game\+Post.\+Game\+Post\+Controller.\+get\+Game\+Post\+By\+Id (\begin{DoxyParamCaption}\item[{@Argument int}]{id }\end{DoxyParamCaption})}
+
+
+
+Gets game post by identifier. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Found\+Exception} & Thrown when the requested element is not present.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & .\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Game\+Post.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/30/2023
+\end{DoxyDate}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Found\+Exception} & Thrown when the requested element is not present.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The identifier.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The game post by identifier. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_game_post_controller_8java_source_l00237}{237}} of file \mbox{\hyperlink{_game_post_controller_8java_source}{Game\+Post\+Controller.\+java}}.
+
+\Hypertarget{classcoms309_1_1_game_post_1_1_game_post_controller_a09ba57be08ea82320cc55760bc10f95f}\label{classcoms309_1_1_game_post_1_1_game_post_controller_a09ba57be08ea82320cc55760bc10f95f} 
+\index{coms309.GamePost.GamePostController@{coms309.GamePost.GamePostController}!getUsersPlaying@{getUsersPlaying}}
+\index{getUsersPlaying@{getUsersPlaying}!coms309.GamePost.GamePostController@{coms309.GamePost.GamePostController}}
+\doxysubsubsection{\texorpdfstring{getUsersPlaying()}{getUsersPlaying()}}
+{\footnotesize\ttfamily Query\+Mapping public Set$<$ Users $>$ coms309.\+Game\+Post.\+Game\+Post\+Controller.\+get\+Users\+Playing (\begin{DoxyParamCaption}\item[{@Argument int}]{game\+Post\+ID }\end{DoxyParamCaption})}
+
+
+
+Gets users playing. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Found\+Exception} & Thrown when the requested element is not present.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Post\+ID} & Identifier for the game post.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The users playing.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/30/2023
+\end{DoxyDate}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Found\+Exception} & Thrown when the requested element is not present.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Post\+ID} & Identifier for the game post.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The users playing. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_game_post_controller_8java_source_l00279}{279}} of file \mbox{\hyperlink{_game_post_controller_8java_source}{Game\+Post\+Controller.\+java}}.
+
+\Hypertarget{classcoms309_1_1_game_post_1_1_game_post_controller_a1cf6f9618bec10c3d06240b60c338b70}\label{classcoms309_1_1_game_post_1_1_game_post_controller_a1cf6f9618bec10c3d06240b60c338b70} 
+\index{coms309.GamePost.GamePostController@{coms309.GamePost.GamePostController}!subGamePost@{subGamePost}}
+\index{subGamePost@{subGamePost}!coms309.GamePost.GamePostController@{coms309.GamePost.GamePostController}}
+\doxysubsubsection{\texorpdfstring{subGamePost()}{subGamePost()}}
+{\footnotesize\ttfamily Subscription\+Mapping public Publisher$<$ \mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post}{Game\+Post}} $>$ coms309.\+Game\+Post.\+Game\+Post\+Controller.\+sub\+Game\+Post (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sub game post. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/30/2023
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+A Publisher\texorpdfstring{$<$}{<}Game\+Post\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_game_post_controller_8java_source_l00680}{680}} of file \mbox{\hyperlink{_game_post_controller_8java_source}{Game\+Post\+Controller.\+java}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Arie/\+Develop/hb\+\_\+215/\+Backend/src/main/java/coms309/\+Game\+Post/\mbox{\hyperlink{_game_post_controller_8java}{Game\+Post\+Controller.\+java}}\end{DoxyCompactItemize}

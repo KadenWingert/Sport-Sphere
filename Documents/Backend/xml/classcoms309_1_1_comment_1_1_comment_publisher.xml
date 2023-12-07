@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcoms309_1_1_comment_1_1_comment_publisher" kind="class" language="Java" prot="public">
+    <compoundname>coms309::Comment::CommentPublisher</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcoms309_1_1_comment_1_1_comment_publisher_1a601fc0ce4cbe73acb60c4b0af7aaa864" prot="private" static="no" mutable="no">
+        <type>final FluxProcessor&lt; <ref refid="classcoms309_1_1_comment_1_1_comment" kindref="compound">Comment</ref>, <ref refid="classcoms309_1_1_comment_1_1_comment" kindref="compound">Comment</ref> &gt;</type>
+        <definition>private final FluxProcessor&lt; Comment, Comment &gt; coms309.Comment.CommentPublisher::processor</definition>
+        <argsstring></argsstring>
+        <name>processor</name>
+        <qualifiedname>coms309.Comment.CommentPublisher.processor</qualifiedname>
+        <briefdescription>
+<para>Gets the processor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The processor. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentPublisher.java" line="35" column="33" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentPublisher.java" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_comment_1_1_comment_publisher_1adc0f4cd7d8ffd970ec147b0352967eb5" prot="private" static="no" mutable="no">
+        <type>final FluxSink&lt; <ref refid="classcoms309_1_1_comment_1_1_comment" kindref="compound">Comment</ref> &gt;</type>
+        <definition>private final FluxSink&lt; Comment &gt; coms309.Comment.CommentPublisher::sink</definition>
+        <argsstring></argsstring>
+        <name>sink</name>
+        <qualifiedname>coms309.Comment.CommentPublisher.sink</qualifiedname>
+        <briefdescription>
+<para>Gets the sink. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The sink. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentPublisher.java" line="45" column="28" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentPublisher.java" bodystart="45" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcoms309_1_1_comment_1_1_comment_publisher_1a289111bbacb2fb873ba3bfaaec4ba3a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>public coms309.Comment.CommentPublisher::CommentPublisher</definition>
+        <argsstring>()</argsstring>
+        <name>CommentPublisher</name>
+        <qualifiedname>coms309.Comment.CommentPublisher.CommentPublisher</qualifiedname>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentPublisher.java" line="56" column="12" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentPublisher.java" bodystart="56" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_comment_1_1_comment_publisher_1ad156026ec9394818eade144baa2cb794" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void coms309.Comment.CommentPublisher::publish</definition>
+        <argsstring>(Comment comment)</argsstring>
+        <name>publish</name>
+        <qualifiedname>coms309.Comment.CommentPublisher.publish</qualifiedname>
+        <param>
+          <type><ref refid="classcoms309_1_1_comment_1_1_comment" kindref="compound">Comment</ref></type>
+          <declname>comment</declname>
+        </param>
+        <briefdescription>
+<para>Publishes the given comment. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>comment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The comment. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentPublisher.java" line="72" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentPublisher.java" bodystart="72" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_comment_1_1_comment_publisher_1aa71eabd2b0fc8d3f77240843c09406e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Publisher&lt; <ref refid="classcoms309_1_1_comment_1_1_comment" kindref="compound">Comment</ref> &gt;</type>
+        <definition>public Publisher&lt; Comment &gt; coms309.Comment.CommentPublisher::subCommentsById</definition>
+        <argsstring>(int id)</argsstring>
+        <name>subCommentsById</name>
+        <qualifiedname>coms309.Comment.CommentPublisher.subCommentsById</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Sub comments by identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A Publisher&lt;Comment&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentPublisher.java" line="89" column="22" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentPublisher.java" bodystart="89" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_comment_1_1_comment_publisher_1ac5e80fcd9137338c7cda9b7a93e43788" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Publisher&lt; <ref refid="classcoms309_1_1_comment_1_1_comment" kindref="compound">Comment</ref> &gt;</type>
+        <definition>public Publisher&lt; Comment &gt; coms309.Comment.CommentPublisher::subComments</definition>
+        <argsstring>()</argsstring>
+        <name>subComments</name>
+        <qualifiedname>coms309.Comment.CommentPublisher.subComments</qualifiedname>
+        <briefdescription>
+<para>Sub comments. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023</para>
+</simplesect>
+<simplesect kind="return"><para>A Publisher&lt;Comment&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentPublisher.java" line="106" column="22" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentPublisher.java" bodystart="106" bodyend="110"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The org.reactivestreams. publisher. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The org.springframework.stereotype. component</para>
+<para>The reactor.core.publisher. direct processor</para>
+<para>The reactor.core.publisher. flux processor</para>
+<para>The reactor.core.publisher. flux sink</para>
+<para>A comment publisher.</para>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/30/2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>coms309.Comment.CommentPublisher</label>
+        <link refid="classcoms309_1_1_comment_1_1_comment_publisher"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentPublisher.java" line="25" column="7" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Comment/CommentPublisher.java" bodystart="25" bodyend="112"/>
+    <listofallmembers>
+      <member refid="classcoms309_1_1_comment_1_1_comment_publisher_1a289111bbacb2fb873ba3bfaaec4ba3a6" prot="public" virt="non-virtual"><scope>coms309::Comment::CommentPublisher</scope><name>CommentPublisher</name></member>
+      <member refid="classcoms309_1_1_comment_1_1_comment_publisher_1a601fc0ce4cbe73acb60c4b0af7aaa864" prot="private" virt="non-virtual"><scope>coms309::Comment::CommentPublisher</scope><name>processor</name></member>
+      <member refid="classcoms309_1_1_comment_1_1_comment_publisher_1ad156026ec9394818eade144baa2cb794" prot="public" virt="non-virtual"><scope>coms309::Comment::CommentPublisher</scope><name>publish</name></member>
+      <member refid="classcoms309_1_1_comment_1_1_comment_publisher_1adc0f4cd7d8ffd970ec147b0352967eb5" prot="private" virt="non-virtual"><scope>coms309::Comment::CommentPublisher</scope><name>sink</name></member>
+      <member refid="classcoms309_1_1_comment_1_1_comment_publisher_1ac5e80fcd9137338c7cda9b7a93e43788" prot="public" virt="non-virtual"><scope>coms309::Comment::CommentPublisher</scope><name>subComments</name></member>
+      <member refid="classcoms309_1_1_comment_1_1_comment_publisher_1aa71eabd2b0fc8d3f77240843c09406e7" prot="public" virt="non-virtual"><scope>coms309::Comment::CommentPublisher</scope><name>subCommentsById</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:id="@+id/linearLayout"
+    >
+
+    <Button
+        android:id="@+id/btnBackToHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:padding="8dp"
+        android:background="@drawable/ic_back_to_home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--    <Switch-->
+<!--        android:id="@+id/themeSwitch"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="100dp"-->
+<!--        android:layout_marginRight="140dp"-->
+<!--        android:gravity="center"-->
+<!--        android:padding="8dp"-->
+<!--        android:text="Dark Mode"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        />-->
+
+    <Button
+        android:id="@+id/btnDeleteAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="DELETE ACCOUNT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/adminSettings"
+        android:layout_width="141dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginRight="132dp"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:text="Admin Settings"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#000000"
+        android:textColorLink="@color/blue4"
+        android:textSize="16dp"/>
+
+    <Button
+        android:id="@+id/logOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="Log out"
+        app:layout_constraintBottom_toTopOf="@+id/btnDeleteAccount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminSettings" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

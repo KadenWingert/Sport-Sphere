@@ -1,0 +1,386 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcom_1_1mockito_1_1_sport_controller_test" kind="class" language="Java" prot="package">
+    <compoundname>com::mockito::SportControllerTest</compoundname>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1mockito_1_1_sport_controller_test_1a77e6798ca4381dcf4a57ed5d38943964" prot="package" static="no" mutable="no">
+        <type>SportController</type>
+        <definition>SportController com.mockito.SportControllerTest.sportController</definition>
+        <argsstring></argsstring>
+        <name>sportController</name>
+        <qualifiedname>com.mockito.SportControllerTest.sportController</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" line="26" column="21" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1mockito_1_1_sport_controller_test_1a5430ebf6aaeb0022f3d910a3c80193c0" prot="package" static="no" mutable="no">
+        <type>GamePostRepository</type>
+        <definition>GamePostRepository com.mockito.SportControllerTest.gamePostRepository</definition>
+        <argsstring></argsstring>
+        <name>gamePostRepository</name>
+        <qualifiedname>com.mockito.SportControllerTest.gamePostRepository</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" line="29" column="24" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1mockito_1_1_sport_controller_test_1a88bb14e4857659b6aff437612c3e7be8" prot="package" static="no" mutable="no">
+        <type>UserRepository</type>
+        <definition>UserRepository com.mockito.SportControllerTest.userRepository</definition>
+        <argsstring></argsstring>
+        <name>userRepository</name>
+        <qualifiedname>com.mockito.SportControllerTest.userRepository</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" line="31" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1mockito_1_1_sport_controller_test_1a4f27a40bdf61b93390c097f39274a6e4" prot="package" static="no" mutable="no">
+        <type>SportRepository</type>
+        <definition>SportRepository com.mockito.SportControllerTest.sportRepository</definition>
+        <argsstring></argsstring>
+        <name>sportRepository</name>
+        <qualifiedname>com.mockito.SportControllerTest.sportRepository</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" line="33" column="21" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1mockito_1_1_sport_controller_test_1af161d43c63291404bb66fc43d23935a1" prot="package" static="no" mutable="no">
+        <type>SkillLevelRepository</type>
+        <definition>SkillLevelRepository com.mockito.SportControllerTest.skillLevelRepository</definition>
+        <argsstring></argsstring>
+        <name>skillLevelRepository</name>
+        <qualifiedname>com.mockito.SportControllerTest.skillLevelRepository</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" line="35" column="26" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1mockito_1_1_sport_controller_test_1a6223fefd643bc4864097f9fd6dc7bf4a" prot="private" static="no" mutable="no">
+        <type>GamePost</type>
+        <definition>GamePost com.mockito.SportControllerTest.gp1</definition>
+        <argsstring></argsstring>
+        <name>gp1</name>
+        <qualifiedname>com.mockito.SportControllerTest.gp1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" line="37" column="22" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1mockito_1_1_sport_controller_test_1a3cc82e7fb75b8bc230358adb8d66dc8e" prot="private" static="no" mutable="no">
+        <type>GamePost</type>
+        <definition>GamePost com.mockito.SportControllerTest.gp2</definition>
+        <argsstring></argsstring>
+        <name>gp2</name>
+        <qualifiedname>com.mockito.SportControllerTest.gp2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" line="37" column="26" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1mockito_1_1_sport_controller_test_1ab2fb5a954f6af8a9aa3d939260c64f05" prot="private" static="no" mutable="no">
+        <type>GamePost</type>
+        <definition>GamePost com.mockito.SportControllerTest.gp3</definition>
+        <argsstring></argsstring>
+        <name>gp3</name>
+        <qualifiedname>com.mockito.SportControllerTest.gp3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" line="37" column="30" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1mockito_1_1_sport_controller_test_1a495fc18b304c9cfc4ebca65d5edb3e11" prot="private" static="no" mutable="no">
+        <type>GamePost</type>
+        <definition>GamePost com.mockito.SportControllerTest.gp4</definition>
+        <argsstring></argsstring>
+        <name>gp4</name>
+        <qualifiedname>com.mockito.SportControllerTest.gp4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" line="37" column="34" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1mockito_1_1_sport_controller_test_1aca68466105ddb234129fd2a5504b28be" prot="private" static="no" mutable="no">
+        <type>Users</type>
+        <definition>Users com.mockito.SportControllerTest.u1</definition>
+        <argsstring></argsstring>
+        <name>u1</name>
+        <qualifiedname>com.mockito.SportControllerTest.u1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" line="38" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1mockito_1_1_sport_controller_test_1a1f2a7048099d03a4c5bc1a3204260758" prot="private" static="no" mutable="no">
+        <type>Users</type>
+        <definition>Users com.mockito.SportControllerTest.u2</definition>
+        <argsstring></argsstring>
+        <name>u2</name>
+        <qualifiedname>com.mockito.SportControllerTest.u2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" line="38" column="22" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1mockito_1_1_sport_controller_test_1a4366cec60f86d901fb0e4a8ca8908564" prot="private" static="no" mutable="no">
+        <type>Sport</type>
+        <definition>Sport com.mockito.SportControllerTest.s1</definition>
+        <argsstring></argsstring>
+        <name>s1</name>
+        <qualifiedname>com.mockito.SportControllerTest.s1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" line="39" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1mockito_1_1_sport_controller_test_1a86f69825968c4e6e5a027fd9c7e53a0e" prot="private" static="no" mutable="no">
+        <type>Sport</type>
+        <definition>Sport com.mockito.SportControllerTest.s2</definition>
+        <argsstring></argsstring>
+        <name>s2</name>
+        <qualifiedname>com.mockito.SportControllerTest.s2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" line="39" column="22" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1mockito_1_1_sport_controller_test_1a3325712cefea8a8d58dd484dd1e19f71" prot="private" static="no" mutable="no">
+        <type>Sport</type>
+        <definition>Sport com.mockito.SportControllerTest.s3</definition>
+        <argsstring></argsstring>
+        <name>s3</name>
+        <qualifiedname>com.mockito.SportControllerTest.s3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" line="39" column="25" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1mockito_1_1_sport_controller_test_1a6ec486e35dc13ec37b88fa597ad5d69e" prot="private" static="no" mutable="no">
+        <type>Sport</type>
+        <definition>Sport com.mockito.SportControllerTest.s4</definition>
+        <argsstring></argsstring>
+        <name>s4</name>
+        <qualifiedname>com.mockito.SportControllerTest.s4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" line="39" column="28" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1mockito_1_1_sport_controller_test_1aac25ce4be3143a7f09af6353c6fa7210" prot="private" static="no" mutable="no">
+        <type>SkillLevel</type>
+        <definition>SkillLevel com.mockito.SportControllerTest.sk1</definition>
+        <argsstring></argsstring>
+        <name>sk1</name>
+        <qualifiedname>com.mockito.SportControllerTest.sk1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" line="40" column="24" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" bodystart="40" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1mockito_1_1_sport_controller_test_1a91a6612d79283e82275c79ced70ded84" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.mockito.SportControllerTest.init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <qualifiedname>com.mockito.SportControllerTest.init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" line="43" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" bodystart="43" bodyend="72"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-func">
+      <memberdef kind="function" id="classcom_1_1mockito_1_1_sport_controller_test_1a6b4140393f3792e3e0c9c1d29a02560e" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.mockito.SportControllerTest.getAllSports</definition>
+        <argsstring>()</argsstring>
+        <name>getAllSports</name>
+        <qualifiedname>com.mockito.SportControllerTest.getAllSports</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" line="75" column="10" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" bodystart="75" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1mockito_1_1_sport_controller_test_1ad49c72f62d3c99df0ad7ab56d57cf96b" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.mockito.SportControllerTest.getSportById</definition>
+        <argsstring>()</argsstring>
+        <name>getSportById</name>
+        <qualifiedname>com.mockito.SportControllerTest.getSportById</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" line="91" column="10" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" bodystart="91" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1mockito_1_1_sport_controller_test_1a869a23f286d0098708ad4645201e5fe3" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.mockito.SportControllerTest.getAllGamePostsPlayingASport</definition>
+        <argsstring>()</argsstring>
+        <name>getAllGamePostsPlayingASport</name>
+        <qualifiedname>com.mockito.SportControllerTest.getAllGamePostsPlayingASport</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" line="99" column="10" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" bodystart="99" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1mockito_1_1_sport_controller_test_1a751becaa7786ce1b91024dc951f54912" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.mockito.SportControllerTest.createSport</definition>
+        <argsstring>()</argsstring>
+        <name>createSport</name>
+        <qualifiedname>com.mockito.SportControllerTest.createSport</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" line="114" column="10" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" bodystart="114" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1mockito_1_1_sport_controller_test_1ab1a21a518813f49dcb7451108ae41839" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.mockito.SportControllerTest.updateSport</definition>
+        <argsstring>()</argsstring>
+        <name>updateSport</name>
+        <qualifiedname>com.mockito.SportControllerTest.updateSport</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" line="136" column="10" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" bodystart="136" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1mockito_1_1_sport_controller_test_1af13c95b5664a5ab7809330c5e8a3ae66" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.mockito.SportControllerTest.deleteSportById</definition>
+        <argsstring>()</argsstring>
+        <name>deleteSportById</name>
+        <qualifiedname>com.mockito.SportControllerTest.deleteSportById</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" line="149" column="10" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" bodystart="149" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1mockito_1_1_sport_controller_test_1a7650e1cf83a1803c3cb2da508e4f7ad5" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.mockito.SportControllerTest.deleteAllSports</definition>
+        <argsstring>()</argsstring>
+        <name>deleteAllSports</name>
+        <qualifiedname>com.mockito.SportControllerTest.deleteAllSports</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" line="163" column="10" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" bodystart="163" bodyend="174"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>com.mockito.SportControllerTest</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" line="24" column="1" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/test/java/com/mockito/SportControllerTest.java" bodystart="24" bodyend="175"/>
+    <listofallmembers>
+      <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a751becaa7786ce1b91024dc951f54912" prot="package" virt="non-virtual"><scope>com::mockito::SportControllerTest</scope><name>createSport</name></member>
+      <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a7650e1cf83a1803c3cb2da508e4f7ad5" prot="package" virt="non-virtual"><scope>com::mockito::SportControllerTest</scope><name>deleteAllSports</name></member>
+      <member refid="classcom_1_1mockito_1_1_sport_controller_test_1af13c95b5664a5ab7809330c5e8a3ae66" prot="package" virt="non-virtual"><scope>com::mockito::SportControllerTest</scope><name>deleteSportById</name></member>
+      <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a5430ebf6aaeb0022f3d910a3c80193c0" prot="package" virt="non-virtual"><scope>com::mockito::SportControllerTest</scope><name>gamePostRepository</name></member>
+      <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a869a23f286d0098708ad4645201e5fe3" prot="package" virt="non-virtual"><scope>com::mockito::SportControllerTest</scope><name>getAllGamePostsPlayingASport</name></member>
+      <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a6b4140393f3792e3e0c9c1d29a02560e" prot="package" virt="non-virtual"><scope>com::mockito::SportControllerTest</scope><name>getAllSports</name></member>
+      <member refid="classcom_1_1mockito_1_1_sport_controller_test_1ad49c72f62d3c99df0ad7ab56d57cf96b" prot="package" virt="non-virtual"><scope>com::mockito::SportControllerTest</scope><name>getSportById</name></member>
+      <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a6223fefd643bc4864097f9fd6dc7bf4a" prot="private" virt="non-virtual"><scope>com::mockito::SportControllerTest</scope><name>gp1</name></member>
+      <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a3cc82e7fb75b8bc230358adb8d66dc8e" prot="private" virt="non-virtual"><scope>com::mockito::SportControllerTest</scope><name>gp2</name></member>
+      <member refid="classcom_1_1mockito_1_1_sport_controller_test_1ab2fb5a954f6af8a9aa3d939260c64f05" prot="private" virt="non-virtual"><scope>com::mockito::SportControllerTest</scope><name>gp3</name></member>
+      <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a495fc18b304c9cfc4ebca65d5edb3e11" prot="private" virt="non-virtual"><scope>com::mockito::SportControllerTest</scope><name>gp4</name></member>
+      <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a91a6612d79283e82275c79ced70ded84" prot="public" virt="non-virtual"><scope>com::mockito::SportControllerTest</scope><name>init</name></member>
+      <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a4366cec60f86d901fb0e4a8ca8908564" prot="private" virt="non-virtual"><scope>com::mockito::SportControllerTest</scope><name>s1</name></member>
+      <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a86f69825968c4e6e5a027fd9c7e53a0e" prot="private" virt="non-virtual"><scope>com::mockito::SportControllerTest</scope><name>s2</name></member>
+      <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a3325712cefea8a8d58dd484dd1e19f71" prot="private" virt="non-virtual"><scope>com::mockito::SportControllerTest</scope><name>s3</name></member>
+      <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a6ec486e35dc13ec37b88fa597ad5d69e" prot="private" virt="non-virtual"><scope>com::mockito::SportControllerTest</scope><name>s4</name></member>
+      <member refid="classcom_1_1mockito_1_1_sport_controller_test_1aac25ce4be3143a7f09af6353c6fa7210" prot="private" virt="non-virtual"><scope>com::mockito::SportControllerTest</scope><name>sk1</name></member>
+      <member refid="classcom_1_1mockito_1_1_sport_controller_test_1af161d43c63291404bb66fc43d23935a1" prot="package" virt="non-virtual"><scope>com::mockito::SportControllerTest</scope><name>skillLevelRepository</name></member>
+      <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a77e6798ca4381dcf4a57ed5d38943964" prot="package" virt="non-virtual"><scope>com::mockito::SportControllerTest</scope><name>sportController</name></member>
+      <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a4f27a40bdf61b93390c097f39274a6e4" prot="package" virt="non-virtual"><scope>com::mockito::SportControllerTest</scope><name>sportRepository</name></member>
+      <member refid="classcom_1_1mockito_1_1_sport_controller_test_1aca68466105ddb234129fd2a5504b28be" prot="private" virt="non-virtual"><scope>com::mockito::SportControllerTest</scope><name>u1</name></member>
+      <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a1f2a7048099d03a4c5bc1a3204260758" prot="private" virt="non-virtual"><scope>com::mockito::SportControllerTest</scope><name>u2</name></member>
+      <member refid="classcom_1_1mockito_1_1_sport_controller_test_1ab1a21a518813f49dcb7451108ae41839" prot="package" virt="non-virtual"><scope>com::mockito::SportControllerTest</scope><name>updateSport</name></member>
+      <member refid="classcom_1_1mockito_1_1_sport_controller_test_1a88bb14e4857659b6aff437612c3e7be8" prot="package" virt="non-virtual"><scope>com::mockito::SportControllerTest</scope><name>userRepository</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

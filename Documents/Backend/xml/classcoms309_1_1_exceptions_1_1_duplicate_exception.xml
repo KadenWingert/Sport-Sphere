@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcoms309_1_1_exceptions_1_1_duplicate_exception" kind="class" language="Java" prot="public">
+    <compoundname>coms309::Exceptions::DuplicateException</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">RuntimeException</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcoms309_1_1_exceptions_1_1_duplicate_exception_1a834ab0a935a9fa2ca8eb4dca9b9d5794" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>public coms309.Exceptions.DuplicateException::DuplicateException</definition>
+        <argsstring>(String message)</argsstring>
+        <name>DuplicateException</name>
+        <qualifiedname>coms309.Exceptions.DuplicateException.DuplicateException</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Exceptions/DuplicateException.java" line="28" column="12" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Exceptions/DuplicateException.java" bodystart="28" bodyend="28"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Exception for signalling duplicate errors. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>RuntimeException</label>
+      </node>
+      <node id="1">
+        <label>coms309.Exceptions.DuplicateException</label>
+        <link refid="classcoms309_1_1_exceptions_1_1_duplicate_exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>RuntimeException</label>
+      </node>
+      <node id="1">
+        <label>coms309.Exceptions.DuplicateException</label>
+        <link refid="classcoms309_1_1_exceptions_1_1_duplicate_exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Exceptions/DuplicateException.java" line="15" column="7" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Exceptions/DuplicateException.java" bodystart="15" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classcoms309_1_1_exceptions_1_1_duplicate_exception_1a834ab0a935a9fa2ca8eb4dca9b9d5794" prot="public" virt="non-virtual"><scope>coms309::Exceptions::DuplicateException</scope><name>DuplicateException</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

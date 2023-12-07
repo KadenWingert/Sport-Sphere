@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacecoms309_1_1_auth" kind="namespace" language="Java">
+    <compoundname>coms309::Auth</compoundname>
+    <innerclass refid="classcoms309_1_1_auth_1_1_auth" prot="public">coms309::Auth::Auth</innerclass>
+    <briefdescription>
+<para>The coms 309. authentication. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Auth/Auth.java" line="4" column="15"/>
+  </compounddef>
+</doxygen>

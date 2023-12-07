@@ -1,0 +1,444 @@
+\doxysection{coms309.\+Comment.\+Comment\+Controller Class Reference}
+\hypertarget{classcoms309_1_1_comment_1_1_comment_controller}{}\label{classcoms309_1_1_comment_1_1_comment_controller}\index{coms309.Comment.CommentController@{coms309.Comment.CommentController}}
+
+
+The coms 309. exceptions. not found exception.  
+
+
+
+
+Collaboration diagram for coms309.\+Comment.\+Comment\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcoms309_1_1_comment_1_1_comment_controller__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment}{Comment}} $>$ \mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment_controller_adcba0e094c7738cbcd02e6bb2a5562f5}{get\+All\+Comments}} ()
+\begin{DoxyCompactList}\small\item\em Gets all comments. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment}{Comment}} \mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment_controller_a14d97af2059f5e3cbb350a47183c2712}{get\+Comment\+By\+Id}} (@Argument int id)
+\begin{DoxyCompactList}\small\item\em Gets comment by identifier. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment}{Comment}} \mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment_controller_a4bc9ddca68590853c4b7119206475917}{create\+Comment}} (@Argument int game\+\_\+post\+\_\+id, @Argument String comment\+\_\+message)
+\begin{DoxyCompactList}\small\item\em Creates a comment. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment}{Comment}} \mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment_controller_a4f12259a206433b69ecf815be069cd33}{update\+Comment}} (@Argument int comment\+\_\+id, @Argument String new\+\_\+message)
+\begin{DoxyCompactList}\small\item\em Updates the comment. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment}{Comment}} \mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment_controller_a87958650336aab3325b98118dd31ef1e}{delete\+Comment\+By\+Id}} (@Argument int id)
+\begin{DoxyCompactList}\small\item\em Deletes the comment by identifier described by ID. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment_controller_ab7bf800d9d204b826513e8be670a2acf}{delete\+All\+Comments}} ()
+\begin{DoxyCompactList}\small\item\em Deletes all comments. \end{DoxyCompactList}\item 
+Publisher$<$ \mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment}{Comment}} $>$ \mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment_controller_a5ef6eb79525b68f0cea25063974cdc79}{sub\+Comments}} ()
+\begin{DoxyCompactList}\small\item\em Sub comments. \end{DoxyCompactList}\item 
+Publisher$<$ \mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment}{Comment}} $>$ \mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment_controller_a157eb4caec601748f631f80cabd2a117}{sub\+Comments\+By\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Sub comments by identifier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The coms 309. exceptions. not found exception. 
+
+A controller for handling comments.
+
+The coms 309. game post. game post
+
+The coms 309. game post. game post repository
+
+The reactor.\+core.\+publisher. flux
+
+The reactor.\+core.\+publisher. mono
+
+The org.\+checkerframework.\+checker.\+units.\+qual. a
+
+The org.\+reactivestreams. publisher
+
+The org.\+springframework.\+beans.\+factory.\+annotation. autowired
+
+The org.\+springframework.\+graphql.\+data.\+method.\+annotation. argument
+
+The org.\+springframework.\+graphql.\+data.\+method.\+annotation. mutation mapping
+
+The org.\+springframework.\+graphql.\+data.\+method.\+annotation. query mapping
+
+The org.\+springframework.\+graphql.\+data.\+method.\+annotation. subscription mapping
+
+The org.\+springframework.\+stereotype. component
+
+The org.\+springframework.\+stereotype. controller
+
+Duration of the java.\+time.
+
+List of java.\+util.\+s
+
+A controller for handling comments.
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/30/2023 
+\end{DoxyDate}
+
+
+Definition at line \mbox{\hyperlink{_comment_controller_8java_source_l00060}{60}} of file \mbox{\hyperlink{_comment_controller_8java_source}{Comment\+Controller.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcoms309_1_1_comment_1_1_comment_controller_a4bc9ddca68590853c4b7119206475917}\label{classcoms309_1_1_comment_1_1_comment_controller_a4bc9ddca68590853c4b7119206475917} 
+\index{coms309.Comment.CommentController@{coms309.Comment.CommentController}!createComment@{createComment}}
+\index{createComment@{createComment}!coms309.Comment.CommentController@{coms309.Comment.CommentController}}
+\doxysubsubsection{\texorpdfstring{createComment()}{createComment()}}
+{\footnotesize\ttfamily Mutation\+Mapping public \mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment}{Comment}} coms309.\+Comment.\+Comment\+Controller.\+create\+Comment (\begin{DoxyParamCaption}\item[{@Argument int}]{game\+\_\+post\+\_\+id,  }\item[{@Argument String}]{comment\+\_\+message }\end{DoxyParamCaption})}
+
+
+
+Creates a comment. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Found\+Exception} & Thrown when the requested element is not present.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em game\+\_\+post\+\_\+id} & Identifier for the game post. \\
+\hline
+{\em comment\+\_\+message} & Message describing the comment.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new comment.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/30/2023
+\end{DoxyDate}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Found\+Exception} & Thrown when the requested element is not present.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em game\+\_\+post\+\_\+id} & Identifier for the game post. \\
+\hline
+{\em comment\+\_\+message} & Message describing the comment.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new comment. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_comment_controller_8java_source_l00216}{216}} of file \mbox{\hyperlink{_comment_controller_8java_source}{Comment\+Controller.\+java}}.
+
+\Hypertarget{classcoms309_1_1_comment_1_1_comment_controller_ab7bf800d9d204b826513e8be670a2acf}\label{classcoms309_1_1_comment_1_1_comment_controller_ab7bf800d9d204b826513e8be670a2acf} 
+\index{coms309.Comment.CommentController@{coms309.Comment.CommentController}!deleteAllComments@{deleteAllComments}}
+\index{deleteAllComments@{deleteAllComments}!coms309.Comment.CommentController@{coms309.Comment.CommentController}}
+\doxysubsubsection{\texorpdfstring{deleteAllComments()}{deleteAllComments()}}
+{\footnotesize\ttfamily Mutation\+Mapping public String coms309.\+Comment.\+Comment\+Controller.\+delete\+All\+Comments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deletes all comments. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+A String.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/30/2023
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+A String. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_comment_controller_8java_source_l00345}{345}} of file \mbox{\hyperlink{_comment_controller_8java_source}{Comment\+Controller.\+java}}.
+
+\Hypertarget{classcoms309_1_1_comment_1_1_comment_controller_a87958650336aab3325b98118dd31ef1e}\label{classcoms309_1_1_comment_1_1_comment_controller_a87958650336aab3325b98118dd31ef1e} 
+\index{coms309.Comment.CommentController@{coms309.Comment.CommentController}!deleteCommentById@{deleteCommentById}}
+\index{deleteCommentById@{deleteCommentById}!coms309.Comment.CommentController@{coms309.Comment.CommentController}}
+\doxysubsubsection{\texorpdfstring{deleteCommentById()}{deleteCommentById()}}
+{\footnotesize\ttfamily Mutation\+Mapping public \mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment}{Comment}} coms309.\+Comment.\+Comment\+Controller.\+delete\+Comment\+By\+Id (\begin{DoxyParamCaption}\item[{@Argument int}]{id }\end{DoxyParamCaption})}
+
+
+
+Deletes the comment by identifier described by ID. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Found\+Exception} & Thrown when the requested element is not present.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The identifier.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Comment.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/30/2023
+\end{DoxyDate}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Found\+Exception} & Thrown when the requested element is not present.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The identifier.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Comment. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_comment_controller_8java_source_l00309}{309}} of file \mbox{\hyperlink{_comment_controller_8java_source}{Comment\+Controller.\+java}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcoms309_1_1_comment_1_1_comment_controller_a87958650336aab3325b98118dd31ef1e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classcoms309_1_1_comment_1_1_comment_controller_adcba0e094c7738cbcd02e6bb2a5562f5}\label{classcoms309_1_1_comment_1_1_comment_controller_adcba0e094c7738cbcd02e6bb2a5562f5} 
+\index{coms309.Comment.CommentController@{coms309.Comment.CommentController}!getAllComments@{getAllComments}}
+\index{getAllComments@{getAllComments}!coms309.Comment.CommentController@{coms309.Comment.CommentController}}
+\doxysubsubsection{\texorpdfstring{getAllComments()}{getAllComments()}}
+{\footnotesize\ttfamily Query\+Mapping public List$<$ \mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment}{Comment}} $>$ coms309.\+Comment.\+Comment\+Controller.\+get\+All\+Comments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets all comments. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+List\texorpdfstring{$<$}{<}Comment\texorpdfstring{$>$}{>}
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/30/2023
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+all comments. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_comment_controller_8java_source_l00137}{137}} of file \mbox{\hyperlink{_comment_controller_8java_source}{Comment\+Controller.\+java}}.
+
+\Hypertarget{classcoms309_1_1_comment_1_1_comment_controller_a14d97af2059f5e3cbb350a47183c2712}\label{classcoms309_1_1_comment_1_1_comment_controller_a14d97af2059f5e3cbb350a47183c2712} 
+\index{coms309.Comment.CommentController@{coms309.Comment.CommentController}!getCommentById@{getCommentById}}
+\index{getCommentById@{getCommentById}!coms309.Comment.CommentController@{coms309.Comment.CommentController}}
+\doxysubsubsection{\texorpdfstring{getCommentById()}{getCommentById()}}
+{\footnotesize\ttfamily Query\+Mapping public \mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment}{Comment}} coms309.\+Comment.\+Comment\+Controller.\+get\+Comment\+By\+Id (\begin{DoxyParamCaption}\item[{@Argument int}]{id }\end{DoxyParamCaption})}
+
+
+
+Gets comment by identifier. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Found\+Exception} & Thrown when the requested element is not present.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & .\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Comment.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/30/2023
+\end{DoxyDate}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Found\+Exception} & Thrown when the requested element is not present.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The identifier.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The comment by identifier. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_comment_controller_8java_source_l00173}{173}} of file \mbox{\hyperlink{_comment_controller_8java_source}{Comment\+Controller.\+java}}.
+
+\Hypertarget{classcoms309_1_1_comment_1_1_comment_controller_a5ef6eb79525b68f0cea25063974cdc79}\label{classcoms309_1_1_comment_1_1_comment_controller_a5ef6eb79525b68f0cea25063974cdc79} 
+\index{coms309.Comment.CommentController@{coms309.Comment.CommentController}!subComments@{subComments}}
+\index{subComments@{subComments}!coms309.Comment.CommentController@{coms309.Comment.CommentController}}
+\doxysubsubsection{\texorpdfstring{subComments()}{subComments()}}
+{\footnotesize\ttfamily Subscription\+Mapping public Publisher$<$ \mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment}{Comment}} $>$ coms309.\+Comment.\+Comment\+Controller.\+sub\+Comments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sub comments. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/30/2023
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+A Publisher\texorpdfstring{$<$}{<}Comment\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_comment_controller_8java_source_l00366}{366}} of file \mbox{\hyperlink{_comment_controller_8java_source}{Comment\+Controller.\+java}}.
+
+\Hypertarget{classcoms309_1_1_comment_1_1_comment_controller_a157eb4caec601748f631f80cabd2a117}\label{classcoms309_1_1_comment_1_1_comment_controller_a157eb4caec601748f631f80cabd2a117} 
+\index{coms309.Comment.CommentController@{coms309.Comment.CommentController}!subCommentsById@{subCommentsById}}
+\index{subCommentsById@{subCommentsById}!coms309.Comment.CommentController@{coms309.Comment.CommentController}}
+\doxysubsubsection{\texorpdfstring{subCommentsById()}{subCommentsById()}}
+{\footnotesize\ttfamily Subscription\+Mapping public Publisher$<$ \mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment}{Comment}} $>$ coms309.\+Comment.\+Comment\+Controller.\+sub\+Comments\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Sub comments by identifier. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/30/2023
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The identifier.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Publisher\texorpdfstring{$<$}{<}Comment\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_comment_controller_8java_source_l00384}{384}} of file \mbox{\hyperlink{_comment_controller_8java_source}{Comment\+Controller.\+java}}.
+
+\Hypertarget{classcoms309_1_1_comment_1_1_comment_controller_a4f12259a206433b69ecf815be069cd33}\label{classcoms309_1_1_comment_1_1_comment_controller_a4f12259a206433b69ecf815be069cd33} 
+\index{coms309.Comment.CommentController@{coms309.Comment.CommentController}!updateComment@{updateComment}}
+\index{updateComment@{updateComment}!coms309.Comment.CommentController@{coms309.Comment.CommentController}}
+\doxysubsubsection{\texorpdfstring{updateComment()}{updateComment()}}
+{\footnotesize\ttfamily Mutation\+Mapping public \mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment}{Comment}} coms309.\+Comment.\+Comment\+Controller.\+update\+Comment (\begin{DoxyParamCaption}\item[{@Argument int}]{comment\+\_\+id,  }\item[{@Argument String}]{new\+\_\+message }\end{DoxyParamCaption})}
+
+
+
+Updates the comment. 
+
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/20/2023
+\end{DoxyDate}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Found\+Exception} & Thrown when the requested element is not present.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em comment\+\_\+id} & Identifier for the comment. \\
+\hline
+{\em new\+\_\+message} & Message describing the new.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Comment.
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Arie 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/30/2023
+\end{DoxyDate}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Found\+Exception} & Thrown when the requested element is not present.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em comment\+\_\+id} & Identifier for the comment. \\
+\hline
+{\em new\+\_\+message} & Message describing the new.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Comment. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_comment_controller_8java_source_l00265}{265}} of file \mbox{\hyperlink{_comment_controller_8java_source}{Comment\+Controller.\+java}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcoms309_1_1_comment_1_1_comment_controller_a4f12259a206433b69ecf815be069cd33_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Arie/\+Develop/hb\+\_\+215/\+Backend/src/main/java/coms309/\+Comment/\mbox{\hyperlink{_comment_controller_8java}{Comment\+Controller.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,410 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcom_1_1example_1_1sportssphere_1_1_create_post_activity" kind="class" language="Java" prot="public">
+    <compoundname>com::example::sportssphere::CreatePostActivity</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">AppCompatActivity</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a1c6a32fcd207fa673e3cf6cf8fe85490" prot="private" static="no" mutable="no">
+        <type>EditText</type>
+        <definition>EditText com.example.sportssphere.CreatePostActivity.sportNameInput</definition>
+        <argsstring></argsstring>
+        <name>sportNameInput</name>
+        <qualifiedname>com.example.sportssphere.CreatePostActivity.sportNameInput</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" line="93" column="22" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a3134d84a7d79a19f36de82fada389819" prot="private" static="no" mutable="no">
+        <type>EditText</type>
+        <definition>EditText com.example.sportssphere.CreatePostActivity.maxPlayersInput</definition>
+        <argsstring></argsstring>
+        <name>maxPlayersInput</name>
+        <qualifiedname>com.example.sportssphere.CreatePostActivity.maxPlayersInput</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" line="93" column="37" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a26e2998130f041dd7767ef17e91ad6dc" prot="private" static="no" mutable="no">
+        <type>EditText</type>
+        <definition>EditText com.example.sportssphere.CreatePostActivity.minPlayersInput</definition>
+        <argsstring></argsstring>
+        <name>minPlayersInput</name>
+        <qualifiedname>com.example.sportssphere.CreatePostActivity.minPlayersInput</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" line="93" column="53" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a73bd67039816affd8bc2b4aece70bb4b" prot="private" static="no" mutable="no">
+        <type>EditText</type>
+        <definition>private EditText sportNameInput maxPlayersInput minPlayersInput com.example.sportssphere.CreatePostActivity::dateInput</definition>
+        <argsstring></argsstring>
+        <name>dateInput</name>
+        <qualifiedname>com.example.sportssphere.CreatePostActivity.dateInput</qualifiedname>
+        <briefdescription>
+<para>Gets the date input. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The date input. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" line="93" column="69" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a512e42e35a0030e22607a520d8b1e276" prot="private" static="no" mutable="no">
+        <type>AutoCompleteTextView</type>
+        <definition>AutoCompleteTextView com.example.sportssphere.CreatePostActivity.addressInput</definition>
+        <argsstring></argsstring>
+        <name>addressInput</name>
+        <qualifiedname>com.example.sportssphere.CreatePostActivity.addressInput</qualifiedname>
+        <briefdescription>
+<para>The address input. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" line="95" column="34" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a83635cc121a0245c42391f2a0c9bb01d" prot="private" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button com.example.sportssphere.CreatePostActivity.submitButton</definition>
+        <argsstring></argsstring>
+        <name>submitButton</name>
+        <qualifiedname>com.example.sportssphere.CreatePostActivity.submitButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" line="105" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a9dc2e30e3baecd2094e466cb7636eff9" prot="private" static="no" mutable="no">
+        <type>Button</type>
+        <definition>private Button submitButton com.example.sportssphere.CreatePostActivity::cancelButton</definition>
+        <argsstring></argsstring>
+        <name>cancelButton</name>
+        <qualifiedname>com.example.sportssphere.CreatePostActivity.cancelButton</qualifiedname>
+        <briefdescription>
+<para>Gets the cancel button. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The cancel button. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" line="105" column="33" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" bodystart="105" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a625e9e8b09c66a4fcd46f6398b3e8a6c" prot="package" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.example.sportssphere.CreatePostActivity.id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>com.example.sportssphere.CreatePostActivity.id</qualifiedname>
+        <briefdescription>
+<para>The identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" line="107" column="12" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1ab7caebfa9e4c07be6ca52346e2ad7f95" prot="package" static="no" mutable="no">
+        <type>Feature</type>
+        <definition>Feature com.example.sportssphere.CreatePostActivity.feature</definition>
+        <argsstring></argsstring>
+        <name>feature</name>
+        <qualifiedname>com.example.sportssphere.CreatePostActivity.feature</qualifiedname>
+        <briefdescription>
+<para>The feature. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" line="109" column="13" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a2e549f18f469ca5dac9bc0040c7578ed" prot="package" static="no" mutable="no">
+        <type>Retrofit</type>
+        <definition>Retrofit com.example.sportssphere.CreatePostActivity.retrofit</definition>
+        <argsstring></argsstring>
+        <name>retrofit</name>
+        <qualifiedname>com.example.sportssphere.CreatePostActivity.retrofit</qualifiedname>
+        <briefdescription>
+<para>The retrofit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" line="111" column="14" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a0bee1935ead9e9f59d6d624d54843769" prot="package" static="no" mutable="no">
+        <type>RetrofitAPICall</type>
+        <definition>RetrofitAPICall com.example.sportssphere.CreatePostActivity.retrofitAPICall</definition>
+        <argsstring></argsstring>
+        <name>retrofitAPICall</name>
+        <qualifiedname>com.example.sportssphere.CreatePostActivity.retrofitAPICall</qualifiedname>
+        <briefdescription>
+<para>The retrofit a pi call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" line="113" column="21" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" bodystart="113" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a3f76c6fd08554bd31aa947578bf7cae6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>private boolean com.example.sportssphere.CreatePostActivity::isValidDate</definition>
+        <argsstring>(String inputDate)</argsstring>
+        <name>isValidDate</name>
+        <qualifiedname>com.example.sportssphere.CreatePostActivity.isValidDate</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>inputDate</declname>
+        </param>
+        <exceptions> throws ParseException </exceptions>
+        <briefdescription>
+<para>Query if &apos;inputDate&apos; is valid date. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inputDate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>boolean. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" line="128" column="21" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" bodystart="128" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a9512c040b190a1cd7d28d6e2047cc661" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>private void com.example.sportssphere.CreatePostActivity::createRetrofit</definition>
+        <argsstring>()</argsstring>
+        <name>createRetrofit</name>
+        <qualifiedname>com.example.sportssphere.CreatePostActivity.createRetrofit</qualifiedname>
+        <briefdescription>
+<para>Creates the retrofit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" line="149" column="18" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" bodystart="149" bodyend="156"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1ad38293149b1ddd2820710db673fb3831" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void com.example.sportssphere.CreatePostActivity::setButtons</definition>
+        <argsstring>()</argsstring>
+        <name>setButtons</name>
+        <qualifiedname>com.example.sportssphere.CreatePostActivity.setButtons</qualifiedname>
+        <briefdescription>
+<para>Sets the buttons. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" line="167" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" bodystart="167" bodyend="176"/>
+        <referencedby refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1ad9fe6030593183b4a03d48acef4776f8" compoundref="_create_post_activity_8java" startline="242" endline="334">com.example.sportssphere.CreatePostActivity.onCreate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a69323a7625b51121ad1a1aae6ab0482b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>public void com.example.sportssphere.CreatePostActivity::addressAutoPopulate</definition>
+        <argsstring>()</argsstring>
+        <name>addressAutoPopulate</name>
+        <qualifiedname>com.example.sportssphere.CreatePostActivity.addressAutoPopulate</qualifiedname>
+        <briefdescription>
+<para>Address automatic populate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" line="187" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" bodystart="187" bodyend="226"/>
+        <referencedby refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1ad9fe6030593183b4a03d48acef4776f8" compoundref="_create_post_activity_8java" startline="242" endline="334">com.example.sportssphere.CreatePostActivity.onCreate</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1ad9fe6030593183b4a03d48acef4776f8" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>Override protected void com.example.sportssphere.CreatePostActivity::onCreate</definition>
+        <argsstring>(@Nullable Bundle savedInstanceState)</argsstring>
+        <name>onCreate</name>
+        <qualifiedname>com.example.sportssphere.CreatePostActivity.onCreate</qualifiedname>
+        <param>
+          <type>@Nullable Bundle</type>
+          <declname>savedInstanceState</declname>
+        </param>
+        <briefdescription>
+<para>Executes the &apos;create&apos; action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>RuntimeException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when a Runtime error condition occurs.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>savedInstanceState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>State of the saved instance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" line="242" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" bodystart="242" bodyend="334"/>
+        <references refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a69323a7625b51121ad1a1aae6ab0482b" compoundref="_create_post_activity_8java" startline="187" endline="226">com.example.sportssphere.CreatePostActivity.addressAutoPopulate</references>
+        <references refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1ad38293149b1ddd2820710db673fb3831" compoundref="_create_post_activity_8java" startline="167" endline="176">com.example.sportssphere.CreatePostActivity.setButtons</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Context for the android.content. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The android.content. intent</para>
+<para>The android.os. bundle</para>
+<para>The android.os. handler</para>
+<para>The android.text. editable</para>
+<para>The android.text. text watcher</para>
+<para>The android.util. log</para>
+<para>The android.view. view</para>
+<para>The android.widget. array adapter</para>
+<para>The android.widget. automatic complete text view</para>
+<para>The android.widget. button</para>
+<para>The android.widget. edit text</para>
+<para>The android.widget. toast</para>
+<para>The java.text. parse exception</para>
+<para>The java.text. simple date format</para>
+<para>List of java.util. arrays</para>
+<para>The java.util. date</para>
+<para>List of java.util.s</para>
+<para>The androidx.annotation. non null</para>
+<para>The androidx.annotation. nullable</para>
+<para>The androidx.appcompat.app. application compatible activity</para>
+<para>The com.apollographql.apollo. apollo call</para>
+<para>The com.apollographql.apollo.api. response</para>
+<para>The com.apollographql.apollo.exception. apollo exception</para>
+<para>The com.apollographql.apollo. apollo client</para>
+<para>The models. address</para>
+<para>The models. feature</para>
+<para>Collection of models. features</para>
+<para>The retro fit a pi. retrofit a pi call</para>
+<para>The retrofit 2. call</para>
+<para>The retrofit 2. callback</para>
+<para>The retrofit 2. retrofit</para>
+<para>The retrofit 2.converter.gson. gson converter factory</para>
+<para>A create post activity.</para>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AppCompatActivity</label>
+      </node>
+      <node id="1">
+        <label>com.example.sportssphere.CreatePostActivity</label>
+        <link refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AppCompatActivity</label>
+      </node>
+      <node id="1">
+        <label>com.example.sportssphere.CreatePostActivity</label>
+        <link refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" line="83" column="7" bodyfile="C:/Users/Arie/Develop/hb_215/Frontend/app/src/main/java/com/example/sportssphere/CreatePostActivity.java" bodystart="83" bodyend="335"/>
+    <listofallmembers>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a69323a7625b51121ad1a1aae6ab0482b" prot="public" virt="non-virtual"><scope>com::example::sportssphere::CreatePostActivity</scope><name>addressAutoPopulate</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a512e42e35a0030e22607a520d8b1e276" prot="private" virt="non-virtual"><scope>com::example::sportssphere::CreatePostActivity</scope><name>addressInput</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a9dc2e30e3baecd2094e466cb7636eff9" prot="private" virt="non-virtual"><scope>com::example::sportssphere::CreatePostActivity</scope><name>cancelButton</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a9512c040b190a1cd7d28d6e2047cc661" prot="private" virt="non-virtual"><scope>com::example::sportssphere::CreatePostActivity</scope><name>createRetrofit</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a73bd67039816affd8bc2b4aece70bb4b" prot="private" virt="non-virtual"><scope>com::example::sportssphere::CreatePostActivity</scope><name>dateInput</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1ab7caebfa9e4c07be6ca52346e2ad7f95" prot="package" virt="non-virtual"><scope>com::example::sportssphere::CreatePostActivity</scope><name>feature</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a625e9e8b09c66a4fcd46f6398b3e8a6c" prot="package" virt="non-virtual"><scope>com::example::sportssphere::CreatePostActivity</scope><name>id</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a3f76c6fd08554bd31aa947578bf7cae6" prot="private" virt="non-virtual"><scope>com::example::sportssphere::CreatePostActivity</scope><name>isValidDate</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a3134d84a7d79a19f36de82fada389819" prot="private" virt="non-virtual"><scope>com::example::sportssphere::CreatePostActivity</scope><name>maxPlayersInput</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a26e2998130f041dd7767ef17e91ad6dc" prot="private" virt="non-virtual"><scope>com::example::sportssphere::CreatePostActivity</scope><name>minPlayersInput</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1ad9fe6030593183b4a03d48acef4776f8" prot="protected" virt="non-virtual"><scope>com::example::sportssphere::CreatePostActivity</scope><name>onCreate</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a2e549f18f469ca5dac9bc0040c7578ed" prot="package" virt="non-virtual"><scope>com::example::sportssphere::CreatePostActivity</scope><name>retrofit</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a0bee1935ead9e9f59d6d624d54843769" prot="package" virt="non-virtual"><scope>com::example::sportssphere::CreatePostActivity</scope><name>retrofitAPICall</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1ad38293149b1ddd2820710db673fb3831" prot="public" virt="non-virtual"><scope>com::example::sportssphere::CreatePostActivity</scope><name>setButtons</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a1c6a32fcd207fa673e3cf6cf8fe85490" prot="private" virt="non-virtual"><scope>com::example::sportssphere::CreatePostActivity</scope><name>sportNameInput</name></member>
+      <member refid="classcom_1_1example_1_1sportssphere_1_1_create_post_activity_1a83635cc121a0245c42391f2a0c9bb01d" prot="private" virt="non-virtual"><scope>com::example::sportssphere::CreatePostActivity</scope><name>submitButton</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

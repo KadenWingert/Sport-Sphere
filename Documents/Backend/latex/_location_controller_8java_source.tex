@@ -1,0 +1,111 @@
+\doxysection{Location\+Controller.\+java}
+\hypertarget{_location_controller_8java_source}{}\label{_location_controller_8java_source}\index{C:/Users/Arie/Develop/hb\_215/Backend/src/main/java/coms309/Location/LocationController.java@{C:/Users/Arie/Develop/hb\_215/Backend/src/main/java/coms309/Location/LocationController.java}}
+\mbox{\hyperlink{_location_controller_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00004}00004\ \textcolor{keyword}{package\ }coms309.Location;}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00007}00007\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_exceptions}{Exceptions}}.\mbox{\hyperlink{classcoms309_1_1_exceptions_1_1_duplicate_exception}{DuplicateException}};}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00009}00009\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_exceptions}{Exceptions}}.\mbox{\hyperlink{classcoms309_1_1_exceptions_1_1_not_found_exception}{NotFoundException}};}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00011}00011\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_game_post}{GamePost}}.\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post}{GamePost}};}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00013}00013\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_game_post}{GamePost}}.\mbox{\hyperlink{interfacecoms309_1_1_game_post_1_1_game_post_repository}{GamePostRepository}};}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00015}00015\ \textcolor{keyword}{import}\ org.springframework.beans.factory.annotation.Autowired;}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00017}00017\ \textcolor{keyword}{import}\ org.springframework.graphql.data.method.annotation.Argument;}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00019}00019\ \textcolor{keyword}{import}\ org.springframework.graphql.data.method.annotation.MutationMapping;}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00021}00021\ \textcolor{keyword}{import}\ org.springframework.graphql.data.method.annotation.QueryMapping;}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00023}00023\ \textcolor{keyword}{import}\ org.springframework.stereotype.Controller;}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00026}00026\ \textcolor{keyword}{import}\ java.util.*;}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00028}00028\ \textcolor{comment}{/**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00037}00037\ @Controller}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00038}\mbox{\hyperlink{classcoms309_1_1_location_1_1_location_controller}{00038}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classcoms309_1_1_location_1_1_location_controller}{LocationController}}\ \{}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00040}00040\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00048}00048\ \ \ \ \ @Autowired}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00049}00049\ \ \ \ \ \mbox{\hyperlink{interfacecoms309_1_1_location_1_1_location_repository}{LocationRepository}}\ locationRepository;}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00051}00051\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00059}00059\ \ \ \ \ @Autowired}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00060}00060\ \ \ \ \ GamePostRepository\ gamePostRepository;}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00062}00062\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00073}00073\ \ \ \ \ @QueryMapping}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00074}\mbox{\hyperlink{classcoms309_1_1_location_1_1_location_controller_a4c984b667c6f154d29fccb2457b0dbfe}{00074}}\ \ \ \ \ \textcolor{keyword}{public}\ List<Location>\ \mbox{\hyperlink{classcoms309_1_1_location_1_1_location_controller_a4c984b667c6f154d29fccb2457b0dbfe}{getAllLocations}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00075}00075\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ locationRepository.findAll();}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00076}00076\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00077}00077\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00078}00078\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00093}00093\ \ \ \ \ @QueryMapping}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00094}\mbox{\hyperlink{classcoms309_1_1_location_1_1_location_controller_a937ada7117002a1518cc36f28d79ee5a}{00094}}\ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classcoms309_1_1_location_1_1_location}{Location}}\ \mbox{\hyperlink{classcoms309_1_1_location_1_1_location_controller_a937ada7117002a1518cc36f28d79ee5a}{getLocationById}}(@Argument\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id})\{}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00095}00095\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcoms309_1_1_location_1_1_location}{Location}}\ location\ =\ locationRepository.findById((\textcolor{keywordtype}{id}));}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00096}00096\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(location\ ==\ \textcolor{keyword}{null})\{}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00097}00097\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ NotFoundException(\textcolor{stringliteral}{"{}Location\ with\ ID\ "{}}\ +\ \textcolor{keywordtype}{id}\ +\ \textcolor{stringliteral}{"{}\ not\ found"{}});}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00098}00098\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00099}00099\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ location;}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00100}00100\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00101}00101\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00102}00102\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00115}00115\ \ \ \ \ @QueryMapping}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00116}\mbox{\hyperlink{classcoms309_1_1_location_1_1_location_controller_a0f140436dd2f05d749c099170be313f6}{00116}}\ \ \ \ \ \textcolor{keyword}{public}\ Set<GamePost>\ \mbox{\hyperlink{classcoms309_1_1_location_1_1_location_controller_a0f140436dd2f05d749c099170be313f6}{getGamePostsAtLocation}}(@Argument\ String\ address)\ \{}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00117}00117\ \ \ \ \ \ \ \ \ Set<GamePost>\ gamePostSet\ =\ \textcolor{keyword}{new}\ HashSet<>();}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00118}00118\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00119}00119\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (GamePost\ g\ :\ gamePostRepository.findAll())\ \{}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00120}00120\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcoms309_1_1_location_1_1_location}{Location}}\ location\ =\ g.getLocation();}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00121}00121\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (location\ !=\ \textcolor{keyword}{null}\ \&\&\ location.getAddress().equals(address))\ \{}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00122}00122\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ gamePostSet.add(g);}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00123}00123\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00124}00124\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00125}00125\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00126}00126\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ gamePostSet;}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00127}00127\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00128}00128\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00129}00129\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00147}00147\ \ \ \ \ @MutationMapping}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00148}\mbox{\hyperlink{classcoms309_1_1_location_1_1_location_controller_a88bdb5418d610c332c1ce5c1701d5f43}{00148}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classcoms309_1_1_location_1_1_location}{Location}}\ \mbox{\hyperlink{classcoms309_1_1_location_1_1_location_controller_a88bdb5418d610c332c1ce5c1701d5f43}{createLocation}}(@Argument\ String\ address,\ @Argument\ String\ gps,\ @Argument\ \textcolor{keywordtype}{int}\ gamePostID)\{}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00149}00149\ \ \ \ \ \ \ \ \ GamePost\ gamePost\ =\ gamePostRepository.findById(gamePostID);}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00150}00150\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(gamePost\ ==\ \textcolor{keyword}{null})\{}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00151}00151\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ NotFoundException(\textcolor{stringliteral}{"{}Game\ post\ with\ id:\ "{}}\ +\ gamePostID\ +\ \textcolor{stringliteral}{"{}\ not\ found"{}});}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00152}00152\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00153}00153\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(gamePost.getLocation()\ !=\ \textcolor{keyword}{null})\{}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00154}00154\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ DuplicateException(\textcolor{stringliteral}{"{}Game\ post\ with\ id:\ "{}}\ +\ gamePostID\ +\ \textcolor{stringliteral}{"{}\ Already\ has\ a\ location.\ Do\ you\ want\ to\ update\ the\ location\ instead?"{}});}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00155}00155\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00156}00156\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcoms309_1_1_location_1_1_location}{Location}}\ location\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classcoms309_1_1_location_1_1_location}{Location}}(address,gps,gamePost);}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00157}00157\ \ \ \ \ \ \ \ \ gamePost.setLocation(location);}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00158}00158\ \ \ \ \ \ \ \ \ locationRepository.save(location);}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00159}00159\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ location;}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00160}00160\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00161}00161\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00162}00162\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00179}00179\ \ \ \ \ @MutationMapping}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00180}\mbox{\hyperlink{classcoms309_1_1_location_1_1_location_controller_a0d65723d2f87fcd9bc5eb5b8f78f3122}{00180}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classcoms309_1_1_location_1_1_location}{Location}}\ \mbox{\hyperlink{classcoms309_1_1_location_1_1_location_controller_a0d65723d2f87fcd9bc5eb5b8f78f3122}{updateLocation}}(@Argument\ \textcolor{keywordtype}{int}\ locationID,\ @Argument\ String\ address,\ @Argument\ String\ GPS)\{}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00181}00181\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcoms309_1_1_location_1_1_location}{Location}}\ location\ =\ locationRepository.findById(locationID);}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00182}00182\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(location\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00183}00183\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ NotFoundException(\textcolor{stringliteral}{"{}Location\ with\ id:\ "{}}\ +\ locationID\ +\ \textcolor{stringliteral}{"{}\ not\ found"{}});}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00184}00184\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00185}00185\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(address\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00186}00186\ \ \ \ \ \ \ \ \ \ \ \ \ location.setAddress(address);}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00187}00187\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00188}00188\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(GPS\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00189}00189\ \ \ \ \ \ \ \ \ \ \ \ \ location.setGps(GPS);}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00190}00190\ \ \ \ \ locationRepository.save(location);}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00191}00191\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ location;}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00192}00192\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00193}00193\ }
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00194}00194\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00209}00209\ \ \ \ \ @MutationMapping}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00210}\mbox{\hyperlink{classcoms309_1_1_location_1_1_location_controller_a6c1479f9193eac68e50db8e172e6bd69}{00210}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classcoms309_1_1_location_1_1_location}{Location}}\ \mbox{\hyperlink{classcoms309_1_1_location_1_1_location_controller_a6c1479f9193eac68e50db8e172e6bd69}{deleteLocation}}(@Argument\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id})\ \{}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00211}00211\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcoms309_1_1_location_1_1_location}{Location}}\ location\ =\ locationRepository.findById(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00212}00212\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (location\ ==\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00213}00213\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ NotFoundException(\textcolor{stringliteral}{"{}Location\ with\ ID"{}}\ +\ \textcolor{keywordtype}{id}\ +\ \textcolor{stringliteral}{"{}not\ found."{}});}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00214}00214\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00215}00215\ \ \ \ \ \ \ \ \ GamePost\ gamePost\ =\ gamePostRepository.findById(location.getGamePost().getId());}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00216}00216\ \ \ \ \ \ \ \ \ gamePost.setLocation(\textcolor{keyword}{null});}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00217}00217\ \ \ \ \ \ \ \ \ gamePostRepository.save(gamePost);}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00218}00218\ \ \ \ \ \ \ \ \ locationRepository.deleteById(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00219}00219\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ location;}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00220}00220\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_location_controller_8java_source_l00221}00221\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,804 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > GamePost</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">coms309.GamePost</a>
+</div>
+
+<h1>Coverage Summary for Class: GamePost (coms309.GamePost)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">GamePost</td>
+<td class="coverageStat">
+  <span class="percent">
+    47.4%
+  </span>
+  <span class="absValue">
+    (9/19)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    73.7%
+  </span>
+  <span class="absValue">
+    (28/38)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">GamePost$HibernateInstantiator$Cuto01Gh</td>
+  </tr>
+  <tr>
+    <td class="name">GamePost$HibernateInstantiator$HWzL4Jhh</td>
+  </tr>
+  <tr>
+    <td class="name">GamePost$HibernateInstantiator$QaHpd6Pk</td>
+  </tr>
+  <tr>
+    <td class="name">GamePost$HibernateProxy$2jCVp7hI</td>
+  </tr>
+  <tr>
+    <td class="name">GamePost$HibernateProxy$SecxPcEd</td>
+  </tr>
+  <tr>
+    <td class="name">GamePost$HibernateProxy$wk6wgWGL</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    47.4%
+  </span>
+  <span class="absValue">
+    (9/19)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    73.7%
+  </span>
+  <span class="absValue">
+    (28/38)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;
+&nbsp;
+&nbsp;/** @brief The coms 309. game post */
+&nbsp;package coms309.GamePost;
+&nbsp;
+&nbsp;/** @brief The com.fasterxml.jackson.annotation. JSON ignore */
+&nbsp;import com.fasterxml.jackson.annotation.JsonIgnore;
+&nbsp;/** @brief The coms 309. comment. comment */
+&nbsp;import coms309.Comment.Comment;
+&nbsp;/** @brief The coms 309. location. location */
+&nbsp;import coms309.Location.Location;
+&nbsp;import coms309.SavedGamePost.SavedGamePost;
+&nbsp;/** @brief The coms 309. sport. sport */
+&nbsp;import coms309.Sport.Sport;
+&nbsp;/** @brief The coms 309. users. users */
+&nbsp;import coms309.Users.Users;
+&nbsp;/** @brief The lombok. getter */
+&nbsp;import lombok.Getter;
+&nbsp;/** @brief The lombok. setter */
+&nbsp;import lombok.Setter;
+&nbsp;/** @brief The org.hibernate.annotations. not found */
+&nbsp;import org.hibernate.annotations.NotFound;
+&nbsp;/** @brief The org.hibernate.annotations. not found action */
+&nbsp;import org.hibernate.annotations.NotFoundAction;
+&nbsp;
+&nbsp;/** @brief The jakarta.persistence.* */
+&nbsp;import jakarta.persistence.*;
+&nbsp;import jakarta.validation.constraints.NotNull;
+&nbsp;import jakarta.validation.constraints.Null;
+&nbsp;/** @brief Set the java.util. hash belongs to */
+&nbsp;import java.util.HashSet;
+&nbsp;
+&nbsp;/** @brief Set the java.util. belongs to */
+&nbsp;import java.util.Set;
+&nbsp;
+&nbsp;/**********************************************************************************************/
+&nbsp;/**
+&nbsp; * @class GamePost
+&nbsp; *
+&nbsp; * @brief A game post.
+&nbsp; *
+&nbsp; * @author Arie
+&nbsp; * @date 10/20/2023
+&nbsp; **************************************************************************************************/
+&nbsp;
+&nbsp;/**********************************************************************************************/
+&nbsp;/**
+&nbsp; * @class GamePost
+&nbsp; *
+&nbsp; * @brief A game post.
+&nbsp; *
+&nbsp; * @author Arie
+&nbsp; * @date 10/30/2023
+&nbsp; **************************************************************************************************/
+&nbsp;
+&nbsp;@Entity
+<b class="fc">&nbsp;@Getter</b>
+&nbsp;@Setter
+&nbsp;public class GamePost {
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn @Id @GeneratedValue(strategy = GenerationType.IDENTITY) @NotFound(action =
+&nbsp;     *     NotFoundAction.IGNORE) private int id;
+&nbsp;     *
+&nbsp;     * @brief -- GETTER --
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/20/2023
+&nbsp;     *
+&nbsp;     * @param parameter1 (Optional) The first parameter.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn @Id @GeneratedValue(strategy = GenerationType.IDENTITY) @NotFound(action =
+&nbsp;     *     NotFoundAction.IGNORE) private int id;
+&nbsp;     *
+&nbsp;     * @brief Constructor
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @param parameter1 (Optional) The first parameter.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @Id
+&nbsp;    @GeneratedValue(strategy = GenerationType.IDENTITY)
+&nbsp;    @NotFound(action = NotFoundAction.IGNORE)
+&nbsp;    private int id;
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn @Column(name = &quot;max_players&quot;) @NotFound(action = NotFoundAction.IGNORE) private int
+&nbsp;     *     max_players;
+&nbsp;     *
+&nbsp;     * @brief Constructor
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/20/2023
+&nbsp;     *
+&nbsp;     * @param parameter1 (Optional) The first parameter.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn @Column(name = &quot;max_players&quot;) @NotFound(action = NotFoundAction.IGNORE) private int
+&nbsp;     *     max_players;
+&nbsp;     *
+&nbsp;     * @brief Constructor
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @param parameter1 (Optional) The first parameter.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @Column(name = &quot;max_players&quot;)
+&nbsp;    @NotFound(action = NotFoundAction.IGNORE)
+&nbsp;    private int max_players;
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn @Column(name = &quot;min_players&quot;) @NotFound(action = NotFoundAction.IGNORE) private int
+&nbsp;     *     min_players;
+&nbsp;     *
+&nbsp;     * @brief Constructor
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/20/2023
+&nbsp;     *
+&nbsp;     * @param parameter1 (Optional) The first parameter.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn @Column(name = &quot;min_players&quot;) @NotFound(action = NotFoundAction.IGNORE) private int
+&nbsp;     *     min_players;
+&nbsp;     *
+&nbsp;     * @brief Constructor
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @param parameter1 (Optional) The first parameter.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @Column(name = &quot;min_players&quot;)
+&nbsp;    @NotFound(action = NotFoundAction.IGNORE)
+&nbsp;    private int min_players;
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn @Column(name = &quot;playing_on&quot;) @NotFound(action = NotFoundAction.IGNORE) private String
+&nbsp;     *     playing_on;
+&nbsp;     *
+&nbsp;     * @brief Constructor
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/20/2023
+&nbsp;     *
+&nbsp;     * @param parameter1 (Optional) The first parameter.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn @Column(name = &quot;playing_on&quot;) @NotFound(action = NotFoundAction.IGNORE) private String
+&nbsp;     *     playing_on;
+&nbsp;     *
+&nbsp;     * @brief Constructor
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @param parameter1 (Optional) The first parameter.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @Column(name = &quot;playing_on&quot;)
+&nbsp;    @NotFound(action = NotFoundAction.IGNORE)
+&nbsp;    private String playing_on;
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn @Column(name = &quot;created_on&quot;) @NotFound(action = NotFoundAction.IGNORE) private String
+&nbsp;     *     created_on;
+&nbsp;     *
+&nbsp;     * @brief Constructor
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/20/2023
+&nbsp;     *
+&nbsp;     * @param parameter1 (Optional) The first parameter.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn @Column(name = &quot;created_on&quot;) @NotFound(action = NotFoundAction.IGNORE) private String
+&nbsp;     *     created_on;
+&nbsp;     *
+&nbsp;     * @brief Constructor
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @param parameter1 (Optional) The first parameter.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @Column(name = &quot;created_on&quot;)
+&nbsp;    @NotFound(action = NotFoundAction.IGNORE)
+&nbsp;    private String created_on;
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn @Column(name = &quot;is_deleted&quot;) @NotFound(action = NotFoundAction.IGNORE) private boolean
+&nbsp;     *     is_deleted;
+&nbsp;     *
+&nbsp;     * @brief Constructor
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/20/2023
+&nbsp;     *
+&nbsp;     * @param parameter1 (Optional) The first parameter.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn @Column(name = &quot;is_deleted&quot;) @NotFound(action = NotFoundAction.IGNORE) private boolean
+&nbsp;     *     is_deleted;
+&nbsp;     *
+&nbsp;     * @brief Constructor
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @param parameter1 (Optional) The first parameter.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @Column(name = &quot;is_deleted&quot;)
+&nbsp;    @NotFound(action = NotFoundAction.IGNORE)
+&nbsp;    private boolean is_deleted;
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn @OneToOne(cascade = CascadeType.ALL) @JoinColumn(name = &quot;location_id&quot;) private Location
+&nbsp;     *     location;
+&nbsp;     *
+&nbsp;     * @brief Constructor
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/20/2023
+&nbsp;     *
+&nbsp;     * @param parameter1 (Optional) The first parameter.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn @OneToOne(cascade = CascadeType.ALL) @JoinColumn(name = &quot;location_id&quot;) private Location
+&nbsp;     *     location;
+&nbsp;     *
+&nbsp;     * @brief Constructor
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @param parameter1 (Optional) The first parameter.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @OneToOne(cascade = CascadeType.ALL)
+&nbsp;    @JoinColumn(name = &quot;location_id&quot;)
+&nbsp;    private Location location;
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn @ManyToOne @JoinColumn(name = &quot;created_by_user_id&quot;) private Users created_by;
+&nbsp;     *
+&nbsp;     * @brief Constructor
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @param parameter1 (Optional) The first parameter.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @ManyToOne(fetch = FetchType.EAGER) // need to add somthing to make it notnull
+&nbsp;    @JoinColumn(name = &quot;created_by_user_id&quot;)
+&nbsp;    @NotNull
+&nbsp;    private Users created_by;
+&nbsp;
+&nbsp;    @ManyToMany(fetch = FetchType.EAGER)
+&nbsp;    @JoinTable(name = &quot;players_signed_up&quot;, joinColumns = @JoinColumn(name = &quot;game_post_id&quot;),
+&nbsp;            inverseJoinColumns = @JoinColumn(name = &quot;user_id&quot;))
+&nbsp;    @JsonIgnore
+<b class="fc">&nbsp;    private Set&lt;Users&gt; playersSignedUp = new HashSet&lt;&gt;();</b>
+&nbsp;
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn @OneToMany(mappedBy = &quot;gamePost&quot;, cascade = CascadeType.ALL, orphanRemoval = true)
+&nbsp;     *     private Set&lt;Comment&gt; comment = new HashSet&lt;&gt;();
+&nbsp;     *
+&nbsp;     * @brief Constructor
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @param parameter1 (Optional) The first parameter.
+&nbsp;     * @param parameter2 (Optional) The second parameter.
+&nbsp;     * @param parameter3 (Optional) The third parameter.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @OneToMany(mappedBy = &quot;gamePost&quot;, cascade = CascadeType.ALL, orphanRemoval = true)
+<b class="fc">&nbsp;    private Set&lt;Comment&gt; comment = new HashSet&lt;&gt;();</b>
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn @ManyToOne @JoinColumn(name = &quot;sport_id&quot;) private Sport sport;
+&nbsp;     *
+&nbsp;     * @brief Constructor
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @param parameter1 (Optional) The first parameter.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    @ManyToOne
+&nbsp;    @JoinColumn(name = &quot;sport_id&quot;) // links the Sport class with the primary key of the GamePost
+&nbsp;    private Sport sport;
+&nbsp;
+&nbsp;    // @Null
+&nbsp;    // @OneToOne(cascade = CascadeType.ALL)
+&nbsp;    // @JoinColumn(name = &quot;savedgame_id&quot;, referencedColumnName = &quot;id&quot;)
+&nbsp;    // private SavedGamePost savedGamePost;
+&nbsp;
+&nbsp;    // @Null
+&nbsp;    // @OneToOne(mappedBy = &quot;gamePost&quot;, cascade = CascadeType.ALL)
+&nbsp;    // @PrimaryKeyJoinColumn
+&nbsp;    // private SavedGamePost savedGamePost;
+&nbsp;
+&nbsp;    /**********************************************************************************************
+&nbsp;     * /**
+&nbsp;     * 
+&nbsp;     * @fn public GamePost()
+&nbsp;     *
+&nbsp;     * @brief Default constructor
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     **************************************************************************************************/
+&nbsp;
+<b class="fc">&nbsp;    public GamePost() {}</b>
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn public GamePost(Sport sport, Users created_by, int max_players, int min_players, String
+&nbsp;     *     playing_on, String created_on, boolean is_deleted)
+&nbsp;     *
+&nbsp;     * @brief Constructor
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/20/2023
+&nbsp;     *
+&nbsp;     * @param sport The sport.
+&nbsp;     * @param created_by Amount to created by.
+&nbsp;     * @param max_players The maximum players.
+&nbsp;     * @param min_players The minimum players.
+&nbsp;     * @param playing_on The playing on.
+&nbsp;     * @param created_on The created on.
+&nbsp;     * @param is_deleted True if is deleted, false if not.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    /************************************************************************************************
+&nbsp;     * @property String playing_on, String created_on, boolean is_deleted)
+&nbsp;     *
+&nbsp;     * @brief Gets a value indicating whether this object is deleted)
+&nbsp;     *
+&nbsp;     * @returns True if this object is deleted), false if not.
+&nbsp;     **************************************************************************************************/
+<b class="fc">&nbsp;    public GamePost(Sport sport, Users created_by, int max_players, int min_players,</b>
+&nbsp;            String playing_on, String created_on, boolean is_deleted) {
+<b class="fc">&nbsp;        this.sport = sport;</b>
+<b class="fc">&nbsp;        this.created_by = created_by;</b>
+<b class="fc">&nbsp;        playersSignedUp.add(created_by);</b>
+<b class="fc">&nbsp;        this.max_players = max_players;</b>
+<b class="fc">&nbsp;        this.min_players = min_players;</b>
+<b class="fc">&nbsp;        this.playing_on = playing_on;</b>
+<b class="fc">&nbsp;        this.created_on = created_on;</b>
+<b class="fc">&nbsp;        this.is_deleted = is_deleted;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn public GamePost(Sport sport, Users created_by, int max_players, int min_players, String
+&nbsp;     *     playing_on, String created_on, boolean is_deleted, String address, String GPS)
+&nbsp;     *
+&nbsp;     * @brief Constructor
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/20/2023
+&nbsp;     *
+&nbsp;     * @param sport The sport.
+&nbsp;     * @param created_by Amount to created by.
+&nbsp;     * @param max_players The maximum players.
+&nbsp;     * @param min_players The minimum players.
+&nbsp;     * @param playing_on The playing on.
+&nbsp;     * @param created_on The created on.
+&nbsp;     * @param is_deleted True if is deleted, false if not.
+&nbsp;     * @param address The address.
+&nbsp;     * @param GPS The GPS.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+<b class="fc">&nbsp;    public GamePost(Sport sport, Users created_by, int max_players, int min_players,</b>
+&nbsp;
+&nbsp;            /************************************************************************************************
+&nbsp;             * @property String playing_on, String created_on, boolean is_deleted, String address,
+&nbsp;             *           String GPS)
+&nbsp;             *
+&nbsp;             * @brief Gets the gps)
+&nbsp;             *
+&nbsp;             * @returns The gps)
+&nbsp;             **************************************************************************************************/
+&nbsp;
+&nbsp;            String playing_on, String created_on, boolean is_deleted, String address, String GPS) {
+<b class="fc">&nbsp;        this.sport = sport;</b>
+<b class="fc">&nbsp;        this.created_by = created_by;</b>
+<b class="fc">&nbsp;        playersSignedUp.add(created_by);</b>
+<b class="fc">&nbsp;        this.max_players = max_players;</b>
+<b class="fc">&nbsp;        this.min_players = min_players;</b>
+<b class="fc">&nbsp;        this.playing_on = playing_on;</b>
+<b class="fc">&nbsp;        this.created_on = created_on;</b>
+<b class="fc">&nbsp;        this.is_deleted = is_deleted;</b>
+<b class="fc">&nbsp;        this.location = new Location(address, GPS);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn public void setId(int id)
+&nbsp;     *
+&nbsp;     * @brief Sets an identifier
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @param id The identifier.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    public void setId(int id) {
+<b class="nc">&nbsp;        this.id = id;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn public void setCreated_by(Users created_by)
+&nbsp;     *
+&nbsp;     * @brief Sets created by
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @param created_by Amount to created by.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    public void setCreated_by(Users created_by) {
+<b class="nc">&nbsp;        this.created_by = created_by;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn public void setMax_players(int maxPlayers)
+&nbsp;     *
+&nbsp;     * @brief Sets maximum players
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @param maxPlayers The maximum players.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    public void setMax_players(int maxPlayers) {
+<b class="nc">&nbsp;        this.max_players = maxPlayers;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn public void setMin_players(int minPlayers)
+&nbsp;     *
+&nbsp;     * @brief Sets minimum players
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @param minPlayers The minimum players.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    public void setMin_players(int minPlayers) {
+<b class="nc">&nbsp;        this.min_players = minPlayers;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn public void setPlaying_on(String playingOn)
+&nbsp;     *
+&nbsp;     * @brief Sets playing on
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @param playingOn The playing on.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    public void setPlaying_on(String playingOn) {
+<b class="nc">&nbsp;        this.playing_on = playingOn;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn public void setCreated_on(String createdOn)
+&nbsp;     *
+&nbsp;     * @brief Sets created on
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @param createdOn The created on.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    public void setCreated_on(String createdOn) {
+<b class="nc">&nbsp;        this.created_on = createdOn;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn public boolean getIs_deleted()
+&nbsp;     *
+&nbsp;     * @brief Gets is deleted
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @returns True if it succeeds, false if it fails.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    public boolean getIs_deleted() {
+<b class="fc">&nbsp;        return is_deleted;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn public void setIs_deleted(boolean is_deleted)
+&nbsp;     *
+&nbsp;     * @brief Sets is deleted
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @param is_deleted True if is deleted, false if not.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    public void setIs_deleted(boolean is_deleted) {
+<b class="nc">&nbsp;        this.is_deleted = is_deleted;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn public void setPlayersSignedUp(Users user)
+&nbsp;     *
+&nbsp;     * @brief Sets players signed up
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @param user The user.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    public void setPlayersSignedUp(Users user) {
+<b class="fc">&nbsp;        playersSignedUp.add(user);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn public void setLocation(Location location)
+&nbsp;     *
+&nbsp;     * @brief Sets a location
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @paramlocation.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    public void setLocation(Location location) {
+<b class="fc">&nbsp;        this.location = location;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public Location getLocation() {
+<b class="fc">&nbsp;        return location;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn public void setPlayersSignedUp(Set&lt;Users&gt; playersSignedUp)
+&nbsp;     *
+&nbsp;     * @brief Sets players signed up
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @param playersSignedUp The players signed up.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    public void setPlayersSignedUp(Set&lt;Users&gt; playersSignedUp) {
+<b class="fc">&nbsp;        this.playersSignedUp = playersSignedUp;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn public void setComment(Set&lt;Comment&gt; comment)
+&nbsp;     *
+&nbsp;     * @brief Sets a comment
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @param comment The comment.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    public void setComment(Set&lt;Comment&gt; comment) {
+<b class="nc">&nbsp;        this.comment = comment;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn public void setSport(Sport sport)
+&nbsp;     *
+&nbsp;     * @brief Sets a sport
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @param sport The sport.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    public void setSport(Sport sport) {
+<b class="nc">&nbsp;        this.sport = sport;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**********************************************************************************************/
+&nbsp;    /**
+&nbsp;     * @fn public void removePlayerSignedUp(Users user)
+&nbsp;     *
+&nbsp;     * @brief Removes the player signed up described by user
+&nbsp;     *
+&nbsp;     * @author Arie
+&nbsp;     * @date 10/30/2023
+&nbsp;     *
+&nbsp;     * @param user The user.
+&nbsp;     **************************************************************************************************/
+&nbsp;
+&nbsp;    public void removePlayerSignedUp(Users user) {
+<b class="nc">&nbsp;        playersSignedUp.removeIf(u -&gt; u.equals(user));</b>
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-12-04 13:11</div>
+</div>
+</body>
+</html>

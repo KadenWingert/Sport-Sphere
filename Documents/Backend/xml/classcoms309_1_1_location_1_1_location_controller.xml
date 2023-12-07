@@ -1,0 +1,384 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcoms309_1_1_location_1_1_location_controller" kind="class" language="Java" prot="public">
+    <compoundname>coms309::Location::LocationController</compoundname>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcoms309_1_1_location_1_1_location_controller_1ad40859810074be22e6ba00812d8298e1" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecoms309_1_1_location_1_1_location_repository" kindref="compound">LocationRepository</ref></type>
+        <definition>Autowired LocationRepository coms309.Location.LocationController::locationRepository</definition>
+        <argsstring></argsstring>
+        <name>locationRepository</name>
+        <qualifiedname>coms309.Location.LocationController.locationRepository</qualifiedname>
+        <briefdescription>
+<para>Gets the location repository. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The location repository. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/LocationController.java" line="49" column="24" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/LocationController.java" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_location_1_1_location_controller_1a74285245d82685d034f6d78d239fbf9a" prot="package" static="no" mutable="no">
+        <type>GamePostRepository</type>
+        <definition>Autowired GamePostRepository coms309.Location.LocationController::gamePostRepository</definition>
+        <argsstring></argsstring>
+        <name>gamePostRepository</name>
+        <qualifiedname>coms309.Location.LocationController.gamePostRepository</qualifiedname>
+        <briefdescription>
+<para>Gets the game post repository. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The game post repository. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/LocationController.java" line="60" column="24" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/LocationController.java" bodystart="60" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcoms309_1_1_location_1_1_location_controller_1a4c984b667c6f154d29fccb2457b0dbfe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcoms309_1_1_location_1_1_location" kindref="compound">Location</ref> &gt;</type>
+        <definition>QueryMapping public List&lt; Location &gt; coms309.Location.LocationController::getAllLocations</definition>
+        <argsstring>()</argsstring>
+        <name>getAllLocations</name>
+        <qualifiedname>coms309.Location.LocationController.getAllLocations</qualifiedname>
+        <briefdescription>
+<para>Gets all locations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>List&lt;Location&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/LocationController.java" line="74" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/LocationController.java" bodystart="74" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_location_1_1_location_controller_1a937ada7117002a1518cc36f28d79ee5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcoms309_1_1_location_1_1_location" kindref="compound">Location</ref></type>
+        <definition>QueryMapping public Location coms309.Location.LocationController::getLocationById</definition>
+        <argsstring>(@Argument int id)</argsstring>
+        <name>getLocationById</name>
+        <qualifiedname>coms309.Location.LocationController.getLocationById</qualifiedname>
+        <param>
+          <type>@Argument int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Gets location by identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>NotFoundException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when the requested element is not present.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Location. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/LocationController.java" line="94" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/LocationController.java" bodystart="94" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_location_1_1_location_controller_1a0f140436dd2f05d749c099170be313f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Set&lt; GamePost &gt;</type>
+        <definition>QueryMapping public Set&lt; GamePost &gt; coms309.Location.LocationController::getGamePostsAtLocation</definition>
+        <argsstring>(@Argument String address)</argsstring>
+        <name>getGamePostsAtLocation</name>
+        <qualifiedname>coms309.Location.LocationController.getGamePostsAtLocation</qualifiedname>
+        <param>
+          <type>@Argument String</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+<para>Gets game posts at location. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The address.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The game posts at location. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/LocationController.java" line="116" column="16" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/LocationController.java" bodystart="116" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_location_1_1_location_controller_1a88bdb5418d610c332c1ce5c1701d5f43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcoms309_1_1_location_1_1_location" kindref="compound">Location</ref></type>
+        <definition>MutationMapping public Location coms309.Location.LocationController::createLocation</definition>
+        <argsstring>(@Argument String address, @Argument String gps, @Argument int gamePostID)</argsstring>
+        <name>createLocation</name>
+        <qualifiedname>coms309.Location.LocationController.createLocation</qualifiedname>
+        <param>
+          <type>@Argument String</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>@Argument String</type>
+          <declname>gps</declname>
+        </param>
+        <param>
+          <type>@Argument int</type>
+          <declname>gamePostID</declname>
+        </param>
+        <briefdescription>
+<para>Creates a location. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>NotFoundException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when the requested element is not present. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>DuplicateException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when a Duplicate error condition occurs.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The address. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The GPS. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gamePostID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier for the game post.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new location. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/LocationController.java" line="148" column="21" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/LocationController.java" bodystart="148" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_location_1_1_location_controller_1a0d65723d2f87fcd9bc5eb5b8f78f3122" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcoms309_1_1_location_1_1_location" kindref="compound">Location</ref></type>
+        <definition>MutationMapping public Location coms309.Location.LocationController::updateLocation</definition>
+        <argsstring>(@Argument int locationID, @Argument String address, @Argument String GPS)</argsstring>
+        <name>updateLocation</name>
+        <qualifiedname>coms309.Location.LocationController.updateLocation</qualifiedname>
+        <param>
+          <type>@Argument int</type>
+          <declname>locationID</declname>
+        </param>
+        <param>
+          <type>@Argument String</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>@Argument String</type>
+          <declname>GPS</declname>
+        </param>
+        <briefdescription>
+<para>Updates the location. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>NotFoundException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when the requested element is not present.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>locationID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier for the location. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The address. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GPS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The GPS.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A Location. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/LocationController.java" line="180" column="21" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/LocationController.java" bodystart="180" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_location_1_1_location_controller_1a6c1479f9193eac68e50db8e172e6bd69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcoms309_1_1_location_1_1_location" kindref="compound">Location</ref></type>
+        <definition>MutationMapping public Location coms309.Location.LocationController::deleteLocation</definition>
+        <argsstring>(@Argument int id)</argsstring>
+        <name>deleteLocation</name>
+        <qualifiedname>coms309.Location.LocationController.deleteLocation</qualifiedname>
+        <param>
+          <type>@Argument int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Deletes the location described by ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>NotFoundException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when the requested element is not present.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A Location. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/LocationController.java" line="210" column="21" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/LocationController.java" bodystart="210" bodyend="220"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The coms 309. exceptions. duplicate exception. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The coms 309. exceptions. not found exception</para>
+<para>The coms 309. game post. game post</para>
+<para>The coms 309. game post. game post repository</para>
+<para>The org.springframework.beans.factory.annotation. autowired</para>
+<para>The org.springframework.graphql.data.method.annotation. argument</para>
+<para>The org.springframework.graphql.data.method.annotation. mutation mapping</para>
+<para>The org.springframework.graphql.data.method.annotation. query mapping</para>
+<para>The org.springframework.stereotype. controller</para>
+<para>The java.util.*</para>
+<para>A controller for handling locations.</para>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>JpaRepository&lt; Location, Integer &gt;</label>
+      </node>
+      <node id="1">
+        <label>coms309.Location.LocationController</label>
+        <link refid="classcoms309_1_1_location_1_1_location_controller"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>~locationRepository</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>coms309.Location.LocationRepository</label>
+        <link refid="interfacecoms309_1_1_location_1_1_location_repository"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/LocationController.java" line="38" column="7" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/Location/LocationController.java" bodystart="38" bodyend="221"/>
+    <listofallmembers>
+      <member refid="classcoms309_1_1_location_1_1_location_controller_1a88bdb5418d610c332c1ce5c1701d5f43" prot="public" virt="non-virtual"><scope>coms309::Location::LocationController</scope><name>createLocation</name></member>
+      <member refid="classcoms309_1_1_location_1_1_location_controller_1a6c1479f9193eac68e50db8e172e6bd69" prot="public" virt="non-virtual"><scope>coms309::Location::LocationController</scope><name>deleteLocation</name></member>
+      <member refid="classcoms309_1_1_location_1_1_location_controller_1a74285245d82685d034f6d78d239fbf9a" prot="package" virt="non-virtual"><scope>coms309::Location::LocationController</scope><name>gamePostRepository</name></member>
+      <member refid="classcoms309_1_1_location_1_1_location_controller_1a4c984b667c6f154d29fccb2457b0dbfe" prot="public" virt="non-virtual"><scope>coms309::Location::LocationController</scope><name>getAllLocations</name></member>
+      <member refid="classcoms309_1_1_location_1_1_location_controller_1a0f140436dd2f05d749c099170be313f6" prot="public" virt="non-virtual"><scope>coms309::Location::LocationController</scope><name>getGamePostsAtLocation</name></member>
+      <member refid="classcoms309_1_1_location_1_1_location_controller_1a937ada7117002a1518cc36f28d79ee5a" prot="public" virt="non-virtual"><scope>coms309::Location::LocationController</scope><name>getLocationById</name></member>
+      <member refid="classcoms309_1_1_location_1_1_location_controller_1ad40859810074be22e6ba00812d8298e1" prot="package" virt="non-virtual"><scope>coms309::Location::LocationController</scope><name>locationRepository</name></member>
+      <member refid="classcoms309_1_1_location_1_1_location_controller_1a0d65723d2f87fcd9bc5eb5b8f78f3122" prot="public" virt="non-virtual"><scope>coms309::Location::LocationController</scope><name>updateLocation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

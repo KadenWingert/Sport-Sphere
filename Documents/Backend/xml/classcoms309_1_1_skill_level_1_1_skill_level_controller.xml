@@ -1,0 +1,424 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcoms309_1_1_skill_level_1_1_skill_level_controller" kind="class" language="Java" prot="public">
+    <compoundname>coms309::SkillLevel::SkillLevelController</compoundname>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classcoms309_1_1_skill_level_1_1_skill_level_controller_1ab9667bb87615a008f7326aedcb72425c" prot="package" static="no" mutable="no">
+        <type><ref refid="interfacecoms309_1_1_skill_level_1_1_skill_level_repository" kindref="compound">SkillLevelRepository</ref></type>
+        <definition>Autowired SkillLevelRepository coms309.SkillLevel.SkillLevelController::skillLevelRepository</definition>
+        <argsstring></argsstring>
+        <name>skillLevelRepository</name>
+        <qualifiedname>coms309.SkillLevel.SkillLevelController.skillLevelRepository</qualifiedname>
+        <briefdescription>
+<para>Gets the skill level repository. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The skill level repository. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevelController.java" line="59" column="26" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevelController.java" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_skill_level_1_1_skill_level_controller_1a4fef558b7d90d4c83489c5aa4e748e5b" prot="package" static="no" mutable="no">
+        <type>UserRepository</type>
+        <definition>Autowired UserRepository coms309.SkillLevel.SkillLevelController::userRepository</definition>
+        <argsstring></argsstring>
+        <name>userRepository</name>
+        <qualifiedname>coms309.SkillLevel.SkillLevelController.userRepository</qualifiedname>
+        <briefdescription>
+<para>Gets the user repository. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The user repository. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevelController.java" line="70" column="20" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevelController.java" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcoms309_1_1_skill_level_1_1_skill_level_controller_1aab787d3a49ed2be271e5080ee94ae717" prot="package" static="no" mutable="no">
+        <type>SportRepository</type>
+        <definition>Autowired SportRepository coms309.SkillLevel.SkillLevelController::sportRepository</definition>
+        <argsstring></argsstring>
+        <name>sportRepository</name>
+        <qualifiedname>coms309.SkillLevel.SkillLevelController.sportRepository</qualifiedname>
+        <briefdescription>
+<para>Gets the sport repository. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The sport repository. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevelController.java" line="81" column="21" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevelController.java" bodystart="81" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcoms309_1_1_skill_level_1_1_skill_level_controller_1a6cab2ecae0969e142d84114c82095d05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="classcoms309_1_1_skill_level_1_1_skill_level" kindref="compound">SkillLevel</ref> &gt;</type>
+        <definition>QueryMapping public List&lt; SkillLevel &gt; coms309.SkillLevel.SkillLevelController::getAllSkillLevels</definition>
+        <argsstring>()</argsstring>
+        <name>getAllSkillLevels</name>
+        <qualifiedname>coms309.SkillLevel.SkillLevelController.getAllSkillLevels</qualifiedname>
+        <briefdescription>
+<para>Gets all skill levels. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>List&lt;SkillLevel&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevelController.java" line="95" column="17" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevelController.java" bodystart="95" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_skill_level_1_1_skill_level_controller_1abb0c04374519ce5ae9e444f0282b05b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcoms309_1_1_skill_level_1_1_skill_level" kindref="compound">SkillLevel</ref></type>
+        <definition>QueryMapping public SkillLevel coms309.SkillLevel.SkillLevelController::getSkillLevelById</definition>
+        <argsstring>(@Argument int id)</argsstring>
+        <name>getSkillLevelById</name>
+        <qualifiedname>coms309.SkillLevel.SkillLevelController.getSkillLevelById</qualifiedname>
+        <param>
+          <type>@Argument int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Gets skill level by identifier. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>NotFoundException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when the requested element is not present.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SkillLevel. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevelController.java" line="115" column="23" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevelController.java" bodystart="115" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_skill_level_1_1_skill_level_controller_1a3e6fd82a08ae6a9e1fb1d4e21562c2a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcoms309_1_1_skill_level_1_1_skill_level" kindref="compound">SkillLevel</ref></type>
+        <definition>MutationMapping public SkillLevel coms309.SkillLevel.SkillLevelController::createSkillLevel</definition>
+        <argsstring>(@Argument int user_id, @Argument int skill_level, @Argument int sport_id)</argsstring>
+        <name>createSkillLevel</name>
+        <qualifiedname>coms309.SkillLevel.SkillLevelController.createSkillLevel</qualifiedname>
+        <param>
+          <type>@Argument int</type>
+          <declname>user_id</declname>
+        </param>
+        <param>
+          <type>@Argument int</type>
+          <declname>skill_level</declname>
+        </param>
+        <param>
+          <type>@Argument int</type>
+          <declname>sport_id</declname>
+        </param>
+        <briefdescription>
+<para>Creates skill level. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>NotFoundException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when the requested element is not present.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>user_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier for the user. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skill_level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The skill level. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sport_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier for the sport.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new skill level. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevelController.java" line="141" column="23" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevelController.java" bodystart="141" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_skill_level_1_1_skill_level_controller_1ab75494a632cf6e36a64a9b4f237420b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcoms309_1_1_skill_level_1_1_skill_level" kindref="compound">SkillLevel</ref></type>
+        <definition>MutationMapping public SkillLevel coms309.SkillLevel.SkillLevelController::updateSkillLevel</definition>
+        <argsstring>(@Argument int skill_id, @Argument int skill_level, @Argument int sport_id)</argsstring>
+        <name>updateSkillLevel</name>
+        <qualifiedname>coms309.SkillLevel.SkillLevelController.updateSkillLevel</qualifiedname>
+        <param>
+          <type>@Argument int</type>
+          <declname>skill_id</declname>
+        </param>
+        <param>
+          <type>@Argument int</type>
+          <declname>skill_level</declname>
+        </param>
+        <param>
+          <type>@Argument int</type>
+          <declname>sport_id</declname>
+        </param>
+        <briefdescription>
+<para>Updates the skill level. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>NotFoundException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when the requested element is not present.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>skill_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier for the skill. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skill_level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The skill level. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sport_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier for the sport.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A SkillLevel. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevelController.java" line="174" column="23" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevelController.java" bodystart="174" bodyend="188"/>
+        <references refid="classcoms309_1_1_skill_level_1_1_skill_level_1ab803136f3faffaade0f89516ee73e89f" compoundref="_skill_level_8java" startline="181" endline="183">coms309.SkillLevel.SkillLevel.setSkill_level</references>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_skill_level_1_1_skill_level_controller_1aaa4d4a88e5b96be398665e9f312eb63c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>MutationMapping public String coms309.SkillLevel.SkillLevelController::deleteSkillLevelById</definition>
+        <argsstring>(@Argument int id)</argsstring>
+        <name>deleteSkillLevelById</name>
+        <qualifiedname>coms309.SkillLevel.SkillLevelController.deleteSkillLevelById</qualifiedname>
+        <param>
+          <type>@Argument int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Deletes the skill level by identifier described by ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>NotFoundException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when the requested element is not present.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A String. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevelController.java" line="206" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevelController.java" bodystart="206" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classcoms309_1_1_skill_level_1_1_skill_level_controller_1a95216a012a4a57b020f097d30c6b019f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>MutationMapping Transactional public String coms309.SkillLevel.SkillLevelController::deleteAllSkillLevels</definition>
+        <argsstring>()</argsstring>
+        <name>deleteAllSkillLevels</name>
+        <qualifiedname>coms309.SkillLevel.SkillLevelController.deleteAllSkillLevels</qualifiedname>
+        <briefdescription>
+<para>Deletes all skill levels. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<simplesect kind="return"><para>A String. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevelController.java" line="229" column="19" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevelController.java" bodystart="229" bodyend="235"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcoms309_1_1_skill_level_1_1_skill_level_controller_1a8f500529e70810d2af0bdbb59cd10199" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>private void coms309.SkillLevel.SkillLevelController::deleteSkillLevel</definition>
+        <argsstring>(SkillLevel sk)</argsstring>
+        <name>deleteSkillLevel</name>
+        <qualifiedname>coms309.SkillLevel.SkillLevelController.deleteSkillLevel</qualifiedname>
+        <param>
+          <type><ref refid="classcoms309_1_1_skill_level_1_1_skill_level" kindref="compound">SkillLevel</ref></type>
+          <declname>sk</declname>
+        </param>
+        <briefdescription>
+<para>Helper method used in deleting an individual skillLevel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sk. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevelController.java" line="248" column="18" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevelController.java" bodystart="248" bodyend="261"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The coms 309. exceptions. not found exception. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The coms 309. game post. game post</para>
+<para>The coms 309. sport. sport</para>
+<para>The coms 309. sport. sport repository</para>
+<para>The coms 309. users. user repository</para>
+<para>The coms 309. users. users</para>
+<para>The jakarta.transaction. transactional</para>
+<para>The org.checkerframework.checker.units.qual. a</para>
+<para>The org.springframework.beans.factory.annotation. autowired</para>
+<para>The org.springframework.graphql.data.method.annotation. argument</para>
+<para>The org.springframework.graphql.data.method.annotation. mutation mapping</para>
+<para>The org.springframework.graphql.data.method.annotation. query mapping</para>
+<para>The org.springframework.stereotype. controller</para>
+<para>List of java.util.s</para>
+<para>Set the java.util. belongs to</para>
+<para>A controller for handling skill levels.</para>
+<para><simplesect kind="author"><para>Arie </para>
+</simplesect>
+<simplesect kind="date"><para>10/20/2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>JpaRepository&lt; SkillLevel, Integer &gt;</label>
+      </node>
+      <node id="1">
+        <label>coms309.SkillLevel.SkillLevelController</label>
+        <link refid="classcoms309_1_1_skill_level_1_1_skill_level_controller"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>~skillLevelRepository</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>coms309.SkillLevel.SkillLevelRepository</label>
+        <link refid="interfacecoms309_1_1_skill_level_1_1_skill_level_repository"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevelController.java" line="48" column="7" bodyfile="C:/Users/Arie/Develop/hb_215/Backend/src/main/java/coms309/SkillLevel/SkillLevelController.java" bodystart="48" bodyend="262"/>
+    <listofallmembers>
+      <member refid="classcoms309_1_1_skill_level_1_1_skill_level_controller_1a3e6fd82a08ae6a9e1fb1d4e21562c2a1" prot="public" virt="non-virtual"><scope>coms309::SkillLevel::SkillLevelController</scope><name>createSkillLevel</name></member>
+      <member refid="classcoms309_1_1_skill_level_1_1_skill_level_controller_1a95216a012a4a57b020f097d30c6b019f" prot="public" virt="non-virtual"><scope>coms309::SkillLevel::SkillLevelController</scope><name>deleteAllSkillLevels</name></member>
+      <member refid="classcoms309_1_1_skill_level_1_1_skill_level_controller_1a8f500529e70810d2af0bdbb59cd10199" prot="private" virt="non-virtual"><scope>coms309::SkillLevel::SkillLevelController</scope><name>deleteSkillLevel</name></member>
+      <member refid="classcoms309_1_1_skill_level_1_1_skill_level_controller_1aaa4d4a88e5b96be398665e9f312eb63c" prot="public" virt="non-virtual"><scope>coms309::SkillLevel::SkillLevelController</scope><name>deleteSkillLevelById</name></member>
+      <member refid="classcoms309_1_1_skill_level_1_1_skill_level_controller_1a6cab2ecae0969e142d84114c82095d05" prot="public" virt="non-virtual"><scope>coms309::SkillLevel::SkillLevelController</scope><name>getAllSkillLevels</name></member>
+      <member refid="classcoms309_1_1_skill_level_1_1_skill_level_controller_1abb0c04374519ce5ae9e444f0282b05b7" prot="public" virt="non-virtual"><scope>coms309::SkillLevel::SkillLevelController</scope><name>getSkillLevelById</name></member>
+      <member refid="classcoms309_1_1_skill_level_1_1_skill_level_controller_1ab9667bb87615a008f7326aedcb72425c" prot="package" virt="non-virtual"><scope>coms309::SkillLevel::SkillLevelController</scope><name>skillLevelRepository</name></member>
+      <member refid="classcoms309_1_1_skill_level_1_1_skill_level_controller_1aab787d3a49ed2be271e5080ee94ae717" prot="package" virt="non-virtual"><scope>coms309::SkillLevel::SkillLevelController</scope><name>sportRepository</name></member>
+      <member refid="classcoms309_1_1_skill_level_1_1_skill_level_controller_1ab75494a632cf6e36a64a9b4f237420b7" prot="public" virt="non-virtual"><scope>coms309::SkillLevel::SkillLevelController</scope><name>updateSkillLevel</name></member>
+      <member refid="classcoms309_1_1_skill_level_1_1_skill_level_controller_1a4fef558b7d90d4c83489c5aa4e748e5b" prot="package" virt="non-virtual"><scope>coms309::SkillLevel::SkillLevelController</scope><name>userRepository</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

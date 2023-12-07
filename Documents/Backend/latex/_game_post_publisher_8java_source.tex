@@ -1,0 +1,50 @@
+\doxysection{Game\+Post\+Publisher.\+java}
+\hypertarget{_game_post_publisher_8java_source}{}\label{_game_post_publisher_8java_source}\index{C:/Users/Arie/Develop/hb\_215/Backend/src/main/java/coms309/GamePost/GamePostPublisher.java@{C:/Users/Arie/Develop/hb\_215/Backend/src/main/java/coms309/GamePost/GamePostPublisher.java}}
+\mbox{\hyperlink{_game_post_publisher_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00002}00002\ \textcolor{keyword}{package\ }coms309.GamePost;}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00005}00005\ \textcolor{keyword}{import}\ org.reactivestreams.Publisher;}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00007}00007\ \textcolor{keyword}{import}\ org.springframework.stereotype.Component;}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00009}00009\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_comment}{Comment}}.\mbox{\hyperlink{classcoms309_1_1_comment_1_1_comment}{Comment}};}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00011}00011\ \textcolor{keyword}{import}\ reactor.core.publisher.DirectProcessor;}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00013}00013\ \textcolor{keyword}{import}\ reactor.core.publisher.FluxProcessor;}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00015}00015\ \textcolor{keyword}{import}\ reactor.core.publisher.FluxSink;}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00017}00017\ \textcolor{comment}{/**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00026}00026\ @Component}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00027}\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_publisher}{00027}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_publisher}{GamePostPublisher}}\ \{}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00029}00029\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00037}00037\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{final}\ FluxProcessor<GamePost,\ GamePost>\ processor;}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00039}00039\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00047}00047\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{final}\ FluxSink<GamePost>\ sink;}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00049}00049\ \ \ \ \ \textcolor{comment}{//\ public\ Publisher<GamePost>\ subComments()\ \{}}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00050}00050\ \ \ \ \ \textcolor{comment}{//\ return\ processor.map(gamePost\ -\/>\ \{}}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00051}00051\ \ \ \ \ \textcolor{comment}{//\ return\ gamePost;}}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00052}00052\ \ \ \ \ \textcolor{comment}{//\ \});}}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00053}00053\ \ \ \ \ \textcolor{comment}{//\ \}}}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00055}00055\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00064}\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_publisher_aa32ea4074896f467e0252e9986b31c53}{00064}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_publisher_aa32ea4074896f467e0252e9986b31c53}{GamePostPublisher}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00065}00065\ \ \ \ \ \ \ \ \ this.processor\ =\ DirectProcessor.<\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post}{GamePost}}>create().serialize();}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00066}00066\ \ \ \ \ \ \ \ \ this.sink\ =\ processor.sink();}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00067}00067\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00068}00068\ }
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00069}00069\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00080}\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_publisher_af9f03e9e35540169c719955555135105}{00080}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_publisher_af9f03e9e35540169c719955555135105}{publish}}(\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post}{GamePost}}\ gamePost)\ \{}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00081}00081\ \ \ \ \ \ \ \ \ sink.next(gamePost);}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00082}00082\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00083}00083\ }
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00084}00084\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00095}\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_publisher_a895aba3b8af5c16b97949f1658aa96d5}{00095}}\ \ \ \ \ \textcolor{keyword}{public}\ Publisher<GamePost>\ \mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post_publisher_a895aba3b8af5c16b97949f1658aa96d5}{subGamePost}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00096}00096\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ processor.map(gamePost\ -\/>\ \{}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00097}00097\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ gamePost;}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00098}00098\ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00099}00099\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_game_post_publisher_8java_source_l00100}00100\ \}}
+
+\end{DoxyCode}

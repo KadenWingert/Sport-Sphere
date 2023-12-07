@@ -1,0 +1,133 @@
+\doxysection{Skill\+Level\+Controller.\+java}
+\hypertarget{_skill_level_controller_8java_source}{}\label{_skill_level_controller_8java_source}\index{C:/Users/Arie/Develop/hb\_215/Backend/src/main/java/coms309/SkillLevel/SkillLevelController.java@{C:/Users/Arie/Develop/hb\_215/Backend/src/main/java/coms309/SkillLevel/SkillLevelController.java}}
+\mbox{\hyperlink{_skill_level_controller_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00004}00004\ \textcolor{keyword}{package\ }coms309.SkillLevel;}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00007}00007\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_exceptions}{Exceptions}}.\mbox{\hyperlink{classcoms309_1_1_exceptions_1_1_not_found_exception}{NotFoundException}};}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00009}00009\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_game_post}{GamePost}}.\mbox{\hyperlink{classcoms309_1_1_game_post_1_1_game_post}{GamePost}};}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00011}00011\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_sport}{Sport}}.\mbox{\hyperlink{classcoms309_1_1_sport_1_1_sport}{Sport}};}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00013}00013\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_sport}{Sport}}.\mbox{\hyperlink{interfacecoms309_1_1_sport_1_1_sport_repository}{SportRepository}};}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00015}00015\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_users}{Users}}.\mbox{\hyperlink{interfacecoms309_1_1_users_1_1_user_repository}{UserRepository}};}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00017}00017\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacecoms309}{coms309}}.\mbox{\hyperlink{namespacecoms309_1_1_users}{Users}}.\mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}};}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00019}00019\ \textcolor{keyword}{import}\ jakarta.transaction.Transactional;}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00021}00021\ \textcolor{keyword}{import}\ org.checkerframework.checker.units.qual.A;}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00023}00023\ \textcolor{keyword}{import}\ org.springframework.beans.factory.annotation.Autowired;}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00025}00025\ \textcolor{keyword}{import}\ org.springframework.graphql.data.method.annotation.Argument;}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00027}00027\ \textcolor{keyword}{import}\ org.springframework.graphql.data.method.annotation.MutationMapping;}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00029}00029\ \textcolor{keyword}{import}\ org.springframework.graphql.data.method.annotation.QueryMapping;}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00031}00031\ \textcolor{keyword}{import}\ org.springframework.stereotype.Controller;}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00034}00034\ \textcolor{keyword}{import}\ java.util.List;}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00036}00036\ \textcolor{keyword}{import}\ java.util.Set;}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00038}00038\ \textcolor{comment}{/**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00047}00047\ @Controller}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00048}\mbox{\hyperlink{classcoms309_1_1_skill_level_1_1_skill_level_controller}{00048}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classcoms309_1_1_skill_level_1_1_skill_level_controller}{SkillLevelController}}\ \{}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00050}00050\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00058}00058\ \ \ \ \ @Autowired}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00059}00059\ \ \ \ \ \mbox{\hyperlink{interfacecoms309_1_1_skill_level_1_1_skill_level_repository}{SkillLevelRepository}}\ skillLevelRepository;}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00061}00061\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00069}00069\ \ \ \ \ @Autowired}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00070}00070\ \ \ \ \ UserRepository\ userRepository;}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00072}00072\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00080}00080\ \ \ \ \ @Autowired}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00081}00081\ \ \ \ \ SportRepository\ sportRepository;}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00082}00082\ }
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00083}00083\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00094}00094\ \ \ \ \ @QueryMapping}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00095}\mbox{\hyperlink{classcoms309_1_1_skill_level_1_1_skill_level_controller_a6cab2ecae0969e142d84114c82095d05}{00095}}\ \ \ \ \ \textcolor{keyword}{public}\ List<SkillLevel>\ \mbox{\hyperlink{classcoms309_1_1_skill_level_1_1_skill_level_controller_a6cab2ecae0969e142d84114c82095d05}{getAllSkillLevels}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00096}00096\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ skillLevelRepository.findAll();}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00097}00097\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00098}00098\ }
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00099}00099\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00114}00114\ \ \ \ \ @QueryMapping}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00115}\mbox{\hyperlink{classcoms309_1_1_skill_level_1_1_skill_level_controller_abb0c04374519ce5ae9e444f0282b05b7}{00115}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classcoms309_1_1_skill_level_1_1_skill_level}{SkillLevel}}\ \mbox{\hyperlink{classcoms309_1_1_skill_level_1_1_skill_level_controller_abb0c04374519ce5ae9e444f0282b05b7}{getSkillLevelById}}(@Argument\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id})\ \{}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00116}00116\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcoms309_1_1_skill_level_1_1_skill_level}{SkillLevel}}\ skillLevel\ =\ skillLevelRepository.findById((\textcolor{keywordtype}{id}));}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00117}00117\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (skillLevel\ ==\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00118}00118\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ NotFoundException(\textcolor{stringliteral}{"{}SkillLevel\ with\ ID\ "{}}\ +\ \textcolor{keywordtype}{id}\ +\ \textcolor{stringliteral}{"{}\ not\ found"{}});}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00119}00119\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00120}00120\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ skillLevel;}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00121}00121\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00122}00122\ }
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00123}00123\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00140}00140\ \ \ \ \ @MutationMapping}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00141}\mbox{\hyperlink{classcoms309_1_1_skill_level_1_1_skill_level_controller_a3e6fd82a08ae6a9e1fb1d4e21562c2a1}{00141}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classcoms309_1_1_skill_level_1_1_skill_level}{SkillLevel}}\ \mbox{\hyperlink{classcoms309_1_1_skill_level_1_1_skill_level_controller_a3e6fd82a08ae6a9e1fb1d4e21562c2a1}{createSkillLevel}}(@Argument\ \textcolor{keywordtype}{int}\ user\_id,\ @Argument\ \textcolor{keywordtype}{int}\ skill\_level,\ @Argument\ \textcolor{keywordtype}{int}\ sport\_id)\ \{}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00142}00142\ \ \ \ \ \ \ \ \ Users\ user\ =\ userRepository.findById(user\_id);}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00143}00143\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (user\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00144}00144\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ NotFoundException(\textcolor{stringliteral}{"{}Could\ not\ find\ user\ with\ id:\ "{}}\ +\ user\_id);}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00145}00145\ }
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00146}00146\ \ \ \ \ \ \ \ \ Sport\ sport\ =\ sportRepository.findById(sport\_id);}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00147}00147\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (sport\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00148}00148\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ NotFoundException(\textcolor{stringliteral}{"{}Could\ not\ find\ Sport\ with\ id:\ "{}}\ +\ sport);}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00149}00149\ }
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00150}00150\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcoms309_1_1_skill_level_1_1_skill_level}{SkillLevel}}\ skillLevel\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classcoms309_1_1_skill_level_1_1_skill_level}{SkillLevel}}(skill\_level,\ user,\ sport);}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00151}00151\ \ \ \ \ \ \ \ \ user.getSkill\_levels().add(skillLevel);}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00152}00152\ \ \ \ \ \ \ \ \ skillLevelRepository.save(skillLevel);}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00153}00153\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ skillLevel;}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00154}00154\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00155}00155\ }
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00156}00156\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00173}00173\ \ \ \ \ @MutationMapping}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00174}\mbox{\hyperlink{classcoms309_1_1_skill_level_1_1_skill_level_controller_ab75494a632cf6e36a64a9b4f237420b7}{00174}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classcoms309_1_1_skill_level_1_1_skill_level}{SkillLevel}}\ \mbox{\hyperlink{classcoms309_1_1_skill_level_1_1_skill_level_controller_ab75494a632cf6e36a64a9b4f237420b7}{updateSkillLevel}}(@Argument\ \textcolor{keywordtype}{int}\ skill\_id,\ @Argument\ \textcolor{keywordtype}{int}\ skill\_level\ ,\ @Argument\ \textcolor{keywordtype}{int}\ sport\_id)\ \{}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00175}00175\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcoms309_1_1_skill_level_1_1_skill_level}{SkillLevel}}\ skillLevel\ =\ skillLevelRepository.findById(skill\_id);}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00176}00176\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (skillLevel\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00177}00177\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ NotFoundException(\textcolor{stringliteral}{"{}Could\ not\ find\ skillLevel\ with\ id:\ "{}}\ +\ skill\_id);}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00178}00178\ \ \ \ \ \ \ \ \ Sport\ sport\ =\ sportRepository.findById(sport\_id);}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00179}00179\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (sport\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00180}00180\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ NotFoundException(\textcolor{stringliteral}{"{}Could\ not\ find\ Sport\ with\ id:\ "{}}\ +\ sport);}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00181}00181\ }
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00182}00182\ \ \ \ \ \ \ \ \ skillLevel.setSport(sport);}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00183}00183\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(skill\_level\ !=\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00184}00184\ \ \ \ \ \ \ \ \ \ \ \ \ skillLevel.\mbox{\hyperlink{classcoms309_1_1_skill_level_1_1_skill_level_ab803136f3faffaade0f89516ee73e89f}{setSkill\_level}}(skill\_level);}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00185}00185\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00186}00186\ \ \ \ \ \ \ \ \ skillLevelRepository.save(skillLevel);}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00187}00187\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ skillLevel;}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00188}00188\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00189}00189\ }
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00190}00190\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00205}00205\ \ \ \ \ @MutationMapping}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00206}\mbox{\hyperlink{classcoms309_1_1_skill_level_1_1_skill_level_controller_aaa4d4a88e5b96be398665e9f312eb63c}{00206}}\ \ \ \ \ \textcolor{keyword}{public}\ String\ \mbox{\hyperlink{classcoms309_1_1_skill_level_1_1_skill_level_controller_aaa4d4a88e5b96be398665e9f312eb63c}{deleteSkillLevelById}}(@Argument\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id})\ \{}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00207}00207\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcoms309_1_1_skill_level_1_1_skill_level}{SkillLevel}}\ skillLevel\ =\ skillLevelRepository.findById(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00208}00208\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (skillLevel\ ==\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00209}00209\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ NotFoundException(\textcolor{stringliteral}{"{}SkillLevel\ with\ id\ "{}}\ +\ \textcolor{keywordtype}{id}\ +\ \textcolor{stringliteral}{"{}\ not\ found."{}});}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00210}00210\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00211}00211\ \ \ \ \ \ \ \ \ deleteSkillLevel(skillLevel);}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00212}00212\ \ \ \ \ \ \ \ \ skillLevelRepository.deleteById(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00213}00213\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}SkillLevel\ with\ id\ "{}}\ +\ \textcolor{keywordtype}{id}\ +\ \textcolor{stringliteral}{"{}\ has\ been\ deleted"{}};}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00214}00214\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00215}00215\ }
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00216}00216\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00227}00227\ \ \ \ \ @MutationMapping}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00228}00228\ \ \ \ \ @Transactional}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00229}\mbox{\hyperlink{classcoms309_1_1_skill_level_1_1_skill_level_controller_a95216a012a4a57b020f097d30c6b019f}{00229}}\ \ \ \ \ \textcolor{keyword}{public}\ String\ \mbox{\hyperlink{classcoms309_1_1_skill_level_1_1_skill_level_controller_a95216a012a4a57b020f097d30c6b019f}{deleteAllSkillLevels}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00230}00230\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\mbox{\hyperlink{classcoms309_1_1_skill_level_1_1_skill_level}{SkillLevel}}\ sk\ :\ skillLevelRepository.findAll())\ \{}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00231}00231\ \ \ \ \ \ \ \ \ \ \ \ \ deleteSkillLevel(sk);}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00232}00232\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00233}00233\ \ \ \ \ \ \ \ \ skillLevelRepository.deleteAll();}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00234}00234\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}All\ Skill\ Levels\ have\ been\ deleted"{}};}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00235}00235\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00236}00236\ }
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00237}00237\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00248}00248\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ deleteSkillLevel(\mbox{\hyperlink{classcoms309_1_1_skill_level_1_1_skill_level}{SkillLevel}}\ sk)\ \{}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00249}00249\ \ \ \ \ \ \ \ \ Sport\ sport\ =\ sk.getSport();}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00250}00250\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (sport\ !=\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00251}00251\ \ \ \ \ \ \ \ \ \ \ \ \ sport.setSkillLevel(\textcolor{keyword}{null});}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00252}00252\ \ \ \ \ \ \ \ \ \ \ \ \ sportRepository.save(sport);}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00253}00253\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00254}00254\ }
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00255}00255\ \ \ \ \ \ \ \ \ Users\ user\ =\ sk.\mbox{\hyperlink{classcoms309_1_1_skill_level_1_1_skill_level_a2a743009948f932c9b44d63ec9346f83}{getUser}}();}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00256}00256\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (user\ !=\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00257}00257\ \ \ \ \ \ \ \ \ \ \ \ \ user.getSkill\_levels().remove(sk);}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00258}00258\ }
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00259}00259\ \ \ \ \ \ \ \ \ \ \ \ \ userRepository.save(user);}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00260}00260\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00261}00261\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_skill_level_controller_8java_source_l00262}00262\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,46 @@
+\doxysection{Users\+Publisher.\+java}
+\hypertarget{_users_publisher_8java_source}{}\label{_users_publisher_8java_source}\index{C:/Users/Arie/Develop/hb\_215/Backend/src/main/java/coms309/Users/UsersPublisher.java@{C:/Users/Arie/Develop/hb\_215/Backend/src/main/java/coms309/Users/UsersPublisher.java}}
+\mbox{\hyperlink{_users_publisher_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00002}00002\ \textcolor{keyword}{package\ }coms309.Users;}
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00005}00005\ \textcolor{keyword}{import}\ org.reactivestreams.Publisher;}
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00007}00007\ \textcolor{keyword}{import}\ org.springframework.stereotype.Component;}
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00009}00009\ \textcolor{keyword}{import}\ lombok.NoArgsConstructor;}
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00011}00011\ \textcolor{keyword}{import}\ reactor.core.publisher.DirectProcessor;}
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00013}00013\ \textcolor{keyword}{import}\ reactor.core.publisher.FluxProcessor;}
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00015}00015\ \textcolor{keyword}{import}\ reactor.core.publisher.FluxSink;}
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00017}00017\ \textcolor{keyword}{import}\ reactor.core.publisher.Mono;}
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00019}00019\ \textcolor{comment}{/**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00028}00028\ @Component}
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00029}\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_publisher}{00029}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_publisher}{UsersPublisher}}\ \{}
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00031}00031\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00039}00039\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{final}\ FluxProcessor<Users,\ Users>\ processor;}
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00041}00041\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00049}00049\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{final}\ FluxSink<Users>\ sink;}
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00051}00051\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00060}\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_publisher_a4e1e5956d1f1ad3ba38c702a7fafa621}{00060}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_publisher_a4e1e5956d1f1ad3ba38c702a7fafa621}{UsersPublisher}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00061}00061\ \ \ \ \ \ \ \ \ this.processor\ =\ DirectProcessor.<\mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}}>create().serialize();}
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00062}00062\ \ \ \ \ \ \ \ \ this.sink\ =\ processor.sink();}
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00063}00063\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00065}00065\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00076}\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_publisher_a9cea8b4936786632857148cd78586b6b}{00076}}\ \ \ \ \ \textcolor{keyword}{public}\ Publisher<Users>\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_publisher_a9cea8b4936786632857148cd78586b6b}{getUsers}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00077}00077\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ processor.map(user\ -\/>\ \{}
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00078}00078\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ user;}
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00079}00079\ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00080}00080\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00081}00081\ }
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00082}00082\ \textcolor{comment}{\ \ \ \ /**********************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00093}\mbox{\hyperlink{classcoms309_1_1_users_1_1_users_publisher_a0463249e9962a5a1752ea55f5e7c648b}{00093}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcoms309_1_1_users_1_1_users_publisher_a0463249e9962a5a1752ea55f5e7c648b}{publish}}(\mbox{\hyperlink{classcoms309_1_1_users_1_1_users}{Users}}\ user)\ \{}
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00094}00094\ \ \ \ \ \ \ \ \ sink.next(user);}
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00095}00095\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00096}00096\ }
+\DoxyCodeLine{\Hypertarget{_users_publisher_8java_source_l00097}00097\ \}}
+
+\end{DoxyCode}
