@@ -7,11 +7,6 @@
 
 [![Latest Release](https://git.las.iastate.edu/cs309/fall2023/hb_215/-/badges/release.svg)](https://git.las.iastate.edu/cs309/fall2023/hb_215/-/releases) 
 
-## Getting started
-
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
-
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
 
 ## Add your files
 
